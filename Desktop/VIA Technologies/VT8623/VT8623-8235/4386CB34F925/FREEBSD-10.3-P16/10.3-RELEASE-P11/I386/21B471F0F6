@@ -1,0 +1,90 @@
+hostb0@pci0:0:0:0:	class=0x060000 card=0xaa011106 chip=0x31231106 rev=0x00 hdr=0x00
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VT8623 [Apollo CLE266]'
+    class      = bridge
+    subclass   = HOST-PCI
+    bar   [10] = type Prefetchable Memory, range 32, base 0xd0000000, size 134217728, enabled
+    cap 02[a0] = AGP 4x 2x 1x SBA disabled
+    cap 01[c0] = powerspec 2  supports D0 D3  current D0
+
+pcib1@pci0:0:1:0:	class=0x060400 card=0x00000000 chip=0xb0911106 rev=0x00 hdr=0x01
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VT8633 [Apollo Pro266 AGP]'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[80] = powerspec 2  supports D0 D1 D3  current D0
+
+vr0@pci0:0:15:0:	class=0x020000 card=0x01061106 chip=0x31061106 rev=0x8b hdr=0x00
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VT6105/VT6106S [Rhine-III]'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0xd000, size 256, enabled
+    bar   [14] = type Memory, range 32, base 0xde000000, size 256, enabled
+    cap 01[44] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+uhci0@pci0:0:16:0:	class=0x0c0300 card=0xaa011106 chip=0x30381106 rev=0x80 hdr=0x00
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VT82xx/62xx UHCI USB 1.1 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xd400, size 32, enabled
+    cap 01[80] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+uhci1@pci0:0:16:1:	class=0x0c0300 card=0xaa011106 chip=0x30381106 rev=0x80 hdr=0x00
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VT82xx/62xx UHCI USB 1.1 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xd800, size 32, enabled
+    cap 01[80] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+uhci2@pci0:0:16:2:	class=0x0c0300 card=0xaa011106 chip=0x30381106 rev=0x80 hdr=0x00
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VT82xx/62xx UHCI USB 1.1 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xdc00, size 32, enabled
+    cap 01[80] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+ehci0@pci0:0:16:3:	class=0x0c0320 card=0x31041106 chip=0x31041106 rev=0x82 hdr=0x00
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'USB 2.0'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xde001000, size 256, enabled
+    cap 01[80] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+isab0@pci0:0:17:0:	class=0x060100 card=0xaa011106 chip=0x31771106 rev=0x00 hdr=0x00
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VT8235 ISA Bridge'
+    class      = bridge
+    subclass   = PCI-ISA
+    cap 01[c0] = powerspec 2  supports D0 D3  current D0
+
+atapci0@pci0:0:17:1:	class=0x01018a card=0xaa011106 chip=0x05711106 rev=0x06 hdr=0x00
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VT82C586A/B/VT82C686/A/B/VT823x/A/C PIPC Bus Master IDE'
+    class      = mass storage
+    subclass   = ATA
+    bar   [20] = type I/O Port, range 32, base 0xe000, size 16, enabled
+    cap 01[c0] = powerspec 2  supports D0 D3  current D0
+
+vr1@pci0:0:18:0:	class=0x020000 card=0x01021106 chip=0x30651106 rev=0x74 hdr=0x00
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VT6102/VT6103 [Rhine-II]'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0xe400, size 256, enabled
+    bar   [14] = type Memory, range 32, base 0xde002000, size 256, enabled
+    cap 01[40] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+vgapci0@pci0:1:0:0:	class=0x030000 card=0x31221106 chip=0x31221106 rev=0x03 hdr=0x00
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VT8623 [Apollo CLE266] integrated CastleRock graphics'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Prefetchable Memory, range 32, base 0xd8000000, size 67108864, enabled
+    bar   [14] = type Memory, range 32, base 0xdc000000, size 16777216, enabled
+    cap 01[60] = powerspec 2  supports D0 D1 D2 D3  current D0
+    cap 02[70] = AGP 4x 2x 1x SBA disabled

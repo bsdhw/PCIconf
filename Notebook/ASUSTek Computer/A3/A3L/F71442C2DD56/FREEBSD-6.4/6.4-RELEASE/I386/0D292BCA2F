@@ -1,0 +1,115 @@
+hostb0@pci0:0:0:	class=0x060000 card=0x18971043 chip=0x35808086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82852GM/GME/GMV/PM, 855GM/GME Montara Host-Hub Interface Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 09[40] = vendor (length 5) Intel cap 14 version 1
+
+none0@pci0:0:1:	class=0x088000 card=0x18971043 chip=0x35848086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82852GM/GME/GMV/PM, 855GM/GME Montara System Memory Controller'
+    class      = base peripheral
+
+none1@pci0:0:3:	class=0x088000 card=0x18971043 chip=0x35858086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82852GM/GME/GMV/PM, 855GM/GME Montara Configuration Process'
+    class      = base peripheral
+
+agp0@pci0:2:0:	class=0x030000 card=0x17121043 chip=0x35828086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82852GM/GME/GMV/PM, 855GM/GME Montara Integrated Graphics Device'
+    class      = display
+    subclass   = VGA
+    cap 01[d0] = powerspec 1  supports D0 D1 D3  current D0
+
+none2@pci0:2:1:	class=0x038000 card=0x17121043 chip=0x35828086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82852GM/GME/GMV/PM, 855GM/GME Montara Integrated Graphics Device'
+    class      = display
+    cap 01[d0] = powerspec 1  supports D0 D1 D3  current D0
+
+uhci0@pci0:29:0:	class=0x0c0300 card=0x18971043 chip=0x24c28086 rev=0x03 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801DB/DBL/DBM (ICH4/ICH4-L/ICH4-M) USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+
+uhci1@pci0:29:1:	class=0x0c0300 card=0x18971043 chip=0x24c48086 rev=0x03 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801DB/DBL/DBM (ICH4/ICH4-L/ICH4-M) USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+
+uhci2@pci0:29:2:	class=0x0c0300 card=0x18971043 chip=0x24c78086 rev=0x03 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801DB/DBL/DBM (ICH4/ICH4-L/ICH4-M) USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+
+ehci0@pci0:29:7:	class=0x0c0320 card=0x18971043 chip=0x24cd8086 rev=0x03 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801DB/DBL/DBM (ICH4/ICH4-L/ICH4-M) USB 2.0 EHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 0a[58] = EHCI Debug Port at offset 0x80 in map 0x14
+
+pcib1@pci0:30:0:	class=0x060400 card=0x00000000 chip=0x24488086 rev=0x83 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = '82801BAM/CAM/DBM (ICH2-M/3-M/4-M) Hub Interface to PCI Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+
+isab0@pci0:31:0:	class=0x060100 card=0x00000000 chip=0x24cc8086 rev=0x03 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801DBM (ICH4-M) LPC Interface Bridge'
+    class      = bridge
+    subclass   = PCI-ISA
+
+atapci0@pci0:31:1:	class=0x01018a card=0x18971043 chip=0x24ca8086 rev=0x03 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801DBM (ICH4-M) UltraATA/100 EIDE Controller'
+    class      = mass storage
+    subclass   = ATA
+
+none3@pci0:31:5:	class=0x040100 card=0x18931043 chip=0x24c58086 rev=0x03 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801DB/DBL/DBM (ICH4/ICH4-L/ICH4-M) AC'97 Audio Controller'
+    class      = multimedia
+    subclass   = audio
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+
+rl0@pci1:0:0:	class=0x020000 card=0x10451043 chip=0x813910ec rev=0x10 hdr=0x00
+    vendor     = 'Realtek Semiconductor'
+    device     = 'RT8139 (A/B/C/810x/813x/C+) Fast Ethernet Adapter'
+    class      = network
+    subclass   = ethernet
+    cap 01[50] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+ath0@pci1:4:0:	class=0x020000 card=0x2052168c chip=0x001a168c rev=0x01 hdr=0x00
+    vendor     = 'Atheros Communications Inc.'
+    device     = 'Atheros AR5005G Atheros AR5005G 802.11abg NIC Chipset / TP-Link (TL-WN551G)'
+    class      = network
+    subclass   = ethernet
+    cap 01[44] = powerspec 2  supports D0 D3  current D0
+
+cbb0@pci1:5:0:	class=0x060700 card=0x18941043 chip=0x04761180 rev=0xac hdr=0x02
+    vendor     = 'Ricoh Company, Ltd.'
+    device     = 'unknown Ricoh R/RL/5C476(II)'
+    class      = bridge
+    subclass   = PCI-CardBus
+    cap 01[dc] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+cbb1@pci1:5:1:	class=0x060700 card=0x18941043 chip=0x04761180 rev=0xac hdr=0x02
+    vendor     = 'Ricoh Company, Ltd.'
+    device     = 'unknown Ricoh R/RL/5C476(II)'
+    class      = bridge
+    subclass   = PCI-CardBus
+    cap 01[dc] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+fwohci0@pci1:5:2:	class=0x0c0010 card=0x18971043 chip=0x05521180 rev=0x04 hdr=0x00
+    vendor     = 'Ricoh Company, Ltd.'
+    device     = 'RL5c552 IEEE-1394 Controller'
+    class      = serial bus
+    subclass   = FireWire
+    cap 01[dc] = powerspec 2  supports D0 D3  current D0
