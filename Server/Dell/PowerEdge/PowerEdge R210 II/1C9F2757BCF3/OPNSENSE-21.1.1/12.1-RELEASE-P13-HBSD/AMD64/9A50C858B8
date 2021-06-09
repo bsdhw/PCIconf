@@ -1,0 +1,123 @@
+hostb0@pci0:0:0:0:	class=0x060000 card=0x04dd1028 chip=0x01088086 rev=0x09 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E3-1200 Processor Family DRAM Controller'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 09[e0] = vendor (length 12) Intel cap 0 version 1
+
+ehci0@pci0:0:26:0:	class=0x0c0320 card=0x04dd1028 chip=0x1c2d8086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '6 Series/C200 Series Chipset Family USB Enhanced Host Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xc5106000, size 1024, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 0a[58] = EHCI Debug Port at offset 0xa0 in map 0x14
+    cap 13[98] = PCI Advanced Features: FLR TP
+
+pcib1@pci0:0:28:0:	class=0x060400 card=0x04dd1028 chip=0x1c108086 rev=0xb4 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = '6 Series/C200 Series Chipset Family PCI Express Root Port 1'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128)
+                 link x4(x4) speed 2.5(5.0) ASPM disabled(L0s/L1)
+                 slot 0 power limit 250 mW
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge card=0x04dd1028
+    cap 01[a0] = powerspec 2  supports D0 D3  current D0
+
+ehci1@pci0:0:29:0:	class=0x0c0320 card=0x04dd1028 chip=0x1c268086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '6 Series/C200 Series Chipset Family USB Enhanced Host Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xc5105000, size 1024, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 0a[58] = EHCI Debug Port at offset 0xa0 in map 0x14
+    cap 13[98] = PCI Advanced Features: FLR TP
+
+pcib2@pci0:0:30:0:	class=0x060401 card=0x04dd1028 chip=0x244e8086 rev=0xa4 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = '82801 PCI Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[50] = PCI Bridge card=0x04dd1028
+
+isab0@pci0:0:31:0:	class=0x060100 card=0x04dd1028 chip=0x1c528086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'C202 Chipset LPC Controller'
+    class      = bridge
+    subclass   = PCI-ISA
+    cap 09[e0] = vendor (length 12) Intel cap 1 version 0
+		 features: AMT, 4 PCI-e x1 slots
+
+ahci0@pci0:0:31:2:	class=0x010601 card=0x04dd1028 chip=0x1c028086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '6 Series/C200 Series Chipset Family 6 port Desktop SATA AHCI Controller'
+    class      = mass storage
+    subclass   = SATA
+    bar   [10] = type I/O Port, range 32, base 0x2048, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0x2054, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0x2040, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0x2050, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0x2020, size 32, enabled
+    bar   [24] = type Memory, range 32, base 0xc5104000, size 2048, enabled
+    cap 05[80] = MSI supports 1 message enabled with 1 message
+    cap 01[70] = powerspec 3  supports D0 D3  current D0
+    cap 12[a8] = SATA Index-Data Pair
+    cap 13[b0] = PCI Advanced Features: FLR TP
+
+none0@pci0:0:31:3:	class=0x0c0500 card=0x04dd1028 chip=0x1c228086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '6 Series/C200 Series Chipset Family SMBus Controller'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [10] = type Memory, range 64, base 0xc5102000, size 256, enabled
+    bar   [20] = type I/O Port, range 32, base 0x2000, size 32, enabled
+
+bce0@pci0:1:0:0:	class=0x020000 card=0x04dd1028 chip=0x163b14e4 rev=0x20 hdr=0x00
+    vendor     = 'Broadcom Inc. and subsidiaries'
+    device     = 'NetXtreme II BCM5716 Gigabit Ethernet'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 64, base 0xc0000000, size 33554432, enabled
+    cap 01[48] = powerspec 3  supports D0 D3  current D0
+    cap 03[50] = VPD
+    cap 05[58] = MSI supports 16 messages, 64 bit enabled with 1 message
+    cap 11[a0] = MSI-X supports 9 messages
+                 Table in map 0x10[0xc000], PBA in map 0x10[0xe000]
+    cap 10[ac] = PCI-Express 2 endpoint max data 128(512) RO NS
+                 link x4(x4) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    ecap 0003[100] = Serial 1 bc305bfffee433de
+    ecap 0001[110] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0004[150] = Power Budgeting 1
+    ecap 0002[160] = VC 1 max VC0
+
+bce1@pci0:1:0:1:	class=0x020000 card=0x04dd1028 chip=0x163b14e4 rev=0x20 hdr=0x00
+    vendor     = 'Broadcom Inc. and subsidiaries'
+    device     = 'NetXtreme II BCM5716 Gigabit Ethernet'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 64, base 0xc2000000, size 33554432, enabled
+    cap 01[48] = powerspec 3  supports D0 D3  current D0
+    cap 03[50] = VPD
+    cap 05[58] = MSI supports 16 messages, 64 bit enabled with 1 message
+    cap 11[a0] = MSI-X supports 9 messages
+                 Table in map 0x10[0xc000], PBA in map 0x10[0xe000]
+    cap 10[ac] = PCI-Express 2 endpoint max data 128(512) RO NS
+                 link x4(x4) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    ecap 0003[100] = Serial 1 bc305bfffee433df
+    ecap 0001[110] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0004[150] = Power Budgeting 1
+    ecap 0002[160] = VC 1 max VC0
+
+vgapci0@pci0:2:3:0:	class=0x030000 card=0x04dd1028 chip=0x0532102b rev=0x0a hdr=0x00
+    vendor     = 'Matrox Electronics Systems Ltd.'
+    device     = 'MGA G200eW WPCM450'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Prefetchable Memory, range 32, base 0xc4000000, size 8388608, enabled
+    bar   [14] = type Memory, range 32, base 0xc5000000, size 16384, enabled
+    bar   [18] = type Memory, range 32, base 0xc4800000, size 8388608, enabled
+    cap 01[dc] = powerspec 1  supports D0 D3  current D0

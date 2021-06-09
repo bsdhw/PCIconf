@@ -1,0 +1,213 @@
+hostb0@pci0:0:0:0:	class=0x060000 card=0x303717aa chip=0x29b08086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82Q35 Express DRAM Controller'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 09[e0] = vendor (length 11) Intel cap 11 version 1
+
+vgapci0@pci0:0:2:0:	class=0x030000 card=0x303717aa chip=0x29b28086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82Q35 Express Integrated Graphics Controller'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 32, base 0xd0200000, size 524288, enabled
+    bar   [14] = type I/O Port, range 32, base 0x1c70, size 8, enabled
+    bar   [18] = type Prefetchable Memory, range 32, base 0xc0000000, size 268435456, enabled
+    bar   [1c] = type Memory, range 32, base 0xd0000000, size 1048576, enabled
+    cap 05[90] = MSI supports 1 message 
+    cap 01[d0] = powerspec 2  supports D0 D3  current D0
+
+vgapci1@pci0:0:2:1:	class=0x038000 card=0x303717aa chip=0x29b38086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82Q35 Express Integrated Graphics Controller'
+    class      = display
+    bar   [10] = type Memory, range 32, base 0xd0280000, size 524288, enabled
+    cap 01[d0] = powerspec 2  supports D0 D3  current D0
+
+none0@pci0:0:3:0:	class=0x078000 card=0x303717aa chip=0x29b48086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82Q35 Express MEI Controller'
+    class      = simple comms
+    bar   [10] = type Memory, range 64, base 0xd0524000, size 16, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 05[8c] = MSI supports 1 message, 64 bit 
+
+atapci0@pci0:0:3:2:	class=0x010185 card=0x303717aa chip=0x29b68086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82Q35 Express PT IDER Controller'
+    class      = mass storage
+    subclass   = ATA
+    bar   [10] = type I/O Port, range 32, base 0x1c88, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0x1c7c, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0x1c80, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0x1c78, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0x1c20, size 16, enabled
+    cap 01[c8] = powerspec 3  supports D0 D3  current D0
+    cap 05[d0] = MSI supports 1 message, 64 bit 
+
+none1@pci0:0:3:3:	class=0x070002 card=0x303717aa chip=0x29b78086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82Q35 Express Serial KT Controller'
+    class      = simple comms
+    subclass   = UART
+    bar   [10] = type I/O Port, range 32, base 0x1c90, size 8, enabled
+    bar   [14] = type Memory, range 32, base 0xd0526000, size 4096, enabled
+    cap 01[c8] = powerspec 3  supports D0 D3  current D0
+    cap 05[d0] = MSI supports 1 message, 64 bit 
+
+em0@pci0:0:25:0:	class=0x020000 card=0x303717aa chip=0x10bd8086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82566DM-2 Gigabit Network Connection'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xd0300000, size 131072, enabled
+    bar   [14] = type Memory, range 32, base 0xd0527000, size 4096, enabled
+    bar   [18] = type I/O Port, range 32, base 0x1820, size 32, enabled
+    cap 01[c8] = powerspec 2  supports D0 D3  current D0
+    cap 05[d0] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 13[e0] = PCI Advanced Features: FLR TP
+
+uhci0@pci0:0:26:0:	class=0x0c0300 card=0x303717aa chip=0x29378086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801I (ICH9 Family) USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0x1840, size 32, enabled
+    cap 13[50] = PCI Advanced Features: FLR TP
+
+uhci1@pci0:0:26:1:	class=0x0c0300 card=0x303717aa chip=0x29388086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801I (ICH9 Family) USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0x1860, size 32, enabled
+    cap 13[50] = PCI Advanced Features: FLR TP
+
+uhci2@pci0:0:26:2:	class=0x0c0300 card=0x303717aa chip=0x29398086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801I (ICH9 Family) USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0x1880, size 32, enabled
+    cap 13[50] = PCI Advanced Features: FLR TP
+
+ehci0@pci0:0:26:7:	class=0x0c0320 card=0x303717aa chip=0x293c8086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801I (ICH9 Family) USB2 EHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xd0528000, size 1024, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 0a[58] = EHCI Debug Port at offset 0xa0 in map 0x14
+    cap 13[98] = PCI Advanced Features: FLR TP
+
+hdac0@pci0:0:27:0:	class=0x040300 card=0x303717aa chip=0x293e8086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801I (ICH9 Family) HD Audio Controller'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 64, base 0xd0520000, size 16384, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 05[60] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 10[70] = PCI-Express 1 root endpoint max data 128(128) FLR NS
+    ecap 0002[100] = VC 1 max VC1
+    ecap 0005[130] = Root Complex Link Declaration 1
+
+uhci3@pci0:0:29:0:	class=0x0c0300 card=0x303717aa chip=0x29348086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801I (ICH9 Family) USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0x18a0, size 32, enabled
+    cap 13[50] = PCI Advanced Features: FLR TP
+
+uhci4@pci0:0:29:1:	class=0x0c0300 card=0x303717aa chip=0x29358086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801I (ICH9 Family) USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0x18c0, size 32, enabled
+    cap 13[50] = PCI Advanced Features: FLR TP
+
+uhci5@pci0:0:29:2:	class=0x0c0300 card=0x303717aa chip=0x29368086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801I (ICH9 Family) USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0x18e0, size 32, enabled
+    cap 13[50] = PCI Advanced Features: FLR TP
+
+ehci1@pci0:0:29:7:	class=0x0c0320 card=0x303717aa chip=0x293a8086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801I (ICH9 Family) USB2 EHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xd0529000, size 1024, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 0a[58] = EHCI Debug Port at offset 0xa0 in map 0x14
+    cap 13[98] = PCI Advanced Features: FLR TP
+
+pcib1@pci0:0:30:0:	class=0x060401 card=0x303717aa chip=0x244e8086 rev=0x92 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = '82801 PCI Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[50] = PCI Bridge card=0x303717aa
+
+isab0@pci0:0:31:0:	class=0x060100 card=0x303717aa chip=0x29148086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801IO (ICH9DO) LPC Interface Controller'
+    class      = bridge
+    subclass   = PCI-ISA
+    cap 09[e0] = vendor (length 12) Intel cap 1 version 0
+		 features: SATA RAID-5, 4 PCI-e x1 slots
+
+atapci1@pci0:0:31:2:	class=0x01018a card=0x303717aa chip=0x29208086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801IR/IO/IH (ICH9R/DO/DH) 4 port SATA Controller [IDE mode]'
+    class      = mass storage
+    subclass   = ATA
+    bar   [20] = type I/O Port, range 32, base 0x1c40, size 16, enabled
+    bar   [24] = type I/O Port, range 32, base 0x1c30, size 16, enabled
+    cap 01[70] = powerspec 3  supports D0 D3  current D0
+    cap 13[b0] = PCI Advanced Features: FLR TP
+
+none2@pci0:0:31:3:	class=0x0c0500 card=0x303717aa chip=0x29308086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801I (ICH9 Family) SMBus Controller'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [10] = type Memory, range 64, base 0xd052a000, size 256, enabled
+    bar   [20] = type I/O Port, range 32, base 0x1c00, size 32, enabled
+
+atapci2@pci0:0:31:5:	class=0x010185 card=0x303717aa chip=0x29268086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801I (ICH9 Family) 2 port SATA Controller [IDE mode]'
+    class      = mass storage
+    subclass   = ATA
+    bar   [10] = type I/O Port, range 32, base 0x1cc0, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0x1cb4, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0x1cb8, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0x1cb0, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0x1c60, size 16, enabled
+    bar   [24] = type I/O Port, range 32, base 0x1c50, size 16, enabled
+    cap 01[70] = powerspec 3  supports D0 D3  current D0
+    cap 13[b0] = PCI Advanced Features: FLR TP
+
+vr0@pci0:17:10:0:	class=0x020000 card=0x14051186 chip=0x31061106 rev=0x8b hdr=0x00
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VT6105/VT6106S [Rhine-III]'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0x2000, size 256, enabled
+    bar   [14] = type Memory, range 32, base 0xd0100000, size 256, enabled
+    cap 01[44] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+rl0@pci0:17:12:0:	class=0x020000 card=0x813910ec chip=0x813910ec rev=0x10 hdr=0x00
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    device     = 'RTL-8100/8101L/8139 PCI Fast Ethernet Adapter'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0x2400, size 256, enabled
+    bar   [14] = type Memory, range 32, base 0xd0101000, size 256, enabled
+    cap 01[50] = powerspec 2  supports D0 D1 D2 D3  current D0

@@ -1,0 +1,285 @@
+hostb0@pci0:0:0:0:	class=0x060000 card=0x00000000 chip=0x04101106 rev=0x80 hdr=0x00
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VX900 Host Bridge: Host Control'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb1@pci0:0:0:1:	class=0x060000 card=0x00000000 chip=0x14101106 rev=0x00 hdr=0x00
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VX900 Error Reporting'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb2@pci0:0:0:2:	class=0x060000 card=0x00000000 chip=0x24101106 rev=0x00 hdr=0x00
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VX900 CPU Bus Controller'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb3@pci0:0:0:3:	class=0x060000 card=0x00000000 chip=0x34101106 rev=0x00 hdr=0x00
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VX900 DRAM Bus Control'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb4@pci0:0:0:4:	class=0x060000 card=0x00000000 chip=0x44101106 rev=0x00 hdr=0x00
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VX900 Power Management and Chip Testing Control'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb5@pci0:0:0:5:	class=0x060000 card=0x00000000 chip=0x54101106 rev=0x00 hdr=0x00
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VX900 APIC and Central Traffic Control'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb6@pci0:0:0:6:	class=0x060000 card=0x00000000 chip=0x64101106 rev=0x00 hdr=0x00
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VX900 Scratch Registers'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb7@pci0:0:0:7:	class=0x060000 card=0x00000000 chip=0x74101106 rev=0x00 hdr=0x00
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VX900 North-South Module Interface Control'
+    class      = bridge
+    subclass   = HOST-PCI
+
+vgapci0@pci0:0:1:0:	class=0x030000 card=0x71221106 chip=0x71221106 rev=0x00 hdr=0x00
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VX900 Graphics [Chrome9 HD]'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 32, base 0xfc000000, size 16777216, enabled
+    bar   [14] = type Memory, range 32, base 0xfb000000, size 16777216, enabled
+    bar   [18] = type Prefetchable Memory, range 32, base 0xd0000000, size 268435456, enabled
+    cap 01[60] = powerspec 2  supports D0 D1 D2 D3  current D0
+    cap 05[90] = MSI supports 1 message, 64 bit 
+
+hdac0@pci0:0:1:1:	class=0x040300 card=0x91701106 chip=0x91701106 rev=0x00 hdr=0x00
+    vendor     = 'VIA Technologies, Inc.'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 32, base 0xfe028000, size 16384, enabled
+    cap 01[dc] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 05[60] = MSI supports 1 message, 64 bit enabled with 1 message
+
+pcib1@pci0:0:3:0:	class=0x060400 card=0xa4101106 chip=0xa4101106 rev=0x00 hdr=0x01
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VX900 PCI Express Root Port 0'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 1 root port max data 128(256) RO NS
+                 link x1(x8) speed 2.5(2.5) ASPM disabled(L0s/L1)
+                 slot 0 power limit 0 mW surprise
+    cap 01[a0] = powerspec 2  supports D0 D3  current D0
+    cap 05[b0] = MSI supports 1 message, 64 bit, vector masks 
+    cap 0d[e0] = PCI Bridge card=0xa4101106
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0002[140] = VC 1 max VC0
+    ecap 0005[170] = Root Complex Link Declaration 1
+
+pcib2@pci0:0:3:1:	class=0x060400 card=0xb4101106 chip=0xb4101106 rev=0x00 hdr=0x01
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VX900 PCI Express Root Port 1'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 1 root port max data 256(256) RO NS
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+                 slot 0 power limit 0 mW surprise
+    cap 01[a0] = powerspec 2  supports D0 D3  current D0
+    cap 05[b0] = MSI supports 1 message, 64 bit, vector masks 
+    cap 0d[e0] = PCI Bridge card=0xb4101106
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0002[140] = VC 1 max VC0
+    ecap 0005[170] = Root Complex Link Declaration 1
+
+pcib3@pci0:0:3:2:	class=0x060400 card=0xc4101106 chip=0xc4101106 rev=0x00 hdr=0x01
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VX900 PCI Express Root Port 2'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 1 root port max data 256(256) RO NS
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+                 slot 0 power limit 0 mW HotPlug(present) surprise
+    cap 01[a0] = powerspec 2  supports D0 D3  current D0
+    cap 05[b0] = MSI supports 1 message, 64 bit, vector masks enabled with 1 message
+    cap 0d[e0] = PCI Bridge card=0xc4101106
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0002[140] = VC 1 max VC0
+    ecap 0005[170] = Root Complex Link Declaration 1
+
+pcib4@pci0:0:3:3:	class=0x060400 card=0xd4101106 chip=0xd4101106 rev=0x00 hdr=0x01
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VX900 PCI Express Root Port 3'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 1 root port max data 256(256) RO NS
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+                 slot 0 power limit 0 mW surprise
+    cap 01[a0] = powerspec 2  supports D0 D3  current D0
+    cap 05[b0] = MSI supports 1 message, 64 bit, vector masks 
+    cap 0d[e0] = PCI Bridge card=0xd4101106
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 0002[140] = VC 1 max VC0
+    ecap 0005[170] = Root Complex Link Declaration 1
+
+hostb8@pci0:0:3:4:	class=0x060000 card=0x00000000 chip=0xe4101106 rev=0x00 hdr=0x00
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VX900 PCI Express Physical Layer Electrical Sub-block'
+    class      = bridge
+    subclass   = HOST-PCI
+
+atapci0@pci0:0:15:0:	class=0x01018a card=0x90011106 chip=0x90011106 rev=0x00 hdr=0x00
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VX900 Serial ATA Controller'
+    class      = mass storage
+    subclass   = ATA
+    bar   [20] = type I/O Port, range 32, base 0xfc00, size 16, enabled
+    cap 01[b0] = powerspec 2  supports D0 D3  current D0
+
+uhci0@pci0:0:16:0:	class=0x0c0300 card=0x30381106 chip=0x30381106 rev=0xa0 hdr=0x00
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VT82xx/62xx UHCI USB 1.1 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xf800, size 32, enabled
+    cap 01[80] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+uhci1@pci0:0:16:1:	class=0x0c0300 card=0x30381106 chip=0x30381106 rev=0xa0 hdr=0x00
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VT82xx/62xx UHCI USB 1.1 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xf400, size 32, enabled
+    cap 01[80] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+uhci2@pci0:0:16:2:	class=0x0c0300 card=0x30381106 chip=0x30381106 rev=0xa0 hdr=0x00
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VT82xx/62xx UHCI USB 1.1 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xf000, size 32, enabled
+    cap 01[80] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+uhci3@pci0:0:16:3:	class=0x0c0300 card=0x30381106 chip=0x30381106 rev=0xa0 hdr=0x00
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VT82xx/62xx UHCI USB 1.1 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xec00, size 32, enabled
+    cap 01[80] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+ehci0@pci0:0:16:4:	class=0x0c0320 card=0x31041106 chip=0x31041106 rev=0x90 hdr=0x00
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'USB 2.0'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfe02f000, size 256, enabled
+    cap 01[80] = powerspec 2  supports D0 D1 D2 D3  current D0
+    cap 0a[88] = EHCI Debug Port at offset 0xa0 in map 0x14
+
+isab0@pci0:0:17:0:	class=0x060100 card=0x84101106 chip=0x84101106 rev=0x00 hdr=0x00
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VX900 Bus Control and Power Management'
+    class      = bridge
+    subclass   = PCI-ISA
+    cap 01[c0] = powerspec 2  supports D0 D3  current D0
+
+hostb9@pci0:0:17:7:	class=0x060000 card=0xa3531106 chip=0xa3531106 rev=0x00 hdr=0x00
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VX8xx South-North Module Interface Control'
+    class      = bridge
+    subclass   = HOST-PCI
+
+pcib5@pci0:0:19:0:	class=0x060401 card=0xb3531106 chip=0xb3531106 rev=0x00 hdr=0x01
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VX855/VX875/VX900 PCI to PCI Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[70] = PCI Bridge card=0xb3531106
+
+hdac1@pci0:0:20:0:	class=0x040300 card=0x32881106 chip=0x32881106 rev=0x20 hdr=0x00
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VT8237A/VT8251 HDA Controller'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 64, base 0xfe024000, size 16384, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 05[60] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 10[70] = PCI-Express 1 root endpoint max data 128(128)
+    ecap 0002[100] = VC 1 max VC0
+    ecap 0005[130] = Root Complex Link Declaration 1
+
+ath0@pci0:1:0:0:	class=0x028000 card=0x3099168c chip=0x002a168c rev=0x01 hdr=0x00
+    vendor     = 'Qualcomm Atheros'
+    device     = 'AR928X Wireless Network Adapter (PCI-Express)'
+    class      = network
+    bar   [10] = type Memory, range 64, base 0xfdaf0000, size 65536, enabled
+    cap 01[40] = powerspec 2  supports D0 D1 D3  current D0
+    cap 05[50] = MSI supports 1 message 
+    cap 10[60] = PCI-Express 1 legacy endpoint max data 128(128) RO
+                 link x1(x1) speed 2.5(2.5)
+    cap 11[90] = MSI-X supports 1 message
+                 Table in map 0x10[0x0], PBA in map 0x10[0x0]
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 0002[140] = VC 1 max VC0
+    ecap 0003[160] = Serial 1 0000000000000000
+
+re0@pci0:2:0:0:	class=0x020000 card=0x012310ec chip=0x816810ec rev=0x03 hdr=0x00
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    device     = 'RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0xdc00, size 256, enabled
+    bar   [18] = type Prefetchable Memory, range 64, base 0xfdfff000, size 4096, enabled
+    bar   [20] = type Prefetchable Memory, range 64, base 0xfdff8000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit 
+    cap 10[70] = PCI-Express 2 endpoint MSI 1 max data 256(256) RO
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    cap 11[ac] = MSI-X supports 4 messages, enabled
+                 Table in map 0x20[0x0], PBA in map 0x20[0x800]
+    cap 03[cc] = VPD
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0002[140] = VC 1 max VC0
+    ecap 0003[160] = Serial 1 637d0000684ce000
+
+re1@pci0:3:0:0:	class=0x020000 card=0x012310ec chip=0x816810ec rev=0x03 hdr=0x00
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    device     = 'RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0xcc00, size 256, enabled
+    bar   [18] = type Prefetchable Memory, range 64, base 0xfddff000, size 4096, enabled
+    bar   [20] = type Prefetchable Memory, range 64, base 0xfddf8000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit 
+    cap 10[70] = PCI-Express 2 endpoint MSI 1 max data 256(256) RO
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    cap 11[ac] = MSI-X supports 4 messages, enabled
+                 Table in map 0x20[0x0], PBA in map 0x20[0x800]
+    cap 03[cc] = VPD
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0002[140] = VC 1 max VC0
+    ecap 0003[160] = Serial 1 647d0000684ce000
+
+re2@pci0:4:0:0:	class=0x020000 card=0x012310ec chip=0x816810ec rev=0x03 hdr=0x00
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    device     = 'RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0xbc00, size 256, enabled
+    bar   [18] = type Prefetchable Memory, range 64, base 0xfdbff000, size 4096, enabled
+    bar   [20] = type Prefetchable Memory, range 64, base 0xfdbf8000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit 
+    cap 10[70] = PCI-Express 2 endpoint MSI 1 max data 256(256) RO
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    cap 11[ac] = MSI-X supports 4 messages, enabled
+                 Table in map 0x20[0x0], PBA in map 0x20[0x800]
+    cap 03[cc] = VPD
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0002[140] = VC 1 max VC0
+    ecap 0003[160] = Serial 1 657d0000684ce000

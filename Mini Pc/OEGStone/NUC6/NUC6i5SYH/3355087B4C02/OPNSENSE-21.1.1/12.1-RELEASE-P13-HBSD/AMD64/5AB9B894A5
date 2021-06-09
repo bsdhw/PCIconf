@@ -1,0 +1,149 @@
+hostb0@pci0:0:0:0:	class=0x060000 card=0x20638086 chip=0x19048086 rev=0x09 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor Host Bridge/DRAM Registers'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 09[e0] = vendor (length 16) Intel cap 0 version 1
+
+vgapci0@pci0:0:2:0:	class=0x030000 card=0x20638086 chip=0x19268086 rev=0x0a hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Iris Graphics 540'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 64, base 0xde000000, size 16777216, enabled
+    bar   [18] = type Prefetchable Memory, range 64, base 0xc0000000, size 268435456, enabled
+    bar   [20] = type I/O Port, range 32, base 0xf000, size 64, enabled
+    cap 09[40] = vendor (length 12) Intel cap 0 version 1
+    cap 10[70] = PCI-Express 2 root endpoint max data 128(128) FLR
+    cap 05[ac] = MSI supports 1 message 
+    cap 01[d0] = powerspec 2  supports D0 D3  current D0
+    ecap 001b[100] = unknown 1
+    ecap 000f[200] = ATS 1
+    ecap 0013[300] = unknown 1
+
+xhci0@pci0:0:20:0:	class=0x0c0330 card=0x20638086 chip=0x9d2f8086 rev=0x21 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Sunrise Point-LP USB 3.0 xHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 64, base 0xdf130000, size 65536, enabled
+    cap 01[70] = powerspec 2  supports D0 D3  current D0
+    cap 05[80] = MSI supports 8 messages, 64 bit enabled with 1 message
+
+none0@pci0:0:20:2:	class=0x118000 card=0x20638086 chip=0x9d318086 rev=0x21 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Sunrise Point-LP Thermal subsystem'
+    class      = dasp
+    bar   [10] = type Memory, range 64, base 0xdf150000, size 4096, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 05[80] = MSI supports 1 message 
+
+none1@pci0:0:22:0:	class=0x078000 card=0x20638086 chip=0x9d3a8086 rev=0x21 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Sunrise Point-LP CSME HECI'
+    class      = simple comms
+    bar   [10] = type Memory, range 64, base 0xdf14f000, size 4096, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 05[8c] = MSI supports 1 message, 64 bit 
+
+ahci0@pci0:0:23:0:	class=0x010601 card=0x20638086 chip=0x9d038086 rev=0x21 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Sunrise Point-LP SATA Controller [AHCI mode]'
+    class      = mass storage
+    subclass   = SATA
+    bar   [10] = type Memory, range 32, base 0xdf148000, size 8192, enabled
+    bar   [14] = type Memory, range 32, base 0xdf14e000, size 256, enabled
+    bar   [18] = type I/O Port, range 32, base 0xf090, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0xf080, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0xf060, size 32, enabled
+    bar   [24] = type Memory, range 32, base 0xdf14d000, size 2048, enabled
+    cap 05[80] = MSI supports 1 message enabled with 1 message
+    cap 01[70] = powerspec 3  supports D0 D3  current D0
+    cap 12[a8] = SATA Index-Data Pair
+
+pcib1@pci0:0:28:0:	class=0x060400 card=0x20638086 chip=0x9d148086 rev=0xf1 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = 'Sunrise Point-LP PCI Express Root Port'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(256) ARI disabled
+                 link x1(x1) speed 2.5(8.0) ASPM L1(L0s/L1)
+                 slot 8 power limit 100 mW
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge card=0x20638086
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000d[140] = ACS 1
+    ecap 001e[200] = unknown 1
+    ecap 0019[220] = PCIe Sec 1 lane errors 0
+
+none2@pci0:0:30:0:	class=0x118000 card=0x20638086 chip=0x9d278086 rev=0x21 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Sunrise Point-LP Serial IO UART Controller'
+    class      = dasp
+    bar   [10] = type Memory, range 64, base 0xdf14c000, size 4096, enabled
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 09[90] = vendor (length 20) Intel cap 15 version 0
+
+sdhci_pci0@pci0:0:30:6:	class=0x080501 card=0x20638086 chip=0x9d2d8086 rev=0x21 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Sunrise Point-LP Secure Digital IO Controller'
+    class      = base peripheral
+    subclass   = SD host controller
+    bar   [10] = type Memory, range 64, base 0xdf14b000, size 4096, enabled
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 09[90] = vendor (length 20) Intel cap 15 version 0
+
+isab0@pci0:0:31:0:	class=0x060100 card=0x20638086 chip=0x9d488086 rev=0x21 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Sunrise Point-LP LPC Controller'
+    class      = bridge
+    subclass   = PCI-ISA
+
+none3@pci0:0:31:2:	class=0x058000 card=0x20638086 chip=0x9d218086 rev=0x21 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Sunrise Point-LP PMC'
+    class      = memory
+    bar   [10] = type Memory, range 32, base 0xdf144000, size 16384, enabled
+
+hdac0@pci0:0:31:3:	class=0x040300 card=0x20638086 chip=0x9d708086 rev=0x21 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Sunrise Point-LP HD Audio'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 64, base 0xdf140000, size 16384, enabled
+    bar   [20] = type Memory, range 64, base 0xdf120000, size 65536, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 05[60] = MSI supports 1 message, 64 bit enabled with 1 message
+
+none4@pci0:0:31:4:	class=0x0c0500 card=0x20638086 chip=0x9d238086 rev=0x21 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Sunrise Point-LP SMBus'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [10] = type Memory, range 64, base 0xdf14a000, size 256, enabled
+    bar   [20] = type I/O Port, range 32, base 0xf040, size 32, enabled
+
+em0@pci0:0:31:6:	class=0x020000 card=0x20638086 chip=0x15708086 rev=0x21 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Ethernet Connection I219-V'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xdf100000, size 131072, enabled
+    cap 01[c8] = powerspec 3  supports D0 D3  current D0
+    cap 05[d0] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 13[e0] = PCI Advanced Features: FLR TP
+
+iwm0@pci0:1:0:0:	class=0x028000 card=0x90108086 chip=0x24f38086 rev=0x3a hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Wireless 8260'
+    class      = network
+    bar   [10] = type Memory, range 64, base 0xdf000000, size 8192, enabled
+    cap 01[c8] = powerspec 3  supports D0 D3  current D0
+    cap 05[d0] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 10[40] = PCI-Express 2 endpoint max data 128(128) FLR RO NS
+                 link x1(x1) speed 2.5(2.5) ASPM L1(L1)
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 0003[140] = Serial 1 00c2c6ffffcbbce5
+    ecap 0018[14c] = LTR 1
+    ecap 001e[154] = unknown 1

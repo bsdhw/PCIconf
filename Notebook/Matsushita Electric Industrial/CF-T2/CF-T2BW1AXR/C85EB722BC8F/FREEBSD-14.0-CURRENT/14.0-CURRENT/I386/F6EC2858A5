@@ -1,0 +1,128 @@
+hostb0@pci0:0:0:0:	class=0x060000 rev=0x02 hdr=0x00 vendor=0x8086 device=0x3580 subvendor=0x10f7 subdevice=0x8338
+    vendor     = 'Intel Corporation'
+    device     = '82852/82855 GM/GME/PM/GMV Processor to I/O Controller'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 09[40] = vendor (length 5) Intel cap 10 version 1
+
+none0@pci0:0:0:1:	class=0x088000 rev=0x02 hdr=0x00 vendor=0x8086 device=0x3584 subvendor=0x10f7 subdevice=0x8338
+    vendor     = 'Intel Corporation'
+    device     = '82852/82855 GM/GME/PM/GMV Processor to I/O Controller'
+    class      = base peripheral
+
+none1@pci0:0:0:3:	class=0x088000 rev=0x02 hdr=0x00 vendor=0x8086 device=0x3585 subvendor=0x10f7 subdevice=0x8338
+    vendor     = 'Intel Corporation'
+    device     = '82852/82855 GM/GME/PM/GMV Processor to I/O Controller'
+    class      = base peripheral
+
+vgapci0@pci0:0:2:0:	class=0x030000 rev=0x02 hdr=0x00 vendor=0x8086 device=0x3582 subvendor=0x10f7 subdevice=0x8338
+    vendor     = 'Intel Corporation'
+    device     = '82852/855GM Integrated Graphics Device'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Prefetchable Memory, range 32, base 0xe8000000, size 134217728, enabled
+    bar   [14] = type Memory, range 32, base 0xe0000000, size 524288, enabled
+    bar   [18] = type I/O Port, range 32, base 0x1800, size 8, enabled
+    cap 01[d0] = powerspec 1  supports D0 D1 D3  current D0
+
+vgapci1@pci0:0:2:1:	class=0x038000 rev=0x02 hdr=0x00 vendor=0x8086 device=0x3582 subvendor=0x10f7 subdevice=0x8338
+    vendor     = 'Intel Corporation'
+    device     = '82852/855GM Integrated Graphics Device'
+    class      = display
+    bar   [10] = type Prefetchable Memory, range 32, base 0xf0000000, size 134217728, enabled
+    bar   [14] = type Memory, range 32, base 0xe0080000, size 524288, enabled
+    cap 01[d0] = powerspec 1  supports D0 D1 D3  current D0
+
+uhci0@pci0:0:29:0:	class=0x0c0300 rev=0x03 hdr=0x00 vendor=0x8086 device=0x24c2 subvendor=0x10f7 subdevice=0x8338
+    vendor     = 'Intel Corporation'
+    device     = '82801DB/DBL/DBM (ICH4/ICH4-L/ICH4-M) USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0x1820, size 32, enabled
+
+ehci0@pci0:0:29:7:	class=0x0c0320 rev=0x03 hdr=0x00 vendor=0x8086 device=0x24cd subvendor=0x10f7 subdevice=0x8338
+    vendor     = 'Intel Corporation'
+    device     = '82801DB/DBM (ICH4/ICH4-M) USB2 EHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xe0100000, size 1024, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 0a[58] = EHCI Debug Port at offset 0x80 in map 0x14
+
+pcib1@pci0:0:30:0:	class=0x060400 rev=0x83 hdr=0x01 vendor=0x8086 device=0x2448 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = '82801 Mobile PCI Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+
+isab0@pci0:0:31:0:	class=0x060100 rev=0x03 hdr=0x00 vendor=0x8086 device=0x24cc subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = '82801DBM (ICH4-M) LPC Interface Bridge'
+    class      = bridge
+    subclass   = PCI-ISA
+
+atapci0@pci0:0:31:1:	class=0x01018a rev=0x03 hdr=0x00 vendor=0x8086 device=0x24ca subvendor=0x10f7 subdevice=0x8338
+    vendor     = 'Intel Corporation'
+    device     = '82801DBM (ICH4-M) IDE Controller'
+    class      = mass storage
+    subclass   = ATA
+    bar   [20] = type I/O Port, range 32, base 0x1810, size 16, enabled
+    bar   [24] = type Memory, range 32, base 0, size 1024, disabled
+
+ichsmb0@pci0:0:31:3:	class=0x0c0500 rev=0x03 hdr=0x00 vendor=0x8086 device=0x24c3 subvendor=0x10f7 subdevice=0x8338
+    vendor     = 'Intel Corporation'
+    device     = '82801DB/DBL/DBM (ICH4/ICH4-L/ICH4-M) SMBus Controller'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [20] = type I/O Port, range 32, base 0x1100, size 32, enabled
+
+pcm0@pci0:0:31:5:	class=0x040100 rev=0x03 hdr=0x00 vendor=0x8086 device=0x24c5 subvendor=0x10f7 subdevice=0x8346
+    vendor     = 'Intel Corporation'
+    device     = '82801DB/DBL/DBM (ICH4/ICH4-L/ICH4-M) AC'97 Audio Controller'
+    class      = multimedia
+    subclass   = audio
+    bar   [10] = type I/O Port, range 32, base 0x1c00, size 256, enabled
+    bar   [14] = type I/O Port, range 32, base 0x1880, size 64, enabled
+    bar   [18] = type Memory, range 32, base 0xe0100c00, size 512, enabled
+    bar   [1c] = type Memory, range 32, base 0xe0100800, size 256, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+
+none2@pci0:0:31:6:	class=0x070300 rev=0x03 hdr=0x00 vendor=0x8086 device=0x24c6 subvendor=0x10f7 subdevice=0x834b
+    vendor     = 'Intel Corporation'
+    device     = '82801DB/DBL/DBM (ICH4/ICH4-L/ICH4-M) AC'97 Modem Controller'
+    class      = simple comms
+    subclass   = generic modem
+    bar   [10] = type I/O Port, range 32, base 0x2400, size 256, enabled
+    bar   [14] = type I/O Port, range 32, base 0x2000, size 128, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+
+rl0@pci0:1:1:0:	class=0x020000 rev=0x10 hdr=0x00 vendor=0x10ec device=0x8139 subvendor=0x10f7 subdevice=0x8338
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    device     = 'RTL-8100/8101L/8139 PCI Fast Ethernet Adapter'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0x3000, size 256, enabled
+    bar   [14] = type Memory, range 32, base 0xe0201000, size 256, enabled
+    cap 01[50] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+iwi0@pci0:1:4:0:	class=0x028000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x4223 subvendor=0x8086 subdevice=0x1002
+    vendor     = 'Intel Corporation'
+    device     = 'PRO/Wireless 2915ABG [Calexico2] Network Connection'
+    class      = network
+    bar   [10] = type Memory, range 32, base 0xe0200000, size 4096, enabled
+    cap 01[dc] = powerspec 2  supports D0 D3  current D0
+
+cbb0@pci0:1:5:0:	class=0x060700 rev=0x88 hdr=0x02 vendor=0x1180 device=0x0475 subvendor=0x10f7 subdevice=0x8338
+    vendor     = 'Ricoh Co Ltd'
+    device     = 'RL5c475'
+    class      = bridge
+    subclass   = PCI-CardBus
+    bar   [10] = type Memory, range 32, base 0xe0202000, size 4096, enabled
+    cap 01[dc] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+none3@pci0:1:5:1:	class=0x088000 rev=0x00 hdr=0x00 vendor=0x1180 device=0x0575 subvendor=0x10f7 subdevice=0x8338
+    vendor     = 'Ricoh Co Ltd'
+    device     = 'R5C575 SD Bus Host Adapter'
+    class      = base peripheral
+    bar   [10] = type Memory, range 32, base 0xe0201400, size 256, enabled
+    cap 01[80] = powerspec 2  supports D0 D1 D2 D3  current D0

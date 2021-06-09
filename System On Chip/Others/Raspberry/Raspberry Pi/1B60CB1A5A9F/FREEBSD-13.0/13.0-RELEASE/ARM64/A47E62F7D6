@@ -1,0 +1,22 @@
+none0@pci0:0:1:0:	class=0x040300 rev=0x00 hdr=0x00 vendor=0x8086 device=0x293e subvendor=0x1ab8 subdevice=0x0400
+    vendor     = 'Intel Corporation'
+    device     = '82801I (ICH9 Family) HD Audio Controller'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 32, base 0x10000000, size 16384, enabled
+    cap 05[60] = MSI supports 1 message, vector masks 
+
+ehci0@pci0:0:2:0:	class=0x0c0320 rev=0x02 hdr=0x00 vendor=0x8086 device=0x265c subvendor=0x1ab8 subdevice=0x0400
+    vendor     = 'Intel Corporation'
+    device     = '82801FB/FBM/FR/FW/FRW (ICH6 Family) USB2 EHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0x10005000, size 1024, enabled
+
+xhci0@pci0:0:3:0:	class=0x0c0330 rev=0x04 hdr=0x00 vendor=0x1033 device=0x0194 subvendor=0x1ab8 subdevice=0x0400
+    vendor     = 'NEC Corporation'
+    device     = 'uPD720200 USB 3.0 Host Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0x10004000, size 4096, enabled
+    cap 05[e0] = MSI supports 1 message, vector masks 

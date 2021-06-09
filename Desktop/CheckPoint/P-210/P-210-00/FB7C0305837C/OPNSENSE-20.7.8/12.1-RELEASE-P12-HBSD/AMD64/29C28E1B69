@@ -1,0 +1,381 @@
+hostb0@pci0:0:0:0:	class=0x060000 card=0xd1318086 chip=0xd1318086 rev=0x11 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Core Processor DMI'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 00[40] = unknown
+
+pcib1@pci0:0:3:0:	class=0x060400 card=0xd1388086 chip=0xd1388086 rev=0x11 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = 'Core Processor PCI Express Root Port 1'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge card=0xd1388086
+    cap 05[60] = MSI supports 2 messages, vector masks 
+    cap 10[90] = PCI-Express 2 root port max data 128(256) ARI disabled
+                 link x8(x8) speed 2.5(5.0) ASPM disabled(L0s/L1)
+    cap 01[e0] = powerspec 3  supports D0 D3  current D0
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000d[150] = ACS 1
+    ecap 000b[160] = Vendor 0pcib2@pci0:0:5:0:	class=0x060400 card=0xd13a8086 chip=0xd13a8086 rev=0x11 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = 'Core Processor PCI Express Root Port 3'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge card=0xd13a8086
+    cap 05[60] = MSI supports 2 messages, vector masks 
+    cap 10[90] = PCI-Express 2 root port max data 128(256) ARI disabled
+                 link x0(x8) speed 0.0(5.0) ASPM disabled(L0s/L1)
+    cap 01[e0] = powerspec 3  supports D0 D3  current D0
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000d[150] = ACS 1
+    ecap 0000[160] = unknown 0
+
+none0@pci0:0:8:0:	class=0x088000 card=0x00550086 chip=0xd1558086 rev=0x11 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Core Processor System Management Registers'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+                 link x0(x0) ASPM disabled(L0s)
+    ecap 000b[100] = Vendor 0none1@pci0:0:8:1:	class=0x088000 card=0x00560086 chip=0xd1568086 rev=0x11 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Core Processor Semaphore and Scratchpad Registers'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+                 link x0(x0) ASPM disabled(L0s)
+    ecap 000b[100] = Vendor 0none2@pci0:0:8:2:	class=0x088000 card=0x00570086 chip=0xd1578086 rev=0x11 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Core Processor System Control and Status Registers'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+                 link x0(x0) ASPM disabled(L0s)
+    ecap 000b[100] = Vendor 0none3@pci0:0:8:3:	class=0x088000 card=0x00580086 chip=0xd1588086 rev=0x11 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Core Processor Miscellaneous Registers'
+    class      = base peripheral
+
+none4@pci0:0:16:0:	class=0x088000 card=0x00500086 chip=0xd1508086 rev=0x11 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Core Processor QPI Link'
+    class      = base peripheral
+
+none5@pci0:0:16:1:	class=0x088000 card=0x00510086 chip=0xd1518086 rev=0x11 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Core Processor QPI Routing and Protocol Registers'
+    class      = base peripheral
+
+pcib3@pci0:0:28:0:	class=0x060400 card=0x3b428086 chip=0x3b428086 rev=0x06 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = '5 Series/3400 Series Chipset PCI Express Root Port 1'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128)
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+                 slot 128 power limit 10000 mW HotPlug(present) surprise
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge card=0x3b428086
+    cap 01[a0] = powerspec 2  supports D0 D3  current D0
+
+pcib4@pci0:0:28:1:	class=0x060400 card=0x3b448086 chip=0x3b448086 rev=0x06 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = '5 Series/3400 Series Chipset PCI Express Root Port 2'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128)
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+                 slot 129 power limit 10000 mW HotPlug(present) surprise
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge card=0x3b448086
+    cap 01[a0] = powerspec 2  supports D0 D3  current D0
+
+pcib5@pci0:0:28:2:	class=0x060400 card=0x3b468086 chip=0x3b468086 rev=0x06 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = '5 Series/3400 Series Chipset PCI Express Root Port 3'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128)
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+                 slot 130 power limit 10000 mW HotPlug(present) surprise
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge card=0x3b468086
+    cap 01[a0] = powerspec 2  supports D0 D3  current D0
+
+pcib6@pci0:0:28:3:	class=0x060400 card=0x3b488086 chip=0x3b488086 rev=0x06 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = '5 Series/3400 Series Chipset PCI Express Root Port 4'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128)
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+                 slot 131 power limit 10000 mW HotPlug(present) surprise
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge card=0x3b488086
+    cap 01[a0] = powerspec 2  supports D0 D3  current D0
+
+pcib7@pci0:0:28:4:	class=0x060400 card=0x3b4a8086 chip=0x3b4a8086 rev=0x06 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = '5 Series/3400 Series Chipset PCI Express Root Port 5'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128)
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+                 slot 132 power limit 10000 mW HotPlug(present) surprise
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge card=0x3b4a8086
+    cap 01[a0] = powerspec 2  supports D0 D3  current D0
+
+pcib8@pci0:0:28:5:	class=0x060400 card=0x3b4c8086 chip=0x3b4c8086 rev=0x06 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = '5 Series/3400 Series Chipset PCI Express Root Port 6'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128)
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+                 slot 133 power limit 10000 mW HotPlug(present) surprise
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge card=0x3b4c8086
+    cap 01[a0] = powerspec 2  supports D0 D3  current D0
+
+pcib9@pci0:0:28:6:	class=0x060400 card=0x3b4e8086 chip=0x3b4e8086 rev=0x06 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = '5 Series/3400 Series Chipset PCI Express Root Port 7'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128)
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+                 slot 134 power limit 10000 mW HotPlug(present) surprise
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge card=0x3b4e8086
+    cap 01[a0] = powerspec 2  supports D0 D3  current D0
+
+pcib10@pci0:0:28:7:	class=0x060400 card=0x3b508086 chip=0x3b508086 rev=0x06 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = '5 Series/3400 Series Chipset PCI Express Root Port 8'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128)
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+                 slot 135 power limit 10000 mW HotPlug(present) surprise
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge card=0x3b508086
+    cap 01[a0] = powerspec 2  supports D0 D3  current D0
+
+ehci0@pci0:0:29:0:	class=0x0c0320 card=0x3b348086 chip=0x3b348086 rev=0x06 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '5 Series/3400 Series Chipset USB2 Enhanced Host Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfb6fc000, size 1024, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 0a[58] = EHCI Debug Port at offset 0xa0 in map 0x14
+    cap 13[98] = PCI Advanced Features: FLR TP
+
+pcib11@pci0:0:30:0:	class=0x060401 card=0x244e8086 chip=0x244e8086 rev=0xa6 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = '82801 PCI Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[50] = PCI Bridge card=0x244e8086
+
+isab0@pci0:0:31:0:	class=0x060100 card=0x3b168086 chip=0x3b168086 rev=0x06 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '3450 Chipset LPC Interface Controller'
+    class      = bridge
+    subclass   = PCI-ISA
+    cap 09[e0] = vendor (length 16) Intel cap 1 version 1
+
+ahci0@pci0:0:31:2:	class=0x010601 card=0x3b228086 chip=0x3b228086 rev=0x06 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '5 Series/3400 Series Chipset 6 port SATA AHCI Controller'
+    class      = mass storage
+    subclass   = SATA
+    bar   [10] = type I/O Port, range 32, base 0x5c00, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0x5880, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0x5800, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0x5480, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0x5400, size 32, enabled
+    bar   [24] = type Memory, range 32, base 0xfb6fa000, size 2048, enabled
+    cap 05[80] = MSI supports 1 message enabled with 1 message
+    cap 01[70] = powerspec 3  supports D0 D3  current D0
+    cap 12[a8] = SATA Index-Data Pair
+    cap 13[b0] = PCI Advanced Features: FLR TP
+
+none6@pci0:0:31:3:	class=0x0c0500 card=0x3b308086 chip=0x3b308086 rev=0x06 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '5 Series/3400 Series Chipset SMBus Controller'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [10] = type Memory, range 64, base 0xfb6ff800, size 256, enabled
+    bar   [20] = type I/O Port, range 32, base 0x400, size 32, enabled
+
+ix0@pci0:1:0:0:	class=0x020000 card=0x02031374 chip=0x10c68086 rev=0x01 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82598EB 10-Gigabit AF Dual Port Network Connection'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xfb7e0000, size 131072, enabled
+    bar   [14] = type Memory, range 32, base 0xfb780000, size 262144, enabled
+    bar   [18] = type I/O Port, range 32, base 0x6c00, size 32, enabled
+    bar   [1c] = type Memory, range 32, base 0xfb7dc000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit 
+    cap 11[60] = MSI-X supports 18 messages, enabled
+                 Table in map 0x1c[0x0], PBA in map 0x1c[0x2000]
+    cap 10[a0] = PCI-Express 2 endpoint max data 128(256) RO NS
+                 link x8(x8) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 001c7fffff3f3aaf
+
+ix1@pci0:1:0:1:	class=0x020000 card=0x02031374 chip=0x10c68086 rev=0x01 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82598EB 10-Gigabit AF Dual Port Network Connection'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xfb760000, size 131072, enabled
+    bar   [14] = type Memory, range 32, base 0xfb700000, size 262144, enabled
+    bar   [18] = type I/O Port, range 32, base 0x6880, size 32, enabled
+    bar   [1c] = type Memory, range 32, base 0xfb7d8000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit 
+    cap 11[60] = MSI-X supports 18 messages, enabled
+                 Table in map 0x1c[0x0], PBA in map 0x1c[0x2000]
+    cap 10[a0] = PCI-Express 2 endpoint max data 128(256) RO NS
+                 link x8(x8) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 001c7fffff3f3aaf
+
+em0@pci0:3:0:0:	class=0x020000 card=0x000015bb chip=0x10d38086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82574L Gigabit Network Connection'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xfb8e0000, size 131072, enabled
+    bar   [18] = type I/O Port, range 32, base 0x7c00, size 32, enabled
+    bar   [1c] = type Memory, range 32, base 0xfb8dc000, size 16384, enabled
+    cap 01[c8] = powerspec 2  supports D0 D3  current D0
+    cap 05[d0] = MSI supports 1 message, 64 bit 
+    cap 10[e0] = PCI-Express 1 endpoint max data 128(256) RO NS
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    cap 11[a0] = MSI-X supports 5 messages, enabled
+                 Table in map 0x1c[0x0], PBA in map 0x1c[0x2000]
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 001c7fffff3044f8
+
+em1@pci0:4:0:0:	class=0x020000 card=0x000015bb chip=0x10d38086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82574L Gigabit Network Connection'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xfb9e0000, size 131072, enabled
+    bar   [18] = type I/O Port, range 32, base 0x8c00, size 32, enabled
+    bar   [1c] = type Memory, range 32, base 0xfb9dc000, size 16384, enabled
+    cap 01[c8] = powerspec 2  supports D0 D3  current D0
+    cap 05[d0] = MSI supports 1 message, 64 bit 
+    cap 10[e0] = PCI-Express 1 endpoint max data 128(256) RO NS
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    cap 11[a0] = MSI-X supports 5 messages, enabled
+                 Table in map 0x1c[0x0], PBA in map 0x1c[0x2000]
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 001c7fffff3044f9
+
+em2@pci0:5:0:0:	class=0x020000 card=0x000015bb chip=0x10d38086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82574L Gigabit Network Connection'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xfbae0000, size 131072, enabled
+    bar   [18] = type I/O Port, range 32, base 0x9c00, size 32, enabled
+    bar   [1c] = type Memory, range 32, base 0xfbadc000, size 16384, enabled
+    cap 01[c8] = powerspec 2  supports D0 D3  current D0
+    cap 05[d0] = MSI supports 1 message, 64 bit 
+    cap 10[e0] = PCI-Express 1 endpoint max data 128(256) RO NS
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    cap 11[a0] = MSI-X supports 5 messages, enabled
+                 Table in map 0x1c[0x0], PBA in map 0x1c[0x2000]
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 001c7fffff3044fa
+
+em3@pci0:6:0:0:	class=0x020000 card=0x000015bb chip=0x10d38086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82574L Gigabit Network Connection'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xfbbe0000, size 131072, enabled
+    bar   [18] = type I/O Port, range 32, base 0xac00, size 32, enabled
+    bar   [1c] = type Memory, range 32, base 0xfbbdc000, size 16384, enabled
+    cap 01[c8] = powerspec 2  supports D0 D3  current D0
+    cap 05[d0] = MSI supports 1 message, 64 bit 
+    cap 10[e0] = PCI-Express 1 endpoint max data 128(256) RO NS
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    cap 11[a0] = MSI-X supports 5 messages, enabled
+                 Table in map 0x1c[0x0], PBA in map 0x1c[0x2000]
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 001c7fffff3044fb
+
+em4@pci0:7:0:0:	class=0x020000 card=0x000015bb chip=0x10d38086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82574L Gigabit Network Connection'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xfbce0000, size 131072, enabled
+    bar   [18] = type I/O Port, range 32, base 0xbc00, size 32, enabled
+    bar   [1c] = type Memory, range 32, base 0xfbcdc000, size 16384, enabled
+    cap 01[c8] = powerspec 2  supports D0 D3  current D0
+    cap 05[d0] = MSI supports 1 message, 64 bit 
+    cap 10[e0] = PCI-Express 1 endpoint max data 128(256) RO NS
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    cap 11[a0] = MSI-X supports 5 messages, enabled
+                 Table in map 0x1c[0x0], PBA in map 0x1c[0x2000]
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 001c7fffff3044fc
+
+em5@pci0:8:0:0:	class=0x020000 card=0x000015bb chip=0x10d38086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82574L Gigabit Network Connection'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xfbde0000, size 131072, enabled
+    bar   [18] = type I/O Port, range 32, base 0xcc00, size 32, enabled
+    bar   [1c] = type Memory, range 32, base 0xfbddc000, size 16384, enabled
+    cap 01[c8] = powerspec 2  supports D0 D3  current D0
+    cap 05[d0] = MSI supports 1 message, 64 bit 
+    cap 10[e0] = PCI-Express 1 endpoint max data 128(256) RO NS
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    cap 11[a0] = MSI-X supports 5 messages, enabled
+                 Table in map 0x1c[0x0], PBA in map 0x1c[0x2000]
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 001c7fffff3044fd
+
+em6@pci0:9:0:0:	class=0x020000 card=0x000015bb chip=0x10d38086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82574L Gigabit Network Connection'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xfbee0000, size 131072, enabled
+    bar   [18] = type I/O Port, range 32, base 0xdc00, size 32, enabled
+    bar   [1c] = type Memory, range 32, base 0xfbedc000, size 16384, enabled
+    cap 01[c8] = powerspec 2  supports D0 D3  current D0
+    cap 05[d0] = MSI supports 1 message, 64 bit 
+    cap 10[e0] = PCI-Express 1 endpoint max data 128(256) RO NS
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    cap 11[a0] = MSI-X supports 5 messages, enabled
+                 Table in map 0x1c[0x0], PBA in map 0x1c[0x2000]
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 001c7fffff3044fe
+
+em7@pci0:10:0:0:	class=0x020000 card=0x000015bb chip=0x10d38086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82574L Gigabit Network Connection'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xfbfe0000, size 131072, enabled
+    bar   [18] = type I/O Port, range 32, base 0xec00, size 32, enabled
+    bar   [1c] = type Memory, range 32, base 0xfbfdc000, size 16384, enabled
+    cap 01[c8] = powerspec 2  supports D0 D3  current D0
+    cap 05[d0] = MSI supports 1 message, 64 bit 
+    cap 10[e0] = PCI-Express 1 endpoint max data 128(256) RO NS
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    cap 11[a0] = MSI-X supports 5 messages, enabled
+                 Table in map 0x1c[0x0], PBA in map 0x1c[0x2000]
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 001c7fffff3044ff

@@ -1,0 +1,35 @@
+pcib1@pci0:0:0:0:	class=0x060400 rev=0x00 hdr=0x01 vendor=0x1d87 device=0x0100 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Fuzhou Rockchip Electronics Co., Ltd'
+    device     = 'RK3399 PCI Express Root Port'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[80] = powerspec 3  supports D0 D1 D3  current D0
+    cap 05[90] = MSI supports 1 message, 64 bit, vector masks 
+    cap 11[b0] = MSI-X supports 1 message
+                 Table in map 0x10[0x0], PBA in map 0x10[0x8]
+    cap 10[c0] = PCI-Express 2 root port max data 128(256) RO NS ARI disabled
+                 max read 128
+                 link x4(x4) speed 5.0(5.0) ASPM disabled(L0s/L1)
+                 slot 0 power limit 0 mW
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 0017[274] = TPH Requester 1
+
+nvme0@pci0:1:0:0:	class=0x010802 rev=0x01 hdr=0x00 vendor=0x15b7 device=0x5009 subvendor=0x15b7 subdevice=0x5009
+    vendor     = 'Sandisk Corp'
+    device     = 'WD Blue SN550 NVMe SSD'
+    class      = mass storage
+    subclass   = NVM
+    bar   [10] = type Memory, range 64, base 0xfa000000, size 16384, enabled
+    bar   [20] = type Memory, range 64, base 0xfa004000, size 256, enabled
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 05[90] = MSI supports 32 messages, 64 bit 
+    cap 11[b0] = MSI-X supports 17 messages, enabled
+                 Table in map 0x10[0x2000], PBA in map 0x20[0x0]
+    cap 10[c0] = PCI-Express 2 endpoint max data 128(512) FLR RO NS
+                 max read 512
+                 link x4(x4) speed 5.0(8.0) ASPM disabled(L1) ClockPM disabled
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 3 corrected
+    ecap 0003[150] = Serial 1 0000000000000000
+    ecap 0018[1b8] = LTR 1
+    ecap 0019[300] = PCIe Sec 1 lane errors 0
+    ecap 001e[900] = L1 PM Substates 1

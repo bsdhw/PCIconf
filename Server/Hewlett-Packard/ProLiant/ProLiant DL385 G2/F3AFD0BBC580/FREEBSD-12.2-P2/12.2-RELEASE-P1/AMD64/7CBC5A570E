@@ -1,0 +1,423 @@
+vgapci0@pci0:0:3:0:	class=0x030000 card=0x31fb103c chip=0x515e1002 rev=0x02 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'ES1000'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Prefetchable Memory, range 32, base 0xe8000000, size 134217728, enabled
+    bar   [14] = type I/O Port, range 32, base 0x1000, size 256, enabled
+    bar   [18] = type Memory, range 32, base 0xf5ff0000, size 65536, enabled
+    cap 01[50] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+none0@pci0:0:4:0:	class=0x088000 card=0x3305103c chip=0xb2030e11 rev=0x03 hdr=0x00
+    vendor     = 'Compaq Computer Corporation'
+    device     = 'Integrated Lights Out Controller'
+    class      = base peripheral
+    bar   [10] = type I/O Port, range 32, base 0x2800, size 256, enabled
+    bar   [14] = type Memory, range 32, base 0xf5fe0000, size 512, enabled
+    cap 01[f0] = powerspec 3  supports D0 D3  current D0
+
+none1@pci0:0:4:2:	class=0x088000 card=0x3305103c chip=0xb2040e11 rev=0x03 hdr=0x00
+    vendor     = 'Compaq Computer Corporation'
+    device     = 'Integrated Lights Out  Processor'
+    class      = base peripheral
+    bar   [10] = type I/O Port, range 32, base 0x1400, size 256, enabled
+    bar   [14] = type Memory, range 32, base 0xf5fd0000, size 2048, enabled
+    bar   [18] = type Memory, range 32, base 0xf5fc0000, size 16384, enabled
+    bar   [1c] = type Memory, range 32, base 0xf5f00000, size 524288, enabled
+    cap 01[f0] = powerspec 3  supports D0 D3  current D0
+
+uhci0@pci0:0:4:4:	class=0x0c0300 card=0x3305103c chip=0x3300103c rev=0x00 hdr=0x00
+    vendor     = 'Hewlett-Packard Company'
+    device     = 'Integrated Lights-Out Standard Virtual USB Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0x1800, size 32, enabled
+    cap 01[f0] = powerspec 3  supports D0 D3  current D0
+
+none2@pci0:0:4:6:	class=0x0c0701 card=0x3305103c chip=0x3302103c rev=0x00 hdr=0x00
+    vendor     = 'Hewlett-Packard Company'
+    device     = 'Integrated Lights-Out Standard KCS Interface'
+    class      = serial bus
+    subclass   = IPMI
+    bar   [10] = type Memory, range 32, base 0xf5ef0000, size 256, enabled
+    cap 01[f0] = powerspec 3  supports D0 D3  current D0
+
+pcib1@pci0:0:5:0:	class=0x060400 card=0x3110103c chip=0x00361166 rev=0x00 hdr=0x01
+    vendor     = 'Broadcom'
+    device     = 'BCM5785 [HT1000] PCI/PCI-X Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 07[90] = PCI-X bridge 
+    cap 08[a0] = HT MSI address window enabled at 0xfee00000
+    cap 08[b0] = HT slave
+    cap 0d[d8] = PCI Bridge card=0x3110103c
+
+hostb0@pci0:0:6:0:	class=0x060000 card=0x02011166 chip=0x02051166 rev=0x00 hdr=0x00
+    vendor     = 'Broadcom'
+    device     = 'BCM5785 [HT1000] Legacy South Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+atapci0@pci0:0:6:1:	class=0x01018a card=0x320b103c chip=0x02141166 rev=0x00 hdr=0x00
+    vendor     = 'Broadcom'
+    device     = 'BCM5785 [HT1000] IDE'
+    class      = mass storage
+    subclass   = ATA
+    bar   [20] = type I/O Port, range 32, base 0x500, size 16, enabled
+    cap 01[b0] = powerspec 2  supports D0 D3  current D0
+
+isab0@pci0:0:6:2:	class=0x060100 card=0x02301166 chip=0x02341166 rev=0x00 hdr=0x00
+    vendor     = 'Broadcom'
+    device     = 'BCM5785 [HT1000] LPC'
+    class      = bridge
+    subclass   = PCI-ISA
+
+ohci0@pci0:0:7:0:	class=0x0c0310 card=0x320c103c chip=0x02231166 rev=0x01 hdr=0x00
+    vendor     = 'Broadcom'
+    device     = 'BCM5785 [HT1000] USB'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xf5ee0000, size 4096, enabled
+    bar   [14] = type I/O Port, range 32, base 0x1c00, size 256, enabled
+    cap 01[dc] = powerspec 2  supports D0 D3  current D0
+
+ohci1@pci0:0:7:1:	class=0x0c0310 card=0x320c103c chip=0x02231166 rev=0x01 hdr=0x00
+    vendor     = 'Broadcom'
+    device     = 'BCM5785 [HT1000] USB'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xf5ed0000, size 4096, enabled
+    bar   [14] = type I/O Port, range 32, base 0x3000, size 256, enabled
+    cap 01[dc] = powerspec 2  supports D0 D3  current D0
+
+ehci0@pci0:0:7:2:	class=0x0c0320 card=0x320d103c chip=0x02231166 rev=0x01 hdr=0x00
+    vendor     = 'Broadcom'
+    device     = 'BCM5785 [HT1000] USB'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xf5ec0000, size 4096, enabled
+    bar   [14] = type I/O Port, range 32, base 0x3400, size 256, enabled
+    cap 01[dc] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+pcib3@pci0:0:15:0:	class=0x060400 card=0x3113103c chip=0x01401166 rev=0xa2 hdr=0x01
+    vendor     = 'Broadcom'
+    device     = 'HT2100 PCI-Express Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 08[a0] = HT MSI address window enabled at 0xfee00000
+    cap 10[b0] = PCI-Express 1 root port max data 256(512) RO NS
+                 link x8(x16) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    cap 01[98] = powerspec 3  supports D0 D3  current D0
+    cap 05[80] = MSI supports 2 messages, 64 bit 
+    cap 0d[78] = PCI Bridge card=0x3113103c
+    cap 08[50] = HT slave
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000b[200] = Vendor 1 ID 1
+
+pcib5@pci0:0:16:0:	class=0x060400 card=0x3114103c chip=0x01421166 rev=0xa2 hdr=0x01
+    vendor     = 'Broadcom'
+    device     = 'HT2100 PCI-Express Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 08[a0] = HT MSI address window enabled at 0xfee00000
+    cap 10[b0] = PCI-Express 1 root port max data 256(512) RO NS
+                 link x4(x8) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    cap 01[98] = powerspec 3  supports D0 D3  current D0
+    cap 05[80] = MSI supports 2 messages, 64 bit 
+    cap 0d[78] = PCI Bridge card=0x3114103c
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000b[200] = Vendor 1 ID 1
+
+pcib7@pci0:0:17:0:	class=0x060400 card=0x3115103c chip=0x01441166 rev=0xa2 hdr=0x01
+    vendor     = 'Broadcom'
+    device     = 'HT2100 PCI-Express Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 08[a0] = HT MSI address window enabled at 0xfee00000
+    cap 10[b0] = PCI-Express 1 root port max data 512(512) RO NS
+                 link x0(x4) speed 0.0(2.5) ASPM disabled(L0s/L1)
+    cap 01[98] = powerspec 3  supports D0 D3  current D0
+    cap 05[80] = MSI supports 2 messages, 64 bit 
+    cap 0d[78] = PCI Bridge card=0x3115103c
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000b[200] = Vendor 1 ID 1
+
+pcib8@pci0:0:18:0:	class=0x060400 card=0x3116103c chip=0x01421166 rev=0xa2 hdr=0x01
+    vendor     = 'Broadcom'
+    device     = 'HT2100 PCI-Express Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 08[a0] = HT MSI address window enabled at 0xfee00000
+    cap 10[b0] = PCI-Express 1 root port max data 512(512) RO NS
+                 link x4(x8) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    cap 01[98] = powerspec 3  supports D0 D3  current D0
+    cap 05[80] = MSI supports 2 messages, 64 bit 
+    cap 0d[78] = PCI Bridge card=0x3116103c
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000b[200] = Vendor 1 ID 1
+
+pcib9@pci0:0:19:0:	class=0x060400 card=0x3117103c chip=0x01441166 rev=0xa2 hdr=0x01
+    vendor     = 'Broadcom'
+    device     = 'HT2100 PCI-Express Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 08[a0] = HT MSI address window enabled at 0xfee00000
+    cap 10[b0] = PCI-Express 1 root port max data 128(512) RO NS
+                 link x4(x4) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    cap 01[98] = powerspec 3  supports D0 D3  current D0
+    cap 05[80] = MSI supports 2 messages, 64 bit 
+    cap 0d[78] = PCI Bridge card=0x3117103c
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000b[200] = Vendor 1 ID 1
+
+hostb1@pci0:0:24:0:	class=0x060000 card=0x00000000 chip=0x11001022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] HyperTransport Technology Configuration'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 08[80] = HT host
+    cap 08[a0] = HT host
+    cap 08[c0] = HT host
+
+hostb2@pci0:0:24:1:	class=0x060000 card=0x00000000 chip=0x11011022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] Address Map'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb3@pci0:0:24:2:	class=0x060000 card=0x00000000 chip=0x11021022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] DRAM Controller'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb4@pci0:0:24:3:	class=0x060000 card=0x00000000 chip=0x11031022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] Miscellaneous Control'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 0f[f0] = unknown
+
+hostb5@pci0:0:25:0:	class=0x060000 card=0x00000000 chip=0x11001022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] HyperTransport Technology Configuration'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 08[80] = HT host
+    cap 08[a0] = HT host
+    cap 08[c0] = HT host
+
+hostb6@pci0:0:25:1:	class=0x060000 card=0x00000000 chip=0x11011022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] Address Map'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb7@pci0:0:25:2:	class=0x060000 card=0x00000000 chip=0x11021022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] DRAM Controller'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb8@pci0:0:25:3:	class=0x060000 card=0x00000000 chip=0x11031022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] Miscellaneous Control'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 0f[f0] = unknown
+
+pcib2@pci0:1:13:0:	class=0x060400 card=0x3111103c chip=0x01041166 rev=0xc0 hdr=0x01
+    vendor     = 'Broadcom'
+    device     = 'BCM5785 [HT1000] PCI/PCI-X Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 07[90] = PCI-X 64-bit bridge supports 133MHz
+    cap 0d[88] = PCI Bridge card=0x3111103c
+
+pcib4@pci0:5:0:0:	class=0x060400 card=0x00000000 chip=0x032c8086 rev=0x09 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = '6702PXH PCI Express-to-PCI Bridge A'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[44] = PCI-Express 1 PCI bridge max data 256(256)
+                 link x8(x8) speed 2.5(2.5) ASPM disabled(L0s)
+    cap 05[5c] = MSI supports 1 message, 64 bit 
+    cap 01[6c] = powerspec 2  supports D0 D3  current D0
+    cap 07[d8] = PCI-X bridge 
+    ecap 0001[100] = AER 1 1 fatal 0 non-fatal 0 corrected
+    ecap 0004[300] = Power Budgeting 1
+
+ciss0@pci0:6:2:0:	class=0x010400 card=0x3225103c chip=0x3220103c rev=0x00 hdr=0x00
+    vendor     = 'Hewlett-Packard Company'
+    device     = 'Smart Array P600'
+    class      = mass storage
+    subclass   = RAID
+    bar   [10] = type Memory, range 64, base 0xf9df0000, size 8192, enabled
+    bar   [18] = type I/O Port, range 32, base 0x4000, size 256, enabled
+    bar   [1c] = type Memory, range 64, base 0xf9d80000, size 262144, enabled
+    cap 01[d0] = powerspec 2  supports D0 D1 D3  current D0
+    cap 07[dc] = PCI-X 64-bit supports 133MHz, 266MHz, 2048 burst read, 4 split transactions
+    cap 03[48] = VPD
+
+pcib6@pci0:10:0:0:	class=0x060400 card=0x00000000 chip=0x811410b5 rev=0xbc hdr=0x01
+    vendor     = 'PLX Technology, Inc.'
+    device     = 'PEX 8114 PCI Express-to-PCI/PCI-X Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    bar   [10] = type Memory, range 32, base 0xf9ef0000, size 8192, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[48] = MSI supports 1 message, 64 bit 
+    cap 07[58] = PCI-X bridge 
+    cap 10[68] = PCI-Express 1 PCI bridge max data 256(256)
+                 link x4(x4) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    ecap 0003[100] = Serial 1 0000000100000edf
+    ecap 0001[fb4] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 0004[138] = Power Budgeting 1
+    ecap 0002[148] = VC 1 max VC0
+
+mpt0@pci0:11:8:0:	class=0x010000 card=0x322a103c chip=0x00301000 rev=0xc1 hdr=0x00
+    vendor     = 'Broadcom / LSI'
+    device     = '53c1030 PCI-X Fusion-MPT Dual Ultra320 SCSI'
+    class      = mass storage
+    subclass   = SCSI
+    bar   [10] = type I/O Port, range 32, base 0x5000, size 256, enabled
+    bar   [14] = type Memory, range 64, base 0xf9fe0000, size 131072, enabled
+    bar   [1c] = type Memory, range 64, base 0xf9fc0000, size 131072, enabled
+    cap 01[50] = powerspec 2  supports D0 D1 D2 D3  current D0
+    cap 05[58] = MSI supports 1 message, 64 bit 
+    cap 07[68] = PCI-X 64-bit supports 133MHz, 2048 burst read, 8 split transactions
+
+pcib10@pci0:3:0:0:	class=0x060400 card=0x00000000 chip=0x01031166 rev=0xc3 hdr=0x01
+    vendor     = 'Broadcom'
+    device     = 'EPB PCI-Express to PCI-X Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[60] = PCI-Express 1 PCI bridge max data 128(128)
+                 link x4(x4) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    cap 07[90] = PCI-X bridge 
+    cap 01[b0] = powerspec 2  supports D0 D3  current D0
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 0004[14c] = Power Budgeting 1
+    ecap 0003[160] = Serial 1 001e0bfffedcff12
+
+bce0@pci0:4:0:0:	class=0x020000 card=0x7038103c chip=0x164c14e4 rev=0x12 hdr=0x00
+    vendor     = 'Broadcom Inc. and subsidiaries'
+    device     = 'NetXtreme II BCM5708 Gigabit Ethernet'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 64, base 0xf6000000, size 33554432, enabled
+    cap 07[40] = PCI-X 64-bit supports 133MHz, 512 burst read, 8 split transactions
+    cap 01[48] = powerspec 2  supports D0 D3  current D0
+    cap 03[50] = VPD
+    cap 05[58] = MSI supports 1 message, 64 bit enabled with 1 message
+
+pcib12@pci0:64:15:0:	class=0x060400 card=0x3113103c chip=0x01401166 rev=0xa2 hdr=0x01
+    vendor     = 'Broadcom'
+    device     = 'HT2100 PCI-Express Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 08[a0] = HT MSI address window enabled at 0xfee00000
+    cap 10[b0] = PCI-Express 1 root port max data 512(512) RO NS
+                 link x16(x16) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    cap 01[98] = powerspec 3  supports D0 D3  current D0
+    cap 05[80] = MSI supports 2 messages, 64 bit 
+    cap 0d[78] = PCI Bridge card=0x3113103c
+    cap 08[50] = HT slave
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000b[200] = Vendor 1 ID 1
+
+pcib13@pci0:64:16:0:	class=0x060400 card=0x3114103c chip=0x01421166 rev=0xa2 hdr=0x01
+    vendor     = 'Broadcom'
+    device     = 'HT2100 PCI-Express Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 08[a0] = HT MSI address window enabled at 0xfee00000
+    cap 10[b0] = PCI-Express 1 root port max data 512(512) RO NS
+                 link x8(x8) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    cap 01[98] = powerspec 3  supports D0 D3  current D0
+    cap 05[80] = MSI supports 2 messages, 64 bit 
+    cap 0d[78] = PCI Bridge card=0x3114103c
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000b[200] = Vendor 1 ID 1
+
+pcib14@pci0:64:17:0:	class=0x060400 card=0x3115103c chip=0x01441166 rev=0xa2 hdr=0x01
+    vendor     = 'Broadcom'
+    device     = 'HT2100 PCI-Express Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 08[a0] = HT MSI address window enabled at 0xfee00000
+    cap 10[b0] = PCI-Express 1 root port max data 512(512) RO NS
+                 link x0(x4) speed 0.0(2.5) ASPM disabled(L0s/L1)
+    cap 01[98] = powerspec 3  supports D0 D3  current D0
+    cap 05[80] = MSI supports 2 messages, 64 bit 
+    cap 0d[78] = PCI Bridge card=0x3115103c
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000b[200] = Vendor 1 ID 1
+
+pcib15@pci0:64:18:0:	class=0x060400 card=0x3116103c chip=0x01421166 rev=0xa2 hdr=0x01
+    vendor     = 'Broadcom'
+    device     = 'HT2100 PCI-Express Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 08[a0] = HT MSI address window enabled at 0xfee00000
+    cap 10[b0] = PCI-Express 1 root port max data 128(512) RO NS
+                 link x4(x8) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    cap 01[98] = powerspec 3  supports D0 D3  current D0
+    cap 05[80] = MSI supports 2 messages, 64 bit 
+    cap 0d[78] = PCI Bridge card=0x3116103c
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000b[200] = Vendor 1 ID 1
+
+pcib17@pci0:64:19:0:	class=0x060400 card=0x3117103c chip=0x01441166 rev=0xa2 hdr=0x01
+    vendor     = 'Broadcom'
+    device     = 'HT2100 PCI-Express Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 08[a0] = HT MSI address window enabled at 0xfee00000
+    cap 10[b0] = PCI-Express 1 root port max data 512(512) RO NS
+                 link x4(x4) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    cap 01[98] = powerspec 3  supports D0 D3  current D0
+    cap 05[80] = MSI supports 2 messages, 64 bit 
+    cap 0d[78] = PCI Bridge card=0x3117103c
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000b[200] = Vendor 1 ID 1
+
+ciss1@pci0:70:0:0:	class=0x010400 card=0x3234103c chip=0x3230103c rev=0x04 hdr=0x00
+    vendor     = 'Hewlett-Packard Company'
+    device     = 'Smart Array Controller'
+    class      = mass storage
+    subclass   = RAID
+    bar   [10] = type Memory, range 64, base 0xfdf00000, size 1048576, enabled
+    bar   [18] = type I/O Port, range 32, base 0x6000, size 256, enabled
+    bar   [1c] = type Memory, range 64, base 0xfdef0000, size 4096, enabled
+    cap 10[b0] = PCI-Express 1 endpoint max data 512(512) RO NS
+                 link x8(x8) speed 2.5(2.5) ASPM disabled(L0s)
+    cap 11[d4] = MSI-X supports 4 messages, enabled
+                 Table in map 0x10[0xfe000], PBA in map 0x10[0xff000]
+    cap 01[e0] = powerspec 2  supports D0 D1 D3  current D0
+    cap 03[ec] = VPD
+    ecap 0004[100] = Power Budgeting 1
+
+pcib16@pci0:65:0:0:	class=0x060400 card=0x00000000 chip=0x01031166 rev=0xc3 hdr=0x01
+    vendor     = 'Broadcom'
+    device     = 'EPB PCI-Express to PCI-X Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[60] = PCI-Express 1 PCI bridge max data 128(128)
+                 link x4(x4) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    cap 07[90] = PCI-X bridge 
+    cap 01[b0] = powerspec 2  supports D0 D3  current D0
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 0004[14c] = Power Budgeting 1
+    ecap 0003[160] = Serial 1 001e0bfffedcff10
+
+bce1@pci0:66:0:0:	class=0x020000 card=0x7038103c chip=0x164c14e4 rev=0x12 hdr=0x00
+    vendor     = 'Broadcom Inc. and subsidiaries'
+    device     = 'NetXtreme II BCM5708 Gigabit Ethernet'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 64, base 0xfa000000, size 33554432, enabled
+    cap 07[40] = PCI-X 64-bit supports 133MHz, 512 burst read, 8 split transactions
+    cap 01[48] = powerspec 2  supports D0 D3  current D0
+    cap 03[50] = VPD
+    cap 05[58] = MSI supports 1 message, 64 bit enabled with 1 message

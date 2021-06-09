@@ -1,0 +1,71 @@
+hostb0@pci0:0:0:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1a00 subvendor=0x1022 subdevice=0x1a00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb1@pci0:0:2:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1a01 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    class      = bridge
+    subclass   = HOST-PCI
+
+pcib1@pci0:0:2:2:	class=0x060400 rev=0x00 hdr=0x01 vendor=0x1022 device=0x1a02 subvendor=0x1022 subdevice=0x1234
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[58] = PCI-Express 2 root port max data 128(512) RO NS ARI disabled
+                 max read 128
+                 link x1(x2) speed 5.0(5.0) ASPM disabled(L0s/L1)
+                 slot 0 power limit 0 mW
+    cap 05[a0] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 0d[c0] = PCI Bridge subvendor=0x1022 subdevice=0x1234
+    cap 08[c8] = HT MSI fixed address window enabled at 0xfee00000
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+
+pcib2@pci0:0:2:3:	class=0x060400 rev=0x00 hdr=0x01 vendor=0x1022 device=0x1a02 subvendor=0x1022 subdevice=0x1234
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[58] = PCI-Express 2 root port max data 128(512) RO NS ARI disabled
+                 max read 128
+                 link x1(x2) speed 2.5(5.0) ASPM disabled(L0s/L1)
+                 slot 0 power limit 0 mW
+    cap 05[a0] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 0d[c0] = PCI Bridge subvendor=0x1022 subdevice=0x1234
+    cap 08[c8] = HT MSI fixed address window enabled at 0xfee00000
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+
+xhci0@pci0:1:0:0:	class=0x0c0330 rev=0x02 hdr=0x00 vendor=0x1b73 device=0x1009 subvendor=0x1b73 subdevice=0x0000
+    vendor     = 'Fresco Logic'
+    device     = 'FL1009 USB 3.0 Host Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 64, base 0x40100000, size 65536, enabled
+    bar   [18] = type Memory, range 64, base 0x40110000, size 4096, enabled
+    bar   [20] = type Memory, range 64, base 0x40111000, size 4096, enabled
+    cap 01[40] = powerspec 3  supports D0 D1 D3  current D0
+    cap 05[50] = MSI supports 8 messages, 64 bit enabled with 1 message
+    cap 10[70] = PCI-Express 2 endpoint max data 128(512) RO NS
+                 max read 512
+                 link x1(x1) speed 5.0(5.0) ASPM disabled(L0s/L1)
+    cap 11[b0] = MSI-X supports 8 messages
+                 Table in map 0x18[0x0], PBA in map 0x20[0x0]
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+
+mskc0@pci0:2:0:0:	class=0x020000 rev=0x00 hdr=0x00 vendor=0x11ab device=0x4381 subvendor=0x11ab subdevice=0x4381
+    vendor     = 'Marvell Technology Group Ltd.'
+    device     = 'Yukon Optima 88E8059 [PCIe Gigabit Ethernet Controller with AVB]'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 64, base 0x40000000, size 16384, enabled
+    bar   [18] = type I/O Port, range 32, base 0x1000, size 256, enabled
+    cap 01[48] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 05[5c] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 10[c0] = PCI-Express 2 legacy endpoint max data 128(128)
+                 max read 2048
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1) ClockPM disabled
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0003[130] = Serial 1 0000000000000000

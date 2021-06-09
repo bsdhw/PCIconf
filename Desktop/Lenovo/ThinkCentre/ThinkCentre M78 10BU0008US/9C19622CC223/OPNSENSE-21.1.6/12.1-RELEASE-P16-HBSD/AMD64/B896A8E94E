@@ -1,0 +1,315 @@
+hostb0@pci0:0:0:0:	class=0x060000 card=0x14101022 chip=0x14101022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Family 15h (Models 10h-1fh) Processor Root Complex'
+    class      = bridge
+    subclass   = HOST-PCI
+
+none0@pci0:0:0:2:	class=0x080600 card=0x14191022 chip=0x14191022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Family 15h (Models 10h-1fh) I/O Memory Management Unit'
+    class      = base peripheral
+    subclass   = IOMMU
+    cap 0f[40] = unknown
+    cap 05[54] = MSI supports 1 message, 64 bit 
+    cap 08[64] = HT MSI fixed address window enabled at 0xfee00000
+
+vgapci0@pci0:0:1:0:	class=0x030000 card=0x308917aa chip=0x99981002 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'Richland [Radeon HD 8370D]'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Prefetchable Memory, range 32, base 0xc0000000, size 268435456, enabled
+    bar   [14] = type I/O Port, range 32, base 0xf000, size 256, enabled
+    bar   [18] = type Memory, range 32, base 0xfeb00000, size 262144, enabled
+    cap 01[50] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 10[58] = PCI-Express 2 root endpoint max data 128(128) RO NS
+    cap 05[a0] = MSI supports 1 message, 64 bit 
+    ecap 000b[100] = Vendor 1 ID 1
+
+none1@pci0:0:1:1:	class=0x040300 card=0x308917aa chip=0x99021002 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'Trinity HDMI Audio Controller'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 32, base 0xfeb44000, size 16384, enabled
+    cap 01[50] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 10[58] = PCI-Express 2 root endpoint max data 128(128) RO NS
+    cap 05[a0] = MSI supports 1 message, 64 bit 
+    ecap 000b[100] = Vendor 1 ID 1
+
+pcib1@pci0:0:2:0:	class=0x060400 card=0x308917aa chip=0x14121022 rev=0x00 hdr=0x01
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Family 15h (Models 10h-1fh) Processor Root Port'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[58] = PCI-Express 2 root port max data 256(256) NS
+                 link x4(x16) speed 2.5(5.0) ASPM disabled(L0s/L1)
+                 slot 0 power limit 0 mW
+    cap 05[a0] = MSI supports 1 message, 64 bit 
+    cap 0d[b0] = PCI Bridge card=0x308917aa
+    cap 08[b8] = HT MSI fixed address window enabled at 0xfee00000
+    ecap 000b[100] = Vendor 1 ID 1
+
+xhci0@pci0:0:16:0:	class=0x0c0330 card=0x308917aa chip=0x78141022 rev=0x09 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'FCH USB XHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 64, base 0xfeb4a000, size 8192, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 05[70] = MSI supports 8 messages, 64 bit enabled with 1 message
+    cap 11[90] = MSI-X supports 8 messages
+                 Table in map 0x10[0x1000], PBA in map 0x10[0x1080]
+    cap 10[a0] = PCI-Express 2 root endpoint max data 128(128) NS
+    ecap 0018[100] = LTR 1
+
+xhci1@pci0:0:16:1:	class=0x0c0330 card=0x308917aa chip=0x78141022 rev=0x09 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'FCH USB XHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 64, base 0xfeb48000, size 8192, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 05[70] = MSI supports 8 messages, 64 bit enabled with 1 message
+    cap 11[90] = MSI-X supports 8 messages
+                 Table in map 0x10[0x1000], PBA in map 0x10[0x1080]
+    cap 10[a0] = PCI-Express 2 root endpoint max data 128(128) NS
+
+ahci0@pci0:0:17:0:	class=0x010601 card=0x308917aa chip=0x78011022 rev=0x40 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'FCH SATA Controller [AHCI mode]'
+    class      = mass storage
+    subclass   = SATA
+    bar   [10] = type I/O Port, range 32, base 0xf140, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0xf130, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0xf120, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0xf110, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0xf100, size 16, enabled
+    bar   [24] = type Memory, range 32, base 0xfeb51000, size 2048, enabled
+    cap 05[50] = MSI supports 8 messages, 64 bit enabled with 8 messages
+    cap 12[70] = SATA Index-Data Pair
+
+ohci0@pci0:0:18:0:	class=0x0c0310 card=0x308917aa chip=0x78071022 rev=0x11 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'FCH USB OHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfeb50000, size 4096, enabled
+
+ehci0@pci0:0:18:2:	class=0x0c0320 card=0x308917aa chip=0x78081022 rev=0x11 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'FCH USB EHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfeb4f000, size 256, enabled
+    cap 01[c0] = powerspec 2  supports D0 D1 D2 D3  current D0
+    cap 0a[e4] = EHCI Debug Port at offset 0xe0 in map 0x14
+
+ohci1@pci0:0:19:0:	class=0x0c0310 card=0x308917aa chip=0x78071022 rev=0x11 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'FCH USB OHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfeb4e000, size 4096, enabled
+
+ehci1@pci0:0:19:2:	class=0x0c0320 card=0x308917aa chip=0x78081022 rev=0x11 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'FCH USB EHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfeb4d000, size 256, enabled
+    cap 01[c0] = powerspec 2  supports D0 D1 D2 D3  current D0
+    cap 0a[e4] = EHCI Debug Port at offset 0xe0 in map 0x14
+
+intsmb0@pci0:0:20:0:	class=0x0c0500 card=0x308917aa chip=0x780b1022 rev=0x16 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'FCH SMBus Controller'
+    class      = serial bus
+    subclass   = SMBus
+
+hdac0@pci0:0:20:2:	class=0x040300 card=0x308917aa chip=0x780d1022 rev=0x01 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'FCH Azalia Controller'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 64, base 0xfeb40000, size 16384, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+
+isab0@pci0:0:20:3:	class=0x060100 card=0x308917aa chip=0x780e1022 rev=0x11 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'FCH LPC Bridge'
+    class      = bridge
+    subclass   = PCI-ISA
+
+pcib2@pci0:0:20:4:	class=0x060401 card=0x00000000 chip=0x780f1022 rev=0x40 hdr=0x01
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'FCH PCI Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+
+ohci2@pci0:0:20:5:	class=0x0c0310 card=0x308917aa chip=0x78091022 rev=0x11 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'FCH USB OHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfeb4c000, size 4096, enabled
+
+pcib3@pci0:0:21:0:	class=0x060400 card=0x00001022 chip=0x43a01022 rev=0x00 hdr=0x01
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Hudson PCI to PCI bridge (PCIE port 0)'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[50] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 10[58] = PCI-Express 2 root port max data 128(128) RO NS
+                 link x16(x1) speed undef(5.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 1 message, 64 bit 
+    cap 0d[b0] = PCI Bridge card=0x00001022
+    cap 08[b8] = HT MSI fixed address window enabled at 0xfee00000
+    ecap 000b[100] = Vendor 1 ID 1
+
+pcib4@pci0:0:21:2:	class=0x060400 card=0x00001022 chip=0x43a21022 rev=0x00 hdr=0x01
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Hudson PCI to PCI bridge (PCIE port 2)'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[50] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 10[58] = PCI-Express 2 root port max data 128(128) NS
+                 link x1(x1) speed 2.5(5.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 1 message, 64 bit 
+    cap 0d[b0] = PCI Bridge card=0x00001022
+    cap 08[b8] = HT MSI fixed address window enabled at 0xfee00000
+    ecap 000b[100] = Vendor 1 ID 1
+
+hostb1@pci0:0:24:0:	class=0x060000 card=0x00000000 chip=0x14001022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Family 15h (Models 10h-1fh) Processor Function 0'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb2@pci0:0:24:1:	class=0x060000 card=0x00000000 chip=0x14011022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Family 15h (Models 10h-1fh) Processor Function 1'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb3@pci0:0:24:2:	class=0x060000 card=0x00000000 chip=0x14021022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Family 15h (Models 10h-1fh) Processor Function 2'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb4@pci0:0:24:3:	class=0x060000 card=0x00000000 chip=0x14031022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Family 15h (Models 10h-1fh) Processor Function 3'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 0f[f0] = unknown
+
+hostb5@pci0:0:24:4:	class=0x060000 card=0x00000000 chip=0x14041022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Family 15h (Models 10h-1fh) Processor Function 4'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb6@pci0:0:24:5:	class=0x060000 card=0x00000000 chip=0x14051022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Family 15h (Models 10h-1fh) Processor Function 5'
+    class      = bridge
+    subclass   = HOST-PCI
+
+em0@pci0:1:0:0:	class=0x020000 card=0x115e8086 chip=0x105e8086 rev=0x06 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82571EB/82571GB Gigabit Ethernet Controller D0/D1 (copper applications)'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xfeaa0000, size 131072, enabled
+    bar   [14] = type Memory, range 32, base 0xfea80000, size 131072, enabled
+    bar   [18] = type I/O Port, range 32, base 0xe020, size 32, enabled
+    cap 01[c8] = powerspec 2  supports D0 D3  current D0
+    cap 05[d0] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 10[e0] = PCI-Express 1 endpoint max data 256(256) NS
+                 link x4(x4) speed 2.5(2.5) ASPM disabled(L0s)
+    ecap 0001[100] = AER 1 0 fatal 1 non-fatal 0 corrected
+    ecap 0003[140] = Serial 1 6805caffff3e5ffc
+
+em1@pci0:1:0:1:	class=0x020000 card=0x115e8086 chip=0x105e8086 rev=0x06 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82571EB/82571GB Gigabit Ethernet Controller D0/D1 (copper applications)'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xfea40000, size 131072, enabled
+    bar   [14] = type Memory, range 32, base 0xfea20000, size 131072, enabled
+    bar   [18] = type I/O Port, range 32, base 0xe000, size 32, enabled
+    cap 01[c8] = powerspec 2  supports D0 D3  current D0
+    cap 05[d0] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 10[e0] = PCI-Express 1 endpoint max data 256(256) NS
+                 link x4(x4) speed 2.5(2.5) ASPM disabled(L0s)
+    ecap 0001[100] = AER 1 0 fatal 1 non-fatal 0 corrected
+    ecap 0003[140] = Serial 1 6805caffff3e5ffc
+
+re0@pci0:4:0:0:	class=0x020000 card=0x308917aa chip=0x816810ec rev=0x04 hdr=0x00
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    device     = 'RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0xd300, size 256, enabled
+    bar   [18] = type Memory, range 64, base 0xfe90f000, size 4096, enabled
+    bar   [20] = type Prefetchable Memory, range 64, base 0xd0000000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit 
+    cap 10[70] = PCI-Express 2 endpoint MSI 1 max data 128(256)
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    cap 11[b0] = MSI-X supports 4 messages, enabled
+                 Table in map 0x20[0x0], PBA in map 0x20[0x800]
+    cap 03[d0] = VPD
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0002[140] = VC 1 max VC0
+    ecap 0003[160] = Serial 1 06000000684ce000
+
+none2@pci0:4:0:1:	class=0x070002 card=0x308917aa chip=0x816a10ec rev=0x01 hdr=0x00
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    class      = simple comms
+    subclass   = UART
+    bar   [10] = type I/O Port, range 32, base 0xd200, size 256, enabled
+    bar   [18] = type Memory, range 64, base 0xfe90e000, size 4096, enabled
+    bar   [20] = type Memory, range 64, base 0xfe908000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit 
+    cap 10[70] = PCI-Express 2 endpoint MSI 1 max data 128(256)
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    cap 11[b0] = MSI-X supports 4 messages
+                 Table in map 0x20[0x0], PBA in map 0x20[0x800]
+    cap 03[d0] = VPD
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+
+none3@pci0:4:0:2:	class=0x070002 card=0x308917aa chip=0x816b10ec rev=0x01 hdr=0x00
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    class      = simple comms
+    subclass   = UART
+    bar   [10] = type I/O Port, range 32, base 0xd100, size 256, enabled
+    bar   [18] = type Memory, range 64, base 0xfe90d000, size 4096, enabled
+    bar   [20] = type Memory, range 64, base 0xfe904000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit 
+    cap 10[70] = PCI-Express 2 endpoint MSI 1 max data 128(256)
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    cap 11[b0] = MSI-X supports 4 messages
+                 Table in map 0x20[0x0], PBA in map 0x20[0x800]
+    cap 03[d0] = VPD
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+
+none4@pci0:4:0:3:	class=0x0c0701 card=0x308917aa chip=0x816c10ec rev=0x01 hdr=0x00
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    class      = serial bus
+    bar   [10] = type I/O Port, range 32, base 0xd000, size 256, enabled
+    bar   [18] = type Memory, range 64, base 0xfe90c000, size 256, enabled
+    bar   [20] = type Memory, range 64, base 0xfe900000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit 
+    cap 10[70] = PCI-Express 2 endpoint MSI 1 max data 128(256)
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    cap 11[b0] = MSI-X supports 4 messages
+                 Table in map 0x20[0x0], PBA in map 0x20[0x800]
+    cap 03[d0] = VPD
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected

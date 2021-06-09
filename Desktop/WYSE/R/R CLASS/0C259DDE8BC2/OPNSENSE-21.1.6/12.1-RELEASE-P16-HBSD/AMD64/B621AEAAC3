@@ -1,0 +1,193 @@
+hostb0@pci0:0:0:0:	class=0x060000 card=0x12341002 chip=0x79101002 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'RS690 Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+pcib1@pci0:0:1:0:	class=0x060400 card=0x79121002 chip=0x79121002 rev=0x00 hdr=0x01
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'RS690/RS740 PCI to PCI Bridge (Internal gfx)'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 08[44] = HT MSI fixed address window enabled at 0xfee00000
+    cap 0d[b0] = PCI Bridge card=0x79121002
+
+pcib2@pci0:0:4:0:	class=0x060400 card=0x12341002 chip=0x79141002 rev=0x00 hdr=0x01
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[58] = PCI-Express 1 root port max data 128(128) RO NS
+                 link x4(x4) speed 2.5(2.5) ASPM L1(L0s/L1)
+                 slot 4 power limit 25000 mW HotPlug(present) surprise
+    cap 05[80] = MSI supports 1 message enabled with 1 message
+    cap 0d[b0] = PCI Bridge card=0x12341002
+    cap 08[b8] = HT MSI fixed address window enabled at 0xfee00000
+    ecap 0002[100] = VC 1 max VC0
+
+ahci0@pci0:0:18:0:	class=0x01018f card=0x43801002 chip=0x43801002 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'SB600 Non-Raid-5 SATA'
+    class      = mass storage
+    subclass   = ATA
+    bar   [10] = type I/O Port, range 32, base 0x8440, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0x8434, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0x8438, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0x8430, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0x8400, size 16, enabled
+    bar   [24] = type Memory, range 32, base 0xf8609000, size 1024, enabled
+    cap 01[60] = powerspec 2  supports D0 D3  current D0
+
+ohci0@pci0:0:19:0:	class=0x0c0310 card=0x07101170 chip=0x43871002 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'SB600 USB (OHCI0)'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xf8604000, size 4096, enabled
+
+ohci1@pci0:0:19:1:	class=0x0c0310 card=0x07101170 chip=0x43881002 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'SB600 USB (OHCI1)'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xf8605000, size 4096, enabled
+
+ohci2@pci0:0:19:2:	class=0x0c0310 card=0x07101170 chip=0x43891002 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'SB600 USB (OHCI2)'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xf8606000, size 4096, enabled
+
+ohci3@pci0:0:19:3:	class=0x0c0310 card=0x07101170 chip=0x438a1002 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'SB600 USB (OHCI3)'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xf8607000, size 4096, enabled
+
+ohci4@pci0:0:19:4:	class=0x0c0310 card=0x07101170 chip=0x438b1002 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'SB600 USB (OHCI4)'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xf8608000, size 4096, enabled
+
+ehci0@pci0:0:19:5:	class=0x0c0320 card=0x07101170 chip=0x43861002 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'SB600 USB Controller (EHCI)'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xf8609400, size 256, enabled
+    cap 01[c0] = powerspec 2  supports D0 D1 D2 D3  current D0
+    cap 0a[e4] = EHCI Debug Port at offset 0xe0 in map 0x14
+
+intsmb0@pci0:0:20:0:	class=0x0c0500 card=0x43851002 chip=0x43851002 rev=0x14 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'SBx00 SMBus Controller'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [10] = type I/O Port, range 32, base 0x8040, size 16, enabled
+    cap 08[b0] = HT MSI fixed address window disabled at 0xfee00000
+
+atapci0@pci0:0:20:1:	class=0x01018a card=0x438c1002 chip=0x438c1002 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'SB600 IDE'
+    class      = mass storage
+    subclass   = ATA
+    bar   [20] = type I/O Port, range 32, base 0x8420, size 16, enabled
+
+hdac0@pci0:0:20:2:	class=0x040300 card=0x07101170 chip=0x43831002 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'SBx00 Azalia (Intel HDA)'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 64, base 0xf8600000, size 16384, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+
+isab0@pci0:0:20:3:	class=0x060100 card=0x438d1002 chip=0x438d1002 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'SB600 PCI to LPC Bridge'
+    class      = bridge
+    subclass   = PCI-ISA
+
+pcib3@pci0:0:20:4:	class=0x060401 card=0x00000000 chip=0x43841002 rev=0x00 hdr=0x01
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'SBx00 PCI to PCI Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+
+hostb1@pci0:0:24:0:	class=0x060000 card=0x00000000 chip=0x11001022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] HyperTransport Technology Configuration'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 08[80] = HT host
+
+hostb2@pci0:0:24:1:	class=0x060000 card=0x00000000 chip=0x11011022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] Address Map'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb3@pci0:0:24:2:	class=0x060000 card=0x00000000 chip=0x11021022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] DRAM Controller'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb4@pci0:0:24:3:	class=0x060000 card=0x00000000 chip=0x11031022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] Miscellaneous Control'
+    class      = bridge
+    subclass   = HOST-PCI
+
+vgapci0@pci0:1:5:0:	class=0x030000 card=0x053a1002 chip=0x791e1002 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'RS690 [Radeon X1200]'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Prefetchable Memory, range 64, base 0xf0000000, size 134217728, enabled
+    bar   [18] = type Memory, range 64, base 0xf8100000, size 65536, enabled
+    bar   [20] = type I/O Port, range 32, base 0x9000, size 256, enabled
+    bar   [24] = type Memory, range 32, base 0xf8000000, size 1048576, enabled
+    cap 01[50] = powerspec 2  supports D0 D1 D2 D3  current D0
+    cap 05[80] = MSI supports 1 message, 64 bit 
+
+em0@pci0:2:0:0:	class=0x020000 card=0x7044103c chip=0x105e8086 rev=0x06 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82571EB/82571GB Gigabit Ethernet Controller D0/D1 (copper applications)'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xf8220000, size 131072, enabled
+    bar   [14] = type Memory, range 32, base 0xf8200000, size 131072, enabled
+    bar   [18] = type I/O Port, range 32, base 0xa000, size 32, enabled
+    cap 01[c8] = powerspec 2  supports D0 D3  current D0
+    cap 05[d0] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 10[e0] = PCI-Express 1 endpoint max data 128(256) RO NS
+                 link x4(x4) speed 2.5(2.5) ASPM disabled(L0s)
+    ecap 0001[100] = AER 1 0 fatal 1 non-fatal 0 corrected
+    ecap 0003[140] = Serial 1 002655ffffd32048
+
+em1@pci0:2:0:1:	class=0x020000 card=0x7044103c chip=0x105e8086 rev=0x06 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82571EB/82571GB Gigabit Ethernet Controller D0/D1 (copper applications)'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xf8260000, size 131072, enabled
+    bar   [14] = type Memory, range 32, base 0xf8240000, size 131072, enabled
+    bar   [18] = type I/O Port, range 32, base 0xa020, size 32, enabled
+    cap 01[c8] = powerspec 2  supports D0 D3  current D0
+    cap 05[d0] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 10[e0] = PCI-Express 1 endpoint max data 128(256) RO NS
+                 link x4(x4) speed 2.5(2.5) ASPM disabled(L0s)
+    ecap 0001[100] = AER 1 0 fatal 1 non-fatal 0 corrected
+    ecap 0003[140] = Serial 1 002655ffffd32048
+
+re0@pci0:4:7:0:	class=0x020000 card=0x816710ec chip=0x816710ec rev=0x10 hdr=0x00
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    device     = 'RTL-8110SC/8169SC Gigabit Ethernet'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0xb000, size 256, enabled
+    bar   [14] = type Memory, range 32, base 0xf8300000, size 256, enabled

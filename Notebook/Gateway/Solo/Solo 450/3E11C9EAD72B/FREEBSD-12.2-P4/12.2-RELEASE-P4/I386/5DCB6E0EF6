@@ -1,0 +1,172 @@
+hostb0@pci0:0:0:0:	class=0x060000 card=0x0400107b chip=0x1a308086 rev=0x05 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82845 845 [Brookdale] Chipset Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+    bar   [10] = type Prefetchable Memory, range 32, base 0xec000000, size 67108864, enabled
+    cap 09[e4] = vendor (length 4) Intel cap 12 version 1
+    cap 02[a0] = AGP 4x 2x 1x SBA disabled
+
+pcib1@pci0:0:1:0:	class=0x060400 card=0x00000000 chip=0x1a318086 rev=0x05 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = '82845 845 [Brookdale] Chipset AGP Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+
+uhci0@pci0:0:29:0:	class=0x0c0300 card=0x0400107b chip=0x24828086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801CA/CAM USB Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0x1800, size 32, enabled
+
+uhci1@pci0:0:29:1:	class=0x0c0300 card=0x0400107b chip=0x24848086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801CA/CAM USB Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0x1820, size 32, enabled
+
+pcib2@pci0:0:30:0:	class=0x060400 card=0x00000000 chip=0x24488086 rev=0x42 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = '82801 Mobile PCI Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+
+isab0@pci0:0:31:0:	class=0x060100 card=0x00000000 chip=0x248c8086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801CAM ISA Bridge (LPC)'
+    class      = bridge
+    subclass   = PCI-ISA
+
+atapci0@pci0:0:31:1:	class=0x01018a card=0x0400107b chip=0x248a8086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801CAM IDE U100 Controller'
+    class      = mass storage
+    subclass   = ATA
+    bar   [20] = type I/O Port, range 32, base 0x1860, size 16, enabled
+    bar   [24] = type Memory, range 32, base 0xe8000000, size 1024, enabled
+
+none0@pci0:0:31:3:	class=0x0c0500 card=0x0400107b chip=0x24838086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801CA/CAM SMBus Controller'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [20] = type I/O Port, range 32, base 0x1880, size 32, enabled
+
+none1@pci0:0:31:6:	class=0x070300 card=0x1050144f chip=0x24868086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801CA/CAM AC'97 Modem Controller'
+    class      = simple comms
+    subclass   = generic modem
+    bar   [10] = type I/O Port, range 32, base 0x2000, size 256, enabled
+    bar   [14] = type I/O Port, range 32, base 0x1c00, size 128, enabled
+
+vgapci0@pci0:1:0:0:	class=0x030000 card=0x0400107b chip=0x4c591002 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'RV100/M6 [Rage/Radeon Mobility Series]'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Prefetchable Memory, range 32, base 0xf0000000, size 134217728, enabled
+    bar   [14] = type I/O Port, range 32, base 0x3000, size 256, enabled
+    bar   [18] = type Memory, range 32, base 0xe8100000, size 65536, enabled
+    cap 02[58] = AGP 4x 2x 1x SBA disabled
+    cap 01[50] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+cbb0@pci0:2:2:0:	class=0x060700 card=0x0400107b chip=0xac55104c rev=0x01 hdr=0x02
+    vendor     = 'Texas Instruments'
+    device     = 'PCI1520 PC card Cardbus Controller'
+    class      = bridge
+    subclass   = PCI-CardBus
+    bar   [10] = type Memory, range 32, base 0xe8204000, size 4096, enabled
+    cap 01[a0] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+cbb1@pci0:2:2:1:	class=0x060700 card=0x0400107b chip=0xac55104c rev=0x01 hdr=0x02
+    vendor     = 'Texas Instruments'
+    device     = 'PCI1520 PC card Cardbus Controller'
+    class      = bridge
+    subclass   = PCI-CardBus
+    bar   [10] = type Memory, range 32, base 0xe8205000, size 4096, enabled
+    cap 01[a0] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+pcm0@pci0:2:3:0:	class=0x040100 card=0x0400107b chip=0x1988125d rev=0x12 hdr=0x00
+    vendor     = 'ESS Technology'
+    device     = 'ES1988 Allegro-1'
+    class      = multimedia
+    subclass   = audio
+    bar   [10] = type I/O Port, range 32, base 0x5000, size 256, enabled
+    cap 01[c0] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+cbb2@pci0:2:4:0:	class=0x060700 card=0xab0112a3 chip=0xac50104c rev=0x01 hdr=0x02
+    vendor     = 'Texas Instruments'
+    device     = 'PCI1410 PC card Cardbus Controller'
+    class      = bridge
+    subclass   = PCI-CardBus
+    bar   [10] = type Memory, range 32, base 0xe8206000, size 4096, enabled
+    cap 01[a0] = powerspec 1  supports D0 D1 D2 D3  current D0
+
+fwohci0@pci0:2:5:0:	class=0x0c0010 card=0x0400107b chip=0x8026104c rev=0x00 hdr=0x00
+    vendor     = 'Texas Instruments'
+    device     = 'TSB43AB21 IEEE-1394a-2000 Controller (PHY/Link)'
+    class      = serial bus
+    subclass   = FireWire
+    bar   [10] = type Memory, range 32, base 0xe8208000, size 2048, enabled
+    bar   [14] = type Memory, range 32, base 0xe8200000, size 16384, enabled
+    cap 01[44] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+fxp0@pci0:2:8:0:	class=0x020000 card=0x0400107b chip=0x10318086 rev=0x42 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801CAM (ICH3) PRO/100 VE (LOM) Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xe8207000, size 4096, enabled
+    bar   [14] = type I/O Port, range 32, base 0x5c00, size 64, enabled
+    cap 01[dc] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+ohci0@pci0:4:0:0:	class=0x0c0310 card=0x17351033 chip=0x00351033 rev=0x43 hdr=0x00
+    vendor     = 'NEC Corporation'
+    device     = 'OHCI USB Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xe8209000, size 4096, enabled
+    cap 01[40] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+ohci1@pci0:4:0:1:	class=0x0c0310 card=0x10331033 chip=0x00351033 rev=0x43 hdr=0x00
+    vendor     = 'NEC Corporation'
+    device     = 'OHCI USB Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xe820a000, size 4096, enabled
+    cap 01[40] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+ehci0@pci0:4:0:2:	class=0x0c0320 card=0x00e01735 chip=0x00e01033 rev=0x04 hdr=0x00
+    vendor     = 'NEC Corporation'
+    device     = 'uPD72010x USB 2.0 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xe820b000, size 256, enabled
+    cap 01[40] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+ohci2@pci0:5:0:0:	class=0x0c0310 card=0x17351033 chip=0x00351033 rev=0x43 hdr=0x00
+    vendor     = 'NEC Corporation'
+    device     = 'OHCI USB Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xe820c000, size 4096, enabled
+    cap 01[40] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+ohci3@pci0:5:0:1:	class=0x0c0310 card=0x10331033 chip=0x00351033 rev=0x43 hdr=0x00
+    vendor     = 'NEC Corporation'
+    device     = 'OHCI USB Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xe820d000, size 4096, enabled
+    cap 01[40] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+ehci1@pci0:5:0:2:	class=0x0c0320 card=0x00e01735 chip=0x00e01033 rev=0x04 hdr=0x00
+    vendor     = 'NEC Corporation'
+    device     = 'uPD72010x USB 2.0 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xe820e000, size 256, enabled
+    cap 01[40] = powerspec 2  supports D0 D1 D2 D3  current D0

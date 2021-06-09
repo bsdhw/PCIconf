@@ -1,0 +1,152 @@
+hostb0@pci0:0:0:0:	class=0x060000 card=0x77571462 chip=0x01508086 rev=0x09 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E3-1200 v2/3rd Gen Core processor DRAM Controller'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 09[e0] = vendor (length 12) Intel cap 0 version 1
+
+vgapci0@pci0:0:2:0:	class=0x030000 card=0x21111462 chip=0x01628086 rev=0x09 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E3-1200 v2/3rd Gen Core processor Graphics Controller'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 64, base 0xdf800000, size 4194304, enabled
+    bar   [18] = type Prefetchable Memory, range 64, base 0xb0000000, size 268435456, enabled
+    bar   [20] = type I/O Port, range 32, base 0xf000, size 64, enabled
+    cap 05[90] = MSI supports 1 message enabled with 1 message
+    cap 01[d0] = powerspec 2  supports D0 D3  current D0
+    cap 13[a4] = PCI Advanced Features: FLR TP
+
+xhci0@pci0:0:20:0:	class=0x0c0330 card=0x77571462 chip=0x1e318086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '7 Series/C210 Series Chipset Family USB xHCI Host Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 64, base 0xefd20000, size 65536, enabled
+    cap 01[70] = powerspec 2  supports D0 D3  current D0
+    cap 05[80] = MSI supports 8 messages, 64 bit enabled with 1 message
+
+none0@pci0:0:22:0:	class=0x078000 card=0x77571462 chip=0x1e3a8086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '7 Series/C216 Chipset Family MEI Controller'
+    class      = simple comms
+    bar   [10] = type Memory, range 64, base 0xefd3a000, size 16, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 05[8c] = MSI supports 1 message, 64 bit 
+
+em0@pci0:0:25:0:	class=0x020000 card=0x77571462 chip=0x15038086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82579V Gigabit Network Connection'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xefd00000, size 131072, enabled
+    bar   [14] = type Memory, range 32, base 0xefd38000, size 4096, enabled
+    bar   [18] = type I/O Port, range 32, base 0xf080, size 32, enabled
+    cap 01[c8] = powerspec 2  supports D0 D3  current D0
+    cap 05[d0] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 13[e0] = PCI Advanced Features: FLR TP
+
+ehci0@pci0:0:26:0:	class=0x0c0320 card=0x77571462 chip=0x1e2d8086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '7 Series/C216 Chipset Family USB Enhanced Host Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xefd37000, size 1024, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 0a[58] = EHCI Debug Port at offset 0xa0 in map 0x14
+    cap 13[98] = PCI Advanced Features: FLR TP
+
+hdac0@pci0:0:27:0:	class=0x040300 card=0xd7571462 chip=0x1e208086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '7 Series/C216 Chipset Family High Definition Audio Controller'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 64, base 0xefd30000, size 16384, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 05[60] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 10[70] = PCI-Express 1 root endpoint max data 128(128) FLR
+    ecap 0002[100] = VC 1 max VC1
+    ecap 0005[130] = Root Complex Link Declaration 1
+
+pcib1@pci0:0:28:0:	class=0x060400 card=0x77571462 chip=0x1e108086 rev=0xc4 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = '7 Series/C216 Chipset Family PCI Express Root Port 1'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128)
+                 link x1(x1) speed 2.5(5.0) ASPM disabled(L0s/L1)
+                 slot 0 power limit 100 mW
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge card=0x77571462
+    cap 01[a0] = powerspec 2  supports D0 D3  current D0
+
+pcib2@pci0:0:28:4:	class=0x060400 card=0x77571462 chip=0x1e188086 rev=0xc4 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = '7 Series/C210 Series Chipset Family PCI Express Root Port 5'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128)
+                 link x0(x4) speed 0.0(5.0) ASPM disabled(L0s/L1)
+                 slot 4 power limit 250 mW HotPlug(empty) surprise
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge card=0x77571462
+    cap 01[a0] = powerspec 2  supports D0 D3  current D0
+
+ehci1@pci0:0:29:0:	class=0x0c0320 card=0x77571462 chip=0x1e268086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '7 Series/C216 Chipset Family USB Enhanced Host Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xefd36000, size 1024, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 0a[58] = EHCI Debug Port at offset 0xa0 in map 0x14
+    cap 13[98] = PCI Advanced Features: FLR TP
+
+isab0@pci0:0:31:0:	class=0x060100 card=0x77571462 chip=0x1e448086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Z77 Express Chipset LPC Controller'
+    class      = bridge
+    subclass   = PCI-ISA
+    cap 09[e0] = vendor (length 12) Intel cap 1 version 0
+		 features: AMT, 4 PCI-e x1 slots
+
+ahci1@pci0:0:31:2:	class=0x010601 card=0x77571462 chip=0x1e028086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '7 Series/C210 Series Chipset Family 6-port SATA Controller [AHCI mode]'
+    class      = mass storage
+    subclass   = SATA
+    bar   [10] = type I/O Port, range 32, base 0xf0d0, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0xf0c0, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0xf0b0, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0xf0a0, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0xf060, size 32, enabled
+    bar   [24] = type Memory, range 32, base 0xefd35000, size 2048, enabled
+    cap 05[80] = MSI supports 1 message enabled with 1 message
+    cap 01[70] = powerspec 3  supports D0 D3  current D0
+    cap 12[a8] = SATA Index-Data Pair
+    cap 13[b0] = PCI Advanced Features: FLR TP
+
+none1@pci0:0:31:3:	class=0x0c0500 card=0x77571462 chip=0x1e228086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '7 Series/C216 Chipset Family SMBus Controller'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [10] = type Memory, range 64, base 0xefd34000, size 256, enabled
+    bar   [20] = type I/O Port, range 32, base 0xf040, size 32, enabled
+
+ahci0@pci0:1:0:0:	class=0x010185 card=0x77571462 chip=0x06111b21 rev=0x01 hdr=0x00
+    vendor     = 'ASMedia Technology Inc.'
+    device     = 'ASM1061 SATA IDE Controller'
+    class      = mass storage
+    subclass   = ATA
+    bar   [10] = type I/O Port, range 32, base 0xe040, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0xe030, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0xe020, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0xe010, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0xe000, size 16, enabled
+    bar   [24] = type Memory, range 32, base 0xefc00000, size 512, enabled
+    cap 05[50] = MSI supports 1 message enabled with 1 message
+    cap 01[78] = powerspec 3  supports D0 D3  current D0
+    cap 10[80] = PCI-Express 2 legacy endpoint max data 128(512) NS
+                 link x1(x1) speed 2.5(5.0) ASPM disabled(L0s)
+    ecap 0002[100] = VC 1 max VC0

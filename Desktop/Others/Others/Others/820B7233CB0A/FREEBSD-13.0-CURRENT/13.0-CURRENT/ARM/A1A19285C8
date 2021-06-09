@@ -1,0 +1,45 @@
+pcib1@pci0:0:0:0:	class=0x060400 rev=0xa1 hdr=0x01 vendor=0x10de device=0x0e12 subvendor=0x10de subdevice=0x0000
+    vendor     = 'NVIDIA Corporation'
+    device     = 'TegraK1 PCIe x4 Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge subvendor=0x10de subdevice=0x0000
+    cap 01[48] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 2 messages, 64 bit 
+    cap 08[60] = HT MSI address window disabled at 0xfee00000
+    cap 10[80] = PCI-Express 2 root port max data 128(128) RO NS
+                 link x1(x2) speed 2.5(5.0) ASPM disabled(L0s)
+                 slot 0 power limit 0 mW
+
+pcib2@pci0:0:1:0:	class=0x060400 rev=0xa1 hdr=0x01 vendor=0x10de device=0x0e13 subvendor=0x10de subdevice=0x0000
+    vendor     = 'NVIDIA Corporation'
+    device     = 'TegraK1 PCIe x1 Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge subvendor=0x10de subdevice=0x0000
+    cap 01[48] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 2 messages, 64 bit 
+    cap 08[60] = HT MSI address window disabled at 0xfee00000
+    cap 10[80] = PCI-Express 2 root port max data 128(128) RO NS
+                 link x1(x1) speed 2.5(5.0) ASPM disabled(L0s)
+                 slot 0 power limit 0 mW
+
+re0@pci0:2:0:0:	class=0x020000 rev=0x0c hdr=0x00 vendor=0x10ec device=0x8168 subvendor=0x10ec subdevice=0x0123
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    device     = 'RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0, size 256, disabled
+    bar   [18] = type Memory, range 64, base 0x13000000, size 4096, enabled
+    bar   [20] = type Prefetchable Memory, range 64, base 0x13004000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 10[70] = PCI-Express 2 endpoint MSI 1 max data 128(128) RO
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1) ClockPM disabled
+    cap 11[b0] = MSI-X supports 4 messages
+                 Table in map 0x20[0x0], PBA in map 0x20[0x800]
+    cap 03[d0] = VPD
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0002[140] = VC 1 max VC0
+    ecap 0003[160] = Serial 1 db0d0100494b0400
+    ecap 0018[170] = LTR 1

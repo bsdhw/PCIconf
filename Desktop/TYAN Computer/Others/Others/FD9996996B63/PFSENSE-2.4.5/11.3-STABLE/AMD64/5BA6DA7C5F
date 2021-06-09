@@ -1,0 +1,177 @@
+pcib1@pci0:0:6:0:	class=0x060400 card=0x00000000 chip=0x74601022 rev=0x07 hdr=0x01
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'AMD-8111 PCI'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 08[c0] = HT slave
+    cap 08[f0] = HT interrupt
+
+isab0@pci0:0:7:0:	class=0x060100 card=0x74681022 chip=0x74681022 rev=0x05 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'AMD-8111 LPC'
+    class      = bridge
+    subclass   = PCI-ISA
+
+atapci1@pci0:0:7:1:	class=0x01018a card=0x74691022 chip=0x74691022 rev=0x03 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'AMD-8111 IDE'
+    class      = mass storage
+    subclass   = ATA
+    bar   [20] = type I/O Port, range 32, base 0xffa0, size 16, enabled
+
+none0@pci0:0:7:2:	class=0x0c0500 card=0x746a1022 chip=0x746a1022 rev=0x02 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'AMD-8111 SMBus 2.0'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [10] = type I/O Port, range 32, base 0xcc00, size 32, enabled
+
+none1@pci0:0:7:3:	class=0x068000 card=0x746b1022 chip=0x746b1022 rev=0x05 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'AMD-8111 ACPI'
+    class      = bridge
+
+pcib2@pci0:0:10:0:	class=0x060400 card=0x00000000 chip=0x74501022 rev=0x12 hdr=0x01
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'AMD-8131 PCI-X Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 07[a0] = PCI-X 64-bit bridge supports 133MHz
+    cap 08[b8] = HT interrupt
+    cap 08[c0] = HT slave
+
+ioapic0@pci0:0:10:1:	class=0x080010 card=0x36c01022 chip=0x74511022 rev=0x01 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'AMD-8131 PCI-X IOAPIC'
+    class      = base peripheral
+    subclass   = interrupt controller
+    bar   [10] = type Memory, range 64, base 0xfebff000, size 4096, enabled
+
+pcib3@pci0:0:11:0:	class=0x060400 card=0x00000000 chip=0x74501022 rev=0x12 hdr=0x01
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'AMD-8131 PCI-X Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 07[a0] = PCI-X 64-bit bridge supports 133MHz
+    cap 08[b8] = HT interrupt
+
+ioapic1@pci0:0:11:1:	class=0x080010 card=0x36c01022 chip=0x74511022 rev=0x01 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'AMD-8131 PCI-X IOAPIC'
+    class      = base peripheral
+    subclass   = interrupt controller
+    bar   [10] = type Memory, range 64, base 0xfebfe000, size 4096, enabled
+
+hostb0@pci0:0:24:0:	class=0x060000 card=0x00000000 chip=0x11001022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] HyperTransport Technology Configuration'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 08[80] = HT host
+    cap 08[a0] = HT host
+    cap 08[c0] = HT host
+
+hostb1@pci0:0:24:1:	class=0x060000 card=0x00000000 chip=0x11011022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] Address Map'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb2@pci0:0:24:2:	class=0x060000 card=0x00000000 chip=0x11021022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] DRAM Controller'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb3@pci0:0:24:3:	class=0x060000 card=0x00000000 chip=0x11031022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] Miscellaneous Control'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb4@pci0:0:25:0:	class=0x060000 card=0x00000000 chip=0x11001022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] HyperTransport Technology Configuration'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 08[80] = HT host
+    cap 08[a0] = HT host
+    cap 08[c0] = HT host
+
+hostb5@pci0:0:25:1:	class=0x060000 card=0x00000000 chip=0x11011022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] Address Map'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb6@pci0:0:25:2:	class=0x060000 card=0x00000000 chip=0x11021022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] DRAM Controller'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb7@pci0:0:25:3:	class=0x060000 card=0x00000000 chip=0x11031022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] Miscellaneous Control'
+    class      = bridge
+    subclass   = HOST-PCI
+
+ohci0@pci0:3:0:0:	class=0x0c0310 card=0x74641022 chip=0x74641022 rev=0x0b hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'AMD-8111 USB OHCI'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfeafc000, size 4096, enabled
+
+ohci1@pci0:3:0:1:	class=0x0c0310 card=0x74641022 chip=0x74641022 rev=0x0b hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'AMD-8111 USB OHCI'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfeafd000, size 4096, enabled
+
+atapci0@pci0:3:5:0:	class=0x018000 card=0x31141095 chip=0x31141095 rev=0x02 hdr=0x00
+    vendor     = 'Silicon Image, Inc.'
+    device     = 'SiI 3114 [SATALink/SATARaid] Serial ATA Controller'
+    class      = mass storage
+    bar   [10] = type I/O Port, range 32, base 0xbc00, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0xb400, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0xb000, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0xac00, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0xa800, size 16, enabled
+    bar   [24] = type Memory, range 32, base 0xfeafec00, size 1024, enabled
+    cap 01[60] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+vgapci0@pci0:3:6:0:	class=0x030000 card=0x80081002 chip=0x47521002 rev=0x27 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'Rage 3 [Rage XL PCI]'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 32, base 0xfd000000, size 16777216, enabled
+    bar   [14] = type I/O Port, range 32, base 0xb800, size 256, enabled
+    bar   [18] = type Memory, range 32, base 0xfeaff000, size 4096, enabled
+    cap 01[5c] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+bge0@pci0:2:9:0:	class=0x020000 card=0x164414e4 chip=0x164814e4 rev=0x03 hdr=0x00
+    vendor     = 'Broadcom Inc. and subsidiaries'
+    device     = 'NetXtreme BCM5704 Gigabit Ethernet'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 64, base 0xfc8c0000, size 65536, enabled
+    bar   [18] = type Memory, range 64, base 0xfc8b0000, size 65536, enabled
+    cap 07[40] = PCI-X 64-bit supports 133MHz, 2048 burst read, 1 split transaction
+    cap 01[48] = powerspec 2  supports D0 D3  current D0
+    cap 03[50] = VPD
+    cap 05[58] = MSI supports 8 messages, 64 bit 
+
+bge1@pci0:2:9:1:	class=0x020000 card=0x164414e4 chip=0x164814e4 rev=0x03 hdr=0x00
+    vendor     = 'Broadcom Inc. and subsidiaries'
+    device     = 'NetXtreme BCM5704 Gigabit Ethernet'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 64, base 0xfc8f0000, size 65536, enabled
+    bar   [18] = type Memory, range 64, base 0xfc8e0000, size 65536, enabled
+    cap 07[40] = PCI-X 64-bit supports 133MHz, 2048 burst read, 1 split transaction
+    cap 01[48] = powerspec 2  supports D0 D3  current D0
+    cap 03[50] = VPD
+    cap 05[58] = MSI supports 8 messages, 64 bit 

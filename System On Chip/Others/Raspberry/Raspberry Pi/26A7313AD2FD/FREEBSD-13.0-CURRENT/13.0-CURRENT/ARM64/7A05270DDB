@@ -1,0 +1,33 @@
+hostb0@pci0:0:0:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1d0f device=0x0200 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Amazon.com, Inc.'
+    class      = bridge
+    subclass   = HOST-PCI
+
+uart0@pci0:0:1:0:	class=0x070003 rev=0x00 hdr=0x00 vendor=0x1d0f device=0x8250 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Amazon.com, Inc.'
+    class      = simple comms
+    subclass   = UART
+    bar   [10] = type Memory, range 32, base 0x80118000, size 4096, enabled
+
+nvme0@pci0:0:4:0:	class=0x010802 rev=0x00 hdr=0x00 vendor=0x1d0f device=0x8061 subvendor=0x1d0f subdevice=0x0000
+    vendor     = 'Amazon.com, Inc.'
+    class      = mass storage
+    subclass   = NVM
+    bar   [10] = type Memory, range 32, base 0x80114000, size 16384, enabled
+    cap 10[70] = PCI-Express 2 endpoint max data 128(256)
+    cap 11[b0] = MSI-X supports 9 messages, enabled
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x3000]
+    cap 01[bc] = powerspec 2  supports D0 D3  current D0
+
+ena0@pci0:0:5:0:	class=0x020000 rev=0x00 hdr=0x00 vendor=0x1d0f device=0xec20 subvendor=0x1d0f subdevice=0xec20
+    vendor     = 'Amazon.com, Inc.'
+    device     = 'Elastic Network Adapter (ENA)'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0x80110000, size 16384, enabled
+    bar   [18] = type Prefetchable Memory, range 32, base 0x80000000, size 1048576, enabled
+    bar   [20] = type Memory, range 32, base 0x80100000, size 65536, enabled
+    cap 10[70] = PCI-Express 2 endpoint max data 128(256) FLR
+    cap 11[b0] = MSI-X supports 9 messages, enabled
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x3000]
+    cap 01[bc] = powerspec 2  supports D0 D3  current D0

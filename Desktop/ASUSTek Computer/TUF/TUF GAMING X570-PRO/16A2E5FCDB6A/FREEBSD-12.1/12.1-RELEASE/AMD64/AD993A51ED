@@ -1,0 +1,443 @@
+none0@pci0:0:0:0:	class=0x050000 card=0x6676108e chip=0x036910de rev=0xa2 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP55 Memory Controller'
+    class      = memory
+    subclass   = RAM
+    cap 08[44] = HT slave
+    cap 08[dc] = HT MSI address window enabled at 0xfee00000
+
+isab0@pci0:0:1:0:	class=0x060100 card=0x6676108e chip=0x036410de rev=0xa3 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP55 LPC Bridge'
+    class      = bridge
+    subclass   = PCI-ISA
+    bar   [10] = type I/O Port, range 32, base 0x1c00, size 128, enabled
+
+none1@pci0:0:1:1:	class=0x0c0500 card=0x6676108e chip=0x036810de rev=0xa3 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP55 SMBus Controller'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [10] = type I/O Port, range 32, base 0x3000, size 64, enabled
+    bar   [20] = type I/O Port, range 32, base 0x3440, size 64, enabled
+    bar   [24] = type I/O Port, range 32, base 0x3400, size 64, enabled
+    cap 01[44] = powerspec 2  supports D0 D3  current D0
+
+ohci0@pci0:0:2:0:	class=0x0c0310 card=0x6676108e chip=0x036c10de rev=0xa1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP55 USB Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0x70004000, size 4096, enabled
+    cap 01[44] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+ehci0@pci0:0:2:1:	class=0x0c0320 card=0x6676108e chip=0x036d10de rev=0xa2 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP55 USB Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0x70005000, size 256, enabled
+    cap 0a[44] = EHCI Debug Port at offset 0x98 in map 0x14
+    cap 01[80] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+atapci0@pci0:0:4:0:	class=0x01018a card=0x6676108e chip=0x036e10de rev=0xa1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP55 IDE'
+    class      = mass storage
+    subclass   = ATA
+    bar   [20] = type I/O Port, range 32, base 0x3480, size 16, enabled
+    cap 01[44] = powerspec 2  supports D0 D3  current D0
+
+atapci1@pci0:0:5:0:	class=0x010185 card=0x6676108e chip=0x037f10de rev=0xa3 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP55 SATA Controller'
+    class      = mass storage
+    subclass   = ATA
+    bar   [10] = type I/O Port, range 32, base 0x34c0, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0x34b4, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0x34b8, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0x34b0, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0x3490, size 16, enabled
+    bar   [24] = type Memory, range 32, base 0x70006000, size 4096, enabled
+    cap 01[44] = powerspec 2  supports D0 D3  current D0
+    cap 05[b0] = MSI supports 4 messages, 64 bit 
+    cap 08[cc] = HT MSI fixed address window enabled at 0xfee00000
+
+atapci2@pci0:0:5:1:	class=0x010185 card=0x6676108e chip=0x037f10de rev=0xa3 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP55 SATA Controller'
+    class      = mass storage
+    subclass   = ATA
+    bar   [10] = type I/O Port, range 32, base 0x34d8, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0x34cc, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0x34d0, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0x34c8, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0x34a0, size 16, enabled
+    bar   [24] = type Memory, range 32, base 0x70007000, size 4096, enabled
+    cap 01[44] = powerspec 2  supports D0 D3  current D0
+    cap 05[b0] = MSI supports 4 messages, 64 bit 
+    cap 08[cc] = HT MSI fixed address window enabled at 0xfee00000
+
+pcib1@pci0:0:6:0:	class=0x060401 card=0xcb8410de chip=0x037010de rev=0xa2 hdr=0x01
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP55 PCI bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[b8] = PCI Bridge card=0xcb8410de
+    cap 08[8c] = HT MSI address window disabled at 0xfee00000
+
+hdac0@pci0:0:6:1:	class=0x040300 card=0x6676108e chip=0x037110de rev=0xa2 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP55 High Definition Audio'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 32, base 0x70000000, size 16384, enabled
+    cap 01[44] = powerspec 2  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 08[6c] = HT MSI fixed address window enabled at 0xfee00000
+
+pcib2@pci0:0:10:0:	class=0x060400 card=0x000010de chip=0x037610de rev=0xa3 hdr=0x01
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP55 PCI Express bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge card=0x000010de
+    cap 01[48] = powerspec 2  supports D0 D3  current D0
+    cap 05[50] = MSI supports 2 messages, 64 bit 
+    cap 08[60] = HT MSI address window enabled at 0xfee00000
+    cap 10[80] = PCI-Express 1 root port max data 128(256) RO NS
+                 link x1(x8) speed 2.5(2.5) ASPM disabled(L0s/L1)
+                 slot 0 power limit 0 mW
+
+pcib3@pci0:0:11:0:	class=0x060400 card=0x000010de chip=0x037410de rev=0xa3 hdr=0x01
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP55 PCI Express bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge card=0x000010de
+    cap 01[48] = powerspec 2  supports D0 D3  current D0
+    cap 05[50] = MSI supports 2 messages, 64 bit 
+    cap 08[60] = HT MSI address window disabled at 0xfee00000
+    cap 10[80] = PCI-Express 1 root port max data 128(256) RO NS
+                 link x4(x0) ASPM disabled(L0s/L1)
+                 slot 0 power limit 0 mW
+
+pcib4@pci0:0:12:0:	class=0x060400 card=0x000010de chip=0x037410de rev=0xa3 hdr=0x01
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP55 PCI Express bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge card=0x000010de
+    cap 01[48] = powerspec 2  supports D0 D3  current D0
+    cap 05[50] = MSI supports 2 messages, 64 bit 
+    cap 08[60] = HT MSI address window disabled at 0xfee00000
+    cap 10[80] = PCI-Express 1 root port max data 128(256) RO NS
+                 link x4(x0) ASPM disabled(L0s/L1)
+                 slot 0 power limit 0 mW
+
+pcib5@pci0:0:13:0:	class=0x060400 card=0x000010de chip=0x037810de rev=0xa3 hdr=0x01
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP55 PCI Express bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge card=0x000010de
+    cap 01[48] = powerspec 2  supports D0 D3  current D0
+    cap 05[50] = MSI supports 2 messages, 64 bit 
+    cap 08[60] = HT MSI address window disabled at 0xfee00000
+    cap 10[80] = PCI-Express 1 root port max data 128(256) RO NS
+                 link x4(x4) speed 2.5(2.5) ASPM disabled(L0s/L1)
+                 slot 0 power limit 0 mW
+
+pcib6@pci0:0:14:0:	class=0x060400 card=0x000010de chip=0x037510de rev=0xa3 hdr=0x01
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP55 PCI Express bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge card=0x000010de
+    cap 01[48] = powerspec 2  supports D0 D3  current D0
+    cap 05[50] = MSI supports 2 messages, 64 bit 
+    cap 08[60] = HT MSI address window disabled at 0xfee00000
+    cap 10[80] = PCI-Express 1 root port max data 128(256) RO NS
+                 link x8(x0) ASPM disabled(L0s/L1)
+                 slot 0 power limit 0 mW
+
+pcib7@pci0:0:15:0:	class=0x060400 card=0x000010de chip=0x037710de rev=0xa3 hdr=0x01
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP55 PCI Express bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge card=0x000010de
+    cap 01[48] = powerspec 2  supports D0 D3  current D0
+    cap 05[50] = MSI supports 2 messages, 64 bit 
+    cap 08[60] = HT MSI address window disabled at 0xfee00000
+    cap 10[80] = PCI-Express 1 root port max data 128(256) RO NS
+                 link x16(x16) speed 2.5(2.5) ASPM disabled(L0s/L1)
+                 slot 0 power limit 0 mW
+
+hostb0@pci0:0:24:0:	class=0x060000 card=0x00000000 chip=0x11001022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] HyperTransport Technology Configuration'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 08[80] = HT host
+    cap 08[a0] = HT host
+    cap 08[c0] = HT host
+
+hostb1@pci0:0:24:1:	class=0x060000 card=0x00000000 chip=0x11011022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] Address Map'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb2@pci0:0:24:2:	class=0x060000 card=0x00000000 chip=0x11021022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] DRAM Controller'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb3@pci0:0:24:3:	class=0x060000 card=0x00000000 chip=0x11031022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] Miscellaneous Control'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 0f[f0] = unknown
+
+hostb4@pci0:0:25:0:	class=0x060000 card=0x00000000 chip=0x11001022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] HyperTransport Technology Configuration'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 08[80] = HT host
+    cap 08[a0] = HT host
+    cap 08[c0] = HT host
+
+hostb5@pci0:0:25:1:	class=0x060000 card=0x00000000 chip=0x11011022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] Address Map'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb6@pci0:0:25:2:	class=0x060000 card=0x00000000 chip=0x11021022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] DRAM Controller'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb7@pci0:0:25:3:	class=0x060000 card=0x00000000 chip=0x11031022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] Miscellaneous Control'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 0f[f0] = unknown
+
+none2@pci0:1:8:0:	class=0x0c0010 card=0x6676108e chip=0x8023104c rev=0x00 hdr=0x00
+    vendor     = 'Texas Instruments'
+    device     = 'TSB43AB22A IEEE-1394a-2000 Controller (PHY/Link) [iOHCI-Lynx]'
+    class      = serial bus
+    subclass   = FireWire
+    bar   [10] = type Memory, range 32, base 0x70104000, size 2048, enabled
+    bar   [14] = type Memory, range 32, base 0x70100000, size 16384, enabled
+    cap 01[44] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+em0@pci0:2:0:0:	class=0x020000 card=0x10838086 chip=0x10b98086 rev=0x06 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82572EI Gigabit Ethernet Controller (Copper)'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0x70220000, size 131072, enabled
+    bar   [14] = type Memory, range 32, base 0x70200000, size 131072, enabled
+    bar   [18] = type I/O Port, range 32, base 0x4000, size 32, enabled
+    cap 01[c8] = powerspec 2  supports D0 D3  current D0
+    cap 05[d0] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 10[e0] = PCI-Express 1 endpoint max data 128(256) RO NS
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s)
+
+vgapci0@pci0:7:0:0:	class=0x030000 card=0x035e10de chip=0x029c10de rev=0xa1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'G71GL [Quadro FX 5500]'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 32, base 0x72000000, size 16777216, enabled
+    bar   [14] = type Prefetchable Memory, range 64, base 0x80000000, size 268435456, enabled
+    bar   [1c] = type Memory, range 64, base 0x71000000, size 16777216, enabled
+    bar   [24] = type I/O Port, range 32, base 0x5000, size 128, enabled
+    cap 01[60] = powerspec 2  supports D0 D3  current D0
+    cap 05[68] = MSI supports 1 message, 64 bit 
+    cap 10[78] = PCI-Express 1 endpoint max data 128(128) RO NS
+                 link x16(x16) speed 2.5(2.5) ASPM disabled(L0s/L1)
+
+none3@pci0:128:0:0:	class=0x050000 card=0x6676108e chip=0x036910de rev=0xa2 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP55 Memory Controller'
+    class      = memory
+    subclass   = RAM
+    cap 08[44] = HT slave
+    cap 08[dc] = HT MSI address window enabled at 0xfee00000
+
+none4@pci0:128:1:0:	class=0x050000 card=0x6676108e chip=0x036110de rev=0xa3 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP55 LPC Bridge'
+    class      = memory
+    subclass   = RAM
+    bar   [10] = type I/O Port, range 32, base 0x2c00, size 128, enabled
+    bar   [14] = type Memory, range 32, base 0x90000000, size 4096, enabled
+
+none5@pci0:128:1:1:	class=0x0c0500 card=0x6676108e chip=0x036810de rev=0xa3 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP55 SMBus Controller'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [10] = type I/O Port, range 32, base 0x6000, size 64, enabled
+    bar   [20] = type I/O Port, range 32, base 0x6440, size 64, enabled
+    bar   [24] = type I/O Port, range 32, base 0x6400, size 64, enabled
+    cap 01[44] = powerspec 2  supports D0 D3  current D0
+
+atapci3@pci0:128:5:0:	class=0x010185 card=0x6676108e chip=0x037f10de rev=0xa3 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP55 SATA Controller'
+    class      = mass storage
+    subclass   = ATA
+    bar   [10] = type I/O Port, range 32, base 0x64b0, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0x64a4, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0x64a8, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0x64a0, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0x6480, size 16, enabled
+    bar   [24] = type Memory, range 32, base 0x90001000, size 4096, enabled
+    cap 01[44] = powerspec 2  supports D0 D3  current D0
+    cap 05[b0] = MSI supports 4 messages, 64 bit 
+    cap 08[cc] = HT MSI fixed address window enabled at 0xfee00000
+
+atapci4@pci0:128:5:1:	class=0x010185 card=0x6676108e chip=0x037f10de rev=0xa3 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP55 SATA Controller'
+    class      = mass storage
+    subclass   = ATA
+    bar   [10] = type I/O Port, range 32, base 0x64c8, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0x64bc, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0x64c0, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0x64b8, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0x6490, size 16, enabled
+    bar   [24] = type Memory, range 32, base 0x90002000, size 4096, enabled
+    cap 01[44] = powerspec 2  supports D0 D3  current D0
+    cap 05[b0] = MSI supports 4 messages, 64 bit 
+    cap 08[cc] = HT MSI fixed address window enabled at 0xfee00000
+
+nfe0@pci0:128:8:0:	class=0x068000 card=0x6676108e chip=0x037310de rev=0xa3 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP55 Ethernet'
+    class      = bridge
+    bar   [10] = type Memory, range 32, base 0x90004000, size 4096, enabled
+    bar   [14] = type I/O Port, range 32, base 0x64d0, size 8, enabled
+    bar   [18] = type Memory, range 32, base 0x90003400, size 256, enabled
+    bar   [1c] = type Memory, range 32, base 0x90003000, size 16, enabled
+    cap 01[44] = powerspec 2  supports D0 D1 D2 D3  current D0
+    cap 11[70] = MSI-X supports 8 messages, enabled
+                 Table in map 0x18[0x0], PBA in map 0x1c[0x0]
+    cap 05[50] = MSI supports 8 messages, 64 bit, vector masks 
+    cap 08[6c] = HT MSI fixed address window enabled at 0xfee00000
+
+nfe1@pci0:128:9:0:	class=0x068000 card=0x6676108e chip=0x037310de rev=0xa3 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP55 Ethernet'
+    class      = bridge
+    bar   [10] = type Memory, range 32, base 0x90005000, size 4096, enabled
+    bar   [14] = type I/O Port, range 32, base 0x64d8, size 8, enabled
+    bar   [18] = type Memory, range 32, base 0x90003c00, size 256, enabled
+    bar   [1c] = type Memory, range 32, base 0x90003800, size 16, enabled
+    cap 01[44] = powerspec 2  supports D0 D1 D2 D3  current D0
+    cap 11[70] = MSI-X supports 8 messages, enabled
+                 Table in map 0x18[0x0], PBA in map 0x1c[0x0]
+    cap 05[50] = MSI supports 8 messages, 64 bit, vector masks 
+    cap 08[6c] = HT MSI fixed address window enabled at 0xfee00000
+
+pcib9@pci0:128:10:0:	class=0x060400 card=0x000010de chip=0x037610de rev=0xa3 hdr=0x01
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP55 PCI Express bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge card=0x000010de
+    cap 01[48] = powerspec 2  supports D0 D3  current D0
+    cap 05[50] = MSI supports 2 messages, 64 bit 
+    cap 08[60] = HT MSI address window disabled at 0xfee00000
+    cap 10[80] = PCI-Express 1 root port max data 128(256) RO NS
+                 link x8(x8) speed 2.5(2.5) ASPM disabled(L0s/L1)
+                 slot 0 power limit 0 mW
+
+pcib10@pci0:128:11:0:	class=0x060400 card=0x000010de chip=0x037410de rev=0xa3 hdr=0x01
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP55 PCI Express bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge card=0x000010de
+    cap 01[48] = powerspec 2  supports D0 D3  current D0
+    cap 05[50] = MSI supports 2 messages, 64 bit 
+    cap 08[60] = HT MSI address window disabled at 0xfee00000
+    cap 10[80] = PCI-Express 1 root port max data 128(256) RO NS
+                 link x4(x0) ASPM disabled(L0s/L1)
+                 slot 0 power limit 0 mW
+
+pcib11@pci0:128:12:0:	class=0x060400 card=0x000010de chip=0x037410de rev=0xa3 hdr=0x01
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP55 PCI Express bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge card=0x000010de
+    cap 01[48] = powerspec 2  supports D0 D3  current D0
+    cap 05[50] = MSI supports 2 messages, 64 bit 
+    cap 08[60] = HT MSI address window disabled at 0xfee00000
+    cap 10[80] = PCI-Express 1 root port max data 128(256) RO NS
+                 link x4(x0) ASPM disabled(L0s/L1)
+                 slot 0 power limit 0 mW
+
+pcib12@pci0:128:13:0:	class=0x060400 card=0x000010de chip=0x037810de rev=0xa3 hdr=0x01
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP55 PCI Express bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge card=0x000010de
+    cap 01[48] = powerspec 2  supports D0 D3  current D0
+    cap 05[50] = MSI supports 2 messages, 64 bit 
+    cap 08[60] = HT MSI address window disabled at 0xfee00000
+    cap 10[80] = PCI-Express 1 root port max data 128(256) RO NS
+                 link x4(x4) speed 2.5(2.5) ASPM disabled(L0s/L1)
+                 slot 0 power limit 0 mW
+
+pcib13@pci0:128:14:0:	class=0x060400 card=0x000010de chip=0x037510de rev=0xa3 hdr=0x01
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP55 PCI Express bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge card=0x000010de
+    cap 01[48] = powerspec 2  supports D0 D3  current D0
+    cap 05[50] = MSI supports 2 messages, 64 bit 
+    cap 08[60] = HT MSI address window disabled at 0xfee00000
+    cap 10[80] = PCI-Express 1 root port max data 128(256) RO NS
+                 link x8(x0) ASPM disabled(L0s/L1)
+                 slot 0 power limit 0 mW
+
+pcib14@pci0:128:15:0:	class=0x060400 card=0x000010de chip=0x037710de rev=0xa3 hdr=0x01
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP55 PCI Express bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge card=0x000010de
+    cap 01[48] = powerspec 2  supports D0 D3  current D0
+    cap 05[50] = MSI supports 2 messages, 64 bit 
+    cap 08[60] = HT MSI address window disabled at 0xfee00000
+    cap 10[80] = PCI-Express 1 root port max data 128(256) RO NS
+                 link x16(x16) speed 2.5(2.5) ASPM disabled(L0s/L1)
+                 slot 0 power limit 0 mW
+
+vgapci1@pci0:134:0:0:	class=0x030000 card=0x049a10de chip=0x040f10de rev=0xa1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'G84GL [Quadro FX 1700]'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 32, base 0x91000000, size 16777216, enabled
+    bar   [14] = type Prefetchable Memory, range 64, base 0xa0000000, size 536870912, enabled
+    bar   [1c] = type Memory, range 64, base 0x92000000, size 33554432, enabled
+    bar   [24] = type I/O Port, range 32, base 0x7000, size 128, enabled
+    cap 01[60] = powerspec 2  supports D0 D3  current D0
+    cap 05[68] = MSI supports 1 message, 64 bit 
+    cap 10[78] = PCI-Express 1 endpoint max data 128(128) RO NS
+                 link x16(x16) speed 2.5(2.5) ASPM disabled(L0s/L1)

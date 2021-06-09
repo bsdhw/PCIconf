@@ -1,0 +1,220 @@
+hostb0@pci0:0:0:0:	class=0x060000 card=0x0d52105b chip=0x0a8210de rev=0xb1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP79 Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+none0@pci0:0:0:1:	class=0x050000 card=0x0d52105b chip=0x0a8810de rev=0xb1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP79 Memory Controller'
+    class      = memory
+    subclass   = RAM
+
+isab0@pci0:0:3:0:	class=0x060100 card=0x0d52105b chip=0x0aad10de rev=0xb2 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP79 LPC Bridge'
+    class      = bridge
+    subclass   = PCI-ISA
+    bar   [10] = type I/O Port, range 32, base 0x4f00, size 256, enabled
+
+none1@pci0:0:3:1:	class=0x050000 card=0x0d52105b chip=0x0aa410de rev=0xb1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP79 Memory Controller'
+    class      = memory
+    subclass   = RAM
+
+none2@pci0:0:3:2:	class=0x0c0500 card=0x0d52105b chip=0x0aa210de rev=0xb1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP79 SMBus'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [10] = type I/O Port, range 32, base 0x4900, size 64, enabled
+    bar   [20] = type I/O Port, range 32, base 0x4d00, size 64, enabled
+    bar   [24] = type I/O Port, range 32, base 0x4e00, size 64, enabled
+    cap 01[44] = powerspec 2  supports D0 D3  current D0
+
+none3@pci0:0:3:3:	class=0x050000 card=0x0d52105b chip=0x0a8910de rev=0xb1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP79 Memory Controller'
+    class      = memory
+    subclass   = RAM
+
+none4@pci0:0:3:5:	class=0x0b4000 card=0x0d52105b chip=0x0aa310de rev=0xb1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP79 Co-processor'
+    class      = processor
+    bar   [10] = type Memory, range 32, base 0xfae80000, size 524288, enabled
+
+ohci0@pci0:0:4:0:	class=0x0c0310 card=0x0d52105b chip=0x0aa510de rev=0xb1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP79 OHCI USB 1.1 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfae7f000, size 4096, enabled
+    cap 01[44] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+ehci0@pci0:0:4:1:	class=0x0c0320 card=0x0d52105b chip=0x0aa610de rev=0xb1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP79 EHCI USB 2.0 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfae7ec00, size 256, enabled
+    cap 0a[44] = EHCI Debug Port at offset 0xa0 in map 0x14
+    cap 01[80] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+ohci1@pci0:0:6:0:	class=0x0c0310 card=0x0d52105b chip=0x0aa710de rev=0xb1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP79 OHCI USB 1.1 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfae7d000, size 4096, enabled
+    cap 01[44] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+ehci1@pci0:0:6:1:	class=0x0c0320 card=0x0d52105b chip=0x0aa910de rev=0xb1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP79 EHCI USB 2.0 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfae7e800, size 256, enabled
+    cap 0a[44] = EHCI Debug Port at offset 0xa0 in map 0x14
+    cap 01[80] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+hdac0@pci0:0:8:0:	class=0x040300 card=0x0d52105b chip=0x0ac010de rev=0xb1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP79 High Definition Audio'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 32, base 0xfae78000, size 16384, enabled
+    cap 01[44] = powerspec 2  supports D0 D3  current D0
+
+pcib1@pci0:0:9:0:	class=0x060401 card=0x0d52105b chip=0x0aab10de rev=0xb1 hdr=0x01
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP79 PCI Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[b8] = PCI Bridge card=0x0d52105b
+
+ahci0@pci0:0:11:0:	class=0x010185 card=0x0d52105b chip=0x0ab510de rev=0xb1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP79 SATA Controller'
+    class      = mass storage
+    subclass   = ATA
+    bar   [10] = type I/O Port, range 32, base 0xc080, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0xc000, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0xbc00, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0xb880, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0xb800, size 16, enabled
+    bar   [24] = type Memory, range 32, base 0xfae76000, size 8192, enabled
+    cap 01[44] = powerspec 2  supports D0 D3  current D0
+    cap 12[8c] = SATA Index-Data Pair
+    cap 05[b0] = MSI supports 8 messages, 64 bit enabled with 8 messages
+
+pcib2@pci0:0:12:0:	class=0x060400 card=0x0d52105b chip=0x0ac410de rev=0xb1 hdr=0x01
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP79 PCI Express Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge card=0x0d52105b
+    cap 01[48] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 2 messages, 64 bit 
+    cap 10[80] = PCI-Express 2 root port max data 128(256) RO
+                 link x16(x16) speed 2.5(2.5) ASPM disabled(L0s/L1)
+                 slot 0 power limit 0 mW
+
+pcib3@pci0:0:16:0:	class=0x060400 card=0x0d52105b chip=0x0aa010de rev=0xb1 hdr=0x01
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP79 PCI Express Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge card=0x0d52105b
+    cap 01[48] = powerspec 2  supports D0 D3  current D0
+    cap 05[50] = MSI supports 2 messages, 64 bit 
+
+pcib4@pci0:0:21:0:	class=0x060400 card=0x0d52105b chip=0x0ac610de rev=0xb1 hdr=0x01
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP79 PCI Express Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge card=0x0d52105b
+    cap 01[48] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 2 messages, 64 bit 
+    cap 10[80] = PCI-Express 2 root port max data 128(256) RO
+                 link x4(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+                 slot 0 power limit 0 mW
+
+pcib5@pci0:0:22:0:	class=0x060400 card=0x0d52105b chip=0x0ac710de rev=0xb1 hdr=0x01
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP79 PCI Express Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge card=0x0d52105b
+    cap 01[48] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 2 messages, 64 bit 
+    cap 10[80] = PCI-Express 2 root port max data 128(256) RO
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+                 slot 0 power limit 0 mW
+
+pcib6@pci0:0:23:0:	class=0x060400 card=0x0d52105b chip=0x0ac710de rev=0xb1 hdr=0x01
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP79 PCI Express Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge card=0x0d52105b
+    cap 01[48] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 2 messages, 64 bit 
+    cap 10[80] = PCI-Express 2 root port max data 128(256) RO
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+                 slot 0 power limit 0 mW
+
+pcib7@pci0:0:24:0:	class=0x060400 card=0x0d52105b chip=0x0ac710de rev=0xb1 hdr=0x01
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP79 PCI Express Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge card=0x0d52105b
+    cap 01[48] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 2 messages, 64 bit 
+    cap 10[80] = PCI-Express 2 root port max data 128(256) RO
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+                 slot 0 power limit 0 mW
+
+vgapci0@pci0:3:0:0:	class=0x030000 card=0x0d52105b chip=0x087d10de rev=0xb1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'C79 [ION]'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 32, base 0xfb000000, size 16777216, enabled
+    bar   [14] = type Prefetchable Memory, range 64, base 0xe0000000, size 268435456, enabled
+    bar   [1c] = type Prefetchable Memory, range 64, base 0xf8000000, size 33554432, enabled
+    bar   [24] = type I/O Port, range 32, base 0xdc00, size 128, enabled
+    cap 01[60] = powerspec 2  supports D0 D3  current D0
+    cap 05[68] = MSI supports 1 message, 64 bit enabled with 1 message
+
+alc0@pci0:5:0:0:	class=0x020000 card=0x0d52105b chip=0x10631969 rev=0xc0 hdr=0x00
+    vendor     = 'Qualcomm Atheros'
+    device     = 'AR8131 Gigabit Ethernet'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 64, base 0xfeac0000, size 262144, enabled
+    bar   [18] = type I/O Port, range 32, base 0xec00, size 128, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[48] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 10[58] = PCI-Express 1 endpoint max data 128(4096)
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    cap 03[6c] = VPD
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 0003[180] = Serial 1 ff30b47b90fba6ff
+
+ath0@pci0:6:0:0:	class=0x028000 card=0xe023105b chip=0x002b168c rev=0x01 hdr=0x00
+    vendor     = 'Qualcomm Atheros'
+    device     = 'AR9285 Wireless Network Adapter (PCI-Express)'
+    class      = network
+    bar   [10] = type Memory, range 64, base 0xfebf0000, size 65536, enabled
+    cap 01[40] = powerspec 3  supports D0 D1 D3  current D0
+    cap 05[50] = MSI supports 1 message 
+    cap 10[60] = PCI-Express 2 legacy endpoint max data 128(128) RO
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 0002[140] = VC 1 max VC0
+    ecap 0003[160] = Serial 1 001517ffff241412
+    ecap 0004[170] = Power Budgeting 1

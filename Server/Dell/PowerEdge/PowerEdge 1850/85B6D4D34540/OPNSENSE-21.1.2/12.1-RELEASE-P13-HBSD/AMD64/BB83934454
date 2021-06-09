@@ -1,0 +1,331 @@
+hostb0@pci0:0:0:0:	class=0x060000 card=0x016c1028 chip=0x35908086 rev=0x09 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'E7520 Memory Controller Hub'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 09[40] = vendor (length 5) Intel cap 4 version 1
+
+pcib1@pci0:0:2:0:	class=0x060400 card=0x00000000 chip=0x35958086 rev=0x09 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = 'E7525/E7520/E7320 PCI Express Port A'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 05[58] = MSI supports 2 messages 
+    cap 10[64] = PCI-Express 1 root port max data 256(256)
+                 link x8(x8) speed 2.5(2.5) ASPM disabled(L0s)
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+
+pcib6@pci0:0:4:0:	class=0x060400 card=0x00000000 chip=0x35978086 rev=0x09 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = 'E7525/E7520 PCI Express Port B'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 05[58] = MSI supports 2 messages 
+    cap 10[64] = PCI-Express 1 root port max data 128(256)
+                 link x0(x8) speed 0.0(2.5) ASPM disabled(L0s)
+    ecap 0001[100] = AER 1 0 fatal 1 non-fatal 0 corrected
+
+pcib7@pci0:0:5:0:	class=0x060400 card=0x00000000 chip=0x35988086 rev=0x09 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = 'E7520 PCI Express Port B1'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 05[58] = MSI supports 2 messages 
+    cap 10[64] = PCI-Express 1 root port max data 256(256)
+                 link x4(x4) speed 2.5(2.5) ASPM disabled(L0s)
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+
+pcib10@pci0:0:6:0:	class=0x060400 card=0x00000000 chip=0x35998086 rev=0x09 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = 'E7520 PCI Express Port C'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 05[58] = MSI supports 2 messages 
+    cap 10[64] = PCI-Express 1 root port max data 128(256)
+                 link x0(x8) speed 0.0(2.5) ASPM disabled(L0s)
+    ecap 0001[100] = AER 1 0 fatal 1 non-fatal 0 corrected
+
+uhci0@pci0:0:29:0:	class=0x0c0300 card=0x016c1028 chip=0x24d28086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801EB/ER (ICH5/ICH5R) USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0x9ce0, size 32, enabled
+
+uhci1@pci0:0:29:1:	class=0x0c0300 card=0x016c1028 chip=0x24d48086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801EB/ER (ICH5/ICH5R) USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0x9cc0, size 32, enabled
+
+uhci2@pci0:0:29:2:	class=0x0c0300 card=0x016c1028 chip=0x24d78086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801EB/ER (ICH5/ICH5R) USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0x9ca0, size 32, enabled
+
+ehci0@pci0:0:29:7:	class=0x0c0320 card=0x016c1028 chip=0x24dd8086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801EB/ER (ICH5/ICH5R) USB2 EHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xdff00000, size 1024, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 0a[58] = EHCI Debug Port at offset 0xa0 in map 0x14
+
+pcib11@pci0:0:30:0:	class=0x060400 card=0x00000000 chip=0x244e8086 rev=0xc2 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = '82801 PCI Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+
+isab0@pci0:0:31:0:	class=0x060100 card=0x00000000 chip=0x24d08086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801EB/ER (ICH5/ICH5R) LPC Interface Bridge'
+    class      = bridge
+    subclass   = PCI-ISA
+
+atapci1@pci0:0:31:1:	class=0x01018a card=0x016c1028 chip=0x24db8086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801EB/ER (ICH5/ICH5R) IDE Controller'
+    class      = mass storage
+    subclass   = ATA
+    bar   [20] = type I/O Port, range 32, base 0xfc00, size 16, enabled
+    bar   [24] = type Memory, range 32, base 0, size 1024, disabled
+
+pcib2@pci0:1:0:0:	class=0x060400 card=0x00000000 chip=0x03308086 rev=0x06 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = '80332 [Dobson] I/O processor (A-Segment Bridge)'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[44] = PCI-Express 1 PCI bridge max data 256(256)
+                 link x8(x8) speed 2.5(2.5) ASPM disabled(L0s)
+    cap 05[5c] = MSI supports 1 message, 64 bit 
+    cap 01[6c] = powerspec 2  supports D0 D3  current D0
+    cap 07[d8] = PCI-X bridge 
+    ecap 0001[100] = AER 1 0 fatal 1 non-fatal 0 corrected
+    ecap 0004[300] = Power Budgeting 1
+
+pcib4@pci0:1:0:2:	class=0x060400 card=0x00000000 chip=0x03328086 rev=0x06 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = '80332 [Dobson] I/O processor (B-Segment Bridge)'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[44] = PCI-Express 1 PCI bridge max data 256(256)
+                 link x8(x8) speed 2.5(2.5) ASPM disabled(L0s)
+    cap 05[5c] = MSI supports 1 message, 64 bit 
+    cap 01[6c] = powerspec 2  supports D0 D3  current D0
+    cap 07[d8] = PCI-X bridge 
+    ecap 0001[100] = AER 1 0 fatal 1 non-fatal 0 corrected
+    ecap 0004[300] = Power Budgeting 1
+
+pcib3@pci0:2:12:0:	class=0x060400 card=0x00000000 chip=0x01a71014 rev=0x02 hdr=0x01
+    vendor     = 'IBM'
+    device     = 'PCI-X to PCI-X Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 07[80] = PCI-X 64-bit bridge supports 133MHz
+    cap 01[90] = powerspec 2  supports D0 D3  current D0
+
+amr0@pci0:2:14:0:	class=0x010400 card=0x016c1028 chip=0x00131028 rev=0x06 hdr=0x00
+    vendor     = 'Dell'
+    device     = 'PowerEdge Expandable RAID controller 4'
+    class      = mass storage
+    subclass   = RAID
+    bar   [10] = type Prefetchable Memory, range 32, base 0xd80f0000, size 65536, enabled
+    bar   [18] = type Memory, range 32, base 0xdfbe0000, size 131072, enabled
+    cap 01[c0] = powerspec 2  supports D0 D1 D3  current D0
+    cap 05[d0] = MSI supports 2 messages, 64 bit 
+    cap 07[e0] = PCI-X 64-bit supports 133MHz, 1024 burst read, 4 split transactions
+
+em0@pci0:3:4:0:	class=0x020000 card=0x10008086 chip=0x101d8086 rev=0x01 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82546EB Gigabit Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 64, base 0xdfde0000, size 131072, enabled
+    bar   [20] = type I/O Port, range 32, base 0xecc0, size 64, enabled
+    cap 01[dc] = powerspec 2  supports D0 D3  current D0
+    cap 07[e4] = PCI-X 64-bit supports 133MHz, 2048 burst read, 1 split transaction
+    cap 05[f0] = MSI supports 1 message, 64 bit 
+
+em1@pci0:3:4:1:	class=0x020000 card=0x10008086 chip=0x101d8086 rev=0x01 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82546EB Gigabit Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 64, base 0xdfdc0000, size 131072, enabled
+    bar   [20] = type I/O Port, range 32, base 0xec80, size 64, enabled
+    cap 01[dc] = powerspec 2  supports D0 D3  current D0
+    cap 07[e4] = PCI-X 64-bit supports 133MHz, 2048 burst read, 1 split transaction
+    cap 05[f0] = MSI supports 1 message, 64 bit 
+
+em2@pci0:3:6:0:	class=0x020000 card=0x10008086 chip=0x101d8086 rev=0x01 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82546EB Gigabit Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 64, base 0xdfda0000, size 131072, enabled
+    bar   [20] = type I/O Port, range 32, base 0xec40, size 64, enabled
+    cap 01[dc] = powerspec 2  supports D0 D3  current D0
+    cap 07[e4] = PCI-X 64-bit supports 133MHz, 2048 burst read, 1 split transaction
+    cap 05[f0] = MSI supports 1 message, 64 bit 
+
+em3@pci0:3:6:1:	class=0x020000 card=0x10008086 chip=0x101d8086 rev=0x01 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82546EB Gigabit Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 64, base 0xdfd80000, size 131072, enabled
+    bar   [20] = type I/O Port, range 32, base 0xec00, size 64, enabled
+    cap 01[dc] = powerspec 2  supports D0 D3  current D0
+    cap 07[e4] = PCI-X 64-bit supports 133MHz, 2048 burst read, 1 split transaction
+    cap 05[f0] = MSI supports 1 message, 64 bit 
+
+pcib5@pci0:4:11:0:	class=0x060400 card=0x00000000 chip=0x01a71014 rev=0x02 hdr=0x01
+    vendor     = 'IBM'
+    device     = 'PCI-X to PCI-X Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 07[80] = PCI-X 64-bit bridge supports 133MHz
+    cap 01[90] = powerspec 2  supports D0 D3  current D0
+
+em4@pci0:5:4:0:	class=0x020000 card=0x10008086 chip=0x101d8086 rev=0x01 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82546EB Gigabit Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 64, base 0xdf9e0000, size 131072, enabled
+    bar   [20] = type I/O Port, range 32, base 0xdcc0, size 64, enabled
+    cap 01[dc] = powerspec 2  supports D0 D3  current D0
+    cap 07[e4] = PCI-X 64-bit supports 133MHz, 4096 burst read, 1 split transaction
+    cap 05[f0] = MSI supports 1 message, 64 bit 
+
+em5@pci0:5:4:1:	class=0x020000 card=0x10008086 chip=0x101d8086 rev=0x01 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82546EB Gigabit Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 64, base 0xdf9c0000, size 131072, enabled
+    bar   [20] = type I/O Port, range 32, base 0xdc80, size 64, enabled
+    cap 01[dc] = powerspec 2  supports D0 D3  current D0
+    cap 07[e4] = PCI-X 64-bit supports 133MHz, 4096 burst read, 1 split transaction
+    cap 05[f0] = MSI supports 1 message, 64 bit 
+
+em6@pci0:5:6:0:	class=0x020000 card=0x10008086 chip=0x101d8086 rev=0x01 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82546EB Gigabit Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 64, base 0xdf9a0000, size 131072, enabled
+    bar   [20] = type I/O Port, range 32, base 0xdc40, size 64, enabled
+    cap 01[dc] = powerspec 2  supports D0 D3  current D0
+    cap 07[e4] = PCI-X 64-bit supports 133MHz, 4096 burst read, 1 split transaction
+    cap 05[f0] = MSI supports 1 message, 64 bit 
+
+em7@pci0:5:6:1:	class=0x020000 card=0x10008086 chip=0x101d8086 rev=0x01 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82546EB Gigabit Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 64, base 0xdf980000, size 131072, enabled
+    bar   [20] = type I/O Port, range 32, base 0xdc00, size 64, enabled
+    cap 01[dc] = powerspec 2  supports D0 D3  current D0
+    cap 07[e4] = PCI-X 64-bit supports 133MHz, 4096 burst read, 1 split transaction
+    cap 05[f0] = MSI supports 1 message, 64 bit 
+
+pcib8@pci0:7:0:0:	class=0x060400 card=0x00000000 chip=0x03298086 rev=0x09 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = '6700PXH PCI Express-to-PCI Bridge A'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[44] = PCI-Express 1 PCI bridge max data 256(256)
+                 link x4(x8) speed 2.5(2.5) ASPM disabled(L0s)
+    cap 05[5c] = MSI supports 1 message, 64 bit 
+    cap 01[6c] = powerspec 2  supports D0 D3  current D0
+    cap 07[d8] = PCI-X bridge 
+    ecap 0001[100] = AER 1 0 fatal 1 non-fatal 0 corrected
+    ecap 0004[300] = Power Budgeting 1
+
+pcib9@pci0:7:0:2:	class=0x060400 card=0x00000000 chip=0x032a8086 rev=0x09 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = '6700PXH PCI Express-to-PCI Bridge B'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[44] = PCI-Express 1 PCI bridge max data 256(256)
+                 link x4(x8) speed 2.5(2.5) ASPM disabled(L0s)
+    cap 05[5c] = MSI supports 1 message, 64 bit 
+    cap 01[6c] = powerspec 2  supports D0 D3  current D0
+    cap 07[d8] = PCI-X bridge 
+    ecap 0001[100] = AER 1 0 fatal 1 non-fatal 0 corrected
+    ecap 0004[300] = Power Budgeting 1
+
+em8@pci0:8:7:0:	class=0x020000 card=0x016d1028 chip=0x10768086 rev=0x05 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82541GI Gigabit Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xdf5e0000, size 131072, enabled
+    bar   [18] = type I/O Port, range 32, base 0xccc0, size 64, enabled
+    cap 01[dc] = powerspec 2  supports D0 D3  current D0
+    cap 07[e4] = PCI-X supports 2048 burst read, 1 split transaction
+
+em9@pci0:9:8:0:	class=0x020000 card=0x016d1028 chip=0x10768086 rev=0x05 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82541GI Gigabit Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xdf3e0000, size 131072, enabled
+    bar   [18] = type I/O Port, range 32, base 0xbcc0, size 64, enabled
+    cap 01[dc] = powerspec 2  supports D0 D3  current D0
+    cap 07[e4] = PCI-X supports 2048 burst read, 1 split transaction
+
+none0@pci0:11:5:0:	class=0xff0000 card=0x00111028 chip=0x00111028 rev=0x00 hdr=0x00
+    vendor     = 'Dell'
+    device     = 'Remote Access Card 4 Daughter Card'
+    bar   [10] = type Prefetchable Memory, range 32, base 0xd7fff000, size 4096, enabled
+    bar   [14] = type I/O Port, range 32, base 0xacf8, size 8, enabled
+    bar   [18] = type I/O Port, range 32, base 0xace8, size 8, enabled
+    cap 01[48] = powerspec 2  supports D0 D3  current D0
+
+uart2@pci0:11:5:1:	class=0xff0000 card=0x00121028 chip=0x00121028 rev=0x00 hdr=0x00
+    vendor     = 'Dell'
+    device     = 'Remote Access Card 4 Daughter Card Virtual UART'
+    bar   [10] = type Memory, range 32, base 0xdf0ff000, size 4096, enabled
+    bar   [14] = type I/O Port, range 32, base 0xac80, size 64, enabled
+    bar   [18] = type Prefetchable Memory, range 32, base 0xd7f00000, size 524288, enabled
+    cap 01[48] = powerspec 2  supports D0 D3  current D0
+
+none1@pci0:11:5:2:	class=0xff0000 card=0x00141028 chip=0x00141028 rev=0x00 hdr=0x00
+    vendor     = 'Dell'
+    device     = 'Remote Access Card 4 Daughter Card SMIC interface'
+    cap 01[48] = powerspec 2  supports D0 D3  current D0
+
+atapci0@pci0:11:6:0:	class=0x010185 card=0x06801095 chip=0x06801095 rev=0x02 hdr=0x00
+    vendor     = 'Silicon Image, Inc.'
+    device     = 'PCI0680 Ultra ATA-133 Host Controller'
+    class      = mass storage
+    subclass   = ATA
+    bar   [10] = type I/O Port, range 32, base 0xacf0, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0xace4, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0xacd8, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0xacd0, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0xac70, size 16, enabled
+    bar   [24] = type Memory, range 32, base 0xdf0fec00, size 256, enabled
+    cap 01[60] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+vgapci0@pci0:11:13:0:	class=0x030000 card=0x016c1028 chip=0x51591002 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'RV100 [Radeon 7000 / Radeon VE]'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Prefetchable Memory, range 32, base 0xc8000000, size 134217728, enabled
+    bar   [14] = type I/O Port, range 32, base 0xa800, size 256, enabled
+    bar   [18] = type Memory, range 32, base 0xdf0e0000, size 65536, enabled
+    cap 01[50] = powerspec 2  supports D0 D1 D2 D3  current D0

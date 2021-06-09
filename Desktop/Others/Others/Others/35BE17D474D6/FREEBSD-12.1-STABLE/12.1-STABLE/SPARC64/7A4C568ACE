@@ -1,0 +1,56 @@
+hostb0@pci0:0:0:0:	class=0x060000 card=0x00000000 chip=0xa001108e rev=0x00 hdr=0x00
+    vendor     = 'Oracle/SUN'
+    device     = 'Psycho UPA-PCI Bus Module [pcipsy]'
+    class      = bridge
+    subclass   = HOST-PCI
+
+isab0@pci0:0:7:0:	class=0x060100 card=0x153310b9 chip=0x153310b9 rev=0x00 hdr=0x00
+    vendor     = 'ULi Electronics Inc.'
+    device     = 'M1533/M1535/M1543 PCI to ISA Bridge [Aladdin IV/V/V+]'
+    class      = bridge
+    subclass   = PCI-ISA
+    cap 01[a0] = powerspec 1  supports D0 D3  current D0
+
+none0@pci0:0:3:0:	class=0x000000 card=0x00000000 chip=0x710110b9 rev=0x00 hdr=0x00
+    vendor     = 'ULi Electronics Inc.'
+    device     = 'M7101 Power Management Controller [PMU]'
+    class      = old
+    subclass   = non-VGA display device
+
+dc0@pci0:0:12:0:	class=0x020000 card=0x00000000 chip=0x91021282 rev=0x31 hdr=0x00
+    vendor     = 'Davicom Semiconductor, Inc.'
+    device     = '21x4x DEC-Tulip compatible 10/100 Ethernet'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0x10000, size 256, enabled
+    bar   [14] = type Memory, range 32, base 0, size 256, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+
+dc1@pci0:0:5:0:	class=0x020000 card=0x00000000 chip=0x91021282 rev=0x31 hdr=0x00
+    vendor     = 'Davicom Semiconductor, Inc.'
+    device     = '21x4x DEC-Tulip compatible 10/100 Ethernet'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0x10100, size 256, enabled
+    bar   [14] = type Memory, range 32, base 0x2000, size 256, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+
+ohci0@pci0:0:10:0:	class=0x0c0310 card=0x00000000 chip=0x523710b9 rev=0x03 hdr=0x00
+    vendor     = 'ULi Electronics Inc.'
+    device     = 'USB 1.1 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0x1000000, size 4096, enabled
+    cap 01[60] = powerspec 2  supports D0 D3  current D0
+
+atapci0@pci0:0:13:0:	class=0x0101ff card=0x00000000 chip=0x522910b9 rev=0xc3 hdr=0x00
+    vendor     = 'ULi Electronics Inc.'
+    device     = 'M5229 IDE'
+    class      = mass storage
+    subclass   = ATA
+    bar   [10] = type I/O Port, range 32, base 0x10200, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0x10218, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0x10210, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0x10208, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0x10220, size 16, enabled
+    cap 01[60] = powerspec 2  supports D0 D3  current D0

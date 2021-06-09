@@ -1,0 +1,142 @@
+hostb0@pci0:0:0:0:	class=0x060000 rev=0x03 hdr=0x00 vendor=0x8086 device=0x3340 subvendor=0x104d subdevice=0x8187
+    vendor     = 'Intel Corporation'
+    device     = '82855PM Processor to I/O Controller'
+    class      = bridge
+    subclass   = HOST-PCI
+    bar   [10] = type Prefetchable Memory, range 32, base 0xe0000000, size 268435456, enabled
+    cap 09[e4] = vendor (length 4) Intel cap 4 version 1
+    cap 02[a0] = AGP 4x 2x 1x SBA disabled
+
+pcib1@pci0:0:1:0:	class=0x060400 rev=0x03 hdr=0x01 vendor=0x8086 device=0x3341 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = '82855PM Processor to AGP Controller'
+    class      = bridge
+    subclass   = PCI-PCI
+
+uhci0@pci0:0:29:0:	class=0x0c0300 rev=0x03 hdr=0x00 vendor=0x8086 device=0x24c2 subvendor=0x104d subdevice=0x8188
+    vendor     = 'Intel Corporation'
+    device     = '82801DB/DBL/DBM (ICH4/ICH4-L/ICH4-M) USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0x1800, size 32, enabled
+
+uhci1@pci0:0:29:1:	class=0x0c0300 rev=0x03 hdr=0x00 vendor=0x8086 device=0x24c4 subvendor=0x104d subdevice=0x8188
+    vendor     = 'Intel Corporation'
+    device     = '82801DB/DBL/DBM (ICH4/ICH4-L/ICH4-M) USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0x1820, size 32, enabled
+
+uhci2@pci0:0:29:2:	class=0x0c0300 rev=0x03 hdr=0x00 vendor=0x8086 device=0x24c7 subvendor=0x104d subdevice=0x8188
+    vendor     = 'Intel Corporation'
+    device     = '82801DB/DBL/DBM (ICH4/ICH4-L/ICH4-M) USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0x1840, size 32, enabled
+
+ehci0@pci0:0:29:7:	class=0x0c0320 rev=0x03 hdr=0x00 vendor=0x8086 device=0x24cd subvendor=0x104d subdevice=0x8188
+    vendor     = 'Intel Corporation'
+    device     = '82801DB/DBM (ICH4/ICH4-M) USB2 EHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xd0000000, size 1024, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 0a[58] = EHCI Debug Port at offset 0x80 in map 0x14
+
+pcib2@pci0:0:30:0:	class=0x060400 rev=0x83 hdr=0x01 vendor=0x8086 device=0x2448 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = '82801 Mobile PCI Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+
+isab0@pci0:0:31:0:	class=0x060100 rev=0x03 hdr=0x00 vendor=0x8086 device=0x24cc subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = '82801DBM (ICH4-M) LPC Interface Bridge'
+    class      = bridge
+    subclass   = PCI-ISA
+
+atapci0@pci0:0:31:1:	class=0x01018a rev=0x03 hdr=0x00 vendor=0x8086 device=0x24ca subvendor=0x104d subdevice=0x8188
+    vendor     = 'Intel Corporation'
+    device     = '82801DBM (ICH4-M) IDE Controller'
+    class      = mass storage
+    subclass   = ATA
+    bar   [20] = type I/O Port, range 32, base 0x1860, size 16, enabled
+    bar   [24] = type Memory, range 32, base 0, size 1024, disabled
+
+none0@pci0:0:31:3:	class=0x0c0500 rev=0x03 hdr=0x00 vendor=0x8086 device=0x24c3 subvendor=0x104d subdevice=0x8188
+    vendor     = 'Intel Corporation'
+    device     = '82801DB/DBL/DBM (ICH4/ICH4-L/ICH4-M) SMBus Controller'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [20] = type I/O Port, range 32, base 0x1880, size 32, enabled
+
+pcm0@pci0:0:31:5:	class=0x040100 rev=0x03 hdr=0x00 vendor=0x8086 device=0x24c5 subvendor=0x104d subdevice=0x8197
+    vendor     = 'Intel Corporation'
+    device     = '82801DB/DBL/DBM (ICH4/ICH4-L/ICH4-M) AC'97 Audio Controller'
+    class      = multimedia
+    subclass   = audio
+    bar   [10] = type I/O Port, range 32, base 0x1c00, size 256, enabled
+    bar   [14] = type I/O Port, range 32, base 0x18c0, size 64, enabled
+    bar   [18] = type Memory, range 32, base 0xd0000c00, size 512, enabled
+    bar   [1c] = type Memory, range 32, base 0xd0000800, size 256, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+
+none1@pci0:0:31:6:	class=0x070300 rev=0x03 hdr=0x00 vendor=0x8086 device=0x24c6 subvendor=0x104d subdevice=0x818c
+    vendor     = 'Intel Corporation'
+    device     = '82801DB/DBL/DBM (ICH4/ICH4-L/ICH4-M) AC'97 Modem Controller'
+    class      = simple comms
+    subclass   = generic modem
+    bar   [10] = type I/O Port, range 32, base 0x2400, size 256, enabled
+    bar   [14] = type I/O Port, range 32, base 0x2000, size 128, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+
+vgapci0@pci0:1:0:0:	class=0x030000 rev=0x01 hdr=0x00 vendor=0x1002 device=0x5c61 subvendor=0x104d subdevice=0x8195
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'RV280/M9+ [Mobility Radeon 9200 AGP]'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Prefetchable Memory, range 32, base 0xd8000000, size 134217728, enabled
+    bar   [14] = type I/O Port, range 32, base 0x3000, size 256, enabled
+    bar   [18] = type Memory, range 32, base 0xd0100000, size 65536, enabled
+    cap 02[58] = AGP 4x 2x 1x SBA disabled
+    cap 01[50] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+cbb0@pci0:2:4:0:	class=0x060700 rev=0x00 hdr=0x02 vendor=0x104c device=0xac8e subvendor=0x104d subdevice=0x818f
+    vendor     = 'Texas Instruments'
+    device     = 'PCI7420 CardBus Controller'
+    class      = bridge
+    subclass   = PCI-CardBus
+    bar   [10] = type Memory, range 32, base 0xd0208000, size 4096, enabled
+    cap 01[a0] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+none2@pci0:2:4:2:	class=0x0c0010 rev=0x00 hdr=0x00 vendor=0x104c device=0x802e subvendor=0x104d subdevice=0x818f
+    vendor     = 'Texas Instruments'
+    device     = 'PCI7x20 1394a-2000 OHCI Two-Port PHY/Link-Layer Controller'
+    class      = serial bus
+    subclass   = FireWire
+    bar   [10] = type Memory, range 32, base 0xd0207000, size 2048, enabled
+    bar   [14] = type Memory, range 32, base 0xd0200000, size 16384, enabled
+    cap 01[44] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+none3@pci0:2:4:3:	class=0x018000 rev=0x00 hdr=0x00 vendor=0x104c device=0xac8f subvendor=0x104d subdevice=0x8190
+    vendor     = 'Texas Instruments'
+    device     = 'PCI7420/7620 SD/MS-Pro Controller'
+    class      = mass storage
+    bar   [10] = type Memory, range 32, base 0xd0204000, size 4096, enabled
+    cap 01[44] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+fxp0@pci0:2:8:0:	class=0x020000 rev=0x83 hdr=0x00 vendor=0x8086 device=0x103d subvendor=0x104d subdevice=0x818d
+    vendor     = 'Intel Corporation'
+    device     = '82801DB PRO/100 VE (MOB) Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xd0205000, size 4096, enabled
+    bar   [14] = type I/O Port, range 32, base 0x4000, size 64, enabled
+    cap 01[dc] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+iwi0@pci0:2:11:0:	class=0x028000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x4220 subvendor=0x8086 subdevice=0x2751
+    vendor     = 'Intel Corporation'
+    device     = 'PRO/Wireless 2200BG [Calexico2] Network Connection'
+    class      = network
+    bar   [10] = type Memory, range 32, base 0xd0206000, size 4096, enabled
+    cap 01[dc] = powerspec 2  supports D0 D3  current D0

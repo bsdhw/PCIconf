@@ -1,0 +1,141 @@
+hostb0@pci0:0:0:0:	class=0x060000 card=0x59501849 chip=0x59501002 rev=0x01 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'RS480/RS482/RS485 Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+ahci0@pci0:0:18:0:	class=0x010601 card=0x43821849 chip=0x43801002 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'SB600 Non-Raid-5 SATA'
+    class      = mass storage
+    subclass   = SATA
+    bar   [10] = type I/O Port, range 32, base 0xd000, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0xc000, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0xb000, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0xa000, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0x9000, size 16, enabled
+    bar   [24] = type Memory, range 32, base 0xfeaff800, size 1024, enabled
+    cap 01[60] = powerspec 2  supports D0 D3  current D0
+    cap 12[70] = SATA Index-Data Pair
+
+ohci0@pci0:0:19:0:	class=0x0c0310 card=0x43871849 chip=0x43871002 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'SB600 USB (OHCI0)'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfeafe000, size 4096, enabled
+
+ohci1@pci0:0:19:1:	class=0x0c0310 card=0x43881849 chip=0x43881002 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'SB600 USB (OHCI1)'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfeafd000, size 4096, enabled
+
+ohci2@pci0:0:19:2:	class=0x0c0310 card=0x43891849 chip=0x43891002 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'SB600 USB (OHCI2)'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfeafc000, size 4096, enabled
+
+ohci3@pci0:0:19:3:	class=0x0c0310 card=0x438a1849 chip=0x438a1002 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'SB600 USB (OHCI3)'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfeafb000, size 4096, enabled
+
+ohci4@pci0:0:19:4:	class=0x0c0310 card=0x438b1849 chip=0x438b1002 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'SB600 USB (OHCI4)'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfeafa000, size 4096, enabled
+
+ehci0@pci0:0:19:5:	class=0x0c0320 card=0x43861849 chip=0x43861002 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'SB600 USB Controller (EHCI)'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfeaff000, size 256, enabled
+    cap 01[c0] = powerspec 2  supports D0 D1 D2 D3  current D0
+    cap 0a[e4] = EHCI Debug Port at offset 0xe0 in map 0x14
+
+intsmb0@pci0:0:20:0:	class=0x0c0500 card=0x43851849 chip=0x43851002 rev=0x13 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'SBx00 SMBus Controller'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [10] = type I/O Port, range 32, base 0xb00, size 16, enabled
+    cap 08[b0] = HT MSI fixed address window disabled at 0xfee00000
+
+atapci0@pci0:0:20:1:	class=0x01018a card=0x438c1849 chip=0x438c1002 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'SB600 IDE'
+    class      = mass storage
+    subclass   = ATA
+    bar   [20] = type I/O Port, range 32, base 0xff00, size 16, enabled
+    cap 05[70] = MSI supports 1 message 
+
+isab0@pci0:0:20:3:	class=0x060100 card=0x438d1849 chip=0x438d1002 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'SB600 PCI to LPC Bridge'
+    class      = bridge
+    subclass   = PCI-ISA
+
+pcib1@pci0:0:20:4:	class=0x060401 card=0x00000000 chip=0x43841002 rev=0x00 hdr=0x01
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'SBx00 PCI to PCI Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+
+hostb1@pci0:0:24:0:	class=0x060000 card=0x00000000 chip=0x11001022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] HyperTransport Technology Configuration'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 08[80] = HT host
+
+hostb2@pci0:0:24:1:	class=0x060000 card=0x00000000 chip=0x11011022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] Address Map'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb3@pci0:0:24:2:	class=0x060000 card=0x00000000 chip=0x11021022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] DRAM Controller'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb4@pci0:0:24:3:	class=0x060000 card=0x00000000 chip=0x11031022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] Miscellaneous Control'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 0f[f0] = unknown
+
+re0@pci0:1:5:0:	class=0x020000 card=0x816910ec chip=0x816910ec rev=0x10 hdr=0x00
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    device     = 'RTL8169 PCI Gigabit Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0xe800, size 256, enabled
+    bar   [14] = type Memory, range 32, base 0xfebffc00, size 256, enabled
+
+re1@pci0:1:6:0:	class=0x020000 card=0x816910ec chip=0x816910ec rev=0x10 hdr=0x00
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    device     = 'RTL8169 PCI Gigabit Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0xe000, size 256, enabled
+    bar   [14] = type Memory, range 32, base 0xfebff400, size 256, enabled
+
+re2@pci0:1:7:0:	class=0x020000 card=0x816910ec chip=0x816910ec rev=0x10 hdr=0x00
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    device     = 'RTL8169 PCI Gigabit Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0xe400, size 256, enabled
+    bar   [14] = type Memory, range 32, base 0xfebff800, size 256, enabled

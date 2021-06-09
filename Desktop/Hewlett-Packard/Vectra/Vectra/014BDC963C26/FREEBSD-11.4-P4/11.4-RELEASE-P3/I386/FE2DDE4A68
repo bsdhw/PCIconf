@@ -1,0 +1,83 @@
+hostb0@pci0:0:0:0:	class=0x060000 card=0x11308086 chip=0x11308086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82815 815 Chipset Host Bridge and Memory Controller Hub'
+    class      = bridge
+    subclass   = HOST-PCI
+    bar   [10] = type Prefetchable Memory, range 32, base 0xec000000, size 67108864, enabled
+    cap 09[88] = vendor (length 4) Intel cap 15 version 1
+    cap 02[a0] = AGP 4x 2x 1x SBA disabled
+
+pcib1@pci0:0:1:0:	class=0x060400 card=0x00000000 chip=0x11318086 rev=0x02 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = '82815 815 Chipset AGP Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+
+pcib2@pci0:0:30:0:	class=0x060400 card=0x00000000 chip=0x24188086 rev=0x02 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = '82801AA PCI Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+
+isab0@pci0:0:31:0:	class=0x060100 card=0x00000000 chip=0x24108086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801AA ISA Bridge (LPC)'
+    class      = bridge
+    subclass   = PCI-ISA
+
+atapci0@pci0:0:31:1:	class=0x010180 card=0x24118086 chip=0x24118086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801AA IDE Controller'
+    class      = mass storage
+    subclass   = ATA
+    bar   [20] = type I/O Port, range 32, base 0x1800, size 16, enabled
+
+uhci0@pci0:0:31:2:	class=0x0c0300 card=0x24128086 chip=0x24128086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801AA USB Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0x1820, size 32, enabled
+
+none0@pci0:0:31:3:	class=0x0c0500 card=0x24138086 chip=0x24138086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801AA SMBus Controller'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [20] = type I/O Port, range 32, base 0x1810, size 16, enabled
+
+pcm0@pci0:0:31:5:	class=0x040100 card=0x1249103c chip=0x24158086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801AA AC'97 Audio Controller'
+    class      = multimedia
+    subclass   = audio
+    bar   [10] = type I/O Port, range 32, base 0x1200, size 256, enabled
+    bar   [14] = type I/O Port, range 32, base 0x1300, size 64, enabled
+
+vgapci0@pci0:2:0:0:	class=0x030000 card=0x00000000 chip=0x018110de rev=0xc1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'NV18 [GeForce4 MX 440 AGP 8x]'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 32, base 0xe8000000, size 16777216, enabled
+    bar   [14] = type Prefetchable Memory, range 32, base 0xf0000000, size 67108864, enabled
+    cap 01[60] = powerspec 2  supports D0 D3  current D0
+    cap 02[44] = AGP 4x 2x 1x SBA disabled
+
+rl0@pci0:1:0:0:	class=0x020000 card=0x813910ec chip=0x813910ec rev=0x10 hdr=0x00
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    device     = 'RTL-8100/8101L/8139 PCI Fast Ethernet Adapter'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0x2000, size 256, enabled
+    bar   [14] = type Memory, range 32, base 0xe9000000, size 256, enabled
+    cap 01[50] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+xl0@pci0:1:4:0:	class=0x020000 card=0x1246103c chip=0x920010b7 rev=0x78 hdr=0x00
+    vendor     = '3Com Corporation'
+    device     = '3c905C-TX/TX-M [Tornado]'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0x2400, size 128, enabled
+    bar   [14] = type Memory, range 32, base 0xe9000400, size 128, enabled
+    cap 01[dc] = powerspec 2  supports D0 D1 D2 D3  current D0

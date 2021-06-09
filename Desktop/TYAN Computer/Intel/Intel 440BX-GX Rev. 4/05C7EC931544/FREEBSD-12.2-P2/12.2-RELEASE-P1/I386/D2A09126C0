@@ -1,0 +1,91 @@
+hostb0@pci0:0:0:0:	class=0x060000 card=0x00000000 chip=0x71908086 rev=0x03 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '440BX/ZX/DX - 82443BX/ZX/DX Host bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+    bar   [10] = type Prefetchable Memory, range 32, base 0xf0000000, size 134217728, enabled
+    cap 02[a0] = AGP 2x 1x SBA disabled
+
+pcib1@pci0:0:1:0:	class=0x060400 card=0x00000000 chip=0x71918086 rev=0x03 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = '440BX/ZX/DX - 82443BX/ZX/DX AGP bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+
+isab0@pci0:0:7:0:	class=0x060100 card=0x00000000 chip=0x71108086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82371AB/EB/MB PIIX4 ISA'
+    class      = bridge
+    subclass   = PCI-ISA
+
+atapci0@pci0:0:7:1:	class=0x010180 card=0x00000000 chip=0x71118086 rev=0x01 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82371AB/EB/MB PIIX4 IDE'
+    class      = mass storage
+    subclass   = ATA
+    bar   [20] = type I/O Port, range 32, base 0xffa0, size 16, enabled
+
+uhci0@pci0:0:7:2:	class=0x0c0300 card=0x00000000 chip=0x71128086 rev=0x01 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82371AB/EB/MB PIIX4 USB'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xef40, size 32, enabled
+
+none0@pci0:0:7:3:	class=0x068000 card=0x00000000 chip=0x71138086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82371AB/EB/MB PIIX4 ACPI'
+    class      = bridge
+
+atapci1@pci0:0:16:0:	class=0x018085 card=0x4d68105a chip=0x4d69105a rev=0x02 hdr=0x00
+    vendor     = 'Promise Technology, Inc.'
+    device     = '20269'
+    class      = mass storage
+    bar   [10] = type I/O Port, range 32, base 0xeff0, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0xefe4, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0xefa8, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0xefe0, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0xef90, size 16, enabled
+    bar   [24] = type Memory, range 32, base 0xffafc000, size 16384, enabled
+    cap 01[60] = powerspec 1  supports D0 D1 D3  current D0
+
+atapci2@pci0:0:17:0:	class=0x018085 card=0x4d68105a chip=0x4d69105a rev=0x02 hdr=0x00
+    vendor     = 'Promise Technology, Inc.'
+    device     = '20269'
+    class      = mass storage
+    bar   [10] = type I/O Port, range 32, base 0xefa0, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0xef8c, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0xef80, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0xef88, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0xef60, size 16, enabled
+    bar   [24] = type Memory, range 32, base 0xffaf4000, size 16384, enabled
+    cap 01[60] = powerspec 1  supports D0 D1 D3  current D0
+
+dc0@pci0:0:18:0:	class=0x020000 card=0x05741317 chip=0x09851317 rev=0x11 hdr=0x00
+    vendor     = 'ADMtek'
+    device     = 'NC100 Network Everywhere Fast Ethernet 10/100'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0xe800, size 256, enabled
+    bar   [14] = type Memory, range 32, base 0xffaefc00, size 1024, enabled
+    cap 01[c0] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+xl0@pci0:0:19:0:	class=0x020000 card=0x905510b7 chip=0x905510b7 rev=0x30 hdr=0x00
+    vendor     = '3Com Corporation'
+    device     = '3c905B 100BaseTX [Cyclone]'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0xec00, size 128, enabled
+    bar   [14] = type Memory, range 32, base 0xffaefb80, size 128, enabled
+    cap 01[dc] = powerspec 1  supports D0 D1 D2 D3  current D0
+
+vgapci0@pci0:1:0:0:	class=0x030000 card=0x0f2a1002 chip=0x51571002 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'RV200 [Radeon 7500/7500 LE]'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Prefetchable Memory, range 32, base 0xe0000000, size 134217728, enabled
+    bar   [14] = type I/O Port, range 32, base 0xd800, size 256, enabled
+    bar   [18] = type Memory, range 32, base 0xff9f0000, size 65536, enabled
+    cap 02[58] = AGP 2x 1x SBA disabled
+    cap 01[50] = powerspec 2  supports D0 D1 D2 D3  current D0

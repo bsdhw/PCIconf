@@ -1,0 +1,80 @@
+hostb0@pci0:0:0:0:	class=0x060000 card=0x10b01043 chip=0x22808086 rev=0x36 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Atom/Celeron/Pentium Processor x5-E8000/J3xxx/N3xxx Series SoC Transaction Register'
+    class      = bridge
+    subclass   = HOST-PCI
+
+vgapci0@pci0:0:2:0:	class=0x030000 card=0x10b01043 chip=0x22b08086 rev=0x36 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Atom/Celeron/Pentium Processor x5-E8000/J3xxx/N3xxx Integrated Graphics Controller'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 64, base 0x90000000, size 16777216, enabled
+    bar   [18] = type Prefetchable Memory, range 64, base 0x80000000, size 268435456, enabled
+    bar   [20] = type I/O Port, range 32, base 0xf000, size 64, enabled
+    cap 01[d0] = powerspec 2  supports D0 D3  current D0
+    cap 05[90] = MSI supports 1 message 
+    cap 09[b0] = vendor (length 7) Intel cap 0 version 1
+
+none0@pci0:0:11:0:	class=0x118000 card=0x10b01043 chip=0x22dc8086 rev=0x36 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Atom/Celeron/Pentium Processor x5-E8000/J3xxx/N3xxx Series Power Management Controller'
+    class      = dasp
+    bar   [10] = type Memory, range 64, base 0x91639000, size 4096, enabled
+    cap 05[40] = MSI supports 1 message 
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+
+xhci0@pci0:0:20:0:	class=0x0c0330 card=0x10b01043 chip=0x22b58086 rev=0x36 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Atom/Celeron/Pentium Processor x5-E8000/J3xxx/N3xxx Series USB xHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 64, base 0x91600000, size 65536, enabled
+    cap 01[70] = powerspec 2  supports D0 D3  current D0
+    cap 05[80] = MSI supports 8 messages, 64 bit enabled with 1 message
+
+none1@pci0:0:26:0:	class=0x108000 card=0x10b01043 chip=0x22988086 rev=0x36 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Atom/Celeron/Pentium Processor x5-E8000/J3xxx/N3xxx Series Trusted Execution Engine'
+    class      = encrypt/decrypt
+    bar   [10] = type Memory, range 32, base 0x91500000, size 1048576, enabled
+    bar   [14] = type Memory, range 32, base 0x91400000, size 1048576, enabled
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 05[a0] = MSI supports 1 message 
+
+pcib1@pci0:0:28:0:	class=0x060400 card=0x10b01043 chip=0x22c88086 rev=0x36 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = 'Atom/Celeron/Pentium Processor x5-E8000/J3xxx/N3xxx Series PCI Express Port'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128)
+                 link x1(x1) speed 2.5(5.0) ASPM L1(L0s/L1)
+                 slot 0 power limit 100 mW
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge card=0x10b01043
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+    ecap 0000[100] = unknown 0
+    ecap 001e[200] = L1 PM Substates 1
+
+isab0@pci0:0:31:0:	class=0x060100 card=0x10b01043 chip=0x229c8086 rev=0x36 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Atom/Celeron/Pentium Processor x5-E8000/J3xxx/N3xxx Series PCU'
+    class      = bridge
+    subclass   = PCI-ISA
+    cap 09[e0] = vendor (length 12) Intel cap 1 version 0
+		 features: 4 PCI-e x1 slots
+
+none2@pci0:1:0:0:	class=0x028000 card=0x2b311a3b chip=0x0042168c rev=0x31 hdr=0x00
+    vendor     = 'Qualcomm Atheros'
+    device     = 'QCA9377 802.11ac Wireless Network Adapter'
+    class      = network
+    bar   [10] = type Memory, range 64, base 0x91200000, size 2097152, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 8 messages, vector masks 
+    cap 10[70] = PCI-Express 2 endpoint max data 128(256)
+                 link x1(x1) speed 2.5(2.5) ASPM L1(L0s/L1) ClockPM disabled
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0003[168] = Serial 1 0000000000000000
+    ecap 0018[178] = LTR 1
+    ecap 001e[180] = L1 PM Substates 1

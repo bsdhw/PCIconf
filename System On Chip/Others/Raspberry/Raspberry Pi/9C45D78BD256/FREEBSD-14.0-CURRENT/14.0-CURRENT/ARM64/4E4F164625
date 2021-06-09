@@ -1,0 +1,71 @@
+nvme0@pci2:1:0:0:	class=0x010802 rev=0x00 hdr=0x00 vendor=0x8086 device=0x2522 subvendor=0x8086 subdevice=0x3810
+    vendor     = 'Intel Corporation'
+    device     = 'NVMe Optane Memory Series'
+    class      = mass storage
+    subclass   = NVM
+    bar   [10] = type Memory, range 64, base 0x46010000, size 16384, enabled
+    bar   [20] = type Memory, range 64, base 0x46000000, size 65536, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 11[50] = MSI-X supports 9 messages, enabled
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x3000]
+    cap 10[60] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x2(x2) speed 8.0(8.0) ASPM disabled(L1) ClockPM disabled
+    cap 05[a0] = MSI supports 16 messages, 64 bit, vector masks 
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0002[150] = VC 1 max VC0
+    ecap 0004[180] = Power Budgeting 1
+    ecap 000e[190] = ARI 1
+    ecap 0019[2a0] = PCIe Sec 1 lane errors 0
+    ecap 0018[2d0] = LTR 1
+    ecap 001e[310] = L1 PM Substates 1
+
+oce0@pci4:1:0:0:	class=0x020000 rev=0x02 hdr=0x00 vendor=0x19a2 device=0x0710 subvendor=0x10df subdevice=0xe729
+    vendor     = 'Emulex Corporation'
+    device     = 'OneConnect 10Gb NIC (be3)'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 64, base 0x46080000, size 16384, enabled
+    bar   [18] = type Memory, range 64, base 0x46000000, size 131072, enabled
+    bar   [20] = type Memory, range 64, base 0x46020000, size 131072, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 11[48] = MSI-X supports 32 messages, enabled
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x3000]
+    cap 10[c0] = PCI-Express 2 endpoint max data 128(512) FLR
+                 max read 512
+                 link x8(x8) speed 5.0(5.0) ASPM disabled(L0s/L1)
+    cap 03[b8] = VPD
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0010[180] = SR-IOV 1 IOV disabled, Memory Space disabled, ARI enabled
+                     0 VFs configured out of 0 supported
+                     First VF RID Offset 0x0000, VF RID Stride 0x0001
+                     VF Device ID 0x0710
+                     Page Sizes: 4096 (enabled), 8192, 16384, 65536, 262144, 1048576, 4194304
+    ecap 000e[160] = ARI 1
+    ecap 0003[168] = Serial 1 0090fafffe0df51c
+    ecap 0017[12c] = TPH Requester 1
+
+oce1@pci4:1:0:1:	class=0x020000 rev=0x02 hdr=0x00 vendor=0x19a2 device=0x0710 subvendor=0x10df subdevice=0xe729
+    vendor     = 'Emulex Corporation'
+    device     = 'OneConnect 10Gb NIC (be3)'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 64, base 0x46084000, size 16384, enabled
+    bar   [18] = type Memory, range 64, base 0x46040000, size 131072, enabled
+    bar   [20] = type Memory, range 64, base 0x46060000, size 131072, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 11[48] = MSI-X supports 32 messages, enabled
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x3000]
+    cap 10[c0] = PCI-Express 2 endpoint max data 128(512) FLR
+                 max read 512
+                 link x8(x8) speed 5.0(5.0) ASPM disabled(L0s/L1)
+    cap 03[b8] = VPD
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0010[180] = SR-IOV 1 IOV disabled, Memory Space disabled, ARI disabled
+                     0 VFs configured out of 0 supported
+                     First VF RID Offset 0x0000, VF RID Stride 0x0001
+                     VF Device ID 0x0710
+                     Page Sizes: 4096 (enabled), 8192, 16384, 65536, 262144, 1048576, 4194304
+    ecap 000e[160] = ARI 1
+    ecap 0003[168] = Serial 1 0090fafffe0df51c
+    ecap 0017[12c] = TPH Requester 1

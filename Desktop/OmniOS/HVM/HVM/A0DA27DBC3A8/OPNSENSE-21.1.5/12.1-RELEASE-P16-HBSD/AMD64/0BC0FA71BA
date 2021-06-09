@@ -1,0 +1,72 @@
+hostb0@pci0:0:0:0:	class=0x060000 card=0x00000000 chip=0x12378086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '440FX - 82441FX PMC [Natoma]'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128)
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s)
+
+isab0@pci0:0:1:0:	class=0x060100 card=0x00000000 chip=0x70008086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82371SB PIIX3 ISA [Natoma/Triton II]'
+    class      = bridge
+    subclass   = PCI-ISA
+
+nvme0@pci0:0:4:0:	class=0x010802 card=0x00000000 chip=0x0a0afb5d rev=0x00 hdr=0x00
+    class      = mass storage
+    subclass   = NVM
+    bar   [10] = type Prefetchable Memory, range 64, base 0xc0000000, size 16384, enabled
+    bar   [20] = type Memory, range 32, base 0xc0004000, size 8192, enabled
+    cap 11[40] = MSI-X supports 17 messages, enabled
+                 Table in map 0x20[0x0], PBA in map 0x20[0x1000]
+    cap 10[4c] = PCI-Express 2 root endpoint max data 128(128)
+
+virtio_pci0@pci0:0:6:0:	class=0x020000 card=0x00011af4 chip=0x10001af4 rev=0x00 hdr=0x00
+    vendor     = 'Red Hat, Inc.'
+    device     = 'Virtio network device'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0x2000, size 32, enabled
+    bar   [14] = type Memory, range 32, base 0xc0006000, size 8192, enabled
+    cap 11[40] = MSI-X supports 3 messages, enabled
+                 Table in map 0x14[0x0], PBA in map 0x14[0x1000]
+
+virtio_pci1@pci0:0:6:1:	class=0x020000 card=0x00011af4 chip=0x10001af4 rev=0x00 hdr=0x00
+    vendor     = 'Red Hat, Inc.'
+    device     = 'Virtio network device'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0x2020, size 32, enabled
+    bar   [14] = type Memory, range 32, base 0xc0008000, size 8192, enabled
+    cap 11[40] = MSI-X supports 3 messages, enabled
+                 Table in map 0x14[0x0], PBA in map 0x14[0x1000]
+
+virtio_pci2@pci0:0:6:2:	class=0x020000 card=0x00011af4 chip=0x10001af4 rev=0x00 hdr=0x00
+    vendor     = 'Red Hat, Inc.'
+    device     = 'Virtio network device'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0x2040, size 32, enabled
+    bar   [14] = type Memory, range 32, base 0xc000a000, size 8192, enabled
+    cap 11[40] = MSI-X supports 3 messages, enabled
+                 Table in map 0x14[0x0], PBA in map 0x14[0x1000]
+
+virtio_pci3@pci0:0:6:3:	class=0x020000 card=0x00011af4 chip=0x10001af4 rev=0x00 hdr=0x00
+    vendor     = 'Red Hat, Inc.'
+    device     = 'Virtio network device'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0x2060, size 32, enabled
+    bar   [14] = type Memory, range 32, base 0xc000c000, size 8192, enabled
+    cap 11[40] = MSI-X supports 3 messages, enabled
+                 Table in map 0x14[0x0], PBA in map 0x14[0x1000]
+
+virtio_pci4@pci0:0:6:4:	class=0x020000 card=0x00011af4 chip=0x10001af4 rev=0x00 hdr=0x00
+    vendor     = 'Red Hat, Inc.'
+    device     = 'Virtio network device'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0x2080, size 32, enabled
+    bar   [14] = type Memory, range 32, base 0xc000e000, size 8192, enabled
+    cap 11[40] = MSI-X supports 3 messages, enabled
+                 Table in map 0x14[0x0], PBA in map 0x14[0x1000]

@@ -1,0 +1,180 @@
+pcib1@pci0:0:0:0:	class=0x060400 rev=0x04 hdr=0x01 vendor=0x1def device=0xe005 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Ampere Computing, LLC'
+    device     = 'eMAG PCI Express Root Port 0'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 512(512) RO NS ARI enabled
+                 max read 128
+                 link x8(x16) speed 8.0(8.0) ASPM disabled(L0s)
+                 slot 1 power limit 75000 mW
+    cap 01[80] = powerspec 3  supports D0 D1 D2 D3  current D0
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0019[180] = PCIe Sec 1 lane errors 0
+
+mlx5_core0@pci0:1:0:0:	class=0x020000 rev=0x00 hdr=0x00 vendor=0x15b3 device=0x1015 subvendor=0x15b3 subdevice=0x0057
+    vendor     = 'Mellanox Technologies'
+    device     = 'MT27710 Family [ConnectX-4 Lx]'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Prefetchable Memory, range 64, base 0x14082000000, size 33554432, enabled
+    cap 10[60] = PCI-Express 2 endpoint max data 512(512) FLR RO NS
+                 max read 512
+                 link x8(x8) speed 8.0(8.0)
+    cap 03[48] = VPD
+    cap 11[9c] = MSI-X supports 64 messages, enabled
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x3000]
+    cap 09[c0] = vendor (length 24)
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 000e[150] = ARI 1
+    ecap 0010[180] = SR-IOV 1 IOV disabled, Memory Space disabled, ARI disabled
+                     0 VFs configured out of 8 supported
+                     First VF RID Offset 0x0002, VF RID Stride 0x0001
+                     VF Device ID 0x1016
+                     Page Sizes: 4096 (enabled), 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304
+    ecap 0019[1c0] = PCIe Sec 1 lane errors 0
+    ecap 000d[230] = ACS 1
+
+mlx5_core1@pci0:1:0:1:	class=0x020000 rev=0x00 hdr=0x00 vendor=0x15b3 device=0x1015 subvendor=0x15b3 subdevice=0x0057
+    vendor     = 'Mellanox Technologies'
+    device     = 'MT27710 Family [ConnectX-4 Lx]'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Prefetchable Memory, range 64, base 0x14080000000, size 33554432, enabled
+    cap 10[60] = PCI-Express 2 endpoint max data 512(512) FLR RO NS
+                 max read 512
+                 link x8(x8) speed 8.0(8.0)
+    cap 03[48] = VPD
+    cap 11[9c] = MSI-X supports 64 messages, enabled
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x3000]
+    cap 09[c0] = vendor (length 24)
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 000e[150] = ARI 1
+    ecap 0010[180] = SR-IOV 1 IOV disabled, Memory Space disabled, ARI disabled
+                     0 VFs configured out of 8 supported
+                     First VF RID Offset 0x0009, VF RID Stride 0x0001
+                     VF Device ID 0x1016
+                     Page Sizes: 4096 (enabled), 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304
+    ecap 000d[230] = ACS 1
+
+pcib3@pci2:0:0:0:	class=0x060400 rev=0x04 hdr=0x01 vendor=0x1def device=0xe007 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Ampere Computing, LLC'
+    device     = 'eMAG PCI Express Root Port 2'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 512(512) RO NS ARI disabled
+                 max read 128
+                 link x1(x16) speed 2.5(8.0) ASPM disabled(L0s)
+                 slot 1 power limit 75000 mW
+    cap 01[80] = powerspec 3  supports D0 D1 D2 D3  current D0
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0019[180] = PCIe Sec 1 lane errors 0
+
+igb0@pci2:1:0:0:	class=0x020000 rev=0x03 hdr=0x00 vendor=0x8086 device=0x1533 subvendor=0x8086 subdevice=0x0001
+    vendor     = 'Intel Corporation'
+    device     = 'I210 Gigabit Network Connection'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0x30100000, size 1048576, enabled
+    bar   [1c] = type Memory, range 32, base 0x30200000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 11[70] = MSI-X supports 5 messages, enabled
+                 Table in map 0x1c[0x0], PBA in map 0x1c[0x2000]
+    cap 10[a0] = PCI-Express 2 endpoint max data 512(512) FLR RO NS
+                 max read 512
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0003[140] = Serial 1 001b21ffffe07d7b
+    ecap 0017[1a0] = TPH Requester 1
+
+pcib5@pci3:0:0:0:	class=0x060400 rev=0x04 hdr=0x01 vendor=0x1def device=0xe008 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Ampere Computing, LLC'
+    device     = 'eMAG PCI Express Root Port 3'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(512) RO NS ARI disabled
+                 max read 128
+                 link x0(x8) speed 0.0(2.5) ASPM disabled(L0s)
+                 slot 1 power limit 75000 mW
+    cap 01[80] = powerspec 3  supports D0 D1 D2 D3  current D0
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[180] = PCIe Sec 1 lane errors 0
+
+pcib7@pci4:0:0:0:	class=0x060400 rev=0x04 hdr=0x01 vendor=0x1def device=0xe009 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Ampere Computing, LLC'
+    device     = 'eMAG PCI Express Root Port 4'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(512) RO NS ARI disabled
+                 max read 128
+                 link x0(x8) speed 0.0(2.5) ASPM disabled(L0s)
+                 slot 1 power limit 75000 mW
+    cap 01[80] = powerspec 3  supports D0 D1 D2 D3  current D0
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[180] = PCIe Sec 1 lane errors 0
+
+pcib9@pci5:0:0:0:	class=0x060400 rev=0x04 hdr=0x01 vendor=0x1def device=0xe00a subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Ampere Computing, LLC'
+    device     = 'eMAG PCI Express Root Port 5'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(512) RO NS ARI disabled
+                 max read 128
+                 link x0(x4) speed 0.0(2.5) ASPM disabled(L0s)
+                 slot 1 power limit 75000 mW
+    cap 01[80] = powerspec 3  supports D0 D1 D2 D3  current D0
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[180] = PCIe Sec 1 lane errors 0
+
+pcib11@pci6:0:0:0:	class=0x060400 rev=0x04 hdr=0x01 vendor=0x1def device=0xe00b subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Ampere Computing, LLC'
+    device     = 'eMAG PCI Express Root Port 6'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(256) RO NS ARI disabled
+                 max read 128
+                 link x0(x1) speed 0.0(2.5) ASPM disabled(L0s)
+                 slot 1 power limit 75000 mW
+    cap 01[80] = powerspec 3  supports D0 D1 D2 D3  current D0
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[180] = PCIe Sec 1 lane errors 0
+
+pcib13@pci7:0:0:0:	class=0x060400 rev=0x04 hdr=0x01 vendor=0x1def device=0xe00c subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Ampere Computing, LLC'
+    device     = 'eMAG PCI Express Root Port 7'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 256(256) RO NS ARI disabled
+                 max read 128
+                 link x1(x1) speed 5.0(8.0) ASPM disabled(L0s)
+                 slot 1 power limit 75000 mW
+    cap 01[80] = powerspec 3  supports D0 D1 D2 D3  current D0
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0019[180] = PCIe Sec 1 lane errors 0
+
+pcib14@pci7:1:0:0:	class=0x060400 rev=0x04 hdr=0x01 vendor=0x1a03 device=0x1150 subvendor=0x1a03 subdevice=0x1150
+    vendor     = 'ASPEED Technology, Inc.'
+    device     = 'AST1150 PCI-to-PCI Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 05[50] = MSI supports 1 message, 64 bit 
+    cap 01[78] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 10[80] = PCI-Express 2 PCI bridge max data 256(256) RO NS
+                 max read 512
+                 link x1(x1) speed 5.0(5.0) ASPM disabled(L0s/L1)
+    cap 0d[c0] = PCI Bridge subvendor=0x1a03 subdevice=0x1150
+    ecap 0002[100] = VC 1 max VC0
+    ecap 0001[800] = AER 1 0 fatal 0 non-fatal 1 corrected
+
+vgapci0@pci7:2:0:0:	class=0x030000 rev=0x41 hdr=0x00 vendor=0x1a03 device=0x2000 subvendor=0x1a03 subdevice=0x2000
+    vendor     = 'ASPEED Technology, Inc.'
+    device     = 'ASPEED Graphics Family'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 32, base 0x30000000, size 16777216, enabled
+    bar   [14] = type Memory, range 32, base 0x31040000, size 131072, enabled
+    bar   [18] = type I/O Port, range 32, base 0, size 128, enabled
+    cap 01[40] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 05[50] = MSI supports 2 messages, 64 bit 

@@ -1,0 +1,99 @@
+hostb0@pci0:0:11:0:	class=0x060000 card=0x00000000 chip=0x0034106b rev=0x00 hdr=0x00
+    vendor     = 'Apple Inc.'
+    device     = 'UniNorth 2 AGP'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 02[80] = AGP 4x 2x 1x SBA disabled
+
+vgapci0@pci0:0:16:0:	class=0x030000 card=0x59621002 chip=0x59621002 rev=0x01 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'RV280 [Radeon 9200]'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Prefetchable Memory, range 32, base 0x98000000, size 134217728, enabled
+    bar   [14] = type I/O Port, range 32, base 0x400, size 256, enabled
+    bar   [18] = type Memory, range 32, base 0x90000000, size 65536, enabled
+    cap 02[58] = AGP 4x 2x 1x SBA disabled
+    cap 01[50] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+macio0@pci1:0:23:0:	class=0xff0000 card=0x00000000 chip=0x003e106b rev=0x00 hdr=0x00
+    vendor     = 'Apple Inc.'
+    device     = 'KeyLargo/Intrepid Mac I/O'
+    bar   [10] = type Memory, range 32, base 0x80000000, size 524288, enabled
+
+ohci0@pci1:0:26:0:	class=0x0c0310 card=0x00000000 chip=0x003f106b rev=0x00 hdr=0x00
+    vendor     = 'Apple Inc.'
+    device     = 'KeyLargo/Intrepid USB'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0x80083000, size 4096, enabled
+
+ohci1@pci1:0:27:0:	class=0x0c0310 card=0x00351033 chip=0x00351033 rev=0x43 hdr=0x00
+    vendor     = 'NEC Corporation'
+    device     = 'OHCI USB Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0x80082000, size 4096, enabled
+    cap 01[40] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+ohci2@pci1:0:27:1:	class=0x0c0310 card=0x00351033 chip=0x00351033 rev=0x43 hdr=0x00
+    vendor     = 'NEC Corporation'
+    device     = 'OHCI USB Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0x80081000, size 4096, enabled
+    cap 01[40] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+ehci0@pci1:0:27:2:	class=0x0c0320 card=0x00e01033 chip=0x00e01033 rev=0x04 hdr=0x00
+    vendor     = 'NEC Corporation'
+    device     = 'uPD72010x USB 2.0 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0x80080000, size 256, enabled
+    cap 01[40] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+hostb1@pci1:0:11:0:	class=0x060000 card=0x00000000 chip=0x0035106b rev=0x00 hdr=0x00
+    vendor     = 'Apple Inc.'
+    device     = 'UniNorth 2 PCI'
+    class      = bridge
+    subclass   = HOST-PCI
+
+ohci3@pci1:0:24:0:	class=0x0c0310 card=0x00000000 chip=0x003f106b rev=0x00 hdr=0x00
+    vendor     = 'Apple Inc.'
+    device     = 'KeyLargo/Intrepid USB'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0x80084000, size 4096, enabled
+
+ohci4@pci1:0:25:0:	class=0x0c0310 card=0x00000000 chip=0x003f106b rev=0x00 hdr=0x00
+    vendor     = 'Apple Inc.'
+    device     = 'KeyLargo/Intrepid USB'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0x80085000, size 4096, enabled
+
+ata1@pci2:0:13:0:	class=0xff0000 card=0x00000000 chip=0x003b106b rev=0x00 hdr=0x00
+    vendor     = 'Apple Inc.'
+    device     = 'UniNorth/Intrepid ATA/100'
+    bar   [10] = type Memory, range 32, base 0xf5004000, size 16384, enabled
+
+fwohci0@pci2:0:14:0:	class=0x0c0010 card=0x5811106b chip=0x0031106b rev=0x81 hdr=0x00
+    vendor     = 'Apple Inc.'
+    device     = 'UniNorth 2 FireWire'
+    class      = serial bus
+    subclass   = FireWire
+    bar   [10] = type Memory, range 32, base 0xf5000000, size 4096, enabled
+    cap 01[44] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+gem0@pci2:0:15:0:	class=0x020000 card=0x00000000 chip=0x0032106b rev=0x80 hdr=0x00
+    vendor     = 'Apple Inc.'
+    device     = 'UniNorth 2 GMAC (Sun GEM)'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xf5200000, size 2097152, enabled
+
+hostb2@pci2:0:11:0:	class=0x060000 card=0x00000000 chip=0x0036106b rev=0x00 hdr=0x00
+    vendor     = 'Apple Inc.'
+    device     = 'UniNorth 2 Internal PCI'
+    class      = bridge
+    subclass   = HOST-PCI

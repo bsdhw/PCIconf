@@ -1,0 +1,88 @@
+hostb0@pci0:0:0:0:	class=0x060000 card=0x25701458 chip=0x25708086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82865G/PE/P DRAM Controller/Host-Hub Interface'
+    class      = bridge
+    subclass   = HOST-PCI
+    bar   [10] = type Prefetchable Memory, range 32, base 0xe8000000, size 134217728, enabled
+    cap 09[e4] = vendor (length 6) Intel cap 0 version 1
+
+vgapci0@pci0:0:2:0:	class=0x030000 card=0x25721458 chip=0x25728086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82865G Integrated Graphics Controller'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Prefetchable Memory, range 32, base 0xf0000000, size 134217728, enabled
+    bar   [14] = type Memory, range 32, base 0xf8100000, size 524288, enabled
+    bar   [18] = type I/O Port, range 32, base 0xc000, size 8, enabled
+    cap 01[d0] = powerspec 1  supports D0 D3  current D0
+
+uhci0@pci0:0:29:0:	class=0x0c0300 card=0x24d21458 chip=0x24d28086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801EB/ER (ICH5/ICH5R) USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xb000, size 32, enabled
+
+uhci1@pci0:0:29:1:	class=0x0c0300 card=0x24d21458 chip=0x24d48086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801EB/ER (ICH5/ICH5R) USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xb400, size 32, enabled
+
+uhci2@pci0:0:29:2:	class=0x0c0300 card=0x24d21458 chip=0x24d78086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801EB/ER (ICH5/ICH5R) USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xb800, size 32, enabled
+
+uhci3@pci0:0:29:3:	class=0x0c0300 card=0x24d21458 chip=0x24de8086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801EB/ER (ICH5/ICH5R) USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xbc00, size 32, enabled
+
+ehci0@pci0:0:29:7:	class=0x0c0320 card=0x50061458 chip=0x24dd8086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801EB/ER (ICH5/ICH5R) USB2 EHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xf8180000, size 1024, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+
+pcib1@pci0:0:30:0:	class=0x060400 card=0x00000000 chip=0x244e8086 rev=0xc2 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = '82801 PCI Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+
+isab0@pci0:0:31:0:	class=0x060100 card=0x00000000 chip=0x24d08086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801EB/ER (ICH5/ICH5R) LPC Interface Bridge'
+    class      = bridge
+    subclass   = PCI-ISA
+
+atapci0@pci0:0:31:2:	class=0x01018a card=0x24d11458 chip=0x24d18086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801EB (ICH5) SATA Controller'
+    class      = mass storage
+    subclass   = ATA
+    bar   [20] = type I/O Port, range 32, base 0xf000, size 16, enabled
+
+none0@pci0:0:31:3:	class=0x0c0500 card=0x24d21458 chip=0x24d38086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801EB/ER (ICH5/ICH5R) SMBus Controller'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [20] = type I/O Port, range 32, base 0x1400, size 32, enabled
+
+fxp0@pci0:1:8:0:	class=0x020000 card=0x30131458 chip=0x10508086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82562EZ 10/100 Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xf8000000, size 4096, enabled
+    bar   [14] = type I/O Port, range 32, base 0xa000, size 64, enabled
+    cap 01[dc] = powerspec 2  supports D0 D1 D2 D3  current D0

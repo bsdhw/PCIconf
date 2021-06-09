@@ -1,0 +1,59 @@
+hostb0@pci0:0:0:0:	class=0x060000 card=0x72708086 chip=0x22808086 rev=0x36 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Atom/Celeron/Pentium Processor x5-E8000/J3xxx/N3xxx Series SoC Transaction Register'
+    class      = bridge
+    subclass   = HOST-PCI
+
+vgapci0@pci0:0:2:0:	class=0x030000 card=0x72708086 chip=0x22b08086 rev=0x36 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Atom/Celeron/Pentium Processor x5-E8000/J3xxx/N3xxx Integrated Graphics Controller'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 64, base 0x90000000, size 16777216, enabled
+    bar   [18] = type Prefetchable Memory, range 64, base 0x80000000, size 268435456, enabled
+    bar   [20] = type I/O Port, range 32, base 0xf000, size 64, enabled
+    cap 01[d0] = powerspec 2  supports D0 D3  current D0
+    cap 05[90] = MSI supports 1 message 
+    cap 09[b0] = vendor (length 7) Intel cap 0 version 1
+
+none0@pci0:0:3:0:	class=0x048000 card=0x72708086 chip=0x22b88086 rev=0x36 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Atom/Celeron/Pentium Processor x5-E8000/J3xxx/N3xxx Series Imaging Unit'
+    class      = multimedia
+    bar   [10] = type Memory, range 32, base 0x91000000, size 4194304, enabled
+    cap 01[80] = powerspec 2  supports D0 D3  current D0
+    cap 05[90] = MSI supports 1 message 
+
+none1@pci0:0:11:0:	class=0x118000 card=0x72708086 chip=0x22dc8086 rev=0x36 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Atom/Celeron/Pentium Processor x5-E8000/J3xxx/N3xxx Series Power Management Controller'
+    class      = dasp
+    bar   [10] = type Memory, range 64, base 0x9183b000, size 4096, enabled
+    cap 05[40] = MSI supports 1 message 
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+
+xhci0@pci0:0:20:0:	class=0x0c0330 card=0x72708086 chip=0x22b58086 rev=0x36 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Atom/Celeron/Pentium Processor x5-E8000/J3xxx/N3xxx Series USB xHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 64, base 0x91800000, size 65536, enabled
+    cap 01[70] = powerspec 2  supports D0 D3  current D0
+    cap 05[80] = MSI supports 8 messages, 64 bit 
+
+none2@pci0:0:26:0:	class=0x108000 card=0x72708086 chip=0x22988086 rev=0x36 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Atom/Celeron/Pentium Processor x5-E8000/J3xxx/N3xxx Series Trusted Execution Engine'
+    class      = encrypt/decrypt
+    bar   [10] = type Memory, range 32, base 0x91700000, size 1048576, enabled
+    bar   [14] = type Memory, range 32, base 0x91600000, size 1048576, enabled
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 05[a0] = MSI supports 1 message 
+
+isab0@pci0:0:31:0:	class=0x060100 card=0x72708086 chip=0x229c8086 rev=0x36 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Atom/Celeron/Pentium Processor x5-E8000/J3xxx/N3xxx Series PCU'
+    class      = bridge
+    subclass   = PCI-ISA
+    cap 09[e0] = vendor (length 12) Intel cap 1 version 0
+		 features: 4 PCI-e x1 slots

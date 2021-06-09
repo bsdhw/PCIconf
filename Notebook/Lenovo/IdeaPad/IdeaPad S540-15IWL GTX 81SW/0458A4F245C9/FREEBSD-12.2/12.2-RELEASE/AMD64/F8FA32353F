@@ -1,0 +1,256 @@
+hostb0@pci0:0:0:0:	class=0x060000 card=0x380a17aa chip=0x3e348086 rev=0x0c hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Coffee Lake HOST and DRAM Controller'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 09[e0] = vendor (length 16) Intel cap 0 version 1
+
+vgapci0@pci0:0:2:0:	class=0x030000 card=0x3f0a17aa chip=0x3ea08086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'UHD Graphics 620 (Whiskey Lake)'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 64, base 0x92000000, size 16777216, enabled
+    bar   [18] = type Prefetchable Memory, range 64, base 0xa0000000, size 268435456, enabled
+    bar   [20] = type I/O Port, range 32, base 0x4000, size 64, enabled
+    cap 09[40] = vendor (length 12) Intel cap 0 version 1
+    cap 10[70] = PCI-Express 2 root endpoint max data 128(128) FLR
+    cap 05[ac] = MSI supports 1 message 
+    cap 01[d0] = powerspec 2  supports D0 D3  current D0
+    ecap 001b[100] = Process Address Space ID 1
+    ecap 000f[200] = ATS 1
+    ecap 0013[300] = Page Page Request 1
+
+none0@pci0:0:4:0:	class=0x118000 card=0x383517aa chip=0x19038086 rev=0x0c hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor Thermal Subsystem'
+    class      = dasp
+    bar   [10] = type Memory, range 64, base 0x94410000, size 32768, enabled
+    cap 05[90] = MSI supports 1 message 
+    cap 01[d0] = powerspec 3  supports D0 D3  current D0
+    cap 09[e0] = vendor (length 12) Intel cap 0 version 1
+
+none1@pci0:0:8:0:	class=0x088000 card=0x386e17aa chip=0x19118086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E3-1200 v5/v6 / E3-1500 v5 / 6th/7th/8th Gen Core Processor Gaussian Mixture Model'
+    class      = base peripheral
+    bar   [10] = type Memory, range 64, base 0x94424000, size 4096, enabled
+    cap 05[90] = MSI supports 1 message 
+    cap 01[dc] = powerspec 2  supports D0 D3  current D0
+    cap 13[f0] = PCI Advanced Features: FLR TP
+
+none2@pci0:0:18:0:	class=0x118000 card=0x381617aa chip=0x9df98086 rev=0x30 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Cannon Point-LP Thermal Controller'
+    class      = dasp
+    bar   [10] = type Memory, range 64, base 0x94425000, size 4096, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 05[80] = MSI supports 1 message 
+
+xhci0@pci0:0:20:0:	class=0x0c0330 card=0x381717aa chip=0x9ded8086 rev=0x30 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Cannon Point-LP USB 3.1 xHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 64, base 0x94400000, size 65536, enabled
+    cap 01[70] = powerspec 2  supports D0 D3  current D0
+    cap 05[80] = MSI supports 8 messages, 64 bit enabled with 1 message
+    cap 09[90] = vendor (length 20) Intel cap 15 version 0
+
+none3@pci0:0:20:2:	class=0x050000 card=0x380f17aa chip=0x9def8086 rev=0x30 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Cannon Point-LP Shared SRAM'
+    class      = memory
+    subclass   = RAM
+    bar   [10] = type Memory, range 64, base 0x94420000, size 8192, enabled
+    bar   [18] = type Memory, range 64, base 0x94426000, size 4096, enabled
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+
+iwm0@pci0:0:20:3:	class=0x028000 card=0x00348086 chip=0x9df08086 rev=0x30 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Cannon Point-LP CNVi [Wireless-AC]'
+    class      = network
+    bar   [10] = type Memory, range 64, base 0x94418000, size 16384, enabled
+    cap 01[c8] = powerspec 3  supports D0 D3  current D0
+    cap 05[d0] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128) FLR RO NS
+    cap 11[80] = MSI-X supports 16 messages
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x3000]
+    ecap 0000[100] = unknown 0
+    ecap 0018[14c] = LTR 1
+    ecap 000b[164] = Vendor 1 ID 16
+
+ig4iic0@pci0:0:21:0:	class=0x0c8000 card=0x381517aa chip=0x9de88086 rev=0x30 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Cannon Point-LP Serial IO I2C Controller'
+    class      = serial bus
+    bar   [10] = type Memory, range 64, base 0x94427000, size 4096, enabled
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 09[90] = vendor (length 20) Intel cap 15 version 0
+
+none4@pci0:0:22:0:	class=0x078000 card=0x381917aa chip=0x9de08086 rev=0x30 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Cannon Point-LP MEI Controller'
+    class      = simple comms
+    bar   [10] = type Memory, range 64, base 0x94428000, size 4096, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 05[8c] = MSI supports 1 message, 64 bit 
+    cap 09[a4] = vendor (length 20) Intel cap 15 version 0
+
+ahci0@pci0:0:23:0:	class=0x010601 card=0x380b17aa chip=0x9dd38086 rev=0x30 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Cannon Point-LP SATA Controller [AHCI Mode]'
+    class      = mass storage
+    subclass   = SATA
+    bar   [10] = type Memory, range 32, base 0x94422000, size 8192, enabled
+    bar   [14] = type Memory, range 32, base 0x9442b000, size 256, enabled
+    bar   [18] = type I/O Port, range 32, base 0x4060, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0x4068, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0x4040, size 32, enabled
+    bar   [24] = type Memory, range 32, base 0x9442a000, size 2048, enabled
+    cap 05[80] = MSI supports 1 message enabled with 1 message
+    cap 01[70] = powerspec 3  supports D0 D3  current D0
+    cap 12[a8] = SATA Index-Data Pair
+
+pcib1@pci0:0:28:0:	class=0x060400 card=0x380217aa chip=0x9dbb8086 rev=0xf0 hdr=0x01
+    vendor     = 'Intel Corporation'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(256) ARI disabled
+                 link x1(x1) speed 2.5(8.0) ASPM L1(L1)
+                 slot 3 power limit 100 mW
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge card=0x380217aa
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000d[140] = ACS 1
+    ecap 001f[150] = Precision Time Measurement 1
+    ecap 001e[200] = L1 PM Substates 1
+    ecap 0019[220] = PCIe Sec 1 lane errors 0
+    ecap 001d[250] = Downstream Port Containment 1
+
+pcib2@pci0:0:28:4:	class=0x060400 card=0x381817aa chip=0x9dbc8086 rev=0xf0 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = 'Cannon Point-LP PCI Express Root Port'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 256(256) ARI disabled
+                 link x4(x4) speed 8.0(8.0)
+                 slot 4 power limit 250 mW
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge card=0x381817aa
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000d[140] = ACS 1
+    ecap 001f[150] = Precision Time Measurement 1
+    ecap 001e[200] = L1 PM Substates 1
+    ecap 0019[220] = PCIe Sec 1 lane errors 0
+    ecap 001d[250] = Downstream Port Containment 1
+
+pcib3@pci0:0:29:0:	class=0x060400 card=0x380817aa chip=0x9db48086 rev=0xf0 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = 'Cannon Point-LP PCI Express Root Port'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 256(256) ARI enabled
+                 link x2(x4) speed 8.0(8.0) ASPM L1(L0s/L1)
+                 slot 12 power limit 250 mW
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge card=0x380817aa
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000d[140] = ACS 1
+    ecap 001f[150] = Precision Time Measurement 1
+    ecap 001e[200] = L1 PM Substates 1
+    ecap 0019[220] = PCIe Sec 1 lane errors 0
+    ecap 001d[250] = Downstream Port Containment 1
+
+isab0@pci0:0:31:0:	class=0x060100 card=0x381217aa chip=0x9d848086 rev=0x30 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Cannon Point-LP LPC Controller'
+    class      = bridge
+    subclass   = PCI-ISA
+
+hdac1@pci0:0:31:3:	class=0x040380 card=0x380c17aa chip=0x9dc88086 rev=0x30 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Cannon Point-LP High Definition Audio Controller'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 64, base 0x9441c000, size 16384, enabled
+    bar   [20] = type Memory, range 64, base 0x94100000, size 1048576, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 09[80] = vendor (length 20) Intel cap 15 version 0
+    cap 05[60] = MSI supports 1 message, 64 bit enabled with 1 message
+
+none5@pci0:0:31:5:	class=0x0c8000 card=0x381017aa chip=0x9da48086 rev=0x30 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Cannon Point-LP SPI Controller'
+    class      = serial bus
+    bar   [10] = type Memory, range 32, base 0xfe010000, size 4096, enabled
+
+sdhci_pci0@pci0:1:0:0:	class=0x080501 card=0x380317aa chip=0x86211217 rev=0x01 hdr=0x00
+    vendor     = 'O2 Micro, Inc.'
+    device     = 'SD/MMC Card Reader Controller'
+    class      = base peripheral
+    subclass   = SD host controller
+    bar   [10] = type Memory, range 32, base 0x94301000, size 4096, enabled
+    bar   [14] = type Memory, range 32, base 0x94300000, size 2048, enabled
+    cap 01[6c] = powerspec 3  supports D0 D3  current D0
+    cap 05[48] = MSI supports 1 message, 64 bit, vector masks enabled with 1 message
+    cap 10[80] = PCI-Express 2 endpoint max data 128(128) RO NS
+                 link x1(x1) speed 2.5(2.5) ASPM L1(L0s/L1) ClockPM enabled
+    ecap 0002[100] = VC 1 max VC0
+    ecap 0001[200] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 0018[230] = LTR 1
+    ecap 001e[240] = L1 PM Substates 1
+
+vgapci1@pci0:2:0:0:	class=0x030000 card=0x380617aa chip=0x1f9110de rev=0xa1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'TU117M [GeForce GTX 1650 Mobile / Max-Q]'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 32, base 0x93000000, size 16777216, enabled
+    bar   [14] = type Prefetchable Memory, range 64, base 0x80000000, size 268435456, enabled
+    bar   [1c] = type Prefetchable Memory, range 64, base 0x90000000, size 33554432, enabled
+    bar   [24] = type I/O Port, range 32, base 0x3000, size 128, enabled
+    cap 01[60] = powerspec 3  supports D0 D3  current D0
+    cap 05[68] = MSI supports 1 message, 64 bit 
+    cap 10[78] = PCI-Express 2 legacy endpoint max data 256(256) FLR RO NS
+                 link x4(x16) speed 8.0(8.0) ASPM disabled(L0s/L1) ClockPM enabled
+    ecap 0002[100] = VC 1 max VC0
+    ecap 0018[250] = LTR 1
+    ecap 001e[258] = L1 PM Substates 1
+    ecap 0004[128] = Power Budgeting 1
+    ecap 0001[420] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 000b[600] = Vendor 1 ID 1
+    ecap 0019[900] = PCIe Sec 1 lane errors 0
+    ecap 0015[bb0] = Resizable BAR 1
+
+hdac0@pci0:2:0:1:	class=0x040300 card=0x380617aa chip=0x10fa10de rev=0xa1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 32, base 0x94000000, size 16384, enabled
+    cap 01[60] = powerspec 3  supports D0 D3  current D0
+    cap 05[68] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 10[78] = PCI-Express 2 endpoint max data 256(256) RO NS
+                 link x4(x16) speed 8.0(8.0) ASPM disabled(L0s/L1) ClockPM enabled
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 1 corrected
+
+nvme0@pci0:3:0:0:	class=0x010802 card=0x50081cc4 chip=0x50081cc4 rev=0x01 hdr=0x00
+    vendor     = 'Union Memory (Shenzhen)'
+    class      = mass storage
+    subclass   = NVM
+    bar   [10] = type Memory, range 64, base 0x94200000, size 16384, enabled
+    cap 10[80] = PCI-Express 2 endpoint max data 256(256) FLR RO NS
+                 link x2(x2) speed 8.0(8.0) ASPM L1(L0s/L1)
+    cap 11[d0] = MSI-X supports 9 messages, enabled
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x3000]
+    cap 05[e0] = MSI supports 8 messages, 64 bit 
+    cap 01[f8] = powerspec 3  supports D0 D3  current D0
+    ecap 000b[100] = Vendor 1 ID 5462
+    ecap 0018[108] = LTR 1
+    ecap 001e[110] = L1 PM Substates 1
+    ecap 000e[128] = ARI 1
+    ecap 0001[200] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0019[300] = PCIe Sec 1 lane errors 0

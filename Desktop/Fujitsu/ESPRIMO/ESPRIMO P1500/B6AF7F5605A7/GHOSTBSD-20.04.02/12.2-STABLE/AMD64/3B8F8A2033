@@ -1,0 +1,208 @@
+hostb0@pci0:0:0:0:	class=0x060000 card=0x115b1734 chip=0x07c110de rev=0xa2 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP73 Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+none0@pci0:0:0:1:	class=0x050000 card=0x115b1734 chip=0x07cb10de rev=0xa2 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'nForce 610i/630i memory controller'
+    class      = memory
+    subclass   = RAM
+
+none1@pci0:0:1:0:	class=0x050000 card=0x115b1734 chip=0x07cd10de rev=0xa1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'nForce 610i/630i memory controller'
+    class      = memory
+    subclass   = RAM
+
+none2@pci0:0:1:1:	class=0x050000 card=0x115b1734 chip=0x07ce10de rev=0xa1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'nForce 610i/630i memory controller'
+    class      = memory
+    subclass   = RAM
+
+none3@pci0:0:1:2:	class=0x050000 card=0x115b1734 chip=0x07cf10de rev=0xa1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'nForce 610i/630i memory controller'
+    class      = memory
+    subclass   = RAM
+
+none4@pci0:0:1:3:	class=0x050000 card=0x115b1734 chip=0x07d010de rev=0xa1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'nForce 610i/630i memory controller'
+    class      = memory
+    subclass   = RAM
+
+none5@pci0:0:1:4:	class=0x050000 card=0x115b1734 chip=0x07d110de rev=0xa1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'nForce 610i/630i memory controller'
+    class      = memory
+    subclass   = RAM
+
+none6@pci0:0:1:5:	class=0x050000 card=0x115b1734 chip=0x07d210de rev=0xa1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'nForce 610i/630i memory controller'
+    class      = memory
+    subclass   = RAM
+
+none7@pci0:0:1:6:	class=0x050000 card=0x115b1734 chip=0x07d310de rev=0xa1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'nForce 610i/630i memory controller'
+    class      = memory
+    subclass   = RAM
+
+none8@pci0:0:2:0:	class=0x050000 card=0x115b1734 chip=0x07d610de rev=0xa1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'nForce 610i/630i memory controller'
+    class      = memory
+    subclass   = RAM
+
+isab0@pci0:0:3:0:	class=0x060100 card=0x115b1734 chip=0x07d710de rev=0xa2 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP73 LPC Bridge'
+    class      = bridge
+    subclass   = PCI-ISA
+
+none9@pci0:0:3:1:	class=0x0c0500 card=0x115b1734 chip=0x07d810de rev=0xa1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP73 SMBus'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [10] = type I/O Port, range 32, base 0x3080, size 64, enabled
+    bar   [20] = type I/O Port, range 32, base 0x3040, size 64, enabled
+    bar   [24] = type I/O Port, range 32, base 0x3000, size 64, enabled
+    cap 01[44] = powerspec 2  supports D0 D3  current D0
+
+none10@pci0:0:3:4:	class=0x050000 card=0x115b1734 chip=0x07c810de rev=0xa1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP73 Memory Controller'
+    class      = memory
+    subclass   = RAM
+
+ohci0@pci0:0:4:0:	class=0x0c0310 card=0x115b1734 chip=0x07fe10de rev=0xa1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP73 OHCI USB 1.1 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfe226000, size 4096, enabled
+    cap 01[44] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+ehci0@pci0:0:4:1:	class=0x0c0320 card=0x115b1734 chip=0x056a10de rev=0xa1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP73 [nForce 630i] USB 2.0 Controller (EHCI)'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfe227000, size 256, enabled
+    cap 0a[44] = EHCI Debug Port at offset 0x98 in map 0x14
+    cap 01[80] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+hdac0@pci0:0:9:0:	class=0x040300 card=0x11911734 chip=0x07fc10de rev=0xa1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP73 High Definition Audio'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 32, base 0xfe220000, size 16384, enabled
+    cap 01[44] = powerspec 2  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks enabled with 1 message
+
+pcib1@pci0:0:10:0:	class=0x060401 card=0xcb7310de chip=0x056d10de rev=0xa1 hdr=0x01
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP73 PCI Express bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[b8] = PCI Bridge card=0xcb7310de
+
+pcib2@pci0:0:11:0:	class=0x060400 card=0x000010de chip=0x056e10de rev=0xa1 hdr=0x01
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP73 PCI Express bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge card=0x000010de
+    cap 01[48] = powerspec 2  supports D0 D3  current D0
+    cap 05[50] = MSI supports 2 messages, 64 bit 
+    cap 10[80] = PCI-Express 1 root port max data 128(256) RO NS
+                 link x16(x16) speed 2.5(2.5) ASPM L0s/L1(L0s/L1)
+                 slot 1 power limit 75000 mW
+    ecap 0002[100] = VC 1 max VC0
+
+pcib3@pci0:0:12:0:	class=0x060400 card=0x000010de chip=0x056f10de rev=0xa1 hdr=0x01
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP73 PCI Express bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge card=0x000010de
+    cap 01[48] = powerspec 2  supports D0 D3  current D0
+    cap 05[50] = MSI supports 2 messages, 64 bit 
+    cap 10[80] = PCI-Express 1 root port max data 128(256) RO NS
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+                 slot 2 power limit 10000 mW
+    ecap 0002[100] = VC 1 max VC0
+
+pcib4@pci0:0:13:0:	class=0x060400 card=0x000010de chip=0x056f10de rev=0xa1 hdr=0x01
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP73 PCI Express bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge card=0x000010de
+    cap 01[48] = powerspec 2  supports D0 D3  current D0
+    cap 05[50] = MSI supports 2 messages, 64 bit 
+    cap 10[80] = PCI-Express 1 root port max data 128(256) RO NS
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+                 slot 3 power limit 10000 mW
+    ecap 0002[100] = VC 1 max VC0
+
+ahci0@pci0:0:14:0:	class=0x010601 card=0x115b1734 chip=0x07f410de rev=0xa2 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'GeForce 7100/nForce 630i SATA'
+    class      = mass storage
+    subclass   = SATA
+    bar   [10] = type I/O Port, range 32, base 0x30e0, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0x30d4, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0x30d8, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0x30d0, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0x30c0, size 16, enabled
+    bar   [24] = type Memory, range 32, base 0xfe224000, size 8192, enabled
+    cap 01[44] = powerspec 2  supports D0 D3  current D0
+    cap 12[8c] = SATA Index-Data Pair
+    cap 05[b0] = MSI supports 8 messages, 64 bit enabled with 8 messages
+
+nfe0@pci0:0:15:0:	class=0x020000 card=0x115b1734 chip=0x07dc10de rev=0xa2 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP73 Ethernet'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xfe22a000, size 4096, enabled
+    bar   [14] = type I/O Port, range 32, base 0x30e8, size 8, enabled
+    bar   [18] = type Memory, range 32, base 0xfe229000, size 256, enabled
+    bar   [1c] = type Memory, range 32, base 0xfe228000, size 16, enabled
+    cap 01[44] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+vgapci0@pci0:2:0:0:	class=0x030000 card=0x8a9b1462 chip=0x138010de rev=0xa2 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'GM107 [GeForce GTX 750 Ti]'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 32, base 0xcd000000, size 16777216, enabled
+    bar   [14] = type Prefetchable Memory, range 64, base 0xd0000000, size 268435456, enabled
+    bar   [1c] = type Prefetchable Memory, range 64, base 0xce000000, size 33554432, enabled
+    bar   [24] = type I/O Port, range 32, base 0x4000, size 128, enabled
+    cap 01[60] = powerspec 3  supports D0 D3  current D0
+    cap 05[68] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 10[78] = PCI-Express 1 legacy endpoint max data 128(256) RO NS
+                 link x16(x16) speed 2.5(2.5) ASPM L0s/L1(L0s/L1) ClockPM enabled
+    ecap 0002[100] = VC 1 max VC0
+    ecap 001e[258] = L1 PM Substates 1
+    ecap 0004[128] = Power Budgeting 1
+    ecap 000b[600] = Vendor 1 ID 1
+
+hdac1@pci0:2:0:1:	class=0x040300 card=0x8a9b1462 chip=0x0fbc10de rev=0xa1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'GM107 High Definition Audio Controller [GeForce 940MX]'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 32, base 0xccf7c000, size 16384, enabled
+    cap 01[60] = powerspec 3  supports D0 D3  current D0
+    cap 05[68] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 10[78] = PCI-Express 1 endpoint max data 128(256) RO NS
+                 link x16(x16) speed 2.5(2.5) ASPM L0s/L1(L0s/L1) ClockPM enabled

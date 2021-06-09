@@ -1,0 +1,62 @@
+hostb0@pci0:0:0:0:	class=0x060000 card=0x00000000 chip=0x71908086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '440BX/ZX/DX - 82443BX/ZX/DX Host bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+    bar   [10] = type Prefetchable Memory, range 32, base 0x48000000, size 67108864, enabled
+    cap 02[a0] = AGP 2x 1x SBA disabled
+
+pcib1@pci0:0:1:0:	class=0x060400 card=0x00000000 chip=0x71918086 rev=0x02 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = '440BX/ZX/DX - 82443BX/ZX/DX AGP bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+
+mbgclock0@pci0:0:14:0:	class=0x088000 card=0x02031360 chip=0x02031360 rev=0x00 hdr=0x00
+    vendor     = 'Meinberg Funkuhren'
+    device     = 'GPS169PCI GPS Receiver'
+    class      = base peripheral
+    bar   [10] = type I/O Port, range 32, base 0x1400, size 256, enabled
+
+fxp0@pci0:0:15:0:	class=0x020000 card=0x000c8086 chip=0x12298086 rev=0x08 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82557/8/9/0/1 Ethernet Pro 100'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0x44100000, size 4096, enabled
+    bar   [14] = type I/O Port, range 32, base 0x1000, size 64, enabled
+    bar   [18] = type Memory, range 32, base 0x44000000, size 1048576, enabled
+    cap 01[dc] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+isab0@pci0:0:20:0:	class=0x060100 card=0x00000000 chip=0x71108086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82371AB/EB/MB PIIX4 ISA'
+    class      = bridge
+    subclass   = PCI-ISA
+
+atapci0@pci0:0:20:1:	class=0x010180 card=0x00000000 chip=0x71118086 rev=0x01 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82371AB/EB/MB PIIX4 IDE'
+    class      = mass storage
+    subclass   = ATA
+    bar   [20] = type I/O Port, range 32, base 0x1060, size 16, enabled
+
+uhci0@pci0:0:20:2:	class=0x0c0300 card=0x00000000 chip=0x71128086 rev=0x01 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82371AB/EB/MB PIIX4 USB'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0x1040, size 32, enabled
+
+piix0@pci0:0:20:3:	class=0x068000 card=0x00000000 chip=0x71138086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82371AB/EB/MB PIIX4 ACPI'
+    class      = bridge
+
+vgapci0@pci0:1:0:0:	class=0x030000 card=0x89045333 chip=0x89045333 rev=0x01 hdr=0x00
+    vendor     = 'S3 Graphics Ltd.'
+    device     = '86c365, 86c366 [Trio 3D]'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 32, base 0x40000000, size 67108864, enabled
+    cap 01[44] = powerspec 1  supports D0 D1 D3  current D0

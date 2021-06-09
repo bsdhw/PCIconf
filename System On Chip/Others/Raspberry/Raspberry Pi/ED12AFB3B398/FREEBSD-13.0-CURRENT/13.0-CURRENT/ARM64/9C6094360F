@@ -1,0 +1,61 @@
+pcib1@pci0:0:0:0:	class=0x060400 rev=0x20 hdr=0x01 vendor=0x1957 device=0x8d80 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Freescale Semiconductor Inc'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 05[50] = MSI supports 32 messages, 64 bit, vector masks 
+    cap 10[70] = PCI-Express 2 root port max data 128(256) RO NS ARI disabled
+                 link x4(x4) speed 8.0(8.0) ASPM disabled(L0s)
+    cap 11[b0] = MSI-X supports 8 messages
+                 Table in map 0x14[0x0], PBA in map 0x14[0x2000]
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[158] = PCIe Sec 1 lane errors 0
+
+nvme0@pci0:1:0:0:	class=0x010802 rev=0x03 hdr=0x00 vendor=0x8086 device=0xf1a6 subvendor=0x8086 subdevice=0x390b
+    vendor     = 'Intel Corporation'
+    device     = 'SSD Pro 7600p/760p/E 6100p Series'
+    class      = mass storage
+    subclass   = NVM
+    bar   [10] = type Memory, range 64, base 0x49000000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 8 messages, 64 bit, vector masks 
+    cap 10[70] = PCI-Express 2 endpoint max data 128(128) FLR RO
+                 link x4(x4) speed 8.0(8.0) ASPM disabled(L1) ClockPM disabled
+    cap 11[b0] = MSI-X supports 16 messages, enabled
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x2100]
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[158] = PCIe Sec 1 lane errors 0
+    ecap 0018[178] = LTR 1
+    ecap 001e[180] = L1 PM Substates 1
+
+pcib3@pci2:0:0:0:	class=0x060400 rev=0x20 hdr=0x01 vendor=0x1957 device=0x8d80 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Freescale Semiconductor Inc'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 05[50] = MSI supports 32 messages, 64 bit, vector masks 
+    cap 10[70] = PCI-Express 2 root port max data 128(256) RO NS ARI disabled
+                 link x1(x8) speed 2.5(8.0) ASPM disabled(L0s)
+    cap 11[b0] = MSI-X supports 8 messages
+                 Table in map 0x14[0x0], PBA in map 0x14[0x2000]
+    ecap 0001[100] = AER 2 1 fatal 0 non-fatal 0 corrected
+    ecap 0019[158] = PCIe Sec 1 lane errors 0
+
+re0@pci2:1:0:0:	class=0x020000 rev=0x06 hdr=0x00 vendor=0x10ec device=0x8168 subvendor=0x7470 subdevice=0x3468
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    device     = 'RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0xffffff00, size 256, enabled
+    bar   [18] = type Memory, range 64, base 0x49000000, size 4096, enabled
+    bar   [20] = type Prefetchable Memory, range 64, base 0x49004000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit 
+    cap 10[70] = PCI-Express 2 endpoint MSI 1 max data 128(128) RO
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1) ClockPM disabled
+    cap 11[b0] = MSI-X supports 4 messages, enabled
+                 Table in map 0x20[0x0], PBA in map 0x20[0x800]
+    cap 03[d0] = VPD
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 0002[140] = VC 1 max VC0
+    ecap 0003[160] = Serial 1 4a2a0000684ce000

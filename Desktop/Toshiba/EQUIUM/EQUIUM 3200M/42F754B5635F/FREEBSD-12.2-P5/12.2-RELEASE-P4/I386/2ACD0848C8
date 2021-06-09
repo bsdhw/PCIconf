@@ -1,0 +1,62 @@
+hostb0@pci0:0:0:0:	class=0x060000 card=0x00000000 chip=0x71908086 rev=0x03 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '440BX/ZX/DX - 82443BX/ZX/DX Host bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+    bar   [10] = type Prefetchable Memory, range 32, base 0xe0000000, size 67108864, enabled
+    cap 02[a0] = AGP 2x 1x SBA disabled
+
+pcib1@pci0:0:1:0:	class=0x060400 card=0x00000000 chip=0x71918086 rev=0x03 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = '440BX/ZX/DX - 82443BX/ZX/DX AGP bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+
+isab0@pci0:0:7:0:	class=0x060100 card=0x00000000 chip=0x71108086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82371AB/EB/MB PIIX4 ISA'
+    class      = bridge
+    subclass   = PCI-ISA
+
+atapci0@pci0:0:7:1:	class=0x010180 card=0x00000000 chip=0x71118086 rev=0x01 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82371AB/EB/MB PIIX4 IDE'
+    class      = mass storage
+    subclass   = ATA
+    bar   [20] = type I/O Port, range 32, base 0xf000, size 16, enabled
+
+uhci0@pci0:0:7:2:	class=0x0c0300 card=0x00000000 chip=0x71128086 rev=0x01 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82371AB/EB/MB PIIX4 USB'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xe000, size 32, enabled
+
+intsmb0@pci0:0:7:3:	class=0x068000 card=0x00000000 chip=0x71138086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82371AB/EB/MB PIIX4 ACPI'
+    class      = bridge
+
+ath0@pci0:0:17:0:	class=0x028000 card=0x0300168c chip=0x002d168c rev=0x01 hdr=0x00
+    vendor     = 'Qualcomm Atheros'
+    device     = 'AR9227 Wireless Network Adapter'
+    class      = network
+    bar   [10] = type Memory, range 32, base 0xe7000000, size 65536, enabled
+    cap 80[40] = unknown
+
+pcm0@pci0:0:19:0:	class=0x040100 card=0x20001274 chip=0x58801274 rev=0x02 hdr=0x00
+    vendor     = 'Ensoniq'
+    device     = '5880B / Creative Labs CT5880'
+    class      = multimedia
+    subclass   = audio
+    bar   [10] = type I/O Port, range 32, base 0xe400, size 64, enabled
+    cap 01[dc] = powerspec 1  supports D0 D2 D3  current D0
+
+vgapci0@pci0:1:0:0:	class=0x030000 card=0x030012d2 chip=0x001812d2 rev=0x22 hdr=0x00
+    vendor     = 'NVidia / SGS Thomson (Joint Venture)'
+    device     = 'Riva128'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 32, base 0xe4000000, size 16777216, enabled
+    bar   [14] = type Prefetchable Memory, range 32, base 0xe6000000, size 16777216, enabled
+    cap 02[44] = AGP 2x 1x disabled

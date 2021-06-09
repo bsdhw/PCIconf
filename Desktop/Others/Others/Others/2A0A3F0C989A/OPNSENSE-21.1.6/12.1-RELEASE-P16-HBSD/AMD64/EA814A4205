@@ -1,0 +1,46 @@
+hostb0@pci0:0:0:0:	class=0x060000 card=0x11001af4 chip=0x12378086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '440FX - 82441FX PMC [Natoma]'
+    class      = bridge
+    subclass   = HOST-PCI
+
+isab0@pci0:0:1:0:	class=0x060100 card=0x11001af4 chip=0x70008086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82371SB PIIX3 ISA [Natoma/Triton II]'
+    class      = bridge
+    subclass   = PCI-ISA
+
+atapci0@pci0:0:1:1:	class=0x010180 card=0x00015853 chip=0x70108086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82371SB PIIX3 IDE [Natoma/Triton II]'
+    class      = mass storage
+    subclass   = ATA
+    bar   [20] = type I/O Port, range 32, base 0xc320, size 16, enabled
+
+uhci0@pci0:0:1:2:	class=0x0c0300 card=0x00015853 chip=0x70208086 rev=0x01 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82371SB PIIX3 USB [Natoma/Triton II]'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xc300, size 32, enabled
+
+intsmb0@pci0:0:1:3:	class=0x068000 card=0x11001af4 chip=0x71138086 rev=0x01 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82371AB/EB/MB PIIX4 ACPI'
+    class      = bridge
+
+vgapci0@pci0:0:2:0:	class=0x030000 card=0x00015853 chip=0x00b81013 rev=0x00 hdr=0x00
+    vendor     = 'Cirrus Logic'
+    device     = 'GD 5446'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Prefetchable Memory, range 32, base 0xf0000000, size 33554432, enabled
+    bar   [14] = type Memory, range 32, base 0xf3000000, size 4096, enabled
+
+xenpci0@pci0:0:3:0:	class=0x010000 card=0x00015853 chip=0x00015853 rev=0x01 hdr=0x00
+    vendor     = 'XenSource, Inc.'
+    device     = 'Xen Platform Device'
+    class      = mass storage
+    subclass   = SCSI
+    bar   [10] = type I/O Port, range 32, base 0xc000, size 256, enabled
+    bar   [14] = type Prefetchable Memory, range 32, base 0xf2000000, size 16777216, enabled

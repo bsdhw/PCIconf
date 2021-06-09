@@ -1,0 +1,103 @@
+hostb0@pci0:0:0:0:	class=0x060000 card=0x00000000 chip=0x06501039 rev=0x01 hdr=0x00
+    vendor     = 'Silicon Integrated Systems [SiS]'
+    device     = '650/M650 Host'
+    class      = bridge
+    subclass   = HOST-PCI
+    bar   [10] = type Memory, range 32, base 0xe8000000, size 67108864, enabled
+    cap 02[c0] = AGP 4x 2x 1x SBA disabled
+
+pcib1@pci0:0:1:0:	class=0x060400 card=0x00000000 chip=0x00011039 rev=0x00 hdr=0x01
+    vendor     = 'Silicon Integrated Systems [SiS]'
+    device     = 'AGP Port (virtual PCI-to-PCI bridge)'
+    class      = bridge
+    subclass   = PCI-PCI
+
+isab0@pci0:0:2:0:	class=0x060100 card=0x00000000 chip=0x00081039 rev=0x00 hdr=0x00
+    vendor     = 'Silicon Integrated Systems [SiS]'
+    device     = 'SiS85C503/5513 (LPC Bridge)'
+    class      = bridge
+    subclass   = PCI-ISA
+
+ohci0@pci0:0:2:2:	class=0x0c0310 card=0x70011039 chip=0x70011039 rev=0x07 hdr=0x00
+    vendor     = 'Silicon Integrated Systems [SiS]'
+    device     = 'USB 1.1 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xec000000, size 4096, enabled
+
+ohci1@pci0:0:2:3:	class=0x0c0310 card=0x70011039 chip=0x70011039 rev=0x07 hdr=0x00
+    vendor     = 'Silicon Integrated Systems [SiS]'
+    device     = 'USB 1.1 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xec001000, size 4096, enabled
+
+atapci0@pci0:0:2:5:	class=0x010180 card=0x55131039 chip=0x55131039 rev=0xd0 hdr=0x00
+    vendor     = 'Silicon Integrated Systems [SiS]'
+    device     = '5513 IDE Controller'
+    class      = mass storage
+    subclass   = ATA
+    bar   [20] = type I/O Port, range 32, base 0x9480, size 16, enabled
+
+none0@pci0:0:2:6:	class=0x070300 card=0x001214c0 chip=0x70131039 rev=0xa0 hdr=0x00
+    vendor     = 'Silicon Integrated Systems [SiS]'
+    device     = 'AC'97 Modem Controller'
+    class      = simple comms
+    subclass   = generic modem
+    bar   [10] = type I/O Port, range 32, base 0x8400, size 256, enabled
+    bar   [14] = type I/O Port, range 32, base 0x9000, size 128, enabled
+    cap 01[48] = powerspec 2  supports D0 D3  current D0
+
+pcm0@pci0:0:2:7:	class=0x040100 card=0x001a1025 chip=0x70121039 rev=0xa0 hdr=0x00
+    vendor     = 'Silicon Integrated Systems [SiS]'
+    device     = 'SiS7012 AC'97 Sound Controller'
+    class      = multimedia
+    subclass   = audio
+    bar   [10] = type I/O Port, range 32, base 0x8800, size 256, enabled
+    bar   [14] = type I/O Port, range 32, base 0x9080, size 128, enabled
+    cap 01[48] = powerspec 2  supports D0 D3  current D0
+
+none1@pci0:0:5:0:	class=0x0c0010 card=0x30441106 chip=0x30441106 rev=0x46 hdr=0x00
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VT6306/7/8 [Fire II(M)] IEEE 1394 OHCI Controller'
+    class      = serial bus
+    subclass   = FireWire
+    bar   [10] = type Memory, range 32, base 0xec002000, size 2048, enabled
+    bar   [14] = type I/O Port, range 32, base 0x9400, size 128, enabled
+    cap 01[50] = powerspec 2  supports D0 D2 D3  current D0
+
+rl0@pci0:0:6:0:	class=0x020000 card=0x001a1025 chip=0x813910ec rev=0x10 hdr=0x00
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    device     = 'RTL-8100/8101L/8139 PCI Fast Ethernet Adapter'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0x8c00, size 256, enabled
+    bar   [14] = type Memory, range 32, base 0xec002800, size 256, enabled
+    cap 01[50] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+cbb0@pci0:0:9:0:	class=0x060700 card=0x001a1025 chip=0x14201524 rev=0x01 hdr=0x02
+    vendor     = 'ENE Technology Inc'
+    device     = 'CB1420 Cardbus Controller'
+    class      = bridge
+    subclass   = PCI-CardBus
+    bar   [10] = type Memory, range 32, base 0x80000000, size 4096, enabled
+    cap 01[a0] = powerspec 1  supports D0 D1 D2 D3  current D0
+
+cbb1@pci0:0:9:1:	class=0x060700 card=0x001a1025 chip=0x14201524 rev=0x01 hdr=0x02
+    vendor     = 'ENE Technology Inc'
+    device     = 'CB1420 Cardbus Controller'
+    class      = bridge
+    subclass   = PCI-CardBus
+    bar   [10] = type Memory, range 32, base 0x80001000, size 4096, enabled
+    cap 01[a0] = powerspec 1  supports D0 D1 D2 D3  current D0
+
+vgapci0@pci0:1:0:0:	class=0x030000 card=0x001a1025 chip=0x63251039 rev=0x00 hdr=0x00
+    vendor     = 'Silicon Integrated Systems [SiS]'
+    device     = '65x/M650/740 PCI/AGP VGA Display Adapter'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Prefetchable Memory, range 32, base 0xf0000000, size 134217728, enabled
+    bar   [14] = type Memory, range 32, base 0xec100000, size 131072, enabled
+    bar   [18] = type I/O Port, range 32, base 0xa000, size 128, enabled
+    cap 01[40] = powerspec 1  supports D0 D1 D2 D3  current D0
+    cap 02[50] = AGP 4x 2x 1x SBA disabled
