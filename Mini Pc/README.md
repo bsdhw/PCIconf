@@ -94,56 +94,6 @@ Probe  - latest probe ID of this device.
 | 8086:22cc | 8086:7270 | Intel            | Atom/Celeron/Pentium Processor x5... | 12    | pcib       | [D180B0D394](<Mini Pc/AMI/Aptio/Aptio CRB/C88F6ADFB7E1/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/D180B0D394>) |
 | 8086:31da | 8086:7270 | Intel            | Gemini Lake PCI Express Root Port    | 12    | pcib       | [73726DFE1A](<Mini Pc/ZOTAC/ZBOX-CI329/ZBOX-CI329NANO/E3DDA56CAF35/OPNSENSE-22.1.2/13.0-STABLE/AMD64/73726DFE1A>) |
 | 8086:31e8 | 8086:7270 | Intel            | Celeron/Pentium Silver Processor ... | 12    | isab       | [73726DFE1A](<Mini Pc/ZOTAC/ZBOX-CI329/ZBOX-CI329NANO/E3DDA56CAF35/OPNSENSE-22.1.2/13.0-STABLE/AMD64/73726DFE1A>) |
-| 8086:2280 | 19da:b301 | Intel            | Atom/Celeron/Pentium Processor x5... | 11    | hostb      | [59CEE41440](<Mini Pc/ZOTAC/ZBOX-CI323/ZBOX-CI323NANO/F4E62A371E22/OPNSENSE-21.7.8/12.1-RELEASE-P22-HBSD/AMD64/59CEE41440>) |
-| 8086:229c | 19da:b301 | Intel            | Atom/Celeron/Pentium Processor x5... | 11    | isab       | [59CEE41440](<Mini Pc/ZOTAC/ZBOX-CI323/ZBOX-CI323NANO/F4E62A371E22/OPNSENSE-21.7.8/12.1-RELEASE-P22-HBSD/AMD64/59CEE41440>) |
-| 8086:22c8 | 19da:b301 | Intel            | Atom/Celeron/Pentium Processor x5... | 11    | pcib       | [59CEE41440](<Mini Pc/ZOTAC/ZBOX-CI323/ZBOX-CI323NANO/F4E62A371E22/OPNSENSE-21.7.8/12.1-RELEASE-P22-HBSD/AMD64/59CEE41440>) |
-| 8086:22ca | 19da:b301 | Intel            | Atom/Celeron/Pentium Processor x5... | 11    | pcib       | [59CEE41440](<Mini Pc/ZOTAC/ZBOX-CI323/ZBOX-CI323NANO/F4E62A371E22/OPNSENSE-21.7.8/12.1-RELEASE-P22-HBSD/AMD64/59CEE41440>) |
-| 8086:22cc | 19da:b301 | Intel            | Atom/Celeron/Pentium Processor x5... | 11    | pcib       | [59CEE41440](<Mini Pc/ZOTAC/ZBOX-CI323/ZBOX-CI323NANO/F4E62A371E22/OPNSENSE-21.7.8/12.1-RELEASE-P22-HBSD/AMD64/59CEE41440>) |
-| 8086:31d9 | 8086:7270 | Intel            | Gemini Lake PCI Express Root Port    | 11    | pcib       | [73726DFE1A](<Mini Pc/ZOTAC/ZBOX-CI329/ZBOX-CI329NANO/E3DDA56CAF35/OPNSENSE-22.1.2/13.0-STABLE/AMD64/73726DFE1A>) |
-| 8086:5ad7 | 19da:b325 | Intel            | Celeron N3350/Pentium N4200/Atom ... | 11    | pcib       | [C6A0BD2277](<Mini Pc/ZOTAC/ZBOX-CI327/ZBOX-CI327NANO-GS-01/2D5523DF5C7C/OPNSENSE-22.1/13.0-STABLE/AMD64/C6A0BD2277>) |
-| 8086:5ad8 | 19da:b325 | Intel            | Celeron N3350/Pentium N4200/Atom ... | 11    | pcib       | [C6A0BD2277](<Mini Pc/ZOTAC/ZBOX-CI327/ZBOX-CI327NANO-GS-01/2D5523DF5C7C/OPNSENSE-22.1/13.0-STABLE/AMD64/C6A0BD2277>) |
-| 8086:5ada | 19da:b325 | Intel            | Celeron N3350/Pentium N4200/Atom ... | 11    | pcib       | [C6A0BD2277](<Mini Pc/ZOTAC/ZBOX-CI327/ZBOX-CI327NANO-GS-01/2D5523DF5C7C/OPNSENSE-22.1/13.0-STABLE/AMD64/C6A0BD2277>) |
-| 8086:5ae8 | 19da:b325 | Intel            | Celeron N3350/Pentium N4200/Atom ... | 11    | isab       | [C6A0BD2277](<Mini Pc/ZOTAC/ZBOX-CI327/ZBOX-CI327NANO-GS-01/2D5523DF5C7C/OPNSENSE-22.1/13.0-STABLE/AMD64/C6A0BD2277>) |
-| 8086:22ce | 19da:b301 | Intel            | Atom/Celeron/Pentium Processor x5... | 9     | pcib       | [59CEE41440](<Mini Pc/ZOTAC/ZBOX-CI323/ZBOX-CI323NANO/F4E62A371E22/OPNSENSE-21.7.8/12.1-RELEASE-P22-HBSD/AMD64/59CEE41440>) |
-| 8086:22ce | 8086:7270 | Intel            | Atom/Celeron/Pentium Processor x5... | 9     | pcib       | [C6CAEFEBE6](<Mini Pc/AMI/Aptio/Aptio CRB/E84779F8F0F6/OPNSENSE-22.1.1/13.0-STABLE/AMD64/C6CAEFEBE6>) |
-| 8086:9d84 | 8086:2074 | Intel            | Cannon Point-LP LPC Controller       | 9     | isab       | [B137B25594](<Mini Pc/Intel Client Systems/NUC8/NUC8i5BEH/ABE20D4E9177/FREEBSD-13.1-BETA1/13.1-BETA1/AMD64/B137B25594>) |
-| 8086:1604 | 8086:2057 | Intel            | Broadwell-U Host Bridge -OPI         | 8     | hostb      | [342915FCCD](<Mini Pc/Intel Client Systems/NUC5/NUC5i3RYH/E6CECB6E29C9/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/342915FCCD>) |
-| 8086:5904 | 8086:2068 | Intel            | Xeon E3-1200 v6/7th Gen Core Proc... | 8     | hostb      | [BF63607CD6](<Mini Pc/Intel/NUC7/NUC7i3BNK/449CF79D838D/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/BF63607CD6>) |
-| 8086:9c90 | 8086:2057 | Intel            | Wildcat Point-LP PCI Express Root... | 8     | pcib       | [342915FCCD](<Mini Pc/Intel Client Systems/NUC5/NUC5i3RYH/E6CECB6E29C9/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/342915FCCD>) |
-| 8086:9c96 | 8086:2057 | Intel            | Wildcat Point-LP PCI Express Root... | 8     | pcib       | [342915FCCD](<Mini Pc/Intel Client Systems/NUC5/NUC5i3RYH/E6CECB6E29C9/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/342915FCCD>) |
-| 8086:9d10 | 8086:2068 | Intel            | Sunrise Point-LP PCI Express Root... | 8     | pcib       | [BF63607CD6](<Mini Pc/Intel/NUC7/NUC7i3BNK/449CF79D838D/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/BF63607CD6>) |
-| 8086:9d15 | 8086:2068 | Intel            | Sunrise Point-LP PCI Express Root... | 8     | pcib       | [BF63607CD6](<Mini Pc/Intel/NUC7/NUC7i3BNK/449CF79D838D/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/BF63607CD6>) |
-| 8086:9d17 | 8086:2068 | Intel            | Sunrise Point-LP PCI Express Root... | 8     | pcib       | [BF63607CD6](<Mini Pc/Intel/NUC7/NUC7i3BNK/449CF79D838D/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/BF63607CD6>) |
-| 8086:9d4e | 8086:2068 | Intel            | Sunrise Point LPC Controller/eSPI... | 8     | isab       | [BF63607CD6](<Mini Pc/Intel/NUC7/NUC7i3BNK/449CF79D838D/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/BF63607CD6>) |
-| 8086:9db0 | 8086:2074 | Intel            | Cannon Point-LP PCI Express Root ... | 8     | pcib       | [B137B25594](<Mini Pc/Intel Client Systems/NUC8/NUC8i5BEH/ABE20D4E9177/FREEBSD-13.1-BETA1/13.1-BETA1/AMD64/B137B25594>) |
-| 8086:9db8 | 8086:2074 | Intel            | Cannon Point-LP PCI Express Root ... | 8     | pcib       | [B137B25594](<Mini Pc/Intel Client Systems/NUC8/NUC8i5BEH/ABE20D4E9177/FREEBSD-13.1-BETA1/13.1-BETA1/AMD64/B137B25594>) |
-| 8086:9dbc | 8086:2074 | Intel            | Cannon Point-LP PCI Express Root ... | 8     | pcib       | [B137B25594](<Mini Pc/Intel Client Systems/NUC8/NUC8i5BEH/ABE20D4E9177/FREEBSD-13.1-BETA1/13.1-BETA1/AMD64/B137B25594>) |
-| 104c:823e |           | Texas Instrum... | XIO2213A/B/XIO2221 PCI Express to... | 7     | pcib       | [D73D3760CE](<Mini Pc/Apple/Macmini5/Macmini5,2/0B1FF4B63B01/OPNSENSE-21.7.8/12.1-RELEASE-P22-HBSD/AMD64/D73D3760CE>) |
-| 8086:31da | 8086:2072 | Intel            | Gemini Lake PCI Express Root Port    | 7     | pcib       | [5F657BDB2A](<Mini Pc/Intel/NUC7/NUC7PJYH/00FA66A2DAAA/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/5F657BDB2A>) |
-| 8086:31e8 | 1028:080c | Intel            | Celeron/Pentium Silver Processor ... | 7     | isab       | [AC38D3156D](<Mini Pc/Dell/Wyse/Wyse 5070 Thin Client/6159C9CD886E/OPNSENSE-22.1.2/13.0-STABLE/AMD64/AC38D3156D>) |
-| 8086:31e8 | 8086:2072 | Intel            | Celeron/Pentium Silver Processor ... | 7     | isab       | [5F657BDB2A](<Mini Pc/Intel/NUC7/NUC7PJYH/00FA66A2DAAA/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/5F657BDB2A>) |
-| 8086:31f0 | 8086:2072 | Intel            | Gemini Lake Host Bridge              | 7     | hostb      | [5F657BDB2A](<Mini Pc/Intel/NUC7/NUC7PJYH/00FA66A2DAAA/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/5F657BDB2A>) |
-| 8086:3ed0 | 8086:2074 | Intel            | 8th Gen Core Processor Host Bridg... | 7     | hostb      | [B137B25594](<Mini Pc/Intel Client Systems/NUC8/NUC8i5BEH/ABE20D4E9177/FREEBSD-13.1-BETA1/13.1-BETA1/AMD64/B137B25594>) |
-| 8086:9cc3 | 8086:2057 | Intel            | Wildcat Point-LP LPC Controller      | 7     | isab       | [1486DC195E](<Mini Pc/Intel/NUC5i3RYB/NUC5i3RYB H41000-502/3AFA134D91CD/OPNSENSE-21.7.5/12.1-RELEASE-P21-HBSD/AMD64/1486DC195E>) |
-| 1022:1448 |           | AMD              | Renoir Device 24: Function 0         | 6     | hostb      | [7EA8DAAE8D](<Mini Pc/ASUSTek Computer/MINIPC/MINIPC PN50/3509F5558F2E/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/7EA8DAAE8D>) |
-| 1022:1449 |           | AMD              | Renoir Device 24: Function 1         | 6     | hostb      | [7EA8DAAE8D](<Mini Pc/ASUSTek Computer/MINIPC/MINIPC PN50/3509F5558F2E/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/7EA8DAAE8D>) |
-| 1022:144a |           | AMD              | Renoir Device 24: Function 2         | 6     | hostb      | [7EA8DAAE8D](<Mini Pc/ASUSTek Computer/MINIPC/MINIPC PN50/3509F5558F2E/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/7EA8DAAE8D>) |
-| 1022:144b |           | AMD              | Renoir Device 24: Function 3         | 6     | hostb      | [7EA8DAAE8D](<Mini Pc/ASUSTek Computer/MINIPC/MINIPC PN50/3509F5558F2E/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/7EA8DAAE8D>) |
-| 1022:144c |           | AMD              | Renoir Device 24: Function 4         | 6     | hostb      | [7EA8DAAE8D](<Mini Pc/ASUSTek Computer/MINIPC/MINIPC PN50/3509F5558F2E/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/7EA8DAAE8D>) |
-| 1022:144d |           | AMD              | Renoir Device 24: Function 5         | 6     | hostb      | [7EA8DAAE8D](<Mini Pc/ASUSTek Computer/MINIPC/MINIPC PN50/3509F5558F2E/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/7EA8DAAE8D>) |
-| 1022:144e |           | AMD              | Renoir Device 24: Function 6         | 6     | hostb      | [7EA8DAAE8D](<Mini Pc/ASUSTek Computer/MINIPC/MINIPC PN50/3509F5558F2E/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/7EA8DAAE8D>) |
-| 1022:144f |           | AMD              | Renoir Device 24: Function 7         | 6     | hostb      | [7EA8DAAE8D](<Mini Pc/ASUSTek Computer/MINIPC/MINIPC PN50/3509F5558F2E/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/7EA8DAAE8D>) |
-| 1022:1632 |           | AMD              | Renoir PCIe Dummy Host Bridge        | 6     | hostb      | [7EA8DAAE8D](<Mini Pc/ASUSTek Computer/MINIPC/MINIPC PN50/3509F5558F2E/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/7EA8DAAE8D>) |
-| 10b5:8603 | 10b5:8603 | PLX Technology   | PEX 8603 3-lane, 3-Port PCI Expre... | 6     | pcib       | [0DD02A3DDF](<Mini Pc/Sophos/XG/XG/AB8EC8CFBC85/OPNSENSE-21.7.6/12.1-RELEASE-P21-HBSD/AMD64/0DD02A3DDF>) |
-| 8086:0284 | 8086:2081 | Intel            | Comet Lake PCH-LP LPC Premium Con... | 6     | isab       | [839EED529D](<Mini Pc/Intel Client Systems/NUC10/NUC10i7FNH/0DAB18E95372/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/839EED529D>) |
-| 8086:02b0 | 8086:2081 | Intel            | Comet Lake PCI Express Root Port #9  | 6     | pcib       | [839EED529D](<Mini Pc/Intel Client Systems/NUC10/NUC10i7FNH/0DAB18E95372/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/839EED529D>) |
-| 8086:02b5 | 8086:2081 | Intel            | Comet Lake PCH-LP PCIe Port #14      | 6     | pcib       | [839EED529D](<Mini Pc/Intel Client Systems/NUC10/NUC10i7FNH/0DAB18E95372/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/839EED529D>) |
-| 8086:02bc | 8086:2081 | Intel            | Comet Lake PCI Express Root Port #5  | 6     | pcib       | [839EED529D](<Mini Pc/Intel Client Systems/NUC10/NUC10i7FNH/0DAB18E95372/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/839EED529D>) |
-| 8086:15e7 | 8086:2081 | Intel            | JHL7540 Thunderbolt 3 Bridge [Tit... | 6     | pcib       | [839EED529D](<Mini Pc/Intel Client Systems/NUC10/NUC10i7FNH/0DAB18E95372/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/839EED529D>) |
-| 8086:1c10 | 8086:7270 | Intel            | 6 Series/C200 Series Chipset Fami... | 6     | pcib       | [D73D3760CE](<Mini Pc/Apple/Macmini5/Macmini5,2/0B1FF4B63B01/OPNSENSE-21.7.8/12.1-RELEASE-P22-HBSD/AMD64/D73D3760CE>) |
-| 8086:1c12 | 8086:7270 | Intel            | 6 Series/C200 Series Chipset Fami... | 6     | pcib       | [D73D3760CE](<Mini Pc/Apple/Macmini5/Macmini5,2/0B1FF4B63B01/OPNSENSE-21.7.8/12.1-RELEASE-P22-HBSD/AMD64/D73D3760CE>) |
-| 8086:1c14 | 8086:7270 | Intel            | 6 Series/C200 Series Chipset Fami... | 6     | pcib       | [D73D3760CE](<Mini Pc/Apple/Macmini5/Macmini5,2/0B1FF4B63B01/OPNSENSE-21.7.8/12.1-RELEASE-P22-HBSD/AMD64/D73D3760CE>) |
-| 8086:1c49 | 8086:7270 | Intel            | HM65 Express Chipset LPC Controller  | 6     | isab       | [D73D3760CE](<Mini Pc/Apple/Macmini5/Macmini5,2/0B1FF4B63B01/OPNSENSE-21.7.8/12.1-RELEASE-P22-HBSD/AMD64/D73D3760CE>) |
 
 ### Card reader (PCI)
 
@@ -216,13 +166,6 @@ Probe  - latest probe ID of this device.
 | 8086:9c3a | 19da:b213 | Intel            | 8 Series HECI #0                     | 1     |            | [9BCBD09882](<Mini Pc/ZOTAC/ZBOXNANO-ID67/ZBOXNANO-ID67-ID68-ID69/2A9F2B9082A0/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/9BCBD09882>) |
 | 8086:9c3a | 19da:b246 | Intel            | 8 Series HECI #0                     | 1     |            | [F3E8035461](<Mini Pc/ZOTAC/ZBOX-CI321/ZBOX-CI321NANO/82AF0F92C578/OPNSENSE-21.7.6/12.1-RELEASE-P21-HBSD/AMD64/F3E8035461>) |
 | 8086:9c3d | 8086:7270 | Intel            | 8 Series HECI KT                     | 1     | uart       | [39EE26926C](<Mini Pc/CompuLab/Intense-PC/Intense-PC2/084450D07AD2/OPNSENSE-21.1.2/12.1-RELEASE-P13-HBSD/AMD64/39EE26926C>) |
-| 8086:9cba | 8086:2058 | Intel            | Wildcat Point-LP MEI Controller #1   | 1     |            | [8BE9390356](<Mini Pc/Intel/NUC5i5MYBE/NUC5i5MYBE H47797-205/232CA933512D/FREEBSD-13.0-P4/13.0-RELEASE/AMD64/8BE9390356>) |
-| 8086:9cba | 8086:9cba | Intel            | Wildcat Point-LP MEI Controller #1   | 1     |            | [E2B78B7ADA](<Mini Pc/BESSTAR Tech/U500/U500-H/2C1737B432F1/OPNSENSE-21.7.2/12.1-RELEASE-P20-HBSD/AMD64/E2B78B7ADA>) |
-| 8086:9cbd | 8086:2058 | Intel            | Wildcat Point-LP KT Controller       | 1     |            | [8BE9390356](<Mini Pc/Intel/NUC5i5MYBE/NUC5i5MYBE H47797-205/232CA933512D/FREEBSD-13.0-P4/13.0-RELEASE/AMD64/8BE9390356>) |
-| 8086:9d3d | 8086:2070 | Intel            | Sunrise Point-LP Active Managemen... | 1     |            | [3802B33F17](<Mini Pc/Intel/NUC7/NUC7i7DNKE/375B9D3350D3/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/3802B33F17>) |
-| 8086:a13a | 8086:2064 | Intel            | 100 Series/C230 Series Chipset Fa... | 1     |            | [6F89733E13](<Mini Pc/Intel/NUC6i7KYB/NUC6i7KYB H90766-402/3020FDAFF6F6/GHOSTBSD-20.04.02/13.0-STABLE/AMD64/6F89733E13>) |
-| 8086:a360 | 17aa:3135 | Intel            | Cannon Lake PCH HECI Controller      | 1     |            | [497DD29170](<Mini Pc/Lenovo/ThinkStation/ThinkStation P330 Tiny 30CF000BUS/7284B3B90AF9/OPNSENSE-21.7.5/12.1-RELEASE-P21-HBSD/AMD64/497DD29170>) |
-| 8086:a363 | 17aa:3135 | Intel            | Cannon Lake PCH Active Management... | 1     |            | [497DD29170](<Mini Pc/Lenovo/ThinkStation/ThinkStation P330 Tiny 30CF000BUS/7284B3B90AF9/OPNSENSE-21.7.5/12.1-RELEASE-P21-HBSD/AMD64/497DD29170>) |
 
 ### Encryption controller (PCI)
 
@@ -302,35 +245,6 @@ Probe  - latest probe ID of this device.
 | 1002:694c | 8086:2073 | AMD              | Polaris 22 XT [Radeon RX Vega M GH]  | 1     | vgapci     | [3AB33909B0](<Mini Pc/Intel/NUC8/NUC8i7HVK/2CD30E743AF3/OPNSENSE-21.7.8/12.1-RELEASE-P22-HBSD/AMD64/3AB33909B0>) |
 | 1002:694e | 8086:2073 | AMD              | Polaris 22 XL [Radeon RX Vega M GL]  | 1     | vgapci     | [7467D71C8D](<Mini Pc/Intel/NUC8/NUC8i7HNK/50716B377685/FREEBSD-13.0/13.0-RELEASE/AMD64/7467D71C8D>) |
 | 1002:9831 | 1022:1234 | AMD              | Kabini [Radeon HD 8400E]             | 1     | vgapci     | [4433B8842F](<Mini Pc/CompuLab/fit-PC/fit-PC4/EAC3D2695650/OPNSENSE-21.1.4/12.1-RELEASE-P15-HBSD/AMD64/4433B8842F>) |
-| 1002:9832 | 1002:0123 | AMD              | Kabini [Radeon HD 8330]              | 1     | vgapci     | [78D3AE05F0](<Mini Pc/ZOTAC/ZBOXNANO-AQ/ZBOXNANO-AQ01/A7BED4F9CF55/OPNSENSE-21.1/12.1-RELEASE-P12-HBSD/AMD64/78D3AE05F0>) |
-| 1002:9851 | 1022:1234 | AMD              | Mullins [Radeon R4/R5 Graphics]      | 1     | vgapci     | [D018E86EA8](<Mini Pc/WYSE/Dell/Dell Thin Client Desktop 5060/FDAAE32B0FE7/OPNSENSE-22.1.2/13.0-STABLE/AMD64/D018E86EA8>) |
-| 102b:0532 | 1028:04dd | Matrox Electr... | MGA G200eW WPCM450                   | 1     | vgapci     | [5F293A8796](<Mini Pc/Dell/Wyse/Wyse 5070 Extended Thin Client/59BF64F0C06D/OPNSENSE-21.1/12.1-RELEASE-P12-HBSD/AMD64/5F293A8796>) |
-| 10de:08a4 | 106b:00c0 | Nvidia           | MCP89 [GeForce 320M]                 | 1     | vgapci     | [4979175779](<Mini Pc/Apple/Macmini4/Macmini4,1/C751E92B8FCE/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/4979175779>) |
-| 8086:0116 | 106b:00e7 | Intel            | 2nd Generation Core Processor Fam... | 1     | vgapci     | [C3394665A0](<Mini Pc/Apple/Macmini5/Macmini5,3/D92D3031168A/OPNSENSE-22.1/13.0-STABLE/AMD64/C3394665A0>) |
-| 8086:0152 | 19da:b202 | Intel            | Xeon E3-1200 v2/3rd Gen Core proc... | 1     | vgapci     | [5056D58118](<Mini Pc/ZOTAC/ZBOX-ID88/ZBOX-ID88-ID89-ID90/38B3B4BCB4F1/OPNSENSE-21.1.2/12.1-RELEASE-P13-HBSD/AMD64/5056D58118>) |
-| 8086:0166 | 19da:2111 | Intel            | 3rd Gen Core processor Graphics C... | 1     | vgapci     | [D8D2CEA545](<Mini Pc/ZOTAC/ZBOXNANO-ID63/ZBOXNANO-ID63-ID64-ID65/B45D5D5687A2/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/D8D2CEA545>) |
-| 8086:0166 | 8086:2211 | Intel            | 3rd Gen Core processor Graphics C... | 1     | vgapci     | [9AFA228B2A](<Mini Pc/CompuLab/1160405/1160405-00003/F23C44F7BDBE/OPNSENSE-22.1/13.0-STABLE/AMD64/9AFA228B2A>) |
-| 8086:0412 | 19da:b220 | Intel            | Xeon E3-1200 v3/4th Gen Core Proc... | 1     | vgapci     | [2C65CBD768](<Mini Pc/ZOTAC/ZBOX-ID92/ZBOX-ID92-ZBOX-IQ01/3ADD60929530/OPNSENSE-22.1.2/13.0-STABLE/AMD64/2C65CBD768>) |
-| 8086:0a0e | 19da:b246 | Intel            | Haswell-ULT High Definition Audio... | 1     | vgapci     | [F3E8035461](<Mini Pc/ZOTAC/ZBOX-CI321/ZBOX-CI321NANO/82AF0F92C578/OPNSENSE-21.7.6/12.1-RELEASE-P21-HBSD/AMD64/F3E8035461>) |
-| 8086:0a0e | 19da:b281 | Intel            | Haswell-ULT High Definition Audio... | 1     | vgapci     | [D8343DC26F](<Mini Pc/ZOTAC/ZBOX-RI323/ZBOX-RI323NANO/7D57F802F474/OPNSENSE-21.7.3/12.1-RELEASE-P20-HBSD/AMD64/D8343DC26F>) |
-| 8086:0a16 | 19da:b213 | Intel            | Haswell-ULT Integrated Graphics C... | 1     | vgapci     | [9BCBD09882](<Mini Pc/ZOTAC/ZBOXNANO-ID67/ZBOXNANO-ID67-ID68-ID69/2A9F2B9082A0/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/9BCBD09882>) |
-| 8086:0a16 | 8086:2010 | Intel            | Haswell-ULT Integrated Graphics C... | 1     | vgapci     | [39EE26926C](<Mini Pc/CompuLab/Intense-PC/Intense-PC2/084450D07AD2/OPNSENSE-21.1.2/12.1-RELEASE-P13-HBSD/AMD64/39EE26926C>) |
-| 8086:0f31 | 8086:7270 | Intel            | Atom Processor Z36xxx/Z37xxx Seri... | 1     | vgapci     | [D156760FE8](<Mini Pc/WYSE/Dell/Dell Wyse Thin Client Desktop 3290/AF0EBE39FF8F/OPNSENSE-21.1/12.1-RELEASE-P12-HBSD/AMD64/D156760FE8>) |
-| 8086:1616 | 1e50:8002 | Intel            | HD Graphics 5500                     | 1     | vgapci     | [E2B78B7ADA](<Mini Pc/BESSTAR Tech/U500/U500-H/2C1737B432F1/OPNSENSE-21.7.2/12.1-RELEASE-P20-HBSD/AMD64/E2B78B7ADA>) |
-| 8086:1616 | 8086:2058 | Intel            | HD Graphics 5500                     | 1     | vgapci     | [8BE9390356](<Mini Pc/Intel/NUC5i5MYBE/NUC5i5MYBE H47797-205/232CA933512D/FREEBSD-13.0-P4/13.0-RELEASE/AMD64/8BE9390356>) |
-| 8086:1916 | 8086:2063 | Intel            | Skylake GT2 [HD Graphics 520]        | 1     | vgapci     | [E057495CA3](<Mini Pc/Intel/NUC6i3SYB/NUC6i3SYB H81132-505/E0C236805F04/OPNSENSE-21.7/12.1-RELEASE-P19-HBSD/AMD64/E057495CA3>) |
-| 8086:193b | 8086:2064 | Intel            | Iris Pro Graphics 580                | 1     | i915       | [6F89733E13](<Mini Pc/Intel/NUC6i7KYB/NUC6i7KYB H90766-402/3020FDAFF6F6/GHOSTBSD-20.04.02/13.0-STABLE/AMD64/6F89733E13>) |
-| 8086:22b1 |           | Intel            | Atom/Celeron/Pentium Processor x5... | 1     | vgapci     | [85C4302966](<Mini Pc/ZOTAC/ZBOX-CI323/ZBOX-CI323NANO/C965A3AF570B/OPNSENSE-21.1.6/12.1-RELEASE-P16-HBSD/AMD64/85C4302966>) |
-| 8086:22b1 | 1297:4033 | Intel            | Atom/Celeron/Pentium Processor x5... | 1     | vgapci     | [BFD71EFA3B](<Mini Pc/Shuttle/XS35/XS35V5/34C200C6C0F7/OPNSENSE-21.1.6/12.1-RELEASE-P16-HBSD/AMD64/BFD71EFA3B>) |
-| 8086:3184 | 1e50:8003 | Intel            | GeminiLake [UHD Graphics 605]        | 1     | vgapci     | [EE64289B31](<Mini Pc/BESSTAR Tech/GK/GK50/5F875D6566AB/OPNSENSE-21.7.1/12.1-RELEASE-P19-HBSD/AMD64/EE64289B31>) |
-| 8086:3185 | 1028:080c | Intel            | GeminiLake [UHD Graphics 600]        | 1     | vgapci     | [AC38D3156D](<Mini Pc/Dell/Wyse/Wyse 5070 Thin Client/6159C9CD886E/OPNSENSE-22.1.2/13.0-STABLE/AMD64/AC38D3156D>) |
-| 8086:3e91 | 17aa:312d | Intel            | CoffeeLake-S GT2 [UHD Graphics 630]  | 1     | vgapci     | [D15116D2EB](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M720q 10T7CTO1WW/2D340AE8DBBC/OPNSENSE-20.7.8/12.1-RELEASE-P12-HBSD/AMD64/D15116D2EB>) |
-| 8086:3e92 | 17aa:3135 | Intel            | CoffeeLake-S GT2 [UHD Graphics 630]  | 1     | vgapci     | [497DD29170](<Mini Pc/Lenovo/ThinkStation/ThinkStation P330 Tiny 30CF000BUS/7284B3B90AF9/OPNSENSE-21.7.5/12.1-RELEASE-P21-HBSD/AMD64/497DD29170>) |
-| 8086:5916 | 8086:2070 | Intel            | HD Graphics 620                      | 1     | i915       | [06BEB9AD2C](<Mini Pc/Intel Client Systems/NUC7/NUC7i3DNHE/F93E47848AEB/FREEBSD-12.1-P6/12.1-RELEASE-P6/AMD64/06BEB9AD2C>) |
-| 8086:5917 | 8086:2070 | Intel            | UHD Graphics 620                     | 1     | i915       | [3802B33F17](<Mini Pc/Intel/NUC7/NUC7i7DNKE/375B9D3350D3/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/3802B33F17>) |
-| 8086:5a84 | 1019:a6e2 | Intel            | Celeron N3350/Pentium N4200/Atom ... | 1     | vgapci     | [8C6988DBE2](<Mini Pc/Ultra Tiny PC/LIVA/LIVA Q1L/10E140342B30/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/8C6988DBE2>) |
-| 8086:5a85 | 8086:2112 | Intel            | HD Graphics 500                      | 1     | vgapci     | [9FDA2F2DA0](<Mini Pc/AMI/Aptio/Aptio CRB/43D0EDFED15F/OPNSENSE-21.1.1/12.1-RELEASE-P13-HBSD/AMD64/9FDA2F2DA0>) |
-| 8086:9b41 | 19da:b426 | Intel            | CometLake-U GT2 [UHD Graphics]       | 1     | vgapci     | [3A72557967](<Mini Pc/ZOTAC/ZBOX-MI623/ZBOX-MI623-MI643/5CF3A794DCC6/OPNSENSE-22.1/13.0-STABLE/AMD64/3A72557967>) |
 
 ### Memory controller (PCI)
 
@@ -431,13 +345,6 @@ Probe  - latest probe ID of this device.
 | 8086:1502 |           | Intel            | 82579LM Gigabit Network Connectio... | 1     | em         | [9AFA228B2A](<Mini Pc/CompuLab/1160405/1160405-00003/F23C44F7BDBE/OPNSENSE-22.1/13.0-STABLE/AMD64/9AFA228B2A>) |
 | 8086:150c |           | Intel            | 82583V Gigabit Network Connection    | 1     | em         | [98CEFDDB1B](<Mini Pc/AMI/Aptio/Aptio CRB/DE2086254754/OPNSENSE-21.1.8/12.1-RELEASE-P19-HBSD/AMD64/98CEFDDB1B>) |
 | 8086:150e | 8086:12a1 | Intel            | 82580 Gigabit Network Connection     | 1     | igb        | [341CA2F887](<Mini Pc/Hewlett-Packard/t730/t730 Thin Client/23B4F081BD2A/OPNSENSE-21.7.1/12.1-RELEASE-P19-HBSD/AMD64/341CA2F887>) |
-| 8086:1521 | 103c:339e | Intel            | I350 Gigabit Network Connection      | 1     | igb        | [00384BEC4A](<Mini Pc/Hewlett-Packard/t730/t730 Thin Client/B4145F2E38EF/OPNSENSE-21.7.1/12.1-RELEASE-P19-HBSD/AMD64/00384BEC4A>) |
-| 8086:1521 | 8086:5002 | Intel            | I350 Gigabit Network Connection      | 1     | igb        | [732A50AF16](<Mini Pc/Dell/Wyse/Wyse 5070 Extended Thin Client/59BF64F0C06D/OPNSENSE-21.1.6/12.1-RELEASE-P16-HBSD/AMD64/732A50AF16>) |
-| 8086:1528 | 8086:0001 | Intel            | Ethernet Controller 10-Gigabit X5... | 1     | ix         | [497DD29170](<Mini Pc/Lenovo/ThinkStation/ThinkStation P330 Tiny 30CF000BUS/7284B3B90AF9/OPNSENSE-21.7.5/12.1-RELEASE-P21-HBSD/AMD64/497DD29170>) |
-| 8086:1536 |           | Intel            | I210 Gigabit Fiber Network Connec... | 1     | igb        | [87CF6A7EDD](<Mini Pc/Barracuda Networks/Barracuda/Barracuda NG Firewall F180R/86991565E608/OPNSENSE-21.1.8/12.1-RELEASE-P19-HBSD/AMD64/87CF6A7EDD>) |
-| 8086:1539 | 1297:4033 | Intel            | I211 Gigabit Network Connection      | 1     | igb        | [BFD71EFA3B](<Mini Pc/Shuttle/XS35/XS35V5/34C200C6C0F7/OPNSENSE-21.1.6/12.1-RELEASE-P16-HBSD/AMD64/BFD71EFA3B>) |
-| 8086:15a2 | 8086:2058 | Intel            | Ethernet Connection (3) I218-LM      | 1     | em         | [8BE9390356](<Mini Pc/Intel/NUC5i5MYBE/NUC5i5MYBE H47797-205/232CA933512D/FREEBSD-13.0-P4/13.0-RELEASE/AMD64/8BE9390356>) |
-| 8086:15bb | 17aa:3135 | Intel            | Ethernet Connection (7) I219-LM      | 1     | em         | [497DD29170](<Mini Pc/Lenovo/ThinkStation/ThinkStation P330 Tiny 30CF000BUS/7284B3B90AF9/OPNSENSE-21.7.5/12.1-RELEASE-P21-HBSD/AMD64/497DD29170>) |
 
 ### Net/wireless (PCI)
 
@@ -628,17 +535,6 @@ Probe  - latest probe ID of this device.
 | 8086:31ba | 8086:7270 | Intel            | Celeron/Pentium Silver Processor ... | 2     |            | [2DD1C94C37](<Mini Pc/ZOTAC/ZBOX-CI329/ZBOX-CI329NANO/D16A6E21B765/OPNSENSE-21.1.4/12.1-RELEASE-P15-HBSD/AMD64/2DD1C94C37>) |
 | 8086:9d31 | 8086:2070 | Intel            | Sunrise Point-LP Thermal subsystem   | 2     |            | [3802B33F17](<Mini Pc/Intel/NUC7/NUC7i7DNKE/375B9D3350D3/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/3802B33F17>) |
 | 8086:9d60 | 8086:2070 | Intel            | Sunrise Point-LP Serial IO I2C Co... | 2     |            | [3802B33F17](<Mini Pc/Intel/NUC7/NUC7i7DNKE/375B9D3350D3/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/3802B33F17>) |
-| 8086:9d61 | 8086:2070 | Intel            | Sunrise Point-LP Serial IO I2C Co... | 2     |            | [3802B33F17](<Mini Pc/Intel/NUC7/NUC7i7DNKE/375B9D3350D3/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/3802B33F17>) |
-| 8086:a127 | 8086:2073 | Intel            | 100 Series/C230 Series Chipset Fa... | 2     |            | [7467D71C8D](<Mini Pc/Intel/NUC8/NUC8i7HNK/50716B377685/FREEBSD-13.0/13.0-RELEASE/AMD64/7467D71C8D>) |
-| 8086:a131 | 8086:2073 | Intel            | 100 Series/C230 Series Chipset Fa... | 2     | pchtherm   | [7467D71C8D](<Mini Pc/Intel/NUC8/NUC8i7HNK/50716B377685/FREEBSD-13.0/13.0-RELEASE/AMD64/7467D71C8D>) |
-| 8086:a160 | 8086:2073 | Intel            | 100 Series/C230 Series Chipset Fa... | 2     | ig4iic     | [7467D71C8D](<Mini Pc/Intel/NUC8/NUC8i7HNK/50716B377685/FREEBSD-13.0/13.0-RELEASE/AMD64/7467D71C8D>) |
-| 8086:a161 | 8086:2073 | Intel            | 100 Series/C230 Series Chipset Fa... | 2     | ig4iic     | [7467D71C8D](<Mini Pc/Intel/NUC8/NUC8i7HNK/50716B377685/FREEBSD-13.0/13.0-RELEASE/AMD64/7467D71C8D>) |
-| 8086:a162 | 8086:2073 | Intel            | 100 Series/C230 Series Chipset Fa... | 2     |            | [7467D71C8D](<Mini Pc/Intel/NUC8/NUC8i7HNK/50716B377685/FREEBSD-13.0/13.0-RELEASE/AMD64/7467D71C8D>) |
-| 8086:a379 | 8086:2089 | Intel            | Cannon Lake PCH Thermal Controller   | 2     |            | [FC0AEA9E0B](<Mini Pc/Intel Client Systems/NUC9/NUC9i5QNX/45746E40B377/OPNSENSE-21.7.3/12.1-RELEASE-P20-HBSD/AMD64/FC0AEA9E0B>) |
-| 8086:02f9 | 19da:b426 | Intel            | Comet Lake Thermal Subsytem          | 1     | pchtherm   | [3A72557967](<Mini Pc/ZOTAC/ZBOX-MI623/ZBOX-MI623-MI643/5CF3A794DCC6/OPNSENSE-22.1/13.0-STABLE/AMD64/3A72557967>) |
-| 8086:1e24 | 8086:7270 | Intel            | 7 Series/C210 Series Chipset Fami... | 1     |            | [9AFA228B2A](<Mini Pc/CompuLab/1160405/1160405-00003/F23C44F7BDBE/OPNSENSE-22.1/13.0-STABLE/AMD64/9AFA228B2A>) |
-| 8086:5aac | 1019:a6e2 | Intel            | Celeron N3350/Pentium N4200/Atom ... | 1     |            | [8C6988DBE2](<Mini Pc/Ultra Tiny PC/LIVA/LIVA Q1L/10E140342B30/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/8C6988DBE2>) |
-| 8086:a131 | 8086:2064 | Intel            | 100 Series/C230 Series Chipset Fa... | 1     | pchtherm   | [6F89733E13](<Mini Pc/Intel/NUC6i7KYB/NUC6i7KYB H90766-402/3020FDAFF6F6/GHOSTBSD-20.04.02/13.0-STABLE/AMD64/6F89733E13>) |
 
 ### Smbus (PCI)
 
@@ -694,13 +590,6 @@ Probe  - latest probe ID of this device.
 | 8086:1e22 | 19da:a247 | Intel            | 7 Series/C216 Chipset Family SMBu... | 1     |            | [D8D2CEA545](<Mini Pc/ZOTAC/ZBOXNANO-ID63/ZBOXNANO-ID63-ID64-ID65/B45D5D5687A2/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/D8D2CEA545>) |
 | 8086:2292 | 1297:4033 | Intel            | Atom/Celeron/Pentium Processor x5... | 1     |            | [BFD71EFA3B](<Mini Pc/Shuttle/XS35/XS35V5/34C200C6C0F7/OPNSENSE-21.1.6/12.1-RELEASE-P16-HBSD/AMD64/BFD71EFA3B>) |
 | 8086:5ad4 | 1019:a6e2 | Intel            | Celeron N3350/Pentium N4200/Atom ... | 1     |            | [8C6988DBE2](<Mini Pc/Ultra Tiny PC/LIVA/LIVA Q1L/10E140342B30/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/8C6988DBE2>) |
-| 8086:8c22 | 19da:b220 | Intel            | 8 Series/C220 Series Chipset Fami... | 1     | ichsmb     | [2C65CBD768](<Mini Pc/ZOTAC/ZBOX-ID92/ZBOX-ID92-ZBOX-IQ01/3ADD60929530/OPNSENSE-22.1.2/13.0-STABLE/AMD64/2C65CBD768>) |
-| 8086:9c22 | 19da:b213 | Intel            | 8 Series SMBus Controller            | 1     |            | [9BCBD09882](<Mini Pc/ZOTAC/ZBOXNANO-ID67/ZBOXNANO-ID67-ID68-ID69/2A9F2B9082A0/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/9BCBD09882>) |
-| 8086:9c22 | 19da:b246 | Intel            | 8 Series SMBus Controller            | 1     |            | [F3E8035461](<Mini Pc/ZOTAC/ZBOX-CI321/ZBOX-CI321NANO/82AF0F92C578/OPNSENSE-21.7.6/12.1-RELEASE-P21-HBSD/AMD64/F3E8035461>) |
-| 8086:9ca2 | 8086:2058 | Intel            | Wildcat Point-LP SMBus Controller    | 1     | ichsmb     | [8BE9390356](<Mini Pc/Intel/NUC5i5MYBE/NUC5i5MYBE H47797-205/232CA933512D/FREEBSD-13.0-P4/13.0-RELEASE/AMD64/8BE9390356>) |
-| 8086:9ca2 | 8086:9ca2 | Intel            | Wildcat Point-LP SMBus Controller    | 1     |            | [E2B78B7ADA](<Mini Pc/BESSTAR Tech/U500/U500-H/2C1737B432F1/OPNSENSE-21.7.2/12.1-RELEASE-P20-HBSD/AMD64/E2B78B7ADA>) |
-| 8086:a123 | 8086:2064 | Intel            | 100 Series/C230 Series Chipset Fa... | 1     | ichsmb     | [6F89733E13](<Mini Pc/Intel/NUC6i7KYB/NUC6i7KYB H90766-402/3020FDAFF6F6/GHOSTBSD-20.04.02/13.0-STABLE/AMD64/6F89733E13>) |
-| 8086:a323 | 17aa:3135 | Intel            | Cannon Lake PCH SMBus Controller     | 1     |            | [497DD29170](<Mini Pc/Lenovo/ThinkStation/ThinkStation P330 Tiny 30CF000BUS/7284B3B90AF9/OPNSENSE-21.7.5/12.1-RELEASE-P21-HBSD/AMD64/497DD29170>) |
 
 ### Sound (PCI)
 
@@ -756,32 +645,6 @@ Probe  - latest probe ID of this device.
 | 1022:15e3 | 103c:8523 | AMD              | Family 17h/19h HD Audio Controller   | 1     | hdac       | [D563D65A91](<Mini Pc/Hewlett-Packard/t640/t640 Thin Client/12BD2451B96B/OPNSENSE-21.1.6/12.1-RELEASE-P16-HBSD/AMD64/D563D65A91>) |
 | 1022:15e3 | 1043:8820 | AMD              | Family 17h/19h HD Audio Controller   | 1     | hdac       | [2781B31F9B](<Mini Pc/ASUSTek Computer/MINIPC/MINIPC PN50-E1/A2FA457F7B31/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/2781B31F9B>) |
 | 1022:15e3 | 17aa:3190 | AMD              | Family 17h/19h HD Audio Controller   | 1     | hdac       | [93F9E34D05](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M75q Gen 2 11JJS00200/7D31210701DF/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/93F9E34D05>) |
-| 1022:15e3 | 1854:0309 | AMD              | Family 17h/19h HD Audio Controller   | 1     | hdac       | [9CF5790022](<Mini Pc/ZOTAC/B/B410/5472E9DDAC21/OPNSENSE-22.1/13.0-STABLE/AMD64/9CF5790022>) |
-| 1022:780d | 1022:780d | AMD              | FCH Azalia Controller                | 1     | hdac       | [4433B8842F](<Mini Pc/CompuLab/fit-PC/fit-PC4/EAC3D2695650/OPNSENSE-21.1.4/12.1-RELEASE-P15-HBSD/AMD64/4433B8842F>) |
-| 1022:780d | 19da:b208 | AMD              | FCH Azalia Controller                | 1     | hdac       | [78D3AE05F0](<Mini Pc/ZOTAC/ZBOXNANO-AQ/ZBOXNANO-AQ01/A7BED4F9CF55/OPNSENSE-21.1/12.1-RELEASE-P12-HBSD/AMD64/78D3AE05F0>) |
-| 10de:0d94 | 10de:cb89 | Nvidia           | MCP89 High Definition Audio          | 1     | hdac       | [4979175779](<Mini Pc/Apple/Macmini4/Macmini4,1/C751E92B8FCE/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/4979175779>) |
-| 8086:02c8 | 19da:b426 | Intel            | Comet Lake PCH-LP cAVS               | 1     | hdac       | [3A72557967](<Mini Pc/ZOTAC/ZBOX-MI623/ZBOX-MI623-MI643/5CF3A794DCC6/OPNSENSE-22.1/13.0-STABLE/AMD64/3A72557967>) |
-| 8086:06c8 | 17aa:3172 | Intel            | Comet Lake PCH cAVS                  | 1     | hdac       | [3004D2300D](<Mini Pc/Lenovo/ThinkStation/ThinkStation P340 Tiny 30DFCTO1WW/36D1FBCE4F17/FREEBSD-12.2-P2/12.2-RELEASE-P1/AMD64/3004D2300D>) |
-| 8086:0a0c | 19da:b213 | Intel            | Haswell-ULT HD Audio Controller      | 1     | hdac       | [9BCBD09882](<Mini Pc/ZOTAC/ZBOXNANO-ID67/ZBOXNANO-ID67-ID68-ID69/2A9F2B9082A0/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/9BCBD09882>) |
-| 8086:0a0c | 19da:b246 | Intel            | Haswell-ULT HD Audio Controller      | 1     | hdac       | [F3E8035461](<Mini Pc/ZOTAC/ZBOX-CI321/ZBOX-CI321NANO/82AF0F92C578/OPNSENSE-21.7.6/12.1-RELEASE-P21-HBSD/AMD64/F3E8035461>) |
-| 8086:0a0c | 8086:2010 | Intel            | Haswell-ULT HD Audio Controller      | 1     | hdac       | [39EE26926C](<Mini Pc/CompuLab/Intense-PC/Intense-PC2/084450D07AD2/OPNSENSE-21.1.2/12.1-RELEASE-P13-HBSD/AMD64/39EE26926C>) |
-| 8086:0c0c | 19da:b220 | Intel            | Xeon E3-1200 v3/4th Gen Core Proc... | 1     | hdac       | [2C65CBD768](<Mini Pc/ZOTAC/ZBOX-ID92/ZBOX-ID92-ZBOX-IQ01/3ADD60929530/OPNSENSE-22.1.2/13.0-STABLE/AMD64/2C65CBD768>) |
-| 8086:0f04 | 1071:0740 | Intel            | Atom Processor Z36xxx/Z37xxx Seri... | 1     | hdac       | [D514362239](<Mini Pc/AMI/Aptio/Aptio CRB/7AF86A68764E/OPNSENSE-21.7/12.1-RELEASE-P19-HBSD/AMD64/D514362239>) |
-| 8086:0f04 | 1170:0530 | Intel            | Atom Processor Z36xxx/Z37xxx Seri... | 1     | hdac       | [D156760FE8](<Mini Pc/WYSE/Dell/Dell Wyse Thin Client Desktop 3290/AF0EBE39FF8F/OPNSENSE-21.1/12.1-RELEASE-P12-HBSD/AMD64/D156760FE8>) |
-| 8086:160c | 111e:10ec | Intel            | Broadwell-U Audio Controller         | 1     | hdac       | [E2B78B7ADA](<Mini Pc/BESSTAR Tech/U500/U500-H/2C1737B432F1/OPNSENSE-21.7.2/12.1-RELEASE-P20-HBSD/AMD64/E2B78B7ADA>) |
-| 8086:160c | 8086:2058 | Intel            | Broadwell-U Audio Controller         | 1     | hdac       | [8BE9390356](<Mini Pc/Intel/NUC5i5MYBE/NUC5i5MYBE H47797-205/232CA933512D/FREEBSD-13.0-P4/13.0-RELEASE/AMD64/8BE9390356>) |
-| 8086:1c20 | 19da:b202 | Intel            | 6 Series/C200 Series Chipset Fami... | 1     | hdac       | [5056D58118](<Mini Pc/ZOTAC/ZBOX-ID88/ZBOX-ID88-ID89-ID90/38B3B4BCB4F1/OPNSENSE-21.1.2/12.1-RELEASE-P13-HBSD/AMD64/5056D58118>) |
-| 8086:1e20 | 19da:a247 | Intel            | 7 Series/C216 Chipset Family High... | 1     | hdac       | [D8D2CEA545](<Mini Pc/ZOTAC/ZBOXNANO-ID63/ZBOXNANO-ID63-ID64-ID65/B45D5D5687A2/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/D8D2CEA545>) |
-| 8086:3198 | 10ec:111c | Intel            | Celeron/Pentium Silver Processor ... | 1     |            | [A9FC936957](<Mini Pc/Fanless Mini PC/Quieter/Quieter2/11504DDAB29B/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/A9FC936957>) |
-| 8086:3198 | 8086:3198 | Intel            | Celeron/Pentium Silver Processor ... | 1     | hdac       | [F6164BCE3E](<Mini Pc/Chuwi/HeroBox/HeroBox/2E4DCA84F178/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/F6164BCE3E>) |
-| 8086:5a98 | 1019:a6e2 | Intel            | Celeron N3350/Pentium N4200/Atom ... | 1     | hdac       | [8C6988DBE2](<Mini Pc/Ultra Tiny PC/LIVA/LIVA Q1L/10E140342B30/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/8C6988DBE2>) |
-| 8086:8c20 | 19da:b220 | Intel            | 8 Series/C220 Series Chipset High... | 1     | hdac       | [2C65CBD768](<Mini Pc/ZOTAC/ZBOX-ID92/ZBOX-ID92-ZBOX-IQ01/3ADD60929530/OPNSENSE-22.1.2/13.0-STABLE/AMD64/2C65CBD768>) |
-| 8086:9c20 | 19da:b213 | Intel            | 8 Series HD Audio Controller         | 1     | hdac       | [9BCBD09882](<Mini Pc/ZOTAC/ZBOXNANO-ID67/ZBOXNANO-ID67-ID68-ID69/2A9F2B9082A0/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/9BCBD09882>) |
-| 8086:9c20 | 19da:b246 | Intel            | 8 Series HD Audio Controller         | 1     | hdac       | [F3E8035461](<Mini Pc/ZOTAC/ZBOX-CI321/ZBOX-CI321NANO/82AF0F92C578/OPNSENSE-21.7.6/12.1-RELEASE-P21-HBSD/AMD64/F3E8035461>) |
-| 8086:9ca0 | 8086:2058 | Intel            | Wildcat Point-LP High Definition ... | 1     | hdac       | [8BE9390356](<Mini Pc/Intel/NUC5i5MYBE/NUC5i5MYBE H47797-205/232CA933512D/FREEBSD-13.0-P4/13.0-RELEASE/AMD64/8BE9390356>) |
-| 8086:9ca0 | 8086:9ca0 | Intel            | Wildcat Point-LP High Definition ... | 1     | hdac       | [E2B78B7ADA](<Mini Pc/BESSTAR Tech/U500/U500-H/2C1737B432F1/OPNSENSE-21.7.2/12.1-RELEASE-P20-HBSD/AMD64/E2B78B7ADA>) |
-| 8086:a170 | 8086:2064 | Intel            | 100 Series/C230 Series Chipset Fa... | 1     | hdac       | [6F89733E13](<Mini Pc/Intel/NUC6i7KYB/NUC6i7KYB H90766-402/3020FDAFF6F6/GHOSTBSD-20.04.02/13.0-STABLE/AMD64/6F89733E13>) |
-| 8086:a348 | 17aa:3135 | Intel            | Cannon Lake PCH cAVS                 | 1     | hdac       | [497DD29170](<Mini Pc/Lenovo/ThinkStation/ThinkStation P330 Tiny 30CF000BUS/7284B3B90AF9/OPNSENSE-21.7.5/12.1-RELEASE-P21-HBSD/AMD64/497DD29170>) |
 
 ### Storage/ata (PCI)
 
@@ -837,9 +700,6 @@ Probe  - latest probe ID of this device.
 | 8086:8c02 | 19da:b220 | Intel            | 8 Series/C220 Series Chipset Fami... | 1     | ahci       | [2C65CBD768](<Mini Pc/ZOTAC/ZBOX-ID92/ZBOX-ID92-ZBOX-IQ01/3ADD60929530/OPNSENSE-22.1.2/13.0-STABLE/AMD64/2C65CBD768>) |
 | 8086:9c03 | 19da:b213 | Intel            | 8 Series SATA Controller 1 [AHCI ... | 1     | ahci       | [9BCBD09882](<Mini Pc/ZOTAC/ZBOXNANO-ID67/ZBOXNANO-ID67-ID68-ID69/2A9F2B9082A0/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/9BCBD09882>) |
 | 8086:9c03 | 19da:b246 | Intel            | 8 Series SATA Controller 1 [AHCI ... | 1     | ahci       | [F3E8035461](<Mini Pc/ZOTAC/ZBOX-CI321/ZBOX-CI321NANO/82AF0F92C578/OPNSENSE-21.7.6/12.1-RELEASE-P21-HBSD/AMD64/F3E8035461>) |
-| 8086:9c83 | 8086:2058 | Intel            | Wildcat Point-LP SATA Controller ... | 1     | ahci       | [8BE9390356](<Mini Pc/Intel/NUC5i5MYBE/NUC5i5MYBE H47797-205/232CA933512D/FREEBSD-13.0-P4/13.0-RELEASE/AMD64/8BE9390356>) |
-| 8086:9c83 | 8086:9c83 | Intel            | Wildcat Point-LP SATA Controller ... | 1     | ahci       | [E2B78B7ADA](<Mini Pc/BESSTAR Tech/U500/U500-H/2C1737B432F1/OPNSENSE-21.7.2/12.1-RELEASE-P20-HBSD/AMD64/E2B78B7ADA>) |
-| 8086:a352 | 17aa:3135 | Intel            | Cannon Lake PCH SATA AHCI Controller | 1     | ahci       | [497DD29170](<Mini Pc/Lenovo/ThinkStation/ThinkStation P330 Tiny 30CF000BUS/7284B3B90AF9/OPNSENSE-21.7.5/12.1-RELEASE-P21-HBSD/AMD64/497DD29170>) |
 
 ### Storage/ide (PCI)
 
@@ -978,56 +838,6 @@ Probe  - latest probe ID of this device.
 | 1002:4396 | 103c:17e2 | AMD              | SB7x0/SB8x0/SB9x0 USB EHCI Contro... | 2     | ehci       | [FCB0A5FF87](<Mini Pc/Hewlett-Packard/t610/t610 WW Thin Client/EB715773B3C8/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/FCB0A5FF87>) |
 | 1002:4397 | 103c:17e2 | AMD              | SB7x0/SB8x0/SB9x0 USB OHCI0 Contr... | 2     | ohci       | [FCB0A5FF87](<Mini Pc/Hewlett-Packard/t610/t610 WW Thin Client/EB715773B3C8/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/FCB0A5FF87>) |
 | 1022:7808 | 1022:7808 | AMD              | FCH USB EHCI Controller              | 2     | ehci       | [D018E86EA8](<Mini Pc/WYSE/Dell/Dell Thin Client Desktop 5060/FDAAE32B0FE7/OPNSENSE-22.1.2/13.0-STABLE/AMD64/D018E86EA8>) |
-| 1022:7814 | 1022:7812 | AMD              | FCH USB XHCI Controller              | 2     | xhci       | [D018E86EA8](<Mini Pc/WYSE/Dell/Dell Thin Client Desktop 5060/FDAAE32B0FE7/OPNSENSE-22.1.2/13.0-STABLE/AMD64/D018E86EA8>) |
-| 104c:8241 | 103c:17e2 | Texas Instrum... | TUSB73x0 SuperSpeed USB 3.0 xHCI ... | 2     | xhci       | [FCB0A5FF87](<Mini Pc/Hewlett-Packard/t610/t610 WW Thin Client/EB715773B3C8/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/FCB0A5FF87>) |
-| 1b21:2142 | 8086:2073 | ASMedia Techn... | ASM2142 USB 3.1 Host Controller      | 2     | xhci       | [7467D71C8D](<Mini Pc/Intel/NUC8/NUC8i7HNK/50716B377685/FREEBSD-13.0/13.0-RELEASE/AMD64/7467D71C8D>) |
-| 8086:06ed | 17aa:3172 | Intel            | Comet Lake USB 3.1 xHCI Host Cont... | 2     | xhci       | [1F7035C993](<Mini Pc/Lenovo/ThinkStation/ThinkStation P340 Tiny 30DFS05W00/1D77AB0A5D68/OPNSENSE-12.1-P15-HBSD/12.1-RELEASE-P15-HBSD/AMD64/1F7035C993>) |
-| 8086:15ec | 8086:2088 | Intel            | JHL7540 Thunderbolt 3 USB Control... | 2     | xhci       | [FC0AEA9E0B](<Mini Pc/Intel Client Systems/NUC9/NUC9i5QNX/45746E40B377/OPNSENSE-21.7.3/12.1-RELEASE-P20-HBSD/AMD64/FC0AEA9E0B>) |
-| 8086:22b5 | 8086:2060 | Intel            | Atom/Celeron/Pentium Processor x5... | 2     | xhci       | [BCA2FBA811](<Mini Pc/Intel/NUC5PPYB/NUC5PPYB H76558-107/EE9273A450D4/OPNSENSE-21.7.1/12.1-RELEASE-P19-HBSD/AMD64/BCA2FBA811>) |
-| 8086:5aaa | 8086:7270 | Intel            |                                      | 2     |            | [424CA8F515](<Mini Pc/CompuLab/fitlet/fitlet2/FF55AE2FA95D/OPNSENSE-21.1.3/12.1-RELEASE-P14-HBSD/AMD64/424CA8F515>) |
-| 8086:9c26 | 8086:7270 | Intel            | 8 Series USB EHCI #1                 | 2     | ehci       | [D8343DC26F](<Mini Pc/ZOTAC/ZBOX-RI323/ZBOX-RI323NANO/7D57F802F474/OPNSENSE-21.7.3/12.1-RELEASE-P20-HBSD/AMD64/D8343DC26F>) |
-| 8086:9ca6 | 8086:7270 | Intel            | Wildcat Point-LP USB EHCI Controller | 2     | ehci       | [4CF0FFCBF6](<Mini Pc/ZOTAC/ZBOX-MI522/ZBOX-MI522NANO-MI542NANO/447A83A6AB0A/OPNSENSE-22.1/13.0-STABLE/AMD64/4CF0FFCBF6>) |
-| 8086:9cb1 | 8086:7270 | Intel            | Wildcat Point-LP USB xHCI Controller | 2     | xhci       | [4CF0FFCBF6](<Mini Pc/ZOTAC/ZBOX-MI522/ZBOX-MI522NANO-MI542NANO/447A83A6AB0A/OPNSENSE-22.1/13.0-STABLE/AMD64/4CF0FFCBF6>) |
-| 8086:9d2f | 8086:2070 | Intel            | Sunrise Point-LP USB 3.0 xHCI Con... | 2     | xhci       | [3802B33F17](<Mini Pc/Intel/NUC7/NUC7i7DNKE/375B9D3350D3/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/3802B33F17>) |
-| 8086:a12f | 8086:2073 | Intel            | 100 Series/C230 Series Chipset Fa... | 2     | xhci       | [7467D71C8D](<Mini Pc/Intel/NUC8/NUC8i7HNK/50716B377685/FREEBSD-13.0/13.0-RELEASE/AMD64/7467D71C8D>) |
-| 8086:a36d | 17aa:3136 | Intel            | Cannon Lake PCH USB 3.1 xHCI Host... | 2     | xhci       | [F1892CD12C](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M920q 10RRS5S500/D2CB8BAABEFC/OPNSENSE-22.1.1/13.0-STABLE/AMD64/F1892CD12C>) |
-| 8086:a36d | 8086:2089 | Intel            | Cannon Lake PCH USB 3.1 xHCI Host... | 2     | xhci       | [FC0AEA9E0B](<Mini Pc/Intel Client Systems/NUC9/NUC9i5QNX/45746E40B377/OPNSENSE-21.7.3/12.1-RELEASE-P20-HBSD/AMD64/FC0AEA9E0B>) |
-| 1002:4399 | 103c:17e2 | AMD              | SB7x0/SB8x0/SB9x0 USB OHCI2 Contr... | 1     | ohci       | [FCB0A5FF87](<Mini Pc/Hewlett-Packard/t610/t610 WW Thin Client/EB715773B3C8/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/FCB0A5FF87>) |
-| 1022:15e0 | 103c:8522 | AMD              | Raven USB 3.1                        | 1     | xhci       | [3CC1BA3677](<Mini Pc/Hewlett-Packard/t740/t740 Thin Client/E4EB2EC0B3CF/OPNSENSE-22.1/13.0-STABLE/AMD64/3CC1BA3677>) |
-| 1022:15e0 | 1854:0309 | AMD              | Raven USB 3.1                        | 1     | xhci       | [9CF5790022](<Mini Pc/ZOTAC/B/B410/5472E9DDAC21/OPNSENSE-22.1/13.0-STABLE/AMD64/9CF5790022>) |
-| 1022:15e1 | 103c:8522 | AMD              | Raven USB 3.1                        | 1     | xhci       | [3CC1BA3677](<Mini Pc/Hewlett-Packard/t740/t740 Thin Client/E4EB2EC0B3CF/OPNSENSE-22.1/13.0-STABLE/AMD64/3CC1BA3677>) |
-| 1022:15e1 | 1854:0309 | AMD              | Raven USB 3.1                        | 1     | xhci       | [9CF5790022](<Mini Pc/ZOTAC/B/B410/5472E9DDAC21/OPNSENSE-22.1/13.0-STABLE/AMD64/9CF5790022>) |
-| 1022:15e5 | 103c:8523 | AMD              | Raven2 USB 3.1                       | 1     | xhci       | [D563D65A91](<Mini Pc/Hewlett-Packard/t640/t640 Thin Client/12BD2451B96B/OPNSENSE-21.1.6/12.1-RELEASE-P16-HBSD/AMD64/D563D65A91>) |
-| 1022:1639 | 17aa:3190 | AMD              | Renoir/Cezanne USB 3.1               | 1     | xhci       | [93F9E34D05](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M75q Gen 2 11JJS00200/7D31210701DF/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/93F9E34D05>) |
-| 1022:7807 | 1022:7807 | AMD              | FCH USB OHCI Controller              | 1     | ohci       | [4433B8842F](<Mini Pc/CompuLab/fit-PC/fit-PC4/EAC3D2695650/OPNSENSE-21.1.4/12.1-RELEASE-P15-HBSD/AMD64/4433B8842F>) |
-| 1022:7807 | 19da:b208 | AMD              | FCH USB OHCI Controller              | 1     | ohci       | [78D3AE05F0](<Mini Pc/ZOTAC/ZBOXNANO-AQ/ZBOXNANO-AQ01/A7BED4F9CF55/OPNSENSE-21.1/12.1-RELEASE-P12-HBSD/AMD64/78D3AE05F0>) |
-| 1022:7808 | 19da:b208 | AMD              | FCH USB EHCI Controller              | 1     | ehci       | [78D3AE05F0](<Mini Pc/ZOTAC/ZBOXNANO-AQ/ZBOXNANO-AQ01/A7BED4F9CF55/OPNSENSE-21.1/12.1-RELEASE-P12-HBSD/AMD64/78D3AE05F0>) |
-| 1022:7814 | 19da:b208 | AMD              | FCH USB XHCI Controller              | 1     | xhci       | [78D3AE05F0](<Mini Pc/ZOTAC/ZBOXNANO-AQ/ZBOXNANO-AQ01/A7BED4F9CF55/OPNSENSE-21.1/12.1-RELEASE-P12-HBSD/AMD64/78D3AE05F0>) |
-| 10de:0d9c | 10de:cb89 | Nvidia           | MCP89 OHCI USB 1.1 Controller        | 1     | ohci       | [4979175779](<Mini Pc/Apple/Macmini4/Macmini4,1/C751E92B8FCE/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/4979175779>) |
-| 10de:0d9d | 10de:cb89 | Nvidia           | MCP89 EHCI USB 2.0 Controller        | 1     | ehci       | [4979175779](<Mini Pc/Apple/Macmini4/Macmini4,1/C751E92B8FCE/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/4979175779>) |
-| 10ec:816d | 103c:8522 | Realtek Semic... | RTL811x EHCI host controller         | 1     | ehci       | [CAE055641A](<Mini Pc/Hewlett-Packard/t740/t740 Thin Client/E4EB2EC0B3CF/OPNSENSE-22.1/13.0-STABLE/AMD64/CAE055641A>) |
-| 10ec:816d | 103c:8523 | Realtek Semic... | RTL811x EHCI host controller         | 1     | ehci       | [D563D65A91](<Mini Pc/Hewlett-Packard/t640/t640 Thin Client/12BD2451B96B/OPNSENSE-21.1.6/12.1-RELEASE-P16-HBSD/AMD64/D563D65A91>) |
-| 1912:0014 |           | Renesas Techn... | uPD720201 USB 3.0 Host Controller    | 1     | xhci       | [DCDC6B58D1](<Mini Pc/Supermicro/A1/A1SAi/56E92D07B5A4/OPNSENSE-21.1.4/12.1-RELEASE-P15-HBSD/AMD64/DCDC6B58D1>) |
-| 1912:0015 | 19da:0194 | Renesas Techn... | uPD720202 USB 3.0 Host Controller    | 1     | xhci       | [5056D58118](<Mini Pc/ZOTAC/ZBOX-ID88/ZBOX-ID88-ID89-ID90/38B3B4BCB4F1/OPNSENSE-21.1.2/12.1-RELEASE-P13-HBSD/AMD64/5056D58118>) |
-| 1b21:1242 | 1b21:1242 | ASMedia Techn... | ASM1142 USB 3.1 Host Controller      | 1     | xhci       | [6CA50F8007](<Mini Pc/ZOTAC/ZBOX-CI527/ZBOX-CI527-CI547NANO/62C3CCD104D2/OPNSENSE-21.1.2/12.1-RELEASE-P13-HBSD/AMD64/6CA50F8007>) |
-| 8086:02ed | 19da:b426 | Intel            | Comet Lake PCH-LP USB 3.1 xHCI Ho... | 1     | xhci       | [3A72557967](<Mini Pc/ZOTAC/ZBOX-MI623/ZBOX-MI623-MI643/5CF3A794DCC6/OPNSENSE-22.1/13.0-STABLE/AMD64/3A72557967>) |
-| 8086:0f35 | 1071:0740 | Intel            | Atom Processor Z36xxx/Z37xxx, Cel... | 1     | xhci       | [D514362239](<Mini Pc/AMI/Aptio/Aptio CRB/7AF86A68764E/OPNSENSE-21.7/12.1-RELEASE-P19-HBSD/AMD64/D514362239>) |
-| 8086:15db | 8086:2074 | Intel            | JHL6340 Thunderbolt 3 USB 3.1 Con... | 1     | xhci       | [B137B25594](<Mini Pc/Intel Client Systems/NUC8/NUC8i5BEH/ABE20D4E9177/FREEBSD-13.1-BETA1/13.1-BETA1/AMD64/B137B25594>) |
-| 8086:1c26 | 1028:04dd | Intel            | 6 Series/C200 Series Chipset Fami... | 1     | ehci       | [5F293A8796](<Mini Pc/Dell/Wyse/Wyse 5070 Extended Thin Client/59BF64F0C06D/OPNSENSE-21.1/12.1-RELEASE-P12-HBSD/AMD64/5F293A8796>) |
-| 8086:1c26 | 19da:b202 | Intel            | 6 Series/C200 Series Chipset Fami... | 1     | ehci       | [5056D58118](<Mini Pc/ZOTAC/ZBOX-ID88/ZBOX-ID88-ID89-ID90/38B3B4BCB4F1/OPNSENSE-21.1.2/12.1-RELEASE-P13-HBSD/AMD64/5056D58118>) |
-| 8086:1c2d | 1028:04dd | Intel            | 6 Series/C200 Series Chipset Fami... | 1     | ehci       | [5F293A8796](<Mini Pc/Dell/Wyse/Wyse 5070 Extended Thin Client/59BF64F0C06D/OPNSENSE-21.1/12.1-RELEASE-P12-HBSD/AMD64/5F293A8796>) |
-| 8086:1c2d | 19da:b202 | Intel            | 6 Series/C200 Series Chipset Fami... | 1     | ehci       | [5056D58118](<Mini Pc/ZOTAC/ZBOX-ID88/ZBOX-ID88-ID89-ID90/38B3B4BCB4F1/OPNSENSE-21.1.2/12.1-RELEASE-P13-HBSD/AMD64/5056D58118>) |
-| 8086:1e26 | 19da:a247 | Intel            | 7 Series/C216 Chipset Family USB ... | 1     | ehci       | [D8D2CEA545](<Mini Pc/ZOTAC/ZBOXNANO-ID63/ZBOXNANO-ID63-ID64-ID65/B45D5D5687A2/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/D8D2CEA545>) |
-| 8086:1e2d | 19da:a247 | Intel            | 7 Series/C216 Chipset Family USB ... | 1     | ehci       | [D8D2CEA545](<Mini Pc/ZOTAC/ZBOXNANO-ID63/ZBOXNANO-ID63-ID64-ID65/B45D5D5687A2/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/D8D2CEA545>) |
-| 8086:1e31 | 19da:a247 | Intel            | 7 Series/C210 Series Chipset Fami... | 1     | xhci       | [D8D2CEA545](<Mini Pc/ZOTAC/ZBOXNANO-ID63/ZBOXNANO-ID63-ID64-ID65/B45D5D5687A2/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/D8D2CEA545>) |
-| 8086:22b5 | 1297:4033 | Intel            | Atom/Celeron/Pentium Processor x5... | 1     | xhci       | [BFD71EFA3B](<Mini Pc/Shuttle/XS35/XS35V5/34C200C6C0F7/OPNSENSE-21.1.6/12.1-RELEASE-P16-HBSD/AMD64/BFD71EFA3B>) |
-| 8086:5aa8 | 1019:a6e2 | Intel            | Celeron N3350/Pentium N4200/Atom ... | 1     | xhci       | [8C6988DBE2](<Mini Pc/Ultra Tiny PC/LIVA/LIVA Q1L/10E140342B30/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/8C6988DBE2>) |
-| 8086:8c26 | 19da:b220 | Intel            | 8 Series/C220 Series Chipset Fami... | 1     | ehci       | [2C65CBD768](<Mini Pc/ZOTAC/ZBOX-ID92/ZBOX-ID92-ZBOX-IQ01/3ADD60929530/OPNSENSE-22.1.2/13.0-STABLE/AMD64/2C65CBD768>) |
-| 8086:8c2d | 19da:b220 | Intel            | 8 Series/C220 Series Chipset Fami... | 1     | ehci       | [2C65CBD768](<Mini Pc/ZOTAC/ZBOX-ID92/ZBOX-ID92-ZBOX-IQ01/3ADD60929530/OPNSENSE-22.1.2/13.0-STABLE/AMD64/2C65CBD768>) |
-| 8086:8c31 | 19da:b220 | Intel            | 8 Series/C220 Series Chipset Fami... | 1     | xhci       | [2C65CBD768](<Mini Pc/ZOTAC/ZBOX-ID92/ZBOX-ID92-ZBOX-IQ01/3ADD60929530/OPNSENSE-22.1.2/13.0-STABLE/AMD64/2C65CBD768>) |
-| 8086:9c26 | 19da:b213 | Intel            | 8 Series USB EHCI #1                 | 1     | ehci       | [9BCBD09882](<Mini Pc/ZOTAC/ZBOXNANO-ID67/ZBOXNANO-ID67-ID68-ID69/2A9F2B9082A0/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/9BCBD09882>) |
-| 8086:9c26 | 19da:b246 | Intel            | 8 Series USB EHCI #1                 | 1     | ehci       | [F3E8035461](<Mini Pc/ZOTAC/ZBOX-CI321/ZBOX-CI321NANO/82AF0F92C578/OPNSENSE-21.7.6/12.1-RELEASE-P21-HBSD/AMD64/F3E8035461>) |
-| 8086:9c31 | 19da:b213 | Intel            | 8 Series USB xHCI HC                 | 1     | xhci       | [9BCBD09882](<Mini Pc/ZOTAC/ZBOXNANO-ID67/ZBOXNANO-ID67-ID68-ID69/2A9F2B9082A0/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/9BCBD09882>) |
 
 ### Others (PCI)
 
