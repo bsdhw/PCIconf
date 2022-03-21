@@ -1,0 +1,150 @@
+hostb0@pci0:0:0:0:	class=0x060000 card=0x82d31043 chip=0x2e208086 rev=0x03 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '4 Series Chipset DRAM Controller'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 09[e0] = vendor (length 12) Intel cap 8 version 1
+
+uhci0@pci0:0:26:0:	class=0x0c0300 card=0x82d41043 chip=0x3a378086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801JI (ICH10 Family) USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xd800, size 32, enabled
+    cap 09[50] = vendor (length 6) Intel cap 2 version 0
+
+uhci1@pci0:0:26:1:	class=0x0c0300 card=0x82d41043 chip=0x3a388086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801JI (ICH10 Family) USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xd880, size 32, enabled
+    cap 09[50] = vendor (length 6) Intel cap 2 version 0
+
+uhci2@pci0:0:26:2:	class=0x0c0300 card=0x82d41043 chip=0x3a398086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801JI (ICH10 Family) USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xdc00, size 32, enabled
+    cap 09[50] = vendor (length 6) Intel cap 2 version 0
+
+ehci0@pci0:0:26:7:	class=0x0c0320 card=0x82d41043 chip=0x3a3c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801JI (ICH10 Family) USB2 EHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xf7fffc00, size 1024, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 0a[58] = EHCI Debug Port at offset 0xa0 in map 0x14
+    cap 09[98] = vendor (length 6) Intel cap 2 version 0
+
+hdac0@pci0:0:27:0:	class=0x040300 card=0x82fe1043 chip=0x3a3e8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801JI (ICH10 Family) HD Audio Controller'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 64, base 0xf7ff8000, size 16384, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 05[60] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 10[70] = PCI-Express 1 root endpoint max data 128(128) FLR NS
+    ecap 0002[100] = VC 1 max VC1
+    ecap 0005[130] = Root Complex Link Declaration 1
+
+uhci3@pci0:0:29:0:	class=0x0c0300 card=0x82d41043 chip=0x3a348086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801JI (ICH10 Family) USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xd080, size 32, enabled
+    cap 09[50] = vendor (length 6) Intel cap 2 version 0
+
+uhci4@pci0:0:29:1:	class=0x0c0300 card=0x82d41043 chip=0x3a358086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801JI (ICH10 Family) USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xd400, size 32, enabled
+    cap 09[50] = vendor (length 6) Intel cap 2 version 0
+
+uhci5@pci0:0:29:2:	class=0x0c0300 card=0x82d41043 chip=0x3a368086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801JI (ICH10 Family) USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xd480, size 32, enabled
+    cap 09[50] = vendor (length 6) Intel cap 2 version 0
+
+ehci1@pci0:0:29:7:	class=0x0c0320 card=0x82d41043 chip=0x3a3a8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801JI (ICH10 Family) USB2 EHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xf7fff800, size 1024, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 0a[58] = EHCI Debug Port at offset 0xa0 in map 0x14
+    cap 09[98] = vendor (length 6) Intel cap 2 version 0
+
+pcib1@pci0:0:30:0:	class=0x060401 card=0x82d41043 chip=0x244e8086 rev=0x90 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = '82801 PCI Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[50] = PCI Bridge card=0x82d41043
+
+isab0@pci0:0:31:0:	class=0x060100 card=0x82d41043 chip=0x3a188086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801JIB (ICH10) LPC Interface Controller'
+    class      = bridge
+    subclass   = PCI-ISA
+    cap 09[e0] = vendor (length 12) Intel cap 1 version 0
+		 features: Quick Resume, SATA RAID-5, 4 PCI-e x1 slots, SATA RAID-0/1/10
+
+ahci0@pci0:0:31:2:	class=0x010601 card=0x82d41043 chip=0x3a228086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801JI (ICH10 Family) SATA AHCI Controller'
+    class      = mass storage
+    subclass   = SATA
+    bar   [10] = type I/O Port, range 32, base 0xcc00, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0xc880, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0xc800, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0xc480, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0xc400, size 32, enabled
+    bar   [24] = type Memory, range 32, base 0xf7ffe800, size 2048, enabled
+    cap 05[80] = MSI supports 16 messages enabled with 16 messages
+    cap 01[70] = powerspec 3  supports D0 D3  current D0
+    cap 12[a8] = SATA Index-Data Pair
+    cap 09[b0] = vendor (length 6) Intel cap 2 version 0
+
+none0@pci0:0:31:3:	class=0x0c0500 card=0x82d41043 chip=0x3a308086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801JI (ICH10 Family) SMBus Controller'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [10] = type Memory, range 64, base 0xf7fff400, size 256, enabled
+    bar   [20] = type I/O Port, range 32, base 0x400, size 32, enabled
+
+rl0@pci0:1:0:0:	class=0x020000 card=0x813911f6 chip=0x813910ec rev=0x10 hdr=0x00
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    device     = 'RTL-8100/8101L/8139 PCI Fast Ethernet Adapter'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0xe800, size 256, enabled
+    bar   [14] = type Memory, range 32, base 0xfebffc00, size 256, enabled
+    cap 01[50] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+rl1@pci0:1:1:0:	class=0x020000 card=0x813911f6 chip=0x813910ec rev=0x10 hdr=0x00
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    device     = 'RTL-8100/8101L/8139 PCI Fast Ethernet Adapter'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0xe400, size 256, enabled
+    bar   [14] = type Memory, range 32, base 0xfebff800, size 256, enabled
+    cap 01[50] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+vgapci0@pci0:1:2:0:	class=0x030000 card=0x8a015333 chip=0x8a015333 rev=0x01 hdr=0x00
+    vendor     = 'S3 Graphics Ltd.'
+    device     = '86c375 [ViRGE/DX] or 86c385 [ViRGE/GX]'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 32, base 0xf8000000, size 67108864, enabled

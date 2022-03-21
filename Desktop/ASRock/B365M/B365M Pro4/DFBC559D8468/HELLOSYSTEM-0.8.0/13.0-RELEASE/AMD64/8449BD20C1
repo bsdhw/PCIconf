@@ -1,0 +1,213 @@
+hostb0@pci0:0:0:0:	class=0x060000 rev=0x0d hdr=0x00 vendor=0x8086 device=0x3e30 subvendor=0x1849 subdevice=0x3e30
+    vendor     = 'Intel Corporation'
+    device     = '8th/9th Gen Core 8-core Desktop Processor Host Bridge/DRAM Registers [Coffee Lake S]'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 09[e0] = vendor (length 16) Intel cap 0 version 1
+
+pcib1@pci0:0:1:0:	class=0x060400 rev=0x0d hdr=0x01 vendor=0x8086 device=0x1901 subvendor=0x1849 subdevice=0x1901
+    vendor     = 'Intel Corporation'
+    device     = '6th-10th Gen Core Processor PCIe Controller (x16)'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[88] = PCI Bridge subvendor=0x1849 subdevice=0x1901
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 05[90] = MSI supports 1 message 
+    cap 10[a0] = PCI-Express 2 root port max data 128(256)
+                 max read 128
+                 link x16(x16) speed 2.5(8.0) ASPM L0s/L1(L0s/L1)
+                 slot 1 power limit 75000 mW
+    ecap 0002[100] = VC 1 max VC0
+    ecap 0005[140] = Root Complex Link Declaration 1
+    ecap 0019[d94] = PCIe Sec 1 lane errors 0
+
+xhci1@pci0:0:20:0:	class=0x0c0330 rev=0x00 hdr=0x00 vendor=0x8086 device=0xa2af subvendor=0x1849 subdevice=0xa2af
+    vendor     = 'Intel Corporation'
+    device     = '200 Series/Z370 Chipset Family USB 3.0 xHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 64, base 0xdf230000, size 65536, enabled
+    cap 01[70] = powerspec 2  supports D0 D3  current D0
+    cap 05[80] = MSI supports 8 messages, 64 bit enabled with 1 message
+
+none0@pci0:0:20:2:	class=0x118000 rev=0x00 hdr=0x00 vendor=0x8086 device=0xa2b1 subvendor=0x1849 subdevice=0xa2b1
+    vendor     = 'Intel Corporation'
+    device     = '200 Series PCH Thermal Subsystem'
+    class      = dasp
+    bar   [10] = type Memory, range 64, base 0xdf24e000, size 4096, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 05[80] = MSI supports 1 message 
+
+none1@pci0:0:22:0:	class=0x078000 rev=0x00 hdr=0x00 vendor=0x8086 device=0xa2ba subvendor=0x1849 subdevice=0xa2ba
+    vendor     = 'Intel Corporation'
+    device     = '200 Series PCH CSME HECI'
+    class      = simple comms
+    bar   [10] = type Memory, range 64, base 0xdf24d000, size 4096, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 05[8c] = MSI supports 1 message, 64 bit 
+
+ahci0@pci0:0:23:0:	class=0x010601 rev=0x00 hdr=0x00 vendor=0x8086 device=0xa282 subvendor=0x1849 subdevice=0xa282
+    vendor     = 'Intel Corporation'
+    device     = '200 Series PCH SATA controller [AHCI mode]'
+    class      = mass storage
+    subclass   = SATA
+    bar   [10] = type Memory, range 32, base 0xdf248000, size 8192, enabled
+    bar   [14] = type Memory, range 32, base 0xdf24c000, size 256, enabled
+    bar   [18] = type I/O Port, range 32, base 0xf050, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0xf040, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0xf020, size 32, enabled
+    bar   [24] = type Memory, range 32, base 0xdf24b000, size 2048, enabled
+    cap 05[80] = MSI supports 1 message enabled with 1 message
+    cap 01[70] = powerspec 3  supports D0 D3  current D0
+    cap 12[a8] = SATA Index-Data Pair
+
+pcib2@pci0:0:27:0:	class=0x060400 rev=0xf0 hdr=0x01 vendor=0x8086 device=0xa2e9 subvendor=0x1849 subdevice=0xa2e9
+    vendor     = 'Intel Corporation'
+    device     = '200 Series PCH PCI Express Root Port'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(256) ARI disabled
+                 max read 128
+                 link x0(x1) speed 0.0(8.0)
+                 slot 22 power limit 100 mW
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge subvendor=0x1849 subdevice=0xa2e9
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+    ecap 0000[100] = unknown 0
+    ecap 000d[140] = ACS 1
+    ecap 0019[220] = PCIe Sec 1 lane errors 0
+
+pcib3@pci0:0:27:4:	class=0x060400 rev=0xf0 hdr=0x01 vendor=0x8086 device=0xa2eb subvendor=0x1849 subdevice=0xa2eb
+    vendor     = 'Intel Corporation'
+    device     = '200 Series PCH PCI Express Root Port'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(256) ARI disabled
+                 max read 128
+                 link x4(x4) speed 8.0(8.0)
+                 slot 24 power limit 250 mW
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge subvendor=0x1849 subdevice=0xa2eb
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+    ecap 0000[100] = unknown 0
+    ecap 000d[140] = ACS 1
+    ecap 0019[220] = PCIe Sec 1 lane errors 0
+
+isab0@pci0:0:31:0:	class=0x060100 rev=0x00 hdr=0x00 vendor=0x8086 device=0xa2cc subvendor=0x1849 subdevice=0xa2cc
+    vendor     = 'Intel Corporation'
+    class      = bridge
+    subclass   = PCI-ISA
+
+none2@pci0:0:31:2:	class=0x058000 rev=0x00 hdr=0x00 vendor=0x8086 device=0xa2a1 subvendor=0x1849 subdevice=0xa2a1
+    vendor     = 'Intel Corporation'
+    device     = '200 Series/Z370 Chipset Family Power Management Controller'
+    class      = memory
+    bar   [10] = type Memory, range 32, base 0xdf244000, size 16384, enabled
+
+hdac1@pci0:0:31:3:	class=0x040300 rev=0x00 hdr=0x00 vendor=0x8086 device=0xa2f0 subvendor=0x1849 subdevice=0x6893
+    vendor     = 'Intel Corporation'
+    device     = '200 Series PCH HD Audio'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 64, base 0xdf240000, size 16384, enabled
+    bar   [20] = type Memory, range 64, base 0xdf220000, size 65536, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 05[60] = MSI supports 1 message, 64 bit enabled with 1 message
+
+ichsmb0@pci0:0:31:4:	class=0x0c0500 rev=0x00 hdr=0x00 vendor=0x8086 device=0xa2a3 subvendor=0x1849 subdevice=0xa2a3
+    vendor     = 'Intel Corporation'
+    device     = '200 Series/Z370 Chipset Family SMBus Controller'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [10] = type Memory, range 64, base 0xdf24a000, size 256, enabled
+    bar   [20] = type I/O Port, range 32, base 0xf000, size 32, enabled
+
+em0@pci0:0:31:6:	class=0x020000 rev=0x00 hdr=0x00 vendor=0x8086 device=0x15b8 subvendor=0x1849 subdevice=0x15b8
+    vendor     = 'Intel Corporation'
+    device     = 'Ethernet Connection (2) I219-V'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xdf200000, size 131072, enabled
+    cap 01[c8] = powerspec 3  supports D0 D3  current D0
+    cap 05[d0] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 13[e0] = PCI Advanced Features: FLR TP
+
+vgapci0@pci0:1:0:0:	class=0x030000 rev=0xa1 hdr=0x00 vendor=0x10de device=0x2182 subvendor=0x1458 subdevice=0x3fbe
+    vendor     = 'NVIDIA Corporation'
+    device     = 'TU116 [GeForce GTX 1660 Ti]'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 32, base 0xde000000, size 16777216, enabled
+    bar   [14] = type Prefetchable Memory, range 64, base 0xc0000000, size 268435456, enabled
+    bar   [1c] = type Prefetchable Memory, range 64, base 0xd0000000, size 33554432, enabled
+    bar   [24] = type I/O Port, range 32, base 0xe000, size 128, enabled
+    cap 01[60] = powerspec 3  supports D0 D3  current D0
+    cap 05[68] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 10[78] = PCI-Express 2 legacy endpoint max data 128(256) FLR RO
+                 max read 512
+                 link x16(x16) speed 2.5(8.0) ASPM L0s/L1(L0s/L1) ClockPM enabled
+    ecap 0002[100] = VC 1 max VC0
+    ecap 0018[250] = LTR 1
+    ecap 001e[258] = L1 PM Substates 1
+    ecap 0004[128] = Power Budgeting 1
+    ecap 0001[420] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 000b[600] = Vendor [1] ID 0001 Rev 1 Length 36
+    ecap 0019[900] = PCIe Sec 1 lane errors 0
+    ecap 0015[bb0] = Resizable BAR 1
+
+hdac0@pci0:1:0:1:	class=0x040300 rev=0xa1 hdr=0x00 vendor=0x10de device=0x1aeb subvendor=0x1458 subdevice=0x3fbe
+    vendor     = 'NVIDIA Corporation'
+    device     = 'TU116 High Definition Audio Controller'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 32, base 0xdf080000, size 16384, enabled
+    cap 01[60] = powerspec 3  supports D0 D3  current D0
+    cap 05[68] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 10[78] = PCI-Express 2 endpoint max data 128(256) RO NS
+                 max read 512
+                 link x16(x16) speed 2.5(8.0) ASPM L0s/L1(L0s/L1) ClockPM enabled
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 1 corrected
+
+xhci0@pci0:1:0:2:	class=0x0c0330 rev=0xa1 hdr=0x00 vendor=0x10de device=0x1aec subvendor=0x1458 subdevice=0x3fbe
+    vendor     = 'NVIDIA Corporation'
+    device     = 'TU116 USB 3.1 Host Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Prefetchable Memory, range 64, base 0xd2000000, size 262144, enabled
+    bar   [1c] = type Prefetchable Memory, range 64, base 0xd2040000, size 65536, enabled
+    cap 05[68] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 10[78] = PCI-Express 2 endpoint max data 128(128) RO NS
+                 max read 512
+                 link x16(x16) speed 2.5(8.0) ASPM L0s/L1(L0s/L1) ClockPM disabled
+    cap 01[b4] = powerspec 3  supports D0 D3  current D0
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 1 corrected
+
+none3@pci0:1:0:3:	class=0x0c8000 rev=0xa1 hdr=0x00 vendor=0x10de device=0x1aed subvendor=0x1458 subdevice=0x3fbe
+    vendor     = 'NVIDIA Corporation'
+    device     = 'TU116 USB Type-C UCSI Controller'
+    class      = serial bus
+    bar   [10] = type Memory, range 32, base 0xdf084000, size 4096, enabled
+    cap 05[68] = MSI supports 1 message, 64 bit 
+    cap 10[78] = PCI-Express 2 endpoint max data 128(128) RO NS
+                 max read 512
+                 link x16(x16) speed 2.5(8.0) ASPM L0s/L1(L0s/L1) ClockPM disabled
+    cap 01[b4] = powerspec 3  supports D0 D3  current D0
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 1 corrected
+
+nvme0@pci0:3:0:0:	class=0x010802 rev=0x03 hdr=0x00 vendor=0x126f device=0x2263 subvendor=0x126f subdevice=0x2263
+    vendor     = 'Silicon Motion, Inc.'
+    device     = 'SM2263EN/SM2263XT SSD Controller'
+    class      = mass storage
+    subclass   = NVM
+    bar   [10] = type Memory, range 64, base 0xdf100000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 8 messages, 64 bit, vector masks 
+    cap 10[70] = PCI-Express 2 endpoint max data 128(128) FLR RO
+                 max read 512
+                 link x4(x4) speed 8.0(8.0)
+    cap 11[b0] = MSI-X supports 16 messages, enabled
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x2100]
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[158] = PCIe Sec 1 lane errors 0
+    ecap 0018[178] = LTR 1
+    ecap 001e[180] = L1 PM Substates 1

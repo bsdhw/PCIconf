@@ -1,0 +1,101 @@
+hostb0@pci0:0:0:0:	class=0x060000 rev=0x03 hdr=0x00 vendor=0x8086 device=0x2560 subvendor=0x8086 subdevice=0x2560
+    vendor     = 'Intel Corporation'
+    device     = '82845G/GL[Brookdale-G]/GE/PE DRAM Controller/Host-Hub Interface'
+    class      = bridge
+    subclass   = HOST-PCI
+    bar   [10] = type Prefetchable Memory, range 32, base 0xe0000000, size 268435456, enabled
+    cap 09[e4] = vendor (length 5) Intel cap 6 version 1
+    cap 02[a0] = AGP 4x 2x 1x SBA disabled
+
+pcib1@pci0:0:1:0:	class=0x060400 rev=0x03 hdr=0x01 vendor=0x8086 device=0x2561 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = '82845G/GL[Brookdale-G]/GE/PE Host-to-AGP Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+
+uhci0@pci0:0:29:0:	class=0x0c0300 rev=0x02 hdr=0x00 vendor=0x8086 device=0x24c2 subvendor=0x1043 subdevice=0x8089
+    vendor     = 'Intel Corporation'
+    device     = '82801DB/DBL/DBM (ICH4/ICH4-L/ICH4-M) USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xef20, size 32, enabled
+
+uhci1@pci0:0:29:1:	class=0x0c0300 rev=0x02 hdr=0x00 vendor=0x8086 device=0x24c4 subvendor=0x1043 subdevice=0x8089
+    vendor     = 'Intel Corporation'
+    device     = '82801DB/DBL/DBM (ICH4/ICH4-L/ICH4-M) USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xef40, size 32, enabled
+
+uhci2@pci0:0:29:2:	class=0x0c0300 rev=0x02 hdr=0x00 vendor=0x8086 device=0x24c7 subvendor=0x1043 subdevice=0x8089
+    vendor     = 'Intel Corporation'
+    device     = '82801DB/DBL/DBM (ICH4/ICH4-L/ICH4-M) USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xef80, size 32, enabled
+
+ehci0@pci0:0:29:7:	class=0x0c0320 rev=0x02 hdr=0x00 vendor=0x8086 device=0x24cd subvendor=0x1043 subdevice=0x8089
+    vendor     = 'Intel Corporation'
+    device     = '82801DB/DBM (ICH4/ICH4-M) USB2 EHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfebffc00, size 1024, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 0a[58] = EHCI Debug Port at offset 0x80 in map 0x14
+
+pcib2@pci0:0:30:0:	class=0x060400 rev=0x82 hdr=0x01 vendor=0x8086 device=0x244e subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = '82801 PCI Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+
+isab0@pci0:0:31:0:	class=0x060100 rev=0x02 hdr=0x00 vendor=0x8086 device=0x24c0 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = '82801DB/DBL (ICH4/ICH4-L) LPC Interface Bridge'
+    class      = bridge
+    subclass   = PCI-ISA
+
+atapci0@pci0:0:31:1:	class=0x01018a rev=0x02 hdr=0x00 vendor=0x8086 device=0x24cb subvendor=0x1043 subdevice=0x8089
+    vendor     = 'Intel Corporation'
+    device     = '82801DB (ICH4) IDE Controller'
+    class      = mass storage
+    subclass   = ATA
+    bar   [20] = type I/O Port, range 32, base 0xffa0, size 16, enabled
+    bar   [24] = type Memory, range 32, base 0, size 1024, disabled
+
+pcm0@pci0:0:31:5:	class=0x040100 rev=0x02 hdr=0x00 vendor=0x8086 device=0x24c5 subvendor=0x1043 subdevice=0x810d
+    vendor     = 'Intel Corporation'
+    device     = '82801DB/DBL/DBM (ICH4/ICH4-L/ICH4-M) AC'97 Audio Controller'
+    class      = multimedia
+    subclass   = audio
+    bar   [10] = type I/O Port, range 32, base 0xe800, size 256, enabled
+    bar   [14] = type I/O Port, range 32, base 0xee80, size 64, enabled
+    bar   [18] = type Memory, range 32, base 0xfebff800, size 512, enabled
+    bar   [1c] = type Memory, range 32, base 0xfebff400, size 256, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+
+vgapci0@pci0:1:0:0:	class=0x030000 rev=0xa1 hdr=0x00 vendor=0x10de device=0x0322 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'NVIDIA Corporation'
+    device     = 'NV34 [GeForce FX 5200]'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 32, base 0xfd000000, size 16777216, enabled
+    bar   [14] = type Prefetchable Memory, range 32, base 0xd0000000, size 134217728, enabled
+    cap 01[60] = powerspec 2  supports D0 D3  current D0
+    cap 02[44] = AGP 4x 2x 1x SBA disabled
+
+rl0@pci0:2:5:0:	class=0x020000 rev=0x10 hdr=0x00 vendor=0x10ec device=0x8139 subvendor=0x1043 subdevice=0x80b3
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    device     = 'RTL-8100/8101L/8139 PCI Fast Ethernet Adapter'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0xd800, size 256, enabled
+    bar   [14] = type Memory, range 32, base 0xfeaffc00, size 256, enabled
+    cap 01[50] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+none0@pci0:2:10:0:	class=0x020000 rev=0x00 hdr=0x00 vendor=0x10ec device=0x8029 subvendor=0x10ec subdevice=0x8029
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    device     = 'RTL-8029(AS)'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0xdf80, size 32, enabled

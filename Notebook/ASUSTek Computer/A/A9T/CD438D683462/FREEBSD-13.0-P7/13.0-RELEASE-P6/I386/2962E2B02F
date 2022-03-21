@@ -1,0 +1,116 @@
+hostb0@pci0:0:0:0:	class=0x060000 rev=0x11 hdr=0x00 vendor=0x1039 device=0x0661 subvendor=0x1043 subdevice=0x1197
+    vendor     = 'Silicon Integrated Systems [SiS]'
+    device     = '661FX/M661FX/M661MX Host'
+    class      = bridge
+    subclass   = HOST-PCI
+    bar   [10] = type Memory, range 32, base 0xe0000000, size 67108864, enabled
+    cap 02[c0] = AGP v3 8x 4x SBA disabled
+
+pcib1@pci0:0:1:0:	class=0x060400 rev=0x00 hdr=0x01 vendor=0x1039 device=0x0003 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Silicon Integrated Systems [SiS]'
+    device     = 'AGP Port (virtual PCI-to-PCI bridge)'
+    class      = bridge
+    subclass   = PCI-PCI
+
+isab0@pci0:0:2:0:	class=0x060100 rev=0x36 hdr=0x00 vendor=0x1039 device=0x0964 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Silicon Integrated Systems [SiS]'
+    device     = 'SiS964 [MuTIOL Media IO] LPC Controller'
+    class      = bridge
+    subclass   = PCI-ISA
+
+atapci0@pci0:0:2:5:	class=0x010180 rev=0x01 hdr=0x00 vendor=0x1039 device=0x5513 subvendor=0x1043 subdevice=0x1197
+    vendor     = 'Silicon Integrated Systems [SiS]'
+    device     = '5513 IDE Controller'
+    class      = mass storage
+    subclass   = ATA
+    bar   [20] = type I/O Port, range 32, base 0xffa0, size 16, enabled
+    cap 01[58] = powerspec 2  supports D0 D3  current D0
+
+pcm0@pci0:0:2:7:	class=0x040100 rev=0xa0 hdr=0x00 vendor=0x1039 device=0x7012 subvendor=0x1043 subdevice=0x1193
+    vendor     = 'Silicon Integrated Systems [SiS]'
+    device     = 'SiS7012 AC'97 Sound Controller'
+    class      = multimedia
+    subclass   = audio
+    bar   [10] = type I/O Port, range 32, base 0xe800, size 256, enabled
+    bar   [14] = type I/O Port, range 32, base 0xec00, size 128, enabled
+    cap 01[48] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+ohci0@pci0:0:3:0:	class=0x0c0310 rev=0x0f hdr=0x00 vendor=0x1039 device=0x7001 subvendor=0x1043 subdevice=0x1197
+    vendor     = 'Silicon Integrated Systems [SiS]'
+    device     = 'USB 1.1 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xdfffc000, size 4096, enabled
+
+ohci1@pci0:0:3:1:	class=0x0c0310 rev=0x0f hdr=0x00 vendor=0x1039 device=0x7001 subvendor=0x1043 subdevice=0x1197
+    vendor     = 'Silicon Integrated Systems [SiS]'
+    device     = 'USB 1.1 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xdfffd000, size 4096, enabled
+
+ohci2@pci0:0:3:2:	class=0x0c0310 rev=0x0f hdr=0x00 vendor=0x1039 device=0x7001 subvendor=0x1043 subdevice=0x1197
+    vendor     = 'Silicon Integrated Systems [SiS]'
+    device     = 'USB 1.1 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xdfffe000, size 4096, enabled
+
+ehci0@pci0:0:3:3:	class=0x0c0320 rev=0x00 hdr=0x00 vendor=0x1039 device=0x7002 subvendor=0x1043 subdevice=0x1197
+    vendor     = 'Silicon Integrated Systems [SiS]'
+    device     = 'USB 2.0 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xdffff000, size 4096, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+
+sis0@pci0:0:4:0:	class=0x020000 rev=0x90 hdr=0x00 vendor=0x1039 device=0x0900 subvendor=0x1043 subdevice=0x1455
+    vendor     = 'Silicon Integrated Systems [SiS]'
+    device     = 'SiS900 PCI Fast Ethernet'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0xd800, size 256, enabled
+    bar   [14] = type Memory, range 32, base 0xdfffb000, size 4096, enabled
+    cap 01[40] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+cbb0@pci0:0:9:0:	class=0x060700 rev=0xb3 hdr=0x02 vendor=0x1180 device=0x0476 subvendor=0x1043 subdevice=0x1197
+    vendor     = 'Ricoh Co Ltd'
+    device     = 'RL5c476 II'
+    class      = bridge
+    subclass   = PCI-CardBus
+    bar   [10] = type Memory, range 32, base 0x80000000, size 4096, enabled
+    cap 01[dc] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+none0@pci0:0:9:1:	class=0x0c0010 rev=0x08 hdr=0x00 vendor=0x1180 device=0x0552 subvendor=0x1043 subdevice=0x1197
+    vendor     = 'Ricoh Co Ltd'
+    device     = 'R5C552 IEEE 1394 Controller'
+    class      = serial bus
+    subclass   = FireWire
+    bar   [10] = type Memory, range 32, base 0xdfffa000, size 2048, enabled
+    cap 01[dc] = powerspec 2  supports D0 D3  current D3
+
+sdhci_pci0@pci0:0:9:2:	class=0x080500 rev=0x17 hdr=0x00 vendor=0x1180 device=0x0822 subvendor=0x1043 subdevice=0x1197
+    vendor     = 'Ricoh Co Ltd'
+    device     = 'R5C822 SD/SDIO/MMC/MS/MSPro Host Adapter'
+    class      = base peripheral
+    subclass   = SD host controller
+    bar   [10] = type Memory, range 32, base 0xdfffa800, size 256, enabled
+    cap 01[80] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+none1@pci0:0:9:3:	class=0x088000 rev=0x08 hdr=0x00 vendor=0x1180 device=0x0592 subvendor=0x1043 subdevice=0x1197
+    vendor     = 'Ricoh Co Ltd'
+    device     = 'R5C592 Memory Stick Bus Host Adapter'
+    class      = base peripheral
+    bar   [10] = type Memory, range 32, base 0xdfffac00, size 256, enabled
+    cap 01[80] = powerspec 2  supports D0 D1 D2 D3  current D3
+
+vgapci0@pci0:1:0:0:	class=0x030000 rev=0x00 hdr=0x00 vendor=0x1039 device=0x6330 subvendor=0x1043 subdevice=0x1921
+    vendor     = 'Silicon Integrated Systems [SiS]'
+    device     = '661/741/760 PCI/AGP or 662/761Gx PCIE VGA Display Adapter'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Prefetchable Memory, range 32, base 0xd0000000, size 134217728, enabled
+    bar   [14] = type Memory, range 32, base 0xdf6e0000, size 131072, enabled
+    bar   [18] = type I/O Port, range 32, base 0xbc00, size 128, enabled
+    cap 01[40] = powerspec 2  supports D0 D1 D2 D3  current D0
+    cap 02[50] = AGP v3 8x 4x SBA disabled

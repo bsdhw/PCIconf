@@ -1,0 +1,127 @@
+hostb0@pci0:0:0:0:	class=0x060000 card=0x1a308086 chip=0x1a308086 rev=0x11 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82845 845 [Brookdale] Chipset Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+    bar   [10] = type Prefetchable Memory, range 32, base 0xd0000000, size 268435456, enabled
+    cap 09[e4] = vendor (length 4) Intel cap 10 version 1
+    cap 02[a0] = AGP 4x 2x 1x SBA disabled
+
+pcib1@pci0:0:1:0:	class=0x060400 card=0x00000000 chip=0x1a318086 rev=0x11 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = '82845 845 [Brookdale] Chipset AGP Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+
+uhci0@pci0:0:29:0:	class=0x0c0300 card=0x12901462 chip=0x24c28086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801DB/DBL/DBM (ICH4/ICH4-L/ICH4-M) USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xd800, size 32, enabled
+
+uhci1@pci0:0:29:1:	class=0x0c0300 card=0x12901462 chip=0x24c48086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801DB/DBL/DBM (ICH4/ICH4-L/ICH4-M) USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xd000, size 32, enabled
+
+uhci2@pci0:0:29:2:	class=0x0c0300 card=0x12901462 chip=0x24c78086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801DB/DBL/DBM (ICH4/ICH4-L/ICH4-M) USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xd400, size 32, enabled
+
+ehci0@pci0:0:29:7:	class=0x0c0320 card=0x12901462 chip=0x24cd8086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801DB/DBM (ICH4/ICH4-M) USB2 EHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xe3000000, size 1024, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+
+pcib2@pci0:0:30:0:	class=0x060400 card=0x00000000 chip=0x244e8086 rev=0x82 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = '82801 PCI Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+
+isab0@pci0:0:31:0:	class=0x060100 card=0x00000000 chip=0x24c08086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801DB/DBL (ICH4/ICH4-L) LPC Interface Bridge'
+    class      = bridge
+    subclass   = PCI-ISA
+
+atapci2@pci0:0:31:1:	class=0x01018a card=0x12901462 chip=0x24cb8086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801DB (ICH4) IDE Controller'
+    class      = mass storage
+    subclass   = ATA
+    bar   [20] = type I/O Port, range 32, base 0xf000, size 16, enabled
+    bar   [24] = type Memory, range 32, base 0, size 1024, enabled
+
+ichsmb0@pci0:0:31:3:	class=0x0c0500 card=0x12901462 chip=0x24c38086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801DB/DBL/DBM (ICH4/ICH4-L/ICH4-M) SMBus Controller'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [20] = type I/O Port, range 32, base 0x500, size 32, enabled
+
+atapci0@pci0:2:1:0:	class=0x010400 card=0x61141095 chip=0x31141095 rev=0x02 hdr=0x00
+    vendor     = 'Silicon Image, Inc.'
+    device     = 'SiI 3114 [SATALink/SATARaid] Serial ATA Controller'
+    class      = mass storage
+    subclass   = RAID
+    bar   [10] = type I/O Port, range 32, base 0x9000, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0x9400, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0x9800, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0x9c00, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0xa000, size 16, enabled
+    bar   [24] = type Memory, range 32, base 0xe2046000, size 1024, enabled
+    cap 01[60] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+em0@pci0:2:5:0:	class=0x020000 card=0x002e8086 chip=0x100e8086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82540EM Gigabit Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xe2020000, size 131072, enabled
+    bar   [18] = type I/O Port, range 32, base 0xa400, size 64, enabled
+    cap 01[dc] = powerspec 2  supports D0 D3  current D0
+    cap 07[e4] = PCI-X supports 2048 burst read, 1 split transaction
+    cap 05[f0] = MSI supports 1 message, 64 bit 
+
+fxp0@pci0:2:6:0:	class=0x020000 card=0x02071014 chip=0x12298086 rev=0x10 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82557/8/9/0/1 Ethernet Pro 100'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xe2044000, size 4096, enabled
+    bar   [14] = type I/O Port, range 32, base 0xa800, size 64, enabled
+    bar   [18] = type Memory, range 32, base 0xe2000000, size 131072, enabled
+    cap 01[dc] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+vgapci0@pci0:2:7:0:	class=0x030000 card=0x00081002 chip=0x47521002 rev=0x27 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'Rage 3 [Rage XL PCI]'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 32, base 0xe1000000, size 16777216, enabled
+    bar   [14] = type I/O Port, range 32, base 0xac00, size 256, enabled
+    bar   [18] = type Memory, range 32, base 0xe2045000, size 4096, enabled
+    cap 01[5c] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+atapci1@pci0:2:10:0:	class=0x010485 card=0x12901462 chip=0x5275105a rev=0x01 hdr=0x00
+    vendor     = 'Promise Technology, Inc.'
+    device     = 'PDC20276 (MBFastTrak133 Lite)'
+    class      = mass storage
+    subclass   = RAID
+    bar   [10] = type I/O Port, range 32, base 0xb000, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0xb400, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0xb800, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0xbc00, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0xc000, size 16, enabled
+    bar   [24] = type Memory, range 32, base 0xe2040000, size 16384, enabled
+    cap 01[60] = powerspec 1  supports D0 D1 D3  current D0

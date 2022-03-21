@@ -1,0 +1,64 @@
+hostb0@pci0:0:1:0:	class=0x060000 card=0x20801022 chip=0x20801022 rev=0x33 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'CS5536 [Geode companion] Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+    bar   [10] = type I/O Port, range 32, base 0xac1c, size 4, enabled
+
+glxsb0@pci0:0:1:2:	class=0x101000 card=0x20821022 chip=0x20821022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Geode LX AES Security Block'
+    class      = encrypt/decrypt
+    bar   [10] = type Memory, range 32, base 0xefff4000, size 16384, enabled
+
+vr0@pci0:0:9:0:	class=0x020000 card=0x01061106 chip=0x30531106 rev=0x96 hdr=0x00
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VT6105M [Rhine-III]'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0x1000, size 256, enabled
+    bar   [14] = type Memory, range 32, base 0xe0000000, size 256, enabled
+    cap 01[40] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+vr1@pci0:0:11:0:	class=0x020000 card=0x01061106 chip=0x30531106 rev=0x96 hdr=0x00
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VT6105M [Rhine-III]'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0x1400, size 256, enabled
+    bar   [14] = type Memory, range 32, base 0xe0040000, size 256, enabled
+    cap 01[40] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+isab0@pci0:0:15:0:	class=0x060100 card=0x20901022 chip=0x20901022 rev=0x03 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'CS5536 [Geode companion] ISA'
+    class      = bridge
+    subclass   = PCI-ISA
+    bar   [10] = type I/O Port, range 32, base 0x6000, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0x6100, size 256, enabled
+    bar   [18] = type I/O Port, range 32, base 0x6200, size 64, enabled
+    bar   [20] = type I/O Port, range 32, base 0x9d00, size 128, enabled
+    bar   [24] = type I/O Port, range 32, base 0x9c00, size 64, enabled
+
+atapci0@pci0:0:15:2:	class=0x010180 card=0x209a1022 chip=0x209a1022 rev=0x01 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'CS5536 [Geode companion] IDE'
+    class      = mass storage
+    subclass   = ATA
+    bar   [20] = type I/O Port, range 32, base 0xff00, size 16, enabled
+
+ohci0@pci0:0:15:4:	class=0x0c0310 card=0x20941022 chip=0x20941022 rev=0x02 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'CS5536 [Geode companion] OHC'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xefffe000, size 4096, enabled
+    cap 01[40] = powerspec 2  supports D0 D3  current D0
+
+ehci0@pci0:0:15:5:	class=0x0c0320 card=0x20951022 chip=0x20951022 rev=0x02 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'CS5536 [Geode companion] EHC'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xefffd000, size 4096, enabled
+    cap 01[40] = powerspec 2  supports D0 D3  current D0

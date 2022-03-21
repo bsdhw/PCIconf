@@ -1,0 +1,162 @@
+hostb0@pci0:0:0:0:	class=0x060000 rev=0x03 hdr=0x00 vendor=0x8086 device=0x2590 subvendor=0x1014 subdevice=0x0575
+    vendor     = 'Intel Corporation'
+    device     = 'Mobile 915GM/PM/GMS/910GML Express Processor to DRAM Controller'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 09[e0] = vendor (length 9) Intel cap 2 version 1
+
+vgapci0@pci0:0:2:0:	class=0x030000 rev=0x03 hdr=0x00 vendor=0x8086 device=0x2592 subvendor=0x1014 subdevice=0x0582
+    vendor     = 'Intel Corporation'
+    device     = 'Mobile 915GM/GMS/910GML Express Graphics Controller'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 32, base 0xa0080000, size 524288, enabled
+    bar   [14] = type I/O Port, range 32, base 0x1800, size 8, enabled
+    bar   [18] = type Prefetchable Memory, range 32, base 0xc0000000, size 268435456, enabled
+    bar   [1c] = type Memory, range 32, base 0xa0000000, size 262144, enabled
+    cap 01[d0] = powerspec 2  supports D0 D3  current D0
+
+vgapci1@pci0:0:2:1:	class=0x038000 rev=0x03 hdr=0x00 vendor=0x8086 device=0x2792 subvendor=0x1014 subdevice=0x0582
+    vendor     = 'Intel Corporation'
+    device     = 'Mobile 915GM/GMS/910GML Express Graphics Controller'
+    class      = display
+    bar   [10] = type Memory, range 32, base 0, size 524288, disabled
+    cap 01[d0] = powerspec 2  supports D0 D3  current D0
+
+pcib1@pci0:0:28:0:	class=0x060400 rev=0x03 hdr=0x01 vendor=0x8086 device=0x2660 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = '82801FB/FBM/FR/FW/FRW (ICH6 Family) PCI Express Port 1'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 1 root port max data 128(128)
+                 max read 128
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+                 slot 1 power limit 65 mW HotPlug(present) surprise
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge subvendor=0x0000 subdevice=0x0000
+    cap 01[a0] = powerspec 2  supports D0 D3  current D0
+    ecap 0002[100] = VC 1 max VC1
+    ecap 0005[180] = Root Complex Link Declaration 1
+
+uhci0@pci0:0:29:0:	class=0x0c0300 rev=0x03 hdr=0x00 vendor=0x8086 device=0x2658 subvendor=0x1014 subdevice=0x0565
+    vendor     = 'Intel Corporation'
+    device     = '82801FB/FBM/FR/FW/FRW (ICH6 Family) USB UHCI'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0x1820, size 32, enabled
+
+uhci1@pci0:0:29:1:	class=0x0c0300 rev=0x03 hdr=0x00 vendor=0x8086 device=0x2659 subvendor=0x1014 subdevice=0x0565
+    vendor     = 'Intel Corporation'
+    device     = '82801FB/FBM/FR/FW/FRW (ICH6 Family) USB UHCI'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0x1840, size 32, enabled
+
+uhci2@pci0:0:29:2:	class=0x0c0300 rev=0x03 hdr=0x00 vendor=0x8086 device=0x265a subvendor=0x1014 subdevice=0x0565
+    vendor     = 'Intel Corporation'
+    device     = '82801FB/FBM/FR/FW/FRW (ICH6 Family) USB UHCI'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0x1860, size 32, enabled
+
+uhci3@pci0:0:29:3:	class=0x0c0300 rev=0x03 hdr=0x00 vendor=0x8086 device=0x265b subvendor=0x1014 subdevice=0x0565
+    vendor     = 'Intel Corporation'
+    device     = '82801FB/FBM/FR/FW/FRW (ICH6 Family) USB UHCI'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0x1880, size 32, enabled
+
+ehci0@pci0:0:29:7:	class=0x0c0320 rev=0x03 hdr=0x00 vendor=0x8086 device=0x265c subvendor=0x1014 subdevice=0x0566
+    vendor     = 'Intel Corporation'
+    device     = '82801FB/FBM/FR/FW/FRW (ICH6 Family) USB2 EHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xa0040000, size 1024, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 0a[58] = EHCI Debug Port at offset 0xa0 in map 0x14
+
+pcib2@pci0:0:30:0:	class=0x060401 rev=0xd3 hdr=0x01 vendor=0x8086 device=0x2448 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = '82801 Mobile PCI Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[50] = PCI Bridge subvendor=0x0000 subdevice=0x0000
+
+pcm0@pci0:0:30:2:	class=0x040100 rev=0x03 hdr=0x00 vendor=0x8086 device=0x266e subvendor=0x1014 subdevice=0x0581
+    vendor     = 'Intel Corporation'
+    device     = '82801FB/FBM/FR/FW/FRW (ICH6 Family) AC'97 Audio Controller'
+    class      = multimedia
+    subclass   = audio
+    bar   [10] = type I/O Port, range 32, base 0x1c00, size 256, enabled
+    bar   [14] = type I/O Port, range 32, base 0x18c0, size 64, enabled
+    bar   [18] = type Memory, range 32, base 0xa0040800, size 512, enabled
+    bar   [1c] = type Memory, range 32, base 0xa0040400, size 256, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+
+none0@pci0:0:30:3:	class=0x070300 rev=0x03 hdr=0x00 vendor=0x8086 device=0x266d subvendor=0x1014 subdevice=0x0574
+    vendor     = 'Intel Corporation'
+    device     = '82801FB/FBM/FR/FW/FRW (ICH6 Family) AC'97 Modem Controller'
+    class      = simple comms
+    subclass   = generic modem
+    bar   [10] = type I/O Port, range 32, base 0x2400, size 256, enabled
+    bar   [14] = type I/O Port, range 32, base 0x2000, size 128, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+
+isab0@pci0:0:31:0:	class=0x060100 rev=0x03 hdr=0x00 vendor=0x8086 device=0x2641 subvendor=0x1014 subdevice=0x0568
+    vendor     = 'Intel Corporation'
+    device     = '82801FBM (ICH6M) LPC Interface Bridge'
+    class      = bridge
+    subclass   = PCI-ISA
+
+atapci0@pci0:0:31:2:	class=0x010180 rev=0x03 hdr=0x00 vendor=0x8086 device=0x2653 subvendor=0x1014 subdevice=0x056a
+    vendor     = 'Intel Corporation'
+    device     = '82801FBM (ICH6M) SATA Controller'
+    class      = mass storage
+    subclass   = ATA
+    bar   [20] = type I/O Port, range 32, base 0x1810, size 16, enabled
+    cap 01[70] = powerspec 2  supports D0 D3  current D0
+
+ichsmb0@pci0:0:31:3:	class=0x0c0500 rev=0x03 hdr=0x00 vendor=0x8086 device=0x266a subvendor=0x1014 subdevice=0x056b
+    vendor     = 'Intel Corporation'
+    device     = '82801FB/FBM/FR/FW/FRW (ICH6 Family) SMBus Controller'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [20] = type I/O Port, range 32, base 0x18a0, size 32, enabled
+
+bge0@pci0:2:0:0:	class=0x020000 rev=0x11 hdr=0x00 vendor=0x14e4 device=0x167d subvendor=0x1014 subdevice=0x0577
+    vendor     = 'Broadcom Inc. and subsidiaries'
+    device     = 'NetXtreme BCM5751M Gigabit Ethernet PCI Express'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 64, base 0xa0100000, size 65536, enabled
+    cap 01[48] = powerspec 2  supports D0 D3  current D0
+    cap 03[50] = VPD
+    cap 05[58] = MSI supports 8 messages, 64 bit 
+    cap 10[d0] = PCI-Express 1 endpoint max data 128(128)
+                 max read 4096
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s)
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 0002[13c] = VC 1 max VC0
+
+cbb0@pci0:4:0:0:	class=0x060700 rev=0x8d hdr=0x02 vendor=0x1180 device=0x0476 subvendor=0x1014 subdevice=0x0555
+    vendor     = 'Ricoh Co Ltd'
+    device     = 'RL5c476 II'
+    class      = bridge
+    subclass   = PCI-CardBus
+    bar   [10] = type Memory, range 32, base 0xa0200000, size 4096, enabled
+    cap 01[dc] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+sdhci_pci0@pci0:4:0:1:	class=0x080500 rev=0x13 hdr=0x00 vendor=0x1180 device=0x0822 subvendor=0x1014 subdevice=0x0556
+    vendor     = 'Ricoh Co Ltd'
+    device     = 'R5C822 SD/SDIO/MMC/MS/MSPro Host Adapter'
+    class      = base peripheral
+    subclass   = SD host controller
+    bar   [10] = type Memory, range 32, base 0xa0201000, size 256, enabled
+    cap 01[80] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+iwi0@pci0:4:2:0:	class=0x028000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x4224 subvendor=0x8086 subdevice=0x1011
+    vendor     = 'Intel Corporation'
+    device     = 'PRO/Wireless 2915ABG [Calexico2] Network Connection'
+    class      = network
+    bar   [10] = type Memory, range 32, base 0xa0202000, size 4096, enabled
+    cap 01[dc] = powerspec 2  supports D0 D3  current D0

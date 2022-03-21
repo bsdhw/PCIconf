@@ -1,0 +1,174 @@
+vgapci0@pci0:10:0:0:	class=0x030000 card=0x001010de chip=0x014110de rev=0xa2 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'NV43 [GeForce 6600]'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 32, base 0xa1000000, size 16777216, enabled
+    bar   [14] = type Prefetchable Memory, range 64, base 0x90000000, size 268435456, enabled
+    bar   [1c] = type Memory, range 64, base 0xa0000000, size 16777216, enabled
+    cap 01[60] = powerspec 2  supports D0 D3  current D0
+    cap 05[68] = MSI supports 1 message, 64 bit 
+    cap 10[78] = PCI-Express 1 endpoint max data 128(128) RO NS
+                 link x16(x16) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    ecap 0002[100] = VC 1 max VC0
+    ecap 0004[128] = Power Budgeting 1
+
+pcib2@pci1:0:1:0:	class=0x060400 card=0x00000000 chip=0x01301166 rev=0xa3 hdr=0x01
+    vendor     = 'Broadcom'
+    device     = 'BCM5780 [HT2000] PCI-X bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 07[90] = PCI-X bridge 
+    cap 08[a0] = HT MSI address window enabled at 0xfee00000
+    cap 08[b0] = HT slave
+
+pcib3@pci1:0:2:0:	class=0x060400 card=0x00000000 chip=0x01301166 rev=0xa3 hdr=0x01
+    vendor     = 'Broadcom'
+    device     = 'BCM5780 [HT2000] PCI-X bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 07[90] = PCI-X bridge 
+    cap 08[a0] = HT MSI address window enabled at 0xfee00000
+
+pcib4@pci1:0:3:0:	class=0x060400 card=0x00000000 chip=0x01321166 rev=0xa3 hdr=0x01
+    vendor     = 'Broadcom'
+    device     = 'BCM5780 [HT2000] PCI-Express Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 08[a0] = HT MSI address window disabled at 0xfee00000
+    cap 10[b0] = PCI-Express 1 root port max data 128(512)
+                 link x8(x8) speed 2.5(2.5) ASPM disabled(L0s/L1)
+
+pcib5@pci1:0:4:0:	class=0x060400 card=0x00000000 chip=0x01321166 rev=0xa3 hdr=0x01
+    vendor     = 'Broadcom'
+    device     = 'BCM5780 [HT2000] PCI-Express Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 08[a0] = HT MSI address window disabled at 0xfee00000
+    cap 10[b0] = PCI-Express 1 root port max data 128(512)
+                 link x1(x4) speed 2.5(2.5) ASPM disabled(L0s/L1)
+
+pcib6@pci1:0:5:0:	class=0x060400 card=0x00000000 chip=0x01321166 rev=0xa3 hdr=0x01
+    vendor     = 'Broadcom'
+    device     = 'BCM5780 [HT2000] PCI-Express Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 08[a0] = HT MSI address window disabled at 0xfee00000
+    cap 10[b0] = PCI-Express 1 root port max data 128(512)
+                 link x4(x8) speed 2.5(2.5) ASPM disabled(L0s/L1)
+
+pcib7@pci1:0:6:0:	class=0x060400 card=0x00000000 chip=0x01321166 rev=0xa3 hdr=0x01
+    vendor     = 'Broadcom'
+    device     = 'BCM5780 [HT2000] PCI-Express Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 08[a0] = HT MSI address window disabled at 0xfee00000
+    cap 10[b0] = PCI-Express 1 root port max data 128(512)
+                 link x4(x4) speed 2.5(2.5) ASPM disabled(L0s/L1)
+
+pcib8@pci1:0:7:0:	class=0x060400 card=0x00000000 chip=0x0053106b rev=0x00 hdr=0x01
+    vendor     = 'Apple Inc.'
+    device     = 'Shasta PCI Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 08[70] = HT slave
+    cap 08[90] = HT interrupt
+
+pcib9@pci1:0:8:0:	class=0x060400 card=0x00000000 chip=0x0054106b rev=0x00 hdr=0x01
+    vendor     = 'Apple Inc.'
+    device     = 'Shasta PCI Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 08[70] = HT revision ID
+
+pcib10@pci1:0:9:0:	class=0x060400 card=0x00000000 chip=0x0055106b rev=0x00 hdr=0x01
+    vendor     = 'Apple Inc.'
+    device     = 'Shasta PCI Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 08[70] = HT revision ID
+
+bge0@pci1:5:4:0:	class=0x020000 card=0x0085106b chip=0x166a14e4 rev=0x03 hdr=0x00
+    vendor     = 'Broadcom Inc. and subsidiaries'
+    device     = 'NetXtreme BCM5780 Gigabit Ethernet'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 64, base 0xfa530000, size 65536, enabled
+    bar   [18] = type Memory, range 64, base 0xfa520000, size 65536, enabled
+    cap 07[40] = PCI-X 64-bit supports 133MHz, 2048 burst read, 1 split transaction
+    cap 01[48] = powerspec 2  supports D0 D3  current D0
+    cap 03[50] = VPD
+    cap 05[58] = MSI supports 8 messages, 64 bit enabled with 1 message
+
+bge1@pci1:5:4:1:	class=0x020000 card=0x0085106b chip=0x166a14e4 rev=0x03 hdr=0x00
+    vendor     = 'Broadcom Inc. and subsidiaries'
+    device     = 'NetXtreme BCM5780 Gigabit Ethernet'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 64, base 0xfa510000, size 65536, enabled
+    bar   [18] = type Memory, range 64, base 0xfa500000, size 65536, enabled
+    cap 07[40] = PCI-X 64-bit supports 133MHz, 2048 burst read, 1 split transaction
+    cap 01[48] = powerspec 2  supports D0 D3  current D0
+    cap 03[50] = VPD
+    cap 05[58] = MSI supports 8 messages, 64 bit enabled with 1 message
+
+none0@pci1:2:15:0:	class=0x020000 card=0x00000000 chip=0x0051106b rev=0x00 hdr=0x00
+    vendor     = 'Apple Inc.'
+    device     = 'Shasta (Sun GEM)'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xfa200000, size 2097152, enabled
+
+macio0@pci1:1:7:0:	class=0xff0000 card=0x00000000 chip=0x004f106b rev=0x00 hdr=0x00
+    vendor     = 'Apple Inc.'
+    device     = 'Shasta Mac I/O'
+    bar   [10] = type Memory, range 32, base 0x80000000, size 524288, enabled
+
+ohci0@pci1:1:11:0:	class=0x0c0310 card=0x00351033 chip=0x00351033 rev=0x43 hdr=0x00
+    vendor     = 'NEC Corporation'
+    device     = 'OHCI USB Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0x80082000, size 4096, enabled
+    cap 01[40] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+ohci1@pci1:1:11:1:	class=0x0c0310 card=0x00351033 chip=0x00351033 rev=0x43 hdr=0x00
+    vendor     = 'NEC Corporation'
+    device     = 'OHCI USB Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0x80081000, size 4096, enabled
+    cap 01[40] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+ehci0@pci1:1:11:2:	class=0x0c0320 card=0x00e01033 chip=0x00e01033 rev=0x04 hdr=0x00
+    vendor     = 'NEC Corporation'
+    device     = 'uPD72010x USB 2.0 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0x80080000, size 256, enabled
+    cap 01[40] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+atapci0@pci1:3:12:0:	class=0x01018f card=0x02401166 chip=0x02401166 rev=0x00 hdr=0x00
+    vendor     = 'Broadcom'
+    device     = 'K2 SATA'
+    class      = mass storage
+    subclass   = ATA
+    bar   [10] = type I/O Port, range 32, base 0, size 8, disabled
+    bar   [14] = type I/O Port, range 32, base 0, size 4, disabled
+    bar   [18] = type I/O Port, range 32, base 0, size 8, disabled
+    bar   [1c] = type I/O Port, range 32, base 0, size 4, disabled
+    bar   [20] = type I/O Port, range 32, base 0, size 16, disabled
+    bar   [24] = type Memory, range 32, base 0xfa402000, size 8192, enabled
+
+ata0@pci1:3:13:0:	class=0xff0000 card=0x00000000 chip=0x0050106b rev=0x00 hdr=0x00
+    vendor     = 'Apple Inc.'
+    device     = 'Shasta IDE'
+    bar   [10] = type Memory, range 32, base 0xfa404000, size 16384, enabled
+
+fwohci0@pci1:3:14:0:	class=0x0c0010 card=0x5811106b chip=0x0052106b rev=0x00 hdr=0x00
+    vendor     = 'Apple Inc.'
+    device     = 'Shasta Firewire'
+    class      = serial bus
+    subclass   = FireWire
+    bar   [10] = type Memory, range 32, base 0xfa400000, size 4096, enabled
+    cap 01[44] = powerspec 2  supports D0 D1 D2 D3  current D0

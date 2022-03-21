@@ -1,0 +1,127 @@
+hostb0@pci0:0:0:0:	class=0x060000 card=0x019a1028 chip=0x35908086 rev=0x09 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'E7520 Memory Controller Hub'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 09[40] = vendor (length 5) Intel cap 4 version 1
+
+pcib1@pci0:0:2:0:	class=0x060400 card=0x00000000 chip=0x35958086 rev=0x09 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = 'E7525/E7520/E7320 PCI Express Port A'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 05[58] = MSI supports 2 messages 
+    cap 10[64] = PCI-Express 1 root port max data 256(256)
+                 link x8(x8) speed 2.5(2.5) ASPM disabled(L0s)
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+
+uhci0@pci0:0:29:0:	class=0x0c0300 card=0x019a1028 chip=0x24d28086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801EB/ER (ICH5/ICH5R) USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xcce0, size 32, enabled
+
+uhci1@pci0:0:29:1:	class=0x0c0300 card=0x019a1028 chip=0x24d48086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801EB/ER (ICH5/ICH5R) USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xccc0, size 32, enabled
+
+ehci0@pci0:0:29:7:	class=0x0c0320 card=0x019a1028 chip=0x24dd8086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801EB/ER (ICH5/ICH5R) USB2 EHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfeb00000, size 1024, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 0a[58] = EHCI Debug Port at offset 0xa0 in map 0x14
+
+pcib4@pci0:0:30:0:	class=0x060400 card=0x00000000 chip=0x244e8086 rev=0xc2 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = '82801 PCI Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+
+isab0@pci0:0:31:0:	class=0x060100 card=0x00000000 chip=0x24d08086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801EB/ER (ICH5/ICH5R) LPC Interface Bridge'
+    class      = bridge
+    subclass   = PCI-ISA
+
+atapci0@pci0:0:31:1:	class=0x01018a card=0x019a1028 chip=0x24db8086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801EB/ER (ICH5/ICH5R) IDE Controller'
+    class      = mass storage
+    subclass   = ATA
+    bar   [20] = type I/O Port, range 32, base 0xfc00, size 16, enabled
+    bar   [24] = type Memory, range 32, base 0, size 1024, disabled
+
+atapci1@pci0:0:31:2:	class=0x01018f card=0x019a1028 chip=0x24d18086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801EB (ICH5) SATA Controller'
+    class      = mass storage
+    subclass   = ATA
+    bar   [10] = type I/O Port, range 32, base 0xccb8, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0xccb0, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0xcca0, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0xcc98, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0xcc80, size 16, enabled
+
+pcib2@pci0:1:0:0:	class=0x060400 card=0x00000000 chip=0x03298086 rev=0x09 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = '6700PXH PCI Express-to-PCI Bridge A'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[44] = PCI-Express 1 PCI bridge max data 256(256)
+                 link x8(x8) speed 2.5(2.5) ASPM disabled(L0s)
+    cap 05[5c] = MSI supports 1 message, 64 bit 
+    cap 01[6c] = powerspec 2  supports D0 D3  current D0
+    cap 07[d8] = PCI-X bridge 
+    ecap 0001[100] = AER 1 0 fatal 1 non-fatal 0 corrected
+    ecap 0004[300] = Power Budgeting 1
+
+pcib3@pci0:1:0:2:	class=0x060400 card=0x00000000 chip=0x032a8086 rev=0x09 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = '6700PXH PCI Express-to-PCI Bridge B'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[44] = PCI-Express 1 PCI bridge max data 256(256)
+                 link x8(x8) speed 2.5(2.5) ASPM disabled(L0s)
+    cap 05[5c] = MSI supports 1 message, 64 bit 
+    cap 01[6c] = powerspec 2  supports D0 D3  current D0
+    cap 07[d8] = PCI-X bridge 
+    ecap 0001[100] = AER 1 0 fatal 1 non-fatal 0 corrected
+    ecap 0004[300] = Power Budgeting 1
+
+em0@pci0:2:4:0:	class=0x020000 card=0x019a1028 chip=0x10768086 rev=0x05 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82541GI Gigabit Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xfe9e0000, size 131072, enabled
+    bar   [18] = type I/O Port, range 32, base 0xecc0, size 64, enabled
+    cap 01[dc] = powerspec 2  supports D0 D3  current D0
+    cap 07[e4] = PCI-X supports 2048 burst read, 1 split transaction
+
+em1@pci0:4:3:0:	class=0x020000 card=0x019a1028 chip=0x10768086 rev=0x05 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82541GI Gigabit Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xfe5e0000, size 131072, enabled
+    bar   [18] = type I/O Port, range 32, base 0xdcc0, size 64, enabled
+    cap 01[dc] = powerspec 2  supports D0 D3  current D0
+    cap 07[e4] = PCI-X supports 2048 burst read, 1 split transaction
+
+vgapci0@pci0:4:13:0:	class=0x030000 card=0x019a1028 chip=0x51591002 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'RV100 [Radeon 7000 / Radeon VE]'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Prefetchable Memory, range 32, base 0xf0000000, size 134217728, enabled
+    bar   [14] = type I/O Port, range 32, base 0xd800, size 256, enabled
+    bar   [18] = type Memory, range 32, base 0xfe5d0000, size 65536, enabled
+    cap 01[50] = powerspec 2  supports D0 D1 D2 D3  current D0

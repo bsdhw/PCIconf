@@ -1,0 +1,431 @@
+hostb0@pci0:0:0:0:	class=0x060000 card=0x72708086 chip=0x31f08086 rev=0x03 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = bridge
+    subclass   = HOST-PCI
+
+vgapci0@pci0:0:2:0:	class=0x030000 card=0x22128086 chip=0x31858086 rev=0x03 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 64, base 0xa0000000, size 16777216, enabled
+    bar   [18] = type Prefetchable Memory, range 64, base 0x90000000, size 268435456, enabled
+    bar   [20] = type I/O Port, range 32, base 0xf000, size 64, enabled
+    cap 09[40] = vendor (length 12) Intel cap 0 version 1
+    cap 10[70] = PCI-Express 2 root endpoint max data 128(128) FLR
+    cap 05[ac] = MSI supports 1 message 
+    cap 01[d0] = powerspec 2  supports D0 D3  current D0
+    ecap 001b[100] = unknown 1
+    ecap 000f[200] = ATS 1
+    ecap 0013[300] = unknown 1
+
+none0@pci0:0:15:0:	class=0x078000 card=0x72708086 chip=0x319a8086 rev=0x03 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Celeron/Pentium Silver Processor Trusted Execution Engine Interface'
+    class      = simple comms
+    bar   [10] = type Memory, range 64, base 0xa1635000, size 4096, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 05[8c] = MSI supports 1 message, 64 bit 
+    cap 09[a4] = vendor (length 20) Intel cap 15 version 0
+
+ahci0@pci0:0:18:0:	class=0x010601 card=0x72708086 chip=0x31e38086 rev=0x03 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = mass storage
+    subclass   = SATA
+    bar   [10] = type Memory, range 32, base 0xa1610000, size 8192, enabled
+    bar   [14] = type Memory, range 32, base 0xa1634000, size 256, enabled
+    bar   [18] = type I/O Port, range 32, base 0xf090, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0xf080, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0xf060, size 32, enabled
+    bar   [24] = type Memory, range 32, base 0xa1633000, size 2048, enabled
+    cap 05[80] = MSI supports 1 message enabled with 1 message
+    cap 01[70] = powerspec 3  supports D0 D3  current D0
+    cap 12[a8] = SATA Index-Data Pair
+
+pcib1@pci0:0:19:0:	class=0x060400 card=0x72708086 chip=0x31d88086 rev=0xf3 hdr=0x01
+    vendor     = 'Intel Corporation'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 256(256) ARI disabled
+                 link x1(x1) speed 5.0(5.0) ASPM L1(L0s/L1)
+                 slot 2 power limit 100 mW
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge card=0x72708086
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+    ecap 0000[100] = unknown 0
+    ecap 000d[140] = ACS 1
+    ecap 0000[150] = unknown 0
+    ecap 001e[200] = unknown 1
+    ecap 0000[220] = unknown 0
+
+pcib2@pci0:0:19:1:	class=0x060400 card=0x72708086 chip=0x31d98086 rev=0xf3 hdr=0x01
+    vendor     = 'Intel Corporation'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 256(256) ARI disabled
+                 link x1(x1) speed 5.0(5.0) ASPM L1(L0s/L1)
+                 slot 3 power limit 100 mW
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge card=0x72708086
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+    ecap 0000[100] = unknown 0
+    ecap 000d[140] = ACS 1
+    ecap 0000[150] = unknown 0
+    ecap 001e[200] = unknown 1
+    ecap 0000[220] = unknown 0
+
+pcib3@pci0:0:19:2:	class=0x060400 card=0x72708086 chip=0x31da8086 rev=0xf3 hdr=0x01
+    vendor     = 'Intel Corporation'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 256(256) ARI disabled
+                 link x1(x1) speed 5.0(5.0) ASPM L1(L0s/L1)
+                 slot 4 power limit 100 mW
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge card=0x72708086
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+    ecap 0000[100] = unknown 0
+    ecap 000d[140] = ACS 1
+    ecap 0000[150] = unknown 0
+    ecap 001e[200] = unknown 1
+    ecap 0000[220] = unknown 0
+
+pcib4@pci0:0:19:3:	class=0x060400 card=0x72708086 chip=0x31db8086 rev=0xf3 hdr=0x01
+    vendor     = 'Intel Corporation'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 256(256) ARI disabled
+                 link x1(x1) speed 5.0(5.0) ASPM L1(L0s/L1)
+                 slot 5 power limit 100 mW
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge card=0x72708086
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+    ecap 0000[100] = unknown 0
+    ecap 000d[140] = ACS 1
+    ecap 0000[150] = unknown 0
+    ecap 001e[200] = unknown 1
+    ecap 0000[220] = unknown 0
+
+pcib5@pci0:0:20:0:	class=0x060400 card=0x72708086 chip=0x31d68086 rev=0xf3 hdr=0x01
+    vendor     = 'Intel Corporation'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 256(256) ARI disabled
+                 link x1(x1) speed 5.0(5.0) ASPM L1(L0s/L1)
+                 slot 0 power limit 100 mW
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge card=0x72708086
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+    ecap 0000[100] = unknown 0
+    ecap 000d[140] = ACS 1
+    ecap 0000[150] = unknown 0
+    ecap 001e[200] = unknown 1
+    ecap 0000[220] = unknown 0
+
+pcib6@pci0:0:20:1:	class=0x060400 card=0x72708086 chip=0x31d78086 rev=0xf3 hdr=0x01
+    vendor     = 'Intel Corporation'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 256(256) ARI disabled
+                 link x1(x1) speed 5.0(5.0) ASPM L1(L0s/L1)
+                 slot 1 power limit 100 mW
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge card=0x72708086
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+    ecap 0000[100] = unknown 0
+    ecap 000d[140] = ACS 1
+    ecap 0000[150] = unknown 0
+    ecap 001e[200] = unknown 1
+    ecap 0000[220] = unknown 0
+
+xhci0@pci0:0:21:0:	class=0x0c0330 card=0x72708086 chip=0x31a88086 rev=0x03 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 64, base 0xa1600000, size 65536, enabled
+    cap 01[70] = powerspec 2  supports D0 D3  current D0
+    cap 05[80] = MSI supports 8 messages, 64 bit enabled with 1 message
+    cap 09[90] = vendor (length 20) Intel cap 15 version 0
+
+none1@pci0:0:22:0:	class=0x118000 card=0x72708086 chip=0x31ac8086 rev=0x03 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Celeron/Pentium Silver Processor Serial IO I2C Host Controller'
+    class      = dasp
+    bar   [10] = type Memory, range 64, base 0xa1632000, size 4096, enabled
+    bar   [18] = type Memory, range 64, base 0xa1631000, size 4096, enabled
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 09[90] = vendor (length 20) Intel cap 15 version 0
+
+none2@pci0:0:22:1:	class=0x118000 card=0x72708086 chip=0x31ae8086 rev=0x03 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Celeron/Pentium Silver Processor Serial IO I2C Host Controller'
+    class      = dasp
+    bar   [10] = type Memory, range 64, base 0xa1630000, size 4096, enabled
+    bar   [18] = type Memory, range 64, base 0xa162f000, size 4096, enabled
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 09[90] = vendor (length 20) Intel cap 15 version 0
+
+none3@pci0:0:22:2:	class=0x118000 card=0x72708086 chip=0x31b08086 rev=0x03 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = dasp
+    bar   [10] = type Memory, range 64, base 0xa162e000, size 4096, enabled
+    bar   [18] = type Memory, range 64, base 0xa162d000, size 4096, enabled
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 09[90] = vendor (length 20) Intel cap 15 version 0
+
+none4@pci0:0:22:3:	class=0x118000 card=0x72708086 chip=0x31b28086 rev=0x03 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = dasp
+    bar   [10] = type Memory, range 64, base 0xa162c000, size 4096, enabled
+    bar   [18] = type Memory, range 64, base 0xa162b000, size 4096, enabled
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 09[90] = vendor (length 20) Intel cap 15 version 0
+
+none5@pci0:0:23:0:	class=0x118000 card=0x72708086 chip=0x31b48086 rev=0x03 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = dasp
+    bar   [10] = type Memory, range 64, base 0xa162a000, size 4096, enabled
+    bar   [18] = type Memory, range 64, base 0xa1629000, size 4096, enabled
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 09[90] = vendor (length 20) Intel cap 15 version 0
+
+none6@pci0:0:23:1:	class=0x118000 card=0x72708086 chip=0x31b68086 rev=0x03 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = dasp
+    bar   [10] = type Memory, range 64, base 0xa1628000, size 4096, enabled
+    bar   [18] = type Memory, range 64, base 0xa1627000, size 4096, enabled
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 09[90] = vendor (length 20) Intel cap 15 version 0
+
+none7@pci0:0:23:2:	class=0x118000 card=0x72708086 chip=0x31b88086 rev=0x03 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = dasp
+    bar   [10] = type Memory, range 64, base 0xa1626000, size 4096, enabled
+    bar   [18] = type Memory, range 64, base 0xa1625000, size 4096, enabled
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 09[90] = vendor (length 20) Intel cap 15 version 0
+
+none8@pci0:0:23:3:	class=0x118000 card=0x72708086 chip=0x31ba8086 rev=0x03 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = dasp
+    bar   [10] = type Memory, range 64, base 0xa1624000, size 4096, enabled
+    bar   [18] = type Memory, range 64, base 0xa1623000, size 4096, enabled
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 09[90] = vendor (length 20) Intel cap 15 version 0
+
+none9@pci0:0:24:0:	class=0x118000 card=0x72708086 chip=0x31bc8086 rev=0x03 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Celeron/Pentium Silver Processor Serial IO UART Host Controller'
+    class      = dasp
+    bar   [10] = type Memory, range 64, base 0xa1622000, size 4096, enabled
+    bar   [18] = type Memory, range 64, base 0xa1621000, size 4096, enabled
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 09[90] = vendor (length 20) Intel cap 15 version 0
+
+none10@pci0:0:24:1:	class=0x118000 card=0x72708086 chip=0x31be8086 rev=0x03 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Celeron/Pentium Silver Processor Serial IO UART Host Controller'
+    class      = dasp
+    bar   [10] = type Memory, range 64, base 0xa1620000, size 4096, enabled
+    bar   [18] = type Memory, range 64, base 0xa161f000, size 4096, enabled
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 09[90] = vendor (length 20) Intel cap 15 version 0
+
+none11@pci0:0:24:2:	class=0x118000 card=0x72708086 chip=0x31c08086 rev=0x03 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Celeron/Pentium Silver Processor Serial IO UART Host Controller'
+    class      = dasp
+    bar   [10] = type Memory, range 64, base 0xa161e000, size 4096, enabled
+    bar   [18] = type Memory, range 64, base 0xa161d000, size 4096, enabled
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 09[90] = vendor (length 20) Intel cap 15 version 0
+
+none12@pci0:0:24:3:	class=0x118000 card=0x72708086 chip=0x31ee8086 rev=0x03 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Celeron/Pentium Silver Processor Serial IO UART Host Controller'
+    class      = dasp
+    bar   [10] = type Memory, range 64, base 0xa161c000, size 4096, enabled
+    bar   [18] = type Memory, range 64, base 0xa161b000, size 4096, enabled
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 09[90] = vendor (length 20) Intel cap 15 version 0
+
+none13@pci0:0:25:0:	class=0x118000 card=0x72708086 chip=0x31c28086 rev=0x03 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Celeron/Pentium Silver Processor Serial IO SPI Host Controller'
+    class      = dasp
+    bar   [10] = type Memory, range 64, base 0xa161a000, size 4096, enabled
+    bar   [18] = type Memory, range 64, base 0xa1619000, size 4096, enabled
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 09[90] = vendor (length 20) Intel cap 15 version 0
+
+none14@pci0:0:25:1:	class=0x118000 card=0x72708086 chip=0x31c48086 rev=0x03 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Celeron/Pentium Silver Processor Serial IO SPI Host Controller'
+    class      = dasp
+    bar   [10] = type Memory, range 64, base 0xa1618000, size 4096, enabled
+    bar   [18] = type Memory, range 64, base 0xa1617000, size 4096, enabled
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 09[90] = vendor (length 20) Intel cap 15 version 0
+
+none15@pci0:0:25:2:	class=0x118000 card=0x72708086 chip=0x31c68086 rev=0x03 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Celeron/Pentium Silver Processor Serial IO SPI Host Controller'
+    class      = dasp
+    bar   [10] = type Memory, range 64, base 0xa1616000, size 4096, enabled
+    bar   [18] = type Memory, range 64, base 0xa1615000, size 4096, enabled
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 09[90] = vendor (length 20) Intel cap 15 version 0
+
+sdhci_pci0@pci0:0:28:0:	class=0x080501 card=0x72708086 chip=0x31cc8086 rev=0x03 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Celeron/Pentium Silver Processor SDA Standard Compliant SD Host Controller'
+    class      = base peripheral
+    subclass   = SD host controller
+    bar   [10] = type Memory, range 64, base 0xa1614000, size 4096, enabled
+    bar   [18] = type Memory, range 64, base 0xa1613000, size 4096, enabled
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 09[90] = vendor (length 20) Intel cap 15 version 0
+
+isab0@pci0:0:31:0:	class=0x060100 card=0x72708086 chip=0x31e88086 rev=0x03 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = bridge
+    subclass   = PCI-ISA
+
+none16@pci0:0:31:1:	class=0x0c0500 card=0x72708086 chip=0x31d48086 rev=0x03 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Celeron/Pentium Silver Processor Gaussian Mixture Model'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [10] = type Memory, range 64, base 0xa1612000, size 256, enabled
+    bar   [20] = type I/O Port, range 32, base 0xf040, size 32, enabled
+
+re0@pci0:1:0:0:	class=0x020000 card=0x012310ec chip=0x812510ec rev=0x04 hdr=0x00
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0xe000, size 256, enabled
+    bar   [18] = type Memory, range 64, base 0xa1500000, size 65536, enabled
+    bar   [20] = type Memory, range 64, base 0xa1510000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 10[70] = PCI-Express 2 endpoint MSI 1 max data 256(256) RO
+                 link x1(x1) speed 5.0(5.0) ASPM disabled(L0s/L1)
+    cap 11[b0] = MSI-X supports 32 messages, enabled
+                 Table in map 0x20[0x0], PBA in map 0x20[0x800]
+    cap 03[d0] = VPD
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0003[168] = Serial 1 01000000684ce000
+    ecap 0017[178] = TPH Requester 1
+    ecap 0018[204] = LTR 1
+    ecap 001e[20c] = unknown 1
+    ecap 000b[21c] = Vendor 1 ID 2
+
+re1@pci0:2:0:0:	class=0x020000 card=0x012310ec chip=0x812510ec rev=0x04 hdr=0x00
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0xd000, size 256, enabled
+    bar   [18] = type Memory, range 64, base 0xa1400000, size 65536, enabled
+    bar   [20] = type Memory, range 64, base 0xa1410000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 10[70] = PCI-Express 2 endpoint MSI 1 max data 256(256) RO
+                 link x1(x1) speed 5.0(5.0) ASPM disabled(L0s/L1)
+    cap 11[b0] = MSI-X supports 32 messages, enabled
+                 Table in map 0x20[0x0], PBA in map 0x20[0x800]
+    cap 03[d0] = VPD
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0003[168] = Serial 1 01000000684ce000
+    ecap 0017[178] = TPH Requester 1
+    ecap 0018[204] = LTR 1
+    ecap 001e[20c] = unknown 1
+    ecap 000b[21c] = Vendor 1 ID 2
+
+re2@pci0:3:0:0:	class=0x020000 card=0x012310ec chip=0x812510ec rev=0x04 hdr=0x00
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0xc000, size 256, enabled
+    bar   [18] = type Memory, range 64, base 0xa1300000, size 65536, enabled
+    bar   [20] = type Memory, range 64, base 0xa1310000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 10[70] = PCI-Express 2 endpoint MSI 1 max data 256(256) RO
+                 link x1(x1) speed 5.0(5.0) ASPM disabled(L0s/L1)
+    cap 11[b0] = MSI-X supports 32 messages, enabled
+                 Table in map 0x20[0x0], PBA in map 0x20[0x800]
+    cap 03[d0] = VPD
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0003[168] = Serial 1 01000000684ce000
+    ecap 0017[178] = TPH Requester 1
+    ecap 0018[204] = LTR 1
+    ecap 001e[20c] = unknown 1
+    ecap 000b[21c] = Vendor 1 ID 2
+
+re3@pci0:4:0:0:	class=0x020000 card=0x012310ec chip=0x812510ec rev=0x04 hdr=0x00
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0xb000, size 256, enabled
+    bar   [18] = type Memory, range 64, base 0xa1200000, size 65536, enabled
+    bar   [20] = type Memory, range 64, base 0xa1210000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 10[70] = PCI-Express 2 endpoint MSI 1 max data 256(256) RO
+                 link x1(x1) speed 5.0(5.0) ASPM disabled(L0s/L1)
+    cap 11[b0] = MSI-X supports 32 messages, enabled
+                 Table in map 0x20[0x0], PBA in map 0x20[0x800]
+    cap 03[d0] = VPD
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0003[168] = Serial 1 01000000684ce000
+    ecap 0017[178] = TPH Requester 1
+    ecap 0018[204] = LTR 1
+    ecap 001e[20c] = unknown 1
+    ecap 000b[21c] = Vendor 1 ID 2
+
+re4@pci0:5:0:0:	class=0x020000 card=0x012310ec chip=0x812510ec rev=0x04 hdr=0x00
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0xa000, size 256, enabled
+    bar   [18] = type Memory, range 64, base 0xa1100000, size 65536, enabled
+    bar   [20] = type Memory, range 64, base 0xa1110000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 10[70] = PCI-Express 2 endpoint MSI 1 max data 256(256) RO
+                 link x1(x1) speed 5.0(5.0) ASPM disabled(L0s/L1)
+    cap 11[b0] = MSI-X supports 32 messages, enabled
+                 Table in map 0x20[0x0], PBA in map 0x20[0x800]
+    cap 03[d0] = VPD
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0003[168] = Serial 1 01000000684ce000
+    ecap 0017[178] = TPH Requester 1
+    ecap 0018[204] = LTR 1
+    ecap 001e[20c] = unknown 1
+    ecap 000b[21c] = Vendor 1 ID 2
+
+re5@pci0:6:0:0:	class=0x020000 card=0x012310ec chip=0x812510ec rev=0x04 hdr=0x00
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0x9000, size 256, enabled
+    bar   [18] = type Memory, range 64, base 0xa1000000, size 65536, enabled
+    bar   [20] = type Memory, range 64, base 0xa1010000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 10[70] = PCI-Express 2 endpoint MSI 1 max data 256(256) RO
+                 link x1(x1) speed 5.0(5.0) ASPM disabled(L0s/L1)
+    cap 11[b0] = MSI-X supports 32 messages, enabled
+                 Table in map 0x20[0x0], PBA in map 0x20[0x800]
+    cap 03[d0] = VPD
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0003[168] = Serial 1 01000000684ce000
+    ecap 0017[178] = TPH Requester 1
+    ecap 0018[204] = LTR 1
+    ecap 001e[20c] = unknown 1
+    ecap 000b[21c] = Vendor 1 ID 2

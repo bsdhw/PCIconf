@@ -1,0 +1,2070 @@
+hostb0@pci0:96:0:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1480 subvendor=0x15d9 subdevice=0x0964
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Root Complex'
+    class      = bridge
+    subclass   = HOST-PCI
+
+none0@pci0:96:0:2:	class=0x080600 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1481 subvendor=0x1022 subdevice=0x1481
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse IOMMU'
+    class      = base peripheral
+    subclass   = IOMMU
+    cap 0f[40] = unknown
+    cap 05[64] = MSI supports 4 messages, 64 bit enabled with 1 message
+    cap 08[74] = HT MSI fixed address window enabled at 0xfee00000
+    cap 09[c8] = vendor (length 24)
+
+hostb1@pci0:96:1:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb2@pci0:96:2:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb3@pci0:96:3:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+pcib1@pci0:96:3:1:	class=0x060400 rev=0x00 hdr=0x01 vendor=0x1022 device=0x1483 subvendor=0x1022 subdevice=0x1453
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse GPP Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[58] = PCI-Express 2 root port max data 512(512) RO NS ARI enabled
+                 max read 128
+                 link x4(x8) speed 5.0(8.0) ASPM disabled(L1)
+                 slot 0 power limit 75000 mW
+    cap 05[a0] = MSI supports 1 message, 64 bit 
+    cap 0d[c0] = PCI Bridge subvendor=0x1022 subdevice=0x1453
+    cap 08[c8] = HT MSI fixed address window enabled at 0xfee00000
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 001e[370] = L1 PM Substates 1
+    ecap 001d[380] = Downstream Port Containment 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+hostb4@pci0:96:4:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb5@pci0:96:5:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb6@pci0:96:7:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+pcib2@pci0:96:7:1:	class=0x060400 rev=0x00 hdr=0x01 vendor=0x1022 device=0x1484 subvendor=0x1022 subdevice=0x1484
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[58] = PCI-Express 2 root port max data 128(512) RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 1 message, 64 bit 
+    cap 0d[c0] = PCI Bridge subvendor=0x1022 subdevice=0x1484
+    cap 08[c8] = HT MSI fixed address window enabled at 0xfee00000
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+hostb7@pci0:96:8:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+pcib3@pci0:96:8:1:	class=0x060400 rev=0x00 hdr=0x01 vendor=0x1022 device=0x1484 subvendor=0x1022 subdevice=0x1484
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[58] = PCI-Express 2 root port max data 128(512) RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 1 message, 64 bit 
+    cap 0d[c0] = PCI Bridge subvendor=0x1022 subdevice=0x1484
+    cap 08[c8] = HT MSI fixed address window enabled at 0xfee00000
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+igb0@pci0:97:0:0:	class=0x020000 rev=0x01 hdr=0x00 vendor=0x8086 device=0x1521 subvendor=0x15d9 subdevice=0x1521
+    vendor     = 'Intel Corporation'
+    device     = 'I350 Gigabit Network Connection'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xf8d20000, size 131072, enabled
+    bar   [18] = type I/O Port, range 32, base 0x5020, size 32, enabled
+    bar   [1c] = type Memory, range 32, base 0xf8d44000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 11[70] = MSI-X supports 10 messages, enabled
+                 Table in map 0x1c[0x0], PBA in map 0x1c[0x2000]
+    cap 10[a0] = PCI-Express 2 endpoint max data 512(512) FLR RO NS
+                 max read 512
+                 link x4(x4) speed 5.0(5.0) ASPM disabled(L0s/L1)
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 3cecefffff70f2f4
+    ecap 000e[150] = ARI 1
+    ecap 0010[160] = SR-IOV 1 IOV disabled, Memory Space disabled, ARI enabled
+                     0 VFs configured out of 8 supported
+                     First VF RID Offset 0x0080, VF RID Stride 0x0004
+                     VF Device ID 0x1520
+                     Page Sizes: 4096 (enabled), 8192, 65536, 262144, 1048576, 4194304
+    ecap 0017[1a0] = TPH Requester 1
+    ecap 0018[1c0] = LTR 1
+    ecap 000d[1d0] = ACS 1
+
+igb1@pci0:97:0:1:	class=0x020000 rev=0x01 hdr=0x00 vendor=0x8086 device=0x1521 subvendor=0x15d9 subdevice=0x1521
+    vendor     = 'Intel Corporation'
+    device     = 'I350 Gigabit Network Connection'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xf8d00000, size 131072, enabled
+    bar   [18] = type I/O Port, range 32, base 0x5000, size 32, enabled
+    bar   [1c] = type Memory, range 32, base 0xf8d40000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 11[70] = MSI-X supports 10 messages, enabled
+                 Table in map 0x1c[0x0], PBA in map 0x1c[0x2000]
+    cap 10[a0] = PCI-Express 2 endpoint max data 512(512) FLR RO NS
+                 max read 512
+                 link x4(x4) speed 5.0(5.0) ASPM disabled(L0s/L1)
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 3cecefffff70f2f4
+    ecap 000e[150] = ARI 1
+    ecap 0010[160] = SR-IOV 1 IOV disabled, Memory Space disabled, ARI disabled
+                     0 VFs configured out of 8 supported
+                     First VF RID Offset 0x0080, VF RID Stride 0x0004
+                     VF Device ID 0x1520
+                     Page Sizes: 4096 (enabled), 8192, 65536, 262144, 1048576, 4194304
+    ecap 0017[1a0] = TPH Requester 1
+    ecap 000d[1d0] = ACS 1
+
+none1@pci0:99:0:0:	class=0x130000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x148a subvendor=0x1022 subdevice=0x148a
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Function'
+    class      = non-essential instrumentation
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+none2@pci0:99:0:2:	class=0x108000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1498 subvendor=0x1022 subdevice=0x1498
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PTDMA'
+    class      = encrypt/decrypt
+    bar   [18] = type Memory, range 32, base 0xf8c00000, size 524288, enabled
+    bar   [24] = type Memory, range 32, base 0xf8c80000, size 8192, enabled
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 2 messages, 64 bit 
+    cap 11[c0] = MSI-X supports 1 message
+                 Table in map 0x24[0x0], PBA in map 0x24[0x1000]
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 000d[2a0] = ACS 1
+
+none3@pci0:100:0:0:	class=0x130000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1485 subvendor=0x1022 subdevice=0x1485
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Reserved SPP'
+    class      = non-essential instrumentation
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+none4@pci0:100:0:2:	class=0x108000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1498 subvendor=0x1022 subdevice=0x1498
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PTDMA'
+    class      = encrypt/decrypt
+    bar   [18] = type Memory, range 32, base 0xf8b00000, size 524288, enabled
+    bar   [24] = type Memory, range 32, base 0xf8b80000, size 8192, enabled
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 2 messages, 64 bit 
+    cap 11[c0] = MSI-X supports 1 message
+                 Table in map 0x24[0x0], PBA in map 0x24[0x1000]
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 000d[2a0] = ACS 1
+
+hostb8@pci0:64:0:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1480 subvendor=0x15d9 subdevice=0x0964
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Root Complex'
+    class      = bridge
+    subclass   = HOST-PCI
+
+none5@pci0:64:0:2:	class=0x080600 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1481 subvendor=0x1022 subdevice=0x1481
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse IOMMU'
+    class      = base peripheral
+    subclass   = IOMMU
+    cap 0f[40] = unknown
+    cap 05[64] = MSI supports 4 messages, 64 bit enabled with 1 message
+    cap 08[74] = HT MSI fixed address window enabled at 0xfee00000
+    cap 09[c8] = vendor (length 24)
+
+hostb9@pci0:64:1:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+pcib5@pci0:64:1:1:	class=0x060400 rev=0x00 hdr=0x01 vendor=0x1022 device=0x1483 subvendor=0x1022 subdevice=0x1453
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse GPP Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[58] = PCI-Express 2 root port max data 256(512) RO NS ARI disabled
+                 max read 128
+                 link x1(x2) speed 2.5(2.5) ASPM disabled(L1)
+                 slot 0 power limit 75000 mW
+    cap 05[a0] = MSI supports 1 message, 64 bit 
+    cap 0d[c0] = PCI Bridge subvendor=0x1022 subdevice=0x1453
+    cap 08[c8] = HT MSI fixed address window enabled at 0xfee00000
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 001e[370] = L1 PM Substates 1
+    ecap 001d[380] = Downstream Port Containment 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+pcib7@pci0:64:1:3:	class=0x060400 rev=0x00 hdr=0x01 vendor=0x1022 device=0x1483 subvendor=0x1022 subdevice=0x1453
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse GPP Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[58] = PCI-Express 2 root port max data 256(512) RO NS ARI enabled
+                 max read 128
+                 link x8(x8) speed 2.5(8.0) ASPM disabled(L1)
+                 slot 5 power limit 75000 mW
+    cap 05[a0] = MSI supports 1 message, 64 bit 
+    cap 0d[c0] = PCI Bridge subvendor=0x1022 subdevice=0x1453
+    cap 08[c8] = HT MSI fixed address window enabled at 0xfee00000
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 001e[370] = L1 PM Substates 1
+    ecap 001d[380] = Downstream Port Containment 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+hostb10@pci0:64:2:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb11@pci0:64:3:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb12@pci0:64:4:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb13@pci0:64:5:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb14@pci0:64:7:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+pcib8@pci0:64:7:1:	class=0x060400 rev=0x00 hdr=0x01 vendor=0x1022 device=0x1484 subvendor=0x1022 subdevice=0x1484
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[58] = PCI-Express 2 root port max data 128(512) RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 1 message, 64 bit 
+    cap 0d[c0] = PCI Bridge subvendor=0x1022 subdevice=0x1484
+    cap 08[c8] = HT MSI fixed address window enabled at 0xfee00000
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+hostb15@pci0:64:8:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+pcib9@pci0:64:8:1:	class=0x060400 rev=0x00 hdr=0x01 vendor=0x1022 device=0x1484 subvendor=0x1022 subdevice=0x1484
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[58] = PCI-Express 2 root port max data 128(512) RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 1 message, 64 bit 
+    cap 0d[c0] = PCI Bridge subvendor=0x1022 subdevice=0x1484
+    cap 08[c8] = HT MSI fixed address window enabled at 0xfee00000
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+pcib10@pci0:64:8:2:	class=0x060400 rev=0x00 hdr=0x01 vendor=0x1022 device=0x1484 subvendor=0x1022 subdevice=0x1484
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[58] = PCI-Express 2 root port max data 128(512) RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 1 message, 64 bit 
+    cap 0d[c0] = PCI Bridge subvendor=0x1022 subdevice=0x1484
+    cap 08[c8] = HT MSI fixed address window enabled at 0xfee00000
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+pcib11@pci0:64:8:3:	class=0x060400 rev=0x00 hdr=0x01 vendor=0x1022 device=0x1484 subvendor=0x1022 subdevice=0x1484
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[58] = PCI-Express 2 root port max data 128(512) RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 1 message, 64 bit 
+    cap 0d[c0] = PCI Bridge subvendor=0x1022 subdevice=0x1484
+    cap 08[c8] = HT MSI fixed address window enabled at 0xfee00000
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+pcib6@pci0:65:0:0:	class=0x060400 rev=0x04 hdr=0x01 vendor=0x1a03 device=0x1150 subvendor=0x1a03 subdevice=0x1150
+    vendor     = 'ASPEED Technology, Inc.'
+    device     = 'AST1150 PCI-to-PCI Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 05[50] = MSI supports 1 message, 64 bit 
+    cap 01[78] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 10[80] = PCI-Express 2 PCI bridge max data 256(256) RO NS
+                 max read 512
+                 link x1(x1) speed 2.5(5.0) ASPM disabled(L0s/L1)
+    cap 0d[c0] = PCI Bridge subvendor=0x1a03 subdevice=0x1150
+    ecap 0002[100] = VC 1 max VC0
+    ecap 0001[800] = AER 1 0 fatal 0 non-fatal 0 corrected
+
+vgapci0@pci0:66:0:0:	class=0x030000 rev=0x41 hdr=0x00 vendor=0x1a03 device=0x2000 subvendor=0x15d9 subdevice=0x0964
+    vendor     = 'ASPEED Technology, Inc.'
+    device     = 'ASPEED Graphics Family'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 32, base 0xb0000000, size 16777216, enabled
+    bar   [14] = type Memory, range 32, base 0xb1000000, size 131072, enabled
+    bar   [18] = type I/O Port, range 32, base 0x4000, size 128, enabled
+    cap 01[40] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 05[50] = MSI supports 2 messages, 64 bit 
+
+vgapci1@pci0:67:0:0:	class=0x030000 rev=0x00 hdr=0x00 vendor=0x1002 device=0x6995 subvendor=0x1028 subdevice=0x0b0c
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'Lexa XT [Radeon PRO WX 2100]'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Prefetchable Memory, range 64, base 0x2bf20000000, size 268435456, enabled
+    bar   [18] = type Prefetchable Memory, range 64, base 0x2bf30000000, size 2097152, enabled
+    bar   [20] = type I/O Port, range 32, base 0x3000, size 256, enabled
+    bar   [24] = type Memory, range 32, base 0xb1600000, size 262144, enabled
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 10[58] = PCI-Express 2 legacy endpoint max data 256(256) RO NS
+                 max read 512
+                 link x8(x8) speed 2.5(8.0) ASPM disabled(L1) ClockPM disabled
+    cap 05[a0] = MSI supports 1 message, 64 bit enabled with 1 message
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 0015[200] = Resizable BAR 1
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000f[2b0] = ATS 1
+    ecap 0013[2c0] = Page Page Request 1
+    ecap 001b[2d0] = Process Address Space ID 1
+    ecap 0018[320] = LTR 1
+    ecap 000e[328] = ARI 1
+    ecap 001e[370] = L1 PM Substates 1
+
+hdac0@pci0:67:0:1:	class=0x040300 rev=0x00 hdr=0x00 vendor=0x1002 device=0xaae0 subvendor=0x1028 subdevice=0xaae0
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'Baffin HDMI/DP Audio [Radeon RX 550 640SP / RX 560/560X]'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 64, base 0xb1660000, size 16384, enabled
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 10[58] = PCI-Express 2 legacy endpoint max data 256(256) RO NS
+                 max read 512
+                 link x8(x8) speed 2.5(8.0) ASPM disabled(L1) ClockPM disabled
+    cap 05[a0] = MSI supports 1 message, 64 bit enabled with 1 message
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 000e[328] = ARI 1
+
+none6@pci0:68:0:0:	class=0x130000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x148a subvendor=0x1022 subdevice=0x148a
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Function'
+    class      = non-essential instrumentation
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+none7@pci0:68:0:2:	class=0x108000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1498 subvendor=0x1022 subdevice=0x1498
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PTDMA'
+    class      = encrypt/decrypt
+    bar   [18] = type Memory, range 32, base 0xb1500000, size 524288, enabled
+    bar   [24] = type Memory, range 32, base 0xb1580000, size 8192, enabled
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 2 messages, 64 bit 
+    cap 11[c0] = MSI-X supports 1 message
+                 Table in map 0x24[0x0], PBA in map 0x24[0x1000]
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 000d[2a0] = ACS 1
+
+none8@pci0:69:0:0:	class=0x130000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1485 subvendor=0x1022 subdevice=0x1485
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Reserved SPP'
+    class      = non-essential instrumentation
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+none9@pci0:69:0:2:	class=0x108000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1498 subvendor=0x1022 subdevice=0x1498
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PTDMA'
+    class      = encrypt/decrypt
+    bar   [18] = type Memory, range 32, base 0xb1400000, size 524288, enabled
+    bar   [24] = type Memory, range 32, base 0xb1480000, size 8192, enabled
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 2 messages, 64 bit 
+    cap 11[c0] = MSI-X supports 1 message
+                 Table in map 0x24[0x0], PBA in map 0x24[0x1000]
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 000d[2a0] = ACS 1
+
+ahci0@pci0:70:0:0:	class=0x010601 rev=0x51 hdr=0x00 vendor=0x1022 device=0x7901 subvendor=0x15d9 subdevice=0x7901
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'FCH SATA Controller [AHCI mode]'
+    class      = mass storage
+    subclass   = SATA
+    bar   [24] = type Memory, range 32, base 0xb1300000, size 2048, enabled
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 16 messages, 64 bit enabled with 1 message
+    cap 12[d0] = SATA Index-Data Pair
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+ahci1@pci0:71:0:0:	class=0x010601 rev=0x51 hdr=0x00 vendor=0x1022 device=0x7901 subvendor=0x15d9 subdevice=0x7901
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'FCH SATA Controller [AHCI mode]'
+    class      = mass storage
+    subclass   = SATA
+    bar   [24] = type Memory, range 32, base 0xb1200000, size 2048, enabled
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 16 messages, 64 bit enabled with 16 messages
+    cap 12[d0] = SATA Index-Data Pair
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+hostb16@pci0:0:0:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1480 subvendor=0x15d9 subdevice=0x0964
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Root Complex'
+    class      = bridge
+    subclass   = HOST-PCI
+
+none10@pci0:0:0:2:	class=0x080600 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1481 subvendor=0x1022 subdevice=0x1481
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse IOMMU'
+    class      = base peripheral
+    subclass   = IOMMU
+    cap 0f[40] = unknown
+    cap 05[64] = MSI supports 4 messages, 64 bit enabled with 1 message
+    cap 08[74] = HT MSI fixed address window enabled at 0xfee00000
+    cap 09[c8] = vendor (length 24)
+
+hostb17@pci0:0:1:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb18@pci0:0:2:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb19@pci0:0:3:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb20@pci0:0:4:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb21@pci0:0:5:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb22@pci0:0:7:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+pcib13@pci0:0:7:1:	class=0x060400 rev=0x00 hdr=0x01 vendor=0x1022 device=0x1484 subvendor=0x1022 subdevice=0x1484
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[58] = PCI-Express 2 root port max data 128(512) RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 1 message, 64 bit 
+    cap 0d[c0] = PCI Bridge subvendor=0x1022 subdevice=0x1484
+    cap 08[c8] = HT MSI fixed address window enabled at 0xfee00000
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+hostb23@pci0:0:8:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+pcib14@pci0:0:8:1:	class=0x060400 rev=0x00 hdr=0x01 vendor=0x1022 device=0x1484 subvendor=0x1022 subdevice=0x1484
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[58] = PCI-Express 2 root port max data 128(512) RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 1 message, 64 bit 
+    cap 0d[c0] = PCI Bridge subvendor=0x1022 subdevice=0x1484
+    cap 08[c8] = HT MSI fixed address window enabled at 0xfee00000
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+intsmb0@pci0:0:20:0:	class=0x0c0500 rev=0x61 hdr=0x00 vendor=0x1022 device=0x790b subvendor=0x15d9 subdevice=0x790b
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'FCH SMBus Controller'
+    class      = serial bus
+    subclass   = SMBus
+
+isab0@pci0:0:20:3:	class=0x060100 rev=0x51 hdr=0x00 vendor=0x1022 device=0x790e subvendor=0x15d9 subdevice=0x790e
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'FCH LPC Bridge'
+    class      = bridge
+    subclass   = PCI-ISA
+
+hostb24@pci0:0:24:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1490 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship Device 24; Function 0'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb25@pci0:0:24:1:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1491 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship Device 24; Function 1'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb26@pci0:0:24:2:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1492 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship Device 24; Function 2'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb27@pci0:0:24:3:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1493 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship Device 24; Function 3'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb28@pci0:0:24:4:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1494 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship Device 24; Function 4'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb29@pci0:0:24:5:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1495 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship Device 24; Function 5'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb30@pci0:0:24:6:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1496 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship Device 24; Function 6'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb31@pci0:0:24:7:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1497 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship Device 24; Function 7'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb32@pci0:0:25:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1490 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship Device 24; Function 0'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb33@pci0:0:25:1:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1491 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship Device 24; Function 1'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb34@pci0:0:25:2:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1492 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship Device 24; Function 2'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb35@pci0:0:25:3:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1493 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship Device 24; Function 3'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb36@pci0:0:25:4:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1494 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship Device 24; Function 4'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb37@pci0:0:25:5:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1495 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship Device 24; Function 5'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb38@pci0:0:25:6:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1496 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship Device 24; Function 6'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb39@pci0:0:25:7:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1497 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship Device 24; Function 7'
+    class      = bridge
+    subclass   = HOST-PCI
+
+none11@pci0:1:0:0:	class=0x130000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x148a subvendor=0x1022 subdevice=0x148a
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Function'
+    class      = non-essential instrumentation
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+none12@pci0:1:0:2:	class=0x108000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1498 subvendor=0x1022 subdevice=0x1498
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PTDMA'
+    class      = encrypt/decrypt
+    bar   [18] = type Memory, range 32, base 0xf9000000, size 524288, enabled
+    bar   [24] = type Memory, range 32, base 0xf9080000, size 8192, enabled
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 2 messages, 64 bit 
+    cap 11[c0] = MSI-X supports 1 message
+                 Table in map 0x24[0x0], PBA in map 0x24[0x1000]
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 000d[2a0] = ACS 1
+
+none13@pci0:2:0:0:	class=0x130000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1485 subvendor=0x1022 subdevice=0x1485
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Reserved SPP'
+    class      = non-essential instrumentation
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+none14@pci0:2:0:2:	class=0x108000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1498 subvendor=0x1022 subdevice=0x1498
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PTDMA'
+    class      = encrypt/decrypt
+    bar   [18] = type Memory, range 32, base 0xf8f00000, size 524288, enabled
+    bar   [24] = type Memory, range 32, base 0xf8f80000, size 8192, enabled
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 2 messages, 64 bit 
+    cap 11[c0] = MSI-X supports 1 message
+                 Table in map 0x24[0x0], PBA in map 0x24[0x1000]
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 000d[2a0] = ACS 1
+
+xhci0@pci0:2:0:3:	class=0x0c0330 rev=0x00 hdr=0x00 vendor=0x1022 device=0x148c subvendor=0x15d9 subdevice=0x145c
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship USB 3.0 Host Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 64, base 0xf8e00000, size 1048576, enabled
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 8 messages, 64 bit 
+    cap 11[c0] = MSI-X supports 8 messages, enabled
+                 Table in map 0x10[0xfe000], PBA in map 0x10[0xff000]
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 000d[2a0] = ACS 1
+
+hostb40@pci0:32:0:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1480 subvendor=0x15d9 subdevice=0x0964
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Root Complex'
+    class      = bridge
+    subclass   = HOST-PCI
+
+none15@pci0:32:0:2:	class=0x080600 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1481 subvendor=0x1022 subdevice=0x1481
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse IOMMU'
+    class      = base peripheral
+    subclass   = IOMMU
+    cap 0f[40] = unknown
+    cap 05[64] = MSI supports 4 messages, 64 bit enabled with 1 message
+    cap 08[74] = HT MSI fixed address window enabled at 0xfee00000
+    cap 09[c8] = vendor (length 24)
+
+hostb41@pci0:32:1:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb42@pci0:32:2:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb43@pci0:32:3:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb44@pci0:32:4:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb45@pci0:32:5:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb46@pci0:32:7:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+pcib16@pci0:32:7:1:	class=0x060400 rev=0x00 hdr=0x01 vendor=0x1022 device=0x1484 subvendor=0x1022 subdevice=0x1484
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[58] = PCI-Express 2 root port max data 128(512) RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 1 message, 64 bit 
+    cap 0d[c0] = PCI Bridge subvendor=0x1022 subdevice=0x1484
+    cap 08[c8] = HT MSI fixed address window enabled at 0xfee00000
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+hostb47@pci0:32:8:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+pcib17@pci0:32:8:1:	class=0x060400 rev=0x00 hdr=0x01 vendor=0x1022 device=0x1484 subvendor=0x1022 subdevice=0x1484
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[58] = PCI-Express 2 root port max data 128(512) RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 1 message, 64 bit 
+    cap 0d[c0] = PCI Bridge subvendor=0x1022 subdevice=0x1484
+    cap 08[c8] = HT MSI fixed address window enabled at 0xfee00000
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+pcib18@pci0:32:8:2:	class=0x060400 rev=0x00 hdr=0x01 vendor=0x1022 device=0x1484 subvendor=0x1022 subdevice=0x1484
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[58] = PCI-Express 2 root port max data 128(512) RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 1 message, 64 bit 
+    cap 0d[c0] = PCI Bridge subvendor=0x1022 subdevice=0x1484
+    cap 08[c8] = HT MSI fixed address window enabled at 0xfee00000
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+pcib19@pci0:32:8:3:	class=0x060400 rev=0x00 hdr=0x01 vendor=0x1022 device=0x1484 subvendor=0x1022 subdevice=0x1484
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[58] = PCI-Express 2 root port max data 128(512) RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 1 message, 64 bit 
+    cap 0d[c0] = PCI Bridge subvendor=0x1022 subdevice=0x1484
+    cap 08[c8] = HT MSI fixed address window enabled at 0xfee00000
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+none16@pci0:33:0:0:	class=0x130000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x148a subvendor=0x1022 subdevice=0x148a
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Function'
+    class      = non-essential instrumentation
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+none17@pci0:33:0:2:	class=0x108000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1498 subvendor=0x1022 subdevice=0x1498
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PTDMA'
+    class      = encrypt/decrypt
+    bar   [18] = type Memory, range 32, base 0xf5500000, size 524288, enabled
+    bar   [24] = type Memory, range 32, base 0xf5580000, size 8192, enabled
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 2 messages, 64 bit 
+    cap 11[c0] = MSI-X supports 1 message
+                 Table in map 0x24[0x0], PBA in map 0x24[0x1000]
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 000d[2a0] = ACS 1
+
+none18@pci0:34:0:0:	class=0x130000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1485 subvendor=0x1022 subdevice=0x1485
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Reserved SPP'
+    class      = non-essential instrumentation
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+none19@pci0:34:0:1:	class=0x108000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1486 subvendor=0x1022 subdevice=0x1486
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Cryptographic Coprocessor PSPCPP'
+    class      = encrypt/decrypt
+    bar   [18] = type Memory, range 32, base 0xf5100000, size 1048576, enabled
+    bar   [24] = type Memory, range 32, base 0xf5282000, size 8192, enabled
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 1 message, 64 bit 
+    cap 11[c0] = MSI-X supports 2 messages
+                 Table in map 0x24[0x0], PBA in map 0x24[0x1000]
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 000d[2a0] = ACS 1
+
+none20@pci0:34:0:2:	class=0x108000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1498 subvendor=0x1022 subdevice=0x1498
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PTDMA'
+    class      = encrypt/decrypt
+    bar   [18] = type Memory, range 32, base 0xf5200000, size 524288, enabled
+    bar   [24] = type Memory, range 32, base 0xf5280000, size 8192, enabled
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 2 messages, 64 bit 
+    cap 11[c0] = MSI-X supports 1 message
+                 Table in map 0x24[0x0], PBA in map 0x24[0x1000]
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 000d[2a0] = ACS 1
+
+xhci1@pci0:34:0:3:	class=0x0c0330 rev=0x00 hdr=0x00 vendor=0x1022 device=0x148c subvendor=0x15d9 subdevice=0x145c
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship USB 3.0 Host Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 64, base 0xf5000000, size 1048576, enabled
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 8 messages, 64 bit 
+    cap 11[c0] = MSI-X supports 8 messages, enabled
+                 Table in map 0x10[0xfe000], PBA in map 0x10[0xff000]
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 000d[2a0] = ACS 1
+
+ahci2@pci0:35:0:0:	class=0x010601 rev=0x51 hdr=0x00 vendor=0x1022 device=0x7901 subvendor=0x15d9 subdevice=0x7901
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'FCH SATA Controller [AHCI mode]'
+    class      = mass storage
+    subclass   = SATA
+    bar   [24] = type Memory, range 32, base 0xf5400000, size 2048, enabled
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 16 messages, 64 bit enabled with 1 message
+    cap 12[d0] = SATA Index-Data Pair
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+ahci3@pci0:36:0:0:	class=0x010601 rev=0x51 hdr=0x00 vendor=0x1022 device=0x7901 subvendor=0x15d9 subdevice=0x7901
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'FCH SATA Controller [AHCI mode]'
+    class      = mass storage
+    subclass   = SATA
+    bar   [24] = type Memory, range 32, base 0xf5300000, size 2048, enabled
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 16 messages, 64 bit enabled with 1 message
+    cap 12[d0] = SATA Index-Data Pair
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+hostb48@pci0:224:0:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1480 subvendor=0x15d9 subdevice=0x0964
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Root Complex'
+    class      = bridge
+    subclass   = HOST-PCI
+
+none21@pci0:224:0:2:	class=0x080600 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1481 subvendor=0x1022 subdevice=0x1481
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse IOMMU'
+    class      = base peripheral
+    subclass   = IOMMU
+    cap 0f[40] = unknown
+    cap 05[64] = MSI supports 4 messages, 64 bit 
+    cap 08[74] = HT MSI fixed address window enabled at 0xfee00000
+    cap 09[c8] = vendor (length 24)
+
+hostb49@pci0:224:1:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb50@pci0:224:2:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb51@pci0:224:3:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb52@pci0:224:4:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb53@pci0:224:5:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb54@pci0:224:7:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+pcib21@pci0:224:7:1:	class=0x060400 rev=0x00 hdr=0x01 vendor=0x1022 device=0x1484 subvendor=0x1022 subdevice=0x1484
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[58] = PCI-Express 2 root port max data 128(512) RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 1 message, 64 bit 
+    cap 0d[c0] = PCI Bridge subvendor=0x1022 subdevice=0x1484
+    cap 08[c8] = HT MSI fixed address window enabled at 0xfee00000
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+hostb55@pci0:224:8:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+pcib22@pci0:224:8:1:	class=0x060400 rev=0x00 hdr=0x01 vendor=0x1022 device=0x1484 subvendor=0x1022 subdevice=0x1484
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[58] = PCI-Express 2 root port max data 128(512) RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 1 message, 64 bit 
+    cap 0d[c0] = PCI Bridge subvendor=0x1022 subdevice=0x1484
+    cap 08[c8] = HT MSI fixed address window enabled at 0xfee00000
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+none22@pci0:225:0:0:	class=0x130000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x148a subvendor=0x1022 subdevice=0x148a
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Function'
+    class      = non-essential instrumentation
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+none23@pci0:225:0:2:	class=0x108000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1498 subvendor=0x1022 subdevice=0x1498
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PTDMA'
+    class      = encrypt/decrypt
+    bar   [18] = type Memory, range 32, base 0xf4e00000, size 524288, enabled
+    bar   [24] = type Memory, range 32, base 0xf4e80000, size 8192, enabled
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 2 messages, 64 bit 
+    cap 11[c0] = MSI-X supports 1 message
+                 Table in map 0x24[0x0], PBA in map 0x24[0x1000]
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 000d[2a0] = ACS 1
+
+none24@pci0:226:0:0:	class=0x130000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1485 subvendor=0x1022 subdevice=0x1485
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Reserved SPP'
+    class      = non-essential instrumentation
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+none25@pci0:226:0:2:	class=0x108000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1498 subvendor=0x1022 subdevice=0x1498
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PTDMA'
+    class      = encrypt/decrypt
+    bar   [18] = type Memory, range 32, base 0xf4d00000, size 524288, enabled
+    bar   [24] = type Memory, range 32, base 0xf4d80000, size 8192, enabled
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 2 messages, 64 bit 
+    cap 11[c0] = MSI-X supports 1 message
+                 Table in map 0x24[0x0], PBA in map 0x24[0x1000]
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 000d[2a0] = ACS 1
+
+hostb56@pci0:192:0:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1480 subvendor=0x15d9 subdevice=0x0964
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Root Complex'
+    class      = bridge
+    subclass   = HOST-PCI
+
+none26@pci0:192:0:2:	class=0x080600 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1481 subvendor=0x1022 subdevice=0x1481
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse IOMMU'
+    class      = base peripheral
+    subclass   = IOMMU
+    cap 0f[40] = unknown
+    cap 05[64] = MSI supports 4 messages, 64 bit 
+    cap 08[74] = HT MSI fixed address window enabled at 0xfee00000
+    cap 09[c8] = vendor (length 24)
+
+hostb57@pci0:192:1:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb58@pci0:192:2:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb59@pci0:192:3:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb60@pci0:192:4:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb61@pci0:192:5:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb62@pci0:192:7:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+pcib24@pci0:192:7:1:	class=0x060400 rev=0x00 hdr=0x01 vendor=0x1022 device=0x1484 subvendor=0x1022 subdevice=0x1484
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[58] = PCI-Express 2 root port max data 128(512) RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 1 message, 64 bit 
+    cap 0d[c0] = PCI Bridge subvendor=0x1022 subdevice=0x1484
+    cap 08[c8] = HT MSI fixed address window enabled at 0xfee00000
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+hostb63@pci0:192:8:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+pcib25@pci0:192:8:1:	class=0x060400 rev=0x00 hdr=0x01 vendor=0x1022 device=0x1484 subvendor=0x1022 subdevice=0x1484
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[58] = PCI-Express 2 root port max data 128(512) RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 1 message, 64 bit 
+    cap 0d[c0] = PCI Bridge subvendor=0x1022 subdevice=0x1484
+    cap 08[c8] = HT MSI fixed address window enabled at 0xfee00000
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+pcib26@pci0:192:8:2:	class=0x060400 rev=0x00 hdr=0x01 vendor=0x1022 device=0x1484 subvendor=0x1022 subdevice=0x1484
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[58] = PCI-Express 2 root port max data 128(512) RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 1 message, 64 bit 
+    cap 0d[c0] = PCI Bridge subvendor=0x1022 subdevice=0x1484
+    cap 08[c8] = HT MSI fixed address window enabled at 0xfee00000
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+pcib27@pci0:192:8:3:	class=0x060400 rev=0x00 hdr=0x01 vendor=0x1022 device=0x1484 subvendor=0x1022 subdevice=0x1484
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[58] = PCI-Express 2 root port max data 128(512) RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 1 message, 64 bit 
+    cap 0d[c0] = PCI Bridge subvendor=0x1022 subdevice=0x1484
+    cap 08[c8] = HT MSI fixed address window enabled at 0xfee00000
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+none27@pci0:193:0:0:	class=0x130000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x148a subvendor=0x1022 subdevice=0x148a
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Function'
+    class      = non-essential instrumentation
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+none28@pci0:193:0:2:	class=0x108000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1498 subvendor=0x1022 subdevice=0x1498
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PTDMA'
+    class      = encrypt/decrypt
+    bar   [18] = type Memory, range 32, base 0xf2c00000, size 524288, enabled
+    bar   [24] = type Memory, range 32, base 0xf2c80000, size 8192, enabled
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 2 messages, 64 bit 
+    cap 11[c0] = MSI-X supports 1 message
+                 Table in map 0x24[0x0], PBA in map 0x24[0x1000]
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 000d[2a0] = ACS 1
+
+none29@pci0:194:0:0:	class=0x130000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1485 subvendor=0x1022 subdevice=0x1485
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Reserved SPP'
+    class      = non-essential instrumentation
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+none30@pci0:194:0:2:	class=0x108000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1498 subvendor=0x1022 subdevice=0x1498
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PTDMA'
+    class      = encrypt/decrypt
+    bar   [18] = type Memory, range 32, base 0xf2b00000, size 524288, enabled
+    bar   [24] = type Memory, range 32, base 0xf2b80000, size 8192, enabled
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 2 messages, 64 bit 
+    cap 11[c0] = MSI-X supports 1 message
+                 Table in map 0x24[0x0], PBA in map 0x24[0x1000]
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 000d[2a0] = ACS 1
+
+ahci4@pci0:195:0:0:	class=0x010601 rev=0x51 hdr=0x00 vendor=0x1022 device=0x7901 subvendor=0x15d9 subdevice=0x7901
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'FCH SATA Controller [AHCI mode]'
+    class      = mass storage
+    subclass   = SATA
+    bar   [24] = type Memory, range 32, base 0xf2a00000, size 2048, enabled
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 16 messages, 64 bit enabled with 16 messages
+    cap 12[d0] = SATA Index-Data Pair
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+ahci5@pci0:196:0:0:	class=0x010601 rev=0x51 hdr=0x00 vendor=0x1022 device=0x7901 subvendor=0x15d9 subdevice=0x7901
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'FCH SATA Controller [AHCI mode]'
+    class      = mass storage
+    subclass   = SATA
+    bar   [24] = type Memory, range 32, base 0xf2900000, size 2048, enabled
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 16 messages, 64 bit enabled with 16 messages
+    cap 12[d0] = SATA Index-Data Pair
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+hostb64@pci0:128:0:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1480 subvendor=0x15d9 subdevice=0x0964
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Root Complex'
+    class      = bridge
+    subclass   = HOST-PCI
+
+none31@pci0:128:0:2:	class=0x080600 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1481 subvendor=0x1022 subdevice=0x1481
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse IOMMU'
+    class      = base peripheral
+    subclass   = IOMMU
+    cap 0f[40] = unknown
+    cap 05[64] = MSI supports 4 messages, 64 bit 
+    cap 08[74] = HT MSI fixed address window enabled at 0xfee00000
+    cap 09[c8] = vendor (length 24)
+
+hostb65@pci0:128:1:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb66@pci0:128:2:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb67@pci0:128:3:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb68@pci0:128:4:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb69@pci0:128:5:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb70@pci0:128:7:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+pcib29@pci0:128:7:1:	class=0x060400 rev=0x00 hdr=0x01 vendor=0x1022 device=0x1484 subvendor=0x1022 subdevice=0x1484
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[58] = PCI-Express 2 root port max data 128(512) RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 1 message, 64 bit 
+    cap 0d[c0] = PCI Bridge subvendor=0x1022 subdevice=0x1484
+    cap 08[c8] = HT MSI fixed address window enabled at 0xfee00000
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+hostb71@pci0:128:8:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+pcib30@pci0:128:8:1:	class=0x060400 rev=0x00 hdr=0x01 vendor=0x1022 device=0x1484 subvendor=0x1022 subdevice=0x1484
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[58] = PCI-Express 2 root port max data 128(512) RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 1 message, 64 bit 
+    cap 0d[c0] = PCI Bridge subvendor=0x1022 subdevice=0x1484
+    cap 08[c8] = HT MSI fixed address window enabled at 0xfee00000
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+none32@pci0:129:0:0:	class=0x130000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x148a subvendor=0x1022 subdevice=0x148a
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Function'
+    class      = non-essential instrumentation
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+none33@pci0:129:0:2:	class=0x108000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1498 subvendor=0x1022 subdevice=0x1498
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PTDMA'
+    class      = encrypt/decrypt
+    bar   [18] = type Memory, range 32, base 0xf0200000, size 524288, enabled
+    bar   [24] = type Memory, range 32, base 0xf0280000, size 8192, enabled
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 2 messages, 64 bit 
+    cap 11[c0] = MSI-X supports 1 message
+                 Table in map 0x24[0x0], PBA in map 0x24[0x1000]
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 000d[2a0] = ACS 1
+
+none34@pci0:130:0:0:	class=0x130000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1485 subvendor=0x1022 subdevice=0x1485
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Reserved SPP'
+    class      = non-essential instrumentation
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+none35@pci0:130:0:2:	class=0x108000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1498 subvendor=0x1022 subdevice=0x1498
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PTDMA'
+    class      = encrypt/decrypt
+    bar   [18] = type Memory, range 32, base 0xf0100000, size 524288, enabled
+    bar   [24] = type Memory, range 32, base 0xf0180000, size 8192, enabled
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 2 messages, 64 bit 
+    cap 11[c0] = MSI-X supports 1 message
+                 Table in map 0x24[0x0], PBA in map 0x24[0x1000]
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 000d[2a0] = ACS 1
+
+xhci2@pci0:130:0:3:	class=0x0c0330 rev=0x00 hdr=0x00 vendor=0x1022 device=0x148c subvendor=0x15d9 subdevice=0x145c
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship USB 3.0 Host Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 64, base 0xf0000000, size 1048576, enabled
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 8 messages, 64 bit 
+    cap 11[c0] = MSI-X supports 8 messages, enabled
+                 Table in map 0x10[0xfe000], PBA in map 0x10[0xff000]
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 000d[2a0] = ACS 1
+
+hostb72@pci0:160:0:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1480 subvendor=0x15d9 subdevice=0x0964
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Root Complex'
+    class      = bridge
+    subclass   = HOST-PCI
+
+none36@pci0:160:0:2:	class=0x080600 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1481 subvendor=0x1022 subdevice=0x1481
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse IOMMU'
+    class      = base peripheral
+    subclass   = IOMMU
+    cap 0f[40] = unknown
+    cap 05[64] = MSI supports 4 messages, 64 bit 
+    cap 08[74] = HT MSI fixed address window enabled at 0xfee00000
+    cap 09[c8] = vendor (length 24)
+
+hostb73@pci0:160:1:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb74@pci0:160:2:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb75@pci0:160:3:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb76@pci0:160:4:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb77@pci0:160:5:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb78@pci0:160:7:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+pcib32@pci0:160:7:1:	class=0x060400 rev=0x00 hdr=0x01 vendor=0x1022 device=0x1484 subvendor=0x1022 subdevice=0x1484
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[58] = PCI-Express 2 root port max data 128(512) RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 1 message, 64 bit 
+    cap 0d[c0] = PCI Bridge subvendor=0x1022 subdevice=0x1484
+    cap 08[c8] = HT MSI fixed address window enabled at 0xfee00000
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+hostb79@pci0:160:8:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1482 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+pcib33@pci0:160:8:1:	class=0x060400 rev=0x00 hdr=0x01 vendor=0x1022 device=0x1484 subvendor=0x1022 subdevice=0x1484
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[58] = PCI-Express 2 root port max data 128(512) RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 1 message, 64 bit 
+    cap 0d[c0] = PCI Bridge subvendor=0x1022 subdevice=0x1484
+    cap 08[c8] = HT MSI fixed address window enabled at 0xfee00000
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+pcib34@pci0:160:8:2:	class=0x060400 rev=0x00 hdr=0x01 vendor=0x1022 device=0x1484 subvendor=0x1022 subdevice=0x1484
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[58] = PCI-Express 2 root port max data 128(512) RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 1 message, 64 bit 
+    cap 0d[c0] = PCI Bridge subvendor=0x1022 subdevice=0x1484
+    cap 08[c8] = HT MSI fixed address window enabled at 0xfee00000
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+pcib35@pci0:160:8:3:	class=0x060400 rev=0x00 hdr=0x01 vendor=0x1022 device=0x1484 subvendor=0x1022 subdevice=0x1484
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[58] = PCI-Express 2 root port max data 128(512) RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 1 message, 64 bit 
+    cap 0d[c0] = PCI Bridge subvendor=0x1022 subdevice=0x1484
+    cap 08[c8] = HT MSI fixed address window enabled at 0xfee00000
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+none37@pci0:161:0:0:	class=0x130000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x148a subvendor=0x1022 subdevice=0x148a
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PCIe Dummy Function'
+    class      = non-essential instrumentation
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+none38@pci0:161:0:2:	class=0x108000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1498 subvendor=0x1022 subdevice=0x1498
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PTDMA'
+    class      = encrypt/decrypt
+    bar   [18] = type Memory, range 32, base 0xf2800000, size 524288, enabled
+    bar   [24] = type Memory, range 32, base 0xf2880000, size 8192, enabled
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 2 messages, 64 bit 
+    cap 11[c0] = MSI-X supports 1 message
+                 Table in map 0x24[0x0], PBA in map 0x24[0x1000]
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 000d[2a0] = ACS 1
+
+none39@pci0:162:0:0:	class=0x130000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1485 subvendor=0x1022 subdevice=0x1485
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Reserved SPP'
+    class      = non-essential instrumentation
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+none40@pci0:162:0:1:	class=0x108000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1486 subvendor=0x1022 subdevice=0x1486
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse Cryptographic Coprocessor PSPCPP'
+    class      = encrypt/decrypt
+    bar   [18] = type Memory, range 32, base 0xf2400000, size 1048576, enabled
+    bar   [24] = type Memory, range 32, base 0xf2582000, size 8192, enabled
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 1 message, 64 bit 
+    cap 11[c0] = MSI-X supports 2 messages
+                 Table in map 0x24[0x0], PBA in map 0x24[0x1000]
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 000d[2a0] = ACS 1
+
+none41@pci0:162:0:2:	class=0x108000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1498 subvendor=0x1022 subdevice=0x1498
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship/Matisse PTDMA'
+    class      = encrypt/decrypt
+    bar   [18] = type Memory, range 32, base 0xf2500000, size 524288, enabled
+    bar   [24] = type Memory, range 32, base 0xf2580000, size 8192, enabled
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 2 messages, 64 bit 
+    cap 11[c0] = MSI-X supports 1 message
+                 Table in map 0x24[0x0], PBA in map 0x24[0x1000]
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 000d[2a0] = ACS 1
+
+xhci3@pci0:162:0:3:	class=0x0c0330 rev=0x00 hdr=0x00 vendor=0x1022 device=0x148c subvendor=0x15d9 subdevice=0x145c
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Starship USB 3.0 Host Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 64, base 0xf2300000, size 1048576, enabled
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 8 messages, 64 bit 
+    cap 11[c0] = MSI-X supports 8 messages, enabled
+                 Table in map 0x10[0xfe000], PBA in map 0x10[0xff000]
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 000d[2a0] = ACS 1
+
+ahci6@pci0:163:0:0:	class=0x010601 rev=0x51 hdr=0x00 vendor=0x1022 device=0x7901 subvendor=0x15d9 subdevice=0x7901
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'FCH SATA Controller [AHCI mode]'
+    class      = mass storage
+    subclass   = SATA
+    bar   [24] = type Memory, range 32, base 0xf2700000, size 2048, enabled
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 16 messages, 64 bit enabled with 1 message
+    cap 12[d0] = SATA Index-Data Pair
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1
+
+ahci7@pci0:164:0:0:	class=0x010601 rev=0x51 hdr=0x00 vendor=0x1022 device=0x7901 subvendor=0x15d9 subdevice=0x7901
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'FCH SATA Controller [AHCI mode]'
+    class      = mass storage
+    subclass   = SATA
+    bar   [24] = type Memory, range 32, base 0xf2600000, size 2048, enabled
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[64] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 16 messages, 64 bit enabled with 1 message
+    cap 12[d0] = SATA Index-Data Pair
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000d[2a0] = ACS 1
+    ecap 0025[400] = Data Link Feature 1
+    ecap 0026[410] = Physical Layer 16.0 GT/s 1
+    ecap 0027[440] = Lane Margining at Receiver 1

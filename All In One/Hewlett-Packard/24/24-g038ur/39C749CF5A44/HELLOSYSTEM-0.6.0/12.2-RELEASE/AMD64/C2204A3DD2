@@ -1,0 +1,150 @@
+hostb0@pci0:0:0:0:	class=0x060000 card=0x81ba103c chip=0x19048086 rev=0x08 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor Host Bridge/DRAM Registers'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 09[e0] = vendor (length 16) Intel cap 0 version 1
+
+vgapci0@pci0:0:2:0:	class=0x030000 card=0x81ba103c chip=0x19168086 rev=0x07 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Skylake GT2 [HD Graphics 520]'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 64, base 0xde000000, size 16777216, enabled
+    bar   [18] = type Prefetchable Memory, range 64, base 0xc0000000, size 268435456, enabled
+    bar   [20] = type I/O Port, range 32, base 0xf000, size 64, enabled
+    cap 09[40] = vendor (length 12) Intel cap 0 version 1
+    cap 10[70] = PCI-Express 2 root endpoint max data 128(128) FLR
+    cap 05[ac] = MSI supports 1 message enabled with 1 message
+    cap 01[d0] = powerspec 2  supports D0 D3  current D0
+    ecap 001b[100] = Process Address Space ID 1
+    ecap 000f[200] = ATS 1
+    ecap 0013[300] = Page Page Request 1
+
+xhci0@pci0:0:20:0:	class=0x0c0330 card=0x81ba103c chip=0x9d2f8086 rev=0x21 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Sunrise Point-LP USB 3.0 xHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 64, base 0xdf210000, size 65536, enabled
+    cap 01[70] = powerspec 2  supports D0 D3  current D0
+    cap 05[80] = MSI supports 8 messages, 64 bit enabled with 1 message
+
+none0@pci0:0:22:0:	class=0x078000 card=0x81ba103c chip=0x9d3a8086 rev=0x21 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Sunrise Point-LP CSME HECI'
+    class      = simple comms
+    bar   [10] = type Memory, range 64, base 0xdf22d000, size 4096, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 05[8c] = MSI supports 1 message, 64 bit 
+
+ahci0@pci0:0:23:0:	class=0x010601 card=0x81ba103c chip=0x9d038086 rev=0x21 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Sunrise Point-LP SATA Controller [AHCI mode]'
+    class      = mass storage
+    subclass   = SATA
+    bar   [10] = type Memory, range 32, base 0xdf228000, size 8192, enabled
+    bar   [14] = type Memory, range 32, base 0xdf22c000, size 256, enabled
+    bar   [18] = type I/O Port, range 32, base 0xf090, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0xf080, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0xf060, size 32, enabled
+    bar   [24] = type Memory, range 32, base 0xdf22b000, size 2048, enabled
+    cap 05[80] = MSI supports 1 message enabled with 1 message
+    cap 01[70] = powerspec 3  supports D0 D3  current D0
+    cap 12[a8] = SATA Index-Data Pair
+
+pcib1@pci0:0:29:0:	class=0x060400 card=0x81ba103c chip=0x9d188086 rev=0xf1 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = 'Sunrise Point-LP PCI Express Root Port'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(256) ARI disabled
+                 link x1(x1) speed 2.5(8.0) ASPM L1(L1)
+                 slot 12 power limit 100 mW
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge card=0x81ba103c
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+    ecap 0000[100] = unknown 0
+    ecap 000d[140] = ACS 1
+    ecap 0019[220] = PCIe Sec 1 lane errors 0
+
+pcib2@pci0:0:29:1:	class=0x060400 card=0x81ba103c chip=0x9d198086 rev=0xf1 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = 'Sunrise Point-LP PCI Express Root Port'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(256) ARI disabled
+                 link x1(x1) speed 2.5(8.0) ASPM L1(L1)
+                 slot 13 power limit 100 mW
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge card=0x81ba103c
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+    ecap 0000[100] = unknown 0
+    ecap 000d[140] = ACS 1
+    ecap 0019[220] = PCIe Sec 1 lane errors 0
+
+isab0@pci0:0:31:0:	class=0x060100 card=0x81ba103c chip=0x9d488086 rev=0x21 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Sunrise Point-LP LPC Controller'
+    class      = bridge
+    subclass   = PCI-ISA
+
+none1@pci0:0:31:2:	class=0x058000 card=0x81ba103c chip=0x9d218086 rev=0x21 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Sunrise Point-LP PMC'
+    class      = memory
+    bar   [10] = type Memory, range 32, base 0xdf224000, size 16384, enabled
+
+hdac0@pci0:0:31:3:	class=0x040300 card=0x81ba103c chip=0x9d708086 rev=0x21 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Sunrise Point-LP HD Audio'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 64, base 0xdf220000, size 16384, enabled
+    bar   [20] = type Memory, range 64, base 0xdf200000, size 65536, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 05[60] = MSI supports 1 message, 64 bit enabled with 1 message
+
+none2@pci0:0:31:4:	class=0x0c0500 card=0x81ba103c chip=0x9d238086 rev=0x21 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Sunrise Point-LP SMBus'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [10] = type Memory, range 64, base 0xdf22a000, size 256, enabled
+    bar   [20] = type I/O Port, range 32, base 0xf040, size 32, enabled
+
+re0@pci0:1:0:0:	class=0x020000 card=0x81ba103c chip=0x816810ec rev=0x10 hdr=0x00
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    device     = 'RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0xe000, size 256, enabled
+    bar   [18] = type Memory, range 64, base 0xdf104000, size 4096, enabled
+    bar   [20] = type Memory, range 64, base 0xdf100000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit 
+    cap 10[70] = PCI-Express 2 endpoint MSI 1 max data 128(128) RO
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1) ClockPM disabled
+    cap 11[b0] = MSI-X supports 4 messages, enabled
+                 Table in map 0x20[0x0], PBA in map 0x20[0x800]
+    cap 03[d0] = VPD
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0002[140] = VC 1 max VC0
+    ecap 0003[160] = Serial 1 01005701e482523c
+    ecap 0018[170] = LTR 1
+    ecap 001e[178] = L1 PM Substates 1
+
+none3@pci0:2:0:0:	class=0x028000 card=0x81c1103c chip=0xb72310ec rev=0x00 hdr=0x00
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    device     = 'RTL8723BE PCIe Wireless Network Adapter'
+    class      = network
+    bar   [10] = type I/O Port, range 32, base 0xd000, size 256, enabled
+    bar   [18] = type Memory, range 64, base 0xdf000000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit 
+    cap 10[70] = PCI-Express 2 endpoint max data 128(128) RO
+                 link x1(x1) speed 2.5(2.5) ASPM L1(L0s/L1) ClockPM enabled
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0003[140] = Serial 1 0023b7feff4ce000
+    ecap 0018[150] = LTR 1
+    ecap 001e[158] = L1 PM Substates 1

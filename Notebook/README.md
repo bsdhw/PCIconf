@@ -7,6 +7,7 @@ Contents
 --------
 
 1. [ PCI Devices in Notebooks ](#pci-devices)
+   * [ Bluetooth ](#bluetooth-pci)
    * [ Bridge ](#bridge-pci)
    * [ Card reader ](#card-reader-pci)
    * [ Co-processor ](#co-processor-pci)
@@ -38,2021 +39,2155 @@ Contents
 PCI Devices
 -----------
 
-Count  — number of computers with this device installed,
-Driver — driver in use for this device,
-Probe  — latest probe ID of this device.
+Count  - number of computers with this device installed,
+Driver - driver in use for this device,
+Probe  - latest probe ID of this device.
+
+### Bluetooth (PCI)
+
+| ID        | Subsystem | MFG              | Name                                 | Count | Driver     | Probe |
+|-----------|-----------|------------------|--------------------------------------|-------|------------|-------|
+| 1814:3298 | 103c:18ec | Ralink           | RT3290 Bluetooth                     | 3     |            | [AD95186D17](<Notebook/Hewlett-Packard/Others/Others/D84D3D5A0EA0/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/AD95186D17>) |
 
 ### Bridge (PCI)
 
-| ID        | Subsystem | MFG        | Name                         | Count | Driver     | Probe      |
-|-----------|-----------|------------|------------------------------|-------|------------|------------|
-| 1022:1452 |           | AMD        | Family 17h (Models 00h-1f... | 26    | hostb      | 4AC6C9B3EB |
-| 1022:15e8 |           | AMD        | Raven/Raven2 Device 24: F... | 20    | hostb      | 4AC6C9B3EB |
-| 1022:15e9 |           | AMD        | Raven/Raven2 Device 24: F... | 20    | hostb      | 4AC6C9B3EB |
-| 1022:15ea |           | AMD        | Raven/Raven2 Device 24: F... | 20    | hostb      | 4AC6C9B3EB |
-| 1022:15eb |           | AMD        | Raven/Raven2 Device 24: F... | 20    | hostb      | 4AC6C9B3EB |
-| 1022:15ec |           | AMD        | Raven/Raven2 Device 24: F... | 20    | hostb      | 4AC6C9B3EB |
-| 1022:15ed |           | AMD        | Raven/Raven2 Device 24: F... | 20    | hostb      | 4AC6C9B3EB |
-| 1022:15ee |           | AMD        | Raven/Raven2 Device 24: F... | 20    | hostb      | 4AC6C9B3EB |
-| 1022:15ef |           | AMD        | Raven/Raven2 Device 24: F... | 20    | hostb      | 4AC6C9B3EB |
-| 8086:2448 |           | Intel      | 82801 Mobile PCI Bridge      | 16    | pcib       | A76C55B066 |
-| 8086:2c62 | 8086:8086 | Intel      | Core Processor QuickPath ... | 15    | hostb      | 211FE874FD |
-| 8086:2d01 | 8086:8086 | Intel      | Core Processor QuickPath ... | 15    | hostb      | 211FE874FD |
-| 8086:2d10 | 8086:8086 | Intel      | Core Processor QPI Link 0    | 15    | hostb      | 211FE874FD |
-| 8086:2d11 | 8086:8086 | Intel      | 1st Generation Core i3/5/... | 15    | hostb      | 211FE874FD |
-| 8086:2d12 | 8086:8086 | Intel      | 1st Generation Core i3/5/... | 15    | hostb      | 211FE874FD |
-| 8086:2d13 | 8086:8086 | Intel      | 1st Generation Core i3/5/... | 15    | hostb      | 211FE874FD |
-| 1022:15d0 | 1022:15d0 | AMD        | Raven/Raven2 Root Complex    | 14    | hostb      | 2F1BA02130 |
-| 1022:15db |           | AMD        | Raven/Raven2 Internal PCI... | 14    | pcib       | 4AC6C9B3EB |
-| 8086:0104 | 17aa:21da | Intel      | 2nd Generation Core Proce... | 14    | hostb      | 66743A51CC |
-| 8086:1c10 | 17aa:21da | Intel      | 6 Series/C200 Series Chip... | 14    | pcib       | 66743A51CC |
-| 8086:1c18 | 17aa:21da | Intel      | 6 Series/C200 Series Chip... | 14    | pcib       | 66743A51CC |
-| 8086:1c4f | 17aa:21da | Intel      | QM67 Express Chipset LPC ... | 14    | isab       | 66743A51CC |
-| 1022:1448 |           | AMD        | Renoir Device 24: Function 0 | 13    | hostb      | 792FB07DD9 |
-| 1022:1449 |           | AMD        | Renoir Device 24: Function 1 | 13    | hostb      | 792FB07DD9 |
-| 1022:144a |           | AMD        | Renoir Device 24: Function 2 | 13    | hostb      | 792FB07DD9 |
-| 1022:144b |           | AMD        | Renoir Device 24: Function 3 | 13    | hostb      | 792FB07DD9 |
-| 1022:144c |           | AMD        | Renoir Device 24: Function 4 | 13    | hostb      | 792FB07DD9 |
-| 1022:144d |           | AMD        | Renoir Device 24: Function 5 | 13    | hostb      | 792FB07DD9 |
-| 1022:144e |           | AMD        | Renoir Device 24: Function 6 | 13    | hostb      | 792FB07DD9 |
-| 1022:144f |           | AMD        | Renoir Device 24: Function 7 | 13    | hostb      | 792FB07DD9 |
-| 1022:1632 |           | AMD        | Renoir PCIe Dummy Host Br... | 13    | hostb      | 792FB07DD9 |
-| 8086:1c12 | 17aa:21da | Intel      | 6 Series/C200 Series Chip... | 13    | pcib       | 66743A51CC |
-| 8086:1c16 | 17aa:21da | Intel      | 6 Series/C200 Series Chip... | 12    | pcib       | 66743A51CC |
-| 1022:15dc |           | AMD        | Raven/Raven2 Internal PCI... | 11    | pcib       | 4AC6C9B3EB |
-| 1180:0476 | 17aa:20c6 | Ricoh      | RL5c476 II                   | 11    | cbb        | 981517A51A |
-| 8086:2448 | 17aa:20f4 | Intel      | 82801 Mobile PCI Bridge      | 11    | pcib       | BDBD2D0A05 |
-| 8086:2940 | 17aa:20f3 | Intel      | 82801I (ICH9 Family) PCI ... | 11    | pcib       | BDBD2D0A05 |
-| 8086:2942 | 17aa:20f3 | Intel      | 82801I (ICH9 Family) PCI ... | 11    | pcib       | BDBD2D0A05 |
-| 8086:2c62 | 17aa:2196 | Intel      | Core Processor QuickPath ... | 11    | hostb      | C887FF2917 |
-| 8086:2d01 | 17aa:2196 | Intel      | Core Processor QuickPath ... | 11    | hostb      | C887FF2917 |
-| 8086:2d10 | 17aa:2196 | Intel      | Core Processor QPI Link 0    | 11    | hostb      | C887FF2917 |
-| 8086:2d11 | 17aa:2196 | Intel      | 1st Generation Core i3/5/... | 11    | hostb      | C887FF2917 |
-| 8086:2d12 | 17aa:2196 | Intel      | 1st Generation Core i3/5/... | 11    | hostb      | C887FF2917 |
-| 8086:2d13 | 17aa:2196 | Intel      | 1st Generation Core i3/5/... | 11    | hostb      | C887FF2917 |
-| 8086:2448 | 17aa:2165 | Intel      | 82801 Mobile PCI Bridge      | 10    | pcib       | C887FF2917 |
-| 8086:2946 | 17aa:20f3 | Intel      | 82801I (ICH9 Family) PCI ... | 10    | pcib       | BDBD2D0A05 |
-| 8086:3b42 | 17aa:2164 | Intel      | 5 Series/3400 Series Chip... | 10    | pcib       | C887FF2917 |
-| 1002:4384 |           | AMD        | SBx00 PCI to PCI Bridge      | 9     | pcib       | 6398601E16 |
-| 8086:0044 | 17aa:2193 | Intel      | Core Processor DRAM Contr... | 9     | hostb      | C887FF2917 |
-| 1022:1634 | 1022:1453 | AMD        | Renoir PCIe GPP Bridge       | 8     | pcib       | 792FB07DD9 |
-| 1022:1635 | 1022:1635 | AMD        | Renoir Internal PCIe GPP ... | 8     | pcib       | 792FB07DD9 |
-| 10de:0a82 |           | Nvidia     | MCP79 Host Bridge            | 8     | hostb      | F46146B79E |
-| 10de:0aa0 |           | Nvidia     | MCP79 PCI Express Bridge     | 8     | pcib       | F46146B79E |
-| 10de:0aab | 10de:cb79 | Nvidia     | MCP79 PCI Bridge             | 8     | pcib       | F46146B79E |
-| 10de:0aae | 10de:cb79 | Nvidia     | MCP79 LPC Bridge             | 8     | isab       | F46146B79E |
-| 10de:0ac6 |           | Nvidia     | MCP79 PCI Express Bridge     | 8     | pcib       | F46146B79E |
-| 8086:0104 | 17aa:21ce | Intel      | 2nd Generation Core Proce... | 8     | hostb      | DC29D714D9 |
-| 8086:0154 | 17aa:21f3 | Intel      | 3rd Gen Core processor DR... | 8     | hostb      | 0F001F65D2 |
-| 8086:1c10 | 17aa:21ce | Intel      | 6 Series/C200 Series Chip... | 8     | pcib       | DC29D714D9 |
-| 8086:1c12 | 17aa:21ce | Intel      | 6 Series/C200 Series Chip... | 8     | pcib       | DC29D714D9 |
-| 8086:1c18 | 17aa:21ce | Intel      | 6 Series/C200 Series Chip... | 8     | pcib       | DC29D714D9 |
-| 8086:1c4f | 17aa:21ce | Intel      | QM67 Express Chipset LPC ... | 8     | isab       | DC29D714D9 |
-| 8086:1e10 | 17aa:21f3 | Intel      | 7 Series/C216 Chipset Fam... | 8     | pcib       | 0F001F65D2 |
-| 8086:1e12 | 17aa:21f3 | Intel      | 7 Series/C210 Series Chip... | 8     | pcib       | 0F001F65D2 |
-| 8086:1e55 | 17aa:21f3 | Intel      | QM77 Express Chipset LPC ... | 8     | isab       | 0F001F65D2 |
-| 8086:2a40 | 17aa:20e0 | Intel      | Mobile 4 Series Chipset M... | 8     | hostb      | 981517A51A |
-| 8086:3b48 | 17aa:2164 | Intel      | 5 Series/3400 Series Chip... | 8     | pcib       | C887FF2917 |
-| 8086:3b4a | 17aa:2164 | Intel      | 5 Series/3400 Series Chip... | 8     | pcib       | C887FF2917 |
-| 1022:790e | 1022:790e | AMD        | FCH LPC Bridge               | 7     | isab       | F4A0F0941B |
-| 8086:0154 | 17aa:21fa | Intel      | 3rd Gen Core processor DR... | 7     | hostb      | AB871769F0 |
-| 8086:1c10 | 8086:7270 | Intel      | 6 Series/C200 Series Chip... | 7     | pcib       | 193936B5CA |
-| 8086:1c12 | 8086:7270 | Intel      | 6 Series/C200 Series Chip... | 7     | pcib       | 193936B5CA |
-| 8086:1c16 | 17aa:21ce | Intel      | 6 Series/C200 Series Chip... | 7     | pcib       | DC29D714D9 |
-| 8086:1e10 | 17aa:21fa | Intel      | 7 Series/C216 Chipset Fam... | 7     | pcib       | AB871769F0 |
-| 8086:1e12 | 17aa:21fa | Intel      | 7 Series/C210 Series Chip... | 7     | pcib       | AB871769F0 |
-| 8086:1e55 | 17aa:21fa | Intel      | QM77 Express Chipset LPC ... | 7     | isab       | AB871769F0 |
-| 8086:2917 | 17aa:20f5 | Intel      | ICH9M-E LPC Interface Con... | 7     | isab       | 926FE13D8F |
-| 8086:3b07 | 17aa:2166 | Intel      | QM57 Chipset LPC Interfac... | 7     | isab       | C887FF2917 |
-| 8086:3b44 | 17aa:2164 | Intel      | 5 Series/3400 Series Chip... | 7     | pcib       | 219E9CB1D7 |
-| 1022:1453 | 1022:1453 | AMD        | Family 17h (Models 00h-0f... | 6     | pcib       | F4A0F0941B |
-| 1022:1454 | 1022:1454 | AMD        | Family 17h (Models 00h-0f... | 6     | pcib       | F4A0F0941B |
-| 1022:1460 |           | AMD        | Family 17h (Models 00h-0f... | 6     | hostb      | F4A0F0941B |
-| 1022:1461 |           | AMD        | Family 17h (Models 00h-0f... | 6     | hostb      | F4A0F0941B |
-| 1022:1462 |           | AMD        | Family 17h (Models 00h-0f... | 6     | hostb      | F4A0F0941B |
-| 1022:1463 |           | AMD        | Family 17h (Models 00h-0f... | 6     | hostb      | F4A0F0941B |
-| 1022:1464 |           | AMD        | Family 17h (Models 00h-0f... | 6     | hostb      | F4A0F0941B |
-| 1022:1465 |           | AMD        | Family 17h (Models 00h-0f... | 6     | hostb      | F4A0F0941B |
-| 1022:1466 |           | AMD        | Family 17h (Models 00h-0f... | 6     | hostb      | F4A0F0941B |
-| 1022:1467 |           | AMD        | Family 17h (Models 00h-0f... | 6     | hostb      | F4A0F0941B |
-| 1022:156b |           | AMD        | Family 16h (Models 30h-3f... | 6     | hostb      | E2B6DBFE40 |
-| 1022:1580 |           | AMD        | Family 16h (Models 30h-3f... | 6     | hostb      | E2B6DBFE40 |
-| 1022:1581 |           | AMD        | Family 16h (Models 30h-3f... | 6     | hostb      | E2B6DBFE40 |
-| 1022:1582 |           | AMD        | Family 16h (Models 30h-3f... | 6     | hostb      | E2B6DBFE40 |
-| 1022:1583 |           | AMD        | Family 16h (Models 30h-3f... | 6     | hostb      | E2B6DBFE40 |
-| 1022:1584 |           | AMD        | Family 16h (Models 30h-3f... | 6     | hostb      | E2B6DBFE40 |
-| 1022:1585 |           | AMD        | Family 16h (Models 30h-3f... | 6     | hostb      | E2B6DBFE40 |
-| 1022:1700 |           | AMD        | Family 12h/14h Processor ... | 6     | hostb      | 6398601E16 |
-| 1022:1701 |           | AMD        | Family 12h/14h Processor ... | 6     | hostb      | 6398601E16 |
-| 1022:1702 |           | AMD        | Family 12h/14h Processor ... | 6     | hostb      | 6398601E16 |
-| 1022:1703 |           | AMD        | Family 12h/14h Processor ... | 6     | hostb      | 6398601E16 |
+| ID        | Subsystem | MFG              | Name                                 | Count | Driver     | Probe |
+|-----------|-----------|------------------|--------------------------------------|-------|------------|-------|
+| 1022:1452 |           | AMD              | Family 17h (Models 00h-1fh) PCIe ... | 47    | hostb      | [7FB743C654](<Notebook/Acer/Aspire/Aspire A315-23/F20A633E5003/FREEBSD-13.0/13.0-RELEASE/AMD64/7FB743C654>) |
+| 1022:15e8 |           | AMD              | Raven/Raven2 Device 24: Function 0   | 33    | hostb      | [7FB743C654](<Notebook/Acer/Aspire/Aspire A315-23/F20A633E5003/FREEBSD-13.0/13.0-RELEASE/AMD64/7FB743C654>) |
+| 1022:15e9 |           | AMD              | Raven/Raven2 Device 24: Function 1   | 33    | hostb      | [7FB743C654](<Notebook/Acer/Aspire/Aspire A315-23/F20A633E5003/FREEBSD-13.0/13.0-RELEASE/AMD64/7FB743C654>) |
+| 1022:15ea |           | AMD              | Raven/Raven2 Device 24: Function 2   | 33    | hostb      | [7FB743C654](<Notebook/Acer/Aspire/Aspire A315-23/F20A633E5003/FREEBSD-13.0/13.0-RELEASE/AMD64/7FB743C654>) |
+| 1022:15eb |           | AMD              | Raven/Raven2 Device 24: Function 3   | 33    | hostb      | [7FB743C654](<Notebook/Acer/Aspire/Aspire A315-23/F20A633E5003/FREEBSD-13.0/13.0-RELEASE/AMD64/7FB743C654>) |
+| 1022:15ec |           | AMD              | Raven/Raven2 Device 24: Function 4   | 33    | hostb      | [7FB743C654](<Notebook/Acer/Aspire/Aspire A315-23/F20A633E5003/FREEBSD-13.0/13.0-RELEASE/AMD64/7FB743C654>) |
+| 1022:15ed |           | AMD              | Raven/Raven2 Device 24: Function 5   | 33    | hostb      | [7FB743C654](<Notebook/Acer/Aspire/Aspire A315-23/F20A633E5003/FREEBSD-13.0/13.0-RELEASE/AMD64/7FB743C654>) |
+| 1022:15ee |           | AMD              | Raven/Raven2 Device 24: Function 6   | 33    | hostb      | [7FB743C654](<Notebook/Acer/Aspire/Aspire A315-23/F20A633E5003/FREEBSD-13.0/13.0-RELEASE/AMD64/7FB743C654>) |
+| 1022:15ef |           | AMD              | Raven/Raven2 Device 24: Function 7   | 33    | hostb      | [7FB743C654](<Notebook/Acer/Aspire/Aspire A315-23/F20A633E5003/FREEBSD-13.0/13.0-RELEASE/AMD64/7FB743C654>) |
+| 1022:1632 |           | AMD              | Renoir PCIe Dummy Host Bridge        | 33    | hostb      | [1A13B7BFD1](<Notebook/Lenovo/Legion/Legion 5 15ARH05 82B5/F36FD56B8299/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/1A13B7BFD1>) |
+| 1022:1448 |           | AMD              | Renoir Device 24: Function 0         | 29    | hostb      | [1A13B7BFD1](<Notebook/Lenovo/Legion/Legion 5 15ARH05 82B5/F36FD56B8299/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/1A13B7BFD1>) |
+| 1022:1449 |           | AMD              | Renoir Device 24: Function 1         | 29    | hostb      | [1A13B7BFD1](<Notebook/Lenovo/Legion/Legion 5 15ARH05 82B5/F36FD56B8299/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/1A13B7BFD1>) |
+| 1022:144a |           | AMD              | Renoir Device 24: Function 2         | 29    | hostb      | [1A13B7BFD1](<Notebook/Lenovo/Legion/Legion 5 15ARH05 82B5/F36FD56B8299/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/1A13B7BFD1>) |
+| 1022:144b |           | AMD              | Renoir Device 24: Function 3         | 29    | hostb      | [1A13B7BFD1](<Notebook/Lenovo/Legion/Legion 5 15ARH05 82B5/F36FD56B8299/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/1A13B7BFD1>) |
+| 1022:144c |           | AMD              | Renoir Device 24: Function 4         | 29    | hostb      | [1A13B7BFD1](<Notebook/Lenovo/Legion/Legion 5 15ARH05 82B5/F36FD56B8299/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/1A13B7BFD1>) |
+| 1022:144d |           | AMD              | Renoir Device 24: Function 5         | 29    | hostb      | [1A13B7BFD1](<Notebook/Lenovo/Legion/Legion 5 15ARH05 82B5/F36FD56B8299/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/1A13B7BFD1>) |
+| 1022:144e |           | AMD              | Renoir Device 24: Function 6         | 29    | hostb      | [1A13B7BFD1](<Notebook/Lenovo/Legion/Legion 5 15ARH05 82B5/F36FD56B8299/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/1A13B7BFD1>) |
+| 1022:144f |           | AMD              | Renoir Device 24: Function 7         | 29    | hostb      | [1A13B7BFD1](<Notebook/Lenovo/Legion/Legion 5 15ARH05 82B5/F36FD56B8299/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/1A13B7BFD1>) |
+| 8086:2c62 | 8086:8086 | Intel            | Core Processor QuickPath Architec... | 29    | hostb      | [BA69F80B7F](<Notebook/Dell/Latitude/Latitude E4310/1675DDA13BC4/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/BA69F80B7F>) |
+| 8086:2d01 | 8086:8086 | Intel            | Core Processor QuickPath Architec... | 29    | hostb      | [BA69F80B7F](<Notebook/Dell/Latitude/Latitude E4310/1675DDA13BC4/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/BA69F80B7F>) |
+| 8086:2d10 | 8086:8086 | Intel            | Core Processor QPI Link 0            | 29    | hostb      | [BA69F80B7F](<Notebook/Dell/Latitude/Latitude E4310/1675DDA13BC4/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/BA69F80B7F>) |
+| 8086:2d11 | 8086:8086 | Intel            | 1st Generation Core i3/5/7 Proces... | 29    | hostb      | [BA69F80B7F](<Notebook/Dell/Latitude/Latitude E4310/1675DDA13BC4/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/BA69F80B7F>) |
+| 8086:2d12 | 8086:8086 | Intel            | 1st Generation Core i3/5/7 Proces... | 29    | hostb      | [BA69F80B7F](<Notebook/Dell/Latitude/Latitude E4310/1675DDA13BC4/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/BA69F80B7F>) |
+| 8086:2d13 | 8086:8086 | Intel            | 1st Generation Core i3/5/7 Proces... | 29    | hostb      | [BA69F80B7F](<Notebook/Dell/Latitude/Latitude E4310/1675DDA13BC4/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/BA69F80B7F>) |
+| 8086:2448 |           | Intel            | 82801 Mobile PCI Bridge              | 28    | pcib       | [E0CF5200DE](<Notebook/Apple/MacBook4/MacBook4,1/07CFC301CF14/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E0CF5200DE>) |
+| 1022:15db |           | AMD              | Raven/Raven2 Internal PCIe GPP Br... | 25    | pcib       | [8D4B342FDA](<Notebook/Dell/Inspiron/Inspiron 3505/4D47E92A2957/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/8D4B342FDA>) |
+| 1022:15d0 | 1022:15d0 | AMD              | Raven/Raven2 Root Complex            | 22    | hostb      | [0C153D0C98](<Notebook/Lenovo/ThinkPad/ThinkPad A485 20MU000VUS/0748151D3905/MIDNIGHTBSD-2.1.1/2.1.1/AMD64/0C153D0C98>) |
+| 1022:1635 | 1022:1635 | AMD              | Renoir Internal PCIe GPP Bridge t... | 22    | pcib       | [1A13B7BFD1](<Notebook/Lenovo/Legion/Legion 5 15ARH05 82B5/F36FD56B8299/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/1A13B7BFD1>) |
+| 8086:2c62 | 17aa:2196 | Intel            | Core Processor QuickPath Architec... | 22    | hostb      | [BCD5BEA2B7](<Notebook/Lenovo/ThinkPad/ThinkPad T410 2537BN8/4A58F0F69086/OPNSENSE-22.1.2/13.0-STABLE/AMD64/BCD5BEA2B7>) |
+| 8086:2d01 | 17aa:2196 | Intel            | Core Processor QuickPath Architec... | 22    | hostb      | [BCD5BEA2B7](<Notebook/Lenovo/ThinkPad/ThinkPad T410 2537BN8/4A58F0F69086/OPNSENSE-22.1.2/13.0-STABLE/AMD64/BCD5BEA2B7>) |
+| 8086:2d10 | 17aa:2196 | Intel            | Core Processor QPI Link 0            | 22    | hostb      | [BCD5BEA2B7](<Notebook/Lenovo/ThinkPad/ThinkPad T410 2537BN8/4A58F0F69086/OPNSENSE-22.1.2/13.0-STABLE/AMD64/BCD5BEA2B7>) |
+| 8086:2d11 | 17aa:2196 | Intel            | 1st Generation Core i3/5/7 Proces... | 22    | hostb      | [BCD5BEA2B7](<Notebook/Lenovo/ThinkPad/ThinkPad T410 2537BN8/4A58F0F69086/OPNSENSE-22.1.2/13.0-STABLE/AMD64/BCD5BEA2B7>) |
+| 8086:2d12 | 17aa:2196 | Intel            | 1st Generation Core i3/5/7 Proces... | 22    | hostb      | [BCD5BEA2B7](<Notebook/Lenovo/ThinkPad/ThinkPad T410 2537BN8/4A58F0F69086/OPNSENSE-22.1.2/13.0-STABLE/AMD64/BCD5BEA2B7>) |
+| 8086:2d13 | 17aa:2196 | Intel            | 1st Generation Core i3/5/7 Proces... | 22    | hostb      | [BCD5BEA2B7](<Notebook/Lenovo/ThinkPad/ThinkPad T410 2537BN8/4A58F0F69086/OPNSENSE-22.1.2/13.0-STABLE/AMD64/BCD5BEA2B7>) |
+| 1022:790e | 1022:790e | AMD              | FCH LPC Bridge                       | 21    | isab       | [4D8F19BA12](<Notebook/Deciso/Netboard/Netboard A20/94D2C7F0ED24/OPNSENSE-22.1/13.0-STABLE/AMD64/4D8F19BA12>) |
+| 8086:2448 | 17aa:2165 | Intel            | 82801 Mobile PCI Bridge              | 21    | pcib       | [BCD5BEA2B7](<Notebook/Lenovo/ThinkPad/ThinkPad T410 2537BN8/4A58F0F69086/OPNSENSE-22.1.2/13.0-STABLE/AMD64/BCD5BEA2B7>) |
+| 8086:3b42 | 17aa:2164 | Intel            | 5 Series/3400 Series Chipset PCI ... | 21    | pcib       | [BCD5BEA2B7](<Notebook/Lenovo/ThinkPad/ThinkPad T410 2537BN8/4A58F0F69086/OPNSENSE-22.1.2/13.0-STABLE/AMD64/BCD5BEA2B7>) |
+| 1022:15dc |           | AMD              | Raven/Raven2 Internal PCIe GPP Br... | 20    | pcib       | [0C153D0C98](<Notebook/Lenovo/ThinkPad/ThinkPad A485 20MU000VUS/0748151D3905/MIDNIGHTBSD-2.1.1/2.1.1/AMD64/0C153D0C98>) |
+| 8086:0044 | 17aa:2193 | Intel            | Core Processor DRAM Controller       | 19    | hostb      | [BCD5BEA2B7](<Notebook/Lenovo/ThinkPad/ThinkPad T410 2537BN8/4A58F0F69086/OPNSENSE-22.1.2/13.0-STABLE/AMD64/BCD5BEA2B7>) |
+| 8086:0104 | 17aa:21da | Intel            | 2nd Generation Core Processor Fam... | 19    | hostb      | [148A268A0F](<Notebook/Lenovo/ThinkPad/ThinkPad X220 4293B43/AD955BCC7F71/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/148A268A0F>) |
+| 8086:1c10 | 17aa:21da | Intel            | 6 Series/C200 Series Chipset Fami... | 19    | pcib       | [148A268A0F](<Notebook/Lenovo/ThinkPad/ThinkPad X220 4293B43/AD955BCC7F71/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/148A268A0F>) |
+| 8086:1c18 | 17aa:21da | Intel            | 6 Series/C200 Series Chipset Fami... | 19    | pcib       | [148A268A0F](<Notebook/Lenovo/ThinkPad/ThinkPad X220 4293B43/AD955BCC7F71/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/148A268A0F>) |
+| 8086:1c4f | 17aa:21da | Intel            | QM67 Express Chipset LPC Controller  | 19    | isab       | [148A268A0F](<Notebook/Lenovo/ThinkPad/ThinkPad X220 4293B43/AD955BCC7F71/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/148A268A0F>) |
+| 8086:3b4a | 17aa:2164 | Intel            | 5 Series/3400 Series Chipset PCI ... | 19    | pcib       | [BCD5BEA2B7](<Notebook/Lenovo/ThinkPad/ThinkPad T410 2537BN8/4A58F0F69086/OPNSENSE-22.1.2/13.0-STABLE/AMD64/BCD5BEA2B7>) |
+| 1022:1634 | 1022:1453 | AMD              | Renoir/Cezanne PCIe GPP Bridge       | 18    | pcib       | [494195B923](<Notebook/Hewlett-Packard/ProBook/ProBook 445 G7/06DE97DEA747/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/494195B923>) |
+| 1022:1700 |           | AMD              | Family 12h/14h Processor Function 0  | 18    | hostb      | [CC83218496](<Notebook/Acer/Aspire/Aspire E1-421/030AC00DD903/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/CC83218496>) |
+| 1022:1701 |           | AMD              | Family 12h/14h Processor Function 1  | 18    | hostb      | [CC83218496](<Notebook/Acer/Aspire/Aspire E1-421/030AC00DD903/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/CC83218496>) |
+| 1022:1702 |           | AMD              | Family 12h/14h Processor Function 2  | 18    | hostb      | [CC83218496](<Notebook/Acer/Aspire/Aspire E1-421/030AC00DD903/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/CC83218496>) |
+| 1022:1703 |           | AMD              | Family 12h/14h Processor Function 3  | 18    | hostb      | [CC83218496](<Notebook/Acer/Aspire/Aspire E1-421/030AC00DD903/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/CC83218496>) |
+| 1022:1704 |           | AMD              | Family 12h/14h Processor Function 4  | 18    | hostb      | [CC83218496](<Notebook/Acer/Aspire/Aspire E1-421/030AC00DD903/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/CC83218496>) |
+| 1022:1716 |           | AMD              | Family 12h/14h Processor Function 5  | 18    | hostb      | [CC83218496](<Notebook/Acer/Aspire/Aspire E1-421/030AC00DD903/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/CC83218496>) |
+| 1022:1718 |           | AMD              | Family 12h/14h Processor Function 6  | 18    | hostb      | [CC83218496](<Notebook/Acer/Aspire/Aspire E1-421/030AC00DD903/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/CC83218496>) |
+| 1022:1719 |           | AMD              | Family 12h/14h Processor Function 7  | 18    | hostb      | [CC83218496](<Notebook/Acer/Aspire/Aspire E1-421/030AC00DD903/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/CC83218496>) |
+| 8086:1c12 | 17aa:21da | Intel            | 6 Series/C200 Series Chipset Fami... | 18    | pcib       | [148A268A0F](<Notebook/Lenovo/ThinkPad/ThinkPad X220 4293B43/AD955BCC7F71/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/148A268A0F>) |
+| 8086:3b48 | 17aa:2164 | Intel            | 5 Series/3400 Series Chipset PCI ... | 18    | pcib       | [4A5BA4F3E4](<Notebook/Lenovo/ThinkPad/ThinkPad X201 32492EU/BADAE72EA873/GHOSTBSD-21.12.29/13.0-STABLE/AMD64/4A5BA4F3E4>) |
+| 1002:4384 |           | AMD              | SBx00 PCI to PCI Bridge              | 17    | pcib       | [1CCF85F60D](<Notebook/ASUSTek Computer/1215/1215B/A9FC3E123192/FREEBSD-13.0/13.0-RELEASE/AMD64/1CCF85F60D>) |
+| 1180:0476 | 17aa:20c6 | Ricoh            | RL5c476 II                           | 17    | cbb        | [F5F25EFDCC](<Notebook/Lenovo/ThinkPad/ThinkPad T61 766301U/A1D00057611B/HELLOSYSTEM-0.7.0/13.0-RELEASE-P7/AMD64/F5F25EFDCC>) |
+| 8086:2448 | 17aa:20f4 | Intel            | 82801 Mobile PCI Bridge              | 17    | pcib       | [B0A9802877](<Notebook/Lenovo/ThinkPad/ThinkPad SL510 2847R96/16806C85881A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/B0A9802877>) |
+| 8086:2940 | 17aa:20f3 | Intel            | 82801I (ICH9 Family) PCI Express ... | 17    | pcib       | [B0A9802877](<Notebook/Lenovo/ThinkPad/ThinkPad SL510 2847R96/16806C85881A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/B0A9802877>) |
+| 8086:2942 | 17aa:20f3 | Intel            | 82801I (ICH9 Family) PCI Express ... | 17    | pcib       | [B0A9802877](<Notebook/Lenovo/ThinkPad/ThinkPad SL510 2847R96/16806C85881A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/B0A9802877>) |
+| 8086:3b07 | 17aa:2166 | Intel            | QM57 Chipset LPC Interface Contro... | 17    | isab       | [BCD5BEA2B7](<Notebook/Lenovo/ThinkPad/ThinkPad T410 2537BN8/4A58F0F69086/OPNSENSE-22.1.2/13.0-STABLE/AMD64/BCD5BEA2B7>) |
+| 8086:3b44 | 17aa:2164 | Intel            | 5 Series/3400 Series Chipset PCI ... | 17    | pcib       | [BCD5BEA2B7](<Notebook/Lenovo/ThinkPad/ThinkPad T410 2537BN8/4A58F0F69086/OPNSENSE-22.1.2/13.0-STABLE/AMD64/BCD5BEA2B7>) |
+| 8086:1c16 | 17aa:21da | Intel            | 6 Series/C200 Series Chipset Fami... | 16    | pcib       | [148A268A0F](<Notebook/Lenovo/ThinkPad/ThinkPad X220 4293B43/AD955BCC7F71/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/148A268A0F>) |
+| 8086:2946 | 17aa:20f3 | Intel            | 82801I (ICH9 Family) PCI Express ... | 16    | pcib       | [B0A9802877](<Notebook/Lenovo/ThinkPad/ThinkPad SL510 2847R96/16806C85881A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/B0A9802877>) |
+| 1022:780f |           | AMD              | FCH PCI Bridge                       | 15    | pcib       | [CC83218496](<Notebook/Acer/Aspire/Aspire E1-421/030AC00DD903/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/CC83218496>) |
+| 1022:1453 | 1022:1453 | AMD              | Family 17h (Models 00h-0fh) PCIe ... | 14    | pcib       | [4D8F19BA12](<Notebook/Deciso/Netboard/Netboard A20/94D2C7F0ED24/OPNSENSE-22.1/13.0-STABLE/AMD64/4D8F19BA12>) |
+| 1022:1454 | 1022:1454 | AMD              | Family 17h (Models 00h-0fh) Inter... | 14    | pcib       | [4D8F19BA12](<Notebook/Deciso/Netboard/Netboard A20/94D2C7F0ED24/OPNSENSE-22.1/13.0-STABLE/AMD64/4D8F19BA12>) |
+| 1022:1460 |           | AMD              | Family 17h (Models 00h-0fh) Data ... | 14    | hostb      | [4D8F19BA12](<Notebook/Deciso/Netboard/Netboard A20/94D2C7F0ED24/OPNSENSE-22.1/13.0-STABLE/AMD64/4D8F19BA12>) |
+| 1022:1461 |           | AMD              | Family 17h (Models 00h-0fh) Data ... | 14    | hostb      | [4D8F19BA12](<Notebook/Deciso/Netboard/Netboard A20/94D2C7F0ED24/OPNSENSE-22.1/13.0-STABLE/AMD64/4D8F19BA12>) |
+| 1022:1462 |           | AMD              | Family 17h (Models 00h-0fh) Data ... | 14    | hostb      | [4D8F19BA12](<Notebook/Deciso/Netboard/Netboard A20/94D2C7F0ED24/OPNSENSE-22.1/13.0-STABLE/AMD64/4D8F19BA12>) |
+| 1022:1463 |           | AMD              | Family 17h (Models 00h-0fh) Data ... | 14    | hostb      | [4D8F19BA12](<Notebook/Deciso/Netboard/Netboard A20/94D2C7F0ED24/OPNSENSE-22.1/13.0-STABLE/AMD64/4D8F19BA12>) |
+| 1022:1464 |           | AMD              | Family 17h (Models 00h-0fh) Data ... | 14    | hostb      | [4D8F19BA12](<Notebook/Deciso/Netboard/Netboard A20/94D2C7F0ED24/OPNSENSE-22.1/13.0-STABLE/AMD64/4D8F19BA12>) |
+| 1022:1465 |           | AMD              | Family 17h (Models 00h-0fh) Data ... | 14    | hostb      | [4D8F19BA12](<Notebook/Deciso/Netboard/Netboard A20/94D2C7F0ED24/OPNSENSE-22.1/13.0-STABLE/AMD64/4D8F19BA12>) |
+| 1022:1466 |           | AMD              | Family 17h (Models 00h-0fh) Data ... | 14    | hostb      | [4D8F19BA12](<Notebook/Deciso/Netboard/Netboard A20/94D2C7F0ED24/OPNSENSE-22.1/13.0-STABLE/AMD64/4D8F19BA12>) |
+| 1022:1467 |           | AMD              | Family 17h (Models 00h-0fh) Data ... | 14    | hostb      | [4D8F19BA12](<Notebook/Deciso/Netboard/Netboard A20/94D2C7F0ED24/OPNSENSE-22.1/13.0-STABLE/AMD64/4D8F19BA12>) |
+| 10de:0a82 |           | Nvidia           | MCP79 Host Bridge                    | 14    | hostb      | [D680290D84](<Notebook/Apple/MacBook6/MacBook6,1/B24103297D7A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/D680290D84>) |
+| 10de:0aa0 |           | Nvidia           | MCP79 PCI Express Bridge             | 14    | pcib       | [D680290D84](<Notebook/Apple/MacBook6/MacBook6,1/B24103297D7A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/D680290D84>) |
+| 10de:0aab | 10de:cb79 | Nvidia           | MCP79 PCI Bridge                     | 14    | pcib       | [D680290D84](<Notebook/Apple/MacBook6/MacBook6,1/B24103297D7A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/D680290D84>) |
+| 10de:0aae | 10de:cb79 | Nvidia           | MCP79 LPC Bridge                     | 14    | isab       | [D680290D84](<Notebook/Apple/MacBook6/MacBook6,1/B24103297D7A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/D680290D84>) |
+| 10de:0ac6 |           | Nvidia           | MCP79 PCI Express Bridge             | 14    | pcib       | [D680290D84](<Notebook/Apple/MacBook6/MacBook6,1/B24103297D7A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/D680290D84>) |
+| 8086:0154 | 17aa:21fa | Intel            | 3rd Gen Core processor DRAM Contr... | 14    | hostb      | [06C6A282CA](<Notebook/Lenovo/ThinkPad/ThinkPad X230 23254G7/FF7D8D42B37A/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/06C6A282CA>) |
+| 8086:1e10 | 17aa:21fa | Intel            | 7 Series/C216 Chipset Family PCI ... | 14    | pcib       | [06C6A282CA](<Notebook/Lenovo/ThinkPad/ThinkPad X230 23254G7/FF7D8D42B37A/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/06C6A282CA>) |
+| 8086:1e12 | 17aa:21fa | Intel            | 7 Series/C210 Series Chipset Fami... | 14    | pcib       | [06C6A282CA](<Notebook/Lenovo/ThinkPad/ThinkPad X230 23254G7/FF7D8D42B37A/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/06C6A282CA>) |
+| 8086:1e55 | 17aa:21fa | Intel            | QM77 Express Chipset LPC Controller  | 14    | isab       | [06C6A282CA](<Notebook/Lenovo/ThinkPad/ThinkPad X230 23254G7/FF7D8D42B37A/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/06C6A282CA>) |
+| 8086:2a40 | 17aa:20e0 | Intel            | Mobile 4 Series Chipset Memory Co... | 13    | hostb      | [384F10861A](<Notebook/Lenovo/ThinkPad/ThinkPad R500 2718W92/7F30077B1DE1/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/384F10861A>) |
+| 8086:9c10 | 8086:7270 | Intel            | 8 Series PCI Express Root Port 1     | 13    | pcib       | [974E1F4E5E](<Notebook/Others/Others/Others/499A7AC3FA34/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/974E1F4E5E>) |
+| 8086:9c12 | 8086:7270 | Intel            | 8 Series PCI Express Root Port 2     | 13    | pcib       | [974E1F4E5E](<Notebook/Others/Others/Others/499A7AC3FA34/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/974E1F4E5E>) |
+| 8086:9c14 | 8086:7270 | Intel            | 8 Series PCI Express Root Port 3     | 13    | pcib       | [974E1F4E5E](<Notebook/Others/Others/Others/499A7AC3FA34/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/974E1F4E5E>) |
+| 1022:1450 | 1022:1450 | AMD              | Family 17h (Models 00h-0fh) Root ... | 12    | hostb      | [4D8F19BA12](<Notebook/Deciso/Netboard/Netboard A20/94D2C7F0ED24/OPNSENSE-22.1/13.0-STABLE/AMD64/4D8F19BA12>) |
+| 1022:1510 | 1022:1510 | AMD              | Family 14h Processor Root Complex    | 12    | hostb      | [CC83218496](<Notebook/Acer/Aspire/Aspire E1-421/030AC00DD903/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/CC83218496>) |
+| 1022:157b |           | AMD              | Family 15h (Models 60h-6fh) Host ... | 12    | hostb      | [BC5296EE7D](<Notebook/Lenovo/V145-15AST/V145-15AST 81MT/62231723F9E7/FREEBSD-13.0/13.0-RELEASE/AMD64/BC5296EE7D>) |
+| 1022:157d |           | AMD              | Carrizo Audio Dummy Host Bridge      | 12    | hostb      | [BC5296EE7D](<Notebook/Lenovo/V145-15AST/V145-15AST 81MT/62231723F9E7/FREEBSD-13.0/13.0-RELEASE/AMD64/BC5296EE7D>) |
+| 1022:15d3 | 1022:1453 | AMD              | Raven/Raven2 PCIe GPP Bridge [6:0]   | 12    | pcib       | [8D4B342FDA](<Notebook/Dell/Inspiron/Inspiron 3505/4D47E92A2957/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/8D4B342FDA>) |
+| 8086:0104 | 17aa:21ce | Intel            | 2nd Generation Core Processor Fam... | 12    | hostb      | [8BD2318FB6](<Notebook/Lenovo/ThinkPad/ThinkPad T420 4236MBU/D2E0D93C2306/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/8BD2318FB6>) |
+| 8086:0a04 | 8086:0a04 | Intel            | Haswell-ULT DRAM Controller          | 12    | hostb      | [974E1F4E5E](<Notebook/Others/Others/Others/499A7AC3FA34/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/974E1F4E5E>) |
+| 8086:1604 | 17aa:2226 | Intel            | Broadwell-U Host Bridge -OPI         | 12    | hostb      | [4BA527DC9B](<Notebook/Lenovo/ThinkPad/ThinkPad X250 20CMCTO1WW/E6AE328AD30B/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/4BA527DC9B>) |
+| 8086:1c10 | 17aa:21ce | Intel            | 6 Series/C200 Series Chipset Fami... | 12    | pcib       | [8BD2318FB6](<Notebook/Lenovo/ThinkPad/ThinkPad T420 4236MBU/D2E0D93C2306/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/8BD2318FB6>) |
+| 8086:1c12 | 17aa:21ce | Intel            | 6 Series/C200 Series Chipset Fami... | 12    | pcib       | [8BD2318FB6](<Notebook/Lenovo/ThinkPad/ThinkPad T420 4236MBU/D2E0D93C2306/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/8BD2318FB6>) |
+| 8086:1c18 | 17aa:21ce | Intel            | 6 Series/C200 Series Chipset Fami... | 12    | pcib       | [8BD2318FB6](<Notebook/Lenovo/ThinkPad/ThinkPad T420 4236MBU/D2E0D93C2306/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/8BD2318FB6>) |
+| 8086:1c4f | 17aa:21ce | Intel            | QM67 Express Chipset LPC Controller  | 12    | isab       | [8BD2318FB6](<Notebook/Lenovo/ThinkPad/ThinkPad T420 4236MBU/D2E0D93C2306/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/8BD2318FB6>) |
 
 ### Card reader (PCI)
 
-| ID        | Subsystem | MFG        | Name                         | Count | Driver     | Probe      |
-|-----------|-----------|------------|------------------------------|-------|------------|------------|
-| 10ec:5227 | 17aa:220e | Realtek... | RTS5227 PCI Express Card ... | 6     | rtsx       | 7660F9B6DB |
-| 10ec:5227 | 17aa:2226 | Realtek... | RTS5227 PCI Express Card ... | 6     | rtsx       | 107AC19795 |
-| 10ec:5227 | 17aa:5034 | Realtek... | RTS5227 PCI Express Card ... | 6     | rtsx       | AC567BD12D |
-| 10ec:522a | 17aa:5062 | Realtek... | RTS522A PCI Express Card ... | 5     | rtsx       | 88C27E65D7 |
-| 1217:8520 | 1028:05ca | O2 Micro   | SD/MMC Card Reader Contro... | 5     | sdhci_pci  | 1DBD9A5CEE |
-| 10ec:525a | 17aa:2238 | Realtek... | RTS525A PCI Express Card ... | 4     | rtsx       | 821C81E652 |
-| 10ec:5227 | 10cf:187f | Realtek... | RTS5227 PCI Express Card ... | 3     | rtsx       | BCB99D0F09 |
-| 10ec:5227 | 17aa:220c | Realtek... | RTS5227 PCI Express Card ... | 3     |            | B644ED3914 |
-| 10ec:5227 | 17aa:2214 | Realtek... | RTS5227 PCI Express Card ... | 3     |            | CBFA45FE44 |
-| 10ec:522a | 103c:8079 | Realtek... | RTS522A PCI Express Card ... | 3     | rtsx       | 2B97986DE1 |
-| 10ec:522a | 17aa:2279 | Realtek... | RTS522A PCI Express Card ... | 3     |            | 6311D603FF |
-| 10ec:522a | 17aa:5122 | Realtek... | RTS522A PCI Express Card ... | 3     | rtsx       | 2F1BA02130 |
-| 10ec:525a | 1028:06df | Realtek... | RTS525A PCI Express Card ... | 3     |            | C8477DA717 |
-| 10ec:525a | 17aa:224f | Realtek... | RTS525A PCI Express Card ... | 3     | rtsx       | 4993AD0FEB |
-| 10ec:5209 | 103c:3577 | Realtek... | RTS5209 PCI Express Card ... | 2     |            | F83C769501 |
-| 10ec:5209 | 104d:90b8 | Realtek... | RTS5209 PCI Express Card ... | 2     | rtsx       | 64F3F02018 |
-| 10ec:5227 | 103c:1991 | Realtek... | RTS5227 PCI Express Card ... | 2     | rtsx       | 565343B334 |
-| 10ec:5227 | 103c:2246 | Realtek... | RTS5227 PCI Express Card ... | 2     | rtsx       | DA49561A8F |
-| 10ec:5227 | 17aa:2217 | Realtek... | RTS5227 PCI Express Card ... | 2     | rtsx       | E9155D12C7 |
-| 10ec:522a | 103c:8257 | Realtek... | RTS522A PCI Express Card ... | 2     |            | BB8BEB97BE |
-| 10ec:522a | 10ec:522a | Realtek... | RTS522A PCI Express Card ... | 2     | rtsx       | 0BD96EF663 |
-| 10ec:522a | 1558:a500 | Realtek... | RTS522A PCI Express Card ... | 2     | rtsx       | 792FB07DD9 |
-| 10ec:522a | 17aa:504a | Realtek... | RTS522A PCI Express Card ... | 2     |            | AA3DEADEDD |
-| 10ec:522a | 17aa:5050 | Realtek... | RTS522A PCI Express Card ... | 2     |            | DDC907CCF4 |
-| 10ec:522a | 17aa:5053 | Realtek... | RTS522A PCI Express Card ... | 2     | rtsx       | A069A19A1B |
-| 10ec:522a | 17aa:5072 | Realtek... | RTS522A PCI Express Card ... | 2     | rtsx       | 852A900303 |
-| 10ec:522a | 17aa:5082 | Realtek... | RTS522A PCI Express Card ... | 2     | rtsx       | ED75B3D15B |
-| 10ec:525a | 1028:06de | Realtek... | RTS525A PCI Express Card ... | 2     |            | AF72876FD2 |
-| 10ec:525a | 1028:075b | Realtek... | RTS525A PCI Express Card ... | 2     |            | 1887B030C4 |
-| 10ec:525a | 1028:08b8 | Realtek... | RTS525A PCI Express Card ... | 2     | rtsx       | B9D1F08BCF |
-| 10ec:5286 | 1043:202f | Realtek... | RTL8402 Integrated 1-LUN ... | 2     | rtsx       | CFC7D86B5A |
-| 10ec:5287 | 1025:0865 | Realtek... | RTL8411B PCI Express Card... | 2     |            | E2B6DBFE40 |
-| 10ec:5287 | 1043:202f | Realtek... | RTL8411B PCI Express Card... | 2     | rtsx       | E056F1C77C |
-| 10ec:5287 | 1558:1313 | Realtek... | RTL8411B PCI Express Card... | 2     |            | C23A22A72D |
-| 10ec:5287 | 1558:8509 | Realtek... | RTL8411B PCI Express Card... | 2     | rtsx       | E84B5B6E5F |
-| 10ec:5209 | 1025:061f | Realtek... | RTS5209 PCI Express Card ... | 1     |            | 41D2974F13 |
-| 10ec:5209 | 104d:908a | Realtek... | RTS5209 PCI Express Card ... | 1     |            | 7D48BD3606 |
-| 10ec:5209 | 104d:90ac | Realtek... | RTS5209 PCI Express Card ... | 1     |            | 9A751DDFD8 |
-| 10ec:5227 | 103c:2101 | Realtek... | RTS5227 PCI Express Card ... | 1     | rtsx       | 6BC6C5B2BF |
-| 10ec:5227 | 103c:2247 | Realtek... | RTS5227 PCI Express Card ... | 1     |            | 63038D613F |
-| 10ec:5229 | 103c:1818 | Realtek... | RTS5229 PCI Express Card ... | 1     | rtsx       | 4637A9EEFF |
-| 10ec:5229 | 103c:1885 | Realtek... | RTS5229 PCI Express Card ... | 1     | rtsx       | AE2DE01D19 |
-| 10ec:5229 | 103c:22cd | Realtek... | RTS5229 PCI Express Card ... | 1     |            | 861BDC647D |
-| 10ec:5229 | 1043:202f | Realtek... | RTS5229 PCI Express Card ... | 1     |            | DC7BB56859 |
-| 10ec:5229 | 10cf:176b | Realtek... | RTS5229 PCI Express Card ... | 1     |            | 37245ACA21 |
-| 10ec:5229 | 10f7:8338 | Realtek... | RTS5229 PCI Express Card ... | 1     |            | 6BBADBA65D |
-| 10ec:5229 | 1179:f840 | Realtek... | RTS5229 PCI Express Card ... | 1     | rtsx       | 9CF9861053 |
-| 10ec:5229 | 1179:ff1e | Realtek... | RTS5229 PCI Express Card ... | 1     |            | 9FB68E38D8 |
-| 10ec:5229 | 1558:6588 | Realtek... | RTS5229 PCI Express Card ... | 1     | rtsx       | 90D705DD1E |
-| 10ec:5229 | 17aa:21f7 | Realtek... | RTS5229 PCI Express Card ... | 1     |            | 520982317E |
-| 10ec:5229 | 17aa:3809 | Realtek... | RTS5229 PCI Express Card ... | 1     |            | D598CC6240 |
-| 10ec:522a | 103c:80fd | Realtek... | RTS522A PCI Express Card ... | 1     |            | B6C63EA3F8 |
-| 10ec:522a | 103c:820d | Realtek... | RTS522A PCI Express Card ... | 1     |            | 42ECF97502 |
-| 10ec:522a | 103c:8234 | Realtek... | RTS522A PCI Express Card ... | 1     | rtsx       | F808E6BB4A |
-| 10ec:522a | 103c:8364 | Realtek... | RTS522A PCI Express Card ... | 1     | rtsx       | 9DD5A9EEEF |
-| 10ec:522a | 103c:8730 | Realtek... | RTS522A PCI Express Card ... | 1     | rtsx       | DD877E6C6C |
-| 10ec:522a | 17aa:2233 | Realtek... | RTS522A PCI Express Card ... | 1     |            | 8325C794B3 |
-| 10ec:522a | 17aa:2286 | Realtek... | RTS522A PCI Express Card ... | 1     | rtsx       | 0919D8936F |
-| 10ec:522a | 17aa:22aa | Realtek... | RTS522A PCI Express Card ... | 1     | rtsx       | 12C985B708 |
-| 10ec:522a | 17aa:3811 | Realtek... | RTS522A PCI Express Card ... | 1     |            | B6AE43880D |
-| 10ec:522a | 17aa:5048 | Realtek... | RTS522A PCI Express Card ... | 1     | rtsx       | 0A6985F078 |
-| 10ec:522a | 17aa:505d | Realtek... | RTS522A PCI Express Card ... | 1     |            | CBAA19611E |
-| 10ec:522a | 17aa:505f | Realtek... | RTS522A PCI Express Card ... | 1     |            | B17963CD30 |
-| 10ec:522a | 17aa:5124 | Realtek... | RTS522A PCI Express Card ... | 1     |            | A1FC75A9B7 |
-| 10ec:522a | 17aa:5125 | Realtek... | RTS522A PCI Express Card ... | 1     |            | 0F7FDFB5F8 |
-| 10ec:522a | 17aa:5126 | Realtek... | RTS522A PCI Express Card ... | 1     |            | CD016E96EE |
-| 10ec:522a | 17aa:5127 | Realtek... | RTS522A PCI Express Card ... | 1     | rtsx       | 0E5E228D18 |
-| 10ec:522a | 1854:0300 | Realtek... | RTS522A PCI Express Card ... | 1     |            | D8EE6BC4E3 |
-| 10ec:5249 | 103c:1909 | Realtek... | RTS5249 PCI Express Card ... | 1     |            | 3E9076F244 |
-| 10ec:5249 | 103c:2255 | Realtek... | RTS5249 PCI Express Card ... | 1     |            | D615B5020D |
-| 10ec:5249 | 1462:1113 | Realtek... | RTS5249 PCI Express Card ... | 1     |            | 35AD1FB80B |
-| 10ec:5249 | 17aa:3801 | Realtek... | RTS5249 PCI Express Card ... | 1     |            | B65CD3D698 |
-| 10ec:525a | 1028:06e5 | Realtek... | RTS525A PCI Express Card ... | 1     | rtsx       | 063D746A48 |
-| 10ec:525a | 1028:071b | Realtek... | RTS525A PCI Express Card ... | 1     | rtsx       | 8EC8D28024 |
-| 10ec:525a | 1028:079f | Realtek... | RTS525A PCI Express Card ... | 1     |            | DEFAEE0E5C |
-| 10ec:525a | 1028:07a0 | Realtek... | RTS525A PCI Express Card ... | 1     | rtsx       | 9C8BD9C479 |
-| 10ec:525a | 1028:07a6 | Realtek... | RTS525A PCI Express Card ... | 1     | rtsx       | B84364959D |
-| 10ec:525a | 1028:07a7 | Realtek... | RTS525A PCI Express Card ... | 1     |            | 9B38A72DD4 |
-| 10ec:525a | 1028:07a8 | Realtek... | RTS525A PCI Express Card ... | 1     | rtsx       | F967516613 |
-| 10ec:525a | 1028:07be | Realtek... | RTS525A PCI Express Card ... | 1     |            | 687008DA4F |
-| 10ec:525a | 1028:07bf | Realtek... | RTS525A PCI Express Card ... | 1     | rtsx       | 7D5F7B5033 |
-| 10ec:525a | 1028:07f3 | Realtek... | RTS525A PCI Express Card ... | 1     |            | 1AA2A3A541 |
-| 10ec:525a | 1028:0816 | Realtek... | RTS525A PCI Express Card ... | 1     | rtsx       | 3FBA47B07F |
-| 10ec:525a | 1028:0819 | Realtek... | RTS525A PCI Express Card ... | 1     |            | DADF2C296F |
-| 10ec:525a | 1028:081a | Realtek... | RTS525A PCI Express Card ... | 1     |            | 9D900F918C |
-| 10ec:525a | 1028:081b | Realtek... | RTS525A PCI Express Card ... | 1     | rtsx       | 2AD87768AF |
-| 10ec:525a | 1028:081c | Realtek... | RTS525A PCI Express Card ... | 1     |            | B1D5E8C619 |
-| 10ec:525a | 1028:082a | Realtek... | RTS525A PCI Express Card ... | 1     |            | F8BFC70F13 |
-| 10ec:525a | 1028:087c | Realtek... | RTS525A PCI Express Card ... | 1     |            | 91C4A075A1 |
-| 10ec:525a | 1028:08b9 | Realtek... | RTS525A PCI Express Card ... | 1     | rtsx       | 2538B038ED |
-| 10ec:525a | 1028:091a | Realtek... | RTS525A PCI Express Card ... | 1     |            | D07A4DC2C7 |
-| 10ec:525a | 1028:096d | Realtek... | RTS525A PCI Express Card ... | 1     | rtsx       | 7C1EFA11B9 |
-| 10ec:525a | 1028:09a1 | Realtek... | RTS525A PCI Express Card ... | 1     | rtsx       | 7DEF696A61 |
-| 10ec:525a | 103c:8270 | Realtek... | RTS525A PCI Express Card ... | 1     |            | 40AD0612DE |
-| 10ec:525a | 10ec:525a | Realtek... | RTS525A PCI Express Card ... | 1     |            | F8F9140D92 |
-| 10ec:525a | 1558:65d1 | Realtek... | RTS525A PCI Express Card ... | 1     |            | 95434CBF80 |
-| 10ec:525a | 17aa:222e | Realtek... | RTS525A PCI Express Card ... | 1     |            | D8CF9E878E |
-| 10ec:525a | 17aa:224d | Realtek... | RTS525A PCI Express Card ... | 1     |            | 81EFA4B3D3 |
-| 10ec:525a | 17aa:225f | Realtek... | RTS525A PCI Express Card ... | 1     | rtsx       | 676F16AC86 |
-| 10ec:525a | 17aa:2297 | Realtek... | RTS525A PCI Express Card ... | 1     |            | 50BA4DEA40 |
+| ID        | Subsystem | MFG              | Name                                 | Count | Driver     | Probe |
+|-----------|-----------|------------------|--------------------------------------|-------|------------|-------|
+| 10ec:5227 | 17aa:2226 | Realtek Semic... | RTS5227 PCI Express Card Reader      | 10    | rtsx       | [4AE2360503](<Notebook/Lenovo/ThinkPad/ThinkPad X250 20CL001GUS/AB333C060A09/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/4AE2360503>) |
+| 10ec:5227 | 17aa:220e | Realtek Semic... | RTS5227 PCI Express Card Reader      | 9     | rtsx       | [CBA9255F4A](<Notebook/Lenovo/ThinkPad/ThinkPad T440p 20AWS1JN00/4F89B9A156FF/FREEBSD-13.0/13.0-RELEASE/AMD64/CBA9255F4A>) |
+| 10ec:5227 | 17aa:220c | Realtek Semic... | RTS5227 PCI Express Card Reader      | 8     | rtsx       | [2AF47B6502](<Notebook/Lenovo/ThinkPad/ThinkPad T440s 20AQ006HUS/5B022BB303EA/NOMADBSD-5806F915/13.0-RELEASE/AMD64/2AF47B6502>) |
+| 10ec:5227 | 17aa:5034 | Realtek Semic... | RTS5227 PCI Express Card Reader      | 8     | rtsx       | [BC2860431E](<Notebook/Lenovo/ThinkPad/ThinkPad T450 20BUS0VH08/CDAB4EDF622D/GHOSTBSD-22.01.12/13.0-STABLE/AMD64/BC2860431E>) |
+| 10ec:522a | 17aa:5062 | Realtek Semic... | RTS522A PCI Express Card Reader      | 7     | rtsx       | [2E1C585715](<Notebook/Lenovo/ThinkPad/ThinkPad X270 W10DG 20K5S0BM01/C223E0B01844/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/2E1C585715>) |
+| 1217:8520 | 1028:05ca | O2 Micro         | SD/MMC Card Reader Controller        | 6     | sdhci_pci  | [762D8366D0](<Notebook/Dell/Latitude/Latitude E7240/B8876AE6AF27/FREEBSD-13.0-RC4/13.0-RC4/AMD64/762D8366D0>) |
+| 10ec:5227 | 17aa:2214 | Realtek Semic... | RTS5227 PCI Express Card Reader      | 5     | rtsx       | [66CFDD2419](<Notebook/Lenovo/ThinkPad/ThinkPad X240 20AMS2QDOC/958035AEAC5C/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/66CFDD2419>) |
+| 10ec:522a | 103c:8079 | Realtek Semic... | RTS522A PCI Express Card Reader      | 5     | rtsx       | [F259F73C17](<Notebook/Hewlett-Packard/EliteBook/EliteBook 840 G3/372FB522FD12/OPNSENSE-22.1/13.0-STABLE/AMD64/F259F73C17>) |
+| 10ec:5227 | 10cf:187f | Realtek Semic... | RTS5227 PCI Express Card Reader      | 4     | rtsx       | [C501C5C75E](<Notebook/Fujitsu/LIFEBOOK/LIFEBOOK A555/233E8905DCE8/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/C501C5C75E>) |
+| 10ec:522a | 17aa:5053 | Realtek Semic... | RTS522A PCI Express Card Reader      | 4     | rtsx       | [DEAC163B52](<Notebook/Lenovo/ThinkPad/ThinkPad T460 20FNCTO1WW/88EC95397971/OPNSENSE-22.1.1/13.0-STABLE/AMD64/DEAC163B52>) |
+| 10ec:525a | 1028:06de | Realtek Semic... | RTS525A PCI Express Card Reader      | 4     | rtsx       | [9E479E9C50](<Notebook/Dell/Latitude/Latitude E5470/A17BA6584F09/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/9E479E9C50>) |
+| 10ec:525a | 17aa:2238 | Realtek Semic... | RTS525A PCI Express Card Reader      | 4     | rtsx       | [821C81E652](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 4th 20FB001XAU/5B2B74D5C2AB/NOMADBSD-1.4/12.2-RELEASE-P4/AMD64/821C81E652>) |
+| 10ec:5227 | 103c:1991 | Realtek Semic... | RTS5227 PCI Express Card Reader      | 3     | rtsx       | [362940ACBB](<Notebook/Hewlett-Packard/EliteBook/EliteBook 820 G1/43570E209C4E/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/362940ACBB>) |
+| 10ec:522a | 10ec:522a | Realtek Semic... | RTS522A PCI Express Card Reader      | 3     | rtsx       | [713B33351F](<Notebook/System76/Lemur/Lemur Pro/FB3C4199D24B/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/713B33351F>) |
+| 10ec:522a | 17aa:2279 | Realtek Semic... | RTS522A PCI Express Card Reader      | 3     |            | [6311D603FF](<Notebook/Lenovo/ThinkPad/ThinkPad T490 20N3X50500/5086A4A15BC2/FREEBSD-12.2-STABLE/12.2-STABLE/AMD64/6311D603FF>) |
+| 10ec:522a | 17aa:5050 | Realtek Semic... | RTS522A PCI Express Card Reader      | 3     | rtsx       | [3EF1595AF6](<Notebook/Lenovo/ThinkPad/ThinkPad T460p 20FXS09D11/AEEBF4FDEE51/FREEBSD-13.0-P6/13.0-RELEASE-P4/AMD64/3EF1595AF6>) |
+| 10ec:522a | 17aa:5082 | Realtek Semic... | RTS522A PCI Express Card Reader      | 3     | rtsx       | [D028FC63D4](<Notebook/Lenovo/ThinkPad/ThinkPad P14s Gen 1 20Y1002AFR/CFF1A3F59309/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/D028FC63D4>) |
+| 10ec:522a | 17aa:5122 | Realtek Semic... | RTS522A PCI Express Card Reader      | 3     | rtsx       | [0C153D0C98](<Notebook/Lenovo/ThinkPad/ThinkPad A485 20MU000VUS/0748151D3905/MIDNIGHTBSD-2.1.1/2.1.1/AMD64/0C153D0C98>) |
+| 10ec:5249 | 17aa:3801 | Realtek Semic... | RTS5249 PCI Express Card Reader      | 3     | rtsx       | [1FEB455E8C](<Notebook/Lenovo/Y50-70/Y50-70 20378/45CB117B153A/OPNSENSE-21.7.7/12.1-RELEASE-P19-HBSD/AMD64/1FEB455E8C>) |
+| 10ec:525a | 1028:06df | Realtek Semic... | RTS525A PCI Express Card Reader      | 3     |            | [C8477DA717](<Notebook/Dell/Latitude/Latitude E5570/5EFE1EB32C53/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/C8477DA717>) |
+| 10ec:525a | 1028:079f | Realtek Semic... | RTS525A PCI Express Card Reader      | 3     | rtsx       | [089B61BB38](<Notebook/Dell/Latitude/Latitude 7280/E9E3F30F4DB0/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/089B61BB38>) |
+| 10ec:525a | 1028:08b8 | Realtek Semic... | RTS525A PCI Express Card Reader      | 3     | rtsx       | [1BB6C1F63F](<Notebook/Dell/Latitude/Latitude 5400/418002D1A36C/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/1BB6C1F63F>) |
+| 10ec:525a | 17aa:224f | Realtek Semic... | RTS525A PCI Express Card Reader      | 3     | rtsx       | [4993AD0FEB](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 5th 20HQS1QC00/BB184D2CE6FD/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/4993AD0FEB>) |
+| 10ec:5287 | 1043:202f | Realtek Semic... | RTL8411B PCI Express Card Reader     | 3     | rtsx       | [5624C69D4B](<Notebook/ASUSTek Computer/G551/G551JW/B7E7048EB864/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/5624C69D4B>) |
+| 10ec:5209 | 103c:3577 | Realtek Semic... | RTS5209 PCI Express Card Reader      | 2     |            | [F83C769501](<Notebook/Hewlett-Packard/2000/2000/5F42EBFDBCAE/FREEBSD-12.2/12.2-RELEASE/AMD64/F83C769501>) |
+| 10ec:5209 | 104d:90b8 | Realtek Semic... | RTS5209 PCI Express Card Reader      | 2     | rtsx       | [64F3F02018](<Notebook/Sony/SVF1421/SVF1421DSGW/D451EB9DE7D3/FREEBSD-13.0/13.0-RELEASE/AMD64/64F3F02018>) |
+| 10ec:5227 | 103c:2246 | Realtek Semic... | RTS5227 PCI Express Card Reader      | 2     | rtsx       | [DA49561A8F](<Notebook/Hewlett-Packard/ProBook/ProBook 430 G2/0B9FDF5DA838/FREEBSD-12.1-P4/12.1-RELEASE-P3/AMD64/DA49561A8F>) |
+| 10ec:5227 | 1179:0001 | Realtek Semic... | RTS5227 PCI Express Card Reader      | 2     |            | [D498FCD3F8](<Notebook/Toshiba/TECRA/TECRA Z40-B/5E426A8E8D03/FREEBSD-11.4-P7/11.4-RELEASE-P7/AMD64/D498FCD3F8>) |
+| 10ec:5227 | 17aa:2217 | Realtek Semic... | RTS5227 PCI Express Card Reader      | 2     | rtsx       | [39EF89F214](<Notebook/Lenovo/ThinkPad/ThinkPad S1 Yoga 20C0S0M300/DC2E490F82F3/NOMADBSD-5806F915/13.0-RELEASE-P3/AMD64/39EF89F214>) |
+| 10ec:5227 | 17aa:503c | Realtek Semic... | RTS5227 PCI Express Card Reader      | 2     | rtsx       | [3C27C8BF31](<Notebook/Lenovo/ThinkPad/ThinkPad L450 20DSS1S402/0FD1E037978C/HELLOSYSTEM-0.7.0/13.0-RELEASE-P4/AMD64/3C27C8BF31>) |
+| 10ec:5229 | 1043:202f | Realtek Semic... | RTS5229 PCI Express Card Reader      | 2     |            | [1697EBB0A5](<Notebook/ASUSTek Computer/Strix/Strix 17 GL703GE/BAA0EBC7F5C2/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/1697EBB0A5>) |
+| 10ec:5229 | 17aa:21f3 | Realtek Semic... | RTS5229 PCI Express Card Reader      | 2     | rtsx       | [86FD351C81](<Notebook/Lenovo/ThinkPad/ThinkPad T430 2349AK1/08273574C200/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/86FD351C81>) |
+| 10ec:5229 | 17aa:38cc | Realtek Semic... | RTS5229 PCI Express Card Reader      | 2     | rtsx       | [2F90D5C2BD](<Notebook/Lenovo/IdeaPad/IdeaPad 110S-11IBR 80WG/1319E554F9F6/HELLOSYSTEM-0.7.0/13.0-RELEASE-P7/AMD64/2F90D5C2BD>) |
+| 10ec:5229 | 17aa:5000 | Realtek Semic... | RTS5229 PCI Express Card Reader      | 2     | rtsx       | [990E05C219](<Notebook/Lenovo/ThinkPad/ThinkPad Edge E430 3254A68/6BEC68E32ADC/FREEBSD-13.0/13.0-RELEASE/AMD64/990E05C219>) |
+| 10ec:522a | 103c:8257 | Realtek Semic... | RTS522A PCI Express Card Reader      | 2     |            | [ABC94E9198](<Notebook/Hewlett-Packard/OMEN/OMEN by HP Laptop/BFE1823EBDF1/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/ABC94E9198>) |
+| 10ec:522a | 103c:8730 | Realtek Semic... | RTS522A PCI Express Card Reader      | 2     | rtsx       | [494195B923](<Notebook/Hewlett-Packard/ProBook/ProBook 445 G7/06DE97DEA747/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/494195B923>) |
+| 10ec:522a | 1558:a500 | Realtek Semic... | RTS522A PCI Express Card Reader      | 2     | rtsx       | [792FB07DD9](<Notebook/Notebook/NL5/NL5xRU/5E9A5B67425F/FREEBSD-13.0/13.0-RELEASE/AMD64/792FB07DD9>) |
+| 10ec:522a | 17aa:2233 | Realtek Semic... | RTS522A PCI Express Card Reader      | 2     | rtsx       | [DBB0E378D5](<Notebook/Lenovo/ThinkPad/ThinkPad T460s 20FAS4KH02/DCA0C34D1413/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/DBB0E378D5>) |
+| 10ec:522a | 17aa:504a | Realtek Semic... | RTS522A PCI Express Card Reader      | 2     |            | [AA3DEADEDD](<Notebook/Lenovo/ThinkPad/ThinkPad X260 20F5S82N00/610D0A3E578D/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/AA3DEADEDD>) |
+| 10ec:522a | 17aa:505d | Realtek Semic... | RTS522A PCI Express Card Reader      | 2     | rtsx       | [7A61D90A55](<Notebook/Lenovo/ThinkPad/ThinkPad T470p 20J7S0PM00/61DA2865ABE8/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/7A61D90A55>) |
+| 10ec:522a | 17aa:505f | Realtek Semic... | RTS522A PCI Express Card Reader      | 2     | rtsx       | [32080A81C5](<Notebook/Lenovo/ThinkPad/ThinkPad L470 20J40013US/A39BB2DC9412/FREEBSD-13.0-P5/13.0-RELEASE-P5/AMD64/32080A81C5>) |
+| 10ec:522a | 17aa:5072 | Realtek Semic... | RTS522A PCI Express Card Reader      | 2     | rtsx       | [852A900303](<Notebook/Lenovo/ThinkPad/ThinkPad E490 20N9001SBR/5158B613D693/FREEBSD-13.0/13.0-RELEASE/AMD64/852A900303>) |
+| 10ec:522a | 17aa:5126 | Realtek Semic... | RTS522A PCI Express Card Reader      | 2     | rtsx       | [D7812A2905](<Notebook/Lenovo/ThinkPad/ThinkPad X395 20NL000GPG/878AD42630E7/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/D7812A2905>) |
+| 10ec:5249 | 1028:0665 | Realtek Semic... | RTS5249 PCI Express Card Reader      | 2     | rtsx       | [227C2380D0](<Notebook/Dell/XPS/XPS 13 9343/66E139D7EEBA/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/227C2380D0>) |
+| 10ec:5249 | 103c:2255 | Realtek Semic... | RTS5249 PCI Express Card Reader      | 2     | rtsx       | [F2D911563A](<Notebook/Hewlett-Packard/ZBook/ZBook 17 G2/2EA77AA55D11/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/F2D911563A>) |
+| 10ec:525a | 1028:06da | Realtek Semic... | RTS525A PCI Express Card Reader      | 2     |            | [F0BEBC2B21](<Notebook/Dell/Precision/Precision 7710/E6AAE60B4973/FREEBSD-12.2-P10/12.2-RELEASE-P7/AMD64/F0BEBC2B21>) |
+| 10ec:525a | 1028:075b | Realtek Semic... | RTS525A PCI Express Card Reader      | 2     |            | [1887B030C4](<Notebook/Dell/XPS/XPS 13 9360/2E434050665D/FREEBSD-12.1-P5/12.1-RELEASE-P5/AMD64/1887B030C4>) |
+| 10ec:525a | 1028:07a0 | Realtek Semic... | RTS525A PCI Express Card Reader      | 2     | rtsx       | [8A0388B49D](<Notebook/Dell/Latitude/Latitude 7480/720DC2256764/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/8A0388B49D>) |
+| 10ec:525a | 1028:07f3 | Realtek Semic... | RTS525A PCI Express Card Reader      | 2     | rtsx       | [590B374836](<Notebook/Dell/Latitude/Latitude 7380/FE02391BB20C/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/590B374836>) |
+| 10ec:525a | 1028:0816 | Realtek Semic... | RTS525A PCI Express Card Reader      | 2     | rtsx       | [F0F4370A9C](<Notebook/Dell/Latitude/Latitude 5490/BC8882AB50AA/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/F0F4370A9C>) |
+| 10ec:525a | 1028:087c | Realtek Semic... | RTS525A PCI Express Card Reader      | 2     | rtsx       | [EE8980FEC1](<Notebook/Dell/XPS/XPS 15 9570/9A64E9C4BBC5/FREEBSD-13.0-P4/13.0-RELEASE/AMD64/EE8980FEC1>) |
+| 10ec:525a | 1028:09a1 | Realtek Semic... | RTS525A PCI Express Card Reader      | 2     | rtsx       | [A620D284CB](<Notebook/Dell/Latitude/Latitude 5510/9741CEB43BDE/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/A620D284CB>) |
+| 10ec:525a | 17aa:224d | Realtek Semic... | RTS525A PCI Express Card Reader      | 2     | rtsx       | [E4F43CFCAD](<Notebook/Lenovo/ThinkPad/ThinkPad P51 20HHCTO1WW/771FB79FBCC7/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/E4F43CFCAD>) |
+| 10ec:525a | 17aa:2297 | Realtek Semic... | RTS525A PCI Express Card Reader      | 2     | rtsx       | [5B08C1DE3D](<Notebook/Lenovo/ThinkPad/ThinkPad P53 20QNCTO1WW/EDACF56B05E1/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/5B08C1DE3D>) |
+| 10ec:5286 | 1043:202f | Realtek Semic... | RTL8402 Integrated 1-LUN Card Reader | 2     | rtsx       | [CFC7D86B5A](<Notebook/ASUSTek Computer/X553/X553MA/FD95F43CF9C9/FREEBSD-12.2/12.2-RELEASE/AMD64/CFC7D86B5A>) |
+| 10ec:5286 | 10ec:5286 | Realtek Semic... | RTL8402 Integrated 1-LUN Card Reader | 2     | rtsx       | [FA809BE73F](<Notebook/ASUSTek Computer/X540/X540LA/6340A9084F59/HELLOSYSTEM-0.7.0/13.0-RELEASE-P4/AMD64/FA809BE73F>) |
+| 10ec:5287 | 1025:0865 | Realtek Semic... | RTL8411B PCI Express Card Reader     | 2     | rtsx       | [5306253276](<Notebook/Acer/Aspire/Aspire E5-521G/6C9872FCA376/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/5306253276>) |
+| 10ec:5287 | 1558:1313 | Realtek Semic... | RTL8411B PCI Express Card Reader     | 2     |            | [C23A22A72D](<Notebook/Schenker/N13/N13xWU/37D6E56C1169/FREEBSD-12.2/12.2-RELEASE/AMD64/C23A22A72D>) |
+| 10ec:5287 | 1558:1403 | Realtek Semic... | RTL8411B PCI Express Card Reader     | 2     | rtsx       | [EBE0575F31](<Notebook/System76/Galago/Galago Pro/25605F0322E6/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/EBE0575F31>) |
+| 10ec:5287 | 1558:1404 | Realtek Semic... | RTL8411B PCI Express Card Reader     | 2     | rtsx       | [F99C9F56B7](<Notebook/System76/Darter/Darter Pro/0CE03E6D5308/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/F99C9F56B7>) |
+| 10ec:5287 | 1558:8509 | Realtek Semic... | RTL8411B PCI Express Card Reader     | 2     | rtsx       | [E84B5B6E5F](<Notebook/Notebook/N85/N85_N87HCHNHZ/28CF5209C334/FREEBSD-13.0-RC2/13.0-RC2/AMD64/E84B5B6E5F>) |
+| 10ec:5289 | 1043:1457 | Realtek Semic... | RTL8411 PCI Express Card Reader      | 2     | rtsx       | [6896C37580](<Notebook/ASUSTek Computer/K55/K55VD/C1EA30F11932/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/6896C37580>) |
+| 10ec:5209 | 1025:0574 | Realtek Semic... | RTS5209 PCI Express Card Reader      | 1     | rtsx       | [46204B90D0](<Notebook/Acer/TravelMate/TravelMate 5760G/4E387A733CF9/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/46204B90D0>) |
+| 10ec:5209 | 1025:061f | Realtek Semic... | RTS5209 PCI Express Card Reader      | 1     |            | [41D2974F13](<Notebook/Acer/AOD/AOD270/24B69621358B/FREEBSD-12.0-P13/12.0-RELEASE-P13/AMD64/41D2974F13>) |
+| 10ec:5209 | 103c:169b | Realtek Semic... | RTS5209 PCI Express Card Reader      | 1     | rtsx       | [9754BC2E72](<Notebook/Hewlett-Packard/Pavilion/Pavilion g6/5DCE7C1D9730/GHOSTBSD-20.04.02/13.0-STABLE/AMD64/9754BC2E72>) |
+| 10ec:5209 | 103c:3672 | Realtek Semic... | RTS5209 PCI Express Card Reader      | 1     |            | [B97D9FF563](<Notebook/Hewlett-Packard/Presario/Presario CQ43/6EDDA0CDBFF4/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/B97D9FF563>) |
+| 10ec:5209 | 104d:908a | Realtek Semic... | RTS5209 PCI Express Card Reader      | 1     |            | [7D48BD3606](<Notebook/Sony/VPCEG17/VPCEG17FB/527E0423C0EA/FREEBSD-12.1-P7/12.1-RELEASE-P7/AMD64/7D48BD3606>) |
+| 10ec:5209 | 104d:908b | Realtek Semic... | RTS5209 PCI Express Card Reader      | 1     |            | [C471FB3F82](<Notebook/Sony/VPCEJ1/VPCEJ1E1E/1C00C45345FC/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/C471FB3F82>) |
+| 10ec:5209 | 104d:909b | Realtek Semic... | RTS5209 PCI Express Card Reader      | 1     |            | [A366B5FAB3](<Notebook/Sony/SVS1511/SVS1511AJB/3D112813F189/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/A366B5FAB3>) |
+| 10ec:5209 | 104d:90ac | Realtek Semic... | RTS5209 PCI Express Card Reader      | 1     |            | [9A751DDFD8](<Notebook/Sony/SVE1713/SVE1713S1RW/506CDC50E671/NOMADBSD-1.3.1/12.1-RELEASE-P2/AMD64/9A751DDFD8>) |
+| 10ec:5209 | 17aa:21dd | Realtek Semic... | RTS5209 PCI Express Card Reader      | 1     |            | [7905093412](<Notebook/Lenovo/ThinkPad/ThinkPad L520 78594KM/D86C998D6091/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/7905093412>) |
+| 10ec:5209 | 17aa:500c | Realtek Semic... | RTS5209 PCI Express Card Reader      | 1     |            | [8619BCCA35](<Notebook/Lenovo/ThinkPad/ThinkPad T430u 3352AA5/2699755F9CE5/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/8619BCCA35>) |
+| 10ec:5227 | 103c:1992 | Realtek Semic... | RTS5227 PCI Express Card Reader      | 1     | rtsx       | [DA312D7C14](<Notebook/Hewlett-Packard/ProBook/ProBook 655 G1/44DD2D53372C/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/DA312D7C14>) |
+| 10ec:5227 | 103c:1993 | Realtek Semic... | RTS5227 PCI Express Card Reader      | 1     |            | [937ED102D1](<Notebook/Hewlett-Packard/ProBook/ProBook 640 G1/846B58914D95/OPNSENSE-21.1.6/12.1-RELEASE-P16-HBSD/AMD64/937ED102D1>) |
+| 10ec:5227 | 103c:2101 | Realtek Semic... | RTS5227 PCI Express Card Reader      | 1     | rtsx       | [6BC6C5B2BF](<Notebook/Hewlett-Packard/ProBook/ProBook 640 G1/CE9609F06A8F/NOMADBSD-1.4/12.2-RELEASE-P4/AMD64/6BC6C5B2BF>) |
+| 10ec:5227 | 103c:2247 | Realtek Semic... | RTS5227 PCI Express Card Reader      | 1     |            | [63038D613F](<Notebook/Hewlett-Packard/ProBook/ProBook 440 G2/868DD93EC1EF/HELLOSYSTEM-0.5.0/12.1-RELEASE/AMD64/63038D613F>) |
+| 10ec:5227 | 103c:22e0 | Realtek Semic... | RTS5227 PCI Express Card Reader      | 1     | rtsx       | [8C78180FF9](<Notebook/Hewlett-Packard/ENVY/ENVY x2 Detachable PC 13/9E5414D1023E/FREEBSD-13.0/13.0-RELEASE/AMD64/8C78180FF9>) |
+| 10ec:5227 | 10ec:5227 | Realtek Semic... | RTS5227 PCI Express Card Reader      | 1     | rtsx       | [0BA4CAB539](<Notebook/Dell/Vostro/Vostro 14-5480/6D01CA5CF8FC/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/0BA4CAB539>) |
+| 10ec:5227 | 17aa:501e | Realtek Semic... | RTS5227 PCI Express Card Reader      | 1     | rtsx       | [0FBC782835](<Notebook/Lenovo/ThinkPad/ThinkPad L440 20ASS0FP00/DB867CFAF011/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/0FBC782835>) |
+| 10ec:5227 | 17aa:503e | Realtek Semic... | RTS5227 PCI Express Card Reader      | 1     | rtsx       | [38910AA754](<Notebook/Lenovo/ThinkPad/ThinkPad S1 Yoga 12 20DKS0AA00/F9C13A93AD97/FREEBSD-13.0/13.0-RELEASE/AMD64/38910AA754>) |
+| 10ec:5229 | 103c:1818 | Realtek Semic... | RTS5229 PCI Express Card Reader      | 1     | rtsx       | [4637A9EEFF](<Notebook/Hewlett-Packard/ENVY/ENVY dv7/481D449CE788/FREEBSD-13.0-BETA2/13.0-BETA2/AMD64/4637A9EEFF>) |
+| 10ec:5229 | 103c:1854 | Realtek Semic... | RTS5229 PCI Express Card Reader      | 1     | rtsx       | [4E83C9DA3F](<Notebook/Hewlett-Packard/2000/2000/5CE923B8067D/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/4E83C9DA3F>) |
+| 10ec:5229 | 103c:1885 | Realtek Semic... | RTS5229 PCI Express Card Reader      | 1     | rtsx       | [AE2DE01D19](<Notebook/Hewlett-Packard/655/655/4DA035194D2B/FREEBSD-13.0-CURRENT/13.0-CURRENT/AMD64/AE2DE01D19>) |
+| 10ec:5229 | 103c:2178 | Realtek Semic... | RTS5229 PCI Express Card Reader      | 1     |            | [5300A49632](<Notebook/Hewlett-Packard/Pavilion/Pavilion 11/38CF7A2136EB/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/5300A49632>) |
+| 10ec:5229 | 103c:218b | Realtek Semic... | RTS5229 PCI Express Card Reader      | 1     |            | [E0C8E95E52](<Notebook/Hewlett-Packard/14/14/6F3743EA9DCC/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/E0C8E95E52>) |
+| 10ec:5229 | 103c:2192 | Realtek Semic... | RTS5229 PCI Express Card Reader      | 1     |            | [31177D9E0F](<Notebook/Hewlett-Packard/255/255 G2/850B45122C86/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/31177D9E0F>) |
+| 10ec:5229 | 103c:22c7 | Realtek Semic... | RTS5229 PCI Express Card Reader      | 1     |            | [9929E0C39B](<Notebook/Hewlett-Packard/Pavilion/Pavilion 17/0E6EA46FA017/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/9929E0C39B>) |
+| 10ec:5229 | 103c:22cd | Realtek Semic... | RTS5229 PCI Express Card Reader      | 1     |            | [861BDC647D](<Notebook/Hewlett-Packard/255/255 G3/AC50D241818E/FREEBSD-12.2-P4/12.2-RELEASE-P4/AMD64/861BDC647D>) |
+| 10ec:5229 | 103c:80b2 | Realtek Semic... | RTS5229 PCI Express Card Reader      | 1     | rtsx       | [E27A6F46FC](<Notebook/Hewlett-Packard/Pavilion/Pavilion Notebook/A8CF95C34089/NOMADBSD-5806F915/13.0-RELEASE/AMD64/E27A6F46FC>) |
+| 10ec:5229 | 103c:8426 | Realtek Semic... | RTS5229 PCI Express Card Reader      | 1     |            | [BD2BF6B0A0](<Notebook/Hewlett-Packard/Stream/Stream 11 Pro G4 EE/532FB5D0DE64/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/BD2BF6B0A0>) |
+| 10ec:5229 | 10cf:176b | Realtek Semic... | RTS5229 PCI Express Card Reader      | 1     |            | [37245ACA21](<Notebook/Fujitsu/LIFEBOOK/LIFEBOOK E753/BA0600672905/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/37245ACA21>) |
+| 10ec:5229 | 10ec:5229 | Realtek Semic... | RTS5229 PCI Express Card Reader      | 1     | rtsx       | [7330A6F958](<Notebook/Lenovo/IdeaPad/IdeaPad S130-14IGM 81J2/331DBFCCA9E4/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/7330A6F958>) |
+| 10ec:5229 | 10f7:8338 | Realtek Semic... | RTS5229 PCI Express Card Reader      | 1     |            | [6BBADBA65D](<Notebook/Panasonic/CF-NX1/CF-NX1GDHYS/343F5A72B70D/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/6BBADBA65D>) |
+| 10ec:5229 | 1179:f840 | Realtek Semic... | RTS5229 PCI Express Card Reader      | 1     | rtsx       | [250DB17F57](<Notebook/Toshiba/Satellite/Satellite L50-C/00E1490CB02B/FREEBSD-13.0-P3/13.0-RELEASE-P3/AMD64/250DB17F57>) |
+| 10ec:5229 | 1179:f91b | Realtek Semic... | RTS5229 PCI Express Card Reader      | 1     | rtsx       | [6B03A2C4C2](<Notebook/Toshiba/Satellite/Satellite C50-B/EA82D94A2F3A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/6B03A2C4C2>) |
+| 10ec:5229 | 1179:f920 | Realtek Semic... | RTS5229 PCI Express Card Reader      | 1     | rtsx       | [F6983391AA](<Notebook/Toshiba/Satellite/Satellite S55t-B/E31E31F5CE57/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/F6983391AA>) |
+| 10ec:5229 | 1179:ff1e | Realtek Semic... | RTS5229 PCI Express Card Reader      | 1     |            | [9FB68E38D8](<Notebook/Toshiba/Satellite/Satellite C75D-B/A00F7E268B18/FREEBSD-12.1-P9/12.1-RELEASE-P9/AMD64/9FB68E38D8>) |
+| 10ec:5229 | 1558:6588 | Realtek Semic... | RTS5229 PCI Express Card Reader      | 1     | rtsx       | [90D705DD1E](<Notebook/Notebook/N650/N650DU/0E973203320A/NOMADBSD-1.4/12.2-RELEASE-P4/AMD64/90D705DD1E>) |
+| 10ec:5229 | 1558:6707 | Realtek Semic... | RTS5229 PCI Express Card Reader      | 1     | rtsx       | [C10FC12E40](<Notebook/System76/Kudu/Kudu/BBBD83DF3C2B/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/C10FC12E40>) |
+| 10ec:5229 | 17aa:21f7 | Realtek Semic... | RTS5229 PCI Express Card Reader      | 1     |            | [520982317E](<Notebook/Lenovo/ThinkPad/ThinkPad L530 24812TG/445CD672A8D1/FREEBSD-12.2-P4/12.2-RELEASE-P4/AMD64/520982317E>) |
 
 ### Co-processor (PCI)
 
-| ID        | Subsystem | MFG        | Name                         | Count | Driver     | Probe      |
-|-----------|-----------|------------|------------------------------|-------|------------|------------|
-| 10de:0aa3 | 10de:cb79 | Nvidia     | MCP79 Co-processor           | 8     |            | F46146B79E |
+| ID        | Subsystem | MFG              | Name                                 | Count | Driver     | Probe |
+|-----------|-----------|------------------|--------------------------------------|-------|------------|-------|
+| 10de:0aa3 | 10de:cb79 | Nvidia           | MCP79 Co-processor                   | 14    |            | [D680290D84](<Notebook/Apple/MacBook6/MacBook6,1/B24103297D7A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/D680290D84>) |
 
 ### Communication controller (PCI)
 
-| ID        | Subsystem | MFG        | Name                         | Count | Driver     | Probe      |
-|-----------|-----------|------------|------------------------------|-------|------------|------------|
-| 8086:1c3a | 17aa:21da | Intel      | 6 Series/C200 Series Chip... | 14    |            | 66743A51CC |
-| 8086:3b64 | 17aa:215f | Intel      | 5 Series/3400 Series Chip... | 10    |            | C887FF2917 |
-| 8086:1c3a | 17aa:21ce | Intel      | 6 Series/C200 Series Chip... | 8     |            | DC29D714D9 |
-| 8086:2a44 | 17aa:20e6 | Intel      | Mobile 4 Series Chipset M... | 8     |            | 981517A51A |
-| 8086:1c3a | 8086:7270 | Intel      | 6 Series/C200 Series Chip... | 7     |            | 193936B5CA |
-| 8086:1e3a | 17aa:21f3 | Intel      | 7 Series/C216 Chipset Fam... | 7     |            | 0F001F65D2 |
-| 8086:1e3a | 17aa:21fa | Intel      | 7 Series/C216 Chipset Fam... | 7     |            | AB871769F0 |
-| 8086:1e3d | 17aa:21f3 | Intel      | 7 Series/C210 Series Chip... | 6     | uart       | 0F001F65D2 |
-| 8086:8c3a | 17aa:220e | Intel      | 8 Series/C220 Series Chip... | 6     |            | 7660F9B6DB |
-| 8086:9cba | 17aa:2226 | Intel      | Wildcat Point-LP MEI Cont... | 6     |            | 107AC19795 |
-| 8086:9cba | 17aa:5034 | Intel      | Wildcat Point-LP MEI Cont... | 6     |            | AC567BD12D |
-| 8086:9de0 | 17aa:2279 | Intel      | Cannon Point-LP MEI Contr... | 6     |            | 6311D603FF |
-| 8086:1c3a | 17aa:21cf | Intel      | 6 Series/C200 Series Chip... | 5     |            | 49DACEE7D0 |
-| 8086:1c3d | 17aa:21ce | Intel      | 6 Series/C200 Series Chip... | 5     | uart       | DC29D714D9 |
-| 8086:3b67 | 17aa:2162 | Intel      | 5 Series/3400 Series Chip... | 5     | uart       | 219E9CB1D7 |
-| 8086:9c3a | 1028:05ca | Intel      | 8 Series HECI #0             | 5     |            | 1DBD9A5CEE |
-| 8086:9c3a | 1028:0651 | Intel      | 8 Series HECI #0             | 5     |            | 0D1D75A914 |
-| 8086:9d3a | 17aa:2238 | Intel      | Sunrise Point-LP CSME HEC... | 5     |            | 821C81E652 |
-| 8086:9d3a | 17aa:5062 | Intel      | Sunrise Point-LP CSME HEC... | 5     |            | 88C27E65D7 |
-| 8086:1e3a | 1028:0597 | Intel      | 7 Series/C216 Chipset Fam... | 4     |            | 9050866FB2 |
-| 8086:1e3a | 17aa:21f6 | Intel      | 7 Series/C216 Chipset Fam... | 4     |            | 39F3A4F234 |
-| 8086:1e3a | 17aa:21fb | Intel      | 7 Series/C216 Chipset Fam... | 4     |            | FACF6FA0F8 |
-| 8086:1e3a | 8086:7270 | Intel      | 7 Series/C216 Chipset Fam... | 4     |            | AFC70D9C77 |
-| 8086:8c3a | 1028:05cc | Intel      | 8 Series/C220 Series Chip... | 4     |            | 1847C0AADB |
-| 8086:8c3a | 8086:7270 | Intel      | 8 Series/C220 Series Chip... | 4     |            | 1C9FEEF8E7 |
-| 8086:8c3d | 17aa:220e | Intel      | 8 Series/C220 Series Chip... | 4     | uart       | C51F274F90 |
-| 8086:9d3a | 103c:8079 | Intel      | Sunrise Point-LP CSME HEC... | 4     |            | 2B97986DE1 |
-| 8086:9de0 | 17aa:5072 | Intel      | Cannon Point-LP MEI Contr... | 4     |            | 852A900303 |
-| 10ec:816a | 17aa:5122 | Realtek... | RTL8111xP UART #1            | 3     |            | 2F1BA02130 |
-| 10ec:816b | 17aa:5122 | Realtek... | RTL8111xP UART #2            | 3     |            | 2F1BA02130 |
-| 8086:02e0 | 1028:09ec | Intel      | Comet Lake Management Eng... | 3     |            | 80D7BF959A |
-| 8086:02fc | 1028:09ec | Intel      | Comet Lake Integrated Sen... | 3     |            | 80D7BF959A |
-| 8086:1c3a | 1028:0493 | Intel      | 6 Series/C200 Series Chip... | 3     |            | 6BF1F5FE84 |
-| 8086:1c3a | 10f7:8338 | Intel      | 6 Series/C200 Series Chip... | 3     |            | 6BBADBA65D |
-| 8086:1c3a | 17aa:3975 | Intel      | 6 Series/C200 Series Chip... | 3     |            | B8E35AACDB |
-| 8086:1c3d | 10f7:8338 | Intel      | 6 Series/C200 Series Chip... | 3     | uart       | 6BBADBA65D |
-| 8086:1e3a | 1043:14c7 | Intel      | 7 Series/C216 Chipset Fam... | 3     |            | E887EE2FF5 |
-| 8086:1e3a | 17aa:21f9 | Intel      | 7 Series/C216 Chipset Fam... | 3     |            | B659B95D1A |
-| 8086:1e3a | 8086:1e3a | Intel      | 7 Series/C216 Chipset Fam... | 3     |            | 424ADD8B03 |
-| 8086:1e3d | 17aa:21fa | Intel      | 7 Series/C210 Series Chip... | 3     | uart       | AB871769F0 |
-| 8086:3b64 | 1043:1c77 | Intel      | 5 Series/3400 Series Chip... | 3     |            | BA7FB8E83C |
-| 8086:8c3a | 1028:05bd | Intel      | 8 Series/C220 Series Chip... | 3     |            | 3A656DED12 |
-| 8086:9c3a | 17aa:220c | Intel      | 8 Series HECI #0             | 3     |            | B644ED3914 |
-| 8086:9c3a | 17aa:2214 | Intel      | 8 Series HECI #0             | 3     |            | CBFA45FE44 |
-| 8086:9c3a | 17aa:3978 | Intel      | 8 Series HECI #0             | 3     |            | D3D9DC620F |
-| 8086:9c3a | 8086:7270 | Intel      | 8 Series HECI #0             | 3     |            | 1F2D078D2E |
-| 8086:9cba | 17aa:2227 | Intel      | Wildcat Point-LP MEI Cont... | 3     |            | B60382DA32 |
-| 8086:9d3a | 17aa:2245 | Intel      | Sunrise Point-LP CSME HEC... | 3     |            | E27342AB94 |
-| 8086:9d3a | 17aa:224f | Intel      | Sunrise Point-LP CSME HEC... | 3     |            | 4993AD0FEB |
-| 8086:9d3a | 17aa:2258 | Intel      | Sunrise Point-LP CSME HEC... | 3     |            | EBD44C21D9 |
-| 8086:9d3a | 17aa:225c | Intel      | Sunrise Point-LP CSME HEC... | 3     |            | 16206C4970 |
-| 8086:9d3a | 19e5:3e04 | Intel      | Sunrise Point-LP CSME HEC... | 3     |            | F7E09652D9 |
-| 8086:9d3a | 8086:9d3a | Intel      | Sunrise Point-LP CSME HEC... | 3     |            | 2E51DFE463 |
-| 8086:9d3d | 17aa:5062 | Intel      | Sunrise Point-LP Active M... | 3     |            | 88C27E65D7 |
-| 10ec:816a | 17aa:5125 | Realtek... | RTL8111xP UART #1            | 2     |            | 7A706E46DE |
-| 10ec:816a | 17aa:5126 | Realtek... | RTL8111xP UART #1            | 2     |            | CD016E96EE |
-| 10ec:816b | 17aa:5125 | Realtek... | RTL8111xP UART #2            | 2     |            | 7A706E46DE |
-| 10ec:816b | 17aa:5126 | Realtek... | RTL8111xP UART #2            | 2     |            | CD016E96EE |
-| 8086:02c7 | 1558:1401 | Intel      | Comet Lake PCH-LP LPSS: U... | 2     |            | 0BD96EF663 |
-| 8086:02e0 | 17aa:5079 | Intel      | Comet Lake Management Eng... | 2     |            | 94D082C57C |
-| 8086:06e0 | 17aa:380b | Intel      | Comet Lake HECI Controller   | 2     |            | 2BE8CF963C |
-| 8086:1c3a | 1028:049b | Intel      | 6 Series/C200 Series Chip... | 2     |            | 32F03AA888 |
-| 8086:1c3a | 17aa:21e2 | Intel      | 6 Series/C200 Series Chip... | 2     |            | AA98E655F3 |
-| 8086:1c3a | 8086:1c3a | Intel      | 6 Series/C200 Series Chip... | 2     |            | DEF6A6516D |
-| 8086:1c3d | 17aa:21da | Intel      | 6 Series/C200 Series Chip... | 2     | uart       | 66743A51CC |
-| 8086:1e3a | 1028:0572 | Intel      | 7 Series/C216 Chipset Fam... | 2     |            | 599D3E84D7 |
-| 8086:1e3a | 103c:17a7 | Intel      | 7 Series/C216 Chipset Fam... | 2     |            | 52BA4E835F |
-| 8086:1e3a | 104d:90b8 | Intel      | 7 Series/C216 Chipset Fam... | 2     |            | 64F3F02018 |
-| 8086:1e3a | 17aa:2203 | Intel      | 7 Series/C216 Chipset Fam... | 2     |            | 55DEBB2F24 |
-| 8086:1e3a | 17aa:3977 | Intel      | 7 Series/C216 Chipset Fam... | 2     |            | CCEC69B736 |
-| 8086:1e3d | 103c:17a7 | Intel      | 7 Series/C210 Series Chip... | 2     | uart       | 52BA4E835F |
-| 8086:1e3d | 17aa:21f6 | Intel      | 7 Series/C210 Series Chip... | 2     | uart       | F7D13E4696 |
-| 8086:2a47 | 17aa:20ec | Intel      | Mobile 4 Series Chipset A... | 2     | uart       | F8CE633ED7 |
-| 8086:34e0 | 1028:097a | Intel      | Ice Lake-LP Management En... | 2     |            | C2D56FC369 |
-| 8086:3b64 | 1179:0001 | Intel      | 5 Series/3400 Series Chip... | 2     |            | 6357D0D51F |
-| 8086:5a9a | 8086:7270 | Intel      | Celeron N3350/Pentium N42... | 2     |            | BC138C0580 |
-| 8086:8c3a | 1043:157d | Intel      | 8 Series/C220 Series Chip... | 2     |            | 37BE4EA27A |
-| 8086:8c3a | 10cf:17dd | Intel      | 8 Series/C220 Series Chip... | 2     |            | D3D033F879 |
-| 8086:8c3a | 17aa:2211 | Intel      | 8 Series/C220 Series Chip... | 2     |            | 91D2CD471C |
-| 8086:8c3d | 1028:05bd | Intel      | 8 Series/C220 Series Chip... | 2     | uart       | 3A656DED12 |
-| 8086:8c3d | 10cf:17e0 | Intel      | 8 Series/C220 Series Chip... | 2     | uart       | D3D033F879 |
-| 8086:9c3a | 1028:05cb | Intel      | 8 Series HECI #0             | 2     |            | 6EC8FD788A |
-| 8086:9c3a | 103c:1991 | Intel      | 8 Series HECI #0             | 2     |            | 565343B334 |
-| 8086:9c3a | 104d:90b6 | Intel      | 8 Series HECI #0             | 2     |            | 23316D0F2B |
-| 8086:9c3a | 17aa:2217 | Intel      | 8 Series HECI #0             | 2     |            | E9155D12C7 |
-| 8086:9c3d | 1028:05cb | Intel      | 8 Series HECI KT             | 2     | uart       | 6EC8FD788A |
-| 8086:9c3d | 17aa:220c | Intel      | 8 Series HECI KT             | 2     | uart       | B644ED3914 |
-| 8086:9c3d | 17aa:2214 | Intel      | 8 Series HECI KT             | 2     | uart       | CBFA45FE44 |
-| 8086:9cba | 8086:7270 | Intel      | Wildcat Point-LP MEI Cont... | 2     |            | EFB1F9D207 |
-| 8086:9d3a | 1028:06df | Intel      | Sunrise Point-LP CSME HEC... | 2     |            | DA926F1065 |
-| 8086:9d3a | 1028:075b | Intel      | Sunrise Point-LP CSME HEC... | 2     |            | 1887B030C4 |
-| 8086:9d3a | 1043:10a1 | Intel      | Sunrise Point-LP CSME HEC... | 2     |            | D7D299F9FC |
-| 8086:9d3a | 1043:1c7d | Intel      | Sunrise Point-LP CSME HEC... | 2     |            | 57018EDD10 |
-| 8086:9d3a | 1558:1313 | Intel      | Sunrise Point-LP CSME HEC... | 2     |            | C23A22A72D |
-| 8086:9d3a | 17aa:224b | Intel      | Sunrise Point-LP CSME HEC... | 2     |            | FAA7BECF82 |
-| 8086:9d3a | 17aa:225a | Intel      | Sunrise Point-LP CSME HEC... | 2     |            | D5A1C088B3 |
-| 8086:9d3a | 17aa:504a | Intel      | Sunrise Point-LP CSME HEC... | 2     |            | AA3DEADEDD |
-| 8086:9d3a | 17aa:5053 | Intel      | Sunrise Point-LP CSME HEC... | 2     |            | A069A19A1B |
-| 8086:9d3d | 103c:8079 | Intel      | Sunrise Point-LP Active M... | 2     |            | 2B97986DE1 |
-| 8086:9d3d | 17aa:224b | Intel      | Sunrise Point-LP Active M... | 2     |            | FAA7BECF82 |
+| ID        | Subsystem | MFG              | Name                                 | Count | Driver     | Probe |
+|-----------|-----------|------------------|--------------------------------------|-------|------------|-------|
+| 8086:3b64 | 17aa:215f | Intel            | 5 Series/3400 Series Chipset HECI... | 21    |            | [BCD5BEA2B7](<Notebook/Lenovo/ThinkPad/ThinkPad T410 2537BN8/4A58F0F69086/OPNSENSE-22.1.2/13.0-STABLE/AMD64/BCD5BEA2B7>) |
+| 8086:1c3a | 17aa:21da | Intel            | 6 Series/C200 Series Chipset Fami... | 19    |            | [148A268A0F](<Notebook/Lenovo/ThinkPad/ThinkPad X220 4293B43/AD955BCC7F71/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/148A268A0F>) |
+| 8086:1e3a | 17aa:21fa | Intel            | 7 Series/C216 Chipset Family MEI ... | 14    |            | [06C6A282CA](<Notebook/Lenovo/ThinkPad/ThinkPad X230 23254G7/FF7D8D42B37A/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/06C6A282CA>) |
+| 8086:1c3a | 17aa:21ce | Intel            | 6 Series/C200 Series Chipset Fami... | 12    |            | [8BD2318FB6](<Notebook/Lenovo/ThinkPad/ThinkPad T420 4236MBU/D2E0D93C2306/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/8BD2318FB6>) |
+| 8086:2a44 | 17aa:20e6 | Intel            | Mobile 4 Series Chipset MEI Contr... | 12    |            | [384F10861A](<Notebook/Lenovo/ThinkPad/ThinkPad R500 2718W92/7F30077B1DE1/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/384F10861A>) |
+| 8086:9c3a | 8086:7270 | Intel            | 8 Series HECI #0                     | 12    |            | [974E1F4E5E](<Notebook/Others/Others/Others/499A7AC3FA34/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/974E1F4E5E>) |
+| 8086:9cba | 17aa:2226 | Intel            | Wildcat Point-LP MEI Controller #1   | 12    |            | [4BA527DC9B](<Notebook/Lenovo/ThinkPad/ThinkPad X250 20CMCTO1WW/E6AE328AD30B/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/4BA527DC9B>) |
+| 8086:1c3a | 8086:7270 | Intel            | 6 Series/C200 Series Chipset Fami... | 10    |            | [AA484C30A8](<Notebook/Apple/MacBookPro8/MacBookPro8,1/83A908F15226/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/AA484C30A8>) |
+| 8086:1e3a | 17aa:21f3 | Intel            | 7 Series/C216 Chipset Family MEI ... | 10    |            | [86FD351C81](<Notebook/Lenovo/ThinkPad/ThinkPad T430 2349AK1/08273574C200/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/86FD351C81>) |
+| 8086:1e3a | 8086:7270 | Intel            | 7 Series/C216 Chipset Family MEI ... | 10    |            | [64CCF1E6A0](<Notebook/Apple/MacBookPro10/MacBookPro10,1/60ED6011F0FC/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/64CCF1E6A0>) |
+| 8086:3b67 | 17aa:2162 | Intel            | 5 Series/3400 Series Chipset KT C... | 10    | uart       | [BCD5BEA2B7](<Notebook/Lenovo/ThinkPad/ThinkPad T410 2537BN8/4A58F0F69086/OPNSENSE-22.1.2/13.0-STABLE/AMD64/BCD5BEA2B7>) |
+| 8086:8c3a | 17aa:220e | Intel            | 8 Series/C220 Series Chipset Fami... | 9     |            | [CBA9255F4A](<Notebook/Lenovo/ThinkPad/ThinkPad T440p 20AWS1JN00/4F89B9A156FF/FREEBSD-13.0/13.0-RELEASE/AMD64/CBA9255F4A>) |
+| 8086:1c3a | 17aa:21cf | Intel            | 6 Series/C200 Series Chipset Fami... | 8     |            | [82F5612822](<Notebook/Lenovo/ThinkPad/ThinkPad T520 4243E51/EB551E7DDB1F/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/82F5612822>) |
+| 8086:1c3d | 17aa:21ce | Intel            | 6 Series/C200 Series Chipset Fami... | 8     | uart       | [8BD2318FB6](<Notebook/Lenovo/ThinkPad/ThinkPad T420 4236MBU/D2E0D93C2306/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/8BD2318FB6>) |
+| 8086:9c3a | 17aa:220c | Intel            | 8 Series HECI #0                     | 8     |            | [2AF47B6502](<Notebook/Lenovo/ThinkPad/ThinkPad T440s 20AQ006HUS/5B022BB303EA/NOMADBSD-5806F915/13.0-RELEASE/AMD64/2AF47B6502>) |
+| 8086:9c3a | 17aa:3978 | Intel            | 8 Series HECI #0                     | 8     |            | [A1F85AFF27](<Notebook/Lenovo/Z50-70/Z50-70 20354/491D65A1BD89/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/A1F85AFF27>) |
+| 8086:9cba | 17aa:5034 | Intel            | Wildcat Point-LP MEI Controller #1   | 8     |            | [BC2860431E](<Notebook/Lenovo/ThinkPad/ThinkPad T450 20BUS0VH08/CDAB4EDF622D/GHOSTBSD-22.01.12/13.0-STABLE/AMD64/BC2860431E>) |
+| 8086:1e3a | 17aa:3977 | Intel            | 7 Series/C216 Chipset Family MEI ... | 7     |            | [478714C7C9](<Notebook/Lenovo/G580/G580 20150/D8442DC4CB7A/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/478714C7C9>) |
+| 8086:1e3d | 17aa:21f3 | Intel            | 7 Series/C210 Series Chipset Fami... | 7     | uart       | [86FD351C81](<Notebook/Lenovo/ThinkPad/ThinkPad T430 2349AK1/08273574C200/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/86FD351C81>) |
+| 8086:9c3a | 1028:0651 | Intel            | 8 Series HECI #0                     | 7     |            | [6283CB4190](<Notebook/Dell/Inspiron/Inspiron 3442/DF9A7A49AE6A/FREEBSD-13.0-P3/13.0-RELEASE/AMD64/6283CB4190>) |
+| 8086:9d3a | 17aa:5062 | Intel            | Sunrise Point-LP CSME HECI #1        | 7     |            | [2E1C585715](<Notebook/Lenovo/ThinkPad/ThinkPad X270 W10DG 20K5S0BM01/C223E0B01844/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/2E1C585715>) |
+| 8086:9de0 | 17aa:2279 | Intel            | Cannon Point-LP MEI Controller #1    | 7     |            | [4147A5824D](<Notebook/Lenovo/ThinkPad/ThinkPad T590 20N4CTO1WW/3C494D1552EB/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/4147A5824D>) |
+| 8086:1c3d | 17aa:21da | Intel            | 6 Series/C200 Series Chipset Fami... | 6     | uart       | [148A268A0F](<Notebook/Lenovo/ThinkPad/ThinkPad X220 4293B43/AD955BCC7F71/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/148A268A0F>) |
+| 8086:1e3a | 17aa:21fb | Intel            | 7 Series/C216 Chipset Family MEI ... | 6     |            | [0B6AB3BA1B](<Notebook/Lenovo/ThinkPad/ThinkPad T430s 2356JH4/C3D86E55EECC/OPNSENSE-21.7.6/12.1-RELEASE-P21-HBSD/AMD64/0B6AB3BA1B>) |
+| 8086:8c3d | 17aa:220e | Intel            | 8 Series/C220 Series Chipset Fami... | 6     | uart       | [CBA9255F4A](<Notebook/Lenovo/ThinkPad/ThinkPad T440p 20AWS1JN00/4F89B9A156FF/FREEBSD-13.0/13.0-RELEASE/AMD64/CBA9255F4A>) |
+| 8086:9c3a | 1028:05ca | Intel            | 8 Series HECI #0                     | 6     |            | [762D8366D0](<Notebook/Dell/Latitude/Latitude E7240/B8876AE6AF27/FREEBSD-13.0-RC4/13.0-RC4/AMD64/762D8366D0>) |
+| 8086:9d3a | 103c:8079 | Intel            | Sunrise Point-LP CSME HECI #1        | 6     |            | [F259F73C17](<Notebook/Hewlett-Packard/EliteBook/EliteBook 840 G3/372FB522FD12/OPNSENSE-22.1/13.0-STABLE/AMD64/F259F73C17>) |
+| 8086:9de0 | 17aa:5072 | Intel            | Cannon Point-LP MEI Controller #1    | 6     |            | [98072B8DB6](<Notebook/Lenovo/ThinkPad/ThinkPad E590 20NB0012RT/F14FDAEA6645/FREEBSD-13.0-P3/13.0-RELEASE-P3/AMD64/98072B8DB6>) |
+| 8086:1e3a | 1028:0597 | Intel            | 7 Series/C216 Chipset Family MEI ... | 5     |            | [B246D110AF](<Notebook/Dell/Inspiron/Inspiron 3521/D0B94644586B/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/B246D110AF>) |
+| 8086:1e3a | 17aa:21f6 | Intel            | 7 Series/C216 Chipset Family MEI ... | 5     |            | [4E7FC367BC](<Notebook/Lenovo/ThinkPad/ThinkPad W530 2447AV9/778B9CE5B6CA/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/4E7FC367BC>) |
+| 8086:1e3d | 17aa:21fa | Intel            | 7 Series/C210 Series Chipset Fami... | 5     | uart       | [06C6A282CA](<Notebook/Lenovo/ThinkPad/ThinkPad X230 23254G7/FF7D8D42B37A/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/06C6A282CA>) |
+| 8086:8c3a | 8086:7270 | Intel            | 8 Series/C220 Series Chipset Fami... | 5     |            | [6D580E8270](<Notebook/Apple/MacBookPro11/MacBookPro11,4/C2BAFC376883/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/6D580E8270>) |
+| 8086:9c3a | 17aa:2214 | Intel            | 8 Series HECI #0                     | 5     |            | [66CFDD2419](<Notebook/Lenovo/ThinkPad/ThinkPad X240 20AMS2QDOC/958035AEAC5C/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/66CFDD2419>) |
+| 8086:9d3a | 17aa:2238 | Intel            | Sunrise Point-LP CSME HECI #1        | 5     |            | [821C81E652](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 4th 20FB001XAU/5B2B74D5C2AB/NOMADBSD-1.4/12.2-RELEASE-P4/AMD64/821C81E652>) |
+| 8086:9d3a | 17aa:224b | Intel            | Sunrise Point-LP CSME HECI #1        | 5     |            | [6C895CB96F](<Notebook/Lenovo/ThinkPad/ThinkPad T470s W10DG 20JTS0A900/5B70EA1A7528/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/6C895CB96F>) |
+| 8086:9d3a | 8086:9d3a | Intel            | Sunrise Point-LP CSME HECI #1        | 5     |            | [5A75DB9142](<Notebook/TUXEDO/InfinityBook13/InfinityBook13V3/0B9DECE35038/HELLOSYSTEM-0.7.0/13.0-RELEASE-P7/AMD64/5A75DB9142>) |
+| 8086:9d3d | 17aa:5062 | Intel            | Sunrise Point-LP Active Managemen... | 5     |            | [2E1C585715](<Notebook/Lenovo/ThinkPad/ThinkPad X270 W10DG 20K5S0BM01/C223E0B01844/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/2E1C585715>) |
+| 8086:a0e0 | f111:0001 | Intel            | Tiger Lake-LP Management Engine I... | 5     |            | [1F58E0594F](<Notebook/Framework/Laptop/Laptop/12E6C3C95AB5/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/1F58E0594F>) |
+| 8086:a0fc | f111:0001 | Intel            | Tiger Lake-LP Integrated Sensor Hub  | 5     |            | [1F58E0594F](<Notebook/Framework/Laptop/Laptop/12E6C3C95AB5/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/1F58E0594F>) |
+| 8086:1c3a | 1028:0493 | Intel            | 6 Series/C200 Series Chipset Fami... | 4     |            | [2E8B431CC6](<Notebook/Dell/Latitude/Latitude E6420/6637B5C9AD24/GHOSTBSD-20.04.02/13.0-STABLE/AMD64/2E8B431CC6>) |
+| 8086:1e3a | 17aa:21f9 | Intel            | 7 Series/C216 Chipset Family MEI ... | 4     |            | [2494D9D2DB](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 3443CTO/870107710CBE/OPNSENSE-21.7/12.1-RELEASE-P20-HBSD/AMD64/2494D9D2DB>) |
+| 8086:3b64 | 1043:1c77 | Intel            | 5 Series/3400 Series Chipset HECI... | 4     |            | [92B975763F](<Notebook/ASUSTek Computer/K52/K52Jc/DB01933C6182/HELLOSYSTEM-0.7.0/12.2-RELEASE-P7/AMD64/92B975763F>) |
+| 8086:3b64 | 1179:0001 | Intel            | 5 Series/3400 Series Chipset HECI... | 4     |            | [2AC9BEA1E6](<Notebook/Toshiba/PORTEGE/PORTEGE M780/9BA4726CBC1C/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/2AC9BEA1E6>) |
+| 8086:5a9a | 8086:7270 | Intel            | Celeron N3350/Pentium N4200/Atom ... | 4     |            | [D1EB8226EB](<Notebook/SIEMENS/SIMATIC/SIMATIC IPC127E/F8EC425F9C5B/OPNSENSE-22.1.2/13.0-STABLE/AMD64/D1EB8226EB>) |
+| 8086:8c3a | 1028:05be | Intel            | 8 Series/C220 Series Chipset Fami... | 4     |            | [E0576DD008](<Notebook/Dell/Latitude/Latitude E6540/47352B0D75D6/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E0576DD008>) |
+| 8086:8c3a | 1028:05cc | Intel            | 8 Series/C220 Series Chipset Fami... | 4     |            | [1847C0AADB](<Notebook/Dell/Precision/Precision M4800/534E5DEB811F/OPNSENSE-21.1.3/12.1-RELEASE-P14-HBSD/AMD64/1847C0AADB>) |
+| 8086:9c3d | 17aa:220c | Intel            | 8 Series HECI KT                     | 4     | uart       | [2AF47B6502](<Notebook/Lenovo/ThinkPad/ThinkPad T440s 20AQ006HUS/5B022BB303EA/NOMADBSD-5806F915/13.0-RELEASE/AMD64/2AF47B6502>) |
+| 8086:9cba | 8086:7270 | Intel            | Wildcat Point-LP MEI Controller #1   | 4     |            | [E04A1B354C](<Notebook/Apple/MacBookPro12/MacBookPro12,1/98B93121E415/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/E04A1B354C>) |
+| 8086:9d3a | 17aa:2245 | Intel            | Sunrise Point-LP CSME HECI #1        | 4     |            | [668BF95221](<Notebook/Lenovo/ThinkPad/ThinkPad T470 W10DG 20JNS0JU01/ADC556F95A12/GHOSTBSD-20.04.02/13.0-STABLE/AMD64/668BF95221>) |
+| 8086:9d3a | 17aa:224f | Intel            | Sunrise Point-LP CSME HECI #1        | 4     |            | [7AEA2CCAA7](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 5th 20HRS04C00/46797EE9B847/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/7AEA2CCAA7>) |
+| 8086:9d3a | 17aa:2258 | Intel            | Sunrise Point-LP CSME HECI #1        | 4     |            | [556FCB7E5E](<Notebook/Lenovo/ThinkPad/ThinkPad T480s 20L8S1GX00/EA208CC61F28/FREEBSD-13.0/13.0-RELEASE/AMD64/556FCB7E5E>) |
+| 8086:9d3a | 17aa:5053 | Intel            | Sunrise Point-LP CSME HECI #1        | 4     |            | [DEAC163B52](<Notebook/Lenovo/ThinkPad/ThinkPad T460 20FNCTO1WW/88EC95397971/OPNSENSE-22.1.1/13.0-STABLE/AMD64/DEAC163B52>) |
+| 8086:9d3a | 17aa:5068 | Intel            | Sunrise Point-LP CSME HECI #1        | 4     |            | [BE311B6A34](<Notebook/Lenovo/ThinkPad/ThinkPad E580 20KSCTO1WW/FE16B0524669/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/BE311B6A34>) |
+| 8086:9d3d | 17aa:224b | Intel            | Sunrise Point-LP Active Managemen... | 4     |            | [6C895CB96F](<Notebook/Lenovo/ThinkPad/ThinkPad T470s W10DG 20JTS0A900/5B70EA1A7528/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/6C895CB96F>) |
+| 8086:a328 | 17aa:3813 | Intel            | Cannon Lake PCH Serial IO UART Ho... | 4     |            | [384D2F888B](<Notebook/Lenovo/Legion/Legion Y540-15IRH 81SX/DB27396229F8/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/384D2F888B>) |
+| 8086:a360 | 17aa:3810 | Intel            | Cannon Lake PCH HECI Controller      | 4     |            | [384D2F888B](<Notebook/Lenovo/Legion/Legion Y540-15IRH 81SX/DB27396229F8/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/384D2F888B>) |
+| 10ec:816a | 17aa:5122 | Realtek Semic... | RTL8111xP UART #1                    | 3     |            | [0C153D0C98](<Notebook/Lenovo/ThinkPad/ThinkPad A485 20MU000VUS/0748151D3905/MIDNIGHTBSD-2.1.1/2.1.1/AMD64/0C153D0C98>) |
+| 10ec:816a | 17aa:5126 | Realtek Semic... | RTL8111xP UART #1                    | 3     |            | [D7812A2905](<Notebook/Lenovo/ThinkPad/ThinkPad X395 20NL000GPG/878AD42630E7/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/D7812A2905>) |
+| 10ec:816b | 17aa:5122 | Realtek Semic... | RTL8111xP UART #2                    | 3     |            | [0C153D0C98](<Notebook/Lenovo/ThinkPad/ThinkPad A485 20MU000VUS/0748151D3905/MIDNIGHTBSD-2.1.1/2.1.1/AMD64/0C153D0C98>) |
+| 10ec:816b | 17aa:5126 | Realtek Semic... | RTL8111xP UART #2                    | 3     |            | [D7812A2905](<Notebook/Lenovo/ThinkPad/ThinkPad X395 20NL000GPG/878AD42630E7/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/D7812A2905>) |
+| 8086:02c7 | 1558:1401 | Intel            | Comet Lake PCH-LP LPSS: UART #2      | 3     |            | [713B33351F](<Notebook/System76/Lemur/Lemur Pro/FB3C4199D24B/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/713B33351F>) |
+| 8086:02c7 | 8086:7270 | Intel            | Comet Lake PCH-LP LPSS: UART #2      | 3     |            | [F99C9F56B7](<Notebook/System76/Darter/Darter Pro/0CE03E6D5308/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/F99C9F56B7>) |
+| 8086:02e0 | 1028:09ec | Intel            | Comet Lake Management Engine Inte... | 3     |            | [80D7BF959A](<Notebook/Dell/Latitude/Latitude 3410/3DC4614C13E4/FREEBSD-13.0-RC1/13.0-RC1/AMD64/80D7BF959A>) |
+| 8086:02e0 | 17aa:5079 | Intel            | Comet Lake Management Engine Inte... | 3     |            | [0FA4700D17](<Notebook/Lenovo/ThinkPad/ThinkPad E15 20RD0011MX/534BB4FF83C1/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/0FA4700D17>) |
+| 8086:02fc | 1028:09ec | Intel            | Comet Lake Integrated Sensor Solu... | 3     |            | [80D7BF959A](<Notebook/Dell/Latitude/Latitude 3410/3DC4614C13E4/FREEBSD-13.0-RC1/13.0-RC1/AMD64/80D7BF959A>) |
+| 8086:1c3a | 1025:0504 | Intel            | 6 Series/C200 Series Chipset Fami... | 3     |            | [BD22FC8A49](<Notebook/Acer/Aspire/Aspire 5750G/1FF59E502D89/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/BD22FC8A49>) |
+| 8086:1c3a | 1028:049b | Intel            | 6 Series/C200 Series Chipset Fami... | 3     |            | [1ED3FF35F6](<Notebook/Dell/Latitude/Latitude E5420/7F50D3A16CDB/HELLOSYSTEM-0.5.0/13.0-RELEASE/AMD64/1ED3FF35F6>) |
+| 8086:1c3a | 1043:1147 | Intel            | 6 Series/C200 Series Chipset Fami... | 3     |            | [A07366611D](<Notebook/ASUSTek Computer/U31/U31SD/4817D15C5C95/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/A07366611D>) |
+| 8086:1c3a | 10f7:8338 | Intel            | 6 Series/C200 Series Chipset Fami... | 3     |            | [6BBADBA65D](<Notebook/Panasonic/CF-NX1/CF-NX1GDHYS/343F5A72B70D/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/6BBADBA65D>) |
+| 8086:1c3a | 17aa:3975 | Intel            | 6 Series/C200 Series Chipset Fami... | 3     |            | [B8E35AACDB](<Notebook/Lenovo/G470/G470 20078/35FE7475B2FF/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/B8E35AACDB>) |
+| 8086:1c3a | 8086:1c3a | Intel            | 6 Series/C200 Series Chipset Fami... | 3     |            | [341401BB02](<Notebook/Others/Others/Others/D4245F739188/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/341401BB02>) |
+| 8086:1c3d | 10f7:8338 | Intel            | 6 Series/C200 Series Chipset Fami... | 3     | uart       | [6BBADBA65D](<Notebook/Panasonic/CF-NX1/CF-NX1GDHYS/343F5A72B70D/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/6BBADBA65D>) |
+| 8086:1c3d | 17aa:21cf | Intel            | 6 Series/C200 Series Chipset Fami... | 3     | uart       | [82F5612822](<Notebook/Lenovo/ThinkPad/ThinkPad T520 4243E51/EB551E7DDB1F/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/82F5612822>) |
+| 8086:1e3a | 1028:0534 | Intel            | 7 Series/C216 Chipset Family MEI ... | 3     |            | [FDDE41404D](<Notebook/Dell/Latitude/Latitude E6430/9A4F06581327/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/FDDE41404D>) |
+| 8086:1e3a | 1028:0535 | Intel            | 7 Series/C216 Chipset Family MEI ... | 3     |            | [0FA21BCF23](<Notebook/Dell/Latitude/Latitude E6530/9F002062E68D/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/0FA21BCF23>) |
+| 8086:1e3a | 103c:17a7 | Intel            | 7 Series/C216 Chipset Family MEI ... | 3     |            | [F47789D894](<Notebook/Hewlett-Packard/EliteBook/EliteBook 8570p/6FBB1F806232/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/F47789D894>) |
+| 8086:1e3a | 1043:108d | Intel            | 7 Series/C216 Chipset Family MEI ... | 3     |            | [7F4E6F4541](<Notebook/ASUSTek Computer/X202/X202E/4F1DF3965EB5/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/7F4E6F4541>) |
+| 8086:1e3a | 1043:14c7 | Intel            | 7 Series/C216 Chipset Family MEI ... | 3     |            | [C7C812C2C9](<Notebook/ASUSTek Computer/X55/X55CR/D99F3FC27DCF/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/C7C812C2C9>) |
+| 8086:1e3a | 1043:1517 | Intel            | 7 Series/C216 Chipset Family MEI ... | 3     |            | [9FEBAB6C01](<Notebook/ASUSTek Computer/UX31/UX31A/2ABD09D4BEE1/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/9FEBAB6C01>) |
+| 8086:1e3a | 1179:0001 | Intel            | 7 Series/C216 Chipset Family MEI ... | 3     |            | [E621531452](<Notebook/Toshiba/dynabook/dynabook Satellite B453-L/51209A708293/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/E621531452>) |
+| 8086:1e3a | 1179:ff1e | Intel            | 7 Series/C216 Chipset Family MEI ... | 3     |            | [06598A2ED3](<Notebook/Toshiba/Dakar10/Dakar10FW8/2F3FE05C620E/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/06598A2ED3>) |
+| 8086:1e3a | 17aa:2203 | Intel            | 7 Series/C216 Chipset Family MEI ... | 3     |            | [EFDFEE9023](<Notebook/Lenovo/ThinkPad/ThinkPad X230 Tablet 343522U/EB8C39CCF903/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/EFDFEE9023>) |
+| 8086:1e3a | 8086:1e3a | Intel            | 7 Series/C216 Chipset Family MEI ... | 3     |            | [424ADD8B03](<Notebook/Others/Others/Others/DB568780AEF3/OPNSENSE-20.7.8/12.1-RELEASE-P12-HBSD/AMD64/424ADD8B03>) |
+| 8086:1e3d | 103c:17a7 | Intel            | 7 Series/C210 Series Chipset Fami... | 3     | uart       | [F47789D894](<Notebook/Hewlett-Packard/EliteBook/EliteBook 8570p/6FBB1F806232/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/F47789D894>) |
+| 8086:1e3d | 17aa:21f6 | Intel            | 7 Series/C210 Series Chipset Fami... | 3     | uart       | [4E7FC367BC](<Notebook/Lenovo/ThinkPad/ThinkPad W530 2447AV9/778B9CE5B6CA/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/4E7FC367BC>) |
+| 8086:1e3d | 17aa:21fb | Intel            | 7 Series/C210 Series Chipset Fami... | 3     | uart       | [0B6AB3BA1B](<Notebook/Lenovo/ThinkPad/ThinkPad T430s 2356JH4/C3D86E55EECC/OPNSENSE-21.7.6/12.1-RELEASE-P21-HBSD/AMD64/0B6AB3BA1B>) |
+| 8086:319a | 8086:7270 | Intel            | Celeron/Pentium Silver Processor ... | 3     |            | [87C8EE9B4C](<Notebook/Lenovo/IdeaPad/IdeaPad 330-15IGM 81D1/33755EE608EE/FREEBSD-13.0/13.0-RELEASE/AMD64/87C8EE9B4C>) |
+| 8086:8c3a | 1028:05bd | Intel            | 8 Series/C220 Series Chipset Fami... | 3     |            | [8FA2C1F5C4](<Notebook/Dell/Latitude/Latitude E6440/90F4D14BB79B/FREEBSD-13.0-P2/13.0-RELEASE-P1/AMD64/8FA2C1F5C4>) |
+| 8086:8c3a | 17aa:2211 | Intel            | 8 Series/C220 Series Chipset Fami... | 3     |            | [B6DFFE77EB](<Notebook/Lenovo/ThinkPad/ThinkPad W540 20BG0014US/3AD854A625A5/OPNSENSE-21.7.2/12.1-RELEASE-P20-HBSD/AMD64/B6DFFE77EB>) |
+| 8086:8c3a | 17aa:3978 | Intel            | 8 Series/C220 Series Chipset Fami... | 3     |            | [1FEB455E8C](<Notebook/Lenovo/Y50-70/Y50-70 20378/45CB117B153A/OPNSENSE-21.7.7/12.1-RELEASE-P19-HBSD/AMD64/1FEB455E8C>) |
+| 8086:9c3a | 103c:1991 | Intel            | 8 Series HECI #0                     | 3     |            | [362940ACBB](<Notebook/Hewlett-Packard/EliteBook/EliteBook 820 G1/43570E209C4E/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/362940ACBB>) |
+| 8086:9c3a | 104d:90b6 | Intel            | 8 Series HECI #0                     | 3     |            | [03EF84679C](<Notebook/Sony/SVP1322/SVP13225SCBI/C462BD727B55/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/03EF84679C>) |
+| 8086:9c3d | 17aa:2214 | Intel            | 8 Series HECI KT                     | 3     | uart       | [65564434A9](<Notebook/Lenovo/ThinkPad/ThinkPad X240 20AMS39F0K/EE91707C849A/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/65564434A9>) |
+| 8086:9cba | 1028:062e | Intel            | Wildcat Point-LP MEI Controller #1   | 3     |            | [8A3867F171](<Notebook/Dell/Latitude/Latitude E7450/384980EB885D/FREEBSD-13.0-P6/13.0-RELEASE-P6/AMD64/8A3867F171>) |
+| 8086:9cba | 1028:06ae | Intel            | Wildcat Point-LP MEI Controller #1   | 3     |            | [3A239EA97A](<Notebook/Dell/Inspiron/Inspiron 5558/AF88938C2D41/FREEBSD-12.3/12.3-RELEASE/AMD64/3A239EA97A>) |
+| 8086:9cba | 17aa:2227 | Intel            | Wildcat Point-LP MEI Controller #1   | 3     |            | [B60382DA32](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 3rd 20BT000BUS/FBDB9E088872/FREEBSD-12.2-P4/12.2-RELEASE/AMD64/B60382DA32>) |
+| 8086:9d3a | 1028:078c | Intel            | Sunrise Point-LP CSME HECI #1        | 3     |            | [9073F1975D](<Notebook/Dell/Inspiron/Inspiron 15-3567/26EF6087DCBB/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/9073F1975D>) |
+| 8086:9d3a | 1028:079f | Intel            | Sunrise Point-LP CSME HECI #1        | 3     |            | [089B61BB38](<Notebook/Dell/Latitude/Latitude 7280/E9E3F30F4DB0/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/089B61BB38>) |
+| 8086:9d3a | 17aa:225c | Intel            | Sunrise Point-LP CSME HECI #1        | 3     |            | [16206C4970](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 6th 20KG0022US/0E31F9E108FF/FREEBSD-12.2/12.2-RELEASE/AMD64/16206C4970>) |
+| 8086:9d3a | 19e5:3e04 | Intel            | Sunrise Point-LP CSME HECI #1        | 3     |            | [F7E09652D9](<Notebook/HUAWEI/MACH-WX/MACH-WX9/4067EE7CBCE5/FREEBSD-12.2-P4/12.2-RELEASE-P4/AMD64/F7E09652D9>) |
 
 ### Encryption controller (PCI)
 
-| ID        | Subsystem | MFG        | Name                         | Count | Driver     | Probe      |
-|-----------|-----------|------------|------------------------------|-------|------------|------------|
-| 1022:15df | 1022:15df | AMD        | Family 17h (Models 10h-1f... | 6     |            | DD877E6C6C |
-| 1022:1456 | 1022:1456 | AMD        | Family 17h (Models 00h-0f... | 4     |            | F4A0F0941B |
-| 1022:1468 | 1022:1468 | AMD        | Zeppelin Cryptographic Co... | 4     |            | F4A0F0941B |
-| 1022:1537 | 1022:1537 | AMD        | Kabini/Mullins PSP-Platfo... | 3     |            | E2B6DBFE40 |
-| 1022:15df | 17aa:5122 | AMD        | Family 17h (Models 10h-1f... | 3     |            | 2F1BA02130 |
-| 1022:1456 | 1025:1246 | AMD        | Family 17h (Models 00h-0f... | 2     |            | 9E03A76684 |
-| 1022:1537 | 17aa:3801 | AMD        | Kabini/Mullins PSP-Platfo... | 2     |            | 1D227A9CD2 |
-| 1022:1578 | 103c:84ac | AMD        | Carrizo Platform Security... | 2     |            | 3E500C12A3 |
-| 1022:15df | 103c:8786 | AMD        | Family 17h (Models 10h-1f... | 2     |            | 19F307FF6D |
-| 1022:15df | 1558:a500 | AMD        | Family 17h (Models 10h-1f... | 2     |            | 792FB07DD9 |
-| 1022:15df | 17aa:5082 | AMD        | Family 17h (Models 10h-1f... | 2     | ccp        | ED75B3D15B |
-| 1022:15df | 17aa:5125 | AMD        | Family 17h (Models 10h-1f... | 2     |            | 7A706E46DE |
-| 1022:15df | 1d05:109f | AMD        | Family 17h (Models 10h-1f... | 2     |            | 5359B4DEE9 |
-| 8086:2298 | 8086:7270 | Intel      | Atom/Celeron/Pentium Proc... | 2     |            | F8310915B6 |
-| 1022:1486 | 1558:50f0 | AMD        | Starship/Matisse Cryptogr... | 1     |            | 0AC6AED43B |
-| 1022:1537 | 1025:0865 | AMD        | Kabini/Mullins PSP-Platfo... | 1     |            | 079F83A360 |
-| 1022:15df | 1025:134d | AMD        | Family 17h (Models 10h-1f... | 1     |            | 1AC21E1660 |
-| 1022:15df | 1028:09f5 | AMD        | Family 17h (Models 10h-1f... | 1     |            | BA74D8EEE0 |
-| 1022:15df | 103c:85b3 | AMD        | Family 17h (Models 10h-1f... | 1     |            | ECF07AD5FE |
-| 1022:15df | 103c:85e0 | AMD        | Family 17h (Models 10h-1f... | 1     |            | 5CD8E23152 |
-| 1022:15df | 103c:87b1 | AMD        | Family 17h (Models 10h-1f... | 1     |            | 5E5632D9B6 |
-| 1022:15df | 17aa:3809 | AMD        | Family 17h (Models 10h-1f... | 1     |            | 4AC6C9B3EB |
-| 1022:15df | 17aa:3816 | AMD        | Family 17h (Models 10h-1f... | 1     |            | 1F226262CC |
-| 1022:15df | 17aa:5081 | AMD        | Family 17h (Models 10h-1f... | 1     |            | BD88655975 |
-| 1022:15df | 17aa:5124 | AMD        | Family 17h (Models 10h-1f... | 1     |            | A1FC75A9B7 |
-| 1022:15df | 17aa:5126 | AMD        | Family 17h (Models 10h-1f... | 1     |            | CD016E96EE |
-| 1022:15df | 17aa:5127 | AMD        | Family 17h (Models 10h-1f... | 1     |            | 0E5E228D18 |
-| 1022:15df | 19e5:3e14 | AMD        | Family 17h (Models 10h-1f... | 1     |            | D776625073 |
-| 1022:15df | 1d05:1077 | AMD        | Family 17h (Models 10h-1f... | 1     |            | 5EC101BB3E |
-| 1022:15df | 1d72:1951 | AMD        | Family 17h (Models 10h-1f... | 1     |            | A7BF2669CE |
-| 8086:0f18 | 1025:0845 | Intel      | Atom Processor Z36xxx/Z37... | 1     |            | C65D08AA57 |
-| 8086:0f18 | 1043:161d | Intel      | Atom Processor Z36xxx/Z37... | 1     |            | CFC7D86B5A |
-| 8086:0f18 | 17aa:2224 | Intel      | Atom Processor Z36xxx/Z37... | 1     |            | 6CD0B0ED25 |
-| 8086:2298 | 1025:0998 | Intel      | Atom/Celeron/Pentium Proc... | 1     |            | 39FB05C049 |
-| 8086:2298 | 1043:10b0 | Intel      | Atom/Celeron/Pentium Proc... | 1     |            | 5781A8B561 |
-| 8086:2298 | 1043:1d5d | Intel      | Atom/Celeron/Pentium Proc... | 1     |            | 26AEF04E22 |
-| 8086:2298 | 1179:f840 | Intel      | Atom/Celeron/Pentium Proc... | 1     |            | 9CF9861053 |
-| 8086:2298 | 17aa:3808 | Intel      | Atom/Celeron/Pentium Proc... | 1     |            | C5E824B558 |
+| ID        | Subsystem | MFG              | Name                                 | Count | Driver     | Probe |
+|-----------|-----------|------------------|--------------------------------------|-------|------------|-------|
+| 1022:15df | 1022:15df | AMD              | Family 17h (Models 10h-1fh) Platf... | 16    |            | [494195B923](<Notebook/Hewlett-Packard/ProBook/ProBook 445 G7/06DE97DEA747/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/494195B923>) |
+| 1022:1456 | 1022:1456 | AMD              | Family 17h (Models 00h-0fh) Platf... | 12    | ccp        | [4D8F19BA12](<Notebook/Deciso/Netboard/Netboard A20/94D2C7F0ED24/OPNSENSE-22.1/13.0-STABLE/AMD64/4D8F19BA12>) |
+| 1022:1468 | 1022:1468 | AMD              | Zeppelin Cryptographic Coprocesso... | 12    | ccp        | [4D8F19BA12](<Notebook/Deciso/Netboard/Netboard A20/94D2C7F0ED24/OPNSENSE-22.1/13.0-STABLE/AMD64/4D8F19BA12>) |
+| 1022:1537 | 1022:1537 | AMD              | Kabini/Mullins PSP-Platform Secur... | 6     |            | [1758596E26](<Notebook/Hewlett-Packard/Notebook/Notebook/A739DC61372B/NOMADBSD-5806F915/13.0-RELEASE/AMD64/1758596E26>) |
+| 1022:1578 | 103c:84ac | AMD              | Carrizo Platform Security Processor  | 4     |            | [766E62F699](<Notebook/Hewlett-Packard/Laptop/Laptop 15-db0xxx/3E8F8F48759C/NOMADBSD-5806F915/13.0-RELEASE/AMD64/766E62F699>) |
+| 1022:15df | 17aa:5097 | AMD              | Family 17h (Models 10h-1fh) Platf... | 4     |            | [6C208C85A5](<Notebook/Lenovo/ThinkPad/ThinkPad E14 Gen 3 20Y7003SGE/284E69188279/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/6C208C85A5>) |
+| 8086:2298 | 8086:7270 | Intel            | Atom/Celeron/Pentium Processor x5... | 4     |            | [3454B5492B](<Notebook/AZW/BT3/BT3 PRO/8FB6E0960427/OPNSENSE-21.7.5/12.1-RELEASE-P21-HBSD/AMD64/3454B5492B>) |
+| 1022:15df | 17aa:5122 | AMD              | Family 17h (Models 10h-1fh) Platf... | 3     |            | [0C153D0C98](<Notebook/Lenovo/ThinkPad/ThinkPad A485 20MU000VUS/0748151D3905/MIDNIGHTBSD-2.1.1/2.1.1/AMD64/0C153D0C98>) |
+| 1022:15df | 1d05:109f | AMD              | Family 17h (Models 10h-1fh) Platf... | 3     |            | [6F779D5170](<Notebook/TUXEDO/Pulse/Pulse 15 Gen1/C92D236C248C/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/6F779D5170>) |
+| 1022:1456 | 1025:1246 | AMD              | Family 17h (Models 00h-0fh) Platf... | 2     |            | [9E03A76684](<Notebook/Acer/Predator/Predator PH517-61/401258E70C57/FREEBSD-13.0/13.0-RELEASE/AMD64/9E03A76684>) |
+| 1022:1537 | 17aa:3801 | AMD              | Kabini/Mullins PSP-Platform Secur... | 2     |            | [1D227A9CD2](<Notebook/Lenovo/G50-45/G50-45 80E3/E53F1DE394A5/NOMADBSD-1.3.2/12.1-RELEASE-P6/AMD64/1D227A9CD2>) |
+| 1022:1578 | 1022:1578 | AMD              | Carrizo Platform Security Processor  | 2     |            | [E54BE582A7](<Notebook/Dell/Inspiron/Inspiron 5555/986E47B6651F/FREEBSD-13.0-P6/13.0-RELEASE-P6/AMD64/E54BE582A7>) |
+| 1022:1578 | 103c:8330 | AMD              | Carrizo Platform Security Processor  | 2     |            | [8E9A6CFF62](<Notebook/Hewlett-Packard/Laptop/Laptop 15-rb0xx/94A2E681C681/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/8E9A6CFF62>) |
+| 1022:15df | 103c:85e0 | AMD              | Family 17h (Models 10h-1fh) Platf... | 2     |            | [E7B40F6E3B](<Notebook/Hewlett-Packard/Laptop/Laptop 14-dk0xxx/60E15DE8A8F4/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E7B40F6E3B>) |
+| 1022:15df | 103c:8786 | AMD              | Family 17h (Models 10h-1fh) Platf... | 2     |            | [19F307FF6D](<Notebook/Hewlett-Packard/OMEN/OMEN Laptop 15-en0xxx/99830226F687/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/19F307FF6D>) |
+| 1022:15df | 103c:87b1 | AMD              | Family 17h (Models 10h-1fh) Platf... | 2     |            | [B8408CB369](<Notebook/Hewlett-Packard/Pavilion/Pavilion Gaming Laptop 15-ec1xxx/447033DB0DB6/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/B8408CB369>) |
+| 1022:15df | 103c:88dd | AMD              | Family 17h (Models 10h-1fh) Platf... | 2     |            | [7859F220B9](<Notebook/Hewlett-Packard/Pavilion/Pavilion Gaming Laptop 15-ec2xxx/32343F8FB2CF/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/7859F220B9>) |
+| 1022:15df | 1558:a500 | AMD              | Family 17h (Models 10h-1fh) Platf... | 2     |            | [792FB07DD9](<Notebook/Notebook/NL5/NL5xRU/5E9A5B67425F/FREEBSD-13.0/13.0-RELEASE/AMD64/792FB07DD9>) |
+| 1022:15df | 17aa:3809 | AMD              | Family 17h (Models 10h-1fh) Platf... | 2     |            | [ADE9F77281](<Notebook/Lenovo/IdeaPad/IdeaPad 330-15ARR 81D2/B11617CFB899/FREEBSD-13.0/13.0-RELEASE/AMD64/ADE9F77281>) |
+| 1022:15df | 17aa:3834 | AMD              | Family 17h (Models 10h-1fh) Platf... | 2     |            | [2A54A0C338](<Notebook/Lenovo/Yoga/Yoga Slim 7 Pro 14ACH5 82MS/FD0797BFCA5B/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/2A54A0C338>) |
+| 1022:15df | 17aa:5081 | AMD              | Family 17h (Models 10h-1fh) Platf... | 2     |            | [D910C79D75](<Notebook/Lenovo/ThinkPad/ThinkPad P14s Gen 1 20Y1CTO1WW/5E03AED6E452/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/D910C79D75>) |
+| 1022:15df | 17aa:5082 | AMD              | Family 17h (Models 10h-1fh) Platf... | 2     | ccp        | [ED75B3D15B](<Notebook/Lenovo/ThinkPad/ThinkPad X13 Gen 1 20UF000QRT/28FFDBA7F5C3/FREEBSD-13.0-BETA1/13.0-BETA2/AMD64/ED75B3D15B>) |
+| 1022:15df | 17aa:5125 | AMD              | Family 17h (Models 10h-1fh) Platf... | 2     |            | [7A706E46DE](<Notebook/Lenovo/ThinkPad/ThinkPad T495 20NJS0KP00/BBAE20B5A9E1/FREEBSD-13.0-CURRENT/13.0-CURRENT/AMD64/7A706E46DE>) |
+| 1022:15df | 17aa:5126 | AMD              | Family 17h (Models 10h-1fh) Platf... | 2     |            | [D7812A2905](<Notebook/Lenovo/ThinkPad/ThinkPad X395 20NL000GPG/878AD42630E7/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/D7812A2905>) |
+| 8086:0f18 | 17aa:2224 | Intel            | Atom Processor Z36xxx/Z37xxx Seri... | 2     |            | [0E448AF5F5](<Notebook/Lenovo/ThinkPad/ThinkPad Yoga 11e 20DAS0AE00/26BBAB82192F/HELLOSYSTEM-0.6.0/13.0-RELEASE/AMD64/0E448AF5F5>) |
+| 8086:2298 | 103c:80c5 | Intel            | Atom/Celeron/Pentium Processor x5... | 2     |            | [24E8C3DE59](<Notebook/Hewlett-Packard/250/250 G4/3B80136E49D3/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/24E8C3DE59>) |
+| 8086:2298 | 17aa:380b | Intel            | Atom/Celeron/Pentium Processor x5... | 2     |            | [2F90D5C2BD](<Notebook/Lenovo/IdeaPad/IdeaPad 110S-11IBR 80WG/1319E554F9F6/HELLOSYSTEM-0.7.0/13.0-RELEASE-P7/AMD64/2F90D5C2BD>) |
+| 1022:1486 | 1022:1486 | AMD              | Starship/Matisse Cryptographic Co... | 1     |            | [1099E6C574](<Notebook/WOOKING/X/X5/31699ACF8451/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/1099E6C574>) |
+| 1022:1486 | 1558:50f0 | AMD              | Starship/Matisse Cryptographic Co... | 1     |            | [0AC6AED43B](<Notebook/System76/Serval/Serval WS/3345B6D70744/FREEBSD-12.2/12.2-RELEASE/AMD64/0AC6AED43B>) |
+| 1022:1537 | 1025:0865 | AMD              | Kabini/Mullins PSP-Platform Secur... | 1     |            | [F8300DE583](<Notebook/Acer/Aspire/Aspire E5-521/CA7987BF6313/FREEBSD-13.0-P3/13.0-RELEASE-P3/AMD64/F8300DE583>) |
+| 1022:1537 | 103c:80b2 | AMD              | Kabini/Mullins PSP-Platform Secur... | 1     |            | [E27A6F46FC](<Notebook/Hewlett-Packard/Pavilion/Pavilion Notebook/A8CF95C34089/NOMADBSD-5806F915/13.0-RELEASE/AMD64/E27A6F46FC>) |
+| 1022:1578 | 1025:1192 | AMD              | Carrizo Platform Security Processor  | 1     |            | [44C1F82BEE](<Notebook/Acer/Aspire/Aspire A315-21/205315F126C8/FREEBSD-13.0-P5/13.0-RELEASE/AMD64/44C1F82BEE>) |
+| 1022:1578 | 17aa:380b | AMD              | Carrizo Platform Security Processor  | 1     |            | [1C4CF7C21C](<Notebook/Lenovo/IdeaPad/IdeaPad 320-15AST 80XV/A7A17DE3C5D0/FREEBSD-13.0/13.0-RELEASE/AMD64/1C4CF7C21C>) |
+| 1022:1578 | 17aa:380c | AMD              | Carrizo Platform Security Processor  | 1     |            | [D6C59472E5](<Notebook/Lenovo/IdeaPad/IdeaPad 320-15ABR 80XS/280CA3BBF560/FREEBSD-13.0/13.0-RELEASE/AMD64/D6C59472E5>) |
+| 1022:1578 | 17aa:380f | AMD              | Carrizo Platform Security Processor  | 1     |            | [BC5296EE7D](<Notebook/Lenovo/V145-15AST/V145-15AST 81MT/62231723F9E7/FREEBSD-13.0/13.0-RELEASE/AMD64/BC5296EE7D>) |
+| 1022:15df | 1025:134d | AMD              | Family 17h (Models 10h-1fh) Platf... | 1     |            | [1AC21E1660](<Notebook/Acer/Aspire/Aspire A315-42/DE5FD26538FB/GHOSTBSD-20.04.02/12.2-STABLE/AMD64/1AC21E1660>) |
+| 1022:15df | 1025:1456 | AMD              | Family 17h (Models 10h-1fh) Platf... | 1     |            | [7FB743C654](<Notebook/Acer/Aspire/Aspire A315-23/F20A633E5003/FREEBSD-13.0/13.0-RELEASE/AMD64/7FB743C654>) |
+| 1022:15df | 1028:09f5 | AMD              | Family 17h (Models 10h-1fh) Platf... | 1     |            | [9933A09C4F](<Notebook/Dell/G5/G5 5505/919E52ABE5A8/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/9933A09C4F>) |
+| 1022:15df | 1028:0a12 | AMD              | Family 17h (Models 10h-1fh) Platf... | 1     |            | [8D4B342FDA](<Notebook/Dell/Inspiron/Inspiron 3505/4D47E92A2957/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/8D4B342FDA>) |
+| 1022:15df | 103c:85b3 | AMD              | Family 17h (Models 10h-1fh) Platf... | 1     |            | [ECF07AD5FE](<Notebook/Hewlett-Packard/Laptop/Laptop 17-ca1xxx/17899E306221/FREEBSD-12.2-P2/12.2-RELEASE/AMD64/ECF07AD5FE>) |
+| 1022:15df | 17aa:380d | AMD              | Family 17h (Models 10h-1fh) Platf... | 1     |            | [E660899158](<Notebook/Lenovo/IdeaPad/IdeaPad Gaming 3 15ARH05 82EY/9C5FD9AECCA2/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/E660899158>) |
+| 1022:15df | 17aa:3816 | AMD              | Family 17h (Models 10h-1fh) Platf... | 1     |            | [1F226262CC](<Notebook/Lenovo/IdeaPad/IdeaPad S145-15API 81UT/1314B494F080/NOMADBSD-1.4/12.2-RELEASE-P4/AMD64/1F226262CC>) |
+| 1022:15df | 17aa:3818 | AMD              | Family 17h (Models 10h-1fh) Platf... | 1     |            | [1A13B7BFD1](<Notebook/Lenovo/Legion/Legion 5 15ARH05 82B5/F36FD56B8299/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/1A13B7BFD1>) |
+| 1022:15df | 17aa:381b | AMD              | Family 17h (Models 10h-1fh) Platf... | 1     |            | [BF56B2A81A](<Notebook/Lenovo/XiaoXinPro-13ARE/XiaoXinPro-13ARE 2020 82DM/F0E303B67D1F/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/BF56B2A81A>) |
+| 1022:15df | 17aa:382e | AMD              | Family 17h (Models 10h-1fh) Platf... | 1     |            | [42B4BCBCC2](<Notebook/Lenovo/ThinkBook/ThinkBook 14 G3 ACL 21A2/0D8018F67544/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/42B4BCBCC2>) |
+| 1022:15df | 17aa:5123 | AMD              | Family 17h (Models 10h-1fh) Platf... | 1     |            | [FF53F0763C](<Notebook/Lenovo/ThinkPad/ThinkPad A285 20MW000JMH/DED973746155/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/FF53F0763C>) |
+| 1022:15df | 17aa:5124 | AMD              | Family 17h (Models 10h-1fh) Platf... | 1     |            | [A1FC75A9B7](<Notebook/Lenovo/ThinkPad/ThinkPad E495 20NE0001US/84A292AF9512/FREEBSD-12.1-P10/12.1-RELEASE-P10/AMD64/A1FC75A9B7>) |
+| 1022:15df | 17aa:5127 | AMD              | Family 17h (Models 10h-1fh) Platf... | 1     |            | [0E5E228D18](<Notebook/Lenovo/ThinkPad/ThinkPad T495s 20QKS1812F/C3CD82558289/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/0E5E228D18>) |
+| 1022:15df | 19e5:3e0d | AMD              | Family 17h (Models 10h-1fh) Platf... | 1     |            | [BD5B726E52](<Notebook/HUAWEI/HLY-WX9/HLY-WX9XX/7FB1A29EA377/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/BD5B726E52>) |
+| 1022:15df | 19e5:3e14 | AMD              | Family 17h (Models 10h-1fh) Platf... | 1     |            | [D776625073](<Notebook/HUAWEI/HN-WX9/HN-WX9X/9CD27AA9940C/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/D776625073>) |
+| 1022:15df | 1d05:1077 | AMD              | Family 17h (Models 10h-1fh) Platf... | 1     |            | [5EC101BB3E](<Notebook/MOTILE/M/M142/0B5DF4978E87/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/5EC101BB3E>) |
+| 1022:15df | 1d72:1951 | AMD              | Family 17h (Models 10h-1fh) Platf... | 1     |            | [A7BF2669CE](<Notebook/Timi/RedmiBook/RedmiBook 14 II/E502DAC4FD8B/FREEBSD-13.0-CURRENT/13.0-CURRENT/AMD64/A7BF2669CE>) |
+| 1022:15df | 1e83:3e33 | AMD              | Family 17h (Models 10h-1fh) Platf... | 1     |            | [B7841E03F5](<Notebook/HUAWEI/KLVL-WXX/KLVL-WXX9/C229C05C2950/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/B7841E03F5>) |
+| 1022:1649 | 1022:1649 | AMD              | VanGogh PSP/CCP                      | 1     |            | [20CDC9D999](<Notebook/ASUSTek Computer/ROG/ROG Zephyrus G14 GA402RJ_GA402RJ/8B17C1C0752C/FREEBSD-13.0/13.0-RELEASE/AMD64/20CDC9D999>) |
+| 104a:7007 | 1028:0001 | STMicroelectr... | Data Protection / Hardware Crypto... | 1     |            | [2F848FD2C0](<Notebook/Dell/Precision/Precision M4600/B6B9C54EEBB2/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/2F848FD2C0>) |
+| 8086:0f18 | 1025:0845 | Intel            | Atom Processor Z36xxx/Z37xxx Seri... | 1     |            | [C65D08AA57](<Notebook/Acer/E1/E1-510/5F60B59FAFEA/FREEBSD-12.1/12.1-RELEASE/AMD64/C65D08AA57>) |
+| 8086:0f18 | 1025:0905 | Intel            | Atom Processor Z36xxx/Z37xxx Seri... | 1     |            | [B14C4C1AC5](<Notebook/Acer/Aspire/Aspire E5-511G/AA76D3531A2F/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/B14C4C1AC5>) |
+| 8086:0f18 | 1025:0938 | Intel            | Atom Processor Z36xxx/Z37xxx Seri... | 1     |            | [83ADDDDAA5](<Notebook/Acer/Aspire/Aspire ES1-311/9B5BA7E8FD87/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/83ADDDDAA5>) |
+| 8086:0f18 | 103c:8023 | Intel            | Atom Processor Z36xxx/Z37xxx Seri... | 1     |            | [C8EA8A4C4F](<Notebook/Hewlett-Packard/Stream/Stream Notebook PC 11/846500491E77/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/C8EA8A4C4F>) |
+| 8086:0f18 | 1043:161d | Intel            | Atom Processor Z36xxx/Z37xxx Seri... | 1     |            | [CFC7D86B5A](<Notebook/ASUSTek Computer/X553/X553MA/FD95F43CF9C9/FREEBSD-12.2/12.2-RELEASE/AMD64/CFC7D86B5A>) |
+| 8086:0f18 | 1179:f91b | Intel            | Atom Processor Z36xxx/Z37xxx Seri... | 1     |            | [6B03A2C4C2](<Notebook/Toshiba/Satellite/Satellite C50-B/EA82D94A2F3A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/6B03A2C4C2>) |
+| 8086:0f18 | 17aa:3807 | Intel            | Atom Processor Z36xxx/Z37xxx Seri... | 1     |            | [141A393D54](<Notebook/Lenovo/S20-30/S20-30 Touch 20434/444E2E4CB067/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/141A393D54>) |
+| 8086:0f18 | 8086:0f18 | Intel            | Atom Processor Z36xxx/Z37xxx Seri... | 1     |            | [B76B5C9670](<Notebook/PCSTICK/Others/Others/A80AD42ABF4E/HELLOSYSTEM-0.8.0/13.0-RELEASE-P7/AMD64/B76B5C9670>) |
+| 8086:2298 | 1025:0998 | Intel            | Atom/Celeron/Pentium Processor x5... | 1     |            | [39FB05C049](<Notebook/Acer/Aspire/Aspire E5-432/5173F30BE7FC/NOMADBSD-1.3.2/12.1-RELEASE-P6/AMD64/39FB05C049>) |
+| 8086:2298 | 1025:108c | Intel            | Atom/Celeron/Pentium Processor x5... | 1     |            | [4F02660D9C](<Notebook/Acer/TravelMate/TravelMate B117-M/C01606FB9E70/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/4F02660D9C>) |
+| 8086:2298 | 103c:8175 | Intel            | Atom/Celeron/Pentium Processor x5... | 1     |            | [1E888F2278](<Notebook/Hewlett-Packard/15/15 Notebook PC/A89C1381E32D/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/1E888F2278>) |
+| 8086:2298 | 1043:10b0 | Intel            | Atom/Celeron/Pentium Processor x5... | 1     |            | [5781A8B561](<Notebook/ASUSTek Computer/E200/E200HA/5DB823CDADDC/FREEBSD-12.2/12.2-RELEASE/AMD64/5781A8B561>) |
+| 8086:2298 | 1043:1d5d | Intel            | Atom/Celeron/Pentium Processor x5... | 1     |            | [26AEF04E22](<Notebook/ASUSTek Computer/E402/E402SA/93948801B84B/FREEBSD-12.1-P8/12.1-RELEASE-P8/AMD64/26AEF04E22>) |
+| 8086:2298 | 1179:f840 | Intel            | Atom/Celeron/Pentium Processor x5... | 1     |            | [250DB17F57](<Notebook/Toshiba/Satellite/Satellite L50-C/00E1490CB02B/FREEBSD-13.0-P3/13.0-RELEASE-P3/AMD64/250DB17F57>) |
+| 8086:2298 | 1558:0242 | Intel            | Atom/Celeron/Pentium Processor x5... | 1     |            | [D2560F69F7](<Notebook/BANGHO/MAX/MAX G5/84D15EB38C86/FREEBSD-13.0-P3/13.0-RELEASE-P3/AMD64/D2560F69F7>) |
+| 8086:2298 | 1558:5108 | Intel            | Atom/Celeron/Pentium Processor x5... | 1     |            | [3D6DE69BDA](<Notebook/Notebook/W510/W510LU/9170C0A01FA9/FREEBSD-13.0-P3/13.0-RELEASE-P1/AMD64/3D6DE69BDA>) |
+| 8086:2298 | 17aa:3808 | Intel            | Atom/Celeron/Pentium Processor x5... | 1     |            | [C5E824B558](<Notebook/Lenovo/IdeaPad/IdeaPad 110-15IBR 80T7/57C1CF8894D2/NOMADBSD-1.4/12.2-RELEASE-P4/AMD64/C5E824B558>) |
+| 8086:2298 | 17aa:3905 | Intel            | Atom/Celeron/Pentium Processor x5... | 1     |            | [3FB09D0402](<Notebook/Lenovo/IdeaPad/IdeaPad 100S-14IBR 80R9/9F5DDBE3A8F8/FREEBSD-13.0-P3/13.0-RELEASE-P3/AMD64/3FB09D0402>) |
 
 ### Firewire controller (PCI)
 
-| ID        | Subsystem | MFG        | Name                         | Count | Driver     | Probe      |
-|-----------|-----------|------------|------------------------------|-------|------------|------------|
-| 11c1:5901 | 11c1:5900 | LSI        | FW643 [TrueFire] PCIe 139... | 15    | fwohci     | AFC70D9C77 |
-| 1180:0832 | 17aa:20c7 | Ricoh      | R5C832 IEEE 1394 Controller  | 10    | fwohci     | 981517A51A |
-| 1180:e832 | 17aa:2136 | Ricoh      | R5C832 PCIe IEEE 1394 Con... | 4     | fwohci     | 219E9CB1D7 |
-| 1180:e832 | 17aa:21ce | Ricoh      | R5C832 PCIe IEEE 1394 Con... | 4     |            | DC29D714D9 |
-| 1180:e832 | 1028:040a | Ricoh      | R5C832 PCIe IEEE 1394 Con... | 3     | fwohci     | 211FE874FD |
-| 11c1:5811 | 11c1:5811 | LSI        | FW322/323 [TrueFire] 1394... | 3     | fwohci     | ED3684513F |
-| 1180:0832 | 1028:024d | Ricoh      | R5C832 IEEE 1394 Controller  | 2     | fwohci     | D5051EF185 |
-| 1180:e832 | 17aa:21cf | Ricoh      | R5C832 PCIe IEEE 1394 Con... | 2     |            | 242CD8A6E7 |
-| 1217:13f7 | 1028:049b | O2 Micro   | 1394 OHCI Compliant Host ... | 2     |            | 4B4CD45AC7 |
-| 197b:2380 | 103c:17a7 | JMicron... | IEEE 1394 Host Controller    | 2     | fwohci     | 52BA4E835F |
-| 104c:8026 | 103c:0850 | Texas I... | TSB43AB21 IEEE-1394a-2000... | 1     |            | B7C0CB252F |
-| 104c:8026 | 107b:0400 | Texas I... | TSB43AB21 IEEE-1394a-2000... | 1     | fwohci     | 41E40C653E |
-| 104c:802e | 104d:818f | Texas I... | PCI7x20 1394a-2000 OHCI T... | 1     |            | F2F3923EA6 |
-| 104c:803a | 1025:011f | Texas I... | PCIxx12 OHCI Compliant IE... | 1     |            | 5D6A8A51D0 |
-| 104c:803a | 1028:0252 | Texas I... | PCIxx12 OHCI Compliant IE... | 1     |            | 19456100CF |
-| 104c:803a | 103c:30aa | Texas I... | PCIxx12 OHCI Compliant IE... | 1     |            | 256E0AE719 |
-| 104c:803a | 104d:81e6 | Texas I... | PCIxx12 OHCI Compliant IE... | 1     |            | ACE534D784 |
-| 104c:803a | 104d:9016 | Texas I... | PCIxx12 OHCI Compliant IE... | 1     |            | B417DF513F |
-| 104c:803a | 1179:ff00 | Texas I... | PCIxx12 OHCI Compliant IE... | 1     |            | E6E0A1294C |
-| 1106:3044 | 1106:3044 | VIA Tec... | VT6306/7/8 [Fire II(M)] I... | 1     |            | 56A5581907 |
-| 1180:0552 | 1043:1197 | Ricoh      | R5C552 IEEE 1394 Controller  | 1     |            | 1F098AC490 |
-| 1180:0552 | 1043:1897 | Ricoh      | R5C552 IEEE 1394 Controller  | 1     | fwohci     | 0D292BCA2F |
-| 1180:0552 | 17aa:201e | Ricoh      | R5C552 IEEE 1394 Controller  | 1     |            | F08ACC6929 |
-| 1180:0832 |           | Ricoh      | R5C832 IEEE 1394 Controller  | 1     |            | A76C55B066 |
-| 1180:0832 | 1028:01bd | Ricoh      | R5C832 IEEE 1394 Controller  | 1     |            | 7F814A7E8D |
-| 1180:0832 | 1028:022f | Ricoh      | R5C832 IEEE 1394 Controller  | 1     |            | D08EA3542E |
-| 1180:0832 | 1028:024f | Ricoh      | R5C832 IEEE 1394 Controller  | 1     | fwohci     | D25DACC162 |
-| 1180:0832 | 1028:0262 | Ricoh      | R5C832 IEEE 1394 Controller  | 1     |            | 54854343E4 |
-| 1180:0832 | 1028:029f | Ricoh      | R5C832 IEEE 1394 Controller  | 1     |            | A4C1D361EB |
-| 1180:0832 | 1028:02a2 | Ricoh      | R5C832 IEEE 1394 Controller  | 1     |            | 0B60C1CB25 |
-| 1180:0832 | 103c:1521 | Ricoh      | R5C832 IEEE 1394 Controller  | 1     |            | 78D9A31074 |
-| 1180:0832 | 103c:172a | Ricoh      | R5C832 IEEE 1394 Controller  | 1     | fwohci     | 7968C7D2DD |
-| 1180:0832 | 103c:30bb | Ricoh      | R5C832 IEEE 1394 Controller  | 1     |            | 733C5EDB74 |
-| 1180:0832 | 103c:30cc | Ricoh      | R5C832 IEEE 1394 Controller  | 1     |            | 316FFB0740 |
-| 1180:0832 | 103c:30e1 | Ricoh      | R5C832 IEEE 1394 Controller  | 1     |            | 1FD927E2CD |
-| 1180:0832 | 1043:15d7 | Ricoh      | R5C832 IEEE 1394 Controller  | 1     | fwohci     | 593C12AA06 |
-| 1180:0832 | 1043:1877 | Ricoh      | R5C832 IEEE 1394 Controller  | 1     | fwohci     | A2EE0C9EDB |
-| 1180:0832 | 104d:9035 | Ricoh      | R5C832 IEEE 1394 Controller  | 1     | fwohci     | 4A6CA78BC0 |
-| 1180:0832 | 17aa:3829 | Ricoh      | R5C832 IEEE 1394 Controller  | 1     | fwohci     | 6B81593DE9 |
-| 1180:0832 | 1b0a:200d | Ricoh      | R5C832 IEEE 1394 Controller  | 1     | fwohci     | 50D37406DF |
-| 1180:e832 | 103c:1471 | Ricoh      | R5C832 PCIe IEEE 1394 Con... | 1     |            | C1F086E90C |
-| 1180:e832 | 17aa:21f6 | Ricoh      | R5C832 PCIe IEEE 1394 Con... | 1     | fwohci     | 39F3A4F234 |
-| 11c1:5903 | 11c1:5900 | LSI        | FW533 [TrueFire] PCIe 139... | 1     |            | F1BC2178A9 |
-| 1217:00f7 | 1028:0273 | O2 Micro   | Firewire (IEEE 1394)         | 1     |            | EF1C0E0F2E |
-| 1217:00f7 | 10cf:13c6 | O2 Micro   | Firewire (IEEE 1394)         | 1     |            | AC880C0076 |
-| 1217:00f7 | 1179:ff50 | O2 Micro   | Firewire (IEEE 1394)         | 1     |            | 71FD81DF30 |
-| 1217:11f7 | 1028:04a4 | O2 Micro   | OZ600 1394a-2000 Controller  | 1     |            | B6C974B8BD |
-| 1217:13f7 | 1028:053e | O2 Micro   | 1394 OHCI Compliant Host ... | 1     |            | A7761EE829 |
-| 197b:2380 | 103c:161c | JMicron... | IEEE 1394 Host Controller    | 1     |            | ADA1119026 |
-| 197b:2380 | 103c:162a | JMicron... | IEEE 1394 Host Controller    | 1     |            | 5707FC27CE |
-| 197b:2380 | 103c:1631 | JMicron... | IEEE 1394 Host Controller    | 1     |            | C240E3A1EA |
+| ID        | Subsystem | MFG              | Name                                 | Count | Driver     | Probe |
+|-----------|-----------|------------------|--------------------------------------|-------|------------|-------|
+| 11c1:5901 | 11c1:5900 | LSI              | FW643 [TrueFire] PCIe 1394b Contr... | 23    | fwohci     | [AA484C30A8](<Notebook/Apple/MacBookPro8/MacBookPro8,1/83A908F15226/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/AA484C30A8>) |
+| 1180:0832 | 17aa:20c7 | Ricoh            | R5C832 IEEE 1394 Controller          | 15    | fwohci     | [F5F25EFDCC](<Notebook/Lenovo/ThinkPad/ThinkPad T61 766301U/A1D00057611B/HELLOSYSTEM-0.7.0/13.0-RELEASE-P7/AMD64/F5F25EFDCC>) |
+| 1180:e832 | 17aa:2136 | Ricoh            | R5C832 PCIe IEEE 1394 Controller     | 12    | fwohci     | [973ADE9E4A](<Notebook/Lenovo/ThinkPad/ThinkPad T410 2537WEE/B0EAFA5FD723/OPNSENSE-22.1.2/13.0-STABLE/AMD64/973ADE9E4A>) |
+| 11c1:5811 | 11c1:5811 | LSI              | FW322/323 [TrueFire] 1394a Contro... | 6     | fwohci     | [E0CF5200DE](<Notebook/Apple/MacBook4/MacBook4,1/07CFC301CF14/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E0CF5200DE>) |
+| 1180:e832 | 17aa:21ce | Ricoh            | R5C832 PCIe IEEE 1394 Controller     | 5     |            | [808F58228E](<Notebook/Lenovo/ThinkPad/ThinkPad T420 4236FJ1/72229BBDCAFF/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/808F58228E>) |
+| 1180:e832 | 1028:040a | Ricoh            | R5C832 PCIe IEEE 1394 Controller     | 4     | fwohci     | [8C904D84E0](<Notebook/Dell/Latitude/Latitude E6410/D86C1197F0AC/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/8C904D84E0>) |
+| 1180:e832 | 17aa:21cf | Ricoh            | R5C832 PCIe IEEE 1394 Controller     | 4     |            | [9082353A69](<Notebook/Lenovo/ThinkPad/ThinkPad W520 4276CTO/648C52E5D9D4/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/9082353A69>) |
+| 104c:8025 |           | Texas Instrum... | TSB82AA2 IEEE-1394b Link Layer Co... | 3     | fwohci     | [D852363467](<Notebook/Apple/MacBookPro4/MacBookPro4,1/A1E7ACA2078D/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/D852363467>) |
+| 1180:0832 | 1028:024d | Ricoh            | R5C832 IEEE 1394 Controller          | 3     | fwohci     | [FDB3DE3036](<Notebook/Dell/Latitude/Latitude E4300/B023391CA6F2/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/FDB3DE3036>) |
+| 1217:13f7 | 1028:049b | O2 Micro         | 1394 OHCI Compliant Host Controller  | 3     | fwohci     | [1ED3FF35F6](<Notebook/Dell/Latitude/Latitude E5420/7F50D3A16CDB/HELLOSYSTEM-0.5.0/13.0-RELEASE/AMD64/1ED3FF35F6>) |
+| 1180:0832 | 1043:1877 | Ricoh            | R5C832 IEEE 1394 Controller          | 2     | fwohci     | [883DED6CB1](<Notebook/ASUSTek Computer/N50/N50Vc/77A5AA89F908/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/883DED6CB1>) |
+| 1180:e832 | 17aa:21f6 | Ricoh            | R5C832 PCIe IEEE 1394 Controller     | 2     | fwohci     | [4E7FC367BC](<Notebook/Lenovo/ThinkPad/ThinkPad W530 2447AV9/778B9CE5B6CA/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/4E7FC367BC>) |
+| 11c1:5903 | 11c1:5900 | LSI              | FW533 [TrueFire] PCIe 1394a Contr... | 2     | fwohci     | [29756C2371](<Notebook/Apple/MacBook5/MacBook5,2/EA861217BDD8/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/29756C2371>) |
+| 1217:00f7 | 1179:ff50 | O2 Micro         | Firewire (IEEE 1394)                 | 2     | fwohci     | [13E4AA7026](<Notebook/Toshiba/Satellite/Satellite P300/AFEE934437AF/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/13E4AA7026>) |
+| 197b:2380 | 103c:17a7 | JMicron Techn... | IEEE 1394 Host Controller            | 2     | fwohci     | [462FC329A9](<Notebook/Hewlett-Packard/EliteBook/EliteBook 8570p/8F084339058D/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/462FC329A9>) |
+| 104c:8026 | 103c:0850 | Texas Instrum... | TSB43AB21 IEEE-1394a-2000 Control... | 1     |            | [B7C0CB252F](<Notebook/Hewlett-Packard/nx/nx9010/C0E10A77D690/FREEBSD-12.1-P10/12.1-RELEASE-P9/I386/B7C0CB252F>) |
+| 104c:8026 | 107b:0400 | Texas Instrum... | TSB43AB21 IEEE-1394a-2000 Control... | 1     | fwohci     | [41E40C653E](<Notebook/Gateway/Solo/Solo 450/3E11C9EAD72B/FREEBSD-12.2-P4/12.2-RELEASE-P4/I386/41E40C653E>) |
+| 104c:8029 | 1014:0561 | Texas Instrum... | PCI4510 IEEE-1394 Controller         | 1     |            | [6FD6FD89C5](<Notebook/IBM/ThinkPad/ThinkPad R52 185869G/DED57F076B3E/FREEBSD-12.2-P6/12.2-RELEASE-P6/I386/6FD6FD89C5>) |
+| 104c:802e | 104d:818f | Texas Instrum... | PCI7x20 1394a-2000 OHCI Two-Port ... | 1     |            | [F2F3923EA6](<Notebook/Sony/VGN-S/VGN-S150/194677ED6A48/FREEBSD-13.0-CURRENT/13.0-CURRENT/I386/F2F3923EA6>) |
+| 104c:803a | 1025:011f | Texas Instrum... | PCIxx12 OHCI Compliant IEEE 1394 ... | 1     |            | [5D6A8A51D0](<Notebook/Acer/Extensa/Extensa 5220/D9CE76F90EBD/FREEBSD-12.2-P3/12.2-RELEASE-P3/AMD64/5D6A8A51D0>) |
+| 104c:803a | 1028:0252 | Texas Instrum... | PCIxx12 OHCI Compliant IEEE 1394 ... | 1     |            | [19456100CF](<Notebook/Dell/Latitude/Latitude XT2/E54430436D1B/FREEBSD-12.1/12.1-RELEASE/AMD64/19456100CF>) |
+| 104c:803a | 103c:30aa | Texas Instrum... | PCIxx12 OHCI Compliant IEEE 1394 ... | 1     |            | [256E0AE719](<Notebook/Hewlett-Packard/Compaq/Compaq nc6320/BA8F7F88D1FF/FREEBSD-12.1-P4/12.1-RELEASE-P3/AMD64/256E0AE719>) |
+| 104c:803a | 104d:81e6 | Texas Instrum... | PCIxx12 OHCI Compliant IEEE 1394 ... | 1     |            | [ACE534D784](<Notebook/Sony/VGN-SZ3/VGN-SZ3VWP_X/ECFA4AD781DF/GHOSTBSD-20.04.02/12.1-STABLE/AMD64/ACE534D784>) |
+| 104c:803a | 104d:9016 | Texas Instrum... | PCIxx12 OHCI Compliant IEEE 1394 ... | 1     |            | [B417DF513F](<Notebook/Sony/VGN-AR630/VGN-AR630E/0309566B32D1/FREEBSD-12.1-P8/12.1-RELEASE-P8/AMD64/B417DF513F>) |
+| 104c:803a | 1179:ff00 | Texas Instrum... | PCIxx12 OHCI Compliant IEEE 1394 ... | 1     |            | [E6E0A1294C](<Notebook/Toshiba/Satellite/Satellite M100/9A0C6DBE0166/FREEBSD-12.2-STABLE/12.2-STABLE/I386/E6E0A1294C>) |
+| 1106:3044 | 1106:3044 | VIA Technologies | VT6306/7/8 [Fire II(M)] IEEE 1394... | 1     |            | [56A5581907](<Notebook/Acer/TravelMate/TravelMate 270/A6730E9E5FB4/FREEBSD-12.1-P10/12.1-RELEASE-P9/I386/56A5581907>) |
+| 1180:0552 | 1043:1197 | Ricoh            | R5C552 IEEE 1394 Controller          | 1     |            | [2962E2B02F](<Notebook/ASUSTek Computer/A/A9T/CD438D683462/FREEBSD-13.0-P7/13.0-RELEASE-P6/I386/2962E2B02F>) |
+| 1180:0552 | 1043:1897 | Ricoh            | R5C552 IEEE 1394 Controller          | 1     | fwohci     | [0D292BCA2F](<Notebook/ASUSTek Computer/A3/A3L/F71442C2DD56/FREEBSD-6.4/6.4-RELEASE/I386/0D292BCA2F>) |
+| 1180:0552 | 17aa:201e | Ricoh            | R5C552 IEEE 1394 Controller          | 1     |            | [F08ACC6929](<Notebook/Lenovo/ThinkPad/ThinkPad X60 1707YF8/33769D077052/FREEBSD-12.1-P5/12.1-RELEASE-P5/AMD64/F08ACC6929>) |
+| 1180:0832 |           | Ricoh            | R5C832 IEEE 1394 Controller          | 1     |            | [A76C55B066](<Notebook/Hewlett-Packard/EliteBook/EliteBook 8530w/938F6D84FC34/OPNSENSE-21.1.6/12.1-RELEASE-P16-HBSD/AMD64/A76C55B066>) |
+| 1180:0832 | 1028:01bd | Ricoh            | R5C832 IEEE 1394 Controller          | 1     |            | [7F814A7E8D](<Notebook/Dell/Inspiron/Inspiron MM061/75FBCB419A60/FREEBSD-12.0/12.0-RELEASE/AMD64/7F814A7E8D>) |
+| 1180:0832 | 1028:022f | Ricoh            | R5C832 IEEE 1394 Controller          | 1     |            | [D08EA3542E](<Notebook/Dell/Inspiron/Inspiron 1525/5F154BEB509E/FREEBSD-12.1-P7/12.1-RELEASE-P7/AMD64/D08EA3542E>) |
+| 1180:0832 | 1028:024f | Ricoh            | R5C832 IEEE 1394 Controller          | 1     | fwohci     | [D25DACC162](<Notebook/Dell/Latitude/Latitude E6500/2081BE9FC0C6/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/D25DACC162>) |
+| 1180:0832 | 1028:0262 | Ricoh            | R5C832 IEEE 1394 Controller          | 1     |            | [54854343E4](<Notebook/Dell/Latitude/Latitude E5400/9B1EFA5A95CE/FREEBSD-12.1-STABLE/12.1-STABLE/AMD64/54854343E4>) |
+| 1180:0832 | 1028:029f | Ricoh            | R5C832 IEEE 1394 Controller          | 1     |            | [A4C1D361EB](<Notebook/Dell/Studio/Studio 1537/37935D63DD2B/FREEBSD-12.2-P3/12.2-RELEASE-P3/AMD64/A4C1D361EB>) |
+| 1180:0832 | 1028:02a2 | Ricoh            | R5C832 IEEE 1394 Controller          | 1     |            | [0B60C1CB25](<Notebook/Alienware/M15/M15x/CE2290438456/FREEBSD-13.0/13.0-RELEASE/AMD64/0B60C1CB25>) |
+| 1180:0832 | 103c:1521 | Ricoh            | R5C832 IEEE 1394 Controller          | 1     |            | [78D9A31074](<Notebook/Hewlett-Packard/EliteBook/EliteBook 8540p/C7754EB31D05/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/78D9A31074>) |
+| 1180:0832 | 103c:172a | Ricoh            | R5C832 IEEE 1394 Controller          | 1     | fwohci     | [7968C7D2DD](<Notebook/Hewlett-Packard/EliteBook/EliteBook 8440p/D398076563B5/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/7968C7D2DD>) |
+| 1180:0832 | 103c:30bb | Ricoh            | R5C832 IEEE 1394 Controller          | 1     |            | [733C5EDB74](<Notebook/Hewlett-Packard/Pavilion/Pavilion dv6000/124DCA351C5C/NOMADBSD-1.4/12.2-RELEASE-P4/AMD64/733C5EDB74>) |
+| 1180:0832 | 103c:30cc | Ricoh            | R5C832 IEEE 1394 Controller          | 1     |            | [316FFB0740](<Notebook/Hewlett-Packard/Pavilion/Pavilion dv6500/32D4B6005261/FREEBSD-12.1-P8/12.1-RELEASE-P8/AMD64/316FFB0740>) |
+| 1180:0832 | 103c:30dc | Ricoh            | R5C832 IEEE 1394 Controller          | 1     | fwohci     | [D8FB34DE12](<Notebook/Hewlett-Packard/EliteBook/EliteBook 6930p/A87AADC786B8/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/D8FB34DE12>) |
+| 1180:0832 | 103c:30e1 | Ricoh            | R5C832 IEEE 1394 Controller          | 1     |            | [1FD927E2CD](<Notebook/Hewlett-Packard/EliteBook/EliteBook 2530p/59381631AD59/FREEBSD-12.2-P2/12.2-RELEASE-P1/AMD64/1FD927E2CD>) |
+| 1180:0832 | 1043:15d7 | Ricoh            | R5C832 IEEE 1394 Controller          | 1     | fwohci     | [593C12AA06](<Notebook/ASUSTek Computer/G1/G1S/7B906B209C35/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/593C12AA06>) |
+| 1180:0832 | 1043:17e7 | Ricoh            | R5C832 IEEE 1394 Controller          | 1     |            | [936A577D1A](<Notebook/ASUSTek Computer/M51/M51Sr/7A36C31A2F7E/NOMADBSD-5806F915/13.0-RELEASE/AMD64/936A577D1A>) |
+| 1180:0832 | 104d:9035 | Ricoh            | R5C832 IEEE 1394 Controller          | 1     | fwohci     | [4A6CA78BC0](<Notebook/Sony/VGN-FW290/VGN-FW290J/6762902751FD/FREEBSD-12.2-P5/12.2-RELEASE-P4/AMD64/4A6CA78BC0>) |
+| 1180:0832 | 1631:c109 | Ricoh            | R5C832 IEEE 1394 Controller          | 1     | fwohci     | [235D60060D](<Notebook/Packard Bell/EasyNote_MX61/EasyNote_MX61-B-038/01DB7104A4E5/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/235D60060D>) |
+| 1180:0832 | 17aa:2109 | Ricoh            | R5C832 IEEE 1394 Controller          | 1     |            | [AA10433581](<Notebook/Lenovo/ThinkPad/ThinkPad SL 2746M3C/94E9ECCC5727/HELLOSYSTEM-0.6.0/13.0-RELEASE/AMD64/AA10433581>) |
+| 1180:0832 | 17aa:3829 | Ricoh            | R5C832 IEEE 1394 Controller          | 1     | fwohci     | [6B81593DE9](<Notebook/Lenovo/3000/3000 N200 0769AP2/23BB9B88D57A/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/6B81593DE9>) |
+| 1180:0832 | 1b0a:200d | Ricoh            | R5C832 IEEE 1394 Controller          | 1     | fwohci     | [50D37406DF](<Notebook/Pegatron/T12/T12Ah/3A7D355EEBE4/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/50D37406DF>) |
+| 1180:e832 | 1028:0413 | Ricoh            | R5C832 PCIe IEEE 1394 Controller     | 1     |            | [C2BA752AB5](<Notebook/Dell/Studio/Studio 1558/A5AAC44BFAED/FREEBSD-13.0-P2/13.0-RELEASE-P1/AMD64/C2BA752AB5>) |
+| 1180:e832 | 1028:0428 | Ricoh            | R5C832 PCIe IEEE 1394 Controller     | 1     |            | [5C6B94DF97](<Notebook/Dell/Latitude/Latitude E5510/9E3287D69794/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/5C6B94DF97>) |
+| 1180:e832 | 103c:1471 | Ricoh            | R5C832 PCIe IEEE 1394 Controller     | 1     |            | [C1F086E90C](<Notebook/Hewlett-Packard/ProBook/ProBook 6550b/55EC19B2A558/FREEBSD-13.0-CURRENT/13.0-CURRENT/AMD64/C1F086E90C>) |
+| 1180:e832 | 1179:0001 | Ricoh            | R5C832 PCIe IEEE 1394 Controller     | 1     | fwohci     | [2AC9BEA1E6](<Notebook/Toshiba/PORTEGE/PORTEGE M780/9BA4726CBC1C/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/2AC9BEA1E6>) |
+| 1217:00f7 | 1028:01f9 | O2 Micro         | Firewire (IEEE 1394)                 | 1     | fwohci     | [B34DB656B5](<Notebook/Dell/Latitude/Latitude D630/3C23C4DC4DEC/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/B34DB656B5>) |
+| 1217:00f7 | 1028:01ff | O2 Micro         | Firewire (IEEE 1394)                 | 1     |            | [08FE78379D](<Notebook/Dell/Precision/Precision M4300/9A5AD1C0634C/OPNSENSE-21.7.6/12.1-RELEASE-P21-HBSD/AMD64/08FE78379D>) |
+| 1217:00f7 | 1028:0200 | O2 Micro         | Firewire (IEEE 1394)                 | 1     |            | [EF0DAC3DE0](<Notebook/Dell/Latitude/Latitude D530/A3518C2809C8/OPNSENSE-21.1.6/12.1-RELEASE-P16-HBSD/AMD64/EF0DAC3DE0>) |
+| 1217:00f7 | 1028:0273 | O2 Micro         | Firewire (IEEE 1394)                 | 1     |            | [EF1C0E0F2E](<Notebook/Dell/Vostro/Vostro 1510/810B328E2D37/FREEBSD-12.2/12.2-RELEASE/AMD64/EF1C0E0F2E>) |
+| 1217:00f7 | 10cf:13c6 | O2 Micro         | Firewire (IEEE 1394)                 | 1     |            | [AC880C0076](<Notebook/Fujitsu/FMVNF70/FMVNF70YJ/2CAC733E41C3/FREEBSD-12.2-P3/12.2-RELEASE-P3/AMD64/AC880C0076>) |
+| 1217:00f7 | 1462:3ff3 | O2 Micro         | Firewire (IEEE 1394)                 | 1     | fwohci     | [7DB1345E97](<Notebook/LG Electronics/E500/E500-GP01A9/E9442CB525C8/FREEBSD-13.0-P2/13.0-RELEASE-P1/AMD64/7DB1345E97>) |
+| 1217:10f7 | 1028:02eb | O2 Micro         | 1394 OHCI Compliant Host Controller  | 1     | fwohci     | [B0A51AC0AF](<Notebook/Dell/Studio/Studio 1747/121152236620/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/B0A51AC0AF>) |
+| 1217:10f7 | 10cf:1566 | O2 Micro         | 1394 OHCI Compliant Host Controller  | 1     |            | [51B5325C85](<Notebook/Fujitsu/LIFEBOOK/LIFEBOOK NH570/6DEB38A1F3EF/OPNSENSE-21.7.1/12.1-RELEASE-P19-HBSD/AMD64/51B5325C85>) |
+| 1217:11f7 | 1028:04a4 | O2 Micro         | OZ600 1394a-2000 Controller          | 1     |            | [B6C974B8BD](<Notebook/Dell/Precision/Precision M6600/4B49B0BB08DA/FREEBSD-12.1-P8/12.1-RELEASE-P8/AMD64/B6C974B8BD>) |
+| 1217:13f7 | 1028:049a | O2 Micro         | 1394 OHCI Compliant Host Controller  | 1     |            | [E0DD26220F](<Notebook/Dell/Latitude/Latitude E5520/15949FA8A5BD/GHOSTBSD-20.04.02/13.0-STABLE/AMD64/E0DD26220F>) |
+| 1217:13f7 | 1028:053e | O2 Micro         | 1394 OHCI Compliant Host Controller  | 1     |            | [A7761EE829](<Notebook/Dell/Precision/Precision M4700/FE04A21E262E/GHOSTBSD-20.03.01/12.1-STABLE/AMD64/A7761EE829>) |
+| 197b:2380 | 103c:161c | JMicron Techn... | IEEE 1394 Host Controller            | 1     |            | [ADA1119026](<Notebook/Hewlett-Packard/EliteBook/EliteBook 8460p/7402FB8074A9/FREEBSD-12.2-P3/12.2-RELEASE-P3/AMD64/ADA1119026>) |
+| 197b:2380 | 103c:162a | JMicron Techn... | IEEE 1394 Host Controller            | 1     |            | [5707FC27CE](<Notebook/Hewlett-Packard/EliteBook/EliteBook 2760p/D5F3CAD4D63E/OPNSENSE-21.1.3/12.1-RELEASE-P14-HBSD/AMD64/5707FC27CE>) |
+| 197b:2380 | 103c:1631 | JMicron Techn... | IEEE 1394 Host Controller            | 1     |            | [C240E3A1EA](<Notebook/Hewlett-Packard/EliteBook/EliteBook 8560w/1CB0DA46927B/FREEBSD-12.1-P5/12.1-RELEASE-P5/AMD64/C240E3A1EA>) |
 
 ### Graphics card (PCI)
 
-| ID        | Subsystem | MFG        | Name                         | Count | Driver     | Probe      |
-|-----------|-----------|------------|------------------------------|-------|------------|------------|
-| 8086:0126 | 17aa:21da | Intel      | 2nd Generation Core Proce... | 11    | i915       | 66743A51CC |
-| 8086:0126 | 17aa:21ce | Intel      | 2nd Generation Core Proce... | 8     | i915       | DC29D714D9 |
-| 8086:0046 | 17aa:215a | Intel      | Core Processor Integrated... | 7     | i915       | 219E9CB1D7 |
-| 8086:0166 | 17aa:21f3 | Intel      | 3rd Gen Core processor Gr... | 7     | i915       | 0F001F65D2 |
-| 8086:0166 | 17aa:21fa | Intel      | 3rd Gen Core processor Gr... | 7     | i915       | AB871769F0 |
-| 8086:0416 | 17aa:220e | Intel      | 4th Gen Core Processor In... | 6     | i915       | 7660F9B6DB |
-| 8086:1616 | 17aa:2226 | Intel      | HD Graphics 5500             | 6     | i915       | 107AC19795 |
-| 8086:2a42 | 17aa:20e4 | Intel      | Mobile 4 Series Chipset I... | 6     | agp        | 981517A51A |
-| 8086:2a43 | 17aa:20e4 | Intel      | Mobile 4 Series Chipset I... | 6     | vgapci     | 981517A51A |
-| 8086:0a16 | 1028:05ca | Intel      | Haswell-ULT Integrated Gr... | 5     | i915       | 1DBD9A5CEE |
-| 8086:1916 | 17aa:2238 | Intel      | Skylake GT2 [HD Graphics ... | 5     | i915       | 821C81E652 |
-| 8086:3ea0 | 17aa:2279 | Intel      | WhiskeyLake-U GT2 [UHD Gr... | 5     | i915       | 6311D603FF |
-| 8086:0166 | 1028:0597 | Intel      | 3rd Gen Core processor Gr... | 4     | i915       | 9050866FB2 |
-| 8086:0166 | 17aa:21fb | Intel      | 3rd Gen Core processor Gr... | 4     | i915       | FACF6FA0F8 |
-| 8086:0a16 | 1028:0651 | Intel      | Haswell-ULT Integrated Gr... | 4     | i915       | 0D1D75A914 |
-| 8086:1916 | 103c:8079 | Intel      | Skylake GT2 [HD Graphics ... | 4     | i915       | 2B97986DE1 |
-| 8086:2a02 | 17aa:20b5 | Intel      | Mobile GM965/GL960 Integr... | 4     | i915       | D223A9B1FB |
-| 8086:2a03 | 17aa:20b5 | Intel      | Mobile GM965/GL960 Integr... | 4     | i915       | D223A9B1FB |
-| 8086:5916 | 17aa:5062 | Intel      | HD Graphics 620              | 4     | i915       | 88C27E65D7 |
-| 1002:15dd | 17aa:5122 | AMD        | Raven Ridge [Radeon Vega ... | 3     | amdgpu     | 2F1BA02130 |
-| 10de:0a29 | 106b:00c7 | Nvidia     | GT216M [GeForce GT 330M]     | 3     | vgapci     | 0AB44E95DF |
-| 10de:1d12 | 19e5:3e04 | Nvidia     | GP108M [GeForce MX150]       | 3     | vgapci     | F7E09652D9 |
-| 8086:0046 |           | Intel      | Core Processor Integrated... | 3     | agp        | 0AB44E95DF |
-| 8086:0046 | 1028:040a | Intel      | Core Processor Integrated... | 3     | i915       | 211FE874FD |
-| 8086:0116 | 17aa:21da | Intel      | 2nd Generation Core Proce... | 3     | i915       | C5E7D3037F |
-| 8086:0126 | 106b:00db | Intel      | 2nd Generation Core Proce... | 3     | i915       | D1AAEAAD42 |
-| 8086:0126 | 10f7:8338 | Intel      | 2nd Generation Core Proce... | 3     | i915       | 6BBADBA65D |
-| 8086:0126 | 17aa:21d1 | Intel      | 2nd Generation Core Proce... | 3     | i915       | B2669E195E |
-| 8086:0166 | 17aa:21f6 | Intel      | 3rd Gen Core processor Gr... | 3     | i915       | 8573903191 |
-| 8086:0166 | 17aa:21f9 | Intel      | 3rd Gen Core processor Gr... | 3     | i915       | B659B95D1A |
-| 8086:0416 | 1028:05bd | Intel      | 4th Gen Core Processor In... | 3     | i915       | 3A656DED12 |
-| 8086:0416 | 1028:05cc | Intel      | 4th Gen Core Processor In... | 3     | i915       | 1847C0AADB |
-| 8086:0a16 | 17aa:220c | Intel      | Haswell-ULT Integrated Gr... | 3     | i915       | B644ED3914 |
-| 8086:0a16 | 17aa:2214 | Intel      | Haswell-ULT Integrated Gr... | 3     | i915       | CBFA45FE44 |
-| 8086:1616 | 17aa:2227 | Intel      | HD Graphics 5500             | 3     | i915       | B60382DA32 |
-| 8086:1616 | 17aa:5034 | Intel      | HD Graphics 5500             | 3     | i915       | D783B3B4DD |
-| 8086:1616 | 17aa:5036 | Intel      | HD Graphics 5500             | 3     | i915       | AC567BD12D |
-| 8086:2a02 | 106b:00a1 | Intel      | Mobile GM965/GL960 Integr... | 3     | i915       | ED3684513F |
-| 8086:2a03 | 106b:00a1 | Intel      | Mobile GM965/GL960 Integr... | 3     | i915       | ED3684513F |
-| 8086:2a42 | 17aa:213a | Intel      | Mobile 4 Series Chipset I... | 3     | agp        | BDBD2D0A05 |
-| 8086:2a43 | 17aa:213a | Intel      | Mobile 4 Series Chipset I... | 3     | vgapci     | BDBD2D0A05 |
-| 8086:5916 | 17aa:224f | Intel      | HD Graphics 620              | 3     | i915       | 4993AD0FEB |
-| 8086:5917 | 17aa:2258 | Intel      | UHD Graphics 620             | 3     | i915       | EBD44C21D9 |
-| 8086:5917 | 17aa:225c | Intel      | UHD Graphics 620             | 3     | i915       | 16206C4970 |
-| 8086:5917 | 19e5:3e04 | Intel      | UHD Graphics 620             | 3     | i915       | F7E09652D9 |
-| 8086:9b41 | 1028:09ec | Intel      | CometLake-U GT2 [UHD Grap... | 3     | acpi_vi... | 80D7BF959A |
-| 1002:15d8 | 1043:18f1 | AMD        | Picasso                      | 2     | amdgpu     | 1952513DB8 |
-| 1002:15d8 | 17aa:5125 | AMD        | Picasso                      | 2     | amdgpu     | 7A706E46DE |
-| 1002:1636 | 103c:8786 | AMD        | Renoir                       | 2     | acpi_vi... | 19F307FF6D |
-| 1002:1636 | 1558:a500 | AMD        | Renoir                       | 2     | acpi_vi... | 792FB07DD9 |
-| 1002:1636 | 17aa:5082 | AMD        | Renoir                       | 2     | amdgpu     | ED75B3D15B |
-| 1002:1636 | 1d05:109f | AMD        | Renoir                       | 2     | vgapci     | 5359B4DEE9 |
-| 1002:682f | 1028:0572 | AMD        | Chelsea LP [Radeon HD 7730M] | 2     | vgapci     | 599D3E84D7 |
-| 1002:6841 | 103c:17a9 | AMD        | Thames [Radeon HD 7550M/7... | 2     | radeon     | 52BA4E835F |
-| 1002:687f | 1025:1246 | AMD        | Vega 10 XL/XT [Radeon RX ... | 2     | acpi_vi... | 9E03A76684 |
-| 1002:699f | 17aa:5073 | AMD        | Lexa PRO [Radeon 540/540X... | 2     | vgapci     | 852A900303 |
-| 1002:7149 | 17aa:2005 | AMD        | RV515/M52 [Mobility Radeo... | 2     | vgapci     | 755AA50451 |
-| 1002:98e4 | 103c:84ac | AMD        | Stoney [Radeon R2/R3/R4/R... | 2     | amdgpu     | 3E500C12A3 |
-| 10de:0429 | 17aa:20d8 | Nvidia     | G86M [Quadro NVS 140M]       | 2     | acpi_vi... | CF75F7C9CB |
-| 10de:0863 | 106b:00b9 | Nvidia     | C79 [GeForce 9400M]          | 2     | vgapci     | F46146B79E |
-| 10de:0863 | 106b:00bd | Nvidia     | C79 [GeForce 9400M]          | 2     | vgapci     | 3A9335691F |
-| 10de:0fe9 | 106b:0130 | Nvidia     | GK107M [GeForce GT 750M M... | 2     | vgapci     | 1C9FEEF8E7 |
-| 10de:134d | 17aa:5050 | Nvidia     | GM108M [GeForce 940MX]       | 2     | vgapci     | DDC907CCF4 |
-| 10de:1c8c | 17aa:2267 | Nvidia     | GP107M [GeForce GTX 1050 ... | 2     | nvidia     | 045A80D8BC |
-| 10de:1c8d | 1028:0798 | Nvidia     | GP107M [GeForce GTX 1050 ... | 2     | vgapci     | 0E99E72EC9 |
-| 10de:1d11 | 1028:097a | Nvidia     | GP108M [GeForce MX230]       | 2     | vgapci     | C2D56FC369 |
-| 10de:1f91 | 1043:109f | Nvidia     | TU117M [GeForce GTX 1650 ... | 2     | nvidia     | 1952513DB8 |
-| 10de:1f91 | 17aa:3ffb | Nvidia     | TU117M [GeForce GTX 1650 ... | 2     | nvidia     | DCE3BA8C99 |
-| 10de:2191 | 103c:8786 | Nvidia     | TU116M [GeForce GTX 1660 ... | 2     | nvidia     | 19F307FF6D |
-| 8086:0046 | 1179:0003 | Intel      | Core Processor Integrated... | 2     | agp        | 6357D0D51F |
-| 8086:0046 | 17aa:21c1 | Intel      | Core Processor Integrated... | 2     | vgapci     | 6394AE37A8 |
-| 8086:0116 | 106b:00dc | Intel      | 2nd Generation Core Proce... | 2     | acpi_vi... | 193936B5CA |
-| 8086:0116 | 17aa:3975 | Intel      | 2nd Generation Core Proce... | 2     | acpi_vi... | B8E35AACDB |
-| 8086:0156 | 8086:2010 | Intel      | 3rd Gen Core processor Gr... | 2     | vgapci     | 424ADD8B03 |
-| 8086:0166 | 1028:0534 | Intel      | 3rd Gen Core processor Gr... | 2     | i915       | 8D24817728 |
-| 8086:0166 | 1028:0572 | Intel      | 3rd Gen Core processor Gr... | 2     | i915       | 599D3E84D7 |
-| 8086:0166 | 104d:90b8 | Intel      | 3rd Gen Core processor Gr... | 2     | i915       | 64F3F02018 |
-| 8086:0166 | 17aa:2203 | Intel      | 3rd Gen Core processor Gr... | 2     | i915       | 55DEBB2F24 |
-| 8086:0416 | 1043:157d | Intel      | 4th Gen Core Processor In... | 2     | vgapci     | 37BE4EA27A |
-| 8086:0416 | 10cf:17aa | Intel      | 4th Gen Core Processor In... | 2     | i915       | D3D033F879 |
-| 8086:0416 | 17aa:221e | Intel      | 4th Gen Core Processor In... | 2     | i915       | 91D2CD471C |
-| 8086:0a06 | 1025:0a11 | Intel      | Haswell-ULT Integrated Gr... | 2     | i915       | D15CAACA04 |
-| 8086:0a16 | 1028:05cb | Intel      | Haswell-ULT Integrated Gr... | 2     | vgapci     | 6EC8FD788A |
-| 8086:0a16 | 103c:1991 | Intel      | Haswell-ULT Integrated Gr... | 2     | acpi_vi... | 565343B334 |
-| 8086:0a16 | 104d:90b6 | Intel      | Haswell-ULT Integrated Gr... | 2     | i915       | 23316D0F2B |
-| 8086:0a16 | 17aa:2217 | Intel      | Haswell-ULT Integrated Gr... | 2     | vgapci     | E9155D12C7 |
-| 8086:0a16 | 17aa:3978 | Intel      | Haswell-ULT Integrated Gr... | 2     | acpi_vi... | 1C239BAC92 |
-| 8086:0a16 | 8086:0a16 | Intel      | Haswell-ULT Integrated Gr... | 2     | vgapci     | B4B6CFFF1F |
-| 8086:0d26 | 106b:0147 | Intel      | Crystal Well Integrated G... | 2     | i915       | 0621ACAB4E |
-| 8086:1916 | 1028:06df | Intel      | Skylake GT2 [HD Graphics ... | 2     | acpi_vi... | DA926F1065 |
-| 8086:1916 | 1043:1c7d | Intel      | Skylake GT2 [HD Graphics ... | 2     | i915       | 57018EDD10 |
-| 8086:1916 | 17aa:504a | Intel      | Skylake GT2 [HD Graphics ... | 2     | i915       | AA3DEADEDD |
-| 8086:1916 | 17aa:5053 | Intel      | Skylake GT2 [HD Graphics ... | 2     | i915       | A069A19A1B |
-| 8086:191b | 103c:8257 | Intel      | HD Graphics 530              | 2     | i915       | BB8BEB97BE |
-| 8086:191b | 17aa:5050 | Intel      | HD Graphics 530              | 2     | i915       | DDC907CCF4 |
-| 8086:27a6 | 1028:02d6 | Intel      | Mobile 945GM/GMS/GME, 943... | 2     | vgapci     | 899CE6FFE4 |
-| 8086:27ae | 1028:02d6 | Intel      | Mobile 945GSE Express Int... | 2     | agp        | 899CE6FFE4 |
-| 8086:2a42 | 1028:024d | Intel      | Mobile 4 Series Chipset I... | 2     | agp        | D5051EF185 |
-| 8086:2a42 | 1179:ff01 | Intel      | Mobile 4 Series Chipset I... | 2     | agp        | E07FD4EDD9 |
-| 8086:2a43 | 1028:024d | Intel      | Mobile 4 Series Chipset I... | 2     | acpi_vi... | D5051EF185 |
+| ID        | Subsystem | MFG              | Name                                 | Count | Driver     | Probe |
+|-----------|-----------|------------------|--------------------------------------|-------|------------|-------|
+| 8086:0046 | 17aa:215a | Intel            | Core Processor Integrated Graphic... | 17    | i915       | [BCD5BEA2B7](<Notebook/Lenovo/ThinkPad/ThinkPad T410 2537BN8/4A58F0F69086/OPNSENSE-22.1.2/13.0-STABLE/AMD64/BCD5BEA2B7>) |
+| 8086:0126 | 17aa:21da | Intel            | 2nd Generation Core Processor Fam... | 16    | i915       | [148A268A0F](<Notebook/Lenovo/ThinkPad/ThinkPad X220 4293B43/AD955BCC7F71/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/148A268A0F>) |
+| 8086:0166 | 17aa:21fa | Intel            | 3rd Gen Core processor Graphics C... | 14    | i915       | [06C6A282CA](<Notebook/Lenovo/ThinkPad/ThinkPad X230 23254G7/FF7D8D42B37A/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/06C6A282CA>) |
+| 8086:0126 | 17aa:21ce | Intel            | 2nd Generation Core Processor Fam... | 12    | i915       | [8BD2318FB6](<Notebook/Lenovo/ThinkPad/ThinkPad T420 4236MBU/D2E0D93C2306/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/8BD2318FB6>) |
+| 8086:1616 | 17aa:2226 | Intel            | HD Graphics 5500                     | 12    | i915       | [4BA527DC9B](<Notebook/Lenovo/ThinkPad/ThinkPad X250 20CMCTO1WW/E6AE328AD30B/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/4BA527DC9B>) |
+| 8086:0166 | 17aa:21f3 | Intel            | 3rd Gen Core processor Graphics C... | 9     | i915       | [86FD351C81](<Notebook/Lenovo/ThinkPad/ThinkPad T430 2349AK1/08273574C200/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/86FD351C81>) |
+| 8086:0416 | 17aa:220e | Intel            | 4th Gen Core Processor Integrated... | 9     | i915       | [CBA9255F4A](<Notebook/Lenovo/ThinkPad/ThinkPad T440p 20AWS1JN00/4F89B9A156FF/FREEBSD-13.0/13.0-RELEASE/AMD64/CBA9255F4A>) |
+| 8086:0a16 | 17aa:220c | Intel            | Haswell-ULT Integrated Graphics C... | 8     | i915       | [2AF47B6502](<Notebook/Lenovo/ThinkPad/ThinkPad T440s 20AQ006HUS/5B022BB303EA/NOMADBSD-5806F915/13.0-RELEASE/AMD64/2AF47B6502>) |
+| 8086:2a42 | 17aa:20e4 | Intel            | Mobile 4 Series Chipset Integrate... | 8     | agp        | [2DD5B5869F](<Notebook/Lenovo/ThinkPad/ThinkPad T400 6474E18/B6A83A2D1C15/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/2DD5B5869F>) |
+| 8086:2a43 | 17aa:20e4 | Intel            | Mobile 4 Series Chipset Integrate... | 8     | i915       | [2DD5B5869F](<Notebook/Lenovo/ThinkPad/ThinkPad T400 6474E18/B6A83A2D1C15/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/2DD5B5869F>) |
+| 8086:0a16 | 1028:05ca | Intel            | Haswell-ULT Integrated Graphics C... | 6     | i915       | [762D8366D0](<Notebook/Dell/Latitude/Latitude E7240/B8876AE6AF27/FREEBSD-13.0-RC4/13.0-RC4/AMD64/762D8366D0>) |
+| 8086:0a16 | 1028:0651 | Intel            | Haswell-ULT Integrated Graphics C... | 6     | i915       | [6283CB4190](<Notebook/Dell/Inspiron/Inspiron 3442/DF9A7A49AE6A/FREEBSD-13.0-P3/13.0-RELEASE/AMD64/6283CB4190>) |
+| 8086:0a16 | 17aa:3978 | Intel            | Haswell-ULT Integrated Graphics C... | 6     | i915       | [A1F85AFF27](<Notebook/Lenovo/Z50-70/Z50-70 20354/491D65A1BD89/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/A1F85AFF27>) |
+| 8086:0a16 | 8086:0a16 | Intel            | Haswell-ULT Integrated Graphics C... | 6     | vgapci     | [48D1F61478](<Notebook/Others/Others/Others/5C7241A080BD/OPNSENSE-21.7.6/12.1-RELEASE-P21-HBSD/AMD64/48D1F61478>) |
+| 8086:1916 | 103c:8079 | Intel            | Skylake GT2 [HD Graphics 520]        | 6     | i915       | [F259F73C17](<Notebook/Hewlett-Packard/EliteBook/EliteBook 840 G3/372FB522FD12/OPNSENSE-22.1/13.0-STABLE/AMD64/F259F73C17>) |
+| 8086:2a02 | 106b:00a1 | Intel            | Mobile GM965/GL960 Integrated Gra... | 6     | i915       | [E0CF5200DE](<Notebook/Apple/MacBook4/MacBook4,1/07CFC301CF14/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E0CF5200DE>) |
+| 8086:2a03 | 106b:00a1 | Intel            | Mobile GM965/GL960 Integrated Gra... | 6     | i915       | [E0CF5200DE](<Notebook/Apple/MacBook4/MacBook4,1/07CFC301CF14/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E0CF5200DE>) |
+| 8086:3ea0 | 17aa:2279 | Intel            | WhiskeyLake-U GT2 [UHD Graphics 620] | 6     | i915       | [4147A5824D](<Notebook/Lenovo/ThinkPad/ThinkPad T590 20N4CTO1WW/3C494D1552EB/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/4147A5824D>) |
+| 8086:0126 | 106b:00db | Intel            | 2nd Generation Core Processor Fam... | 5     | i915       | [AA484C30A8](<Notebook/Apple/MacBookPro8/MacBookPro8,1/83A908F15226/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/AA484C30A8>) |
+| 8086:0126 | 17aa:21d1 | Intel            | 2nd Generation Core Processor Fam... | 5     | i915       | [82F5612822](<Notebook/Lenovo/ThinkPad/ThinkPad T520 4243E51/EB551E7DDB1F/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/82F5612822>) |
+| 8086:0166 | 1028:0597 | Intel            | 3rd Gen Core processor Graphics C... | 5     | i915       | [B246D110AF](<Notebook/Dell/Inspiron/Inspiron 3521/D0B94644586B/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/B246D110AF>) |
+| 8086:0166 | 17aa:21fb | Intel            | 3rd Gen Core processor Graphics C... | 5     | i915       | [0B6AB3BA1B](<Notebook/Lenovo/ThinkPad/ThinkPad T430s 2356JH4/C3D86E55EECC/OPNSENSE-21.7.6/12.1-RELEASE-P21-HBSD/AMD64/0B6AB3BA1B>) |
+| 8086:0a16 | 17aa:2214 | Intel            | Haswell-ULT Integrated Graphics C... | 5     | i915       | [66CFDD2419](<Notebook/Lenovo/ThinkPad/ThinkPad X240 20AMS2QDOC/958035AEAC5C/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/66CFDD2419>) |
+| 8086:1916 | 17aa:2238 | Intel            | Skylake GT2 [HD Graphics 520]        | 5     | i915       | [821C81E652](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 4th 20FB001XAU/5B2B74D5C2AB/NOMADBSD-1.4/12.2-RELEASE-P4/AMD64/821C81E652>) |
+| 8086:2a02 | 17aa:20b5 | Intel            | Mobile GM965/GL960 Integrated Gra... | 5     | i915       | [9CC0F26F6F](<Notebook/Lenovo/ThinkPad/ThinkPad R61 8935WCS/1AC798DB7C89/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/9CC0F26F6F>) |
+| 8086:2a03 | 17aa:20b5 | Intel            | Mobile GM965/GL960 Integrated Gra... | 5     | i915       | [9CC0F26F6F](<Notebook/Lenovo/ThinkPad/ThinkPad R61 8935WCS/1AC798DB7C89/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/9CC0F26F6F>) |
+| 8086:5916 | 17aa:5062 | Intel            | HD Graphics 620                      | 5     | i915       | [EFCCC9B019](<Notebook/Lenovo/ThinkPad/ThinkPad X270 20HMCTO1WW/4FD7701AE58F/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/EFCCC9B019>) |
+| 8086:9a49 | f111:0001 | Intel            | TigerLake-LP GT2 [Iris Xe Graphics]  | 5     | i915       | [1F58E0594F](<Notebook/Framework/Laptop/Laptop/12E6C3C95AB5/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/1F58E0594F>) |
+| 8086:a011 | 1043:83ac | Intel            | Atom Processor D4xx/D5xx/N4xx/N5x... | 5     | i915       | [D171D1EC99](<Notebook/ASUSTek Computer/1001/1001PX/E2F07739895A/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/D171D1EC99>) |
+| 8086:a012 | 1043:83ac | Intel            | Atom Processor D4xx/D5xx/N4xx/N5x... | 5     | i915       | [D171D1EC99](<Notebook/ASUSTek Computer/1001/1001PX/E2F07739895A/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/D171D1EC99>) |
+| 1002:164c | 17aa:5097 | AMD              | Lucienne                             | 4     | vgapci     | [6C208C85A5](<Notebook/Lenovo/ThinkPad/ThinkPad E14 Gen 3 20Y7003SGE/284E69188279/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/6C208C85A5>) |
+| 1002:98e4 | 103c:84ac | AMD              | Stoney [Radeon R2/R3/R4/R5 Graphics] | 4     | amdgpu     | [766E62F699](<Notebook/Hewlett-Packard/Laptop/Laptop 15-db0xxx/3E8F8F48759C/NOMADBSD-5806F915/13.0-RELEASE/AMD64/766E62F699>) |
+| 10de:0429 | 17aa:20d8 | Nvidia           | G86M [Quadro NVS 140M]               | 4     | nvidia     | [F5F25EFDCC](<Notebook/Lenovo/ThinkPad/ThinkPad T61 766301U/A1D00057611B/HELLOSYSTEM-0.7.0/13.0-RELEASE-P7/AMD64/F5F25EFDCC>) |
+| 10de:0a29 | 106b:00c7 | Nvidia           | GT216M [GeForce GT 330M]             | 4     | vgapci     | [7F25AB7C67](<Notebook/Apple/MacBookPro6/MacBookPro6,2/2059E6ED7633/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/7F25AB7C67>) |
+| 8086:0046 |           | Intel            | Core Processor Integrated Graphic... | 4     | agp        | [7F25AB7C67](<Notebook/Apple/MacBookPro6/MacBookPro6,2/2059E6ED7633/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/7F25AB7C67>) |
+| 8086:0046 | 1028:040a | Intel            | Core Processor Integrated Graphic... | 4     | i915       | [8C904D84E0](<Notebook/Dell/Latitude/Latitude E6410/D86C1197F0AC/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/8C904D84E0>) |
+| 8086:0166 | 1028:0534 | Intel            | 3rd Gen Core processor Graphics C... | 4     | i915       | [FDDE41404D](<Notebook/Dell/Latitude/Latitude E6430/9A4F06581327/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/FDDE41404D>) |
+| 8086:0166 | 17aa:21f9 | Intel            | 3rd Gen Core processor Graphics C... | 4     | i915       | [2494D9D2DB](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 3443CTO/870107710CBE/OPNSENSE-21.7/12.1-RELEASE-P20-HBSD/AMD64/2494D9D2DB>) |
+| 8086:0416 | 1028:05be | Intel            | 4th Gen Core Processor Integrated... | 4     | i915       | [E0576DD008](<Notebook/Dell/Latitude/Latitude E6540/47352B0D75D6/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E0576DD008>) |
+| 8086:1616 | 17aa:5034 | Intel            | HD Graphics 5500                     | 4     | i915       | [BC2860431E](<Notebook/Lenovo/ThinkPad/ThinkPad T450 20BUS0VH08/CDAB4EDF622D/GHOSTBSD-22.01.12/13.0-STABLE/AMD64/BC2860431E>) |
+| 8086:1616 | 17aa:5036 | Intel            | HD Graphics 5500                     | 4     | i915       | [748312BFBF](<Notebook/Lenovo/ThinkPad/ThinkPad T450s 20BX001PUS/28A99AA52D2D/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/748312BFBF>) |
+| 8086:1916 | 17aa:5053 | Intel            | Skylake GT2 [HD Graphics 520]        | 4     | i915       | [DEAC163B52](<Notebook/Lenovo/ThinkPad/ThinkPad T460 20FNCTO1WW/88EC95397971/OPNSENSE-22.1.1/13.0-STABLE/AMD64/DEAC163B52>) |
+| 8086:2a42 | 17aa:213a | Intel            | Mobile 4 Series Chipset Integrate... | 4     | agp        | [B0A9802877](<Notebook/Lenovo/ThinkPad/ThinkPad SL510 2847R96/16806C85881A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/B0A9802877>) |
+| 8086:2a43 | 17aa:213a | Intel            | Mobile 4 Series Chipset Integrate... | 4     | i915       | [B0A9802877](<Notebook/Lenovo/ThinkPad/ThinkPad SL510 2847R96/16806C85881A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/B0A9802877>) |
+| 8086:5916 | 17aa:224f | Intel            | HD Graphics 620                      | 4     | i915       | [7AEA2CCAA7](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 5th 20HRS04C00/46797EE9B847/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/7AEA2CCAA7>) |
+| 8086:5917 | 17aa:2258 | Intel            | UHD Graphics 620                     | 4     | i915       | [556FCB7E5E](<Notebook/Lenovo/ThinkPad/ThinkPad T480s 20L8S1GX00/EA208CC61F28/FREEBSD-13.0/13.0-RELEASE/AMD64/556FCB7E5E>) |
+| 1002:15d8 | 1043:18f1 | AMD              | Picasso/Raven 2 [Radeon Vega Seri... | 3     | amdgpu     | [2D72B6939D](<Notebook/ASUSTek Computer/TUF/TUF Gaming FX505DU_FX505DU/FE9E4108BBBD/NOMADBSD-5806F915/13.0-RELEASE/AMD64/2D72B6939D>) |
+| 1002:15dd | 17aa:5122 | AMD              | Raven Ridge [Radeon Vega Series /... | 3     | vgapci     | [0C153D0C98](<Notebook/Lenovo/ThinkPad/ThinkPad A485 20MU000VUS/0748151D3905/MIDNIGHTBSD-2.1.1/2.1.1/AMD64/0C153D0C98>) |
+| 1002:1636 | 1d05:109f | AMD              | Renoir                               | 3     | vgapci     | [6F779D5170](<Notebook/TUXEDO/Pulse/Pulse 15 Gen1/C92D236C248C/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/6F779D5170>) |
+| 1002:6606 | 1028:05be | AMD              | Mars XTX [Radeon HD 8790M]           | 3     | vgapci     | [E0576DD008](<Notebook/Dell/Latitude/Latitude E6540/47352B0D75D6/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E0576DD008>) |
+| 1002:6841 | 103c:17a9 | AMD              | Thames [Radeon HD 7550M/7570M/7650M] | 3     | radeon     | [F47789D894](<Notebook/Hewlett-Packard/EliteBook/EliteBook 8570p/6FBB1F806232/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/F47789D894>) |
+| 1002:699f | 17aa:5073 | AMD              | Lexa PRO [Radeon 540/540X/550/550... | 3     | vgapci     | [98072B8DB6](<Notebook/Lenovo/ThinkPad/ThinkPad E590 20NB0012RT/F14FDAEA6645/FREEBSD-13.0-P3/13.0-RELEASE-P3/AMD64/98072B8DB6>) |
+| 10de:0863 | 106b:00aa | Nvidia           | C79 [GeForce 9400M]                  | 3     | vgapci     | [F0AEEB7F3C](<Notebook/Apple/MacBook5/MacBook5,1/835DA262B2E5/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/F0AEEB7F3C>) |
+| 10de:0863 | 106b:00b9 | Nvidia           | C79 [GeForce 9400M]                  | 3     | vgapci     | [53B106BBB6](<Notebook/Apple/MacBookPro5/MacBookPro5,5/E84835CFE8B8/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/53B106BBB6>) |
+| 10de:0863 | 106b:00bd | Nvidia           | C79 [GeForce 9400M]                  | 3     | nvidia     | [D680290D84](<Notebook/Apple/MacBook6/MacBook6,1/B24103297D7A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/D680290D84>) |
+| 10de:0dfc | 1028:1535 | Nvidia           | GF108GLM [NVS 5200M]                 | 3     | vgapci     | [0FA21BCF23](<Notebook/Dell/Latitude/Latitude E6530/9F002062E68D/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/0FA21BCF23>) |
+| 10de:1299 | 1028:06ae | Nvidia           | GK208BM [GeForce 920M]               | 3     | vgapci     | [3A239EA97A](<Notebook/Dell/Inspiron/Inspiron 5558/AF88938C2D41/FREEBSD-12.3/12.3-RELEASE/AMD64/3A239EA97A>) |
+| 10de:1392 | 17aa:3978 | Nvidia           | GM107M [GeForce GTX 860M]            | 3     | vgapci     | [1FEB455E8C](<Notebook/Lenovo/Y50-70/Y50-70 20378/45CB117B153A/OPNSENSE-21.7.7/12.1-RELEASE-P19-HBSD/AMD64/1FEB455E8C>) |
+| 10de:1c8d | 1028:0798 | Nvidia           | GP107M [GeForce GTX 1050 Mobile]     | 3     | vgapci     | [652E2E284F](<Notebook/Dell/Inspiron/Inspiron 15 7000 Gaming/2663B977A92F/FREEBSD-13.0-P6/13.0-RELEASE/AMD64/652E2E284F>) |
+| 10de:1d12 | 19e5:3e04 | Nvidia           | GP108M [GeForce MX150]               | 3     | vgapci     | [F7E09652D9](<Notebook/HUAWEI/MACH-WX/MACH-WX9/4067EE7CBCE5/FREEBSD-12.2-P4/12.2-RELEASE-P4/AMD64/F7E09652D9>) |
+| 10de:1f91 | 17aa:3ffb | Nvidia           | TU117M [GeForce GTX 1650 Mobile /... | 3     | vgapci     | [D8F8901AE7](<Notebook/Lenovo/Legion/Legion Y7000 2019 PG0 81T0/21E64ED02159/NOMADBSD-5806F915/13.0-RELEASE/AMD64/D8F8901AE7>) |
+| 8086:0116 | 1025:0504 | Intel            | 2nd Generation Core Processor Fam... | 3     | i915       | [BD22FC8A49](<Notebook/Acer/Aspire/Aspire 5750G/1FF59E502D89/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/BD22FC8A49>) |
+| 8086:0116 | 17aa:21da | Intel            | 2nd Generation Core Processor Fam... | 3     | i915       | [C5E7D3037F](<Notebook/Lenovo/ThinkPad/ThinkPad X220 4286CTO/954B91E6323C/FREEBSD-12.1-P12/12.1-RELEASE-P11/AMD64/C5E7D3037F>) |
+| 8086:0126 | 10f7:8338 | Intel            | 2nd Generation Core Processor Fam... | 3     | i915       | [6BBADBA65D](<Notebook/Panasonic/CF-NX1/CF-NX1GDHYS/343F5A72B70D/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/6BBADBA65D>) |
+| 8086:0156 | 8086:2010 | Intel            | 3rd Gen Core processor Graphics C... | 3     | vgapci     | [21C1794D7E](<Notebook/Others/Others/Others/F6ACC051C26B/OPNSENSE-21.7.4/12.1-RELEASE-P20-HBSD/AMD64/21C1794D7E>) |
+| 8086:0166 | 1028:0535 | Intel            | 3rd Gen Core processor Graphics C... | 3     | vgapci     | [0FA21BCF23](<Notebook/Dell/Latitude/Latitude E6530/9F002062E68D/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/0FA21BCF23>) |
+| 8086:0166 | 1043:108d | Intel            | 3rd Gen Core processor Graphics C... | 3     | i915       | [7F4E6F4541](<Notebook/ASUSTek Computer/X202/X202E/4F1DF3965EB5/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/7F4E6F4541>) |
+| 8086:0166 | 1043:1517 | Intel            | 3rd Gen Core processor Graphics C... | 3     | i915       | [9FEBAB6C01](<Notebook/ASUSTek Computer/UX31/UX31A/2ABD09D4BEE1/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/9FEBAB6C01>) |
+| 8086:0166 | 106b:00fa | Intel            | 3rd Gen Core processor Graphics C... | 3     | i915       | [04CC56305C](<Notebook/Apple/MacBookPro9/MacBookPro9,2/2B7E67AD866E/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/04CC56305C>) |
+| 8086:0166 | 106b:00fd | Intel            | 3rd Gen Core processor Graphics C... | 3     | i915       | [10D629E1A0](<Notebook/Apple/MacBookAir5/MacBookAir5,1/2229B3BBA71B/HELLOSYSTEM-0.7.0/12.2-RELEASE/AMD64/10D629E1A0>) |
+| 8086:0166 | 17aa:21f6 | Intel            | 3rd Gen Core processor Graphics C... | 3     | i915       | [8573903191](<Notebook/Lenovo/ThinkPad/ThinkPad T530 2429J74/D605B016AD4C/FREEBSD-12.2-P4/12.2-RELEASE-P4/AMD64/8573903191>) |
+| 8086:0166 | 17aa:2203 | Intel            | 3rd Gen Core processor Graphics C... | 3     | i915       | [EFDFEE9023](<Notebook/Lenovo/ThinkPad/ThinkPad X230 Tablet 343522U/EB8C39CCF903/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/EFDFEE9023>) |
+| 8086:0416 | 1028:05bd | Intel            | 4th Gen Core Processor Integrated... | 3     | i915       | [8FA2C1F5C4](<Notebook/Dell/Latitude/Latitude E6440/90F4D14BB79B/FREEBSD-13.0-P2/13.0-RELEASE-P1/AMD64/8FA2C1F5C4>) |
+| 8086:0416 | 1028:05cc | Intel            | 4th Gen Core Processor Integrated... | 3     | i915       | [1847C0AADB](<Notebook/Dell/Precision/Precision M4800/534E5DEB811F/OPNSENSE-21.1.3/12.1-RELEASE-P14-HBSD/AMD64/1847C0AADB>) |
+| 8086:0416 | 17aa:221e | Intel            | 4th Gen Core Processor Integrated... | 3     | i915       | [B6DFFE77EB](<Notebook/Lenovo/ThinkPad/ThinkPad W540 20BG0014US/3AD854A625A5/OPNSENSE-21.7.2/12.1-RELEASE-P20-HBSD/AMD64/B6DFFE77EB>) |
+| 8086:0416 | 17aa:3978 | Intel            | 4th Gen Core Processor Integrated... | 3     | i915       | [1FEB455E8C](<Notebook/Lenovo/Y50-70/Y50-70 20378/45CB117B153A/OPNSENSE-21.7.7/12.1-RELEASE-P19-HBSD/AMD64/1FEB455E8C>) |
+| 8086:0a06 | 8086:0a06 | Intel            | Haswell-ULT Integrated Graphics C... | 3     | vgapci     | [974E1F4E5E](<Notebook/Others/Others/Others/499A7AC3FA34/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/974E1F4E5E>) |
+| 8086:0a16 | 103c:1991 | Intel            | Haswell-ULT Integrated Graphics C... | 3     | i915       | [362940ACBB](<Notebook/Hewlett-Packard/EliteBook/EliteBook 820 G1/43570E209C4E/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/362940ACBB>) |
+| 8086:0a16 | 104d:90b6 | Intel            | Haswell-ULT Integrated Graphics C... | 3     | i915       | [03EF84679C](<Notebook/Sony/SVP1322/SVP13225SCBI/C462BD727B55/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/03EF84679C>) |
+| 8086:0a26 | 8086:0a26 | Intel            | Haswell-ULT Integrated Graphics C... | 3     | vgapci     | [AA872042E3](<Notebook/Others/Others/Others/073B3B06B697/OPNSENSE-21.7.6/12.1-RELEASE-P21-HBSD/AMD64/AA872042E3>) |
+| 8086:0d26 | 106b:0147 | Intel            | Crystal Well Integrated Graphics ... | 3     | i915       | [6D580E8270](<Notebook/Apple/MacBookPro11/MacBookPro11,4/C2BAFC376883/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/6D580E8270>) |
+| 8086:1616 | 1028:062e | Intel            | HD Graphics 5500                     | 3     | i915       | [8A3867F171](<Notebook/Dell/Latitude/Latitude E7450/384980EB885D/FREEBSD-13.0-P6/13.0-RELEASE-P6/AMD64/8A3867F171>) |
+| 8086:1616 | 1028:06ae | Intel            | HD Graphics 5500                     | 3     | vgapci     | [3A239EA97A](<Notebook/Dell/Inspiron/Inspiron 5558/AF88938C2D41/FREEBSD-12.3/12.3-RELEASE/AMD64/3A239EA97A>) |
+| 8086:1616 | 17aa:2227 | Intel            | HD Graphics 5500                     | 3     | i915       | [B60382DA32](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 3rd 20BT000BUS/FBDB9E088872/FREEBSD-12.2-P4/12.2-RELEASE/AMD64/B60382DA32>) |
+| 8086:1916 | 1028:078c | Intel            | Skylake GT2 [HD Graphics 520]        | 3     | i915       | [9073F1975D](<Notebook/Dell/Inspiron/Inspiron 15-3567/26EF6087DCBB/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/9073F1975D>) |
+| 8086:1916 | 17aa:224b | Intel            | Skylake GT2 [HD Graphics 520]        | 3     | i915       | [6C895CB96F](<Notebook/Lenovo/ThinkPad/ThinkPad T470s W10DG 20JTS0A900/5B70EA1A7528/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/6C895CB96F>) |
+| 8086:27a2 | 17aa:201a | Intel            | Mobile 945GM/GMS, 943/940GML Expr... | 3     | agp        | [91D67BA784](<Notebook/Lenovo/ThinkPad/ThinkPad R60e 0658W2M/505133B14946/FREEBSD-13.0/13.0-RELEASE/I386/91D67BA784>) |
+| 8086:27a6 | 17aa:201a | Intel            | Mobile 945GM/GMS/GME, 943/940GML ... | 3     | vgapci     | [91D67BA784](<Notebook/Lenovo/ThinkPad/ThinkPad R60e 0658W2M/505133B14946/FREEBSD-13.0/13.0-RELEASE/I386/91D67BA784>) |
+| 8086:2a42 | 1028:024d | Intel            | Mobile 4 Series Chipset Integrate... | 3     | agp        | [FDB3DE3036](<Notebook/Dell/Latitude/Latitude E4300/B023391CA6F2/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/FDB3DE3036>) |
+| 8086:2a43 | 1028:024d | Intel            | Mobile 4 Series Chipset Integrate... | 3     | i915       | [FDB3DE3036](<Notebook/Dell/Latitude/Latitude E4300/B023391CA6F2/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/FDB3DE3036>) |
+| 8086:3ea0 | 1028:08b8 | Intel            | WhiskeyLake-U GT2 [UHD Graphics 620] | 3     | i915       | [1BB6C1F63F](<Notebook/Dell/Latitude/Latitude 5400/418002D1A36C/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/1BB6C1F63F>) |
+| 8086:3ea0 | 17aa:2292 | Intel            | WhiskeyLake-U GT2 [UHD Graphics 620] | 3     | i915       | [3CF2AD31A8](<Notebook/Others/Others/Others/CEE39BFDF5CD/DRAGONFLY-6.0/6.0-RELEASE/AMD64/3CF2AD31A8>) |
+| 8086:3ea0 | 17aa:5072 | Intel            | WhiskeyLake-U GT2 [UHD Graphics 620] | 3     | i915       | [901005EDD3](<Notebook/Lenovo/ThinkPad/ThinkPad E490 20N8CTO1WW/D4AF7E066D53/FREEBSD-13.0-P2/13.0-RELEASE-P1/AMD64/901005EDD3>) |
+| 8086:3ea0 | 17aa:5073 | Intel            | WhiskeyLake-U GT2 [UHD Graphics 620] | 3     | i915       | [98072B8DB6](<Notebook/Lenovo/ThinkPad/ThinkPad E590 20NB0012RT/F14FDAEA6645/FREEBSD-13.0-P3/13.0-RELEASE-P3/AMD64/98072B8DB6>) |
+| 8086:5916 | 1028:079f | Intel            | HD Graphics 620                      | 3     | i915       | [089B61BB38](<Notebook/Dell/Latitude/Latitude 7280/E9E3F30F4DB0/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/089B61BB38>) |
+| 8086:5917 | 17aa:225c | Intel            | UHD Graphics 620                     | 3     | i915       | [16206C4970](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 6th 20KG0022US/0E31F9E108FF/FREEBSD-12.2/12.2-RELEASE/AMD64/16206C4970>) |
+| 8086:5917 | 19e5:3e04 | Intel            | UHD Graphics 620                     | 3     | i915       | [F7E09652D9](<Notebook/HUAWEI/MACH-WX/MACH-WX9/4067EE7CBCE5/FREEBSD-12.2-P4/12.2-RELEASE-P4/AMD64/F7E09652D9>) |
+| 8086:591b | 1028:0798 | Intel            | HD Graphics 630                      | 3     | i915       | [652E2E284F](<Notebook/Dell/Inspiron/Inspiron 15 7000 Gaming/2663B977A92F/FREEBSD-13.0-P6/13.0-RELEASE/AMD64/652E2E284F>) |
+| 8086:9a49 | 17aa:22d5 | Intel            | TigerLake-LP GT2 [Iris Xe Graphics]  | 3     | i915       | [8F9E9DDDE5](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon Gen 9 20XWCTO1WW/83AC7FC10181/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/8F9E9DDDE5>) |
+| 8086:9b41 | 1028:09ec | Intel            | CometLake-U GT2 [UHD Graphics]       | 3     | acpi_vi... | [80D7BF959A](<Notebook/Dell/Latitude/Latitude 3410/3DC4614C13E4/FREEBSD-13.0-RC1/13.0-RC1/AMD64/80D7BF959A>) |
 
 ### Memory controller (PCI)
 
-| ID        | Subsystem | MFG        | Name                         | Count | Driver     | Probe      |
-|-----------|-----------|------------|------------------------------|-------|------------|------------|
-| 10de:0a88 |           | Nvidia     | MCP79 Memory Controller      | 8     |            | F46146B79E |
-| 10de:0a89 |           | Nvidia     | MCP79 Memory Controller      | 8     |            | F46146B79E |
-| 10de:0a98 | 10de:cb79 | Nvidia     | MCP79 Memory Controller      | 8     |            | F46146B79E |
-| 10de:0aa4 |           | Nvidia     | MCP79 Memory Controller      | 8     |            | F46146B79E |
-| 8086:9def |           | Intel      | Cannon Point-LP Shared SRAM  | 6     |            | 852A900303 |
-| 8086:9def | 17aa:2279 | Intel      | Cannon Point-LP Shared SRAM  | 6     |            | 6311D603FF |
-| 8086:9d21 | 17aa:2238 | Intel      | Sunrise Point-LP PMC         | 5     |            | 821C81E652 |
-| 8086:9d21 | 17aa:5062 | Intel      | Sunrise Point-LP PMC         | 5     |            | 88C27E65D7 |
-| 8086:9d21 | 103c:8079 | Intel      | Sunrise Point-LP PMC         | 4     |            | 2B97986DE1 |
-| 8086:02ef | 1028:09ec | Intel      | Comet Lake PCH-LP Shared ... | 3     |            | 80D7BF959A |
-| 8086:34ef |           | Intel      | Ice Lake-LP DRAM Controller  | 3     |            | C2D56FC369 |
-| 8086:444e | 8086:444e | Intel      | Turbo Memory Controller      | 3     |            | CF75F7C9CB |
-| 8086:9d21 | 17aa:2245 | Intel      | Sunrise Point-LP PMC         | 3     |            | E27342AB94 |
-| 8086:9d21 | 17aa:224f | Intel      | Sunrise Point-LP PMC         | 3     |            | 4993AD0FEB |
-| 8086:9d21 | 17aa:2258 | Intel      | Sunrise Point-LP PMC         | 3     |            | EBD44C21D9 |
-| 8086:9d21 | 17aa:225c | Intel      | Sunrise Point-LP PMC         | 3     |            | 16206C4970 |
-| 8086:9d21 | 19e5:3e04 | Intel      | Sunrise Point-LP PMC         | 3     |            | F7E09652D9 |
-| 8086:9d21 | 8086:9d21 | Intel      | Sunrise Point-LP PMC         | 3     |            | 2E51DFE463 |
-| 8086:02ef |           | Intel      | Comet Lake PCH-LP Shared ... | 2     |            | 0BD96EF663 |
-| 8086:02ef | 17aa:5079 | Intel      | Comet Lake PCH-LP Shared ... | 2     |            | 94D082C57C |
-| 8086:02ef | 8086:7270 | Intel      | Comet Lake PCH-LP Shared ... | 2     |            | BEC05A34DE |
-| 8086:06ef | 17aa:3826 | Intel      | Comet Lake PCH Shared SRAM   | 2     |            | 2BE8CF963C |
-| 8086:06ef | 8086:7270 | Intel      | Comet Lake PCH Shared SRAM   | 2     |            | A40E426983 |
-| 8086:9d21 | 1028:06df | Intel      | Sunrise Point-LP PMC         | 2     |            | DA926F1065 |
-| 8086:9d21 | 1028:075b | Intel      | Sunrise Point-LP PMC         | 2     |            | 1887B030C4 |
-| 8086:9d21 | 1043:10a1 | Intel      | Sunrise Point-LP PMC         | 2     |            | D7D299F9FC |
-| 8086:9d21 | 1043:1c7d | Intel      | Sunrise Point-LP PMC         | 2     |            | 57018EDD10 |
-| 8086:9d21 | 1558:1313 | Intel      | Sunrise Point-LP PMC         | 2     |            | C23A22A72D |
-| 8086:9d21 | 17aa:224b | Intel      | Sunrise Point-LP PMC         | 2     |            | FAA7BECF82 |
-| 8086:9d21 | 17aa:225a | Intel      | Sunrise Point-LP PMC         | 2     |            | D5A1C088B3 |
-| 8086:9d21 | 17aa:504a | Intel      | Sunrise Point-LP PMC         | 2     |            | AA3DEADEDD |
-| 8086:9d21 | 17aa:5053 | Intel      | Sunrise Point-LP PMC         | 2     |            | A069A19A1B |
-| 8086:9d21 | 8086:7270 | Intel      | Sunrise Point-LP PMC         | 2     |            | 5550236531 |
-| 8086:9def | 1028:08b8 | Intel      | Cannon Point-LP Shared SRAM  | 2     |            | B9D1F08BCF |
-| 8086:a121 | 1028:0798 | Intel      | 100 Series/C230 Series Ch... | 2     |            | 0E99E72EC9 |
-| 8086:a121 | 103c:8257 | Intel      | 100 Series/C230 Series Ch... | 2     |            | BB8BEB97BE |
-| 8086:a121 | 1558:8509 | Intel      | 100 Series/C230 Series Ch... | 2     |            | E84B5B6E5F |
-| 8086:a121 | 17aa:5050 | Intel      | 100 Series/C230 Series Ch... | 2     |            | DDC907CCF4 |
-| 8086:a36f | 17aa:2267 | Intel      | Cannon Lake PCH Shared SRAM  | 2     |            | 045A80D8BC |
-| 8086:a36f | 17aa:3824 | Intel      | Cannon Lake PCH Shared SRAM  | 2     |            | DCE3BA8C99 |
-| 8086:02ef | 1028:09a1 | Intel      | Comet Lake PCH-LP Shared ... | 1     |            | 7DEF696A61 |
-| 8086:02ef | 1558:1404 | Intel      | Comet Lake PCH-LP Shared ... | 1     |            | 35AA6590C6 |
-| 8086:02ef | 17aa:22aa | Intel      | Comet Lake PCH-LP Shared ... | 1     |            | 12C985B708 |
-| 8086:02ef | 17aa:507c | Intel      | Comet Lake PCH-LP Shared ... | 1     |            | 2DE4BC8337 |
-| 8086:06ef | 1028:09c3 | Intel      | Comet Lake PCH Shared SRAM   | 1     |            | 9983A81086 |
-| 8086:06ef | 1028:09f3 | Intel      | Comet Lake PCH Shared SRAM   | 1     |            | A1C2EAEE5F |
-| 8086:06ef | 17aa:22b8 | Intel      | Comet Lake PCH Shared SRAM   | 1     |            | 342E914968 |
-| 8086:06ef | 1d05:1085 | Intel      | Comet Lake PCH Shared SRAM   | 1     |            | DF77DD6562 |
-| 8086:34ef | 17aa:3a34 | Intel      | Ice Lake-LP DRAM Controller  | 1     |            | 3278083BA9 |
-| 8086:9d21 | 1025:1030 | Intel      | Sunrise Point-LP PMC         | 1     |            | 1FF0E90D9D |
-| 8086:9d21 | 1025:1085 | Intel      | Sunrise Point-LP PMC         | 1     |            | E7D6ECE4BA |
-| 8086:9d21 | 1025:115c | Intel      | Sunrise Point-LP PMC         | 1     |            | 240171B234 |
-| 8086:9d21 | 1025:1193 | Intel      | Sunrise Point-LP PMC         | 1     |            | 53A69AA8C1 |
-| 8086:9d21 | 1025:121a | Intel      | Sunrise Point-LP PMC         | 1     |            | 95E841A292 |
-| 8086:9d21 | 1028:06b2 | Intel      | Sunrise Point-LP PMC         | 1     |            | 295BD02C59 |
-| 8086:9d21 | 1028:06de | Intel      | Sunrise Point-LP PMC         | 1     |            | AF72876FD2 |
-| 8086:9d21 | 1028:071b | Intel      | Sunrise Point-LP PMC         | 1     |            | 8EC8D28024 |
-| 8086:9d21 | 1028:0767 | Intel      | Sunrise Point-LP PMC         | 1     |            | 5EF34CD40F |
-| 8086:9d21 | 1028:0786 | Intel      | Sunrise Point-LP PMC         | 1     |            | 84A1925FC9 |
-| 8086:9d21 | 1028:078c | Intel      | Sunrise Point-LP PMC         | 1     |            | 4D1897ED1F |
-| 8086:9d21 | 1028:0792 | Intel      | Sunrise Point-LP PMC         | 1     |            | 219133FC53 |
-| 8086:9d21 | 1028:079f | Intel      | Sunrise Point-LP PMC         | 1     |            | DEFAEE0E5C |
-| 8086:9d21 | 1028:07a0 | Intel      | Sunrise Point-LP PMC         | 1     |            | 9C8BD9C479 |
-| 8086:9d21 | 1028:07a6 | Intel      | Sunrise Point-LP PMC         | 1     |            | B84364959D |
-| 8086:9d21 | 1028:07a7 | Intel      | Sunrise Point-LP PMC         | 1     |            | 9B38A72DD4 |
-| 8086:9d21 | 1028:07a8 | Intel      | Sunrise Point-LP PMC         | 1     |            | F967516613 |
-| 8086:9d21 | 1028:07e9 | Intel      | Sunrise Point-LP PMC         | 1     |            | 7E2328DDA3 |
-| 8086:9d21 | 1028:07f3 | Intel      | Sunrise Point-LP PMC         | 1     |            | 1AA2A3A541 |
-| 8086:9d21 | 1028:0809 | Intel      | Sunrise Point-LP PMC         | 1     |            | 0B335F5918 |
-| 8086:9d21 | 1028:0816 | Intel      | Sunrise Point-LP PMC         | 1     |            | 3FBA47B07F |
-| 8086:9d21 | 1028:081a | Intel      | Sunrise Point-LP PMC         | 1     |            | 9D900F918C |
-| 8086:9d21 | 1028:081b | Intel      | Sunrise Point-LP PMC         | 1     |            | 2AD87768AF |
-| 8086:9d21 | 1028:081c | Intel      | Sunrise Point-LP PMC         | 1     |            | B1D5E8C619 |
-| 8086:9d21 | 1028:082a | Intel      | Sunrise Point-LP PMC         | 1     |            | F8BFC70F13 |
-| 8086:9d21 | 1028:0839 | Intel      | Sunrise Point-LP PMC         | 1     |            | B28CC12AEB |
-| 8086:9d21 | 1028:087a | Intel      | Sunrise Point-LP PMC         | 1     |            | B94AE57278 |
-| 8086:9d21 | 103c:80fd | Intel      | Sunrise Point-LP PMC         | 1     |            | B6C63EA3F8 |
-| 8086:9d21 | 103c:80ff | Intel      | Sunrise Point-LP PMC         | 1     |            | 32DFD5E52A |
-| 8086:9d21 | 103c:81db | Intel      | Sunrise Point-LP PMC         | 1     |            | F9C67B360F |
-| 8086:9d21 | 103c:8234 | Intel      | Sunrise Point-LP PMC         | 1     |            | F808E6BB4A |
-| 8086:9d21 | 103c:832a | Intel      | Sunrise Point-LP PMC         | 1     |            | 4CFC4CFF49 |
-| 8086:9d21 | 103c:8364 | Intel      | Sunrise Point-LP PMC         | 1     |            | 9DD5A9EEEF |
-| 8086:9d21 | 103c:84a6 | Intel      | Sunrise Point-LP PMC         | 1     |            | BF572BC102 |
-| 8086:9d21 | 103c:84a7 | Intel      | Sunrise Point-LP PMC         | 1     |            | CB09A1B771 |
-| 8086:9d21 | 103c:84ca | Intel      | Sunrise Point-LP PMC         | 1     |            | 10AF242F8B |
-| 8086:9d21 | 1043:1311 | Intel      | Sunrise Point-LP PMC         | 1     |            | 7B85836A46 |
-| 8086:9d21 | 1043:1460 | Intel      | Sunrise Point-LP PMC         | 1     |            | A9C4506364 |
-| 8086:9d21 | 1043:1a40 | Intel      | Sunrise Point-LP PMC         | 1     |            | 9DA77349B9 |
-| 8086:9d21 | 10cf:18d0 | Intel      | Sunrise Point-LP PMC         | 1     |            | 845C584693 |
-| 8086:9d21 | 144d:c784 | Intel      | Sunrise Point-LP PMC         | 1     |            | A667296C17 |
-| 8086:9d21 | 1558:1303 | Intel      | Sunrise Point-LP PMC         | 1     |            | 8F39C38E2E |
-| 8086:9d21 | 1558:7a01 | Intel      | Sunrise Point-LP PMC         | 1     |            | BA4260C181 |
-| 8086:9d21 | 17aa:222c | Intel      | Sunrise Point-LP PMC         | 1     |            | BF2B792B64 |
-| 8086:9d21 | 17aa:2233 | Intel      | Sunrise Point-LP PMC         | 1     |            | 8325C794B3 |
-| 8086:9d21 | 17aa:2247 | Intel      | Sunrise Point-LP PMC         | 1     |            | F73844A707 |
-| 8086:9d21 | 17aa:2256 | Intel      | Sunrise Point-LP PMC         | 1     |            | 9BDF9ECEC8 |
-| 8086:9d21 | 17aa:225d | Intel      | Sunrise Point-LP PMC         | 1     |            | 6259248178 |
-| 8086:9d21 | 17aa:3816 | Intel      | Sunrise Point-LP PMC         | 1     |            | 6953B9A9E4 |
-| 8086:9d21 | 17aa:382a | Intel      | Sunrise Point-LP PMC         | 1     |            | D598CC6240 |
-| 8086:9d21 | 17aa:382c | Intel      | Sunrise Point-LP PMC         | 1     |            | 92879D0781 |
+| ID        | Subsystem | MFG              | Name                                 | Count | Driver     | Probe |
+|-----------|-----------|------------------|--------------------------------------|-------|------------|-------|
+| 10de:0a88 |           | Nvidia           | MCP79 Memory Controller              | 14    |            | [D680290D84](<Notebook/Apple/MacBook6/MacBook6,1/B24103297D7A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/D680290D84>) |
+| 10de:0a89 |           | Nvidia           | MCP79 Memory Controller              | 14    |            | [D680290D84](<Notebook/Apple/MacBook6/MacBook6,1/B24103297D7A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/D680290D84>) |
+| 10de:0a98 | 10de:cb79 | Nvidia           | MCP79 Memory Controller              | 14    |            | [D680290D84](<Notebook/Apple/MacBook6/MacBook6,1/B24103297D7A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/D680290D84>) |
+| 10de:0aa4 |           | Nvidia           | MCP79 Memory Controller              | 14    |            | [D680290D84](<Notebook/Apple/MacBook6/MacBook6,1/B24103297D7A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/D680290D84>) |
+| 8086:9def |           | Intel            | Cannon Point-LP Shared SRAM          | 10    |            | [D86C621EF0](<Notebook/Sony/VJS121/VJS121C11N/985CFCF7555D/NOMADBSD-5806F915/13.0-RELEASE/AMD64/D86C621EF0>) |
+| 8086:06ef | 8086:7270 | Intel            | Comet Lake PCH Shared SRAM           | 7     |            | [B48B628936](<Notebook/MSI/GE76/GE76 Raider 10UG/CBCA63C494E5/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/B48B628936>) |
+| 8086:9d21 | 17aa:5062 | Intel            | Sunrise Point-LP PMC                 | 7     |            | [2E1C585715](<Notebook/Lenovo/ThinkPad/ThinkPad X270 W10DG 20K5S0BM01/C223E0B01844/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/2E1C585715>) |
+| 8086:9def | 17aa:2279 | Intel            | Cannon Point-LP Shared SRAM          | 7     |            | [4147A5824D](<Notebook/Lenovo/ThinkPad/ThinkPad T590 20N4CTO1WW/3C494D1552EB/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/4147A5824D>) |
+| 8086:02ef | 8086:7270 | Intel            | Comet Lake PCH-LP Shared SRAM        | 6     |            | [84838CD532](<Notebook/MSI/Modern/Modern 14 A10M/CB14F45A6442/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/84838CD532>) |
+| 8086:9d21 | 103c:8079 | Intel            | Sunrise Point-LP PMC                 | 6     |            | [F259F73C17](<Notebook/Hewlett-Packard/EliteBook/EliteBook 840 G3/372FB522FD12/OPNSENSE-22.1/13.0-STABLE/AMD64/F259F73C17>) |
+| 8086:9d21 | 17aa:2238 | Intel            | Sunrise Point-LP PMC                 | 5     |            | [821C81E652](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 4th 20FB001XAU/5B2B74D5C2AB/NOMADBSD-1.4/12.2-RELEASE-P4/AMD64/821C81E652>) |
+| 8086:9d21 | 17aa:224b | Intel            | Sunrise Point-LP PMC                 | 5     |            | [6C895CB96F](<Notebook/Lenovo/ThinkPad/ThinkPad T470s W10DG 20JTS0A900/5B70EA1A7528/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/6C895CB96F>) |
+| 8086:9d21 | 8086:9d21 | Intel            | Sunrise Point-LP PMC                 | 5     |            | [5A75DB9142](<Notebook/TUXEDO/InfinityBook13/InfinityBook13V3/0B9DECE35038/HELLOSYSTEM-0.7.0/13.0-RELEASE-P7/AMD64/5A75DB9142>) |
+| 8086:a0ef | f111:0001 | Intel            | Tiger Lake-LP Shared SRAM            | 5     |            | [1F58E0594F](<Notebook/Framework/Laptop/Laptop/12E6C3C95AB5/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/1F58E0594F>) |
+| 8086:34ef |           | Intel            | Ice Lake-LP DRAM Controller          | 4     |            | [ED41C18CFC](<Notebook/Dell/Inspiron/Inspiron 3493/9A4E8442CFDC/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/ED41C18CFC>) |
+| 8086:9d21 | 17aa:2245 | Intel            | Sunrise Point-LP PMC                 | 4     |            | [668BF95221](<Notebook/Lenovo/ThinkPad/ThinkPad T470 W10DG 20JNS0JU01/ADC556F95A12/GHOSTBSD-20.04.02/13.0-STABLE/AMD64/668BF95221>) |
+| 8086:9d21 | 17aa:224f | Intel            | Sunrise Point-LP PMC                 | 4     |            | [7AEA2CCAA7](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 5th 20HRS04C00/46797EE9B847/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/7AEA2CCAA7>) |
+| 8086:9d21 | 17aa:2258 | Intel            | Sunrise Point-LP PMC                 | 4     |            | [556FCB7E5E](<Notebook/Lenovo/ThinkPad/ThinkPad T480s 20L8S1GX00/EA208CC61F28/FREEBSD-13.0/13.0-RELEASE/AMD64/556FCB7E5E>) |
+| 8086:9d21 | 17aa:5053 | Intel            | Sunrise Point-LP PMC                 | 4     |            | [DEAC163B52](<Notebook/Lenovo/ThinkPad/ThinkPad T460 20FNCTO1WW/88EC95397971/OPNSENSE-22.1.1/13.0-STABLE/AMD64/DEAC163B52>) |
+| 8086:9d21 | 17aa:5068 | Intel            | Sunrise Point-LP PMC                 | 4     |            | [BE311B6A34](<Notebook/Lenovo/ThinkPad/ThinkPad E580 20KSCTO1WW/FE16B0524669/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/BE311B6A34>) |
+| 8086:9d21 | 8086:7270 | Intel            | Sunrise Point-LP PMC                 | 4     |            | [372C1B80BD](<Notebook/AAEON/GENE-SKU/GENE-SKU7/8ED85FC1D82E/OPNSENSE-21.7.3/12.1-RELEASE-P20-HBSD/AMD64/372C1B80BD>) |
+| 8086:a36f | 17aa:3824 | Intel            | Cannon Lake PCH Shared SRAM          | 4     |            | [384D2F888B](<Notebook/Lenovo/Legion/Legion Y540-15IRH 81SX/DB27396229F8/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/384D2F888B>) |
+| 8086:a36f | 8086:7270 | Intel            | Cannon Lake PCH Shared SRAM          | 4     |            | [259B5CC7B2](<Notebook/ASUSTek Computer/TUF/TUF Gaming FX504GD_FX80GD/62D7C65FC1E9/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/259B5CC7B2>) |
+| 8086:02ef |           | Intel            | Comet Lake PCH-LP Shared SRAM        | 3     |            | [713B33351F](<Notebook/System76/Lemur/Lemur Pro/FB3C4199D24B/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/713B33351F>) |
+| 8086:02ef | 1028:09ec | Intel            | Comet Lake PCH-LP Shared SRAM        | 3     |            | [80D7BF959A](<Notebook/Dell/Latitude/Latitude 3410/3DC4614C13E4/FREEBSD-13.0-RC1/13.0-RC1/AMD64/80D7BF959A>) |
+| 8086:02ef | 17aa:5079 | Intel            | Comet Lake PCH-LP Shared SRAM        | 3     |            | [0FA4700D17](<Notebook/Lenovo/ThinkPad/ThinkPad E15 20RD0011MX/534BB4FF83C1/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/0FA4700D17>) |
+| 8086:444e | 8086:444e | Intel            | Turbo Memory Controller              | 3     |            | [713B72CFFF](<Notebook/Lenovo/ThinkPad/ThinkPad T61 6459CTO/C55E9E7312AA/FREEBSD-13.0-P4/13.0-RELEASE-P3/AMD64/713B72CFFF>) |
+| 8086:9d21 | 1028:078c | Intel            | Sunrise Point-LP PMC                 | 3     |            | [9073F1975D](<Notebook/Dell/Inspiron/Inspiron 15-3567/26EF6087DCBB/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/9073F1975D>) |
+| 8086:9d21 | 1028:079f | Intel            | Sunrise Point-LP PMC                 | 3     |            | [089B61BB38](<Notebook/Dell/Latitude/Latitude 7280/E9E3F30F4DB0/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/089B61BB38>) |
+| 8086:9d21 | 17aa:225c | Intel            | Sunrise Point-LP PMC                 | 3     |            | [16206C4970](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 6th 20KG0022US/0E31F9E108FF/FREEBSD-12.2/12.2-RELEASE/AMD64/16206C4970>) |
+| 8086:9d21 | 19e5:3e04 | Intel            | Sunrise Point-LP PMC                 | 3     |            | [F7E09652D9](<Notebook/HUAWEI/MACH-WX/MACH-WX9/4067EE7CBCE5/FREEBSD-12.2-P4/12.2-RELEASE-P4/AMD64/F7E09652D9>) |
+| 8086:9def | 1028:08b8 | Intel            | Cannon Point-LP Shared SRAM          | 3     |            | [1BB6C1F63F](<Notebook/Dell/Latitude/Latitude 5400/418002D1A36C/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/1BB6C1F63F>) |
+| 8086:a0ef | 17aa:22d5 | Intel            | Tiger Lake-LP Shared SRAM            | 3     |            | [8F9E9DDDE5](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon Gen 9 20XWCTO1WW/83AC7FC10181/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/8F9E9DDDE5>) |
+| 8086:a121 | 1028:0798 | Intel            | 100 Series/C230 Series Chipset Fa... | 3     |            | [652E2E284F](<Notebook/Dell/Inspiron/Inspiron 15 7000 Gaming/2663B977A92F/FREEBSD-13.0-P6/13.0-RELEASE/AMD64/652E2E284F>) |
+| 8086:a121 | 17aa:5050 | Intel            | 100 Series/C230 Series Chipset Fa... | 3     |            | [3EF1595AF6](<Notebook/Lenovo/ThinkPad/ThinkPad T460p 20FXS09D11/AEEBF4FDEE51/FREEBSD-13.0-P6/13.0-RELEASE-P4/AMD64/3EF1595AF6>) |
+| 8086:02ef | 1028:09a1 | Intel            | Comet Lake PCH-LP Shared SRAM        | 2     |            | [A620D284CB](<Notebook/Dell/Latitude/Latitude 5510/9741CEB43BDE/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/A620D284CB>) |
+| 8086:02ef | 17aa:22af | Intel            | Comet Lake PCH-LP Shared SRAM        | 2     |            | [6836FC60F6](<Notebook/Lenovo/ThinkPad/ThinkPad X13 Gen 1 20T2003PRT/7ED3441E6EB7/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/6836FC60F6>) |
+| 8086:02ef | 17aa:22be | Intel            | Comet Lake PCH-LP Shared SRAM        | 2     |            | [85E94A1288](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon Gen 8 20U9CTO1WW/B74176FFA919/FREEBSD-13.0/13.0-RELEASE/AMD64/85E94A1288>) |
+| 8086:06ef | 17aa:3826 | Intel            | Comet Lake PCH Shared SRAM           | 2     |            | [2BE8CF963C](<Notebook/Lenovo/Legion/Legion 5P 15IMH05H 82AW/5AF94BC5A494/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/2BE8CF963C>) |
+| 8086:06ef | 1d05:1085 | Intel            | Comet Lake PCH Shared SRAM           | 2     |            | [5983302B1D](<Notebook/Avell High Performance/A62/A62 LIV/45914491EAA0/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/5983302B1D>) |
+| 8086:9d21 | 1028:06b2 | Intel            | Sunrise Point-LP PMC                 | 2     |            | [C34E21FFD5](<Notebook/Dell/Inspiron/Inspiron 5559/35A7C406512F/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/C34E21FFD5>) |
+| 8086:9d21 | 1028:06de | Intel            | Sunrise Point-LP PMC                 | 2     |            | [18470AFD9D](<Notebook/Dell/Latitude/Latitude E5470/15484EF4407C/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/18470AFD9D>) |
+| 8086:9d21 | 1028:06df | Intel            | Sunrise Point-LP PMC                 | 2     |            | [DA926F1065](<Notebook/Dell/Latitude/Latitude E5570/D984A2C0F63A/FREEBSD-12.2/12.2-RELEASE/AMD64/DA926F1065>) |
+| 8086:9d21 | 1028:075b | Intel            | Sunrise Point-LP PMC                 | 2     |            | [1887B030C4](<Notebook/Dell/XPS/XPS 13 9360/2E434050665D/FREEBSD-12.1-P5/12.1-RELEASE-P5/AMD64/1887B030C4>) |
+| 8086:9d21 | 1028:0767 | Intel            | Sunrise Point-LP PMC                 | 2     |            | [0B90603ACE](<Notebook/Dell/Inspiron/Inspiron 5567/8B44CEB1149A/FREEBSD-13.0-P2/13.0-RELEASE/AMD64/0B90603ACE>) |
+| 8086:9d21 | 1028:07a0 | Intel            | Sunrise Point-LP PMC                 | 2     |            | [8A0388B49D](<Notebook/Dell/Latitude/Latitude 7480/720DC2256764/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/8A0388B49D>) |
+| 8086:9d21 | 1028:07f3 | Intel            | Sunrise Point-LP PMC                 | 2     |            | [590B374836](<Notebook/Dell/Latitude/Latitude 7380/FE02391BB20C/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/590B374836>) |
+| 8086:9d21 | 1028:0816 | Intel            | Sunrise Point-LP PMC                 | 2     |            | [F0F4370A9C](<Notebook/Dell/Latitude/Latitude 5490/BC8882AB50AA/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/F0F4370A9C>) |
+| 8086:9d21 | 1043:10a1 | Intel            | Sunrise Point-LP PMC                 | 2     |            | [D7D299F9FC](<Notebook/ASUSTek Computer/ZenBook/ZenBook S UX391UA/8A4772572FC3/FREEBSD-12.1-P9/12.1-RELEASE-P9/AMD64/D7D299F9FC>) |
+| 8086:9d21 | 1043:1c7d | Intel            | Sunrise Point-LP PMC                 | 2     |            | [57018EDD10](<Notebook/ASUSTek Computer/X556/X556UA/9C2A3EAC0E23/HELLOSYSTEM-0.5.0/12.1-RELEASE/AMD64/57018EDD10>) |
+| 8086:9d21 | 1558:1313 | Intel            | Sunrise Point-LP PMC                 | 2     |            | [C23A22A72D](<Notebook/Schenker/N13/N13xWU/37D6E56C1169/FREEBSD-12.2/12.2-RELEASE/AMD64/C23A22A72D>) |
+| 8086:9d21 | 17aa:2233 | Intel            | Sunrise Point-LP PMC                 | 2     |            | [DBB0E378D5](<Notebook/Lenovo/ThinkPad/ThinkPad T460s 20FAS4KH02/DCA0C34D1413/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/DBB0E378D5>) |
+| 8086:9d21 | 17aa:2256 | Intel            | Sunrise Point-LP PMC                 | 2     |            | [5B9001009E](<Notebook/Lenovo/ThinkPad/ThinkPad X280 20KF001UUS/7976EB1CF6FF/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/5B9001009E>) |
+| 8086:9d21 | 17aa:225a | Intel            | Sunrise Point-LP PMC                 | 2     |            | [D5A1C088B3](<Notebook/Lenovo/ThinkPad/ThinkPad T580 20LAS2TG00/62C47C000AF5/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/D5A1C088B3>) |
+| 8086:9d21 | 17aa:3851 | Intel            | Sunrise Point-LP PMC                 | 2     |            | [56BE8AAFA1](<Notebook/Lenovo/IdeaPad/IdeaPad 320-15IKB Touch 81BH/A53FE8EA2AE1/PCBSD-13.0-P5/13.0-RELEASE-P4/AMD64/56BE8AAFA1>) |
+| 8086:9d21 | 17aa:504a | Intel            | Sunrise Point-LP PMC                 | 2     |            | [AA3DEADEDD](<Notebook/Lenovo/ThinkPad/ThinkPad X260 20F5S82N00/610D0A3E578D/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/AA3DEADEDD>) |
+| 8086:9d21 | 17aa:505f | Intel            | Sunrise Point-LP PMC                 | 2     |            | [32080A81C5](<Notebook/Lenovo/ThinkPad/ThinkPad L470 20J40013US/A39BB2DC9412/FREEBSD-13.0-P5/13.0-RELEASE-P5/AMD64/32080A81C5>) |
+| 8086:9def | 103c:8537 | Intel            | Cannon Point-LP Shared SRAM          | 2     |            | [7A8A66430A](<Notebook/Hewlett-Packard/ProBook/ProBook 440 G6/4151C66E839A/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/7A8A66430A>) |
+| 8086:9def | 17aa:2286 | Intel            | Cannon Point-LP Shared SRAM          | 2     |            | [D377309110](<Notebook/Lenovo/ThinkPad/ThinkPad T490s 20NYS3TU00/8D5A2ED4C475/HELLOSYSTEM-0.5.0/12.2-RELEASE-P7/AMD64/D377309110>) |
+| 8086:9def | 17aa:3809 | Intel            | Cannon Point-LP Shared SRAM          | 2     |            | [CEB18E38A3](<Notebook/Lenovo/IdeaPad/IdeaPad S145-15IWL 81MV/3D212F0359DA/HELLOSYSTEM-0.6.0/13.0-RELEASE/AMD64/CEB18E38A3>) |
+| 8086:9def | 8086:9def | Intel            | Cannon Point-LP Shared SRAM          | 2     |            | [3BD9CD5B98](<Notebook/BESSTAR Tech/U/U820/A06106A328DE/OPNSENSE-21.7.4/12.1-RELEASE-P20-HBSD/AMD64/3BD9CD5B98>) |
+| 8086:a0ef |           | Intel            | Tiger Lake-LP Shared SRAM            | 2     |            | [61E3F35EE8](<Notebook/MSI/Summit/Summit E13FlipEvo A11MT/094CDDAA6BF0/FREEBSD-13.0/13.0-RELEASE/AMD64/61E3F35EE8>) |
+| 8086:a121 | 1028:06da | Intel            | 100 Series/C230 Series Chipset Fa... | 2     |            | [F0BEBC2B21](<Notebook/Dell/Precision/Precision 7710/E6AAE60B4973/FREEBSD-12.2-P10/12.2-RELEASE-P7/AMD64/F0BEBC2B21>) |
+| 8086:a121 | 1028:06de | Intel            | 100 Series/C230 Series Chipset Fa... | 2     |            | [9E479E9C50](<Notebook/Dell/Latitude/Latitude E5470/A17BA6584F09/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/9E479E9C50>) |
+| 8086:a121 | 103c:8257 | Intel            | 100 Series/C230 Series Chipset Fa... | 2     |            | [ABC94E9198](<Notebook/Hewlett-Packard/OMEN/OMEN by HP Laptop/BFE1823EBDF1/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/ABC94E9198>) |
+| 8086:a121 | 1558:8509 | Intel            | 100 Series/C230 Series Chipset Fa... | 2     |            | [E84B5B6E5F](<Notebook/Notebook/N85/N85_N87HCHNHZ/28CF5209C334/FREEBSD-13.0-RC2/13.0-RC2/AMD64/E84B5B6E5F>) |
+| 8086:a121 | 17aa:224d | Intel            | 100 Series/C230 Series Chipset Fa... | 2     |            | [E4F43CFCAD](<Notebook/Lenovo/ThinkPad/ThinkPad P51 20HHCTO1WW/771FB79FBCC7/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/E4F43CFCAD>) |
+| 8086:a121 | 17aa:505d | Intel            | 100 Series/C230 Series Chipset Fa... | 2     |            | [7A61D90A55](<Notebook/Lenovo/ThinkPad/ThinkPad T470p 20J7S0PM00/61DA2865ABE8/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/7A61D90A55>) |
+| 8086:a36f | 1028:0831 | Intel            | Cannon Lake PCH Shared SRAM          | 2     |            | [498BFE852C](<Notebook/Dell/Precision/Precision 7530/5BEE2A4C3CA7/FREEBSD-12.3/12.3-RELEASE/AMD64/498BFE852C>) |
+| 8086:a36f | 1028:087c | Intel            | Cannon Lake PCH Shared SRAM          | 2     |            | [EE8980FEC1](<Notebook/Dell/XPS/XPS 15 9570/9A64E9C4BBC5/FREEBSD-13.0-P4/13.0-RELEASE/AMD64/EE8980FEC1>) |
+| 8086:a36f | 17aa:2267 | Intel            | Cannon Lake PCH Shared SRAM          | 2     |            | [6D5E1A13D0](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Extreme 20MF000BUS/A5269BACD212/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/6D5E1A13D0>) |
+| 8086:a36f | 17aa:2297 | Intel            | Cannon Lake PCH Shared SRAM          | 2     |            | [5B08C1DE3D](<Notebook/Lenovo/ThinkPad/ThinkPad P53 20QNCTO1WW/EDACF56B05E1/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/5B08C1DE3D>) |
+| 8086:a36f | 8086:2086 | Intel            | Cannon Lake PCH Shared SRAM          | 2     |            | [85F5C972A5](<Notebook/Avell High Performance/A60/A60 MUV/0C5CDFF081CF/FREEBSD-13.0-P3/13.0-RELEASE-P3/AMD64/85F5C972A5>) |
+| 8086:02ef | 1025:1345 | Intel            | Comet Lake PCH-LP Shared SRAM        | 1     |            | [08CAFD05B1](<Notebook/Acer/Aspire/Aspire A515-54G/5BF421D56026/FREEBSD-13.0/13.0-RELEASE/AMD64/08CAFD05B1>) |
+| 8086:02ef | 1028:0959 | Intel            | Comet Lake PCH-LP Shared SRAM        | 1     |            | [CF3508718C](<Notebook/Dell/Vostro/Vostro 5490/24693DCB9652/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/CF3508718C>) |
+| 8086:02ef | 103c:85f2 | Intel            | Comet Lake PCH-LP Shared SRAM        | 1     |            | [8EBEAC18CA](<Notebook/Hewlett-Packard/Laptop/Laptop 15s-du1xxx/869AC20DA495/FREEBSD-13.0/13.0-RELEASE/AMD64/8EBEAC18CA>) |
+| 8086:02ef | 103c:869d | Intel            | Comet Lake PCH-LP Shared SRAM        | 1     |            | [63DC88528C](<Notebook/Hewlett-Packard/ProBook/ProBook 440 G7/A6CF27443717/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/63DC88528C>) |
+| 8086:02ef | 1558:1403 | Intel            | Comet Lake PCH-LP Shared SRAM        | 1     |            | [80A9BA918E](<Notebook/SLIMBOOK/Others/Others/0C91938E8FB9/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/80A9BA918E>) |
+| 8086:02ef | 1558:1404 | Intel            | Comet Lake PCH-LP Shared SRAM        | 1     |            | [35AA6590C6](<Notebook/TUXEDO/Others/Others/2A3702DD6E7A/NOMADBSD-1.4/12.2-RELEASE-P4/AMD64/35AA6590C6>) |
+| 8086:02ef | 17aa:22aa | Intel            | Comet Lake PCH-LP Shared SRAM        | 1     |            | [12C985B708](<Notebook/Lenovo/ThinkPad/ThinkPad T490 20RYS06R00/B6BD4A7317CF/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/12C985B708>) |
+| 8086:02ef | 17aa:382f | Intel            | Comet Lake PCH-LP Shared SRAM        | 1     |            | [CD3AC84240](<Notebook/Lenovo/ZHAOYANG/ZHAOYANG K4e-IML 81VQ/40DACC397F7F/FREEBSD-13.0-P3/13.0-RELEASE-P3/AMD64/CD3AC84240>) |
+| 8086:02ef | 17aa:507c | Intel            | Comet Lake PCH-LP Shared SRAM        | 1     |            | [2DE4BC8337](<Notebook/Lenovo/ThinkPad/ThinkPad L15 Gen 1 20U3CTO1WW/9AD795E49162/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/2DE4BC8337>) |
+| 8086:06ef | 1028:097d | Intel            | Comet Lake PCH Shared SRAM           | 1     |            | [30424125F5](<Notebook/Dell/XPS/XPS 15 9500/45F4D2215C8C/FREEBSD-13.0/13.0-RELEASE/AMD64/30424125F5>) |
+| 8086:06ef | 1028:09c3 | Intel            | Comet Lake PCH Shared SRAM           | 1     |            | [9983A81086](<Notebook/Dell/Precision/Precision 7550/7F866249248B/HARDENEDBSD-13.0-CURRENT-HBSD/13.0-CURRENT-HBSD/AMD64/9983A81086>) |
+| 8086:06ef | 1028:09e1 | Intel            | Comet Lake PCH Shared SRAM           | 1     |            | [536A7A1B38](<Notebook/Dell/G3/G3 3500/EF2AA90002B0/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/536A7A1B38>) |
+| 8086:06ef | 1028:09f3 | Intel            | Comet Lake PCH Shared SRAM           | 1     |            | [A1C2EAEE5F](<Notebook/Dell/G7/G7 7500/7D613232FC32/FREEBSD-12.2-STABLE/12.2-STABLE/AMD64/A1C2EAEE5F>) |
+| 8086:06ef | 1028:0a64 | Intel            | Comet Lake PCH Shared SRAM           | 1     |            | [E9D432BC06](<Notebook/Dell/G15/G15 5510/A2CFA3B3F87D/FREEBSD-13.0/13.0-RELEASE/AMD64/E9D432BC06>) |
+| 8086:06ef | 1028:0a74 | Intel            | Comet Lake PCH Shared SRAM           | 1     |            | [A724A7D7C7](<Notebook/Alienware/m15/m15 R4/0420F17441F2/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/A724A7D7C7>) |
+| 8086:06ef | 103c:87af | Intel            | Comet Lake PCH Shared SRAM           | 1     |            | [4C22212C20](<Notebook/Hewlett-Packard/Pavilion/Pavilion Gaming Laptop 16-a0xxx/ADBD8C5E6883/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/4C22212C20>) |
+| 8086:06ef | 17aa:22b8 | Intel            | Comet Lake PCH Shared SRAM           | 1     |            | [342E914968](<Notebook/Lenovo/ThinkPad/ThinkPad P15 Gen 1 20ST005VRT/80BE8C899DB7/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/342E914968>) |
+| 8086:06ef | 17aa:22c0 | Intel            | Comet Lake PCH Shared SRAM           | 1     |            | [E54D79065E](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Extreme Gen 3 20TLA055CD/8C11449058DA/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/E54D79065E>) |
+| 8086:34ef | 1025:1422 | Intel            | Ice Lake-LP DRAM Controller          | 1     |            | [03CA802F4B](<Notebook/Acer/Aspire/Aspire A315-56/D593A2E1D608/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/03CA802F4B>) |
+| 8086:34ef | 103c:85f3 | Intel            | Ice Lake-LP DRAM Controller          | 1     |            | [A6D7796CEA](<Notebook/Hewlett-Packard/Laptop/Laptop 15-dw2xxx/E0130C6C868E/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/A6D7796CEA>) |
+| 8086:34ef | 17aa:3a34 | Intel            | Ice Lake-LP DRAM Controller          | 1     |            | [3278083BA9](<Notebook/Lenovo/IdeaPad/IdeaPad Slim 7 14IIL05 82A4/71F66591F74A/FREEBSD-12.2-P2/12.2-RELEASE-P1/AMD64/3278083BA9>) |
+| 8086:4def | 1025:1510 | Intel            | Jasper Lake Shared SRAM Controller   | 1     |            | [6E7384F4CC](<Notebook/Acer/Aspire/Aspire A114-33/11975974A75B/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/6E7384F4CC>) |
+| 8086:9d21 | 1025:1030 | Intel            | Sunrise Point-LP PMC                 | 1     |            | [1FF0E90D9D](<Notebook/Acer/Aspire/Aspire V3-575G/9F5C89AC26E0/NOMADBSD-1.3.2/12.1-RELEASE-P6/AMD64/1FF0E90D9D>) |
+| 8086:9d21 | 1025:1085 | Intel            | Sunrise Point-LP PMC                 | 1     |            | [E7D6ECE4BA](<Notebook/Acer/Extensa/Extensa 2540/5E9738CBBCDA/FREEBSD-12.2-P2/12.2-RELEASE-P1/AMD64/E7D6ECE4BA>) |
+| 8086:9d21 | 1025:1094 | Intel            | Sunrise Point-LP PMC                 | 1     |            | [6EA93BC344](<Notebook/Acer/Aspire/Aspire E5-575/4806EB87C7FC/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/6EA93BC344>) |
+| 8086:9d21 | 1025:115c | Intel            | Sunrise Point-LP PMC                 | 1     |            | [240171B234](<Notebook/Acer/Aspire/Aspire F5-573G/F4A1E706253A/GHOSTBSD-20.04.02/12.2-STABLE/AMD64/240171B234>) |
+| 8086:9d21 | 1025:118c | Intel            | Sunrise Point-LP PMC                 | 1     |            | [E3ECE211A0](<Notebook/Acer/Swift/Swift SF314-52/0522784DFF82/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E3ECE211A0>) |
 
 ### Modem (PCI)
 
-| ID        | Subsystem | MFG        | Name                         | Count | Driver     | Probe      |
-|-----------|-----------|------------|------------------------------|-------|------------|------------|
-| 1039:7013 | 1043:1816 | Silicon... | AC'97 Modem Controller       | 1     |            | 1F098AC490 |
-| 1039:7013 | 14c0:0012 | Silicon... | AC'97 Modem Controller       | 1     |            | 56A5581907 |
-| 10b9:5457 | 103c:0850 | ULi Ele... | M5457 AC'97 Modem Controller | 1     |            | B7C0CB252F |
-| 8086:2486 | 144f:1050 | Intel      | 82801CA/CAM AC'97 Modem C... | 1     |            | 41E40C653E |
-| 8086:24c6 | 1014:0559 | Intel      | 82801DB/DBL/DBM (ICH4/ICH... | 1     |            | BDD45ACD8D |
-| 8086:24c6 | 104d:818c | Intel      | 82801DB/DBL/DBM (ICH4/ICH... | 1     |            | F2F3923EA6 |
-| 8086:24c6 | 10f7:834b | Intel      | 82801DB/DBL/DBM (ICH4/ICH... | 1     |            | F6EC2858A5 |
-| 8086:266d | 14f1:5423 | Intel      | 82801FB/FBM/FR/FW/FRW (IC... | 1     |            | D2CBB1F229 |
+| ID        | Subsystem | MFG              | Name                                 | Count | Driver     | Probe |
+|-----------|-----------|------------------|--------------------------------------|-------|------------|-------|
+| 8086:266d | 1014:0574 | Intel            | 82801FB/FBM/FR/FW/FRW (ICH6 Famil... | 3     |            | [6FD6FD89C5](<Notebook/IBM/ThinkPad/ThinkPad R52 185869G/DED57F076B3E/FREEBSD-12.2-P6/12.2-RELEASE-P6/I386/6FD6FD89C5>) |
+| 1039:7013 | 1043:1816 | Silicon Integ... | AC'97 Modem Controller               | 1     |            | [83106A58EF](<Notebook/ASUSTek Computer/A/A9T/CD438D683462/FREEBSD-13.0-P4/13.0-RELEASE-P4/I386/83106A58EF>) |
+| 1039:7013 | 14c0:0012 | Silicon Integ... | AC'97 Modem Controller               | 1     |            | [56A5581907](<Notebook/Acer/TravelMate/TravelMate 270/A6730E9E5FB4/FREEBSD-12.1-P10/12.1-RELEASE-P9/I386/56A5581907>) |
+| 10b9:5457 | 103c:0850 | ULi Electronics  | M5457 AC'97 Modem Controller         | 1     |            | [B7C0CB252F](<Notebook/Hewlett-Packard/nx/nx9010/C0E10A77D690/FREEBSD-12.1-P10/12.1-RELEASE-P9/I386/B7C0CB252F>) |
+| 8086:2486 | 144f:1050 | Intel            | 82801CA/CAM AC'97 Modem Controller   | 1     |            | [41E40C653E](<Notebook/Gateway/Solo/Solo 450/3E11C9EAD72B/FREEBSD-12.2-P4/12.2-RELEASE-P4/I386/41E40C653E>) |
+| 8086:24c6 | 1014:0559 | Intel            | 82801DB/DBL/DBM (ICH4/ICH4-L/ICH4... | 1     |            | [ACF931A3E0](<Notebook/IBM/ThinkPad/ThinkPad T42 2374K46/696337B58774/FREEBSD-13.0-P2/13.0-RELEASE-P1/I386/ACF931A3E0>) |
+| 8086:24c6 | 104d:818c | Intel            | 82801DB/DBL/DBM (ICH4/ICH4-L/ICH4... | 1     |            | [F2F3923EA6](<Notebook/Sony/VGN-S/VGN-S150/194677ED6A48/FREEBSD-13.0-CURRENT/13.0-CURRENT/I386/F2F3923EA6>) |
+| 8086:24c6 | 10f7:834b | Intel            | 82801DB/DBL/DBM (ICH4/ICH4-L/ICH4... | 1     |            | [F6EC2858A5](<Notebook/Matsushita Electric Industrial/CF-T2/CF-T2BW1AXR/C85EB722BC8F/FREEBSD-14.0-CURRENT/14.0-CURRENT/I386/F6EC2858A5>) |
+| 8086:266d | 14f1:5423 | Intel            | 82801FB/FBM/FR/FW/FRW (ICH6 Famil... | 1     |            | [D2CBB1F229](<Notebook/Dell/Latitude/Latitude D610/65F95AF4AC23/FREEBSD-12.2-P6/12.2-RELEASE-P6/I386/D2CBB1F229>) |
 
 ### Multimedia (PCI)
 
-| ID        | Subsystem | MFG        | Name                         | Count | Driver     | Probe      |
-|-----------|-----------|------------|------------------------------|-------|------------|------------|
-| 14e4:1570 | 14e4:1570 | Broadcom   | 720p FaceTime HD Camera      | 5     |            | 1C9FEEF8E7 |
-| 1022:15e2 | 1022:15e2 | AMD        | Raven/Raven2/FireFlight/R... | 3     |            | BE2AD24D1B |
-| 1022:15e2 | 103c:8786 | AMD        | Raven/Raven2/FireFlight/R... | 2     |            | 19F307FF6D |
-| 1022:15e2 | 1558:a500 | AMD        | Raven/Raven2/FireFlight/R... | 2     |            | 792FB07DD9 |
-| 1022:15e2 | 17aa:5082 | AMD        | Raven/Raven2/FireFlight/R... | 2     |            | ED75B3D15B |
-| 1022:15e2 | 17aa:5125 | AMD        | Raven/Raven2/FireFlight/R... | 2     |            | 7A706E46DE |
-| 1022:15e2 | 1d05:109f | AMD        | Raven/Raven2/FireFlight/R... | 2     |            | 5359B4DEE9 |
-| 1022:15e2 | 1025:134d | AMD        | Raven/Raven2/FireFlight/R... | 1     |            | 1AC21E1660 |
-| 1022:15e2 | 1028:09f5 | AMD        | Raven/Raven2/FireFlight/R... | 1     |            | BA74D8EEE0 |
-| 1022:15e2 | 103c:85b3 | AMD        | Raven/Raven2/FireFlight/R... | 1     |            | ECF07AD5FE |
-| 1022:15e2 | 103c:85e0 | AMD        | Raven/Raven2/FireFlight/R... | 1     |            | 5CD8E23152 |
-| 1022:15e2 | 103c:8730 | AMD        | Raven/Raven2/FireFlight/R... | 1     |            | DD877E6C6C |
-| 1022:15e2 | 103c:87b1 | AMD        | Raven/Raven2/FireFlight/R... | 1     |            | 5E5632D9B6 |
-| 1022:15e2 | 17aa:5081 | AMD        | Raven/Raven2/FireFlight/R... | 1     |            | BD88655975 |
-| 1022:15e2 | 17aa:5124 | AMD        | Raven/Raven2/FireFlight/R... | 1     |            | A1FC75A9B7 |
-| 1022:15e2 | 17aa:5126 | AMD        | Raven/Raven2/FireFlight/R... | 1     |            | CD016E96EE |
-| 1022:15e2 | 17aa:5127 | AMD        | Raven/Raven2/FireFlight/R... | 1     |            | 0E5E228D18 |
-| 1022:15e2 | 19e5:3e14 | AMD        | Raven/Raven2/FireFlight/R... | 1     |            | D776625073 |
-| 1022:15e2 | 1d72:1951 | AMD        | Raven/Raven2/FireFlight/R... | 1     |            | A7BF2669CE |
-| 8086:22b8 | 8086:7270 | Intel      | Atom/Celeron/Pentium Proc... | 1     |            | 1988C603C9 |
+| ID        | Subsystem | MFG              | Name                                 | Count | Driver     | Probe |
+|-----------|-----------|------------------|--------------------------------------|-------|------------|-------|
+| 14e4:1570 | 14e4:1570 | Broadcom         | 720p FaceTime HD Camera              | 9     |            | [E04A1B354C](<Notebook/Apple/MacBookPro12/MacBookPro12,1/98B93121E415/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/E04A1B354C>) |
+| 1022:15e2 | 1022:15e2 | AMD              | ACP/ACP3X/ACP6x Audio Coprocessor    | 8     |            | [30590E8CCF](<Notebook/Deciso/DEC2700/DEC2700 - OPNsense Appliance/504812C630AE/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/30590E8CCF>) |
+| 1022:15e2 | 17aa:5097 | AMD              | ACP/ACP3X/ACP6x Audio Coprocessor    | 4     |            | [6C208C85A5](<Notebook/Lenovo/ThinkPad/ThinkPad E14 Gen 3 20Y7003SGE/284E69188279/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/6C208C85A5>) |
+| 1022:15e2 | 1d05:109f | AMD              | ACP/ACP3X/ACP6x Audio Coprocessor    | 3     |            | [6F779D5170](<Notebook/TUXEDO/Pulse/Pulse 15 Gen1/C92D236C248C/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/6F779D5170>) |
+| 1022:15e2 | 103c:85e0 | AMD              | ACP/ACP3X/ACP6x Audio Coprocessor    | 2     |            | [E7B40F6E3B](<Notebook/Hewlett-Packard/Laptop/Laptop 14-dk0xxx/60E15DE8A8F4/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E7B40F6E3B>) |
+| 1022:15e2 | 103c:8730 | AMD              | ACP/ACP3X/ACP6x Audio Coprocessor    | 2     |            | [494195B923](<Notebook/Hewlett-Packard/ProBook/ProBook 445 G7/06DE97DEA747/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/494195B923>) |
+| 1022:15e2 | 103c:8786 | AMD              | ACP/ACP3X/ACP6x Audio Coprocessor    | 2     |            | [19F307FF6D](<Notebook/Hewlett-Packard/OMEN/OMEN Laptop 15-en0xxx/99830226F687/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/19F307FF6D>) |
+| 1022:15e2 | 103c:87b1 | AMD              | ACP/ACP3X/ACP6x Audio Coprocessor    | 2     |            | [B8408CB369](<Notebook/Hewlett-Packard/Pavilion/Pavilion Gaming Laptop 15-ec1xxx/447033DB0DB6/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/B8408CB369>) |
+| 1022:15e2 | 103c:88dd | AMD              | ACP/ACP3X/ACP6x Audio Coprocessor    | 2     |            | [7859F220B9](<Notebook/Hewlett-Packard/Pavilion/Pavilion Gaming Laptop 15-ec2xxx/32343F8FB2CF/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/7859F220B9>) |
+| 1022:15e2 | 1558:a500 | AMD              | ACP/ACP3X/ACP6x Audio Coprocessor    | 2     |            | [792FB07DD9](<Notebook/Notebook/NL5/NL5xRU/5E9A5B67425F/FREEBSD-13.0/13.0-RELEASE/AMD64/792FB07DD9>) |
+| 1022:15e2 | 17aa:3836 | AMD              | ACP/ACP3X/ACP6x Audio Coprocessor    | 2     |            | [2A54A0C338](<Notebook/Lenovo/Yoga/Yoga Slim 7 Pro 14ACH5 82MS/FD0797BFCA5B/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/2A54A0C338>) |
+| 1022:15e2 | 17aa:5081 | AMD              | ACP/ACP3X/ACP6x Audio Coprocessor    | 2     |            | [D910C79D75](<Notebook/Lenovo/ThinkPad/ThinkPad P14s Gen 1 20Y1CTO1WW/5E03AED6E452/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/D910C79D75>) |
+| 1022:15e2 | 17aa:5082 | AMD              | ACP/ACP3X/ACP6x Audio Coprocessor    | 2     |            | [ED75B3D15B](<Notebook/Lenovo/ThinkPad/ThinkPad X13 Gen 1 20UF000QRT/28FFDBA7F5C3/FREEBSD-13.0-BETA1/13.0-BETA2/AMD64/ED75B3D15B>) |
+| 1022:15e2 | 17aa:5125 | AMD              | ACP/ACP3X/ACP6x Audio Coprocessor    | 2     |            | [7A706E46DE](<Notebook/Lenovo/ThinkPad/ThinkPad T495 20NJS0KP00/BBAE20B5A9E1/FREEBSD-13.0-CURRENT/13.0-CURRENT/AMD64/7A706E46DE>) |
+| 1022:15e2 | 17aa:5126 | AMD              | ACP/ACP3X/ACP6x Audio Coprocessor    | 2     |            | [D7812A2905](<Notebook/Lenovo/ThinkPad/ThinkPad X395 20NL000GPG/878AD42630E7/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/D7812A2905>) |
+| 8086:22b8 | 8086:7270 | Intel            | Atom/Celeron/Pentium Processor x5... | 2     |            | [3454B5492B](<Notebook/AZW/BT3/BT3 PRO/8FB6E0960427/OPNSENSE-21.7.5/12.1-RELEASE-P21-HBSD/AMD64/3454B5492B>) |
+| 1022:15e2 | 1025:134d | AMD              | ACP/ACP3X/ACP6x Audio Coprocessor    | 1     |            | [1AC21E1660](<Notebook/Acer/Aspire/Aspire A315-42/DE5FD26538FB/GHOSTBSD-20.04.02/12.2-STABLE/AMD64/1AC21E1660>) |
+| 1022:15e2 | 1025:1456 | AMD              | ACP/ACP3X/ACP6x Audio Coprocessor    | 1     |            | [7FB743C654](<Notebook/Acer/Aspire/Aspire A315-23/F20A633E5003/FREEBSD-13.0/13.0-RELEASE/AMD64/7FB743C654>) |
+| 1022:15e2 | 1028:09f5 | AMD              | ACP/ACP3X/ACP6x Audio Coprocessor    | 1     |            | [9933A09C4F](<Notebook/Dell/G5/G5 5505/919E52ABE5A8/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/9933A09C4F>) |
+| 1022:15e2 | 1028:0a12 | AMD              | ACP/ACP3X/ACP6x Audio Coprocessor    | 1     |            | [8D4B342FDA](<Notebook/Dell/Inspiron/Inspiron 3505/4D47E92A2957/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/8D4B342FDA>) |
+| 1022:15e2 | 103c:85b3 | AMD              | ACP/ACP3X/ACP6x Audio Coprocessor    | 1     |            | [ECF07AD5FE](<Notebook/Hewlett-Packard/Laptop/Laptop 17-ca1xxx/17899E306221/FREEBSD-12.2-P2/12.2-RELEASE/AMD64/ECF07AD5FE>) |
+| 1022:15e2 | 1043:1862 | AMD              | ACP/ACP3X/ACP6x Audio Coprocessor    | 1     |            | [CF360A6098](<Notebook/ASUSTek Computer/VivoBook_ASUSLaptop/VivoBook_ASUSLaptop X515UA_M515UA/E0D904EE5AF7/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/CF360A6098>) |
+| 1022:15e2 | 1043:1d42 | AMD              | ACP/ACP3X/ACP6x Audio Coprocessor    | 1     |            | [20CDC9D999](<Notebook/ASUSTek Computer/ROG/ROG Zephyrus G14 GA402RJ_GA402RJ/8B17C1C0752C/FREEBSD-13.0/13.0-RELEASE/AMD64/20CDC9D999>) |
+| 1022:15e2 | 17aa:380f | AMD              | ACP/ACP3X/ACP6x Audio Coprocessor    | 1     |            | [E660899158](<Notebook/Lenovo/IdeaPad/IdeaPad Gaming 3 15ARH05 82EY/9C5FD9AECCA2/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/E660899158>) |
+| 1022:15e2 | 17aa:381c | AMD              | ACP/ACP3X/ACP6x Audio Coprocessor    | 1     |            | [1A13B7BFD1](<Notebook/Lenovo/Legion/Legion 5 15ARH05 82B5/F36FD56B8299/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/1A13B7BFD1>) |
+| 1022:15e2 | 17aa:381e | AMD              | ACP/ACP3X/ACP6x Audio Coprocessor    | 1     |            | [BF56B2A81A](<Notebook/Lenovo/XiaoXinPro-13ARE/XiaoXinPro-13ARE 2020 82DM/F0E303B67D1F/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/BF56B2A81A>) |
+| 1022:15e2 | 17aa:3830 | AMD              | ACP/ACP3X/ACP6x Audio Coprocessor    | 1     |            | [42B4BCBCC2](<Notebook/Lenovo/ThinkBook/ThinkBook 14 G3 ACL 21A2/0D8018F67544/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/42B4BCBCC2>) |
+| 1022:15e2 | 17aa:5124 | AMD              | ACP/ACP3X/ACP6x Audio Coprocessor    | 1     |            | [A1FC75A9B7](<Notebook/Lenovo/ThinkPad/ThinkPad E495 20NE0001US/84A292AF9512/FREEBSD-12.1-P10/12.1-RELEASE-P10/AMD64/A1FC75A9B7>) |
+| 1022:15e2 | 17aa:5127 | AMD              | ACP/ACP3X/ACP6x Audio Coprocessor    | 1     |            | [0E5E228D18](<Notebook/Lenovo/ThinkPad/ThinkPad T495s 20QKS1812F/C3CD82558289/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/0E5E228D18>) |
+| 1022:15e2 | 19e5:3e14 | AMD              | ACP/ACP3X/ACP6x Audio Coprocessor    | 1     |            | [D776625073](<Notebook/HUAWEI/HN-WX9/HN-WX9X/9CD27AA9940C/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/D776625073>) |
+| 1022:15e2 | 1a0e:1043 | AMD              | ACP/ACP3X/ACP6x Audio Coprocessor    | 1     |            | [22C1AEFEAB](<Notebook/ASUSTek Computer/ASUS/ASUS TUF Gaming A17 FA706II_FA706II/6F2D3FCBAD55/FREEBSD-13.0/13.0-RELEASE/AMD64/22C1AEFEAB>) |
+| 1022:15e2 | 1d72:1951 | AMD              | ACP/ACP3X/ACP6x Audio Coprocessor    | 1     |            | [A7BF2669CE](<Notebook/Timi/RedmiBook/RedmiBook 14 II/E502DAC4FD8B/FREEBSD-13.0-CURRENT/13.0-CURRENT/AMD64/A7BF2669CE>) |
+| 1022:15e2 | 1e21:1043 | AMD              | ACP/ACP3X/ACP6x Audio Coprocessor    | 1     |            | [11BBFCE5D4](<Notebook/ASUSTek Computer/ASUS/ASUS TUF Gaming A15 FA506IH_FA506IH/791A09644467/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/11BBFCE5D4>) |
+| 1022:15e2 | 1e83:3e33 | AMD              | ACP/ACP3X/ACP6x Audio Coprocessor    | 1     |            | [B7841E03F5](<Notebook/HUAWEI/KLVL-WXX/KLVL-WXX9/C229C05C2950/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/B7841E03F5>) |
+| 8086:0f38 | 8086:2212 | Intel            | Atom Processor Z36xxx/Z37xxx Seri... | 1     |            | [4810842D82](<Notebook/Kraftway/KW/KW10T/6593FDB1CDCB/HELLOSYSTEM-0.6.0/13.0-RELEASE/AMD64/4810842D82>) |
 
 ### Net/ethernet (PCI)
 
-| ID        | Subsystem | MFG        | Name                         | Count | Driver     | Probe      |
-|-----------|-----------|------------|------------------------------|-------|------------|------------|
-| 10de:0ab0 | 10de:cb79 | Nvidia     | MCP79 Ethernet               | 8     | nfe        | F46146B79E |
-| 8086:10f5 | 17aa:20ee | Intel      | 82567LM Gigabit Network C... | 7     | em         | 926FE13D8F |
-| 14e4:1682 | 106b:00f6 | Broadcom   | NetXtreme BCM57762 Gigabi... | 5     | bge        | 1C9FEEF8E7 |
-| 1022:1458 | 1022:1458 | AMD        | Family 17h Processor 10 G... | 4     | ax         | F4A0F0941B |
-| 10ec:8136 | 1028:0597 | Realtek... | RTL810xE PCI Express Fast... | 4     | re         | 9050866FB2 |
-| 10ec:8168 | 17aa:5072 | Realtek... | RTL8111/8168/8411 PCI Exp... | 4     | re         | 852A900303 |
-| 8086:153a | 1028:05cc | Intel      | Ethernet Connection I217-LM  | 4     | em         | 1847C0AADB |
-| 10ec:8136 | 1028:0651 | Realtek... | RTL810xE PCI Express Fast... | 3     | re         | 3C41C474AD |
-| 10ec:8168 | 1028:09ec | Realtek... | RTL8111/8168/8411 PCI Exp... | 3     | re         | 80D7BF959A |
-| 10ec:8168 | 10ec:8168 | Realtek... | RTL8111/8168/8411 PCI Exp... | 3     | re         | A76C55B066 |
-| 10ec:8168 | 17aa:2131 | Realtek... | RTL8111/8168/8411 PCI Exp... | 3     | re         | BDBD2D0A05 |
-| 11ab:436a | 11ab:00ba | Marvell... | 88E8058 PCI-E Gigabit Eth... | 3     | mskc       | ED3684513F |
-| 14e4:1684 | 14e4:1684 | Broadcom   | NetXtreme BCM5764M Gigabi... | 3     | bge        | 0AB44E95DF |
-| 8086:1049 | 17aa:20b9 | Intel      | 82566MM Gigabit Network C... | 3     | em         | D223A9B1FB |
-| 8086:1049 | 17aa:20de | Intel      | 82566MM Gigabit Network C... | 3     | em         | 3EB96DCE87 |
-| 8086:153a | 1028:05bd | Intel      | Ethernet Connection I217-LM  | 3     | em         | 3A656DED12 |
-| 8086:15d8 | 17aa:225c | Intel      | Ethernet Connection (4) I... | 3     | em         | 16206C4970 |
-| 10ec:8136 | 1028:05f3 | Realtek... | RTL810xE PCI Express Fast... | 2     | re         | 0D1D75A914 |
-| 10ec:8136 | 103c:3577 | Realtek... | RTL810xE PCI Express Fast... | 2     | re         | F83C769501 |
-| 10ec:8136 | 1043:200f | Realtek... | RTL810xE PCI Express Fast... | 2     | re         | A9C4506364 |
-| 10ec:8136 | 10ec:0123 | Realtek... | RTL810xE PCI Express Fast... | 2     | re         | CFC7D86B5A |
-| 10ec:8136 | 1179:ff00 | Realtek... | RTL810xE PCI Express Fast... | 2     | re         | E07FD4EDD9 |
-| 10ec:8136 | 1179:ff1e | Realtek... | RTL810xE PCI Express Fast... | 2     | re         | 9FB68E38D8 |
-| 10ec:8168 | 1025:0865 | Realtek... | RTL8111/8168/8411 PCI Exp... | 2     | re         | E2B6DBFE40 |
-| 10ec:8168 | 1028:0572 | Realtek... | RTL8111/8168/8411 PCI Exp... | 2     | re         | 599D3E84D7 |
-| 10ec:8168 | 103c:8257 | Realtek... | RTL8111/8168/8411 PCI Exp... | 2     | re         | BB8BEB97BE |
-| 10ec:8168 | 103c:84ac | Realtek... | RTL8111/8168/8411 PCI Exp... | 2     | re         | 3E500C12A3 |
-| 10ec:8168 | 103c:8786 | Realtek... | RTL8111/8168/8411 PCI Exp... | 2     | re         | 19F307FF6D |
-| 10ec:8168 | 1043:208f | Realtek... | RTL8111/8168/8411 PCI Exp... | 2     | re         | 1952513DB8 |
-| 10ec:8168 | 1558:8509 | Realtek... | RTL8111/8168/8411 PCI Exp... | 2     | re         | E84B5B6E5F |
-| 10ec:8168 | 1558:a501 | Realtek... | RTL8111/8168/8411 PCI Exp... | 2     | re         | 792FB07DD9 |
-| 10ec:8168 | 17aa:21e2 | Realtek... | RTL8111/8168/8411 PCI Exp... | 2     | re         | AA98E655F3 |
-| 10ec:8168 | 17aa:38cd | Realtek... | RTL8111/8168/8411 PCI Exp... | 2     | re         | DCE3BA8C99 |
-| 10ec:8168 | 17aa:38db | Realtek... | RTL8111/8168/8411 PCI Exp... | 2     | re         | 2BE8CF963C |
-| 10ec:8168 | 17aa:5079 | Realtek... | RTL8111/8168/8411 PCI Exp... | 2     | re         | 94D082C57C |
-| 10ec:8168 | 17aa:5126 | Realtek... | RTL8111/8168/8411 PCI Exp... | 2     | re         | CD016E96EE |
-| 10ec:8168 | 1d05:109f | Realtek... | RTL8111/8168/8411 PCI Exp... | 2     | re         | 5359B4DEE9 |
-| 11ab:4354 | 144d:c08f | Marvell... | 88E8040 PCI-E Fast Ethern... | 2     | mskc       | A38A620353 |
-| 14e4:1681 | 1028:049b | Broadcom   | NetXtreme BCM5761 Gigabit... | 2     | bge        | 32F03AA888 |
-| 14e4:1684 | 1025:013c | Broadcom   | NetXtreme BCM5764M Gigabi... | 2     | bge        | 6A1B523EFB |
-| 14e4:1684 | 1028:02d6 | Broadcom   | NetXtreme BCM5764M Gigabi... | 2     | bge        | 899CE6FFE4 |
-| 1969:1063 | 1043:1820 | Qualcom... | AR8131 Gigabit Ethernet      | 2     | alc        | BA7FB8E83C |
-| 1969:1083 | 1043:1851 | Qualcom... | AR8151 v2.0 Gigabit Ethernet | 2     | alc        | 7EFB6557A2 |
-| 1969:1091 | 1043:14c7 | Qualcom... | AR8161 Gigabit Ethernet      | 2     | alc        | E887EE2FF5 |
-| 1969:10a1 | 1043:200f | Qualcom... | QCA8171 Gigabit Ethernet     | 2     | alc        | 37BE4EA27A |
-| 1969:2062 | 1043:8468 | Qualcom... | AR8152 v2.0 Fast Ethernet    | 2     | alc        | C6E717C1E9 |
-| 8086:10f5 | 1028:024d | Intel      | 82567LM Gigabit Network C... | 2     | em         | D5051EF185 |
-| 8086:1502 | 103c:17a7 | Intel      | 82579LM Gigabit Network C... | 2     | em         | 52BA4E835F |
-| 8086:150c |           | Intel      | 82583V Gigabit Network Co... | 2     | em         | 5068D55701 |
-| 8086:153a | 10cf:17e7 | Intel      | Ethernet Connection I217-LM  | 2     | em         | D3D033F879 |
-| 8086:153a | 17aa:2210 | Intel      | Ethernet Connection I217-LM  | 2     | em         | 91D2CD471C |
-| 8086:155a | 1028:05cb | Intel      | Ethernet Connection I218-LM  | 2     | em         | 6EC8FD788A |
-| 8086:155a | 103c:1991 | Intel      | Ethernet Connection I218-LM  | 2     | em         | 565343B334 |
-| 8086:156f | 1028:06df | Intel      | Ethernet Connection I219-LM  | 2     | em         | DA926F1065 |
-| 8086:156f | 103c:8079 | Intel      | Ethernet Connection I219-LM  | 2     | em         | 2B97986DE1 |
-| 8086:15bc | 17aa:2267 | Intel      | Ethernet Connection (7) I... | 2     | em         | 045A80D8BC |
-| 8086:15bd | 17aa:2279 | Intel      | Ethernet Connection (6) I... | 2     | em         | 6311D603FF |
-| 8086:15d8 | 17aa:225a | Intel      | Ethernet Connection (4) I... | 2     | em         | D5A1C088B3 |
-| 8086:15d8 | 17aa:5062 | Intel      | Ethernet Connection (4) I... | 2     | em         | 7C7573EB45 |
-| 100b:0020 | 103c:0850 | Nationa... | DP83815 (MacPhyter) Ether... | 1     | sis        | B7C0CB252F |
-| 10ec:2502 | 1028:08ea | Realtek... | Killer E2500 Gigabit Ethe... | 1     |            | 18863BC535 |
-| 10ec:2502 | 1028:09f3 | Realtek... | Killer E2500 Gigabit Ethe... | 1     |            | A1C2EAEE5F |
-| 10ec:8136 | 1025:015b | Realtek... | RTL810xE PCI Express Fast... | 1     | re         | 4D9EB84DAA |
-| 10ec:8136 | 1025:061f | Realtek... | RTL810xE PCI Express Fast... | 1     | re         | 41D2974F13 |
-| 10ec:8136 | 1028:02b0 | Realtek... | RTL810xE PCI Express Fast... | 1     | re         | 047950E61B |
-| 10ec:8136 | 1028:0504 | Realtek... | RTL810xE PCI Express Fast... | 1     | re         | 9B06FF01BB |
-| 10ec:8136 | 1028:0593 | Realtek... | RTL810xE PCI Express Fast... | 1     | re         | C5F6880081 |
-| 10ec:8136 | 1028:05b8 | Realtek... | RTL810xE PCI Express Fast... | 1     | re         | B663DF318C |
-| 10ec:8136 | 1028:0653 | Realtek... | RTL810xE PCI Express Fast... | 1     | re         | 063A26AEC7 |
-| 10ec:8136 | 1028:0654 | Realtek... | RTL810xE PCI Express Fast... | 1     | re         | 525EEEC663 |
-| 10ec:8136 | 1028:06ae | Realtek... | RTL810xE PCI Express Fast... | 1     | re         | C096E37BE5 |
-| 10ec:8136 | 1028:06b0 | Realtek... | RTL810xE PCI Express Fast... | 1     | re         | CF0FFE0A77 |
-| 10ec:8136 | 1028:06b2 | Realtek... | RTL810xE PCI Express Fast... | 1     | re         | 295BD02C59 |
-| 10ec:8136 | 1028:0767 | Realtek... | RTL810xE PCI Express Fast... | 1     | re         | 5EF34CD40F |
-| 10ec:8136 | 1028:078a | Realtek... | RTL810xE PCI Express Fast... | 1     | re         | 4D1897ED1F |
-| 10ec:8136 | 1028:097a | Realtek... | RTL810xE PCI Express Fast... | 1     | re         | C2D56FC369 |
-| 10ec:8136 | 103c:22ce | Realtek... | RTL810xE PCI Express Fast... | 1     | re         | 861BDC647D |
-| 10ec:8136 | 103c:306c | Realtek... | RTL810xE PCI Express Fast... | 1     | re         | 258EF16ACE |
-| 10ec:8136 | 103c:30cc | Realtek... | RTL810xE PCI Express Fast... | 1     | re         | 316FFB0740 |
-| 10ec:8136 | 1043:103b | Realtek... | RTL810xE PCI Express Fast... | 1     | re         | 3EFF93BFB5 |
-| 10ec:8136 | 107b:0184 | Realtek... | RTL810xE PCI Express Fast... | 1     | re         | D9EF473A7A |
-| 10ec:8136 | 1179:fc30 | Realtek... | RTL810xE PCI Express Fast... | 1     | re         | 7D64801E2B |
-| 10ec:8136 | 1179:ff40 | Realtek... | RTL810xE PCI Express Fast... | 1     | re         | FEAE098542 |
-| 10ec:8136 | 144d:c062 | Realtek... | RTL810xE PCI Express Fast... | 1     | re         | CAB912C576 |
-| 10ec:8136 | 144d:c0a8 | Realtek... | RTL810xE PCI Express Fast... | 1     | re         | 3CE5C260A2 |
-| 10ec:8136 | 144d:c708 | Realtek... | RTL810xE PCI Express Fast... | 1     | re         | BA45E27F88 |
-| 10ec:8136 | 144d:c770 | Realtek... | RTL810xE PCI Express Fast... | 1     | re         | 1B84BFFD9B |
-| 10ec:8136 | 144d:c784 | Realtek... | RTL810xE PCI Express Fast... | 1     | re         | A667296C17 |
-| 10ec:8136 | 1462:100a | Realtek... | RTL810xE PCI Express Fast... | 1     | re         | 650F6A1B70 |
-| 10ec:8136 | 152d:1777 | Realtek... | RTL810xE PCI Express Fast... | 1     | re         | D11EC93413 |
-| 10ec:8136 | 1631:018b | Realtek... | RTL810xE PCI Express Fast... | 1     | re         | 2A98CAE4E8 |
-| 10ec:8136 | 17aa:219d | Realtek... | RTL810xE PCI Express Fast... | 1     | re         | 3B62DD9788 |
-| 10ec:8136 | 17aa:3806 | Realtek... | RTL810xE PCI Express Fast... | 1     | re         | 1C239BAC92 |
-| 10ec:8136 | 17aa:381f | Realtek... | RTL810xE PCI Express Fast... | 1     | re         | C5E824B558 |
-| 10ec:8139 | 1025:001a | Realtek... | RTL-8100/8101L/8139 PCI F... | 1     | rl         | 56A5581907 |
-| 10ec:8139 | 10f7:8338 | Realtek... | RTL-8100/8101L/8139 PCI F... | 1     | rl         | F6EC2858A5 |
-| 10ec:8168 | 1025:0845 | Realtek... | RTL8111/8168/8411 PCI Exp... | 1     | re         | C65D08AA57 |
-| 10ec:8168 | 1025:0864 | Realtek... | RTL8111/8168/8411 PCI Exp... | 1     | re         | C9AB1CB207 |
-| 10ec:8168 | 1025:0866 | Realtek... | RTL8111/8168/8411 PCI Exp... | 1     | re         | 7C8C842FA7 |
-| 10ec:8168 | 1025:0879 | Realtek... | RTL8111/8168/8411 PCI Exp... | 1     | re         | A2A6E419ED |
+| ID        | Subsystem | MFG              | Name                                 | Count | Driver     | Probe |
+|-----------|-----------|------------------|--------------------------------------|-------|------------|-------|
+| 1022:1458 | 1022:1458 | AMD              | Family 17h Processor 10 Gb Ethern... | 14    | ax         | [4D8F19BA12](<Notebook/Deciso/Netboard/Netboard A20/94D2C7F0ED24/OPNSENSE-22.1/13.0-STABLE/AMD64/4D8F19BA12>) |
+| 10de:0ab0 | 10de:cb79 | Nvidia           | MCP79 Ethernet                       | 14    | nfe        | [D680290D84](<Notebook/Apple/MacBook6/MacBook6,1/B24103297D7A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/D680290D84>) |
+| 11ab:436a | 11ab:00ba | Marvell Techn... | 88E8058 PCI-E Gigabit Ethernet Co... | 9     | mskc       | [E0CF5200DE](<Notebook/Apple/MacBook4/MacBook4,1/07CFC301CF14/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E0CF5200DE>) |
+| 8086:10f5 | 17aa:20ee | Intel            | 82567LM Gigabit Network Connection   | 9     | em         | [88B86ECF8B](<Notebook/Lenovo/ThinkPad/ThinkPad T500 2056Y2Z/10606F03AC46/GHOSTBSD-20.04.02/13.0-STABLE/AMD64/88B86ECF8B>) |
+| 10ec:8168 | 1043:208f | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 6     | re         | [11BBFCE5D4](<Notebook/ASUSTek Computer/ASUS/ASUS TUF Gaming A15 FA506IH_FA506IH/791A09644467/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/11BBFCE5D4>) |
+| 10ec:8168 | 17aa:2131 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 6     | re         | [B0A9802877](<Notebook/Lenovo/ThinkPad/ThinkPad SL510 2847R96/16806C85881A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/B0A9802877>) |
+| 10ec:8168 | 17aa:5072 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 6     | re         | [98072B8DB6](<Notebook/Lenovo/ThinkPad/ThinkPad E590 20NB0012RT/F14FDAEA6645/FREEBSD-13.0-P3/13.0-RELEASE-P3/AMD64/98072B8DB6>) |
+| 14e4:1682 | 106b:00f6 | Broadcom         | NetXtreme BCM57762 Gigabit Ethern... | 6     | bge        | [46BF9EDC63](<Notebook/Apple/MacBookAir6/MacBookAir6,1/47A05046B480/NOMADBSD-5806F915/13.0-RELEASE-P1/AMD64/46BF9EDC63>) |
+| 10ec:8136 | 1028:0597 | Realtek Semic... | RTL810xE PCI Express Fast Etherne... | 5     | re         | [B246D110AF](<Notebook/Dell/Inspiron/Inspiron 3521/D0B94644586B/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/B246D110AF>) |
+| 10ec:8136 | 1043:200f | Realtek Semic... | RTL810xE PCI Express Fast Etherne... | 5     | re         | [FA809BE73F](<Notebook/ASUSTek Computer/X540/X540LA/6340A9084F59/HELLOSYSTEM-0.7.0/13.0-RELEASE-P4/AMD64/FA809BE73F>) |
+| 8086:1049 | 17aa:20b9 | Intel            | 82566MM Gigabit Network Connection   | 5     | em         | [F5F25EFDCC](<Notebook/Lenovo/ThinkPad/ThinkPad T61 766301U/A1D00057611B/HELLOSYSTEM-0.7.0/13.0-RELEASE-P7/AMD64/F5F25EFDCC>) |
+| 10ec:8136 | 1028:0651 | Realtek Semic... | RTL810xE PCI Express Fast Etherne... | 4     | re         | [8F8CC52F23](<Notebook/Dell/Inspiron/Inspiron 3442/E46A53C1ED36/FREEBSD-13.0/13.0-RELEASE/AMD64/8F8CC52F23>) |
+| 10ec:8136 | 1028:078a | Realtek Semic... | RTL810xE PCI Express Fast Etherne... | 4     | re         | [9073F1975D](<Notebook/Dell/Inspiron/Inspiron 15-3567/26EF6087DCBB/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/9073F1975D>) |
+| 10ec:8168 | 103c:84ac | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 4     | re         | [766E62F699](<Notebook/Hewlett-Packard/Laptop/Laptop 15-db0xxx/3E8F8F48759C/NOMADBSD-5806F915/13.0-RELEASE/AMD64/766E62F699>) |
+| 10ec:8168 | 17aa:38cd | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 4     | re         | [384D2F888B](<Notebook/Lenovo/Legion/Legion Y540-15IRH 81SX/DB27396229F8/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/384D2F888B>) |
+| 10ec:8168 | 17aa:5068 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 4     | re         | [BE311B6A34](<Notebook/Lenovo/ThinkPad/ThinkPad E580 20KSCTO1WW/FE16B0524669/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/BE311B6A34>) |
+| 10ec:8168 | 17aa:5097 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 4     | re         | [6C208C85A5](<Notebook/Lenovo/ThinkPad/ThinkPad E14 Gen 3 20Y7003SGE/284E69188279/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/6C208C85A5>) |
+| 14e4:1684 | 14e4:1684 | Broadcom         | NetXtreme BCM5764M Gigabit Ethern... | 4     | bge        | [7F25AB7C67](<Notebook/Apple/MacBookPro6/MacBookPro6,2/2059E6ED7633/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/7F25AB7C67>) |
+| 14e4:16b5 | 1025:0504 | Broadcom         | NetLink BCM57785 Gigabit Ethernet... | 4     | bge        | [BD22FC8A49](<Notebook/Acer/Aspire/Aspire 5750G/1FF59E502D89/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/BD22FC8A49>) |
+| 1969:1062 | 1043:838a | Qualcomm Atheros | AR8132 Fast Ethernet                 | 4     | alc        | [D171D1EC99](<Notebook/ASUSTek Computer/1001/1001PX/E2F07739895A/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/D171D1EC99>) |
+| 1969:1083 | 1043:1851 | Qualcomm Atheros | AR8151 v2.0 Gigabit Ethernet         | 4     | alc        | [A07366611D](<Notebook/ASUSTek Computer/U31/U31SD/4817D15C5C95/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/A07366611D>) |
+| 1969:2062 | 1043:8468 | Qualcomm Atheros | AR8152 v2.0 Fast Ethernet            | 4     | alc        | [1CCF85F60D](<Notebook/ASUSTek Computer/1215/1215B/A9FC3E123192/FREEBSD-13.0/13.0-RELEASE/AMD64/1CCF85F60D>) |
+| 8086:1533 |           | Intel            | I210 Gigabit Network Connection      | 4     | igb        | [AA872042E3](<Notebook/Others/Others/Others/073B3B06B697/OPNSENSE-21.7.6/12.1-RELEASE-P21-HBSD/AMD64/AA872042E3>) |
+| 8086:153a | 1028:05be | Intel            | Ethernet Connection I217-LM          | 4     | em         | [E0576DD008](<Notebook/Dell/Latitude/Latitude E6540/47352B0D75D6/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E0576DD008>) |
+| 8086:153a | 1028:05cc | Intel            | Ethernet Connection I217-LM          | 4     | em         | [1847C0AADB](<Notebook/Dell/Precision/Precision M4800/534E5DEB811F/OPNSENSE-21.1.3/12.1-RELEASE-P14-HBSD/AMD64/1847C0AADB>) |
+| 10ec:8136 | 1028:05f3 | Realtek Semic... | RTL810xE PCI Express Fast Etherne... | 3     | re         | [6283CB4190](<Notebook/Dell/Inspiron/Inspiron 3442/DF9A7A49AE6A/FREEBSD-13.0-P3/13.0-RELEASE/AMD64/6283CB4190>) |
+| 10ec:8136 | 1028:06ae | Realtek Semic... | RTL810xE PCI Express Fast Etherne... | 3     | re         | [3A239EA97A](<Notebook/Dell/Inspiron/Inspiron 5558/AF88938C2D41/FREEBSD-12.3/12.3-RELEASE/AMD64/3A239EA97A>) |
+| 10ec:8136 | 1179:ff00 | Realtek Semic... | RTL810xE PCI Express Fast Etherne... | 3     | re         | [977298A601](<Notebook/Toshiba/Satellite/Satellite L550/9E2EDBB0191A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/977298A601>) |
+| 10ec:8136 | 1179:ff1e | Realtek Semic... | RTL810xE PCI Express Fast Etherne... | 3     | re         | [52CE915B05](<Notebook/Toshiba/Satellite/Satellite Pro L510/6896A3E82AB3/FREEBSD-12.2-P10/12.2-RELEASE-P7/AMD64/52CE915B05>) |
+| 10ec:8168 | 1028:09ec | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 3     | re         | [80D7BF959A](<Notebook/Dell/Latitude/Latitude 3410/3DC4614C13E4/FREEBSD-13.0-RC1/13.0-RC1/AMD64/80D7BF959A>) |
+| 10ec:8168 | 10ec:8168 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 3     | re         | [A76C55B066](<Notebook/Hewlett-Packard/EliteBook/EliteBook 8530w/938F6D84FC34/OPNSENSE-21.1.6/12.1-RELEASE-P16-HBSD/AMD64/A76C55B066>) |
+| 10ec:8168 | 17aa:380d | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 3     | re         | [1FEB455E8C](<Notebook/Lenovo/Y50-70/Y50-70 20378/45CB117B153A/OPNSENSE-21.7.7/12.1-RELEASE-P19-HBSD/AMD64/1FEB455E8C>) |
+| 10ec:8168 | 17aa:5079 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 3     | re         | [0FA4700D17](<Notebook/Lenovo/ThinkPad/ThinkPad E15 20RD0011MX/534BB4FF83C1/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/0FA4700D17>) |
+| 10ec:8168 | 17aa:5126 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 3     | re         | [D7812A2905](<Notebook/Lenovo/ThinkPad/ThinkPad X395 20NL000GPG/878AD42630E7/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/D7812A2905>) |
+| 10ec:8168 | 1d05:109f | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 3     | re         | [6F779D5170](<Notebook/TUXEDO/Pulse/Pulse 15 Gen1/C92D236C248C/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/6F779D5170>) |
+| 14e4:1681 | 1028:049b | Broadcom         | NetXtreme BCM5761 Gigabit Etherne... | 3     | bge        | [1ED3FF35F6](<Notebook/Dell/Latitude/Latitude E5420/7F50D3A16CDB/HELLOSYSTEM-0.5.0/13.0-RELEASE/AMD64/1ED3FF35F6>) |
+| 14e4:1713 | 17aa:3a23 | Broadcom         | NetLink BCM5906M Fast Ethernet PC... | 3     | bge        | [21407195E3](<Notebook/Lenovo/G550/G550 2958/DB693EA33F49/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/21407195E3>) |
+| 1969:1063 | 1043:1820 | Qualcomm Atheros | AR8131 Gigabit Ethernet              | 3     | alc        | [07F11B6604](<Notebook/ASUSTek Computer/U33/U33Jc/DB07BC6F1828/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/07F11B6604>) |
+| 8086:1049 | 17aa:20de | Intel            | 82566MM Gigabit Network Connection   | 3     | em         | [3EB96DCE87](<Notebook/Lenovo/ThinkPad/ThinkPad X61s 766734A/3827308AA8D7/FREEBSD-13.0-BETA3/13.0-BETA3/AMD64/3EB96DCE87>) |
+| 8086:10eb | 1179:0001 | Intel            | 82577LC Gigabit Network Connection   | 3     | em         | [2AC9BEA1E6](<Notebook/Toshiba/PORTEGE/PORTEGE M780/9BA4726CBC1C/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/2AC9BEA1E6>) |
+| 8086:10f5 | 1028:024d | Intel            | 82567LM Gigabit Network Connection   | 3     | em         | [FDB3DE3036](<Notebook/Dell/Latitude/Latitude E4300/B023391CA6F2/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/FDB3DE3036>) |
+| 8086:1502 | 103c:17a7 | Intel            | 82579LM Gigabit Network Connectio... | 3     | em         | [F47789D894](<Notebook/Hewlett-Packard/EliteBook/EliteBook 8570p/6FBB1F806232/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/F47789D894>) |
+| 8086:150c |           | Intel            | 82583V Gigabit Network Connection    | 3     | em         | [21C1794D7E](<Notebook/Others/Others/Others/F6ACC051C26B/OPNSENSE-21.7.4/12.1-RELEASE-P20-HBSD/AMD64/21C1794D7E>) |
+| 8086:153a | 1028:05bd | Intel            | Ethernet Connection I217-LM          | 3     | em         | [8FA2C1F5C4](<Notebook/Dell/Latitude/Latitude E6440/90F4D14BB79B/FREEBSD-13.0-P2/13.0-RELEASE-P1/AMD64/8FA2C1F5C4>) |
+| 8086:153a | 17aa:2210 | Intel            | Ethernet Connection I217-LM          | 3     | em         | [B6DFFE77EB](<Notebook/Lenovo/ThinkPad/ThinkPad W540 20BG0014US/3AD854A625A5/OPNSENSE-21.7.2/12.1-RELEASE-P20-HBSD/AMD64/B6DFFE77EB>) |
+| 8086:155a | 103c:1991 | Intel            | Ethernet Connection I218-LM          | 3     | em         | [362940ACBB](<Notebook/Hewlett-Packard/EliteBook/EliteBook 820 G1/43570E209C4E/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/362940ACBB>) |
+| 8086:156f | 103c:8079 | Intel            | Ethernet Connection I219-LM          | 3     | em         | [03BE88DED4](<Notebook/Hewlett-Packard/EliteBook/EliteBook 840 G3/B1E6E03EA5B1/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/03BE88DED4>) |
+| 8086:156f | 17aa:224b | Intel            | Ethernet Connection I219-LM          | 3     | em         | [6C895CB96F](<Notebook/Lenovo/ThinkPad/ThinkPad T470s W10DG 20JTS0A900/5B70EA1A7528/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/6C895CB96F>) |
+| 8086:15a2 | 1028:062e | Intel            | Ethernet Connection (3) I218-LM      | 3     | em         | [8A3867F171](<Notebook/Dell/Latitude/Latitude E7450/384980EB885D/FREEBSD-13.0-P6/13.0-RELEASE-P6/AMD64/8A3867F171>) |
+| 8086:15bd | 17aa:2279 | Intel            | Ethernet Connection (6) I219-LM      | 3     | em         | [BF9B083102](<Notebook/Lenovo/ThinkPad/ThinkPad T490 20N2CTO1WW/D600541A1B2C/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/BF9B083102>) |
+| 8086:15d8 | 17aa:225c | Intel            | Ethernet Connection (4) I219-V       | 3     | em         | [16206C4970](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 6th 20KG0022US/0E31F9E108FF/FREEBSD-12.2/12.2-RELEASE/AMD64/16206C4970>) |
+| 10ec:8136 | 1028:04b0 | Realtek Semic... | RTL810xE PCI Express Fast Etherne... | 2     | re         | [19BE37F181](<Notebook/Dell/Inspiron/Inspiron N5110/5EF98B1DA6B5/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/19BE37F181>) |
+| 10ec:8136 | 1028:0652 | Realtek Semic... | RTL810xE PCI Express Fast Etherne... | 2     | re         | [BB13E61DE1](<Notebook/Dell/Inspiron/Inspiron 3542/15B5B779EBDF/HELLOSYSTEM-0.6.0/13.0-RELEASE/AMD64/BB13E61DE1>) |
+| 10ec:8136 | 1028:06b2 | Realtek Semic... | RTL810xE PCI Express Fast Etherne... | 2     | re         | [C34E21FFD5](<Notebook/Dell/Inspiron/Inspiron 5559/35A7C406512F/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/C34E21FFD5>) |
+| 10ec:8136 | 1028:0767 | Realtek Semic... | RTL810xE PCI Express Fast Etherne... | 2     | re         | [0B90603ACE](<Notebook/Dell/Inspiron/Inspiron 5567/8B44CEB1149A/FREEBSD-13.0-P2/13.0-RELEASE/AMD64/0B90603ACE>) |
+| 10ec:8136 | 103c:2211 | Realtek Semic... | RTL810xE PCI Express Fast Etherne... | 2     | re         | [E3F26D7245](<Notebook/Hewlett-Packard/15/15/133587620280/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/E3F26D7245>) |
+| 10ec:8136 | 103c:3577 | Realtek Semic... | RTL810xE PCI Express Fast Etherne... | 2     | re         | [F83C769501](<Notebook/Hewlett-Packard/2000/2000/5F42EBFDBCAE/FREEBSD-12.2/12.2-RELEASE/AMD64/F83C769501>) |
+| 10ec:8136 | 103c:80c5 | Realtek Semic... | RTL810xE PCI Express Fast Etherne... | 2     | re         | [24E8C3DE59](<Notebook/Hewlett-Packard/250/250 G4/3B80136E49D3/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/24E8C3DE59>) |
+| 10ec:8136 | 10ec:0123 | Realtek Semic... | RTL810xE PCI Express Fast Etherne... | 2     | re         | [CFC7D86B5A](<Notebook/ASUSTek Computer/X553/X553MA/FD95F43CF9C9/FREEBSD-12.2/12.2-RELEASE/AMD64/CFC7D86B5A>) |
+| 10ec:8136 | 1179:fc30 | Realtek Semic... | RTL810xE PCI Express Fast Etherne... | 2     | re         | [44818070A2](<Notebook/Toshiba/Satellite/Satellite P755/DC89EDA3D6F9/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/44818070A2>) |
+| 10ec:8168 | 1025:0865 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 2     | re         | [5306253276](<Notebook/Acer/Aspire/Aspire E5-521G/6C9872FCA376/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/5306253276>) |
+| 10ec:8168 | 1025:1084 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 2     | re         | [A9D2458DE5](<Notebook/Acer/Aspire/Aspire ES1-533/1C1C1E5339E5/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/A9D2458DE5>) |
+| 10ec:8168 | 1028:04b3 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 2     | re         | [0B290F2AC3](<Notebook/Dell/Vostro/Vostro 3550/699120C48004/GHOSTBSD-22.01.29/13.0-STABLE/AMD64/0B290F2AC3>) |
+| 10ec:8168 | 1028:0572 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 2     | re         | [599D3E84D7](<Notebook/Dell/Inspiron/Inspiron 7520/028C6D0EF143/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/599D3E84D7>) |
+| 10ec:8168 | 1028:0798 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 2     | re         | [652E2E284F](<Notebook/Dell/Inspiron/Inspiron 15 7000 Gaming/2663B977A92F/FREEBSD-13.0-P6/13.0-RELEASE/AMD64/652E2E284F>) |
+| 10ec:8168 | 103c:8257 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 2     | re         | [ABC94E9198](<Notebook/Hewlett-Packard/OMEN/OMEN by HP Laptop/BFE1823EBDF1/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/ABC94E9198>) |
+| 10ec:8168 | 103c:8330 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 2     | re         | [8E9A6CFF62](<Notebook/Hewlett-Packard/Laptop/Laptop 15-rb0xx/94A2E681C681/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/8E9A6CFF62>) |
+| 10ec:8168 | 103c:8537 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 2     | re         | [7A8A66430A](<Notebook/Hewlett-Packard/ProBook/ProBook 440 G6/4151C66E839A/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/7A8A66430A>) |
+| 10ec:8168 | 103c:85e0 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 2     | re         | [E7B40F6E3B](<Notebook/Hewlett-Packard/Laptop/Laptop 14-dk0xxx/60E15DE8A8F4/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E7B40F6E3B>) |
+| 10ec:8168 | 103c:8730 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 2     | re         | [494195B923](<Notebook/Hewlett-Packard/ProBook/ProBook 445 G7/06DE97DEA747/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/494195B923>) |
+| 10ec:8168 | 103c:8786 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 2     | re         | [19F307FF6D](<Notebook/Hewlett-Packard/OMEN/OMEN Laptop 15-en0xxx/99830226F687/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/19F307FF6D>) |
+| 10ec:8168 | 103c:87b1 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 2     | re         | [B8408CB369](<Notebook/Hewlett-Packard/Pavilion/Pavilion Gaming Laptop 15-ec1xxx/447033DB0DB6/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/B8408CB369>) |
+| 10ec:8168 | 103c:88dd | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 2     | re         | [7859F220B9](<Notebook/Hewlett-Packard/Pavilion/Pavilion Gaming Laptop 15-ec2xxx/32343F8FB2CF/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/7859F220B9>) |
+| 10ec:8168 | 1043:1457 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 2     | re         | [6896C37580](<Notebook/ASUSTek Computer/K55/K55VD/C1EA30F11932/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/6896C37580>) |
+| 10ec:8168 | 1043:16d5 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 2     | re         | [883DED6CB1](<Notebook/ASUSTek Computer/N50/N50Vc/77A5AA89F908/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/883DED6CB1>) |
+| 10ec:8168 | 10cf:17a2 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 2     | re         | [C501C5C75E](<Notebook/Fujitsu/LIFEBOOK/LIFEBOOK A555/233E8905DCE8/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/C501C5C75E>) |
+| 10ec:8168 | 144d:c706 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 2     | re         | [31D42F4469](<Notebook/Samsung Electronics/3570/3570R-370R-470R-450R-510R-4450RV/E69998907AB5/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/31D42F4469>) |
+| 10ec:8168 | 1558:1403 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 2     | re         | [EBE0575F31](<Notebook/System76/Galago/Galago Pro/25605F0322E6/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/EBE0575F31>) |
+| 10ec:8168 | 1558:1404 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 2     | re         | [F99C9F56B7](<Notebook/System76/Darter/Darter Pro/0CE03E6D5308/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/F99C9F56B7>) |
+| 10ec:8168 | 1558:8509 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 2     | re         | [E84B5B6E5F](<Notebook/Notebook/N85/N85_N87HCHNHZ/28CF5209C334/FREEBSD-13.0-RC2/13.0-RC2/AMD64/E84B5B6E5F>) |
+| 10ec:8168 | 1558:a501 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 2     | re         | [792FB07DD9](<Notebook/Notebook/NL5/NL5xRU/5E9A5B67425F/FREEBSD-13.0/13.0-RELEASE/AMD64/792FB07DD9>) |
+| 10ec:8168 | 17aa:21e2 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 2     | re         | [AA98E655F3](<Notebook/Lenovo/ThinkPad/ThinkPad E420 1141A83/01AFCFDA1374/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/AA98E655F3>) |
+| 10ec:8168 | 17aa:2224 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 2     | re         | [0E448AF5F5](<Notebook/Lenovo/ThinkPad/ThinkPad Yoga 11e 20DAS0AE00/26BBAB82192F/HELLOSYSTEM-0.6.0/13.0-RELEASE/AMD64/0E448AF5F5>) |
+| 10ec:8168 | 17aa:3801 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 2     | re         | [F5421B8FE0](<Notebook/Lenovo/V310-14IKB/V310-14IKB 80T2/09E47D6108B5/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/F5421B8FE0>) |
+| 10ec:8168 | 17aa:380b | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 2     | re         | [A1F85AFF27](<Notebook/Lenovo/Z50-70/Z50-70 20354/491D65A1BD89/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/A1F85AFF27>) |
+| 10ec:8168 | 17aa:3899 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 2     | re         | [56BE8AAFA1](<Notebook/Lenovo/IdeaPad/IdeaPad 320-15IKB Touch 81BH/A53FE8EA2AE1/PCBSD-13.0-P5/13.0-RELEASE-P4/AMD64/56BE8AAFA1>) |
+| 10ec:8168 | 17aa:38a8 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 2     | re         | [ADE9F77281](<Notebook/Lenovo/IdeaPad/IdeaPad 330-15ARR 81D2/B11617CFB899/FREEBSD-13.0/13.0-RELEASE/AMD64/ADE9F77281>) |
+| 10ec:8168 | 17aa:38db | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 2     | re         | [2BE8CF963C](<Notebook/Lenovo/Legion/Legion 5P 15IMH05H 82AW/5AF94BC5A494/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/2BE8CF963C>) |
+| 10ec:8168 | 17aa:5081 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 2     | re         | [D910C79D75](<Notebook/Lenovo/ThinkPad/ThinkPad P14s Gen 1 20Y1CTO1WW/5E03AED6E452/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/D910C79D75>) |
+| 10ec:8168 | 1d05:1064 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 2     | re         | [5983302B1D](<Notebook/Avell High Performance/A62/A62 LIV/45914491EAA0/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/5983302B1D>) |
+| 10ec:8168 | 8086:2086 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 2     | re         | [85F5C972A5](<Notebook/Avell High Performance/A60/A60 MUV/0C5CDFF081CF/FREEBSD-13.0-P3/13.0-RELEASE-P3/AMD64/85F5C972A5>) |
+| 11ab:4354 | 144d:c072 | Marvell Techn... | 88E8040 PCI-E Fast Ethernet Contr... | 2     | mskc       | [901A483718](<Notebook/Samsung Electronics/N150/N150P-N210P-N220P/2BFCB232E8AF/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/901A483718>) |
+| 11ab:4354 | 144d:c08f | Marvell Techn... | 88E8040 PCI-E Fast Ethernet Contr... | 2     | mskc       | [A38A620353](<Notebook/Samsung Electronics/N145/N145P-N250P-N260P/E7573CD6BBFD/FREEBSD-11.4-P8/11.4-RELEASE-P8/I386/A38A620353>) |
+| 11ab:4354 | 144d:ca00 | Marvell Techn... | 88E8040 PCI-E Fast Ethernet Contr... | 2     | mskc       | [D33644912A](<Notebook/Samsung Electronics/NC/NC10/84A2300B9353/FREEBSD-13.0/13.0-RELEASE/I386/D33644912A>) |
+| 11ab:436b | 1025:013f | Marvell Techn... | 88E8071 PCI-E Gigabit Ethernet Co... | 2     | mskc       | [754DB09C98](<Notebook/Acer/Aspire/Aspire 5930/923B7E640A88/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/754DB09C98>) |
+| 14e4:1673 | 1028:01f9 | Broadcom         | NetXtreme BCM5755M Gigabit Ethern... | 2     | bge        | [AE56D2CEDD](<Notebook/Dell/Latitude/Latitude D630/94367DB4F4E1/NOMADBSD-5806F915/13.0-RELEASE/AMD64/AE56D2CEDD>) |
+| 14e4:1684 | 1025:013c | Broadcom         | NetXtreme BCM5764M Gigabit Ethern... | 2     | bge        | [6A1B523EFB](<Notebook/Acer/Extensa/Extensa 5630/0CD5B508129C/FREEBSD-13.0-BETA4/13.0-BETA4/AMD64/6A1B523EFB>) |
+| 14e4:1684 | 1028:02d6 | Broadcom         | NetXtreme BCM5764M Gigabit Ethern... | 2     | bge        | [899CE6FFE4](<Notebook/Dell/Latitude/Latitude 2100/C4B464EE391B/FREEBSD-12.2/12.2-RELEASE/I386/899CE6FFE4>) |
+| 14e4:1692 | 1025:036d | Broadcom         | NetLink BCM57780 Gigabit Ethernet... | 2     | bge        | [B77A4EE97C](<Notebook/Acer/Aspire/Aspire 5742G/30316FB60BF2/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/B77A4EE97C>) |
+| 14e4:1693 | 17aa:20d5 | Broadcom         | NetLink BCM5787M Gigabit Ethernet... | 2     | bge        | [9CC0F26F6F](<Notebook/Lenovo/ThinkPad/ThinkPad R61 8935WCS/1AC798DB7C89/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/9CC0F26F6F>) |
 
 ### Net/wireless (PCI)
 
-| ID        | Subsystem | MFG        | Name                         | Count | Driver     | Probe      |
-|-----------|-----------|------------|------------------------------|-------|------------|------------|
-| 8086:0085 | 8086:1311 | Intel      | Centrino Advanced-N 6205 ... | 39    | iwn        | 66743A51CC |
-| 8086:24fd | 8086:0010 | Intel      | Wireless 8265 / 8275         | 20    | iwm        | 53A69AA8C1 |
-| 8086:24fd | 8086:1010 | Intel      | Wireless 8265 / 8275         | 15    | iwm        | 2F1BA02130 |
-| 8086:08b2 | 8086:c270 | Intel      | Wireless 7260                | 13    | iwm        | 7660F9B6DB |
-| 8086:095b | 8086:5210 | Intel      | Wireless 7265                | 13    | iwm        | AC567BD12D |
-| 8086:24f3 | 8086:0130 | Intel      | Wireless 8260                | 13    | iwm        | 821C81E652 |
-| 8086:2526 | 8086:0014 | Intel      | Wireless-AC 9260             | 13    | iwm        | F9C37F2C8D |
-| 8086:24fd | 8086:0050 | Intel      | Wireless 8265 / 8275         | 12    | iwm        | 7D5F7B5033 |
-| 8086:2723 | 8086:0084 | Intel      | Wi-Fi 6 AX200                | 11    |            | 337A8B5A3D |
-| 8086:24fb | 8086:2110 | Intel      | Dual Band Wireless-AC 316... | 10    | iwm        | 62C87CF194 |
-| 8086:3166 | 8086:4210 | Intel      | Dual Band Wireless-AC 316... | 10    | iwm        | 1CDBAD9DFE |
-| 8086:08b1 | 8086:4470 | Intel      | Wireless 7260                | 9     | iwm        | 1DBD9A5CEE |
-| 8086:4238 | 8086:1111 | Intel      | Centrino Ultimate-N 6300     | 9     | iwn        | A0B1FD0CA5 |
-| 168c:0036 | 1028:020c | Qualcom... | QCA9565 / AR9565 Wireless... | 8     | ath        | 0D1D75A914 |
-| 8086:088e | 8086:4060 | Intel      | Centrino Advanced-N 6235     | 8     | iwn        | 67A6DF2B68 |
-| 8086:24f3 | 8086:1010 | Intel      | Wireless 8260                | 8     | iwm        | 52DE90FF3D |
-| 8086:9df0 | 8086:0034 | Intel      | Cannon Point-LP CNVi [Wir... | 8     | iwm        | 7C642E5E7D |
-| 10ec:8176 | 10ec:8195 | Realtek... | RTL8188CE 802.11b/g/n WiF... | 7     | rtwn       | 9D15DAB449 |
-| 10ec:c821 | 103c:831a | Realtek... | RTL8821CE 802.11ac PCIe W... | 7     |            | 10AF242F8B |
-| 168c:002b | 1a3b:1089 | Qualcom... | AR9285 Wireless Network A... | 7     | ath        | C6E717C1E9 |
-| 8086:0082 | 8086:1321 | Intel      | Centrino Advanced-N 6205 ... | 7     | iwn        | ABE1869A95 |
-| 8086:0084 | 8086:1315 | Intel      | Centrino Wireless-N 1000 ... | 7     | iwn        | BDBD2D0A05 |
-| 8086:095a | 8086:5010 | Intel      | Wireless 7265                | 7     | iwm        | 42ECF97502 |
-| 8086:4237 | 8086:1211 | Intel      | PRO/Wireless 5100 AGN [Sh... | 7     | iwn        | 981517A51A |
-| 14e4:4727 | 1028:0010 | Broadcom   | BCM4313 802.11bgn Wireles... | 6     |            | C0115917D2 |
-| 168c:0036 | 11ad:0642 | Qualcom... | QCA9565 / AR9565 Wireless... | 6     | ath        | C9AB1CB207 |
-| 8086:3165 | 8086:4410 | Intel      | Wireless 3165                | 6     | iwm        | 84A1925FC9 |
-| 8086:4239 | 8086:1311 | Intel      | Centrino Advanced-N 6200     | 6     | iwn        | 78D9A31074 |
-| 14e4:432b | 106b:008d | Broadcom   | BCM4322 802.11a/b/g/n Wir... | 5     | bwn_pci    | F46146B79E |
-| 14e4:4353 | 106b:0093 | Broadcom   | BCM43224 802.11a/b/g/n       | 5     | bwn_pci    | 0AB44E95DF |
-| 168c:0032 | 1028:0209 | Qualcom... | AR9485 Wireless Network A... | 5     | ath        | 9B06FF01BB |
-| 8086:0082 | 8086:1301 | Intel      | Centrino Advanced-N 6205 ... | 5     | iwn        | 52BA4E835F |
-| 8086:08b1 | 8086:4060 | Intel      | Wireless 7260                | 5     | iwm        | 6BC6C5B2BF |
-| 8086:24f3 | 8086:0010 | Intel      | Wireless 8260                | 5     | iwm        | 2B97986DE1 |
-| 8086:24f3 | 8086:0050 | Intel      | Wireless 8260                | 5     | iwm        | C8477DA717 |
-| 8086:24fd | 8086:0110 | Intel      | Wireless 8265 / 8275         | 5     | iwm        | 9E03A76684 |
-| 8086:422b | 8086:1121 | Intel      | Centrino Ultimate-N 6300     | 5     | iwn        | 563AD840B0 |
-| 8086:a370 | 8086:0034 | Intel      | Cannon Lake PCH CNVi WiFi    | 5     | iwm        | 3CB0E979F8 |
-| 14e4:4331 | 106b:00d6 | Broadcom   | BCM4331 802.11a/b/g/n        | 4     | bwn_pci    | D1AAEAAD42 |
-| 168c:0032 | 1a3b:2c97 | Qualcom... | AR9485 Wireless Network A... | 4     | ath        | 9B84D1E7E6 |
-| 168c:0042 | 1028:1810 | Qualcom... | QCA9377 802.11ac Wireless... | 4     |            | C2D56FC369 |
-| 8086:02f0 | 8086:0074 | Intel      | Comet Lake PCH-LP CNVi WiFi  | 4     |            | 94D082C57C |
-| 8086:02f0 | 8086:4070 | Intel      | Comet Lake PCH-LP CNVi WiFi  | 4     |            | 80D7BF959A |
-| 8086:2723 | 8086:0080 | Intel      | Wi-Fi 6 AX200                | 4     |            | BD88655975 |
-| 8086:4222 | 103c:135c | Intel      | PRO/Wireless 3945ABG [Gol... | 4     | wpi        | 733C5EDB74 |
-| 8086:9df0 | 8086:0030 | Intel      | Cannon Point-LP CNVi [Wir... | 4     | iwm        | 6311D603FF |
-| 14e4:4328 | 106b:0088 | Broadcom   | BCM4321 802.11a/b/g/n        | 3     | bwn_pci    | ED3684513F |
-| 168c:002a | 1a3b:1067 | Qualcom... | AR928X Wireless Network A... | 3     | ath        | A04133B68D |
-| 168c:002b | 103c:1461 | Qualcom... | AR9285 Wireless Network A... | 3     | ath        | 4FB8582DC1 |
-| 168c:002b | 103c:3040 | Qualcom... | AR9285 Wireless Network A... | 3     | ath        | 258EF16ACE |
-| 168c:002b | 17aa:30a1 | Qualcom... | AR9285 Wireless Network A... | 3     | ath        | A4C1D361EB |
-| 168c:0032 | 1a3b:1186 | Qualcom... | AR9485 Wireless Network A... | 3     | ath        | B0364FFFAF |
-| 168c:0036 | 11ad:0662 | Qualcom... | QCA9565 / AR9565 Wireless... | 3     | ath        | A9C4506364 |
-| 8086:0085 | 8086:c220 | Intel      | Centrino Advanced-N 6205 ... | 3     | iwn        | B659B95D1A |
-| 8086:008a | 8086:5305 | Intel      | Centrino Wireless-N 1030 ... | 3     | iwn        | C2C592BCA8 |
-| 8086:008a | 8086:5325 | Intel      | Centrino Wireless-N 1030 ... | 3     | iwn        | 87B8A38EF9 |
-| 8086:06f0 | 8086:0074 | Intel      | Comet Lake PCH CNVi WiFi     | 3     |            | A40E426983 |
-| 8086:0887 | 8086:4062 | Intel      | Centrino Wireless-N 2230     | 3     | iwn        | C52B593262 |
-| 8086:0887 | 8086:4462 | Intel      | Centrino Wireless-N 2230     | 3     | iwn        | 0054EF2511 |
-| 8086:088e | 8086:4460 | Intel      | Centrino Advanced-N 6235     | 3     | iwn        | 3A656DED12 |
-| 8086:08b1 | 8086:4070 | Intel      | Wireless 7260                | 3     | iwm        | FEAE098542 |
-| 8086:08b2 | 8086:4270 | Intel      | Wireless 7260                | 3     | iwm        | E9155D12C7 |
-| 8086:08b2 | 8086:c260 | Intel      | Wireless 7260                | 3     | iwm        | CBFA45FE44 |
-| 8086:24fd | 19e5:3e02 | Intel      | Wireless 8265 / 8275         | 3     | iwm        | F7E09652D9 |
-| 8086:3165 | 8086:4010 | Intel      | Wireless 3165                | 3     | iwm        | F9C67B360F |
-| 8086:4227 | 8086:1011 | Intel      | PRO/Wireless 3945ABG [Gol... | 3     | wpi        | 6B81593DE9 |
-| 8086:4229 | 8086:1101 | Intel      | PRO/Wireless 4965 AG or A... | 3     | iwn        | 593C12AA06 |
-| 8086:4232 | 8086:1201 | Intel      | WiFi Link 5100               | 3     | iwn        | 50D37406DF |
-| 8086:9df0 | 8086:4030 | Intel      | Cannon Point-LP CNVi [Wir... | 3     | iwm        | 2538B038ED |
-| 8086:a370 | 8086:0030 | Intel      | Cannon Lake PCH CNVi WiFi    | 3     | iwm        | 676F16AC86 |
-| 10ec:b723 | 17aa:b736 | Realtek... | RTL8723BE PCIe Wireless N... | 2     |            | D3D9DC620F |
-| 14e4:4311 | 1028:0007 | Broadcom   | BCM4311 802.11b/g WLAN       | 2     | bwi        | 7F814A7E8D |
-| 14e4:4315 | 1028:000b | Broadcom   | BCM4312 802.11b/g LP-PHY     | 2     | bwn_pci    | EF1C0E0F2E |
-| 14e4:4315 | 1028:000c | Broadcom   | BCM4312 802.11b/g LP-PHY     | 2     | bwn_pci    | 13DD55A097 |
-| 14e4:4331 | 106b:00f5 | Broadcom   | BCM4331 802.11a/b/g/n        | 2     | bwn_pci    | AFC70D9C77 |
-| 14e4:4331 | 14e4:4331 | Broadcom   | BCM4331 802.11a/b/g/n        | 2     | bwn_pci    | 193936B5CA |
-| 14e4:4353 | 106b:00e9 | Broadcom   | BCM43224 802.11a/b/g/n       | 2     | bwn_pci    | 7D8419C918 |
-| 14e4:43a0 | 106b:0134 | Broadcom   | BCM4360 802.11ac Wireless... | 2     |            | 1C9FEEF8E7 |
-| 14e4:43b1 | 1028:0017 | Broadcom   | BCM4352 802.11ac Wireless... | 2     |            | 1847C0AADB |
-| 14e4:43b1 | 1a3b:2123 | Broadcom   | BCM4352 802.11ac Wireless... | 2     |            | 37BE4EA27A |
-| 14e4:43ba | 106b:0152 | Broadcom   | BCM43602 802.11ac Wireles... | 2     |            | 0621ACAB4E |
-| 168c:002a | 105b:e01f | Qualcom... | AR928X Wireless Network A... | 2     | ath        | 837C6F28B4 |
-| 168c:002b | 105b:e017 | Qualcom... | AR9285 Wireless Network A... | 2     | ath        | A69FA2363E |
-| 168c:0032 | 103c:1838 | Qualcom... | AR9485 Wireless Network A... | 2     | ath        | C559882754 |
-| 168c:0032 | 11ad:6617 | Qualcom... | AR9485 Wireless Network A... | 2     | ath        | BBBC827581 |
-| 168c:0032 | 11ad:6627 | Qualcom... | AR9485 Wireless Network A... | 2     | ath        | E056F1C77C |
-| 168c:0032 | 11ad:6628 | Qualcom... | AR9485 Wireless Network A... | 2     | ath        | F286C1E784 |
-| 168c:0034 | 105b:e058 | Qualcom... | AR9462 Wireless Network A... | 2     | ath        | D15CAACA04 |
-| 168c:0036 | 1028:020e | Qualcom... | QCA9565 / AR9565 Wireless... | 2     | ath        | C096E37BE5 |
-| 168c:0036 | 105b:e07f | Qualcom... | QCA9565 / AR9565 Wireless... | 2     | ath        | 7C8C842FA7 |
-| 168c:0036 | 17aa:3026 | Qualcom... | QCA9565 / AR9565 Wireless... | 2     | ath        | 1C239BAC92 |
-| 168c:003e | 1028:0310 | Qualcom... | QCA6174 802.11ac Wireless... | 2     |            | B28CC12AEB |
-| 168c:0042 | 11ad:08a6 | Qualcom... | QCA9377 802.11ac Wireless... | 2     |            | 240171B234 |
-| 168c:0042 | 17aa:0901 | Qualcom... | QCA9377 802.11ac Wireless... | 2     |            | 1F226262CC |
-| 168c:0042 | 1a3b:2b31 | Qualcom... | QCA9377 802.11ac Wireless... | 2     |            | 6BBF9D6E29 |
-| 168c:1014 | 1014:058a | Qualcom... | AR5212 802.11abg NIC         | 2     | ath        | D223A9B1FB |
-| 8086:02f0 | 8086:0034 | Intel      | Comet Lake PCH-LP CNVi WiFi  | 2     |            | 0BD96EF663 |
-| 8086:06f0 | 1a56:1652 | Intel      | Comet Lake PCH CNVi WiFi     | 2     |            | FEA3CDB5D1 |
-| 8086:06f0 | 8086:0070 | Intel      | Comet Lake PCH CNVi WiFi     | 2     |            | 342E914968 |
-| 8086:0896 | 8086:5005 | Intel      | Centrino Wireless-N 130      | 2     | iwn        | 270CA253A3 |
+| ID        | Subsystem | MFG              | Name                                 | Count | Driver     | Probe |
+|-----------|-----------|------------------|--------------------------------------|-------|------------|-------|
+| 8086:0085 | 8086:1311 | Intel            | Centrino Advanced-N 6205 [Taylor ... | 65    | iwn        | [148A268A0F](<Notebook/Lenovo/ThinkPad/ThinkPad X220 4293B43/AD955BCC7F71/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/148A268A0F>) |
+| 8086:08b2 | 8086:c270 | Intel            | Wireless 7260                        | 25    | iwm        | [0FBC782835](<Notebook/Lenovo/ThinkPad/ThinkPad L440 20ASS0FP00/DB867CFAF011/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/0FBC782835>) |
+| 8086:24fd | 8086:0010 | Intel            | Wireless 8265 / 8275                 | 25    | iwm        | [D498FCD3F8](<Notebook/Toshiba/TECRA/TECRA Z40-B/5E426A8E8D03/FREEBSD-11.4-P7/11.4-RELEASE-P7/AMD64/D498FCD3F8>) |
+| 8086:095b | 8086:5210 | Intel            | Wireless 7265                        | 22    | iwm        | [BC2860431E](<Notebook/Lenovo/ThinkPad/ThinkPad T450 20BUS0VH08/CDAB4EDF622D/GHOSTBSD-22.01.12/13.0-STABLE/AMD64/BC2860431E>) |
+| 8086:2723 | 8086:0084 | Intel            | Wi-Fi 6 AX200                        | 21    |            | [2AF47B6502](<Notebook/Lenovo/ThinkPad/ThinkPad T440s 20AQ006HUS/5B022BB303EA/NOMADBSD-5806F915/13.0-RELEASE/AMD64/2AF47B6502>) |
+| 8086:24fd | 8086:1010 | Intel            | Wireless 8265 / 8275                 | 19    | iwm        | [4AC0707C49](<Notebook/TUXEDO/N14/N14xWU/EC2A5DE1E610/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/4AC0707C49>) |
+| 8086:2526 | 8086:0014 | Intel            | Wireless-AC 9260                     | 19    | iwm        | [FF53F0763C](<Notebook/Lenovo/ThinkPad/ThinkPad A285 20MW000JMH/DED973746155/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/FF53F0763C>) |
+| 8086:24f3 | 8086:0130 | Intel            | Wireless 8260                        | 18    | iwm        | [DBB0E378D5](<Notebook/Lenovo/ThinkPad/ThinkPad T460s 20FAS4KH02/DCA0C34D1413/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/DBB0E378D5>) |
+| 8086:3166 | 8086:4210 | Intel            | Dual Band Wireless-AC 3165 Plus B... | 18    | iwm        | [DD57366224](<Notebook/Lenovo/IdeaPad/IdeaPad Y700-15ISK 80NV/2BD0319875C3/FREEBSD-13.1-PRERELEASE/13.1-PRERELEASE/AMD64/DD57366224>) |
+| 8086:24fd | 8086:0050 | Intel            | Wireless 8265 / 8275                 | 17    | iwm        | [8A0388B49D](<Notebook/Dell/Latitude/Latitude 7480/720DC2256764/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/8A0388B49D>) |
+| 168c:002b | 1a3b:1089 | Qualcomm Atheros | AR9285 Wireless Network Adapter (... | 14    | ath        | [D171D1EC99](<Notebook/ASUSTek Computer/1001/1001PX/E2F07739895A/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/D171D1EC99>) |
+| 8086:24f3 | 8086:0010 | Intel            | Wireless 8260                        | 14    | iwm        | [E4F43CFCAD](<Notebook/Lenovo/ThinkPad/ThinkPad P51 20HHCTO1WW/771FB79FBCC7/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/E4F43CFCAD>) |
+| 8086:0084 | 8086:1315 | Intel            | Centrino Wireless-N 1000 [Condor ... | 13    | iwn        | [BCD5BEA2B7](<Notebook/Lenovo/ThinkPad/ThinkPad T410 2537BN8/4A58F0F69086/OPNSENSE-22.1.2/13.0-STABLE/AMD64/BCD5BEA2B7>) |
+| 8086:088e | 8086:4060 | Intel            | Centrino Advanced-N 6235             | 13    | iwn        | [E2CC942E3E](<Notebook/Hewlett-Packard/EliteBook/EliteBook Folio 9470m/CDDE53EE5395/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E2CC942E3E>) |
+| 8086:095a | 8086:5010 | Intel            | Wireless 7265                        | 13    | iwm        | [E3ECE211A0](<Notebook/Acer/Swift/Swift SF314-52/0522784DFF82/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E3ECE211A0>) |
+| 8086:24fb | 8086:2110 | Intel            | Dual Band Wireless-AC 3168NGW [St... | 13    | iwm        | [7FB743C654](<Notebook/Acer/Aspire/Aspire A315-23/F20A633E5003/FREEBSD-13.0/13.0-RELEASE/AMD64/7FB743C654>) |
+| 8086:08b1 | 8086:4470 | Intel            | Wireless 7260                        | 12    | iwm        | [B0314F9200](<Notebook/Dell/Latitude/Latitude E5440/8E86E40B0A52/FREEBSD-13.0-P6/13.0-RELEASE-P4/AMD64/B0314F9200>) |
+| 8086:422b | 8086:1121 | Intel            | Centrino Ultimate-N 6300             | 12    | iwn        | [E0576DD008](<Notebook/Dell/Latitude/Latitude E6540/47352B0D75D6/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E0576DD008>) |
+| 8086:4239 | 8086:1311 | Intel            | Centrino Advanced-N 6200             | 12    | iwn        | [4A5BA4F3E4](<Notebook/Lenovo/ThinkPad/ThinkPad X201 32492EU/BADAE72EA873/GHOSTBSD-21.12.29/13.0-STABLE/AMD64/4A5BA4F3E4>) |
+| 8086:a370 | 8086:0034 | Intel            | Cannon Lake PCH CNVi WiFi            | 12    | iwm        | [384D2F888B](<Notebook/Lenovo/Legion/Legion Y540-15IRH 81SX/DB27396229F8/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/384D2F888B>) |
+| 10ec:c821 | 103c:831a | Realtek Semic... | RTL8821CE 802.11ac PCIe Wireless ... | 11    |            | [E7B40F6E3B](<Notebook/Hewlett-Packard/Laptop/Laptop 14-dk0xxx/60E15DE8A8F4/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E7B40F6E3B>) |
+| 14e4:4727 | 1028:0010 | Broadcom         | BCM4313 802.11bgn Wireless Networ... | 11    |            | [5C6B94DF97](<Notebook/Dell/Latitude/Latitude E5510/9E3287D69794/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/5C6B94DF97>) |
+| 168c:0036 | 1028:020c | Qualcomm Atheros | QCA9565 / AR9565 Wireless Network... | 11    | ath        | [2583B22E8D](<Notebook/Dell/Latitude/Latitude 3540/7AC0C6F5AC8B/HELLOSYSTEM-0.6.0/13.0-RELEASE/AMD64/2583B22E8D>) |
+| 8086:24f3 | 8086:1010 | Intel            | Wireless 8260                        | 11    | iwm        | [5A75DB9142](<Notebook/TUXEDO/InfinityBook13/InfinityBook13V3/0B9DECE35038/HELLOSYSTEM-0.7.0/13.0-RELEASE-P7/AMD64/5A75DB9142>) |
+| 8086:4237 | 8086:1211 | Intel            | PRO/Wireless 5100 AGN [Shiloh] Ne... | 11    | iwn        | [384F10861A](<Notebook/Lenovo/ThinkPad/ThinkPad R500 2718W92/7F30077B1DE1/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/384F10861A>) |
+| 8086:4238 | 8086:1111 | Intel            | Centrino Ultimate-N 6300             | 11    | iwn        | [9082353A69](<Notebook/Lenovo/ThinkPad/ThinkPad W520 4276CTO/648C52E5D9D4/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/9082353A69>) |
+| 8086:0082 | 8086:1321 | Intel            | Centrino Advanced-N 6205 [Taylor ... | 10    | iwn        | [FDDE41404D](<Notebook/Dell/Latitude/Latitude E6430/9A4F06581327/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/FDDE41404D>) |
+| 8086:24f3 | 8086:0050 | Intel            | Wireless 8260                        | 10    | iwm        | [9E479E9C50](<Notebook/Dell/Latitude/Latitude E5470/A17BA6584F09/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/9E479E9C50>) |
+| 8086:3165 | 8086:4410 | Intel            | Wireless 3165                        | 10    | iwm        | [652E2E284F](<Notebook/Dell/Inspiron/Inspiron 15 7000 Gaming/2663B977A92F/FREEBSD-13.0-P6/13.0-RELEASE/AMD64/652E2E284F>) |
+| 8086:9df0 | 8086:0034 | Intel            | Cannon Point-LP CNVi [Wireless-AC]   | 10    | iwm        | [F333ED9201](<Notebook/Lenovo/Yoga/Yoga S730-13IWL 81J0/69CAD6B3B2BA/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/F333ED9201>) |
+| 14e4:432b | 106b:008d | Broadcom         | BCM4322 802.11a/b/g/n Wireless LA... | 9     | bwn_pci    | [53B106BBB6](<Notebook/Apple/MacBookPro5/MacBookPro5,5/E84835CFE8B8/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/53B106BBB6>) |
+| 10ec:8176 | 10ec:8195 | Realtek Semic... | RTL8188CE 802.11b/g/n WiFi Adapter   | 8     | rtwn       | [990E05C219](<Notebook/Lenovo/ThinkPad/ThinkPad Edge E430 3254A68/6BEC68E32ADC/FREEBSD-13.0/13.0-RELEASE/AMD64/990E05C219>) |
+| 168c:0036 | 11ad:0642 | Qualcomm Atheros | QCA9565 / AR9565 Wireless Network... | 8     | ath        | [851EEA349F](<Notebook/Packard Bell/EasyNote/EasyNote TE69HW/E461B743FFCE/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/851EEA349F>) |
+| 168c:0042 | 17aa:0901 | Qualcomm Atheros | QCA9377 802.11ac Wireless Network... | 8     |            | [B1D702812E](<Notebook/Lenovo/IdeaPad/IdeaPad L340-17IRH Gaming 81LL/93EFE155F7C0/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/B1D702812E>) |
+| 8086:02f0 | 8086:0034 | Intel            | Comet Lake PCH-LP CNVi WiFi          | 8     | ppt        | [713B33351F](<Notebook/System76/Lemur/Lemur Pro/FB3C4199D24B/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/713B33351F>) |
+| 8086:2723 | 8086:0080 | Intel            | Wi-Fi 6 AX200                        | 8     | iwlwifi    | [42B4BCBCC2](<Notebook/Lenovo/ThinkBook/ThinkBook 14 G3 ACL 21A2/0D8018F67544/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/42B4BCBCC2>) |
+| 14e4:4353 | 106b:0093 | Broadcom         | BCM43224 802.11a/b/g/n               | 7     | bwn_pci    | [D680290D84](<Notebook/Apple/MacBook6/MacBook6,1/B24103297D7A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/D680290D84>) |
+| 168c:002b | 17aa:30a1 | Qualcomm Atheros | AR9285 Wireless Network Adapter (... | 7     | ath        | [E22DA97709](<Notebook/Lenovo/IdeaPad/IdeaPad N585/C23302E095F0/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E22DA97709>) |
+| 168c:0032 | 1a3b:2c97 | Qualcomm Atheros | AR9485 Wireless Network Adapter      | 7     | ath        | [19BE37F181](<Notebook/Dell/Inspiron/Inspiron N5110/5EF98B1DA6B5/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/19BE37F181>) |
+| 8086:24fd | 8086:0110 | Intel            | Wireless 8265 / 8275                 | 7     | iwm        | [0B73DF29BF](<Notebook/ASUSTek Computer/VivoBook_ASUSLaptop/VivoBook_ASUSLaptop X512DA_F512DA/0940BAB70ED0/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/0B73DF29BF>) |
+| 8086:2725 | 8086:0024 | Intel            | Wi-Fi 6 AX210/AX211/AX411 160MHz     | 7     | iwlwifi    | [1F58E0594F](<Notebook/Framework/Laptop/Laptop/12E6C3C95AB5/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/1F58E0594F>) |
+| 8086:9df0 | 8086:0030 | Intel            | Cannon Point-LP CNVi [Wireless-AC]   | 7     | iwm        | [D377309110](<Notebook/Lenovo/ThinkPad/ThinkPad T490s 20NYS3TU00/8D5A2ED4C475/HELLOSYSTEM-0.5.0/12.2-RELEASE-P7/AMD64/D377309110>) |
+| 10ec:b723 | 17aa:b736 | Realtek Semic... | RTL8723BE PCIe Wireless Network A... | 6     |            | [A1F85AFF27](<Notebook/Lenovo/Z50-70/Z50-70 20354/491D65A1BD89/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/A1F85AFF27>) |
+| 14e4:4328 | 106b:0088 | Broadcom         | BCM4321 802.11a/b/g/n                | 6     | bwn_pci    | [E0CF5200DE](<Notebook/Apple/MacBook4/MacBook4,1/07CFC301CF14/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E0CF5200DE>) |
+| 14e4:4331 | 106b:00d6 | Broadcom         | BCM4331 802.11a/b/g/n                | 6     | bwn_pci    | [AA484C30A8](<Notebook/Apple/MacBookPro8/MacBookPro8,1/83A908F15226/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/AA484C30A8>) |
+| 168c:0032 | 11ad:6617 | Qualcomm Atheros | AR9485 Wireless Network Adapter      | 6     | ath        | [CC83218496](<Notebook/Acer/Aspire/Aspire E1-421/030AC00DD903/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/CC83218496>) |
+| 168c:0036 | 1028:020e | Qualcomm Atheros | QCA9565 / AR9565 Wireless Network... | 6     | ath        | [E54BE582A7](<Notebook/Dell/Inspiron/Inspiron 5555/986E47B6651F/FREEBSD-13.0-P6/13.0-RELEASE-P6/AMD64/E54BE582A7>) |
+| 168c:0042 | 11ad:08a6 | Qualcomm Atheros | QCA9377 802.11ac Wireless Network... | 6     |            | [44C1F82BEE](<Notebook/Acer/Aspire/Aspire A315-21/205315F126C8/FREEBSD-13.0-P5/13.0-RELEASE/AMD64/44C1F82BEE>) |
+| 8086:0082 | 8086:1301 | Intel            | Centrino Advanced-N 6205 [Taylor ... | 6     | iwn        | [F47789D894](<Notebook/Hewlett-Packard/EliteBook/EliteBook 8570p/6FBB1F806232/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/F47789D894>) |
+| 8086:02f0 | 8086:0074 | Intel            | Comet Lake PCH-LP CNVi WiFi          | 6     |            | [0FA4700D17](<Notebook/Lenovo/ThinkPad/ThinkPad E15 20RD0011MX/534BB4FF83C1/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/0FA4700D17>) |
+| 8086:06f0 | 8086:0074 | Intel            | Comet Lake PCH CNVi WiFi             | 6     |            | [5B9C617DC8](<Notebook/MSI/GF63/GF63 Thin 10SCSR/CF159C44766D/GHOSTBSD-22.01.12/13.0-STABLE/AMD64/5B9C617DC8>) |
+| 8086:095a | 8086:5410 | Intel            | Wireless 7265                        | 6     | iwm        | [8A3867F171](<Notebook/Dell/Latitude/Latitude E7450/384980EB885D/FREEBSD-13.0-P6/13.0-RELEASE-P6/AMD64/8A3867F171>) |
+| 8086:4232 | 8086:1201 | Intel            | WiFi Link 5100                       | 6     | iwn        | [883DED6CB1](<Notebook/ASUSTek Computer/N50/N50Vc/77A5AA89F908/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/883DED6CB1>) |
+| 10ec:d723 | 103c:8319 | Realtek Semic... | RTL8723DE Wireless Network Adapter   | 5     |            | [766E62F699](<Notebook/Hewlett-Packard/Laptop/Laptop 15-db0xxx/3E8F8F48759C/NOMADBSD-5806F915/13.0-RELEASE/AMD64/766E62F699>) |
+| 14e4:43a0 | 106b:0117 | Broadcom         | BCM4360 802.11ac Wireless Network... | 5     |            | [7A8A66430A](<Notebook/Hewlett-Packard/ProBook/ProBook 440 G6/4151C66E839A/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/7A8A66430A>) |
+| 168c:0032 | 1028:0209 | Qualcomm Atheros | AR9485 Wireless Network Adapter      | 5     | ath        | [2FBF2A9B2B](<Notebook/Dell/Inspiron/Inspiron N5050/435B2D4C9205/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/2FBF2A9B2B>) |
+| 168c:0032 | 1a3b:1186 | Qualcomm Atheros | AR9485 Wireless Network Adapter      | 5     | ath        | [1263A5FB37](<Notebook/ASUSTek Computer/S550/S550CA/D771CCA40E31/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/1263A5FB37>) |
+| 168c:0042 | 1028:1810 | Qualcomm Atheros | QCA9377 802.11ac Wireless Network... | 5     |            | [53049DFF12](<Notebook/Dell/Inspiron/Inspiron 15-3567/2ED4260E9A4D/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/53049DFF12>) |
+| 8086:02f0 | 8086:4070 | Intel            | Comet Lake PCH-LP CNVi WiFi          | 5     |            | [A620D284CB](<Notebook/Dell/Latitude/Latitude 5510/9741CEB43BDE/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/A620D284CB>) |
+| 8086:08b1 | 8086:4060 | Intel            | Wireless 7260                        | 5     | iwm        | [6BC6C5B2BF](<Notebook/Hewlett-Packard/ProBook/ProBook 640 G1/CE9609F06A8F/NOMADBSD-1.4/12.2-RELEASE-P4/AMD64/6BC6C5B2BF>) |
+| 8086:08b1 | 8086:4070 | Intel            | Wireless 7260                        | 5     | iwm        | [AE56D2CEDD](<Notebook/Dell/Latitude/Latitude D630/94367DB4F4E1/NOMADBSD-5806F915/13.0-RELEASE/AMD64/AE56D2CEDD>) |
+| 8086:08b2 | 8086:c260 | Intel            | Wireless 7260                        | 5     | iwm        | [A6C02E440B](<Notebook/Lenovo/ThinkPad/ThinkPad T440p 20AWS3RH00/E1FD110C73CF/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/A6C02E440B>) |
+| 8086:3165 | 8086:4010 | Intel            | Wireless 3165                        | 5     | iwm        | [D2560F69F7](<Notebook/BANGHO/MAX/MAX G5/84D15EB38C86/FREEBSD-13.0-P3/13.0-RELEASE-P3/AMD64/D2560F69F7>) |
+| 8086:4227 | 8086:1011 | Intel            | PRO/Wireless 3945ABG [Golan] Netw... | 5     | wpi        | [9CC0F26F6F](<Notebook/Lenovo/ThinkPad/ThinkPad R61 8935WCS/1AC798DB7C89/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/9CC0F26F6F>) |
+| 10ec:8179 | 10ec:8179 | Realtek Semic... | RTL8188EE Wireless Network Adapter   | 4     | rtwn       | [1CA3D58DFC](<Notebook/Shuttle/DS77/DS77U/FBAB5FACE2AA/OPNSENSE-22.1.1/13.0-STABLE/AMD64/1CA3D58DFC>) |
+| 10ec:c821 | 17aa:c024 | Realtek Semic... | RTL8821CE 802.11ac PCIe Wireless ... | 4     |            | [BC5296EE7D](<Notebook/Lenovo/V145-15AST/V145-15AST 81MT/62231723F9E7/FREEBSD-13.0/13.0-RELEASE/AMD64/BC5296EE7D>) |
+| 14e4:4331 | 14e4:4331 | Broadcom         | BCM4331 802.11a/b/g/n                | 4     | bwn_pci    | [04CC56305C](<Notebook/Apple/MacBookPro9/MacBookPro9,2/2B7E67AD866E/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/04CC56305C>) |
+| 14e4:4353 | 106b:00e9 | Broadcom         | BCM43224 802.11a/b/g/n               | 4     | bwn_pci    | [10D629E1A0](<Notebook/Apple/MacBookAir5/MacBookAir5,1/2229B3BBA71B/HELLOSYSTEM-0.7.0/12.2-RELEASE/AMD64/10D629E1A0>) |
+| 168c:002e | 105b:e034 | Qualcomm Atheros | AR9287 Wireless Network Adapter (... | 4     | ath        | [FAE71F7E35](<Notebook/Acer/TravelMate/TravelMate 8481TG/5331FFEC26B3/FREEBSD-13.0-P6/13.0-RELEASE-P6/AMD64/FAE71F7E35>) |
+| 168c:0036 | 11ad:0662 | Qualcomm Atheros | QCA9565 / AR9565 Wireless Network... | 4     | ath        | [2FCB818B78](<Notebook/ASUSTek Computer/X441/X441BA/43E8CD446B6C/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/2FCB818B78>) |
+| 8086:0085 | 8086:c220 | Intel            | Centrino Advanced-N 6205 [Taylor ... | 4     | iwn        | [2494D9D2DB](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 3443CTO/870107710CBE/OPNSENSE-21.7/12.1-RELEASE-P20-HBSD/AMD64/2494D9D2DB>) |
+| 8086:008a | 8086:5325 | Intel            | Centrino Wireless-N 1030 [Rainbow... | 4     | iwn        | [0B290F2AC3](<Notebook/Dell/Vostro/Vostro 3550/699120C48004/GHOSTBSD-22.01.29/13.0-STABLE/AMD64/0B290F2AC3>) |
+| 8086:02f0 | 8086:0070 | Intel            | Comet Lake PCH-LP CNVi WiFi          | 4     | iwlwifi    | [6836FC60F6](<Notebook/Lenovo/ThinkPad/ThinkPad X13 Gen 1 20T2003PRT/7ED3441E6EB7/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/6836FC60F6>) |
+| 8086:06f0 | 8086:0070 | Intel            | Comet Lake PCH CNVi WiFi             | 4     |            | [E54D79065E](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Extreme Gen 3 20TLA055CD/8C11449058DA/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/E54D79065E>) |
+| 8086:0887 | 8086:4462 | Intel            | Centrino Wireless-N 2230             | 4     | iwn        | [CE9D5F9A46](<Notebook/Dell/Vostro/Vostro 3560/72C829B07A28/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/CE9D5F9A46>) |
+| 8086:08b3 | 8086:8470 | Intel            | Wireless 3160                        | 4     | iwm        | [C34E21FFD5](<Notebook/Dell/Inspiron/Inspiron 5559/35A7C406512F/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/C34E21FFD5>) |
+| 8086:095a | 8086:5002 | Intel            | Wireless 7265                        | 4     | iwm        | [C501C5C75E](<Notebook/Fujitsu/LIFEBOOK/LIFEBOOK A555/233E8905DCE8/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/C501C5C75E>) |
+| 8086:095a | 8086:9010 | Intel            | Wireless 7265                        | 4     | iwm        | [4CE05F93A8](<Notebook/Chuwi/MiniBook/MiniBook/7C143B97B52B/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/4CE05F93A8>) |
+| 8086:4222 | 103c:135c | Intel            | PRO/Wireless 3945ABG [Golan] Netw... | 4     | wpi        | [733C5EDB74](<Notebook/Hewlett-Packard/Pavilion/Pavilion dv6000/124DCA351C5C/NOMADBSD-1.4/12.2-RELEASE-P4/AMD64/733C5EDB74>) |
+| 8086:4229 | 8086:1101 | Intel            | PRO/Wireless 4965 AG or AGN [Kedr... | 4     | iwn        | [936A577D1A](<Notebook/ASUSTek Computer/M51/M51Sr/7A36C31A2F7E/NOMADBSD-5806F915/13.0-RELEASE/AMD64/936A577D1A>) |
+| 8086:422c | 8086:1321 | Intel            | Centrino Advanced-N 6200             | 4     | iwn        | [BA69F80B7F](<Notebook/Dell/Latitude/Latitude E4310/1675DDA13BC4/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/BA69F80B7F>) |
+| 8086:4236 | 8086:1011 | Intel            | Ultimate N WiFi Link 5300            | 4     | iwn        | [D8FB34DE12](<Notebook/Hewlett-Packard/EliteBook/EliteBook 6930p/A87AADC786B8/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/D8FB34DE12>) |
+| 8086:9df0 | 8086:4030 | Intel            | Cannon Point-LP CNVi [Wireless-AC]   | 4     | iwm        | [1BB6C1F63F](<Notebook/Dell/Latitude/Latitude 5400/418002D1A36C/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/1BB6C1F63F>) |
+| 8086:a0f0 | 8086:0074 | Intel            | Wi-Fi 6 AX201                        | 4     | iwlwifi    | [65454BCC92](<Notebook/HUAWEI/BOD-WXX/BOD-WXX9/8D0DA727E166/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/65454BCC92>) |
+| 8086:a370 | 8086:0030 | Intel            | Cannon Lake PCH CNVi WiFi            | 4     | iwm        | [A173366C78](<Notebook/Fujitsu/CELSIUS/CELSIUS H780/75BB9FC0D46E/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/A173366C78>) |
+| 10ec:8172 | 10ec:e020 | Realtek Semic... | RTL8191SEvB Wireless LAN Controller  | 3     |            | [A6C8FBCB20](<Notebook/Lenovo/ThinkPad/ThinkPad L512 44444XG/C88EB06C90C7/GHOSTBSD-20.04.02/13.0-STABLE/AMD64/A6C8FBCB20>) |
+| 10ec:8179 | 103c:197d | Realtek Semic... | RTL8188EE Wireless Network Adapter   | 3     | rtwn       | [1E888F2278](<Notebook/Hewlett-Packard/15/15 Notebook PC/A89C1381E32D/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/1E888F2278>) |
+| 10ec:8852 | 17aa:4852 | Realtek Semic... | RTL8852AE 802.11ax PCIe Wireless ... | 3     |            | [6C208C85A5](<Notebook/Lenovo/ThinkPad/ThinkPad E14 Gen 3 20Y7003SGE/284E69188279/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/6C208C85A5>) |
+| 10ec:b723 | 103c:804c | Realtek Semic... | RTL8723BE PCIe Wireless Network A... | 3     |            | [1758596E26](<Notebook/Hewlett-Packard/Notebook/Notebook/A739DC61372B/NOMADBSD-5806F915/13.0-RELEASE/AMD64/1758596E26>) |
+| 10ec:b822 | 17aa:b023 | Realtek Semic... | RTL8822BE 802.11a/b/g/n/ac WiFi a... | 3     |            | [C03BFE6A21](<Notebook/Lenovo/Yoga/Yoga S730-13IWL 81J0/69CAD6B3B2BA/FREEBSD-13.0-P6/13.0-RELEASE-P6/AMD64/C03BFE6A21>) |
+| 10ec:c822 | 103c:85f7 | Realtek Semic... | RTL8822CE 802.11ac PCIe Wireless ... | 3     |            | [494195B923](<Notebook/Hewlett-Packard/ProBook/ProBook 445 G7/06DE97DEA747/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/494195B923>) |
+| 14e4:4331 | 106b:00f5 | Broadcom         | BCM4331 802.11a/b/g/n                | 3     | bwn_pci    | [6CCA4DEE6F](<Notebook/Apple/MacBookPro9/MacBookPro9,2/D153C788E471/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/6CCA4DEE6F>) |
+| 14e4:4365 | 1028:0016 | Broadcom         | BCM43142 802.11b/g/n                 | 3     |            | [B246D110AF](<Notebook/Dell/Inspiron/Inspiron 3521/D0B94644586B/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/B246D110AF>) |
+| 14e4:43ba | 106b:0152 | Broadcom         | BCM43602 802.11ac Wireless LAN SoC   | 3     |            | [6D580E8270](<Notebook/Apple/MacBookPro11/MacBookPro11,4/C2BAFC376883/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/6D580E8270>) |
+| 168c:001c | 1a3b:1026 | Qualcomm Atheros | AR242x / AR542x Wireless Network ... | 3     | ath        | [235D60060D](<Notebook/Packard Bell/EasyNote_MX61/EasyNote_MX61-B-038/01DB7104A4E5/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/235D60060D>) |
+| 168c:002a | 105b:e01f | Qualcomm Atheros | AR928X Wireless Network Adapter (... | 3     | ath        | [D76873C5DD](<Notebook/Acer/Extensa/Extensa 5635Z/FD43E91B9313/GHOSTBSD-20.04.02/12.2-STABLE/AMD64/D76873C5DD>) |
+| 168c:002a | 1a3b:1067 | Qualcomm Atheros | AR928X Wireless Network Adapter (... | 3     | ath        | [1932B06FEE](<Notebook/ASUSTek Computer/X58/X58LE/DA0A971CACF7/OPNSENSE-21.1.8/12.1-RELEASE-P19-HBSD/AMD64/1932B06FEE>) |
+| 168c:002b | 103c:1461 | Qualcomm Atheros | AR9285 Wireless Network Adapter (... | 3     | ath        | [4FB8582DC1](<Notebook/Hewlett-Packard/ProBook/ProBook 4530s/EC7121605AE3/FREEBSD-12.2-P6/12.2-RELEASE-P6/I386/4FB8582DC1>) |
+| 168c:002b | 103c:3040 | Qualcomm Atheros | AR9285 Wireless Network Adapter (... | 3     | ath        | [258EF16ACE](<Notebook/Hewlett-Packard/Compaq/Compaq Presario CQ71/6B2FB1CFA4C3/FREEBSD-13.0/13.0-RELEASE/AMD64/258EF16ACE>) |
+| 168c:002b | 105b:e017 | Qualcomm Atheros | AR9285 Wireless Network Adapter (... | 3     | ath        | [04C5EE02DA](<Notebook/Sony/VPCEB1/VPCEB1J1E/8B69077801C0/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/04C5EE02DA>) |
 
 ### Network (PCI)
 
-| ID        | Subsystem | MFG        | Name                         | Count | Driver     | Probe      |
-|-----------|-----------|------------|------------------------------|-------|------------|------------|
-| 8086:1502 | 17aa:21ce | Intel      | 82579LM Gigabit Network C... | 28    | em         | 66743A51CC |
-| 8086:1502 | 17aa:21f3 | Intel      | 82579LM Gigabit Network C... | 26    | em         | 0F001F65D2 |
-| 8086:15a2 | 17aa:2226 | Intel      | Ethernet Connection (3) I... | 12    | em         | AC567BD12D |
-| 10ec:8168 | 1043:200f | Realtek... | RTL8111/8168/8411 PCI Exp... | 9     | re         | 57018EDD10 |
-| 8086:10ea | 17aa:2153 | Intel      | 82577LM Gigabit Network C... | 9     | em         | C887FF2917 |
-| 8086:156f | 17aa:2233 | Intel      | Ethernet Connection I219-LM  | 9     | em         | 821C81E652 |
-| 14e4:16b4 | 14e4:16b4 | Broadcom   | NetXtreme BCM57765 Gigabi... | 8     | bge        | AFC70D9C77 |
-| 10ec:8168 | 10ec:0123 | Realtek... | RTL8111/8168/8411 PCI Exp... | 6     | re         | C52B593262 |
-| 8086:153a | 17aa:220e | Intel      | Ethernet Connection I217-LM  | 6     | em         | 7660F9B6DB |
-| 8086:155a | 17aa:2214 | Intel      | Ethernet Connection I218-LM  | 6     | em         | B644ED3914 |
-| 8086:1539 |           | Intel      | I211 Gigabit Network Conn... | 5     | igb        | B4B6CFFF1F |
-| 8086:155a | 1028:05ca | Intel      | Ethernet Connection I218-LM  | 5     | em         | 1DBD9A5CEE |
-| 8086:157b |           | Intel      | I210 Gigabit Network Conn... | 4     | igb        | F4A0F0941B |
-| 8086:15be | 17aa:2279 | Intel      | Ethernet Connection (6) I... | 4     | em         | 7C642E5E7D |
-| 10ec:8168 | 17aa:5122 | Realtek... | RTL8111/8168/8411 PCI Exp... | 3     | re         | 2F1BA02130 |
-| 8086:109a | 17aa:2001 | Intel      | 82573L Gigabit Ethernet C... | 3     | em         | 5375F351A5 |
-| 8086:10ea | 1028:040a | Intel      | 82577LM Gigabit Network C... | 3     | em         | 211FE874FD |
-| 8086:1502 | 1028:0493 | Intel      | 82579LM Gigabit Network C... | 3     | em         | 6BF1F5FE84 |
-| 8086:1502 | 10f7:8338 | Intel      | 82579LM Gigabit Network C... | 3     | em         | 6BBADBA65D |
-| 10ec:8136 | 17aa:3975 | Realtek... | RTL810xE PCI Express Fast... | 2     | re         | CCEC69B736 |
-| 10ec:8139 | 1043:1045 | Realtek    | RTL-8100/8101L/8139 PCI F... | 2     | rl         | A04133B68D |
-| 10ec:8168 | 103c:2246 | Realtek... | RTL8111/8168/8411 PCI Exp... | 2     | re         | DA49561A8F |
-| 10ec:8168 | 1558:1313 | Realtek... | RTL8111/8168/8411 PCI Exp... | 2     | re         | C23A22A72D |
-| 10ec:8168 | 17aa:3812 | Realtek... | RTL8111/8168/8411 PCI Exp... | 2     | re         | 1D227A9CD2 |
-| 10ec:8168 | 17aa:5125 | Realtek... | RTL8111/8168/8411 PCI Exp... | 2     | re         | 7A706E46DE |
-| 1969:2062 | 17aa:3979 | Qualcom... | AR8152 v2.0 Fast Ethernet    | 2     | alc        | B8E35AACDB |
-| 1969:e0b1 | 1025:1246 | Qualcom... | Killer E2500 Gigabit Ethe... | 2     | alc        | 9E03A76684 |
-| 197b:0260 | 104d:9075 | JMicron... | JMC260 PCI Express Fast E... | 2     | jme        | 30BB4FC23C |
-| 8086:1502 | 1028:0534 | Intel      | 82579LM Gigabit Network C... | 2     | em         | 8D24817728 |
-| 8086:1570 | 103c:8079 | Intel      | Ethernet Connection I219-V   | 2     | em         | 0D35B2F5D8 |
-| 8086:15b7 | 17aa:5050 | Intel      | Ethernet Connection (2) I... | 2     | em         | DDC907CCF4 |
-| 8086:15d7 | 17aa:5062 | Intel      | Ethernet Connection (4) I... | 2     | em         | 88C27E65D7 |
-| 8086:15d8 | 17aa:224f | Intel      | Ethernet Connection (4) I... | 2     | em         | 950CF51DB1 |
-| 8086:15d8 | 17aa:2258 | Intel      | Ethernet Connection (4) I... | 2     | em         | EBD44C21D9 |
-| 1039:0191 | 1043:1815 | Silicon... | 191 Gigabit Ethernet Adapter | 1     | sge        | A2EE0C9EDB |
-| 1039:0900 | 1043:1455 | Silicon... | SiS900 PCI Fast Ethernet     | 1     | sis        | 1F098AC490 |
-| 10ec:8136 | 1019:90c9 | Realtek... | RTL810xE PCI Express Fast... | 1     | re         | 57FDAB151E |
-| 10ec:8136 | 1028:0655 | Realtek... | RTL810xE PCI Express Fast... | 1     | re         | B38C2A2E8F |
-| 10ec:8136 | 1179:f840 | Realtek... | RTL810xE PCI Express Fast... | 1     | re         | 9CF9861053 |
-| 10ec:8136 | 1179:ff6a | Realtek... | RTL810xE PCI Express Fast... | 1     | re         | E8BED535A9 |
-| 10ec:8168 | 1025:0724 | Realtek... | RTL8111/8168/8411 PCI Exp... | 1     | re         | EDBF1FF1C6 |
-| 10ec:8168 | 104d:90ac | Realtek... | RTL8111/8168/8411 PCI Exp... | 1     | re         | 9A751DDFD8 |
-| 10ec:8168 | 1558:65d1 | Realtek... | RTL8111/8168/8411 PCI Exp... | 1     | re         | 95434CBF80 |
-| 10ec:8168 | 17aa:388a | Realtek... | RTL8111/8168/8411 PCI Exp... | 1     | re         | 0309E4AC24 |
-| 14e4:1680 | 1028:0262 | Broadcom   | NetXtreme BCM5761e Gigabi... | 1     | bge        | 54854343E4 |
-| 14e4:169c | 103c:30aa | Broadcom   | NetXtreme BCM5788 Gigabit... | 1     | bge        | 256E0AE719 |
-| 1969:1073 | 1025:0359 | Qualcom... | AR8151 v1.0 Gigabit Ethernet | 1     | alc        | 239EEA83C6 |
-| 1969:1083 | 1043:1467 | Qualcom... | AR8151 v2.0 Gigabit Ethernet | 1     | alc        | D14C9C0372 |
-| 1969:1090 | 1043:200f | Qualcom... | AR8162 Fast Ethernet         | 1     | alc        | F69506DB3B |
-| 197b:0250 | 1043:1905 | JMicron... | JMC250 PCI Express Gigabi... | 1     | jme        | D5D32F1334 |
-| 8086:109a | 17aa:207e | Intel      | 82573L Gigabit Ethernet C... | 1     | em         | F08ACC6929 |
-| 8086:10d3 | 8086:a01f | Intel      | 82574L Gigabit Network Co... | 1     | em         | 9E0509BD54 |
-| 8086:1502 | 1028:0492 | Intel      | 82579LM Gigabit Network C... | 1     | em         | 2EBFA76C28 |
-| 8086:1502 | 1028:0535 | Intel      | 82579LM Gigabit Network C... | 1     | em         | 04CD35A77B |
-| 8086:1502 | 1028:053e | Intel      | 82579LM Gigabit Network C... | 1     | em         | A7761EE829 |
-| 8086:1502 | 103c:1631 | Intel      | 82579LM Gigabit Network C... | 1     | em         | C240E3A1EA |
-| 8086:150e | 8086:12a2 | Intel      | 82580 Gigabit Network Con... | 1     | igb        | 3C8D21772A |
-| 8086:153a | 103c:1909 | Intel      | Ethernet Connection I217-LM  | 1     | em         | 3E9076F244 |
-| 8086:153a | 103c:2253 | Intel      | Ethernet Connection I217-LM  | 1     | em         | D615B5020D |
-| 8086:15b7 | 1028:06de | Intel      | Ethernet Connection (2) I... | 1     | em         | 1A7976D306 |
-| 8086:15bb | 1028:0926 | Intel      | Ethernet Connection (7) I... | 1     | em         | AA891D8F27 |
-| 8086:15e3 | 17aa:224d | Intel      | Ethernet Connection (5) I... | 1     | em         | 81EFA4B3D3 |
+| ID        | Subsystem | MFG              | Name                                 | Count | Driver     | Probe |
+|-----------|-----------|------------------|--------------------------------------|-------|------------|-------|
+| 8086:1502 | 17aa:21ce | Intel            | 82579LM Gigabit Network Connectio... | 42    | em         | [148A268A0F](<Notebook/Lenovo/ThinkPad/ThinkPad X220 4293B43/AD955BCC7F71/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/148A268A0F>) |
+| 8086:1502 | 17aa:21f3 | Intel            | 82579LM Gigabit Network Connectio... | 40    | em         | [86FD351C81](<Notebook/Lenovo/ThinkPad/ThinkPad T430 2349AK1/08273574C200/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/86FD351C81>) |
+| 8086:10ea | 17aa:2153 | Intel            | 82577LM Gigabit Network Connection   | 19    | em         | [BCD5BEA2B7](<Notebook/Lenovo/ThinkPad/ThinkPad T410 2537BN8/4A58F0F69086/OPNSENSE-22.1.2/13.0-STABLE/AMD64/BCD5BEA2B7>) |
+| 8086:15a2 | 17aa:2226 | Intel            | Ethernet Connection (3) I218-LM      | 19    | em         | [BC2860431E](<Notebook/Lenovo/ThinkPad/ThinkPad T450 20BUS0VH08/CDAB4EDF622D/GHOSTBSD-22.01.12/13.0-STABLE/AMD64/BC2860431E>) |
+| 8086:155a | 17aa:2214 | Intel            | Ethernet Connection I218-LM          | 14    | em         | [2AF47B6502](<Notebook/Lenovo/ThinkPad/ThinkPad T440s 20AQ006HUS/5B022BB303EA/NOMADBSD-5806F915/13.0-RELEASE/AMD64/2AF47B6502>) |
+| 8086:157b |           | Intel            | I210 Gigabit Network Connection      | 14    | igb        | [4D8F19BA12](<Notebook/Deciso/Netboard/Netboard A20/94D2C7F0ED24/OPNSENSE-22.1/13.0-STABLE/AMD64/4D8F19BA12>) |
+| 10ec:8168 | 1043:200f | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 13    | re         | [28B3002182](<Notebook/ASUSTek Computer/X555/X555LA/845132047FF4/HELLOSYSTEM-0.7.0/13.0-RELEASE-P7/AMD64/28B3002182>) |
+| 14e4:16b4 | 14e4:16b4 | Broadcom         | NetXtreme BCM57765 Gigabit Ethern... | 13    | bge        | [AA484C30A8](<Notebook/Apple/MacBookPro8/MacBookPro8,1/83A908F15226/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/AA484C30A8>) |
+| 8086:1539 |           | Intel            | I211 Gigabit Network Connection      | 13    | igb        | [EC1E865BBD](<Notebook/AEWIN/CB/CB-7979/515CE581A2B3/OPNSENSE-22.1.2/13.0-STABLE/AMD64/EC1E865BBD>) |
+| 8086:156f | 17aa:2233 | Intel            | Ethernet Connection I219-LM          | 12    | em         | [DBB0E378D5](<Notebook/Lenovo/ThinkPad/ThinkPad T460s 20FAS4KH02/DCA0C34D1413/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/DBB0E378D5>) |
+| 10ec:8168 | 10ec:0123 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 11    | re         | [71068A0577](<Notebook/Intel/H81/H81U/43390C61FBEC/OPNSENSE-22.1.1/13.0-STABLE/AMD64/71068A0577>) |
+| 8086:153a | 17aa:220e | Intel            | Ethernet Connection I217-LM          | 9     | em         | [CBA9255F4A](<Notebook/Lenovo/ThinkPad/ThinkPad T440p 20AWS1JN00/4F89B9A156FF/FREEBSD-13.0/13.0-RELEASE/AMD64/CBA9255F4A>) |
+| 8086:155a | 1028:05ca | Intel            | Ethernet Connection I218-LM          | 6     | em         | [762D8366D0](<Notebook/Dell/Latitude/Latitude E7240/B8876AE6AF27/FREEBSD-13.0-RC4/13.0-RC4/AMD64/762D8366D0>) |
+| 8086:109a | 17aa:2001 | Intel            | 82573L Gigabit Ethernet Controller   | 5     | em         | [E2D5391A1A](<Notebook/Lenovo/ThinkPad/ThinkPad T60 1951FEG/8CFF73D19B7A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E2D5391A1A>) |
+| 8086:10ea | 1028:040a | Intel            | 82577LM Gigabit Network Connection   | 4     | em         | [8C904D84E0](<Notebook/Dell/Latitude/Latitude E6410/D86C1197F0AC/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/8C904D84E0>) |
+| 8086:1502 | 1028:0493 | Intel            | 82579LM Gigabit Network Connectio... | 4     | em         | [2E8B431CC6](<Notebook/Dell/Latitude/Latitude E6420/6637B5C9AD24/GHOSTBSD-20.04.02/13.0-STABLE/AMD64/2E8B431CC6>) |
+| 8086:1502 | 1028:0534 | Intel            | 82579LM Gigabit Network Connectio... | 4     | em         | [FDDE41404D](<Notebook/Dell/Latitude/Latitude E6430/9A4F06581327/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/FDDE41404D>) |
+| 8086:15be | 17aa:2279 | Intel            | Ethernet Connection (6) I219-V       | 4     | em         | [4147A5824D](<Notebook/Lenovo/ThinkPad/ThinkPad T590 20N4CTO1WW/3C494D1552EB/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/4147A5824D>) |
+| 10ec:8168 | 17aa:5122 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 3     | re         | [0C153D0C98](<Notebook/Lenovo/ThinkPad/ThinkPad A485 20MU000VUS/0748151D3905/MIDNIGHTBSD-2.1.1/2.1.1/AMD64/0C153D0C98>) |
+| 14e4:167d | 1014:0577 | Broadcom         | NetXtreme BCM5751M Gigabit Ethern... | 3     | bge        | [6FD6FD89C5](<Notebook/IBM/ThinkPad/ThinkPad R52 185869G/DED57F076B3E/FREEBSD-12.2-P6/12.2-RELEASE-P6/I386/6FD6FD89C5>) |
+| 1969:1090 | 1043:200f | Qualcomm Atheros | AR8162 Fast Ethernet                 | 3     | alc        | [7F4E6F4541](<Notebook/ASUSTek Computer/X202/X202E/4F1DF3965EB5/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/7F4E6F4541>) |
+| 8086:1502 | 10f7:8338 | Intel            | 82579LM Gigabit Network Connectio... | 3     | em         | [6BBADBA65D](<Notebook/Panasonic/CF-NX1/CF-NX1GDHYS/343F5A72B70D/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/6BBADBA65D>) |
+| 8086:1570 | 103c:8079 | Intel            | Ethernet Connection I219-V           | 3     | em         | [F259F73C17](<Notebook/Hewlett-Packard/EliteBook/EliteBook 840 G3/372FB522FD12/OPNSENSE-22.1/13.0-STABLE/AMD64/F259F73C17>) |
+| 8086:15b7 | 17aa:5050 | Intel            | Ethernet Connection (2) I219-LM      | 3     | em         | [3EF1595AF6](<Notebook/Lenovo/ThinkPad/ThinkPad T460p 20FXS09D11/AEEBF4FDEE51/FREEBSD-13.0-P6/13.0-RELEASE-P4/AMD64/3EF1595AF6>) |
+| 8086:15d7 | 17aa:5062 | Intel            | Ethernet Connection (4) I219-LM      | 3     | em         | [117B790A84](<Notebook/Lenovo/ThinkPad/ThinkPad X270 20HMS0MA18/486F4AA4AD22/FREEBSD-13.0-P2/13.0-RELEASE-P1/AMD64/117B790A84>) |
+| 8086:15d8 | 17aa:224f | Intel            | Ethernet Connection (4) I219-V       | 3     | em         | [7AEA2CCAA7](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 5th 20HRS04C00/46797EE9B847/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/7AEA2CCAA7>) |
+| 10ec:8136 | 17aa:3975 | Realtek Semic... | RTL810xE PCI Express Fast Etherne... | 2     | re         | [CCEC69B736](<Notebook/Lenovo/U/U310/87F6725FAD1E/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/CCEC69B736>) |
+| 10ec:8139 | 1043:1045 | Realtek          | RTL-8100/8101L/8139 PCI Fast Ethe... | 2     | rl         | [1932B06FEE](<Notebook/ASUSTek Computer/X58/X58LE/DA0A971CACF7/OPNSENSE-21.1.8/12.1-RELEASE-P19-HBSD/AMD64/1932B06FEE>) |
+| 10ec:8168 | 103c:2246 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 2     | re         | [DA49561A8F](<Notebook/Hewlett-Packard/ProBook/ProBook 430 G2/0B9FDF5DA838/FREEBSD-12.1-P4/12.1-RELEASE-P3/AMD64/DA49561A8F>) |
+| 10ec:8168 | 1558:1313 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 2     | re         | [C23A22A72D](<Notebook/Schenker/N13/N13xWU/37D6E56C1169/FREEBSD-12.2/12.2-RELEASE/AMD64/C23A22A72D>) |
+| 10ec:8168 | 17aa:3812 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 2     | re         | [1D227A9CD2](<Notebook/Lenovo/G50-45/G50-45 80E3/E53F1DE394A5/NOMADBSD-1.3.2/12.1-RELEASE-P6/AMD64/1D227A9CD2>) |
+| 10ec:8168 | 17aa:5125 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 2     | re         | [7A706E46DE](<Notebook/Lenovo/ThinkPad/ThinkPad T495 20NJS0KP00/BBAE20B5A9E1/FREEBSD-13.0-CURRENT/13.0-CURRENT/AMD64/7A706E46DE>) |
+| 1969:1073 | 1025:0359 | Qualcomm Atheros | AR8151 v1.0 Gigabit Ethernet         | 2     | alc        | [1617262A28](<Notebook/Acer/Aspire/Aspire 4820T/369067836DD9/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/1617262A28>) |
+| 1969:2062 | 17aa:3979 | Qualcomm Atheros | AR8152 v2.0 Fast Ethernet            | 2     | alc        | [B8E35AACDB](<Notebook/Lenovo/G470/G470 20078/35FE7475B2FF/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/B8E35AACDB>) |
+| 1969:e0b1 | 1025:1246 | Qualcomm Atheros | Killer E2500 Gigabit Ethernet Con... | 2     | alc        | [9E03A76684](<Notebook/Acer/Predator/Predator PH517-61/401258E70C57/FREEBSD-13.0/13.0-RELEASE/AMD64/9E03A76684>) |
+| 197b:0250 | 1043:1905 | JMicron Techn... | JMC250 PCI Express Gigabit Ethern... | 2     | jme        | [92B975763F](<Notebook/ASUSTek Computer/K52/K52Jc/DB01933C6182/HELLOSYSTEM-0.7.0/12.2-RELEASE-P7/AMD64/92B975763F>) |
+| 197b:0260 | 104d:9075 | JMicron Techn... | JMC260 PCI Express Fast Ethernet ... | 2     | jme        | [30BB4FC23C](<Notebook/Sony/VPCM13/VPCM13M1R/5AB92F9110B8/NOMADBSD-1.3.2/12.1-RELEASE-P6/I386/30BB4FC23C>) |
+| 8086:1502 | 1028:0535 | Intel            | 82579LM Gigabit Network Connectio... | 2     | em         | [0FA21BCF23](<Notebook/Dell/Latitude/Latitude E6530/9F002062E68D/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/0FA21BCF23>) |
+| 8086:153a | 103c:2253 | Intel            | Ethernet Connection I217-LM          | 2     | em         | [F2D911563A](<Notebook/Hewlett-Packard/ZBook/ZBook 17 G2/2EA77AA55D11/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/F2D911563A>) |
+| 8086:15b7 | 1028:06de | Intel            | Ethernet Connection (2) I219-LM      | 2     | em         | [9E479E9C50](<Notebook/Dell/Latitude/Latitude E5470/A17BA6584F09/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/9E479E9C50>) |
+| 8086:15d8 | 17aa:2258 | Intel            | Ethernet Connection (4) I219-V       | 2     | em         | [EBD44C21D9](<Notebook/Lenovo/ThinkPad/ThinkPad T480s 20L7001HRT/5CF74DFA79FC/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/EBD44C21D9>) |
+| 8086:15e3 | 17aa:224d | Intel            | Ethernet Connection (5) I219-LM      | 2     | em         | [E4F43CFCAD](<Notebook/Lenovo/ThinkPad/ThinkPad P51 20HHCTO1WW/771FB79FBCC7/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/E4F43CFCAD>) |
+| 1039:0191 | 1043:1815 | Silicon Integ... | 191 Gigabit Ethernet Adapter         | 1     | sge        | [A2EE0C9EDB](<Notebook/ASUSTek Computer/X71/X71SL/C5769FF2BEDC/NOMADBSD-1.3.2/12.1-RELEASE-P6/AMD64/A2EE0C9EDB>) |
+| 1039:0900 | 1043:1455 | Silicon Integ... | SiS900 PCI Fast Ethernet             | 1     | sis        | [2962E2B02F](<Notebook/ASUSTek Computer/A/A9T/CD438D683462/FREEBSD-13.0-P7/13.0-RELEASE-P6/I386/2962E2B02F>) |
+| 10ec:8136 | 1019:90c9 | Realtek Semic... | RTL810xE PCI Express Fast Etherne... | 1     | re         | [57FDAB151E](<Notebook/Intel/powered/powered classmate PC/FF98D092277C/FREEBSD-12.1-P5/12.1-RELEASE-P5/AMD64/57FDAB151E>) |
+| 10ec:8136 | 1028:0655 | Realtek Semic... | RTL810xE PCI Express Fast Etherne... | 1     | re         | [B38C2A2E8F](<Notebook/Dell/Inspiron/Inspiron 3543/B5B8A02F99E1/FREEBSD-12.1-P5/12.1-RELEASE/AMD64/B38C2A2E8F>) |
+| 10ec:8136 | 1179:f840 | Realtek Semic... | RTL810xE PCI Express Fast Etherne... | 1     | re         | [250DB17F57](<Notebook/Toshiba/Satellite/Satellite L50-C/00E1490CB02B/FREEBSD-13.0-P3/13.0-RELEASE-P3/AMD64/250DB17F57>) |
+| 10ec:8136 | 1179:ff6a | Realtek Semic... | RTL810xE PCI Express Fast Etherne... | 1     | re         | [E8BED535A9](<Notebook/Toshiba/Satellite/Satellite L355D/1A5898429343/DRAGONFLY-5.8/5.8-RELEASE/AMD64/E8BED535A9>) |
+| 10ec:8168 | 1025:0724 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 1     | re         | [EDBF1FF1C6](<Notebook/Acer/Aspire/Aspire V5-531/446D23EEB203/FREEBSD-12.2-P6/12.2-RELEASE-P6/AMD64/EDBF1FF1C6>) |
+| 10ec:8168 | 104d:90ac | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 1     | re         | [9A751DDFD8](<Notebook/Sony/SVE1713/SVE1713S1RW/506CDC50E671/NOMADBSD-1.3.1/12.1-RELEASE-P2/AMD64/9A751DDFD8>) |
+| 10ec:8168 | 1458:e000 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 1     | re         | [168E674B55](<Notebook/Gigabyte Technology/MMLP3/MMLP3AP-00/7A712C7473C4/FREEBSD-13.0-P3/13.0-RELEASE-P3/AMD64/168E674B55>) |
+| 10ec:8168 | 1558:65d1 | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 1     | re         | [95434CBF80](<Notebook/Schenker/COMPACT15/COMPACT15_17_SCO15_17M19/CE1BE3D87F0C/FREEBSD-12.1-STABLE/12.1-STABLE/AMD64/95434CBF80>) |
+| 10ec:8168 | 17aa:388a | Realtek Semic... | RTL8111/8168/8411 PCI Express Gig... | 1     | re         | [0309E4AC24](<Notebook/Lenovo/IdeaPad/IdeaPad 320-15ISK 80XH/DE680C221CEE/FREEBSD-12.2-STABLE/12.2-STABLE/AMD64/0309E4AC24>) |
+| 14c3:7922 | 1a3b:5300 | MEDIATEK         |                                      | 1     |            | [20CDC9D999](<Notebook/ASUSTek Computer/ROG/ROG Zephyrus G14 GA402RJ_GA402RJ/8B17C1C0752C/FREEBSD-13.0/13.0-RELEASE/AMD64/20CDC9D999>) |
+| 14c3:7961 | 17aa:e0bc | MEDIATEK         | MT7921 802.11ax PCI Express Wirel... | 1     |            | [D8A6D0DAF3](<Notebook/Lenovo/ThinkPad/ThinkPad E14 Gen 3 20Y7CTO1WW/E4201D2552DD/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/D8A6D0DAF3>) |
+| 14e4:1680 | 1028:0262 | Broadcom         | NetXtreme BCM5761e Gigabit Ethern... | 1     | bge        | [54854343E4](<Notebook/Dell/Latitude/Latitude E5400/9B1EFA5A95CE/FREEBSD-12.1-STABLE/12.1-STABLE/AMD64/54854343E4>) |
+| 14e4:169c | 103c:30aa | Broadcom         | NetXtreme BCM5788 Gigabit Ethernet   | 1     | bge        | [256E0AE719](<Notebook/Hewlett-Packard/Compaq/Compaq nc6320/BA8F7F88D1FF/FREEBSD-12.1-P4/12.1-RELEASE-P3/AMD64/256E0AE719>) |
+| 1969:1083 | 1043:1467 | Qualcomm Atheros | AR8151 v2.0 Gigabit Ethernet         | 1     | alc        | [D14C9C0372](<Notebook/ASUSTek Computer/U47/U47A/64D045492050/FREEBSD-12.1-P5/12.1-RELEASE-P5/AMD64/D14C9C0372>) |
+| 8086:109a | 17aa:207e | Intel            | 82573L Gigabit Ethernet Controller   | 1     | em         | [F08ACC6929](<Notebook/Lenovo/ThinkPad/ThinkPad X60 1707YF8/33769D077052/FREEBSD-12.1-P5/12.1-RELEASE-P5/AMD64/F08ACC6929>) |
+| 8086:10d3 |           | Intel            | 82574L Gigabit Network Connection    | 1     | em         | [341401BB02](<Notebook/Others/Others/Others/D4245F739188/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/341401BB02>) |
+| 8086:10d3 | 8086:a01f | Intel            | 82574L Gigabit Network Connection    | 1     | em         | [9E0509BD54](<Notebook/DFI/BE17/BE17X/6FD257A4BC0C/OPNSENSE-21.1.1/12.1-RELEASE-P13-HBSD/AMD64/9E0509BD54>) |
+| 8086:1502 | 1028:0492 | Intel            | 82579LM Gigabit Network Connectio... | 1     | em         | [2EBFA76C28](<Notebook/Dell/Latitude/Latitude E6320/08F801AE4D74/FREEBSD-11.4-BETA1-P1/11.4-BETA1/AMD64/2EBFA76C28>) |
+| 8086:1502 | 1028:053e | Intel            | 82579LM Gigabit Network Connectio... | 1     | em         | [A7761EE829](<Notebook/Dell/Precision/Precision M4700/FE04A21E262E/GHOSTBSD-20.03.01/12.1-STABLE/AMD64/A7761EE829>) |
+| 8086:1502 | 103c:1631 | Intel            | 82579LM Gigabit Network Connectio... | 1     | em         | [C240E3A1EA](<Notebook/Hewlett-Packard/EliteBook/EliteBook 8560w/1CB0DA46927B/FREEBSD-12.1-P5/12.1-RELEASE-P5/AMD64/C240E3A1EA>) |
+| 8086:150e | 8086:12a2 | Intel            | 82580 Gigabit Network Connection     | 1     | igb        | [3C8D21772A](<Notebook/Dell/Latitude/Latitude 3440/B4ED4FC8DE61/OPNSENSE-21.1.5/12.1-RELEASE-P16-HBSD/AMD64/3C8D21772A>) |
+| 8086:153a | 103c:1909 | Intel            | Ethernet Connection I217-LM          | 1     | em         | [3E9076F244](<Notebook/Hewlett-Packard/ZBook/ZBook 15/BC295E28B995/FREEBSD-13.0-CURRENT/13.0-CURRENT/AMD64/3E9076F244>) |
+| 8086:15bb | 1028:0926 | Intel            | Ethernet Connection (7) I219-LM      | 1     | em         | [AA891D8F27](<Notebook/Dell/Precision/Precision 7540/7E1CFE327788/HARDENEDBSD-13.0-CURRENT-HBSD/13.0-CURRENT-HBSD/AMD64/AA891D8F27>) |
+| 8086:422b | 8086:1101 | Intel            | Centrino Ultimate-N 6300             | 1     | iwn        | [96BEE8D702](<Notebook/ASUSTek Computer/G74/G74Sx/4014CB22CE36/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/96BEE8D702>) |
 
 ### Sd host controller (PCI)
 
-| ID        | Subsystem | MFG        | Name                         | Count | Driver     | Probe      |
-|-----------|-----------|------------|------------------------------|-------|------------|------------|
-| 14e4:16bc |           | Broadcom   | BCM57765/57785 SDXC/MMC C... | 7     | sdhci_pci  | AFC70D9C77 |
-| 1180:0822 | 17aa:20c8 | Ricoh      | R5C822 SD/SDIO/MMC/MS/MSP... | 5     | sdhci_pci  | D223A9B1FB |
-| 1217:8520 | 1028:05cc | O2 Micro   | SD/MMC Card Reader Contro... | 4     | sdhci_pci  | 1847C0AADB |
-| 197b:2381 | 17aa:212d | JMicron... | Standard SD Host Controller  | 4     | sdhci_pci  | BDBD2D0A05 |
-| 1180:e822 | 1028:040a | Ricoh      | MMC/SD Host Controller       | 3     | sdhci_pci  | 211FE874FD |
-| 1217:8221 | 1028:0493 | O2 Micro   | OZ600FJ0/OZ900FJ0/OZ600FJ... | 3     | sdhci_pci  | 6BF1F5FE84 |
-| 1022:7813 | 1025:0865 | AMD        | FCH SD Flash Controller      | 2     | sdhci_pci  | E2B6DBFE40 |
-| 1022:7813 | 17aa:3801 | AMD        | FCH SD Flash Controller      | 2     | sdhci_pci  | 1D227A9CD2 |
-| 1180:0822 | 1028:024d | Ricoh      | R5C822 SD/SDIO/MMC/MS/MSP... | 2     | sdhci_pci  | D5051EF185 |
-| 1180:e822 | 1179:0001 | Ricoh      | MMC/SD Host Controller       | 2     | sdhci_pci  | 6357D0D51F |
-| 1180:e823 | 10f7:8338 | Ricoh      | PCIe SDXC/MMC Host Contro... | 2     | sdhci_pci  | 04A42812BB |
-| 1217:8221 | 1028:0534 | O2 Micro   | OZ600FJ0/OZ900FJ0/OZ600FJ... | 2     | sdhci_pci  | 8D24817728 |
-| 1217:8321 | 1028:049b | O2 Micro   | OZ600RJ0/OZ900RJ0/OZ600RJ... | 2     | sdhci_pci  | 4B4CD45AC7 |
-| 1217:8520 | 1028:05bd | O2 Micro   | SD/MMC Card Reader Contro... | 2     | sdhci_pci  | 3A656DED12 |
-| 1217:8520 | 1028:05cb | O2 Micro   | SD/MMC Card Reader Contro... | 2     | sdhci_pci  | 6EC8FD788A |
-| 1217:8621 | 17aa:5072 | O2 Micro   | SD/MMC Card Reader Contro... | 2     | sdhci_pci  | 270BD22B8D |
-| 17a0:9750 | 103c:8786 | Genesys... | GL9750 SD Host Controller    | 2     | sdhci_pci  | 19F307FF6D |
-| 17a0:9750 | 17aa:2279 | Genesys... | GL9750 SD Host Controller    | 2     | sdhci_pci  | 7C642E5E7D |
-| 197b:2381 | 104d:9075 | JMicron... | Standard SD Host Controller  | 2     | sdhci_pci  | 30BB4FC23C |
-| 197b:2391 | 103c:17a7 | JMicron... | Standard SD Host Controller  | 2     | sdhci_pci  | 52BA4E835F |
-| 8086:5aca | 8086:7270 | Intel      | Celeron N3350/Pentium N42... | 2     | sdhci_pci  | BC138C0580 |
-| 8086:5acc | 8086:7270 | Intel      | Celeron N3350/Pentium N42... | 2     | sdhci_pci  | BC138C0580 |
-| 8086:9d2b | 8086:9d2b | Intel      | Skylake-U/Y SCC: eMMC        | 2     | sdhci_pci  | 2E51DFE463 |
-| 1022:7813 | 1022:7806 | AMD        | FCH SD Flash Controller      | 1     | sdhci_pci  | 4433B8842F |
-| 1022:7813 | 1025:080d | AMD        | FCH SD Flash Controller      | 1     | sdhci_pci  | CE0C079FD5 |
-| 1022:7813 | 103c:22cd | AMD        | FCH SD Flash Controller      | 1     | sdhci_pci  | 861BDC647D |
-| 104c:803c | 1025:011f | Texas I... | PCIxx12 SDA Standard Comp... | 1     | sdhci_pci  | 5D6A8A51D0 |
-| 104c:803c | 1028:0252 | Texas I... | PCIxx12 SDA Standard Comp... | 1     | sdhci_pci  | 19456100CF |
-| 104c:803c | 103c:30aa | Texas I... | PCIxx12 SDA Standard Comp... | 1     | sdhci_pci  | 256E0AE719 |
-| 104c:803c | 1179:ff00 | Texas I... | PCIxx12 SDA Standard Comp... | 1     | sdhci_pci  | E6E0A1294C |
-| 10ec:5209 | 1028:048f | Realtek... | RTS5209 PCI Express Card ... | 1     | sdhci_pci  | 67A336FAC6 |
-| 10ec:5209 | 1028:05ac | Realtek... | RTS5209 PCI Express Card ... | 1     | sdhci_pci  | 0E0CDF952A |
-| 10ec:5209 | 17aa:21ee | Realtek... | RTS5209 PCI Express Card ... | 1     |            | 6A96E2C5B1 |
-| 1180:0822 | 1028:01bd | Ricoh      | R5C822 SD/SDIO/MMC/MS/MSP... | 1     | sdhci_pci  | 7F814A7E8D |
-| 1180:0822 | 1028:01f5 | Ricoh      | R5C822 SD/SDIO/MMC/MS/MSP... | 1     | sdhci_pci  | 9EE3E7CBC2 |
-| 1180:0822 | 1028:022f | Ricoh      | R5C822 SD/SDIO/MMC/MS/MSP... | 1     | sdhci_pci  | D08EA3542E |
-| 1180:0822 | 1028:024f | Ricoh      | R5C822 SD/SDIO/MMC/MS/MSP... | 1     | sdhci_pci  | D25DACC162 |
-| 1180:0822 | 1028:0262 | Ricoh      | R5C822 SD/SDIO/MMC/MS/MSP... | 1     | sdhci_pci  | 54854343E4 |
-| 1180:0822 | 1028:029f | Ricoh      | R5C822 SD/SDIO/MMC/MS/MSP... | 1     | sdhci_pci  | A4C1D361EB |
-| 1180:0822 | 1028:02a2 | Ricoh      | R5C822 SD/SDIO/MMC/MS/MSP... | 1     | sdhci_pci  | 0B60C1CB25 |
-| 1180:0822 | 103c:1521 | Ricoh      | R5C822 SD/SDIO/MMC/MS/MSP... | 1     | sdhci_pci  | 78D9A31074 |
-| 1180:0822 | 103c:172a | Ricoh      | R5C822 SD/SDIO/MMC/MS/MSP... | 1     | sdhci_pci  | 7968C7D2DD |
-| 1180:0822 | 103c:30bb | Ricoh      | R5C822 SD/SDIO/MMC/MS/MSP... | 1     | sdhci_pci  | 733C5EDB74 |
-| 1180:0822 | 103c:30cc | Ricoh      | R5C822 SD/SDIO/MMC/MS/MSP... | 1     | sdhci_pci  | 316FFB0740 |
-| 1180:0822 | 103c:30e1 | Ricoh      | R5C822 SD/SDIO/MMC/MS/MSP... | 1     | sdhci_pci  | 1FD927E2CD |
-| 1180:0822 | 1043:1017 | Ricoh      | R5C822 SD/SDIO/MMC/MS/MSP... | 1     | sdhci_pci  | A04133B68D |
-| 1180:0822 | 1043:1197 | Ricoh      | R5C822 SD/SDIO/MMC/MS/MSP... | 1     | sdhci_pci  | 1F098AC490 |
-| 1180:0822 | 1043:15d7 | Ricoh      | R5C822 SD/SDIO/MMC/MS/MSP... | 1     | sdhci_pci  | 593C12AA06 |
-| 1180:0822 | 1043:1877 | Ricoh      | R5C822 SD/SDIO/MMC/MS/MSP... | 1     | sdhci_pci  | A2EE0C9EDB |
-| 1180:0822 | 104d:9035 | Ricoh      | R5C822 SD/SDIO/MMC/MS/MSP... | 1     | sdhci_pci  | 4A6CA78BC0 |
-| 1180:0822 | 17aa:201d | Ricoh      | R5C822 SD/SDIO/MMC/MS/MSP... | 1     | sdhci_pci  | F08ACC6929 |
-| 1180:0822 | 17aa:382a | Ricoh      | R5C822 SD/SDIO/MMC/MS/MSP... | 1     | sdhci_pci  | 6B81593DE9 |
-| 1180:0822 | 1b0a:200d | Ricoh      | R5C822 SD/SDIO/MMC/MS/MSP... | 1     | sdhci_pci  | 50D37406DF |
-| 1180:e822 | 103c:1471 | Ricoh      | MMC/SD Host Controller       | 1     | sdhci_pci  | C1F086E90C |
-| 1180:e822 | 104d:9081 | Ricoh      | MMC/SD Host Controller       | 1     | sdhci_pci  | A69FA2363E |
-| 1180:e822 | 1179:ff40 | Ricoh      | MMC/SD Host Controller       | 1     | sdhci_pci  | FEAE098542 |
-| 1180:e823 | 104d:9081 | Ricoh      | PCIe SDXC/MMC Host Contro... | 1     | sdhci_pci  | D8A67B4A30 |
-| 1180:e823 | e823:1180 | Ricoh      | PCIe SDXC/MMC Host Contro... | 1     | sdhci_pci  | 661877D8C9 |
-| 1217:7120 | 1028:0273 | O2 Micro   | Integrated MMC/SD Controller | 1     | sdhci_pci  | EF1C0E0F2E |
-| 1217:7120 | 10cf:13c6 | O2 Micro   | Integrated MMC/SD Controller | 1     | sdhci_pci  | AC880C0076 |
-| 1217:7120 | 1179:ff50 | O2 Micro   | Integrated MMC/SD Controller | 1     | sdhci_pci  | 71FD81DF30 |
-| 1217:8221 | 1028:0532 | O2 Micro   | OZ600FJ0/OZ900FJ0/OZ600FJ... | 1     | sdhci_pci  | 696E95FC08 |
-| 1217:8221 | 1028:0533 | O2 Micro   | OZ600FJ0/OZ900FJ0/OZ600FJ... | 1     | sdhci_pci  | ABE1869A95 |
-| 1217:8221 | 1028:0549 | O2 Micro   | OZ600FJ0/OZ900FJ0/OZ600FJ... | 1     | sdhci_pci  | BEE421A110 |
-| 1217:8221 | 1028:057d | O2 Micro   | OZ600FJ0/OZ900FJ0/OZ600FJ... | 1     | sdhci_pci  | 563AD840B0 |
-| 1217:8320 | 1028:04a3 | O2 Micro   | OZ600RJ1/OZ900RJ1 SD/MMC ... | 1     | sdhci_pci  | 04FB75B4EA |
-| 1217:8320 | 1028:04a4 | O2 Micro   | OZ600RJ1/OZ900RJ1 SD/MMC ... | 1     | sdhci_pci  | B6C974B8BD |
-| 1217:8321 | 1028:053e | O2 Micro   | OZ600RJ0/OZ900RJ0/OZ600RJ... | 1     | sdhci_pci  | A7761EE829 |
-| 1217:8520 | 1028:05e0 | O2 Micro   | SD/MMC Card Reader Contro... | 1     | sdhci_pci  | 6CB6695DC5 |
-| 1217:8520 | 1028:062c | O2 Micro   | SD/MMC Card Reader Contro... | 1     | sdhci_pci  | DCA8BA9D37 |
-| 1217:8520 | 1028:062e | O2 Micro   | SD/MMC Card Reader Contro... | 1     | sdhci_pci  | 0A8E2A2E29 |
-| 1217:8520 | 10f7:8338 | O2 Micro   | SD/MMC Card Reader Contro... | 1     | sdhci_pci  | 761D21F21A |
-| 1217:8520 | 17aa:3800 | O2 Micro   | SD/MMC Card Reader Contro... | 1     | sdhci_pci  | 1CDBAD9DFE |
-| 1217:8621 | 1028:066b | O2 Micro   | SD/MMC Card Reader Contro... | 1     | sdhci_pci  | 1A49B7921A |
-| 1217:8621 | 10cf:1942 | O2 Micro   | SD/MMC Card Reader Contro... | 1     | sdhci_pci  | 845C584693 |
-| 1217:8621 | 17aa:222c | O2 Micro   | SD/MMC Card Reader Contro... | 1     | sdhci_pci  | BF2B792B64 |
-| 1217:8621 | 17aa:3803 | O2 Micro   | SD/MMC Card Reader Contro... | 1     | sdhci_pci  | CD2AD2800E |
-| 1217:8621 | 17aa:5068 | O2 Micro   | SD/MMC Card Reader Contro... | 1     | sdhci_pci  | 503378CAC9 |
-| 1217:8621 | 17aa:507c | O2 Micro   | SD/MMC Card Reader Contro... | 1     | sdhci_pci  | 2DE4BC8337 |
-| 14e4:16bc | 1025:0504 | Broadcom   | BCM57765/57785 SDXC/MMC C... | 1     | sdhci_pci  | 1ADCD64182 |
-| 14e4:16bc | 1025:0647 | Broadcom   | BCM57765/57785 SDXC/MMC C... | 1     | sdhci_pci  | BBBC827581 |
-| 14e4:16bc | 1025:0775 | Broadcom   | BCM57765/57785 SDXC/MMC C... | 1     | sdhci_pci  | 10BFF44534 |
-| 14e4:16bc | 14e4:96bc | Broadcom   | BCM57765/57785 SDXC/MMC C... | 1     | sdhci_pci  | 1B0CC7506E |
-| 17a0:9750 | 17aa:5082 | Genesys... | GL9750 SD Host Controller    | 1     | sdhci_pci  | BD88655975 |
-| 17a0:9750 | 17aa:5125 | Genesys... | GL9750 SD Host Controller    | 1     | sdhci_pci  | 7A706E46DE |
-| 197b:2381 | 1028:02b0 | JMicron... | Standard SD Host Controller  | 1     | sdhci_pci  | 047950E61B |
-| 197b:2381 | 103c:30f7 | JMicron... | Standard SD Host Controller  | 1     | sdhci_pci  | 27F912E4E4 |
-| 197b:2381 | 1043:1a07 | JMicron... | Standard SD Host Controller  | 1     | sdhci_pci  | D5D32F1334 |
-| 197b:2381 | 1558:2381 | JMicron... | Standard SD Host Controller  | 1     | sdhci_pci  | 81C48D156A |
-| 197b:2381 | 1631:0193 | JMicron... | Standard SD Host Controller  | 1     | sdhci_pci  | 4D9EB84DAA |
-| 197b:2391 | 103c:161c | JMicron... | Standard SD Host Controller  | 1     | sdhci_pci  | ADA1119026 |
-| 197b:2391 | 103c:162a | JMicron... | Standard SD Host Controller  | 1     | sdhci_pci  | 5707FC27CE |
-| 197b:2391 | 103c:1631 | JMicron... | Standard SD Host Controller  | 1     | sdhci_pci  | C240E3A1EA |
-| 197b:2391 | 103c:167c | JMicron... | Standard SD Host Controller  | 1     | sdhci_pci  | 4FB8582DC1 |
-| 197b:2391 | 103c:17df | JMicron... | Standard SD Host Controller  | 1     | sdhci_pci  | C559882754 |
-| 197b:2391 | 103c:18df | JMicron... | Standard SD Host Controller  | 1     | sdhci_pci  | E1837571DF |
-| 8086:31cc | 8086:7270 | Intel      | Celeron/Pentium Silver Pr... | 1     | sdhci_pci  | BA18B9BF80 |
-| 8086:31d0 | 8086:7270 | Intel      | SD Host Controller           | 1     | sdhci_pci  | BA18B9BF80 |
-| 8086:5acc | 1025:1084 | Intel      | Celeron N3350/Pentium N42... | 1     | sdhci_pci  | 045CF81F15 |
-| 8086:5acc | 1025:110c | Intel      | Celeron N3350/Pentium N42... | 1     | sdhci_pci  | 62C87CF194 |
+| ID        | Subsystem | MFG              | Name                                 | Count | Driver     | Probe |
+|-----------|-----------|------------------|--------------------------------------|-------|------------|-------|
+| 14e4:16bc |           | Broadcom         | BCM57765/57785 SDXC/MMC Card Reader  | 11    | sdhci_pci  | [AA484C30A8](<Notebook/Apple/MacBookPro8/MacBookPro8,1/83A908F15226/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/AA484C30A8>) |
+| 1180:0822 | 17aa:20c8 | Ricoh            | R5C822 SD/SDIO/MMC/MS/MSPro Host ... | 9     | sdhci_pci  | [9CC0F26F6F](<Notebook/Lenovo/ThinkPad/ThinkPad R61 8935WCS/1AC798DB7C89/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/9CC0F26F6F>) |
+| 197b:2381 | 17aa:212d | JMicron Techn... | Standard SD Host Controller          | 6     | sdhci_pci  | [B0A9802877](<Notebook/Lenovo/ThinkPad/ThinkPad SL510 2847R96/16806C85881A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/B0A9802877>) |
+| 1180:e822 | 1028:040a | Ricoh            | MMC/SD Host Controller               | 4     | sdhci_pci  | [8C904D84E0](<Notebook/Dell/Latitude/Latitude E6410/D86C1197F0AC/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/8C904D84E0>) |
+| 1180:e822 | 1179:0001 | Ricoh            | MMC/SD Host Controller               | 4     | sdhci_pci  | [2AC9BEA1E6](<Notebook/Toshiba/PORTEGE/PORTEGE M780/9BA4726CBC1C/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/2AC9BEA1E6>) |
+| 1217:8221 | 1028:0493 | O2 Micro         | OZ600FJ0/OZ900FJ0/OZ600FJS SD/MMC... | 4     | sdhci_pci  | [2E8B431CC6](<Notebook/Dell/Latitude/Latitude E6420/6637B5C9AD24/GHOSTBSD-20.04.02/13.0-STABLE/AMD64/2E8B431CC6>) |
+| 1217:8221 | 1028:0534 | O2 Micro         | OZ600FJ0/OZ900FJ0/OZ600FJS SD/MMC... | 4     | sdhci_pci  | [FDDE41404D](<Notebook/Dell/Latitude/Latitude E6430/9A4F06581327/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/FDDE41404D>) |
+| 1217:8520 | 1028:05be | O2 Micro         | SD/MMC Card Reader Controller        | 4     | sdhci_pci  | [E0576DD008](<Notebook/Dell/Latitude/Latitude E6540/47352B0D75D6/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E0576DD008>) |
+| 1217:8520 | 1028:05cc | O2 Micro         | SD/MMC Card Reader Controller        | 4     | sdhci_pci  | [1847C0AADB](<Notebook/Dell/Precision/Precision M4800/534E5DEB811F/OPNSENSE-21.1.3/12.1-RELEASE-P14-HBSD/AMD64/1847C0AADB>) |
+| 1217:8621 | 17aa:5068 | O2 Micro         | SD/MMC Card Reader Controller        | 4     | sdhci_pci  | [BE311B6A34](<Notebook/Lenovo/ThinkPad/ThinkPad E580 20KSCTO1WW/FE16B0524669/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/BE311B6A34>) |
+| 14e4:16bc | 1025:0504 | Broadcom         | BCM57765/57785 SDXC/MMC Card Reader  | 4     | sdhci_pci  | [BD22FC8A49](<Notebook/Acer/Aspire/Aspire 5750G/1FF59E502D89/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/BD22FC8A49>) |
+| 1180:0822 | 1028:024d | Ricoh            | R5C822 SD/SDIO/MMC/MS/MSPro Host ... | 3     | sdhci_pci  | [FDB3DE3036](<Notebook/Dell/Latitude/Latitude E4300/B023391CA6F2/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/FDB3DE3036>) |
+| 1217:8321 | 1028:049b | O2 Micro         | OZ600RJ0/OZ900RJ0/OZ600RJS SD/MMC... | 3     | sdhci_pci  | [1ED3FF35F6](<Notebook/Dell/Latitude/Latitude E5420/7F50D3A16CDB/HELLOSYSTEM-0.5.0/13.0-RELEASE/AMD64/1ED3FF35F6>) |
+| 1217:8520 | 1028:062e | O2 Micro         | SD/MMC Card Reader Controller        | 3     | sdhci_pci  | [8A3867F171](<Notebook/Dell/Latitude/Latitude E7450/384980EB885D/FREEBSD-13.0-P6/13.0-RELEASE-P6/AMD64/8A3867F171>) |
+| 1217:8621 | 17aa:5072 | O2 Micro         | SD/MMC Card Reader Controller        | 3     | sdhci_pci  | [98072B8DB6](<Notebook/Lenovo/ThinkPad/ThinkPad E590 20NB0012RT/F14FDAEA6645/FREEBSD-13.0-P3/13.0-RELEASE-P3/AMD64/98072B8DB6>) |
+| 14e4:16bc | 14e4:96bc | Broadcom         | BCM57765/57785 SDXC/MMC Card Reader  | 3     | sdhci_pci  | [64CCF1E6A0](<Notebook/Apple/MacBookPro10/MacBookPro10,1/60ED6011F0FC/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/64CCF1E6A0>) |
+| 17a0:9750 | 17aa:2279 | Genesys Logic    | GL9750 SD Host Controller            | 3     | sdhci_pci  | [4147A5824D](<Notebook/Lenovo/ThinkPad/ThinkPad T590 20N4CTO1WW/3C494D1552EB/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/4147A5824D>) |
+| 8086:5aca | 8086:7270 | Intel            | Celeron N3350/Pentium N4200/Atom ... | 3     | sdhci_pci  | [35869FF0DB](<Notebook/Jumper/EZbook/EZbook/BCAD2CB6073B/GHOSTBSD-22.01.12/13.0-STABLE/AMD64/35869FF0DB>) |
+| 8086:5acc | 8086:7270 | Intel            | Celeron N3350/Pentium N4200/Atom ... | 3     | sdhci_pci  | [35869FF0DB](<Notebook/Jumper/EZbook/EZbook/BCAD2CB6073B/GHOSTBSD-22.01.12/13.0-STABLE/AMD64/35869FF0DB>) |
+| 8086:9d2b | 8086:9d2b | Intel            | Skylake-U/Y SCC: eMMC                | 3     | sdhci_pci  | [4CE05F93A8](<Notebook/Chuwi/MiniBook/MiniBook/7C143B97B52B/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/4CE05F93A8>) |
+| 1022:7813 | 1025:0865 | AMD              | FCH SD Flash Controller              | 2     | sdhci_pci  | [5306253276](<Notebook/Acer/Aspire/Aspire E5-521G/6C9872FCA376/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/5306253276>) |
+| 1022:7813 | 17aa:3801 | AMD              | FCH SD Flash Controller              | 2     | sdhci_pci  | [1D227A9CD2](<Notebook/Lenovo/G50-45/G50-45 80E3/E53F1DE394A5/NOMADBSD-1.3.2/12.1-RELEASE-P6/AMD64/1D227A9CD2>) |
+| 1180:0822 | 1043:1877 | Ricoh            | R5C822 SD/SDIO/MMC/MS/MSPro Host ... | 2     | sdhci_pci  | [883DED6CB1](<Notebook/ASUSTek Computer/N50/N50Vc/77A5AA89F908/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/883DED6CB1>) |
+| 1180:e823 | 10f7:8338 | Ricoh            | PCIe SDXC/MMC Host Controller        | 2     | sdhci_pci  | [04A42812BB](<Notebook/Panasonic/CF-19/CF-19AHNC8FN/4A900A110949/GHOSTBSD-20.04.02/12.2-STABLE/AMD64/04A42812BB>) |
+| 1217:7120 | 1179:ff50 | O2 Micro         | Integrated MMC/SD Controller         | 2     | sdhci_pci  | [13E4AA7026](<Notebook/Toshiba/Satellite/Satellite P300/AFEE934437AF/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/13E4AA7026>) |
+| 1217:8320 | 1028:04a3 | O2 Micro         | OZ600RJ1/OZ900RJ1 SD/MMC Card Rea... | 2     | sdhci_pci  | [2F848FD2C0](<Notebook/Dell/Precision/Precision M4600/B6B9C54EEBB2/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/2F848FD2C0>) |
+| 1217:8520 | 1028:05bd | O2 Micro         | SD/MMC Card Reader Controller        | 2     | sdhci_pci  | [8FA2C1F5C4](<Notebook/Dell/Latitude/Latitude E6440/90F4D14BB79B/FREEBSD-13.0-P2/13.0-RELEASE-P1/AMD64/8FA2C1F5C4>) |
+| 1217:8520 | 1028:05cb | O2 Micro         | SD/MMC Card Reader Controller        | 2     | sdhci_pci  | [6EC8FD788A](<Notebook/Dell/Latitude/Latitude E7440/CB2F8814A9AD/FREEBSD-12.2-P5/12.2-RELEASE-P4/AMD64/6EC8FD788A>) |
+| 1217:8520 | 1028:05de | O2 Micro         | SD/MMC Card Reader Controller        | 2     | sdhci_pci  | [B0314F9200](<Notebook/Dell/Latitude/Latitude E5440/8E86E40B0A52/FREEBSD-13.0-P6/13.0-RELEASE-P4/AMD64/B0314F9200>) |
+| 1217:8621 | 1028:066b | O2 Micro         | SD/MMC Card Reader Controller        | 2     | sdhci_pci  | [328F9E8D94](<Notebook/Dell/Venue/Venue 11 Pro 7140/29077DD313A2/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/328F9E8D94>) |
+| 14e4:16bc | 1025:0647 | Broadcom         | BCM57765/57785 SDXC/MMC Card Reader  | 2     | sdhci_pci  | [A5AA8AA49A](<Notebook/Gateway/NE56/NE56R/263D8B710681/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/A5AA8AA49A>) |
+| 14e4:16bc | 1025:0742 | Broadcom         | BCM57765/57785 SDXC/MMC Card Reader  | 2     | sdhci_pci  | [D175137636](<Notebook/Acer/V5/V5-131/AD483E0D64C3/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/D175137636>) |
+| 14e4:16bc | 1025:0775 | Broadcom         | BCM57765/57785 SDXC/MMC Card Reader  | 2     | sdhci_pci  | [851EEA349F](<Notebook/Packard Bell/EasyNote/EasyNote TE69HW/E461B743FFCE/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/851EEA349F>) |
+| 17a0:9750 | 103c:8786 | Genesys Logic    | GL9750 SD Host Controller            | 2     | sdhci_pci  | [19F307FF6D](<Notebook/Hewlett-Packard/OMEN/OMEN Laptop 15-en0xxx/99830226F687/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/19F307FF6D>) |
+| 197b:2381 | 1043:1a07 | JMicron Techn... | Standard SD Host Controller          | 2     | sdhci_pci  | [92B975763F](<Notebook/ASUSTek Computer/K52/K52Jc/DB01933C6182/HELLOSYSTEM-0.7.0/12.2-RELEASE-P7/AMD64/92B975763F>) |
+| 197b:2381 | 104d:9075 | JMicron Techn... | Standard SD Host Controller          | 2     | sdhci_pci  | [30BB4FC23C](<Notebook/Sony/VPCM13/VPCM13M1R/5AB92F9110B8/NOMADBSD-1.3.2/12.1-RELEASE-P6/I386/30BB4FC23C>) |
+| 197b:2391 | 103c:17a7 | JMicron Techn... | Standard SD Host Controller          | 2     | sdhci_pci  | [462FC329A9](<Notebook/Hewlett-Packard/EliteBook/EliteBook 8570p/8F084339058D/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/462FC329A9>) |
+| 197b:2391 | 103c:18df | JMicron Techn... | Standard SD Host Controller          | 2     | sdhci_pci  | [E2CC942E3E](<Notebook/Hewlett-Packard/EliteBook/EliteBook Folio 9470m/CDDE53EE5395/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E2CC942E3E>) |
+| 8086:2296 | 17aa:38cc | Intel            | Atom/Celeron/Pentium Processor x5... | 2     | sdhci_pci  | [2F90D5C2BD](<Notebook/Lenovo/IdeaPad/IdeaPad 110S-11IBR 80WG/1319E554F9F6/HELLOSYSTEM-0.7.0/13.0-RELEASE-P7/AMD64/2F90D5C2BD>) |
+| 8086:31cc | 8086:7270 | Intel            | Celeron/Pentium Silver Processor ... | 2     | sdhci_pci  | [8D0AC5E551](<Notebook/GPD/MicroPC/MicroPC/64AB0B3FC408/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/8D0AC5E551>) |
+| 8086:5acc | 1025:1084 | Intel            | Celeron N3350/Pentium N4200/Atom ... | 2     | sdhci_pci  | [A9D2458DE5](<Notebook/Acer/Aspire/Aspire ES1-533/1C1C1E5339E5/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/A9D2458DE5>) |
+| 8086:5ad0 | 8086:7270 | Intel            | Celeron N3350/Pentium N4200/Atom ... | 2     | sdhci_pci  | [35869FF0DB](<Notebook/Jumper/EZbook/EZbook/BCAD2CB6073B/GHOSTBSD-22.01.12/13.0-STABLE/AMD64/35869FF0DB>) |
+| 8086:9d2d | 8086:9d2d | Intel            | Sunrise Point-LP Secure Digital I... | 2     | sdhci_pci  | [4CE05F93A8](<Notebook/Chuwi/MiniBook/MiniBook/7C143B97B52B/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/4CE05F93A8>) |
+| 1022:7806 | 1022:7806 | AMD              | FCH SD Flash Controller              | 1     | sdhci_pci  | [5188A12B26](<Notebook/Samsung Electronics/305E4/305E4A-305E5A-305E7A/FE1FAD8ABD1C/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/5188A12B26>) |
+| 1022:7813 | 1022:7813 | AMD              | FCH SD Flash Controller              | 1     | sdhci_pci  | [699E8FDF32](<Notebook/Others/Others/Others/5B920EC7C919/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/699E8FDF32>) |
+| 1022:7813 | 1025:080d | AMD              | FCH SD Flash Controller              | 1     | sdhci_pci  | [CE0C079FD5](<Notebook/Acer/Aspire/Aspire V5-122/2207355AEB3E/NOMADBSD-1.3.2/12.1-RELEASE-P6/AMD64/CE0C079FD5>) |
+| 1022:7813 | 103c:2178 | AMD              | FCH SD Flash Controller              | 1     | sdhci_pci  | [5300A49632](<Notebook/Hewlett-Packard/Pavilion/Pavilion 11/38CF7A2136EB/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/5300A49632>) |
+| 1022:7813 | 103c:22cd | AMD              | FCH SD Flash Controller              | 1     | sdhci_pci  | [861BDC647D](<Notebook/Hewlett-Packard/255/255 G3/AC50D241818E/FREEBSD-12.2-P4/12.2-RELEASE-P4/AMD64/861BDC647D>) |
+| 1022:7813 | 103c:8224 | AMD              | FCH SD Flash Controller              | 1     | sdhci_pci  | [1758596E26](<Notebook/Hewlett-Packard/Notebook/Notebook/A739DC61372B/NOMADBSD-5806F915/13.0-RELEASE/AMD64/1758596E26>) |
+| 1022:7813 | 1043:1360 | AMD              | FCH SD Flash Controller              | 1     | sdhci_pci  | [C5751C736C](<Notebook/ASUSTek Computer/X540/X540YA/8E17C9D0CCD8/NOMADBSD-5806F915/13.0-RELEASE/AMD64/C5751C736C>) |
+| 1022:7906 | 1043:1fe0 | AMD              | FCH SD Flash Controller              | 1     | sdhci_pci  | [2FCB818B78](<Notebook/ASUSTek Computer/X441/X441BA/43E8CD446B6C/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/2FCB818B78>) |
+| 104c:803c | 1025:011f | Texas Instrum... | PCIxx12 SDA Standard Compliant SD... | 1     | sdhci_pci  | [5D6A8A51D0](<Notebook/Acer/Extensa/Extensa 5220/D9CE76F90EBD/FREEBSD-12.2-P3/12.2-RELEASE-P3/AMD64/5D6A8A51D0>) |
+| 104c:803c | 1028:0252 | Texas Instrum... | PCIxx12 SDA Standard Compliant SD... | 1     | sdhci_pci  | [19456100CF](<Notebook/Dell/Latitude/Latitude XT2/E54430436D1B/FREEBSD-12.1/12.1-RELEASE/AMD64/19456100CF>) |
+| 104c:803c | 103c:30aa | Texas Instrum... | PCIxx12 SDA Standard Compliant SD... | 1     | sdhci_pci  | [256E0AE719](<Notebook/Hewlett-Packard/Compaq/Compaq nc6320/BA8F7F88D1FF/FREEBSD-12.1-P4/12.1-RELEASE-P3/AMD64/256E0AE719>) |
+| 104c:803c | 1179:ff00 | Texas Instrum... | PCIxx12 SDA Standard Compliant SD... | 1     | sdhci_pci  | [E6E0A1294C](<Notebook/Toshiba/Satellite/Satellite M100/9A0C6DBE0166/FREEBSD-12.2-STABLE/12.2-STABLE/I386/E6E0A1294C>) |
+| 10ec:5209 | 1028:048f | Realtek Semic... | RTS5209 PCI Express Card Reader      | 1     | sdhci_pci  | [67A336FAC6](<Notebook/Alienware/M18/M18xR1/7BD063FE9CC3/NOMADBSD-1.4-RC1/12.2-RELEASE-P2/AMD64/67A336FAC6>) |
+| 10ec:5209 | 1028:05ac | Realtek Semic... | RTS5209 PCI Express Card Reader      | 1     | sdhci_pci  | [0E0CDF952A](<Notebook/Alienware/14/14/E2FE4EC2EDCD/FREEBSD-11.4-P8/11.4-RELEASE-P8/AMD64/0E0CDF952A>) |
+| 10ec:5209 | 1028:05ad | Realtek Semic... | RTS5209 PCI Express Card Reader      | 1     | sdhci_pci  | [AFF2BE63CD](<Notebook/Alienware/17/17/D91B1F6D4765/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/AFF2BE63CD>) |
+| 10ec:5209 | 103c:1658 | Realtek Semic... | RTS5209 PCI Express Card Reader      | 1     | sdhci_pci  | [DEE0853F4B](<Notebook/Hewlett-Packard/Pavilion/Pavilion dv6/05421244C9E8/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/DEE0853F4B>) |
+| 10ec:5209 | 10ec:5209 | Realtek Semic... | RTS5209 PCI Express Card Reader      | 1     |            | [FAE71F7E35](<Notebook/Acer/TravelMate/TravelMate 8481TG/5331FFEC26B3/FREEBSD-13.0-P6/13.0-RELEASE-P6/AMD64/FAE71F7E35>) |
+| 10ec:5209 | 17aa:21ee | Realtek Semic... | RTS5209 PCI Express Card Reader      | 1     |            | [6A96E2C5B1](<Notebook/Lenovo/ThinkPad/ThinkPad Edge E320 1298RJ1/629CCED8A636/FREEBSD-13.0/13.0-RELEASE/AMD64/6A96E2C5B1>) |
+| 1180:0822 | 1014:0556 | Ricoh            | R5C822 SD/SDIO/MMC/MS/MSPro Host ... | 1     | sdhci_pci  | [63A34DC807](<Notebook/IBM/ThinkPad/ThinkPad X41 2525FAG/E1E7F00D3C2A/FREEBSD-13.0-P4/13.0-RELEASE-P4/I386/63A34DC807>) |
+| 1180:0822 | 1028:01bd | Ricoh            | R5C822 SD/SDIO/MMC/MS/MSPro Host ... | 1     | sdhci_pci  | [7F814A7E8D](<Notebook/Dell/Inspiron/Inspiron MM061/75FBCB419A60/FREEBSD-12.0/12.0-RELEASE/AMD64/7F814A7E8D>) |
+| 1180:0822 | 1028:01f5 | Ricoh            | R5C822 SD/SDIO/MMC/MS/MSPro Host ... | 1     | sdhci_pci  | [9EE3E7CBC2](<Notebook/Dell/Inspiron/Inspiron 1501/4913C465B93F/FREEBSD-12.1/12.1-RELEASE/AMD64/9EE3E7CBC2>) |
+| 1180:0822 | 1028:022f | Ricoh            | R5C822 SD/SDIO/MMC/MS/MSPro Host ... | 1     | sdhci_pci  | [D08EA3542E](<Notebook/Dell/Inspiron/Inspiron 1525/5F154BEB509E/FREEBSD-12.1-P7/12.1-RELEASE-P7/AMD64/D08EA3542E>) |
+| 1180:0822 | 1028:024f | Ricoh            | R5C822 SD/SDIO/MMC/MS/MSPro Host ... | 1     | sdhci_pci  | [D25DACC162](<Notebook/Dell/Latitude/Latitude E6500/2081BE9FC0C6/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/D25DACC162>) |
+| 1180:0822 | 1028:0262 | Ricoh            | R5C822 SD/SDIO/MMC/MS/MSPro Host ... | 1     | sdhci_pci  | [54854343E4](<Notebook/Dell/Latitude/Latitude E5400/9B1EFA5A95CE/FREEBSD-12.1-STABLE/12.1-STABLE/AMD64/54854343E4>) |
+| 1180:0822 | 1028:029f | Ricoh            | R5C822 SD/SDIO/MMC/MS/MSPro Host ... | 1     | sdhci_pci  | [A4C1D361EB](<Notebook/Dell/Studio/Studio 1537/37935D63DD2B/FREEBSD-12.2-P3/12.2-RELEASE-P3/AMD64/A4C1D361EB>) |
+| 1180:0822 | 1028:02a2 | Ricoh            | R5C822 SD/SDIO/MMC/MS/MSPro Host ... | 1     | sdhci_pci  | [0B60C1CB25](<Notebook/Alienware/M15/M15x/CE2290438456/FREEBSD-13.0/13.0-RELEASE/AMD64/0B60C1CB25>) |
+| 1180:0822 | 103c:1521 | Ricoh            | R5C822 SD/SDIO/MMC/MS/MSPro Host ... | 1     | sdhci_pci  | [78D9A31074](<Notebook/Hewlett-Packard/EliteBook/EliteBook 8540p/C7754EB31D05/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/78D9A31074>) |
+| 1180:0822 | 103c:172a | Ricoh            | R5C822 SD/SDIO/MMC/MS/MSPro Host ... | 1     | sdhci_pci  | [7968C7D2DD](<Notebook/Hewlett-Packard/EliteBook/EliteBook 8440p/D398076563B5/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/7968C7D2DD>) |
+| 1180:0822 | 103c:30bb | Ricoh            | R5C822 SD/SDIO/MMC/MS/MSPro Host ... | 1     | sdhci_pci  | [733C5EDB74](<Notebook/Hewlett-Packard/Pavilion/Pavilion dv6000/124DCA351C5C/NOMADBSD-1.4/12.2-RELEASE-P4/AMD64/733C5EDB74>) |
+| 1180:0822 | 103c:30cc | Ricoh            | R5C822 SD/SDIO/MMC/MS/MSPro Host ... | 1     | sdhci_pci  | [316FFB0740](<Notebook/Hewlett-Packard/Pavilion/Pavilion dv6500/32D4B6005261/FREEBSD-12.1-P8/12.1-RELEASE-P8/AMD64/316FFB0740>) |
+| 1180:0822 | 103c:30dc | Ricoh            | R5C822 SD/SDIO/MMC/MS/MSPro Host ... | 1     | sdhci_pci  | [D8FB34DE12](<Notebook/Hewlett-Packard/EliteBook/EliteBook 6930p/A87AADC786B8/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/D8FB34DE12>) |
+| 1180:0822 | 103c:30e1 | Ricoh            | R5C822 SD/SDIO/MMC/MS/MSPro Host ... | 1     | sdhci_pci  | [1FD927E2CD](<Notebook/Hewlett-Packard/EliteBook/EliteBook 2530p/59381631AD59/FREEBSD-12.2-P2/12.2-RELEASE-P1/AMD64/1FD927E2CD>) |
+| 1180:0822 | 1043:1017 | Ricoh            | R5C822 SD/SDIO/MMC/MS/MSPro Host ... | 1     | sdhci_pci  | [1932B06FEE](<Notebook/ASUSTek Computer/X58/X58LE/DA0A971CACF7/OPNSENSE-21.1.8/12.1-RELEASE-P19-HBSD/AMD64/1932B06FEE>) |
+| 1180:0822 | 1043:1197 | Ricoh            | R5C822 SD/SDIO/MMC/MS/MSPro Host ... | 1     | sdhci_pci  | [2962E2B02F](<Notebook/ASUSTek Computer/A/A9T/CD438D683462/FREEBSD-13.0-P7/13.0-RELEASE-P6/I386/2962E2B02F>) |
+| 1180:0822 | 1043:15d7 | Ricoh            | R5C822 SD/SDIO/MMC/MS/MSPro Host ... | 1     | sdhci_pci  | [593C12AA06](<Notebook/ASUSTek Computer/G1/G1S/7B906B209C35/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/593C12AA06>) |
+| 1180:0822 | 1043:17e7 | Ricoh            | R5C822 SD/SDIO/MMC/MS/MSPro Host ... | 1     | sdhci_pci  | [936A577D1A](<Notebook/ASUSTek Computer/M51/M51Sr/7A36C31A2F7E/NOMADBSD-5806F915/13.0-RELEASE/AMD64/936A577D1A>) |
+| 1180:0822 | 104d:9035 | Ricoh            | R5C822 SD/SDIO/MMC/MS/MSPro Host ... | 1     | sdhci_pci  | [4A6CA78BC0](<Notebook/Sony/VGN-FW290/VGN-FW290J/6762902751FD/FREEBSD-12.2-P5/12.2-RELEASE-P4/AMD64/4A6CA78BC0>) |
+| 1180:0822 | 1631:c109 | Ricoh            | R5C822 SD/SDIO/MMC/MS/MSPro Host ... | 1     | sdhci_pci  | [235D60060D](<Notebook/Packard Bell/EasyNote_MX61/EasyNote_MX61-B-038/01DB7104A4E5/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/235D60060D>) |
+| 1180:0822 | 17aa:201d | Ricoh            | R5C822 SD/SDIO/MMC/MS/MSPro Host ... | 1     | sdhci_pci  | [F08ACC6929](<Notebook/Lenovo/ThinkPad/ThinkPad X60 1707YF8/33769D077052/FREEBSD-12.1-P5/12.1-RELEASE-P5/AMD64/F08ACC6929>) |
+| 1180:0822 | 17aa:210a | Ricoh            | R5C822 SD/SDIO/MMC/MS/MSPro Host ... | 1     | sdhci_pci  | [AA10433581](<Notebook/Lenovo/ThinkPad/ThinkPad SL 2746M3C/94E9ECCC5727/HELLOSYSTEM-0.6.0/13.0-RELEASE/AMD64/AA10433581>) |
+| 1180:0822 | 17aa:382a | Ricoh            | R5C822 SD/SDIO/MMC/MS/MSPro Host ... | 1     | sdhci_pci  | [6B81593DE9](<Notebook/Lenovo/3000/3000 N200 0769AP2/23BB9B88D57A/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/6B81593DE9>) |
+| 1180:0822 | 1b0a:200d | Ricoh            | R5C822 SD/SDIO/MMC/MS/MSPro Host ... | 1     | sdhci_pci  | [50D37406DF](<Notebook/Pegatron/T12/T12Ah/3A7D355EEBE4/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/50D37406DF>) |
+| 1180:e822 |           | Ricoh            | MMC/SD Host Controller               | 1     | sdhci_pci  | [086F304F6D](<Notebook/Lenovo/ThinkPad/ThinkPad T410 2537BN8/4A58F0F69086/OPNSENSE-22.1.2/13.0-STABLE/AMD64/086F304F6D>) |
+| 1180:e822 | 1028:0410 | Ricoh            | MMC/SD Host Controller               | 1     | sdhci_pci  | [BA69F80B7F](<Notebook/Dell/Latitude/Latitude E4310/1675DDA13BC4/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/BA69F80B7F>) |
+| 1180:e822 | 1028:0413 | Ricoh            | MMC/SD Host Controller               | 1     | sdhci_pci  | [C2BA752AB5](<Notebook/Dell/Studio/Studio 1558/A5AAC44BFAED/FREEBSD-13.0-P2/13.0-RELEASE-P1/AMD64/C2BA752AB5>) |
+| 1180:e822 | 1028:0428 | Ricoh            | MMC/SD Host Controller               | 1     | sdhci_pci  | [5C6B94DF97](<Notebook/Dell/Latitude/Latitude E5510/9E3287D69794/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/5C6B94DF97>) |
+| 1180:e822 | 103c:1471 | Ricoh            | MMC/SD Host Controller               | 1     | sdhci_pci  | [C1F086E90C](<Notebook/Hewlett-Packard/ProBook/ProBook 6550b/55EC19B2A558/FREEBSD-13.0-CURRENT/13.0-CURRENT/AMD64/C1F086E90C>) |
+| 1180:e822 | 104d:9071 | Ricoh            | MMC/SD Host Controller               | 1     | sdhci_pci  | [04C5EE02DA](<Notebook/Sony/VPCEB1/VPCEB1J1E/8B69077801C0/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/04C5EE02DA>) |
+| 1180:e822 | 104d:9081 | Ricoh            | MMC/SD Host Controller               | 1     | sdhci_pci  | [A69FA2363E](<Notebook/Sony/VPCCB17/VPCCB17FG/F5945D26A69C/HARDENEDBSD-13.0-CURRENT-HBSD/12.2-STABLE/AMD64/A69FA2363E>) |
+| 1180:e822 | 10f7:8338 | Ricoh            | MMC/SD Host Controller               | 1     | sdhci_pci  | [D160186CFB](<Notebook/Panasonic/CF-F9/CF-F9KWHZZQ2/3E43A944DDC4/FREEBSD-13.0-P3/13.0-RELEASE-P3/AMD64/D160186CFB>) |
+| 1180:e822 | 1179:ff40 | Ricoh            | MMC/SD Host Controller               | 1     | sdhci_pci  | [FEAE098542](<Notebook/Toshiba/Satellite/Satellite U500/E9B6856B0677/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/FEAE098542>) |
+| 1180:e823 | 104d:9081 | Ricoh            | PCIe SDXC/MMC Host Controller        | 1     | sdhci_pci  | [D8A67B4A30](<Notebook/Sony/VPCCB17/VPCCB17FG/F5945D26A69C/GHOSTBSD-12.2-STABLE/12.2-STABLE/AMD64/D8A67B4A30>) |
+| 1180:e823 | 1bcf:a032 | Ricoh            | PCIe SDXC/MMC Host Controller        | 1     | sdhci_pci  | [1E23DA04C0](<Notebook/NEC Computers/PC-VK17/PC-VK17HBBCD/24904D7C5BF8/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/1E23DA04C0>) |
+| 1180:e823 | e823:1180 | Ricoh            | PCIe SDXC/MMC Host Controller        | 1     | sdhci_pci  | [661877D8C9](<Notebook/Lenovo/ThinkPad/ThinkPad T430s 23564Q4/8976F22BE822/FREEBSD-12.1-P10/12.1-RELEASE-P10/AMD64/661877D8C9>) |
+| 1217:7120 | 1028:0273 | O2 Micro         | Integrated MMC/SD Controller         | 1     | sdhci_pci  | [EF1C0E0F2E](<Notebook/Dell/Vostro/Vostro 1510/810B328E2D37/FREEBSD-12.2/12.2-RELEASE/AMD64/EF1C0E0F2E>) |
+| 1217:7120 | 10cf:13c6 | O2 Micro         | Integrated MMC/SD Controller         | 1     | sdhci_pci  | [AC880C0076](<Notebook/Fujitsu/FMVNF70/FMVNF70YJ/2CAC733E41C3/FREEBSD-12.2-P3/12.2-RELEASE-P3/AMD64/AC880C0076>) |
+| 1217:7120 | 1462:3ff3 | O2 Micro         | Integrated MMC/SD Controller         | 1     | sdhci_pci  | [7DB1345E97](<Notebook/LG Electronics/E500/E500-GP01A9/E9442CB525C8/FREEBSD-13.0-P2/13.0-RELEASE-P1/AMD64/7DB1345E97>) |
 
 ### Serial bus controller (PCI)
 
-| ID        | Subsystem | MFG        | Name                         | Count | Driver     | Probe      |
-|-----------|-----------|------------|------------------------------|-------|------------|------------|
-| 8086:9da4 | 17aa:2279 | Intel      | Cannon Point-LP SPI Contr... | 6     |            | 6311D603FF |
-| 8086:9de8 | 17aa:2279 | Intel      | Cannon Point-LP Serial IO... | 6     | ig4iic     | 6311D603FF |
-| 8086:9da4 | 17aa:5072 | Intel      | Cannon Point-LP SPI Contr... | 4     |            | 852A900303 |
-| 10de:1adb |           | Nvidia     | TU106 USB Type-C UCSI Con... | 3     |            | 0AC6AED43B |
-| 10ec:816c | 17aa:5122 | Realtek... | RTL8111xP IPMI interface     | 3     |            | 2F1BA02130 |
-| 8086:02a4 | 1028:09ec | Intel      | Comet Lake SPI (flash) Co... | 3     |            | 80D7BF959A |
-| 8086:02e8 | 1028:09ec | Intel      | Serial IO I2C Host Contro... | 3     | ig4iic     | 80D7BF959A |
-| 8086:02e9 | 1028:09ec | Intel      | Comet Lake Serial IO I2C ... | 3     | ig4iic     | 80D7BF959A |
-| 10de:1aed |           | Nvidia     | TU116 USB Type-C UCSI Con... | 2     |            | F9C37F2C8D |
-| 10de:1aed | 103c:8786 | Nvidia     | TU116 USB Type-C UCSI Con... | 2     |            | 19F307FF6D |
-| 10ec:816c | 17aa:5125 | Realtek... | RTL8111xP IPMI interface     | 2     |            | 7A706E46DE |
-| 10ec:816c | 17aa:5126 | Realtek... | RTL8111xP IPMI interface     | 2     |            | CD016E96EE |
-| 8086:02a4 | 1558:1401 | Intel      | Comet Lake SPI (flash) Co... | 2     |            | 0BD96EF663 |
-| 8086:02a4 | 17aa:5079 | Intel      | Comet Lake SPI (flash) Co... | 2     |            | 94D082C57C |
-| 8086:02c5 |           | Intel      | Comet Lake Serial IO I2C ... | 2     | ig4iic     | 0BD96EF663 |
-| 8086:02e8 | 1558:1401 | Intel      | Serial IO I2C Host Contro... | 2     | ig4iic     | 0BD96EF663 |
-| 8086:06a4 | 17aa:3827 | Intel      | Comet Lake PCH SPI Contro... | 2     |            | 2BE8CF963C |
-| 8086:06e8 | 17aa:3803 | Intel      | Comet Lake PCH Serial IO ... | 2     | ig4iic     | 2BE8CF963C |
-| 8086:06e9 | 17aa:3804 | Intel      | Comet Lake PCH Serial IO ... | 2     | ig4iic     | 2BE8CF963C |
-| 8086:34a4 | 1028:097a | Intel      | Ice Lake-LP SPI Controller   | 2     |            | C2D56FC369 |
-| 8086:34c5 | 1028:097a | Intel      | Ice Lake-LP Serial IO I2c... | 2     |            | C2D56FC369 |
-| 8086:34e8 | 1028:097a | Intel      | Ice Lake-LP Serial IO I2C... | 2     |            | C2D56FC369 |
-| 8086:34e9 | 1028:097a | Intel      | Ice Lake-LP Serial IO I2C... | 2     |            | C2D56FC369 |
-| 8086:9c61 | 1025:0a11 | Intel      | 8 Series I2C Controller #0   | 2     | ig4iic_pci | D15CAACA04 |
-| 8086:9c62 | 1025:0a11 | Intel      | 8 Series I2C Controller #1   | 2     | ig4iic_pci | D15CAACA04 |
-| 8086:9da4 | 1028:08b8 | Intel      | Cannon Point-LP SPI Contr... | 2     |            | B9D1F08BCF |
-| 8086:9da4 | 17aa:2292 | Intel      | Cannon Point-LP SPI Contr... | 2     |            | 4376ACCB5E |
-| 8086:9dc5 | 1028:08b8 | Intel      | Cannon Point-LP Serial IO... | 2     |            | B9D1F08BCF |
-| 8086:9de8 | 1028:08b8 | Intel      | Cannon Point-LP Serial IO... | 2     |            | B9D1F08BCF |
-| 8086:9de8 | 17aa:2292 | Intel      | Cannon Point-LP Serial IO... | 2     | ig4iic     | 4376ACCB5E |
-| 8086:9de9 | 1028:08b8 | Intel      | Cannon Point-LP Serial IO... | 2     |            | B9D1F08BCF |
-| 8086:9de9 | 17aa:2292 | Intel      | Cannon Point-LP Serial IO... | 2     | ig4iic     | 4376ACCB5E |
-| 8086:a324 | 17aa:2267 | Intel      | Cannon Lake PCH SPI Contr... | 2     |            | 045A80D8BC |
-| 8086:a324 | 17aa:3827 | Intel      | Cannon Lake PCH SPI Contr... | 2     |            | DCE3BA8C99 |
-| 8086:a368 | 17aa:2267 | Intel      | Cannon Lake PCH Serial IO... | 2     | ig4iic     | 045A80D8BC |
-| 8086:a368 | 17aa:3803 | Intel      | Cannon Lake PCH Serial IO... | 2     | ig4iic     | DCE3BA8C99 |
-| 8086:a369 | 17aa:3804 | Intel      | Cannon Lake PCH Serial IO... | 2     | ig4iic     | DCE3BA8C99 |
-| 10de:1ad9 | 1462:12b8 | Nvidia     | TU104 USB Type-C UCSI Con... | 1     |            | A40E426983 |
-| 10de:1ad9 | 1462:12bc | Nvidia     | TU104 USB Type-C UCSI Con... | 1     |            | FEA3CDB5D1 |
-| 10de:1ad9 | 17aa:22b8 | Nvidia     | TU104 USB Type-C UCSI Con... | 1     |            | 342E914968 |
-| 10de:1adb | 1028:09f3 | Nvidia     | TU106 USB Type-C UCSI Con... | 1     |            | A1C2EAEE5F |
-| 10de:1aed | 17aa:3f8e | Nvidia     | TU116 USB Type-C UCSI Con... | 1     |            | 2BE8CF963C |
-| 10de:1aed | 1d05:1072 | Nvidia     | TU116 USB Type-C UCSI Con... | 1     |            | BE88E8F865 |
-| 10ec:816c | 15bd:100a | Realtek... | RTL8111xP IPMI interface     | 1     |            | 9E0509BD54 |
-| 10ec:816c | 17aa:5081 | Realtek... | RTL8111xP IPMI interface     | 1     |            | BD88655975 |
-| 10ec:816c | 17aa:5082 | Realtek... | RTL8111xP IPMI interface     | 1     |            | ED75B3D15B |
-| 8086:02a4 | 1028:09a1 | Intel      | Comet Lake SPI (flash) Co... | 1     |            | 7DEF696A61 |
-| 8086:02a4 | 144d:c830 | Intel      | Comet Lake SPI (flash) Co... | 1     |            | BEC05A34DE |
-| 8086:02a4 | 1558:1404 | Intel      | Comet Lake SPI (flash) Co... | 1     |            | 35AA6590C6 |
-| 8086:02a4 | 17aa:22aa | Intel      | Comet Lake SPI (flash) Co... | 1     |            | 12C985B708 |
-| 8086:02a4 | 17aa:507c | Intel      | Comet Lake SPI (flash) Co... | 1     |            | 2DE4BC8337 |
-| 8086:02a4 | 8086:7270 | Intel      | Comet Lake SPI (flash) Co... | 1     |            | 0163D0F084 |
-| 8086:02c5 | 1028:09a1 | Intel      | Comet Lake Serial IO I2C ... | 1     |            | 7DEF696A61 |
-| 8086:02c5 | 8086:7270 | Intel      | Comet Lake Serial IO I2C ... | 1     |            | 0163D0F084 |
-| 8086:02e8 | 1028:09a1 | Intel      | Serial IO I2C Host Contro... | 1     |            | 7DEF696A61 |
-| 8086:02e8 | 144d:c830 | Intel      | Serial IO I2C Host Contro... | 1     | ig4iic     | BEC05A34DE |
-| 8086:02e8 | 1558:1404 | Intel      | Serial IO I2C Host Contro... | 1     |            | 35AA6590C6 |
-| 8086:02e8 | 17aa:22aa | Intel      | Serial IO I2C Host Contro... | 1     |            | 12C985B708 |
-| 8086:02e8 | 17aa:507c | Intel      | Serial IO I2C Host Contro... | 1     | ig4iic     | 2DE4BC8337 |
-| 8086:02e8 | 8086:7270 | Intel      | Serial IO I2C Host Contro... | 1     |            | 0163D0F084 |
-| 8086:02e9 | 1028:09a1 | Intel      | Comet Lake Serial IO I2C ... | 1     |            | 7DEF696A61 |
-| 8086:02ea | 17aa:507c | Intel      | Comet Lake PCH-LP LPSS: I... | 1     | ig4iic     | 2DE4BC8337 |
-| 8086:06a4 | 1028:09c3 | Intel      | Comet Lake PCH SPI Contro... | 1     |            | 9983A81086 |
-| 8086:06a4 | 1028:09f3 | Intel      | Comet Lake PCH SPI Contro... | 1     |            | A1C2EAEE5F |
-| 8086:06a4 | 1462:12b8 | Intel      | Comet Lake PCH SPI Contro... | 1     |            | A40E426983 |
-| 8086:06a4 | 1462:12bc | Intel      | Comet Lake PCH SPI Contro... | 1     |            | FEA3CDB5D1 |
-| 8086:06a4 | 17aa:22b8 | Intel      | Comet Lake PCH SPI Contro... | 1     |            | 342E914968 |
-| 8086:06a4 | 1d05:1085 | Intel      | Comet Lake PCH SPI Contro... | 1     |            | DF77DD6562 |
-| 8086:06e8 | 1028:09c3 | Intel      | Comet Lake PCH Serial IO ... | 1     |            | 9983A81086 |
-| 8086:06e8 | 1028:09f3 | Intel      | Comet Lake PCH Serial IO ... | 1     | ig4iic     | A1C2EAEE5F |
-| 8086:06e8 | 1462:12b8 | Intel      | Comet Lake PCH Serial IO ... | 1     | ig4iic     | A40E426983 |
-| 8086:06e8 | 1462:12bc | Intel      | Comet Lake PCH Serial IO ... | 1     | ig4iic     | FEA3CDB5D1 |
-| 8086:06e8 | 17aa:22b8 | Intel      | Comet Lake PCH Serial IO ... | 1     |            | 342E914968 |
-| 8086:06e8 | 1d05:1085 | Intel      | Comet Lake PCH Serial IO ... | 1     |            | DF77DD6562 |
-| 8086:06e9 | 1028:09c3 | Intel      | Comet Lake PCH Serial IO ... | 1     |            | 9983A81086 |
-| 8086:06e9 | 1028:09f3 | Intel      | Comet Lake PCH Serial IO ... | 1     | ig4iic     | A1C2EAEE5F |
-| 8086:06e9 | 17aa:22b8 | Intel      | Comet Lake PCH Serial IO ... | 1     |            | 342E914968 |
-| 8086:06ea | 1462:12b8 | Intel      | Comet Lake PCH Serial IO ... | 1     | ig4iic     | A40E426983 |
-| 8086:06ea | 1462:12bc | Intel      | Comet Lake PCH Serial IO ... | 1     | ig4iic     | FEA3CDB5D1 |
-| 8086:34a4 | 1028:096d | Intel      | Ice Lake-LP SPI Controller   | 1     |            | 7C1EFA11B9 |
-| 8086:34a4 | 17aa:3a34 | Intel      | Ice Lake-LP SPI Controller   | 1     |            | 3278083BA9 |
-| 8086:34e8 | 1028:096d | Intel      | Ice Lake-LP Serial IO I2C... | 1     |            | 7C1EFA11B9 |
-| 8086:34e8 | 17aa:3a34 | Intel      | Ice Lake-LP Serial IO I2C... | 1     |            | 3278083BA9 |
-| 8086:34e9 | 1028:096d | Intel      | Ice Lake-LP Serial IO I2C... | 1     |            | 7C1EFA11B9 |
-| 8086:34e9 | 17aa:3a34 | Intel      | Ice Lake-LP Serial IO I2C... | 1     |            | 3278083BA9 |
-| 8086:9da4 | 1028:08b9 | Intel      | Cannon Point-LP SPI Contr... | 1     |            | 2538B038ED |
-| 8086:9da4 | 103c:84bb | Intel      | Cannon Point-LP SPI Contr... | 1     |            | C355A6280B |
-| 8086:9da4 | 103c:8532 | Intel      | Cannon Point-LP SPI Contr... | 1     |            | 366F8D1EAF |
-| 8086:9da4 | 103c:8537 | Intel      | Cannon Point-LP SPI Contr... | 1     |            | 0227811ABB |
-| 8086:9da4 | 17aa:2286 | Intel      | Cannon Point-LP SPI Contr... | 1     |            | 0919D8936F |
-| 8086:9da4 | 17aa:380c | Intel      | Cannon Point-LP SPI Contr... | 1     |            | 5211D36066 |
-| 8086:9da4 | 17aa:3810 | Intel      | Cannon Point-LP SPI Contr... | 1     |            | CD2AD2800E |
-| 8086:9da4 | 1a58:1000 | Intel      | Cannon Point-LP SPI Contr... | 1     |            | A467FFACF3 |
-| 8086:9da4 | 8086:9da4 | Intel      | Cannon Point-LP SPI Contr... | 1     |            | B6AE43880D |
-| 8086:9dc5 | 1028:08b9 | Intel      | Cannon Point-LP Serial IO... | 1     | ig4iic     | 2538B038ED |
-| 8086:9dc5 | 103c:84bb | Intel      | Cannon Point-LP Serial IO... | 1     | ig4iic     | C355A6280B |
-| 8086:9de8 | 1028:08b9 | Intel      | Cannon Point-LP Serial IO... | 1     | ig4iic     | 2538B038ED |
-| 8086:9de8 | 103c:8537 | Intel      | Cannon Point-LP Serial IO... | 1     |            | 0227811ABB |
-| 8086:9de8 | 17aa:380e | Intel      | Cannon Point-LP Serial IO... | 1     | ig4iic     | B6AE43880D |
-| 8086:9de8 | 17aa:3813 | Intel      | Cannon Point-LP Serial IO... | 1     | ig4iic     | 5211D36066 |
+| ID        | Subsystem | MFG              | Name                                 | Count | Driver     | Probe |
+|-----------|-----------|------------------|--------------------------------------|-------|------------|-------|
+| 8086:9da4 | 17aa:2279 | Intel            | Cannon Point-LP SPI Controller       | 7     |            | [4147A5824D](<Notebook/Lenovo/ThinkPad/ThinkPad T590 20N4CTO1WW/3C494D1552EB/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/4147A5824D>) |
+| 8086:9de8 | 17aa:2279 | Intel            | Cannon Point-LP Serial IO I2C Con... | 7     | ig4iic     | [4147A5824D](<Notebook/Lenovo/ThinkPad/ThinkPad T590 20N4CTO1WW/3C494D1552EB/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/4147A5824D>) |
+| 8086:9da4 | 17aa:5072 | Intel            | Cannon Point-LP SPI Controller       | 6     |            | [98072B8DB6](<Notebook/Lenovo/ThinkPad/ThinkPad E590 20NB0012RT/F14FDAEA6645/FREEBSD-13.0-P3/13.0-RELEASE-P3/AMD64/98072B8DB6>) |
+| 8086:a0a4 | f111:0001 | Intel            | Tiger Lake-LP SPI Controller         | 5     |            | [1F58E0594F](<Notebook/Framework/Laptop/Laptop/12E6C3C95AB5/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/1F58E0594F>) |
+| 8086:a0e8 | f111:0001 | Intel            | Tiger Lake-LP Serial IO I2C Contr... | 5     | ig4iic     | [1F58E0594F](<Notebook/Framework/Laptop/Laptop/12E6C3C95AB5/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/1F58E0594F>) |
+| 8086:a0e9 | f111:0001 | Intel            | Tiger Lake-LP Serial IO I2C Contr... | 5     | ig4iic     | [1F58E0594F](<Notebook/Framework/Laptop/Laptop/12E6C3C95AB5/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/1F58E0594F>) |
+| 8086:a0eb | f111:0001 | Intel            | Tiger Lake-LP Serial IO I2C Contr... | 5     | ig4iic     | [1F58E0594F](<Notebook/Framework/Laptop/Laptop/12E6C3C95AB5/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/1F58E0594F>) |
+| 8086:a324 | 17aa:3827 | Intel            | Cannon Lake PCH SPI Controller       | 4     |            | [384D2F888B](<Notebook/Lenovo/Legion/Legion Y540-15IRH 81SX/DB27396229F8/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/384D2F888B>) |
+| 8086:a368 | 17aa:3803 | Intel            | Cannon Lake PCH Serial IO I2C Con... | 4     | ig4iic     | [384D2F888B](<Notebook/Lenovo/Legion/Legion Y540-15IRH 81SX/DB27396229F8/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/384D2F888B>) |
+| 8086:a369 | 17aa:3804 | Intel            | Cannon Lake PCH Serial IO I2C Con... | 4     | ig4iic     | [384D2F888B](<Notebook/Lenovo/Legion/Legion Y540-15IRH 81SX/DB27396229F8/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/384D2F888B>) |
+| 10de:1adb |           | Nvidia           | TU106 USB Type-C UCSI Controller     | 3     |            | [0AC6AED43B](<Notebook/System76/Serval/Serval WS/3345B6D70744/FREEBSD-12.2/12.2-RELEASE/AMD64/0AC6AED43B>) |
+| 10ec:816c | 17aa:5122 | Realtek Semic... | RTL8111xP IPMI interface             | 3     |            | [0C153D0C98](<Notebook/Lenovo/ThinkPad/ThinkPad A485 20MU000VUS/0748151D3905/MIDNIGHTBSD-2.1.1/2.1.1/AMD64/0C153D0C98>) |
+| 10ec:816c | 17aa:5126 | Realtek Semic... | RTL8111xP IPMI interface             | 3     |            | [D7812A2905](<Notebook/Lenovo/ThinkPad/ThinkPad X395 20NL000GPG/878AD42630E7/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/D7812A2905>) |
+| 8086:02a4 | 1028:09ec | Intel            | Comet Lake SPI (flash) Controller    | 3     |            | [80D7BF959A](<Notebook/Dell/Latitude/Latitude 3410/3DC4614C13E4/FREEBSD-13.0-RC1/13.0-RC1/AMD64/80D7BF959A>) |
+| 8086:02a4 | 1558:1401 | Intel            | Comet Lake SPI (flash) Controller    | 3     |            | [713B33351F](<Notebook/System76/Lemur/Lemur Pro/FB3C4199D24B/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/713B33351F>) |
+| 8086:02a4 | 17aa:5079 | Intel            | Comet Lake SPI (flash) Controller    | 3     |            | [0FA4700D17](<Notebook/Lenovo/ThinkPad/ThinkPad E15 20RD0011MX/534BB4FF83C1/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/0FA4700D17>) |
+| 8086:02a4 | 8086:7270 | Intel            | Comet Lake SPI (flash) Controller    | 3     |            | [F99C9F56B7](<Notebook/System76/Darter/Darter Pro/0CE03E6D5308/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/F99C9F56B7>) |
+| 8086:02c5 |           | Intel            | Comet Lake Serial IO I2C Host Con... | 3     | ig4iic     | [713B33351F](<Notebook/System76/Lemur/Lemur Pro/FB3C4199D24B/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/713B33351F>) |
+| 8086:02c5 | 8086:7270 | Intel            | Comet Lake Serial IO I2C Host Con... | 3     | ig4iic     | [F99C9F56B7](<Notebook/System76/Darter/Darter Pro/0CE03E6D5308/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/F99C9F56B7>) |
+| 8086:02e8 | 1028:09ec | Intel            | Serial IO I2C Host Controller        | 3     | ig4iic     | [80D7BF959A](<Notebook/Dell/Latitude/Latitude 3410/3DC4614C13E4/FREEBSD-13.0-RC1/13.0-RC1/AMD64/80D7BF959A>) |
+| 8086:02e8 | 1558:1401 | Intel            | Serial IO I2C Host Controller        | 3     | ig4iic     | [713B33351F](<Notebook/System76/Lemur/Lemur Pro/FB3C4199D24B/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/713B33351F>) |
+| 8086:02e9 | 1028:09ec | Intel            | Comet Lake Serial IO I2C Host Con... | 3     | ig4iic     | [80D7BF959A](<Notebook/Dell/Latitude/Latitude 3410/3DC4614C13E4/FREEBSD-13.0-RC1/13.0-RC1/AMD64/80D7BF959A>) |
+| 8086:9da4 | 1028:08b8 | Intel            | Cannon Point-LP SPI Controller       | 3     |            | [1BB6C1F63F](<Notebook/Dell/Latitude/Latitude 5400/418002D1A36C/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/1BB6C1F63F>) |
+| 8086:9da4 | 17aa:2292 | Intel            | Cannon Point-LP SPI Controller       | 3     |            | [3CF2AD31A8](<Notebook/Others/Others/Others/CEE39BFDF5CD/DRAGONFLY-6.0/6.0-RELEASE/AMD64/3CF2AD31A8>) |
+| 8086:9dc5 | 1028:08b8 | Intel            | Cannon Point-LP Serial IO I2C Hos... | 3     | ig4iic     | [1BB6C1F63F](<Notebook/Dell/Latitude/Latitude 5400/418002D1A36C/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/1BB6C1F63F>) |
+| 8086:9de8 | 1028:08b8 | Intel            | Cannon Point-LP Serial IO I2C Con... | 3     | ig4iic     | [1BB6C1F63F](<Notebook/Dell/Latitude/Latitude 5400/418002D1A36C/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/1BB6C1F63F>) |
+| 8086:9de8 | 17aa:2292 | Intel            | Cannon Point-LP Serial IO I2C Con... | 3     | ig4iic     | [3CF2AD31A8](<Notebook/Others/Others/Others/CEE39BFDF5CD/DRAGONFLY-6.0/6.0-RELEASE/AMD64/3CF2AD31A8>) |
+| 8086:9de9 | 1028:08b8 | Intel            | Cannon Point-LP Serial IO I2C Con... | 3     | ig4iic     | [1BB6C1F63F](<Notebook/Dell/Latitude/Latitude 5400/418002D1A36C/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/1BB6C1F63F>) |
+| 8086:9de9 | 17aa:2292 | Intel            | Cannon Point-LP Serial IO I2C Con... | 3     | ig4iic     | [3CF2AD31A8](<Notebook/Others/Others/Others/CEE39BFDF5CD/DRAGONFLY-6.0/6.0-RELEASE/AMD64/3CF2AD31A8>) |
+| 8086:a0a4 | 17aa:22d5 | Intel            | Tiger Lake-LP SPI Controller         | 3     |            | [8F9E9DDDE5](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon Gen 9 20XWCTO1WW/83AC7FC10181/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/8F9E9DDDE5>) |
+| 8086:a0e8 | 17aa:22d5 | Intel            | Tiger Lake-LP Serial IO I2C Contr... | 3     | ig4iic     | [8F9E9DDDE5](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon Gen 9 20XWCTO1WW/83AC7FC10181/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/8F9E9DDDE5>) |
+| 10de:1ad9 | 1462:12bc | Nvidia           | TU104 USB Type-C UCSI Controller     | 2     |            | [48B172BFE8](<Notebook/MSI/GE75/GE75 Raider 10SFS/7BA908741577/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/48B172BFE8>) |
+| 10de:1aed |           | Nvidia           | TU116 USB Type-C UCSI Controller     | 2     |            | [0871C1269B](<Notebook/Dell/G5/G5 5590/DA4017866B4B/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/0871C1269B>) |
+| 10de:1aed | 103c:8786 | Nvidia           | TU116 USB Type-C UCSI Controller     | 2     |            | [19F307FF6D](<Notebook/Hewlett-Packard/OMEN/OMEN Laptop 15-en0xxx/99830226F687/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/19F307FF6D>) |
+| 10de:1aed | 1d05:1072 | Nvidia           | TU116 USB Type-C UCSI Controller     | 2     |            | [85F5C972A5](<Notebook/Avell High Performance/A60/A60 MUV/0C5CDFF081CF/FREEBSD-13.0-P3/13.0-RELEASE-P3/AMD64/85F5C972A5>) |
+| 10ec:816c | 17aa:5081 | Realtek Semic... | RTL8111xP IPMI interface             | 2     |            | [D910C79D75](<Notebook/Lenovo/ThinkPad/ThinkPad P14s Gen 1 20Y1CTO1WW/5E03AED6E452/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/D910C79D75>) |
+| 10ec:816c | 17aa:5125 | Realtek Semic... | RTL8111xP IPMI interface             | 2     |            | [7A706E46DE](<Notebook/Lenovo/ThinkPad/ThinkPad T495 20NJS0KP00/BBAE20B5A9E1/FREEBSD-13.0-CURRENT/13.0-CURRENT/AMD64/7A706E46DE>) |
+| 8086:02a4 | 1028:09a1 | Intel            | Comet Lake SPI (flash) Controller    | 2     |            | [A620D284CB](<Notebook/Dell/Latitude/Latitude 5510/9741CEB43BDE/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/A620D284CB>) |
+| 8086:02a4 | 1462:1279 | Intel            | Comet Lake SPI (flash) Controller    | 2     |            | [84838CD532](<Notebook/MSI/Modern/Modern 14 A10M/CB14F45A6442/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/84838CD532>) |
+| 8086:02a4 | 17aa:22af | Intel            | Comet Lake SPI (flash) Controller    | 2     |            | [6836FC60F6](<Notebook/Lenovo/ThinkPad/ThinkPad X13 Gen 1 20T2003PRT/7ED3441E6EB7/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/6836FC60F6>) |
+| 8086:02a4 | 17aa:22be | Intel            | Comet Lake SPI (flash) Controller    | 2     |            | [85E94A1288](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon Gen 8 20U9CTO1WW/B74176FFA919/FREEBSD-13.0/13.0-RELEASE/AMD64/85E94A1288>) |
+| 8086:02c5 | 1028:09a1 | Intel            | Comet Lake Serial IO I2C Host Con... | 2     | ig4iic     | [A620D284CB](<Notebook/Dell/Latitude/Latitude 5510/9741CEB43BDE/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/A620D284CB>) |
+| 8086:02e8 | 1028:09a1 | Intel            | Serial IO I2C Host Controller        | 2     | ig4iic     | [A620D284CB](<Notebook/Dell/Latitude/Latitude 5510/9741CEB43BDE/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/A620D284CB>) |
+| 8086:02e8 | 17aa:22be | Intel            | Serial IO I2C Host Controller        | 2     | ig4iic     | [85E94A1288](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon Gen 8 20U9CTO1WW/B74176FFA919/FREEBSD-13.0/13.0-RELEASE/AMD64/85E94A1288>) |
+| 8086:02e9 | 1028:09a1 | Intel            | Comet Lake Serial IO I2C Host Con... | 2     | ig4iic     | [A620D284CB](<Notebook/Dell/Latitude/Latitude 5510/9741CEB43BDE/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/A620D284CB>) |
+| 8086:02e9 | 17aa:22be | Intel            | Comet Lake Serial IO I2C Host Con... | 2     | ig4iic     | [85E94A1288](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon Gen 8 20U9CTO1WW/B74176FFA919/FREEBSD-13.0/13.0-RELEASE/AMD64/85E94A1288>) |
+| 8086:06a4 | 1462:12bc | Intel            | Comet Lake PCH SPI Controller        | 2     |            | [48B172BFE8](<Notebook/MSI/GE75/GE75 Raider 10SFS/7BA908741577/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/48B172BFE8>) |
+| 8086:06a4 | 17aa:3827 | Intel            | Comet Lake PCH SPI Controller        | 2     |            | [2BE8CF963C](<Notebook/Lenovo/Legion/Legion 5P 15IMH05H 82AW/5AF94BC5A494/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/2BE8CF963C>) |
+| 8086:06a4 | 1d05:1085 | Intel            | Comet Lake PCH SPI Controller        | 2     |            | [5983302B1D](<Notebook/Avell High Performance/A62/A62 LIV/45914491EAA0/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/5983302B1D>) |
+| 8086:06e8 | 1462:12bc | Intel            | Comet Lake PCH Serial IO I2C Cont... | 2     | ig4iic     | [48B172BFE8](<Notebook/MSI/GE75/GE75 Raider 10SFS/7BA908741577/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/48B172BFE8>) |
+| 8086:06e8 | 17aa:3803 | Intel            | Comet Lake PCH Serial IO I2C Cont... | 2     | ig4iic     | [2BE8CF963C](<Notebook/Lenovo/Legion/Legion 5P 15IMH05H 82AW/5AF94BC5A494/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/2BE8CF963C>) |
+| 8086:06e8 | 1d05:1085 | Intel            | Comet Lake PCH Serial IO I2C Cont... | 2     | ig4iic     | [5983302B1D](<Notebook/Avell High Performance/A62/A62 LIV/45914491EAA0/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/5983302B1D>) |
+| 8086:06e9 | 17aa:3804 | Intel            | Comet Lake PCH Serial IO I2C Cont... | 2     | ig4iic     | [2BE8CF963C](<Notebook/Lenovo/Legion/Legion 5P 15IMH05H 82AW/5AF94BC5A494/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/2BE8CF963C>) |
+| 8086:06ea | 1462:12bc | Intel            | Comet Lake PCH Serial IO I2C Cont... | 2     | ig4iic     | [48B172BFE8](<Notebook/MSI/GE75/GE75 Raider 10SFS/7BA908741577/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/48B172BFE8>) |
+| 8086:34a4 | 1028:097a | Intel            | Ice Lake-LP SPI Controller           | 2     |            | [C2D56FC369](<Notebook/Dell/Inspiron/Inspiron 3793/0A7645BB9BDA/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/C2D56FC369>) |
+| 8086:34c5 | 1028:097a | Intel            | Ice Lake-LP Serial IO I2c Control... | 2     |            | [C2D56FC369](<Notebook/Dell/Inspiron/Inspiron 3793/0A7645BB9BDA/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/C2D56FC369>) |
+| 8086:34e8 | 1028:097a | Intel            | Ice Lake-LP Serial IO I2C Control... | 2     |            | [C2D56FC369](<Notebook/Dell/Inspiron/Inspiron 3793/0A7645BB9BDA/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/C2D56FC369>) |
+| 8086:34e9 | 1028:097a | Intel            | Ice Lake-LP Serial IO I2C Control... | 2     |            | [C2D56FC369](<Notebook/Dell/Inspiron/Inspiron 3793/0A7645BB9BDA/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/C2D56FC369>) |
+| 8086:9c61 | 1025:0a11 | Intel            | 8 Series I2C Controller #0           | 2     | ig4iic_pci | [D15CAACA04](<Notebook/Acer/Peppy/Peppy/D5C190C861EE/FREEBSD-12.1-P10/12.1-RELEASE-P10/AMD64/D15CAACA04>) |
+| 8086:9c62 | 1025:0a11 | Intel            | 8 Series I2C Controller #1           | 2     | ig4iic_pci | [D15CAACA04](<Notebook/Acer/Peppy/Peppy/D5C190C861EE/FREEBSD-12.1-P10/12.1-RELEASE-P10/AMD64/D15CAACA04>) |
+| 8086:9da4 | 103c:8537 | Intel            | Cannon Point-LP SPI Controller       | 2     |            | [7A8A66430A](<Notebook/Hewlett-Packard/ProBook/ProBook 440 G6/4151C66E839A/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/7A8A66430A>) |
+| 8086:9da4 | 17aa:2286 | Intel            | Cannon Point-LP SPI Controller       | 2     |            | [D377309110](<Notebook/Lenovo/ThinkPad/ThinkPad T490s 20NYS3TU00/8D5A2ED4C475/HELLOSYSTEM-0.5.0/12.2-RELEASE-P7/AMD64/D377309110>) |
+| 8086:9da4 | 17aa:380c | Intel            | Cannon Point-LP SPI Controller       | 2     |            | [CEB18E38A3](<Notebook/Lenovo/IdeaPad/IdeaPad S145-15IWL 81MV/3D212F0359DA/HELLOSYSTEM-0.6.0/13.0-RELEASE/AMD64/CEB18E38A3>) |
+| 8086:9de8 | 103c:8537 | Intel            | Cannon Point-LP Serial IO I2C Con... | 2     | ig4iic     | [7A8A66430A](<Notebook/Hewlett-Packard/ProBook/ProBook 440 G6/4151C66E839A/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/7A8A66430A>) |
+| 8086:9de8 | 17aa:3813 | Intel            | Cannon Point-LP Serial IO I2C Con... | 2     | ig4iic     | [CEB18E38A3](<Notebook/Lenovo/IdeaPad/IdeaPad S145-15IWL 81MV/3D212F0359DA/HELLOSYSTEM-0.6.0/13.0-RELEASE/AMD64/CEB18E38A3>) |
+| 8086:9de9 | 103c:8537 | Intel            | Cannon Point-LP Serial IO I2C Con... | 2     | ig4iic     | [7A8A66430A](<Notebook/Hewlett-Packard/ProBook/ProBook 440 G6/4151C66E839A/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/7A8A66430A>) |
+| 8086:a324 | 1028:0831 | Intel            | Cannon Lake PCH SPI Controller       | 2     |            | [498BFE852C](<Notebook/Dell/Precision/Precision 7530/5BEE2A4C3CA7/FREEBSD-12.3/12.3-RELEASE/AMD64/498BFE852C>) |
+| 8086:a324 | 1028:087c | Intel            | Cannon Lake PCH SPI Controller       | 2     |            | [EE8980FEC1](<Notebook/Dell/XPS/XPS 15 9570/9A64E9C4BBC5/FREEBSD-13.0-P4/13.0-RELEASE/AMD64/EE8980FEC1>) |
+| 8086:a324 | 17aa:2267 | Intel            | Cannon Lake PCH SPI Controller       | 2     |            | [6D5E1A13D0](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Extreme 20MF000BUS/A5269BACD212/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/6D5E1A13D0>) |
+| 8086:a324 | 17aa:2297 | Intel            | Cannon Lake PCH SPI Controller       | 2     |            | [5B08C1DE3D](<Notebook/Lenovo/ThinkPad/ThinkPad P53 20QNCTO1WW/EDACF56B05E1/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/5B08C1DE3D>) |
+| 8086:a324 | 8086:2086 | Intel            | Cannon Lake PCH SPI Controller       | 2     |            | [85F5C972A5](<Notebook/Avell High Performance/A60/A60 MUV/0C5CDFF081CF/FREEBSD-13.0-P3/13.0-RELEASE-P3/AMD64/85F5C972A5>) |
+| 8086:a368 | 1028:0831 | Intel            | Cannon Lake PCH Serial IO I2C Con... | 2     | ig4iic     | [498BFE852C](<Notebook/Dell/Precision/Precision 7530/5BEE2A4C3CA7/FREEBSD-12.3/12.3-RELEASE/AMD64/498BFE852C>) |
+| 8086:a368 | 1028:087c | Intel            | Cannon Lake PCH Serial IO I2C Con... | 2     | ig4iic     | [EE8980FEC1](<Notebook/Dell/XPS/XPS 15 9570/9A64E9C4BBC5/FREEBSD-13.0-P4/13.0-RELEASE/AMD64/EE8980FEC1>) |
+| 8086:a368 | 17aa:2267 | Intel            | Cannon Lake PCH Serial IO I2C Con... | 2     | ig4iic     | [6D5E1A13D0](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Extreme 20MF000BUS/A5269BACD212/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/6D5E1A13D0>) |
+| 8086:a368 | 17aa:2297 | Intel            | Cannon Lake PCH Serial IO I2C Con... | 2     | ig4iic     | [5B08C1DE3D](<Notebook/Lenovo/ThinkPad/ThinkPad P53 20QNCTO1WW/EDACF56B05E1/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/5B08C1DE3D>) |
+| 8086:a368 | 8086:2086 | Intel            | Cannon Lake PCH Serial IO I2C Con... | 2     | ig4iic     | [85F5C972A5](<Notebook/Avell High Performance/A60/A60 MUV/0C5CDFF081CF/FREEBSD-13.0-P3/13.0-RELEASE-P3/AMD64/85F5C972A5>) |
+| 8086:a369 | 1028:0831 | Intel            | Cannon Lake PCH Serial IO I2C Con... | 2     | ig4iic     | [498BFE852C](<Notebook/Dell/Precision/Precision 7530/5BEE2A4C3CA7/FREEBSD-12.3/12.3-RELEASE/AMD64/498BFE852C>) |
+| 8086:a369 | 1028:087c | Intel            | Cannon Lake PCH Serial IO I2C Con... | 2     | ig4iic     | [EE8980FEC1](<Notebook/Dell/XPS/XPS 15 9570/9A64E9C4BBC5/FREEBSD-13.0-P4/13.0-RELEASE/AMD64/EE8980FEC1>) |
+| 8086:a369 | 17aa:2297 | Intel            | Cannon Lake PCH Serial IO I2C Con... | 2     | ig4iic     | [5B08C1DE3D](<Notebook/Lenovo/ThinkPad/ThinkPad P53 20QNCTO1WW/EDACF56B05E1/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/5B08C1DE3D>) |
+| 10de:1ad9 | 103c:8748 | Nvidia           | TU104 USB Type-C UCSI Controller     | 1     |            | [B00C8E76E8](<Notebook/Hewlett-Packard/OMEN/OMEN by HP Laptop 17-cb1xxx/73864F742E56/NOMADBSD-5806F915/13.0-RELEASE/AMD64/B00C8E76E8>) |
+| 10de:1ad9 | 1462:12b8 | Nvidia           | TU104 USB Type-C UCSI Controller     | 1     |            | [A40E426983](<Notebook/MSI/GL65/GL65 Leopard 10SFSK/F737BF69AEE5/FREEBSD-13.0/13.0-RELEASE/AMD64/A40E426983>) |
+| 10de:1ad9 | 17aa:22b8 | Nvidia           | TU104 USB Type-C UCSI Controller     | 1     |            | [342E914968](<Notebook/Lenovo/ThinkPad/ThinkPad P15 Gen 1 20ST005VRT/80BE8C899DB7/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/342E914968>) |
+| 10de:1adb | 1028:09f3 | Nvidia           | TU106 USB Type-C UCSI Controller     | 1     |            | [A1C2EAEE5F](<Notebook/Dell/G7/G7 7500/7D613232FC32/FREEBSD-12.2-STABLE/12.2-STABLE/AMD64/A1C2EAEE5F>) |
+| 10de:1aed | 103c:87af | Nvidia           | TU116 USB Type-C UCSI Controller     | 1     |            | [4C22212C20](<Notebook/Hewlett-Packard/Pavilion/Pavilion Gaming Laptop 16-a0xxx/ADBD8C5E6883/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/4C22212C20>) |
+| 10de:1aed | 1043:10af | Nvidia           | TU116 USB Type-C UCSI Controller     | 1     |            | [2D72B6939D](<Notebook/ASUSTek Computer/TUF/TUF Gaming FX505DU_FX505DU/FE9E4108BBBD/NOMADBSD-5806F915/13.0-RELEASE/AMD64/2D72B6939D>) |
+| 10de:1aed | 1462:12aa | Nvidia           | TU116 USB Type-C UCSI Controller     | 1     |            | [7E5EBC9C82](<Notebook/MSI/GF65/GF65 Thin 10SDR/22DDAFF41370/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/7E5EBC9C82>) |
+| 10de:1aed | 17aa:3f8e | Nvidia           | TU116 USB Type-C UCSI Controller     | 1     |            | [2BE8CF963C](<Notebook/Lenovo/Legion/Legion 5P 15IMH05H 82AW/5AF94BC5A494/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/2BE8CF963C>) |
+| 10de:1aed | 17aa:3ffc | Nvidia           | TU116 USB Type-C UCSI Controller     | 1     |            | [384D2F888B](<Notebook/Lenovo/Legion/Legion Y540-15IRH 81SX/DB27396229F8/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/384D2F888B>) |
+| 10ec:816c | 10ec:0123 | Realtek Semic... | RTL8111xP IPMI interface             | 1     |            | [699E8FDF32](<Notebook/Others/Others/Others/5B920EC7C919/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/699E8FDF32>) |
+| 10ec:816c | 15bd:100a | Realtek Semic... | RTL8111xP IPMI interface             | 1     |            | [9E0509BD54](<Notebook/DFI/BE17/BE17X/6FD257A4BC0C/OPNSENSE-21.1.1/12.1-RELEASE-P13-HBSD/AMD64/9E0509BD54>) |
+| 10ec:816c | 17aa:5082 | Realtek Semic... | RTL8111xP IPMI interface             | 1     |            | [ED75B3D15B](<Notebook/Lenovo/ThinkPad/ThinkPad X13 Gen 1 20UF000QRT/28FFDBA7F5C3/FREEBSD-13.0-BETA1/13.0-BETA2/AMD64/ED75B3D15B>) |
+| 10ec:816c | 17aa:5123 | Realtek Semic... | RTL8111xP IPMI interface             | 1     |            | [FF53F0763C](<Notebook/Lenovo/ThinkPad/ThinkPad A285 20MW000JMH/DED973746155/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/FF53F0763C>) |
+| 8086:02a4 | 1025:1345 | Intel            | Comet Lake SPI (flash) Controller    | 1     |            | [08CAFD05B1](<Notebook/Acer/Aspire/Aspire A515-54G/5BF421D56026/FREEBSD-13.0/13.0-RELEASE/AMD64/08CAFD05B1>) |
+| 8086:02a4 | 1028:0959 | Intel            | Comet Lake SPI (flash) Controller    | 1     |            | [CF3508718C](<Notebook/Dell/Vostro/Vostro 5490/24693DCB9652/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/CF3508718C>) |
+| 8086:02a4 | 103c:85f2 | Intel            | Comet Lake SPI (flash) Controller    | 1     |            | [8EBEAC18CA](<Notebook/Hewlett-Packard/Laptop/Laptop 15s-du1xxx/869AC20DA495/FREEBSD-13.0/13.0-RELEASE/AMD64/8EBEAC18CA>) |
+| 8086:02a4 | 103c:869d | Intel            | Comet Lake SPI (flash) Controller    | 1     |            | [63DC88528C](<Notebook/Hewlett-Packard/ProBook/ProBook 440 G7/A6CF27443717/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/63DC88528C>) |
+| 8086:02a4 | 144d:c830 | Intel            | Comet Lake SPI (flash) Controller    | 1     |            | [BEC05A34DE](<Notebook/Samsung Electronics/950/950XCJ-951XCJ-950XCR/F4BDEF1FC8F7/FREEBSD-13.0-RC2/13.0-RC2/AMD64/BEC05A34DE>) |
+| 8086:02a4 | 1558:1403 | Intel            | Comet Lake SPI (flash) Controller    | 1     |            | [80A9BA918E](<Notebook/SLIMBOOK/Others/Others/0C91938E8FB9/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/80A9BA918E>) |
+| 8086:02a4 | 1558:1404 | Intel            | Comet Lake SPI (flash) Controller    | 1     |            | [35AA6590C6](<Notebook/TUXEDO/Others/Others/2A3702DD6E7A/NOMADBSD-1.4/12.2-RELEASE-P4/AMD64/35AA6590C6>) |
+| 8086:02a4 | 17aa:22aa | Intel            | Comet Lake SPI (flash) Controller    | 1     |            | [12C985B708](<Notebook/Lenovo/ThinkPad/ThinkPad T490 20RYS06R00/B6BD4A7317CF/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/12C985B708>) |
 
 ### Signal processing (PCI)
 
-| ID        | Subsystem | MFG        | Name                         | Count | Driver     | Probe      |
-|-----------|-----------|------------|------------------------------|-------|------------|------------|
-| 8086:3b32 | 17aa:2190 | Intel      | 5 Series/3400 Series Chip... | 10    |            | C887FF2917 |
-| 8086:1903 | 17aa:2279 | Intel      | Xeon E3-1200 v5/E3-1500 v... | 6     |            | 6311D603FF |
-| 8086:9ca4 | 17aa:2226 | Intel      | Wildcat Point-LP Thermal ... | 6     | pchtherm   | 107AC19795 |
-| 8086:9ca4 | 17aa:5034 | Intel      | Wildcat Point-LP Thermal ... | 6     | pchtherm   | AC567BD12D |
-| 8086:9df9 | 17aa:2279 | Intel      | Cannon Point-LP Thermal C... | 6     |            | 6311D603FF |
-| 8086:9d31 | 17aa:2238 | Intel      | Sunrise Point-LP Thermal ... | 5     |            | 821C81E652 |
-| 8086:9d31 | 17aa:5062 | Intel      | Sunrise Point-LP Thermal ... | 5     | pchtherm   | 88C27E65D7 |
-| 8086:9d60 | 17aa:5062 | Intel      | Sunrise Point-LP Serial I... | 5     | ig4iic     | 88C27E65D7 |
-| 8086:9d61 | 17aa:5062 | Intel      | Sunrise Point-LP Serial I... | 5     | ig4iic     | 88C27E65D7 |
-| 8086:1903 | 17aa:5072 | Intel      | Xeon E3-1200 v5/E3-1500 v... | 4     |            | 852A900303 |
-| 8086:9d31 | 103c:8079 | Intel      | Sunrise Point-LP Thermal ... | 4     | pchtherm   | 2B97986DE1 |
-| 8086:9d60 | 103c:8079 | Intel      | Sunrise Point-LP Serial I... | 4     | ig4iic     | 2B97986DE1 |
-| 8086:9df9 | 17aa:5072 | Intel      | Cannon Point-LP Thermal C... | 4     | pchtherm   | 852A900303 |
-| 8086:0103 | 10f7:8338 | Intel      | Core i7/i5/i3 Thermal Man... | 3     |            | 6BBADBA65D |
-| 8086:0153 |           | Intel      | 3rd Gen Core Processor Th... | 3     |            | 661877D8C9 |
-| 8086:02f9 | 1028:09ec | Intel      | Comet Lake Thermal Subsytem  | 3     |            | 80D7BF959A |
-| 8086:1903 | 1028:06df | Intel      | Xeon E3-1200 v5/E3-1500 v... | 3     |            | C8477DA717 |
-| 8086:1903 | 1028:09ec | Intel      | Xeon E3-1200 v5/E3-1500 v... | 3     |            | 80D7BF959A |
-| 8086:1903 | 17aa:2258 | Intel      | Xeon E3-1200 v5/E3-1500 v... | 3     |            | EBD44C21D9 |
-| 8086:1903 | 17aa:225c | Intel      | Xeon E3-1200 v5/E3-1500 v... | 3     |            | 16206C4970 |
-| 8086:1903 | 19e5:3e04 | Intel      | Xeon E3-1200 v5/E3-1500 v... | 3     |            | F7E09652D9 |
-| 8086:1c24 | 10f7:8338 | Intel      | 6 Series/C200 Series Chip... | 3     |            | 6BBADBA65D |
-| 8086:3b32 |           | Intel      | 5 Series/3400 Series Chip... | 3     |            | 0AB44E95DF |
-| 8086:3b32 | 1028:040a | Intel      | 5 Series/3400 Series Chip... | 3     |            | 211FE874FD |
-| 8086:9ca4 | 17aa:2227 | Intel      | Wildcat Point-LP Thermal ... | 3     |            | B60382DA32 |
-| 8086:9d27 | 19e5:3e04 | Intel      | Sunrise Point-LP Serial I... | 3     |            | F7E09652D9 |
-| 8086:9d2a | 19e5:3e04 | Intel      | Sunrise Point-LP Serial I... | 3     |            | F7E09652D9 |
-| 8086:9d31 | 17aa:2245 | Intel      | Sunrise Point-LP Thermal ... | 3     | pchtherm   | E27342AB94 |
-| 8086:9d31 | 17aa:224f | Intel      | Sunrise Point-LP Thermal ... | 3     | pchtherm   | 4993AD0FEB |
-| 8086:9d31 | 17aa:2258 | Intel      | Sunrise Point-LP Thermal ... | 3     | pchtherm   | EBD44C21D9 |
-| 8086:9d31 | 17aa:225c | Intel      | Sunrise Point-LP Thermal ... | 3     | pchtherm   | 16206C4970 |
-| 8086:9d31 | 19e5:3e04 | Intel      | Sunrise Point-LP Thermal ... | 3     |            | F7E09652D9 |
-| 8086:9d31 | 8086:9d31 | Intel      | Sunrise Point-LP Thermal ... | 3     |            | 2E51DFE463 |
-| 8086:9d60 | 17aa:2258 | Intel      | Sunrise Point-LP Serial I... | 3     | ig4iic     | EBD44C21D9 |
-| 8086:9d60 | 19e5:3e04 | Intel      | Sunrise Point-LP Serial I... | 3     | ig4iic     | F7E09652D9 |
-| 8086:9d61 | 19e5:3e04 | Intel      | Sunrise Point-LP Serial I... | 3     | ig4iic     | F7E09652D9 |
-| 8086:02f9 | 1558:1401 | Intel      | Comet Lake Thermal Subsytem  | 2     |            | 0BD96EF663 |
-| 8086:02f9 | 17aa:5079 | Intel      | Comet Lake Thermal Subsytem  | 2     |            | 94D082C57C |
-| 8086:06f9 | 17aa:3802 | Intel      | Comet Lake PCH Thermal Co... | 2     | pchtherm   | 2BE8CF963C |
-| 8086:0a03 | 8086:2010 | Intel      | Haswell-ULT Thermal Subsy... | 2     |            | FE7D72B06A |
-| 8086:1903 | 1028:06de | Intel      | Xeon E3-1200 v5/E3-1500 v... | 2     |            | AF72876FD2 |
-| 8086:1903 | 1028:075b | Intel      | Xeon E3-1200 v5/E3-1500 v... | 2     |            | 1887B030C4 |
-| 8086:1903 | 1028:0798 | Intel      | Xeon E3-1200 v5/E3-1500 v... | 2     |            | 0E99E72EC9 |
-| 8086:1903 | 1028:08b8 | Intel      | Xeon E3-1200 v5/E3-1500 v... | 2     |            | B9D1F08BCF |
-| 8086:1903 | 103c:8257 | Intel      | Xeon E3-1200 v5/E3-1500 v... | 2     |            | BB8BEB97BE |
-| 8086:1903 | 1043:10a1 | Intel      | Xeon E3-1200 v5/E3-1500 v... | 2     |            | D7D299F9FC |
-| 8086:1903 | 1043:1c7d | Intel      | Xeon E3-1200 v5/E3-1500 v... | 2     |            | 57018EDD10 |
-| 8086:1903 | 1558:1401 | Intel      | Xeon E3-1200 v5/E3-1500 v... | 2     |            | 0BD96EF663 |
-| 8086:1903 | 17aa:225a | Intel      | Xeon E3-1200 v5/E3-1500 v... | 2     |            | D5A1C088B3 |
-| 8086:1903 | 17aa:2267 | Intel      | Xeon E3-1200 v5/E3-1500 v... | 2     |            | 045A80D8BC |
-| 8086:1903 | 17aa:2292 | Intel      | Xeon E3-1200 v5/E3-1500 v... | 2     |            | 4376ACCB5E |
-| 8086:1903 | 17aa:382f | Intel      | Xeon E3-1200 v5/E3-1500 v... | 2     |            | DCE3BA8C99 |
-| 8086:1903 | 17aa:384b | Intel      | Xeon E3-1200 v5/E3-1500 v... | 2     |            | 2BE8CF963C |
-| 8086:1903 | 17aa:5079 | Intel      | Xeon E3-1200 v5/E3-1500 v... | 2     |            | 94D082C57C |
-| 8086:1903 | 8086:1903 | Intel      | Xeon E3-1200 v5/E3-1500 v... | 2     |            | 2E51DFE463 |
-| 8086:3b32 | 1043:1c77 | Intel      | 5 Series/3400 Series Chip... | 2     |            | 321CD9D139 |
-| 8086:3b32 | 1179:0001 | Intel      | 5 Series/3400 Series Chip... | 2     |            | 6357D0D51F |
-| 8086:5a8c |           | Intel      | Atom/Celeron/Pentium Dyna... | 2     |            | BC138C0580 |
-| 8086:5aac | 8086:7270 | Intel      | Celeron N3350/Pentium N42... | 2     | ig4iic     | BC138C0580 |
-| 8086:5ab2 | 8086:7270 | Intel      | Celeron N3350/Pentium N42... | 2     | ig4iic     | BC138C0580 |
-| 8086:5ab4 | 8086:7270 | Intel      | Celeron N3350/Pentium N42... | 2     | ig4iic     | BC138C0580 |
-| 8086:5ab6 | 8086:7270 | Intel      | Celeron N3350/Pentium N42... | 2     | ig4iic     | BC138C0580 |
-| 8086:5ac2 | 8086:7270 | Intel      | Celeron N3350/Pentium N42... | 2     |            | BC138C0580 |
-| 8086:5ac4 | 8086:7270 | Intel      | Celeron N3350/Pentium N42... | 2     |            | BC138C0580 |
-| 8086:5ac6 | 8086:7270 | Intel      | Celeron N3350/Pentium N42... | 2     |            | BC138C0580 |
-| 8086:8a03 | 1028:097a | Intel      | Ice Lake Dynamic Platform... | 2     |            | C2D56FC369 |
-| 8086:8c24 | 8086:7270 | Intel      | 8 Series Chipset Family T... | 2     |            | 0621ACAB4E |
-| 8086:9c24 | 1025:0a11 | Intel      | 8 Series Thermal             | 2     |            | D15CAACA04 |
-| 8086:9d27 | 1043:1d2d | Intel      | Sunrise Point-LP Serial I... | 2     |            | 9DA77349B9 |
-| 8086:9d27 | 8086:9d27 | Intel      | Sunrise Point-LP Serial I... | 2     |            | 2E51DFE463 |
-| 8086:9d29 | 1043:1d2d | Intel      | Sunrise Point-LP Serial I... | 2     |            | 9DA77349B9 |
-| 8086:9d31 | 1028:06df | Intel      | Sunrise Point-LP Thermal ... | 2     |            | DA926F1065 |
-| 8086:9d31 | 1028:075b | Intel      | Sunrise Point-LP Thermal ... | 2     |            | 1887B030C4 |
-| 8086:9d31 | 1043:10a1 | Intel      | Sunrise Point-LP Thermal ... | 2     |            | D7D299F9FC |
-| 8086:9d31 | 1043:1c7d | Intel      | Sunrise Point-LP Thermal ... | 2     |            | 57018EDD10 |
-| 8086:9d31 | 1558:1313 | Intel      | Sunrise Point-LP Thermal ... | 2     |            | C23A22A72D |
-| 8086:9d31 | 17aa:224b | Intel      | Sunrise Point-LP Thermal ... | 2     |            | FAA7BECF82 |
-| 8086:9d31 | 17aa:225a | Intel      | Sunrise Point-LP Thermal ... | 2     |            | D5A1C088B3 |
-| 8086:9d31 | 17aa:504a | Intel      | Sunrise Point-LP Thermal ... | 2     |            | AA3DEADEDD |
-| 8086:9d31 | 17aa:5053 | Intel      | Sunrise Point-LP Thermal ... | 2     | pchtherm   | A069A19A1B |
-| 8086:9d31 | 8086:7270 | Intel      | Sunrise Point-LP Thermal ... | 2     |            | 5550236531 |
-| 8086:9d60 | 1028:075b | Intel      | Sunrise Point-LP Serial I... | 2     |            | 1887B030C4 |
-| 8086:9d60 | 1043:10a1 | Intel      | Sunrise Point-LP Serial I... | 2     | ig4iic_pci | D7D299F9FC |
-| 8086:9d60 | 1043:1c7d | Intel      | Sunrise Point-LP Serial I... | 2     | ig4iic_pci | 57018EDD10 |
-| 8086:9d60 | 8086:9d60 | Intel      | Sunrise Point-LP Serial I... | 2     |            | 2E51DFE463 |
-| 8086:9d61 | 1028:075b | Intel      | Sunrise Point-LP Serial I... | 2     |            | 1887B030C4 |
-| 8086:9d61 | 1043:10a1 | Intel      | Sunrise Point-LP Serial I... | 2     | ig4iic_pci | D7D299F9FC |
-| 8086:9d61 | 1043:1c7d | Intel      | Sunrise Point-LP Serial I... | 2     | ig4iic_pci | 57018EDD10 |
-| 8086:9d61 | 8086:9d61 | Intel      | Sunrise Point-LP Serial I... | 2     |            | 2E51DFE463 |
-| 8086:9d62 | 8086:9d62 | Intel      | Sunrise Point-LP Serial I... | 2     |            | 2E51DFE463 |
-| 8086:9df9 | 1028:08b8 | Intel      | Cannon Point-LP Thermal C... | 2     |            | B9D1F08BCF |
-| 8086:9df9 | 17aa:2292 | Intel      | Cannon Point-LP Thermal C... | 2     | pchtherm   | 4376ACCB5E |
-| 8086:a131 | 1028:0798 | Intel      | 100 Series/C230 Series Ch... | 2     |            | 0E99E72EC9 |
-| 8086:a131 | 103c:8257 | Intel      | 100 Series/C230 Series Ch... | 2     |            | BB8BEB97BE |
-| 8086:a131 | 1558:8509 | Intel      | 100 Series/C230 Series Ch... | 2     | pchtherm   | E84B5B6E5F |
-| 8086:a131 | 17aa:5050 | Intel      | 100 Series/C230 Series Ch... | 2     |            | DDC907CCF4 |
-| 8086:a160 | 1028:0798 | Intel      | 100 Series/C230 Series Ch... | 2     |            | 0E99E72EC9 |
-| 8086:a161 | 1028:0798 | Intel      | 100 Series/C230 Series Ch... | 2     |            | 0E99E72EC9 |
-| 8086:a379 | 17aa:2267 | Intel      | Cannon Lake PCH Thermal C... | 2     |            | 045A80D8BC |
-| 8086:a379 | 17aa:3802 | Intel      | Cannon Lake PCH Thermal C... | 2     |            | DCE3BA8C99 |
+| ID        | Subsystem | MFG              | Name                                 | Count | Driver     | Probe |
+|-----------|-----------|------------------|--------------------------------------|-------|------------|-------|
+| 8086:3b32 | 17aa:2190 | Intel            | 5 Series/3400 Series Chipset Ther... | 21    |            | [BCD5BEA2B7](<Notebook/Lenovo/ThinkPad/ThinkPad T410 2537BN8/4A58F0F69086/OPNSENSE-22.1.2/13.0-STABLE/AMD64/BCD5BEA2B7>) |
+| 8086:9ca4 | 17aa:2226 | Intel            | Wildcat Point-LP Thermal Manageme... | 12    | pchtherm   | [4BA527DC9B](<Notebook/Lenovo/ThinkPad/ThinkPad X250 20CMCTO1WW/E6AE328AD30B/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/4BA527DC9B>) |
+| 8086:9ca4 | 17aa:5034 | Intel            | Wildcat Point-LP Thermal Manageme... | 8     | pchtherm   | [BC2860431E](<Notebook/Lenovo/ThinkPad/ThinkPad T450 20BUS0VH08/CDAB4EDF622D/GHOSTBSD-22.01.12/13.0-STABLE/AMD64/BC2860431E>) |
+| 8086:1903 | 17aa:2279 | Intel            | Xeon E3-1200 v5/E3-1500 v5/6th Ge... | 7     |            | [4147A5824D](<Notebook/Lenovo/ThinkPad/ThinkPad T590 20N4CTO1WW/3C494D1552EB/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/4147A5824D>) |
+| 8086:9d31 | 17aa:5062 | Intel            | Sunrise Point-LP Thermal subsystem   | 7     | pchtherm   | [2E1C585715](<Notebook/Lenovo/ThinkPad/ThinkPad X270 W10DG 20K5S0BM01/C223E0B01844/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/2E1C585715>) |
+| 8086:9d60 | 17aa:5062 | Intel            | Sunrise Point-LP Serial IO I2C Co... | 7     | ig4iic     | [2E1C585715](<Notebook/Lenovo/ThinkPad/ThinkPad X270 W10DG 20K5S0BM01/C223E0B01844/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/2E1C585715>) |
+| 8086:9d61 | 17aa:5062 | Intel            | Sunrise Point-LP Serial IO I2C Co... | 7     | ig4iic     | [2E1C585715](<Notebook/Lenovo/ThinkPad/ThinkPad X270 W10DG 20K5S0BM01/C223E0B01844/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/2E1C585715>) |
+| 8086:9df9 | 17aa:2279 | Intel            | Cannon Point-LP Thermal Controller   | 7     | pchtherm   | [4147A5824D](<Notebook/Lenovo/ThinkPad/ThinkPad T590 20N4CTO1WW/3C494D1552EB/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/4147A5824D>) |
+| 8086:1903 | 17aa:5072 | Intel            | Xeon E3-1200 v5/E3-1500 v5/6th Ge... | 6     |            | [98072B8DB6](<Notebook/Lenovo/ThinkPad/ThinkPad E590 20NB0012RT/F14FDAEA6645/FREEBSD-13.0-P3/13.0-RELEASE-P3/AMD64/98072B8DB6>) |
+| 8086:9d31 | 103c:8079 | Intel            | Sunrise Point-LP Thermal subsystem   | 6     | pchtherm   | [F259F73C17](<Notebook/Hewlett-Packard/EliteBook/EliteBook 840 G3/372FB522FD12/OPNSENSE-22.1/13.0-STABLE/AMD64/F259F73C17>) |
+| 8086:9d60 | 103c:8079 | Intel            | Sunrise Point-LP Serial IO I2C Co... | 6     | ig4iic     | [F259F73C17](<Notebook/Hewlett-Packard/EliteBook/EliteBook 840 G3/372FB522FD12/OPNSENSE-22.1/13.0-STABLE/AMD64/F259F73C17>) |
+| 8086:9df9 | 17aa:5072 | Intel            | Cannon Point-LP Thermal Controller   | 6     | pchtherm   | [98072B8DB6](<Notebook/Lenovo/ThinkPad/ThinkPad E590 20NB0012RT/F14FDAEA6645/FREEBSD-13.0-P3/13.0-RELEASE-P3/AMD64/98072B8DB6>) |
+| 8086:1903 | 17aa:382f | Intel            | Xeon E3-1200 v5/E3-1500 v5/6th Ge... | 5     |            | [384D2F888B](<Notebook/Lenovo/Legion/Legion Y540-15IRH 81SX/DB27396229F8/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/384D2F888B>) |
+| 8086:9a03 | f111:0001 | Intel            | TigerLake-LP Dynamic Tuning Proce... | 5     |            | [1F58E0594F](<Notebook/Framework/Laptop/Laptop/12E6C3C95AB5/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/1F58E0594F>) |
+| 8086:9a0d | f111:0001 | Intel            | Tigerlake Telemetry Aggregator       | 5     |            | [1F58E0594F](<Notebook/Framework/Laptop/Laptop/12E6C3C95AB5/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/1F58E0594F>) |
+| 8086:9d31 | 17aa:2238 | Intel            | Sunrise Point-LP Thermal subsystem   | 5     |            | [821C81E652](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 4th 20FB001XAU/5B2B74D5C2AB/NOMADBSD-1.4/12.2-RELEASE-P4/AMD64/821C81E652>) |
+| 8086:9d31 | 17aa:224b | Intel            | Sunrise Point-LP Thermal subsystem   | 5     | pchtherm   | [6C895CB96F](<Notebook/Lenovo/ThinkPad/ThinkPad T470s W10DG 20JTS0A900/5B70EA1A7528/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/6C895CB96F>) |
+| 8086:9d31 | 8086:9d31 | Intel            | Sunrise Point-LP Thermal subsystem   | 5     | pchtherm   | [5A75DB9142](<Notebook/TUXEDO/InfinityBook13/InfinityBook13V3/0B9DECE35038/HELLOSYSTEM-0.7.0/13.0-RELEASE-P7/AMD64/5A75DB9142>) |
+| 8086:0153 |           | Intel            | 3rd Gen Core Processor Thermal Su... | 4     |            | [791C826F7D](<Notebook/Lenovo/ThinkPad/ThinkPad X230 2330A48/4F00E9E73697/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/791C826F7D>) |
+| 8086:1903 | 1028:06de | Intel            | Xeon E3-1200 v5/E3-1500 v5/6th Ge... | 4     |            | [9E479E9C50](<Notebook/Dell/Latitude/Latitude E5470/A17BA6584F09/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/9E479E9C50>) |
+| 8086:1903 | 17aa:2258 | Intel            | Xeon E3-1200 v5/E3-1500 v5/6th Ge... | 4     |            | [556FCB7E5E](<Notebook/Lenovo/ThinkPad/ThinkPad T480s 20L8S1GX00/EA208CC61F28/FREEBSD-13.0/13.0-RELEASE/AMD64/556FCB7E5E>) |
+| 8086:1903 | 8086:1903 | Intel            | Xeon E3-1200 v5/E3-1500 v5/6th Ge... | 4     |            | [66B8FC8279](<Notebook/Lenovo/IdeaPad/IdeaPad 320S-13IKB 81AK/5F5FB56A298D/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/66B8FC8279>) |
+| 8086:3b32 |           | Intel            | 5 Series/3400 Series Chipset Ther... | 4     |            | [7F25AB7C67](<Notebook/Apple/MacBookPro6/MacBookPro6,2/2059E6ED7633/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/7F25AB7C67>) |
+| 8086:3b32 | 1028:040a | Intel            | 5 Series/3400 Series Chipset Ther... | 4     |            | [8C904D84E0](<Notebook/Dell/Latitude/Latitude E6410/D86C1197F0AC/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/8C904D84E0>) |
+| 8086:3b32 | 1179:0001 | Intel            | 5 Series/3400 Series Chipset Ther... | 4     |            | [2AC9BEA1E6](<Notebook/Toshiba/PORTEGE/PORTEGE M780/9BA4726CBC1C/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/2AC9BEA1E6>) |
+| 8086:9d31 | 17aa:2245 | Intel            | Sunrise Point-LP Thermal subsystem   | 4     | pchtherm   | [668BF95221](<Notebook/Lenovo/ThinkPad/ThinkPad T470 W10DG 20JNS0JU01/ADC556F95A12/GHOSTBSD-20.04.02/13.0-STABLE/AMD64/668BF95221>) |
+| 8086:9d31 | 17aa:224f | Intel            | Sunrise Point-LP Thermal subsystem   | 4     | pchtherm   | [7AEA2CCAA7](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 5th 20HRS04C00/46797EE9B847/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/7AEA2CCAA7>) |
+| 8086:9d31 | 17aa:2258 | Intel            | Sunrise Point-LP Thermal subsystem   | 4     | pchtherm   | [556FCB7E5E](<Notebook/Lenovo/ThinkPad/ThinkPad T480s 20L8S1GX00/EA208CC61F28/FREEBSD-13.0/13.0-RELEASE/AMD64/556FCB7E5E>) |
+| 8086:9d31 | 17aa:5053 | Intel            | Sunrise Point-LP Thermal subsystem   | 4     | pchtherm   | [DEAC163B52](<Notebook/Lenovo/ThinkPad/ThinkPad T460 20FNCTO1WW/88EC95397971/OPNSENSE-22.1.1/13.0-STABLE/AMD64/DEAC163B52>) |
+| 8086:9d31 | 17aa:5068 | Intel            | Sunrise Point-LP Thermal subsystem   | 4     | pchtherm   | [BE311B6A34](<Notebook/Lenovo/ThinkPad/ThinkPad E580 20KSCTO1WW/FE16B0524669/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/BE311B6A34>) |
+| 8086:9d60 | 17aa:2258 | Intel            | Sunrise Point-LP Serial IO I2C Co... | 4     | ig4iic     | [556FCB7E5E](<Notebook/Lenovo/ThinkPad/ThinkPad T480s 20L8S1GX00/EA208CC61F28/FREEBSD-13.0/13.0-RELEASE/AMD64/556FCB7E5E>) |
+| 8086:a379 | 17aa:3802 | Intel            | Cannon Lake PCH Thermal Controller   | 4     |            | [384D2F888B](<Notebook/Lenovo/Legion/Legion Y540-15IRH 81SX/DB27396229F8/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/384D2F888B>) |
+| 8086:0103 | 10f7:8338 | Intel            | Core i7/i5/i3 Thermal Management ... | 3     |            | [6BBADBA65D](<Notebook/Panasonic/CF-NX1/CF-NX1GDHYS/343F5A72B70D/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/6BBADBA65D>) |
+| 8086:0153 | 1043:108d | Intel            | 3rd Gen Core Processor Thermal Su... | 3     |            | [7F4E6F4541](<Notebook/ASUSTek Computer/X202/X202E/4F1DF3965EB5/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/7F4E6F4541>) |
+| 8086:0153 | 1043:1517 | Intel            | 3rd Gen Core Processor Thermal Su... | 3     |            | [9FEBAB6C01](<Notebook/ASUSTek Computer/UX31/UX31A/2ABD09D4BEE1/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/9FEBAB6C01>) |
+| 8086:02f9 | 1028:09ec | Intel            | Comet Lake Thermal Subsytem          | 3     |            | [80D7BF959A](<Notebook/Dell/Latitude/Latitude 3410/3DC4614C13E4/FREEBSD-13.0-RC1/13.0-RC1/AMD64/80D7BF959A>) |
+| 8086:02f9 | 1558:1401 | Intel            | Comet Lake Thermal Subsytem          | 3     |            | [713B33351F](<Notebook/System76/Lemur/Lemur Pro/FB3C4199D24B/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/713B33351F>) |
+| 8086:02f9 | 17aa:5079 | Intel            | Comet Lake Thermal Subsytem          | 3     | pchtherm   | [0FA4700D17](<Notebook/Lenovo/ThinkPad/ThinkPad E15 20RD0011MX/534BB4FF83C1/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/0FA4700D17>) |
+| 8086:02f9 | 8086:7270 | Intel            | Comet Lake Thermal Subsytem          | 3     |            | [F99C9F56B7](<Notebook/System76/Darter/Darter Pro/0CE03E6D5308/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/F99C9F56B7>) |
+| 8086:1603 | 1028:062e | Intel            | Broadwell-U Processor Thermal Sub... | 3     |            | [8A3867F171](<Notebook/Dell/Latitude/Latitude E7450/384980EB885D/FREEBSD-13.0-P6/13.0-RELEASE-P6/AMD64/8A3867F171>) |
+| 8086:1903 | 1028:06df | Intel            | Xeon E3-1200 v5/E3-1500 v5/6th Ge... | 3     |            | [C8477DA717](<Notebook/Dell/Latitude/Latitude E5570/5EFE1EB32C53/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/C8477DA717>) |
+| 8086:1903 | 1028:078c | Intel            | Xeon E3-1200 v5/E3-1500 v5/6th Ge... | 3     |            | [9073F1975D](<Notebook/Dell/Inspiron/Inspiron 15-3567/26EF6087DCBB/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/9073F1975D>) |
+| 8086:1903 | 1028:0798 | Intel            | Xeon E3-1200 v5/E3-1500 v5/6th Ge... | 3     |            | [652E2E284F](<Notebook/Dell/Inspiron/Inspiron 15 7000 Gaming/2663B977A92F/FREEBSD-13.0-P6/13.0-RELEASE/AMD64/652E2E284F>) |
+| 8086:1903 | 1028:079f | Intel            | Xeon E3-1200 v5/E3-1500 v5/6th Ge... | 3     |            | [089B61BB38](<Notebook/Dell/Latitude/Latitude 7280/E9E3F30F4DB0/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/089B61BB38>) |
+| 8086:1903 | 1028:08b8 | Intel            | Xeon E3-1200 v5/E3-1500 v5/6th Ge... | 3     |            | [1BB6C1F63F](<Notebook/Dell/Latitude/Latitude 5400/418002D1A36C/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/1BB6C1F63F>) |
+| 8086:1903 | 1028:09ec | Intel            | Xeon E3-1200 v5/E3-1500 v5/6th Ge... | 3     |            | [80D7BF959A](<Notebook/Dell/Latitude/Latitude 3410/3DC4614C13E4/FREEBSD-13.0-RC1/13.0-RC1/AMD64/80D7BF959A>) |
+| 8086:1903 | 1558:1401 | Intel            | Xeon E3-1200 v5/E3-1500 v5/6th Ge... | 3     |            | [713B33351F](<Notebook/System76/Lemur/Lemur Pro/FB3C4199D24B/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/713B33351F>) |
+| 8086:1903 | 17aa:225c | Intel            | Xeon E3-1200 v5/E3-1500 v5/6th Ge... | 3     |            | [16206C4970](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 6th 20KG0022US/0E31F9E108FF/FREEBSD-12.2/12.2-RELEASE/AMD64/16206C4970>) |
+| 8086:1903 | 17aa:2292 | Intel            | Xeon E3-1200 v5/E3-1500 v5/6th Ge... | 3     |            | [3CF2AD31A8](<Notebook/Others/Others/Others/CEE39BFDF5CD/DRAGONFLY-6.0/6.0-RELEASE/AMD64/3CF2AD31A8>) |
+| 8086:1903 | 17aa:5079 | Intel            | Xeon E3-1200 v5/E3-1500 v5/6th Ge... | 3     |            | [0FA4700D17](<Notebook/Lenovo/ThinkPad/ThinkPad E15 20RD0011MX/534BB4FF83C1/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/0FA4700D17>) |
+| 8086:1903 | 19e5:3e04 | Intel            | Xeon E3-1200 v5/E3-1500 v5/6th Ge... | 3     |            | [F7E09652D9](<Notebook/HUAWEI/MACH-WX/MACH-WX9/4067EE7CBCE5/FREEBSD-12.2-P4/12.2-RELEASE-P4/AMD64/F7E09652D9>) |
+| 8086:1c24 | 10f7:8338 | Intel            | 6 Series/C200 Series Chipset Fami... | 3     |            | [6BBADBA65D](<Notebook/Panasonic/CF-NX1/CF-NX1GDHYS/343F5A72B70D/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/6BBADBA65D>) |
+| 8086:1e24 | 1043:108d | Intel            | 7 Series/C210 Series Chipset Fami... | 3     |            | [7F4E6F4541](<Notebook/ASUSTek Computer/X202/X202E/4F1DF3965EB5/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/7F4E6F4541>) |
+| 8086:1e24 | 1043:1517 | Intel            | 7 Series/C210 Series Chipset Fami... | 3     |            | [9FEBAB6C01](<Notebook/ASUSTek Computer/UX31/UX31A/2ABD09D4BEE1/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/9FEBAB6C01>) |
+| 8086:22dc | 8086:7270 | Intel            | Atom/Celeron/Pentium Processor x5... | 3     |            | [3454B5492B](<Notebook/AZW/BT3/BT3 PRO/8FB6E0960427/OPNSENSE-21.7.5/12.1-RELEASE-P21-HBSD/AMD64/3454B5492B>) |
+| 8086:3b32 | 1043:1c77 | Intel            | 5 Series/3400 Series Chipset Ther... | 3     |            | [92B975763F](<Notebook/ASUSTek Computer/K52/K52Jc/DB01933C6182/HELLOSYSTEM-0.7.0/12.2-RELEASE-P7/AMD64/92B975763F>) |
+| 8086:5a8c |           | Intel            | Atom/Celeron/Pentium Dynamic Plat... | 3     |            | [35869FF0DB](<Notebook/Jumper/EZbook/EZbook/BCAD2CB6073B/GHOSTBSD-22.01.12/13.0-STABLE/AMD64/35869FF0DB>) |
+| 8086:5aac | 8086:7270 | Intel            | Celeron N3350/Pentium N4200/Atom ... | 3     | ig4iic     | [35869FF0DB](<Notebook/Jumper/EZbook/EZbook/BCAD2CB6073B/GHOSTBSD-22.01.12/13.0-STABLE/AMD64/35869FF0DB>) |
+| 8086:5ab2 | 8086:7270 | Intel            | Celeron N3350/Pentium N4200/Atom ... | 3     | ig4iic     | [35869FF0DB](<Notebook/Jumper/EZbook/EZbook/BCAD2CB6073B/GHOSTBSD-22.01.12/13.0-STABLE/AMD64/35869FF0DB>) |
+| 8086:5ab4 | 8086:7270 | Intel            | Celeron N3350/Pentium N4200/Atom ... | 3     | ig4iic     | [35869FF0DB](<Notebook/Jumper/EZbook/EZbook/BCAD2CB6073B/GHOSTBSD-22.01.12/13.0-STABLE/AMD64/35869FF0DB>) |
+| 8086:5ab6 | 8086:7270 | Intel            | Celeron N3350/Pentium N4200/Atom ... | 3     | ig4iic     | [35869FF0DB](<Notebook/Jumper/EZbook/EZbook/BCAD2CB6073B/GHOSTBSD-22.01.12/13.0-STABLE/AMD64/35869FF0DB>) |
+| 8086:5ac2 | 8086:7270 | Intel            | Celeron N3350/Pentium N4200/Atom ... | 3     |            | [35869FF0DB](<Notebook/Jumper/EZbook/EZbook/BCAD2CB6073B/GHOSTBSD-22.01.12/13.0-STABLE/AMD64/35869FF0DB>) |
+| 8086:5ac4 | 8086:7270 | Intel            | Celeron N3350/Pentium N4200/Atom ... | 3     |            | [35869FF0DB](<Notebook/Jumper/EZbook/EZbook/BCAD2CB6073B/GHOSTBSD-22.01.12/13.0-STABLE/AMD64/35869FF0DB>) |
+| 8086:5ac6 | 8086:7270 | Intel            | Celeron N3350/Pentium N4200/Atom ... | 3     |            | [35869FF0DB](<Notebook/Jumper/EZbook/EZbook/BCAD2CB6073B/GHOSTBSD-22.01.12/13.0-STABLE/AMD64/35869FF0DB>) |
+| 8086:8c24 | 8086:7270 | Intel            | 8 Series Chipset Family Thermal M... | 3     | pchtherm   | [6D580E8270](<Notebook/Apple/MacBookPro11/MacBookPro11,4/C2BAFC376883/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/6D580E8270>) |
+| 8086:9a03 | 17aa:22d5 | Intel            | TigerLake-LP Dynamic Tuning Proce... | 3     |            | [8F9E9DDDE5](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon Gen 9 20XWCTO1WW/83AC7FC10181/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/8F9E9DDDE5>) |
+| 8086:9a0d |           | Intel            | Tigerlake Telemetry Aggregator       | 3     |            | [3B3FF8B95D](<Notebook/Notebook/NS50/NS50_70MU/CB23E1126FAF/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/3B3FF8B95D>) |
+| 8086:9a0d | 17aa:22d5 | Intel            | Tigerlake Telemetry Aggregator       | 3     |            | [8F9E9DDDE5](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon Gen 9 20XWCTO1WW/83AC7FC10181/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/8F9E9DDDE5>) |
+| 8086:9ca4 | 17aa:2227 | Intel            | Wildcat Point-LP Thermal Manageme... | 3     |            | [B60382DA32](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 3rd 20BT000BUS/FBDB9E088872/FREEBSD-12.2-P4/12.2-RELEASE/AMD64/B60382DA32>) |
+| 8086:9ca4 | 8086:7270 | Intel            | Wildcat Point-LP Thermal Manageme... | 3     | pchtherm   | [E04A1B354C](<Notebook/Apple/MacBookPro12/MacBookPro12,1/98B93121E415/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/E04A1B354C>) |
+| 8086:9d27 | 19e5:3e04 | Intel            | Sunrise Point-LP Serial IO UART C... | 3     |            | [F7E09652D9](<Notebook/HUAWEI/MACH-WX/MACH-WX9/4067EE7CBCE5/FREEBSD-12.2-P4/12.2-RELEASE-P4/AMD64/F7E09652D9>) |
+| 8086:9d27 | 8086:9d27 | Intel            | Sunrise Point-LP Serial IO UART C... | 3     |            | [4CE05F93A8](<Notebook/Chuwi/MiniBook/MiniBook/7C143B97B52B/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/4CE05F93A8>) |
+| 8086:9d2a | 19e5:3e04 | Intel            | Sunrise Point-LP Serial IO SPI Co... | 3     |            | [F7E09652D9](<Notebook/HUAWEI/MACH-WX/MACH-WX9/4067EE7CBCE5/FREEBSD-12.2-P4/12.2-RELEASE-P4/AMD64/F7E09652D9>) |
+| 8086:9d31 | 1028:078c | Intel            | Sunrise Point-LP Thermal subsystem   | 3     |            | [9073F1975D](<Notebook/Dell/Inspiron/Inspiron 15-3567/26EF6087DCBB/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/9073F1975D>) |
+| 8086:9d31 | 1028:079f | Intel            | Sunrise Point-LP Thermal subsystem   | 3     | pchtherm   | [089B61BB38](<Notebook/Dell/Latitude/Latitude 7280/E9E3F30F4DB0/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/089B61BB38>) |
+| 8086:9d31 | 17aa:225c | Intel            | Sunrise Point-LP Thermal subsystem   | 3     | pchtherm   | [16206C4970](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 6th 20KG0022US/0E31F9E108FF/FREEBSD-12.2/12.2-RELEASE/AMD64/16206C4970>) |
+| 8086:9d31 | 19e5:3e04 | Intel            | Sunrise Point-LP Thermal subsystem   | 3     |            | [F7E09652D9](<Notebook/HUAWEI/MACH-WX/MACH-WX9/4067EE7CBCE5/FREEBSD-12.2-P4/12.2-RELEASE-P4/AMD64/F7E09652D9>) |
+| 8086:9d31 | 8086:7270 | Intel            | Sunrise Point-LP Thermal subsystem   | 3     |            | [372C1B80BD](<Notebook/AAEON/GENE-SKU/GENE-SKU7/8ED85FC1D82E/OPNSENSE-21.7.3/12.1-RELEASE-P20-HBSD/AMD64/372C1B80BD>) |
+| 8086:9d60 | 1028:078c | Intel            | Sunrise Point-LP Serial IO I2C Co... | 3     | ig4iic     | [9073F1975D](<Notebook/Dell/Inspiron/Inspiron 15-3567/26EF6087DCBB/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/9073F1975D>) |
+| 8086:9d60 | 1028:079f | Intel            | Sunrise Point-LP Serial IO I2C Co... | 3     | ig4iic_pci | [089B61BB38](<Notebook/Dell/Latitude/Latitude 7280/E9E3F30F4DB0/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/089B61BB38>) |
+| 8086:9d60 | 19e5:3e04 | Intel            | Sunrise Point-LP Serial IO I2C Co... | 3     | ig4iic     | [F7E09652D9](<Notebook/HUAWEI/MACH-WX/MACH-WX9/4067EE7CBCE5/FREEBSD-12.2-P4/12.2-RELEASE-P4/AMD64/F7E09652D9>) |
+| 8086:9d60 | 8086:9d60 | Intel            | Sunrise Point-LP Serial IO I2C Co... | 3     | ig4iic     | [4CE05F93A8](<Notebook/Chuwi/MiniBook/MiniBook/7C143B97B52B/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/4CE05F93A8>) |
+| 8086:9d61 | 1028:078c | Intel            | Sunrise Point-LP Serial IO I2C Co... | 3     | ig4iic     | [9073F1975D](<Notebook/Dell/Inspiron/Inspiron 15-3567/26EF6087DCBB/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/9073F1975D>) |
+| 8086:9d61 | 1028:079f | Intel            | Sunrise Point-LP Serial IO I2C Co... | 3     | ig4iic_pci | [089B61BB38](<Notebook/Dell/Latitude/Latitude 7280/E9E3F30F4DB0/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/089B61BB38>) |
+| 8086:9d61 | 19e5:3e04 | Intel            | Sunrise Point-LP Serial IO I2C Co... | 3     | ig4iic     | [F7E09652D9](<Notebook/HUAWEI/MACH-WX/MACH-WX9/4067EE7CBCE5/FREEBSD-12.2-P4/12.2-RELEASE-P4/AMD64/F7E09652D9>) |
+| 8086:9d61 | 8086:9d61 | Intel            | Sunrise Point-LP Serial IO I2C Co... | 3     | ig4iic     | [4CE05F93A8](<Notebook/Chuwi/MiniBook/MiniBook/7C143B97B52B/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/4CE05F93A8>) |
+| 8086:9d62 | 1028:079f | Intel            | Sunrise Point-LP Serial IO I2C Co... | 3     | ig4iic_pci | [089B61BB38](<Notebook/Dell/Latitude/Latitude 7280/E9E3F30F4DB0/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/089B61BB38>) |
+| 8086:9d62 | 8086:9d62 | Intel            | Sunrise Point-LP Serial IO I2C Co... | 3     | ig4iic     | [4CE05F93A8](<Notebook/Chuwi/MiniBook/MiniBook/7C143B97B52B/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/4CE05F93A8>) |
+| 8086:9df9 | 1028:08b8 | Intel            | Cannon Point-LP Thermal Controller   | 3     |            | [1BB6C1F63F](<Notebook/Dell/Latitude/Latitude 5400/418002D1A36C/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/1BB6C1F63F>) |
+| 8086:9df9 | 17aa:2292 | Intel            | Cannon Point-LP Thermal Controller   | 3     | pchtherm   | [3CF2AD31A8](<Notebook/Others/Others/Others/CEE39BFDF5CD/DRAGONFLY-6.0/6.0-RELEASE/AMD64/3CF2AD31A8>) |
+| 8086:a131 | 1028:0798 | Intel            | 100 Series/C230 Series Chipset Fa... | 3     | pchtherm   | [652E2E284F](<Notebook/Dell/Inspiron/Inspiron 15 7000 Gaming/2663B977A92F/FREEBSD-13.0-P6/13.0-RELEASE/AMD64/652E2E284F>) |
+| 8086:a131 | 17aa:5050 | Intel            | 100 Series/C230 Series Chipset Fa... | 3     | pchtherm   | [3EF1595AF6](<Notebook/Lenovo/ThinkPad/ThinkPad T460p 20FXS09D11/AEEBF4FDEE51/FREEBSD-13.0-P6/13.0-RELEASE-P4/AMD64/3EF1595AF6>) |
+| 8086:a160 | 1028:0798 | Intel            | 100 Series/C230 Series Chipset Fa... | 3     | ig4iic     | [652E2E284F](<Notebook/Dell/Inspiron/Inspiron 15 7000 Gaming/2663B977A92F/FREEBSD-13.0-P6/13.0-RELEASE/AMD64/652E2E284F>) |
+| 8086:a161 | 1028:0798 | Intel            | 100 Series/C230 Series Chipset Fa... | 3     | ig4iic     | [652E2E284F](<Notebook/Dell/Inspiron/Inspiron 15 7000 Gaming/2663B977A92F/FREEBSD-13.0-P6/13.0-RELEASE/AMD64/652E2E284F>) |
+| 8086:02f9 | 1028:09a1 | Intel            | Comet Lake Thermal Subsytem          | 2     | pchtherm   | [A620D284CB](<Notebook/Dell/Latitude/Latitude 5510/9741CEB43BDE/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/A620D284CB>) |
+| 8086:02f9 | 1462:1279 | Intel            | Comet Lake Thermal Subsytem          | 2     | pchtherm   | [84838CD532](<Notebook/MSI/Modern/Modern 14 A10M/CB14F45A6442/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/84838CD532>) |
+| 8086:02f9 | 17aa:22af | Intel            | Comet Lake Thermal Subsytem          | 2     | pchtherm   | [6836FC60F6](<Notebook/Lenovo/ThinkPad/ThinkPad X13 Gen 1 20T2003PRT/7ED3441E6EB7/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/6836FC60F6>) |
+| 8086:02f9 | 17aa:22be | Intel            | Comet Lake Thermal Subsytem          | 2     |            | [85E94A1288](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon Gen 8 20U9CTO1WW/B74176FFA919/FREEBSD-13.0/13.0-RELEASE/AMD64/85E94A1288>) |
+| 8086:06f9 | 1462:12bc | Intel            | Comet Lake PCH Thermal Controller    | 2     | pchtherm   | [48B172BFE8](<Notebook/MSI/GE75/GE75 Raider 10SFS/7BA908741577/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/48B172BFE8>) |
+| 8086:06f9 | 17aa:3802 | Intel            | Comet Lake PCH Thermal Controller    | 2     | pchtherm   | [2BE8CF963C](<Notebook/Lenovo/Legion/Legion 5P 15IMH05H 82AW/5AF94BC5A494/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/2BE8CF963C>) |
 
 ### Smbus (PCI)
 
-| ID        | Subsystem | MFG        | Name                         | Count | Driver     | Probe      |
-|-----------|-----------|------------|------------------------------|-------|------------|------------|
-| 8086:1c22 | 17aa:21da | Intel      | 6 Series/C200 Series Chip... | 14    | ichsmb     | 66743A51CC |
-| 8086:2930 | 17aa:20f9 | Intel      | 82801I (ICH9 Family) SMBu... | 11    |            | BDBD2D0A05 |
-| 8086:3b30 | 17aa:2167 | Intel      | 5 Series/3400 Series Chip... | 10    | ichsmb     | C887FF2917 |
-| 10de:0aa2 | 10de:cb79 | Nvidia     | MCP79 SMBus                  | 8     |            | F46146B79E |
-| 8086:1c22 | 17aa:21ce | Intel      | 6 Series/C200 Series Chip... | 8     | ichsmb     | DC29D714D9 |
-| 8086:1e22 | 17aa:21f3 | Intel      | 7 Series/C216 Chipset Fam... | 8     | ichsmb     | 0F001F65D2 |
-| 1022:790b | 1022:790b | AMD        | FCH SMBus Controller         | 7     | intsmb     | F4A0F0941B |
-| 8086:1c22 | 8086:7270 | Intel      | 6 Series/C200 Series Chip... | 7     |            | 193936B5CA |
-| 8086:1e22 | 17aa:21fa | Intel      | 7 Series/C216 Chipset Fam... | 7     |            | AB871769F0 |
-| 8086:283e | 17aa:20a9 | Intel      | 82801H (ICH8 Family) SMBu... | 6     | ichsmb     | D223A9B1FB |
-| 8086:8c22 | 17aa:220e | Intel      | 8 Series/C220 Series Chip... | 6     | ichsmb     | 7660F9B6DB |
-| 8086:9ca2 | 17aa:2226 | Intel      | Wildcat Point-LP SMBus Co... | 6     | ichsmb     | 107AC19795 |
-| 8086:9ca2 | 17aa:5034 | Intel      | Wildcat Point-LP SMBus Co... | 6     | ichsmb     | AC567BD12D |
-| 8086:9da3 | 17aa:2279 | Intel      | Cannon Point-LP SMBus Con... | 6     |            | 6311D603FF |
-| 8086:1c22 | 17aa:21cf | Intel      | 6 Series/C200 Series Chip... | 5     | ichsmb     | 49DACEE7D0 |
-| 8086:9c22 | 1028:05ca | Intel      | 8 Series SMBus Controller    | 5     |            | 1DBD9A5CEE |
-| 8086:9c22 | 1028:0651 | Intel      | 8 Series SMBus Controller    | 5     |            | 0D1D75A914 |
-| 8086:9d23 | 17aa:2238 | Intel      | Sunrise Point-LP SMBus       | 5     |            | 821C81E652 |
-| 8086:9d23 | 17aa:5062 | Intel      | Sunrise Point-LP SMBus       | 5     | ichsmb     | 88C27E65D7 |
-| 8086:1e22 | 1028:0597 | Intel      | 7 Series/C216 Chipset Fam... | 4     | ichsmb     | 9050866FB2 |
-| 8086:1e22 | 17aa:21f6 | Intel      | 7 Series/C216 Chipset Fam... | 4     |            | 39F3A4F234 |
-| 8086:1e22 | 17aa:21fb | Intel      | 7 Series/C216 Chipset Fam... | 4     |            | FACF6FA0F8 |
-| 8086:1e22 | 8086:1e22 | Intel      | 7 Series/C216 Chipset Fam... | 4     |            | 424ADD8B03 |
-| 8086:1e22 | 8086:7270 | Intel      | 7 Series/C216 Chipset Fam... | 4     | ichsmb     | AFC70D9C77 |
-| 8086:27da | 17aa:200f | Intel      | NM10/ICH7 Family SMBus Co... | 4     |            | 5375F351A5 |
-| 8086:8c22 | 1028:05cc | Intel      | 8 Series/C220 Series Chip... | 4     |            | 1847C0AADB |
-| 8086:8c22 | 8086:7270 | Intel      | 8 Series/C220 Series Chip... | 4     | ichsmb     | 1C9FEEF8E7 |
-| 8086:9c22 | 8086:7270 | Intel      | 8 Series SMBus Controller    | 4     |            | 1F2D078D2E |
-| 8086:9d23 | 103c:8079 | Intel      | Sunrise Point-LP SMBus       | 4     | ichsmb     | 2B97986DE1 |
-| 8086:9da3 | 17aa:5072 | Intel      | Cannon Point-LP SMBus Con... | 4     |            | 852A900303 |
-| 1022:790b | 17aa:5122 | AMD        | FCH SMBus Controller         | 3     | intsmb     | 2F1BA02130 |
-| 8086:02a3 | 1028:09ec | Intel      | Comet Lake PCH-LP SMBus H... | 3     |            | 80D7BF959A |
-| 8086:1c22 | 1028:0493 | Intel      | 6 Series/C200 Series Chip... | 3     |            | 6BF1F5FE84 |
-| 8086:1c22 | 10f7:8338 | Intel      | 6 Series/C200 Series Chip... | 3     |            | 6BBADBA65D |
-| 8086:1c22 | 17aa:3975 | Intel      | 6 Series/C200 Series Chip... | 3     |            | B8E35AACDB |
-| 8086:1e22 | 1043:14c7 | Intel      | 7 Series/C216 Chipset Fam... | 3     | ichsmb     | E887EE2FF5 |
-| 8086:1e22 | 17aa:21f9 | Intel      | 7 Series/C216 Chipset Fam... | 3     | ichsmb     | B659B95D1A |
-| 8086:283e | 106b:00a1 | Intel      | 82801H (ICH8 Family) SMBu... | 3     | ichsmb     | ED3684513F |
-| 8086:3b30 | 1028:040a | Intel      | 5 Series/3400 Series Chip... | 3     | ichsmb     | 211FE874FD |
-| 8086:3b30 | 1043:1c77 | Intel      | 5 Series/3400 Series Chip... | 3     | ichsmb     | BA7FB8E83C |
-| 8086:3b30 | 8086:7270 | Intel      | 5 Series/3400 Series Chip... | 3     | ichsmb     | 0AB44E95DF |
-| 8086:8c22 | 1028:05bd | Intel      | 8 Series/C220 Series Chip... | 3     | ichsmb     | 3A656DED12 |
-| 8086:9c22 | 17aa:220c | Intel      | 8 Series SMBus Controller    | 3     |            | B644ED3914 |
-| 8086:9c22 | 17aa:2214 | Intel      | 8 Series SMBus Controller    | 3     | ichsmb     | CBFA45FE44 |
-| 8086:9c22 | 17aa:3978 | Intel      | 8 Series SMBus Controller    | 3     |            | D3D9DC620F |
-| 8086:9ca2 | 17aa:2227 | Intel      | Wildcat Point-LP SMBus Co... | 3     | ichsmb     | B60382DA32 |
-| 8086:9d23 | 17aa:2245 | Intel      | Sunrise Point-LP SMBus       | 3     | ichsmb     | E27342AB94 |
-| 8086:9d23 | 17aa:224f | Intel      | Sunrise Point-LP SMBus       | 3     | ichsmb     | 4993AD0FEB |
-| 8086:9d23 | 17aa:2258 | Intel      | Sunrise Point-LP SMBus       | 3     | ichsmb     | EBD44C21D9 |
-| 8086:9d23 | 17aa:225c | Intel      | Sunrise Point-LP SMBus       | 3     |            | 16206C4970 |
-| 8086:9d23 | 19e5:3e04 | Intel      | Sunrise Point-LP SMBus       | 3     |            | F7E09652D9 |
-| 8086:9d23 | 8086:9d23 | Intel      | Sunrise Point-LP SMBus       | 3     |            | 2E51DFE463 |
-| 1002:4385 | 1002:4385 | AMD        | SBx00 SMBus Controller       | 2     | intsmb     | 5834A52924 |
-| 1002:4385 | 103c:3577 | AMD        | SBx00 SMBus Controller       | 2     | intsmb     | F83C769501 |
-| 1022:780b | 1022:780b | AMD        | FCH SMBus Controller         | 2     | intsmb     | 4433B8842F |
-| 1022:780b | 1025:0865 | AMD        | FCH SMBus Controller         | 2     | intsmb     | E2B6DBFE40 |
-| 1022:780b | 1179:ff1e | AMD        | FCH SMBus Controller         | 2     | intsmb     | 9FB68E38D8 |
-| 1022:780b | 17aa:3801 | AMD        | FCH SMBus Controller         | 2     | intsmb     | 1D227A9CD2 |
-| 1022:790b | 1025:1246 | AMD        | FCH SMBus Controller         | 2     | intsmb     | 9E03A76684 |
-| 1022:790b | 103c:84ac | AMD        | FCH SMBus Controller         | 2     |            | 3E500C12A3 |
-| 1022:790b | 1043:18f1 | AMD        | FCH SMBus Controller         | 2     | intsmb     | 1952513DB8 |
-| 1022:790b | 1558:a500 | AMD        | FCH SMBus Controller         | 2     | intsmb     | 792FB07DD9 |
-| 1022:790b | 17aa:5082 | AMD        | FCH SMBus Controller         | 2     | intsmb     | ED75B3D15B |
-| 1022:790b | 17aa:5125 | AMD        | FCH SMBus Controller         | 2     | intsmb     | 7A706E46DE |
-| 1022:790b | 1d05:109f | AMD        | FCH SMBus Controller         | 2     | intsmb     | 5359B4DEE9 |
-| 8086:02a3 | 1558:1401 | Intel      | Comet Lake PCH-LP SMBus H... | 2     |            | 0BD96EF663 |
-| 8086:02a3 | 17aa:5079 | Intel      | Comet Lake PCH-LP SMBus H... | 2     |            | 94D082C57C |
-| 8086:06a3 | 17aa:3810 | Intel      | Comet Lake PCH SMBus Cont... | 2     | ichsmb     | 2BE8CF963C |
-| 8086:1c22 | 1028:049b | Intel      | 6 Series/C200 Series Chip... | 2     | ichsmb     | 32F03AA888 |
-| 8086:1c22 | 17aa:21e2 | Intel      | 6 Series/C200 Series Chip... | 2     | ichsmb     | AA98E655F3 |
-| 8086:1c22 | 8086:1c22 | Intel      | 6 Series/C200 Series Chip... | 2     |            | DEF6A6516D |
-| 8086:1e22 | 1028:0534 | Intel      | 7 Series/C216 Chipset Fam... | 2     | ichsmb     | 8D24817728 |
-| 8086:1e22 | 1028:0572 | Intel      | 7 Series/C216 Chipset Fam... | 2     |            | 599D3E84D7 |
-| 8086:1e22 | 104d:90b8 | Intel      | 7 Series/C216 Chipset Fam... | 2     | ichsmb     | 64F3F02018 |
-| 8086:1e22 | 17aa:2203 | Intel      | 7 Series/C216 Chipset Fam... | 2     | ichsmb     | 55DEBB2F24 |
-| 8086:1e22 | 17aa:3977 | Intel      | 7 Series/C216 Chipset Fam... | 2     |            | CCEC69B736 |
-| 8086:27da | 1028:02d6 | Intel      | NM10/ICH7 Family SMBus Co... | 2     |            | 899CE6FFE4 |
-| 8086:27da | 104d:9075 | Intel      | NM10/ICH7 Family SMBus Co... | 2     |            | 30BB4FC23C |
-| 8086:27da | 144d:c08f | Intel      | NM10/ICH7 Family SMBus Co... | 2     |            | A38A620353 |
-| 8086:2930 | 1028:024d | Intel      | 82801I (ICH9 Family) SMBu... | 2     |            | D5051EF185 |
-| 8086:2930 | 1179:ff00 | Intel      | 82801I (ICH9 Family) SMBu... | 2     |            | E07FD4EDD9 |
-| 8086:34a3 | 1028:097a | Intel      | Ice Lake-LP SMBus Controller | 2     |            | C2D56FC369 |
-| 8086:5ad4 | 8086:7270 | Intel      | Celeron N3350/Pentium N42... | 2     |            | BC138C0580 |
-| 8086:8c22 | 1043:157d | Intel      | 8 Series/C220 Series Chip... | 2     | ichsmb     | 37BE4EA27A |
-| 8086:8c22 | 10cf:17cf | Intel      | 8 Series/C220 Series Chip... | 2     |            | D3D033F879 |
-| 8086:8c22 | 17aa:2211 | Intel      | 8 Series/C220 Series Chip... | 2     | ichsmb     | 91D2CD471C |
-| 8086:9c22 | 1025:0a11 | Intel      | 8 Series SMBus Controller    | 2     |            | D15CAACA04 |
-| 8086:9c22 | 1028:05cb | Intel      | 8 Series SMBus Controller    | 2     | ichsmb     | 6EC8FD788A |
-| 8086:9c22 | 103c:1991 | Intel      | 8 Series SMBus Controller    | 2     |            | 565343B334 |
-| 8086:9c22 | 104d:90b6 | Intel      | 8 Series SMBus Controller    | 2     | ichsmb     | 23316D0F2B |
-| 8086:9c22 | 17aa:2217 | Intel      | 8 Series SMBus Controller    | 2     |            | E9155D12C7 |
-| 8086:9ca2 | 8086:7270 | Intel      | Wildcat Point-LP SMBus Co... | 2     |            | EFB1F9D207 |
-| 8086:9d23 | 1028:06df | Intel      | Sunrise Point-LP SMBus       | 2     |            | DA926F1065 |
-| 8086:9d23 | 1028:075b | Intel      | Sunrise Point-LP SMBus       | 2     |            | 1887B030C4 |
-| 8086:9d23 | 1043:10a1 | Intel      | Sunrise Point-LP SMBus       | 2     |            | D7D299F9FC |
-| 8086:9d23 | 1043:1c7d | Intel      | Sunrise Point-LP SMBus       | 2     |            | 57018EDD10 |
-| 8086:9d23 | 1558:1313 | Intel      | Sunrise Point-LP SMBus       | 2     |            | C23A22A72D |
-| 8086:9d23 | 17aa:224b | Intel      | Sunrise Point-LP SMBus       | 2     |            | FAA7BECF82 |
-| 8086:9d23 | 17aa:225a | Intel      | Sunrise Point-LP SMBus       | 2     |            | D5A1C088B3 |
-| 8086:9d23 | 17aa:504a | Intel      | Sunrise Point-LP SMBus       | 2     |            | AA3DEADEDD |
+| ID        | Subsystem | MFG              | Name                                 | Count | Driver     | Probe |
+|-----------|-----------|------------------|--------------------------------------|-------|------------|-------|
+| 1022:790b | 1022:790b | AMD              | FCH SMBus Controller                 | 21    | intsmb     | [4D8F19BA12](<Notebook/Deciso/Netboard/Netboard A20/94D2C7F0ED24/OPNSENSE-22.1/13.0-STABLE/AMD64/4D8F19BA12>) |
+| 8086:3b30 | 17aa:2167 | Intel            | 5 Series/3400 Series Chipset SMBu... | 21    | ichsmb     | [BCD5BEA2B7](<Notebook/Lenovo/ThinkPad/ThinkPad T410 2537BN8/4A58F0F69086/OPNSENSE-22.1.2/13.0-STABLE/AMD64/BCD5BEA2B7>) |
+| 8086:1c22 | 17aa:21da | Intel            | 6 Series/C200 Series Chipset Fami... | 19    | ichsmb     | [148A268A0F](<Notebook/Lenovo/ThinkPad/ThinkPad X220 4293B43/AD955BCC7F71/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/148A268A0F>) |
+| 8086:2930 | 17aa:20f9 | Intel            | 82801I (ICH9 Family) SMBus Contro... | 16    | ichsmb     | [B0A9802877](<Notebook/Lenovo/ThinkPad/ThinkPad SL510 2847R96/16806C85881A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/B0A9802877>) |
+| 10de:0aa2 | 10de:cb79 | Nvidia           | MCP79 SMBus                          | 14    |            | [D680290D84](<Notebook/Apple/MacBook6/MacBook6,1/B24103297D7A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/D680290D84>) |
+| 8086:1e22 | 17aa:21fa | Intel            | 7 Series/C216 Chipset Family SMBu... | 14    | ichsmb     | [06C6A282CA](<Notebook/Lenovo/ThinkPad/ThinkPad X230 23254G7/FF7D8D42B37A/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/06C6A282CA>) |
+| 8086:9c22 | 8086:7270 | Intel            | 8 Series SMBus Controller            | 13    | ichsmb     | [974E1F4E5E](<Notebook/Others/Others/Others/499A7AC3FA34/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/974E1F4E5E>) |
+| 8086:1c22 | 17aa:21ce | Intel            | 6 Series/C200 Series Chipset Fami... | 12    | ichsmb     | [8BD2318FB6](<Notebook/Lenovo/ThinkPad/ThinkPad T420 4236MBU/D2E0D93C2306/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/8BD2318FB6>) |
+| 8086:9ca2 | 17aa:2226 | Intel            | Wildcat Point-LP SMBus Controller    | 12    | ichsmb     | [4BA527DC9B](<Notebook/Lenovo/ThinkPad/ThinkPad X250 20CMCTO1WW/E6AE328AD30B/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/4BA527DC9B>) |
+| 8086:1c22 | 8086:7270 | Intel            | 6 Series/C200 Series Chipset Fami... | 11    | ichsmb     | [AA484C30A8](<Notebook/Apple/MacBookPro8/MacBookPro8,1/83A908F15226/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/AA484C30A8>) |
+| 8086:1e22 | 17aa:21f3 | Intel            | 7 Series/C216 Chipset Family SMBu... | 11    | ichsmb     | [86FD351C81](<Notebook/Lenovo/ThinkPad/ThinkPad T430 2349AK1/08273574C200/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/86FD351C81>) |
+| 8086:1e22 | 8086:7270 | Intel            | 7 Series/C216 Chipset Family SMBu... | 10    | ichsmb     | [64CCF1E6A0](<Notebook/Apple/MacBookPro10/MacBookPro10,1/60ED6011F0FC/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/64CCF1E6A0>) |
+| 8086:283e | 17aa:20a9 | Intel            | 82801H (ICH8 Family) SMBus Contro... | 9     | ichsmb     | [F5F25EFDCC](<Notebook/Lenovo/ThinkPad/ThinkPad T61 766301U/A1D00057611B/HELLOSYSTEM-0.7.0/13.0-RELEASE-P7/AMD64/F5F25EFDCC>) |
+| 8086:8c22 | 17aa:220e | Intel            | 8 Series/C220 Series Chipset Fami... | 9     | ichsmb     | [CBA9255F4A](<Notebook/Lenovo/ThinkPad/ThinkPad T440p 20AWS1JN00/4F89B9A156FF/FREEBSD-13.0/13.0-RELEASE/AMD64/CBA9255F4A>) |
+| 8086:1c22 | 17aa:21cf | Intel            | 6 Series/C200 Series Chipset Fami... | 8     | ichsmb     | [82F5612822](<Notebook/Lenovo/ThinkPad/ThinkPad T520 4243E51/EB551E7DDB1F/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/82F5612822>) |
+| 8086:9c22 | 17aa:220c | Intel            | 8 Series SMBus Controller            | 8     | ichsmb     | [2AF47B6502](<Notebook/Lenovo/ThinkPad/ThinkPad T440s 20AQ006HUS/5B022BB303EA/NOMADBSD-5806F915/13.0-RELEASE/AMD64/2AF47B6502>) |
+| 8086:9c22 | 17aa:3978 | Intel            | 8 Series SMBus Controller            | 8     | ichsmb     | [A1F85AFF27](<Notebook/Lenovo/Z50-70/Z50-70 20354/491D65A1BD89/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/A1F85AFF27>) |
+| 8086:9ca2 | 17aa:5034 | Intel            | Wildcat Point-LP SMBus Controller    | 8     | ichsmb     | [BC2860431E](<Notebook/Lenovo/ThinkPad/ThinkPad T450 20BUS0VH08/CDAB4EDF622D/GHOSTBSD-22.01.12/13.0-STABLE/AMD64/BC2860431E>) |
+| 8086:1e22 | 17aa:3977 | Intel            | 7 Series/C216 Chipset Family SMBu... | 7     | ichsmb     | [478714C7C9](<Notebook/Lenovo/G580/G580 20150/D8442DC4CB7A/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/478714C7C9>) |
+| 8086:27da | 17aa:200f | Intel            | NM10/ICH7 Family SMBus Controller    | 7     | ichsmb     | [91D67BA784](<Notebook/Lenovo/ThinkPad/ThinkPad R60e 0658W2M/505133B14946/FREEBSD-13.0/13.0-RELEASE/I386/91D67BA784>) |
+| 8086:9c22 | 1028:0651 | Intel            | 8 Series SMBus Controller            | 7     | ichsmb     | [6283CB4190](<Notebook/Dell/Inspiron/Inspiron 3442/DF9A7A49AE6A/FREEBSD-13.0-P3/13.0-RELEASE/AMD64/6283CB4190>) |
+| 8086:9d23 | 17aa:5062 | Intel            | Sunrise Point-LP SMBus               | 7     | ichsmb     | [2E1C585715](<Notebook/Lenovo/ThinkPad/ThinkPad X270 W10DG 20K5S0BM01/C223E0B01844/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/2E1C585715>) |
+| 8086:9da3 | 17aa:2279 | Intel            | Cannon Point-LP SMBus Controller     | 7     |            | [4147A5824D](<Notebook/Lenovo/ThinkPad/ThinkPad T590 20N4CTO1WW/3C494D1552EB/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/4147A5824D>) |
+| 8086:1e22 | 17aa:21fb | Intel            | 7 Series/C216 Chipset Family SMBu... | 6     | ichsmb     | [0B6AB3BA1B](<Notebook/Lenovo/ThinkPad/ThinkPad T430s 2356JH4/C3D86E55EECC/OPNSENSE-21.7.6/12.1-RELEASE-P21-HBSD/AMD64/0B6AB3BA1B>) |
+| 8086:283e | 106b:00a1 | Intel            | 82801H (ICH8 Family) SMBus Contro... | 6     | ichsmb     | [E0CF5200DE](<Notebook/Apple/MacBook4/MacBook4,1/07CFC301CF14/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E0CF5200DE>) |
+| 8086:9c22 | 1028:05ca | Intel            | 8 Series SMBus Controller            | 6     | ichsmb     | [762D8366D0](<Notebook/Dell/Latitude/Latitude E7240/B8876AE6AF27/FREEBSD-13.0-RC4/13.0-RC4/AMD64/762D8366D0>) |
+| 8086:9d23 | 103c:8079 | Intel            | Sunrise Point-LP SMBus               | 6     | ichsmb     | [F259F73C17](<Notebook/Hewlett-Packard/EliteBook/EliteBook 840 G3/372FB522FD12/OPNSENSE-22.1/13.0-STABLE/AMD64/F259F73C17>) |
+| 8086:9da3 | 17aa:5072 | Intel            | Cannon Point-LP SMBus Controller     | 6     |            | [98072B8DB6](<Notebook/Lenovo/ThinkPad/ThinkPad E590 20NB0012RT/F14FDAEA6645/FREEBSD-13.0-P3/13.0-RELEASE-P3/AMD64/98072B8DB6>) |
+| 1022:780b | 1022:780b | AMD              | FCH SMBus Controller                 | 5     | intsmb     | [EC1E865BBD](<Notebook/AEWIN/CB/CB-7979/515CE581A2B3/OPNSENSE-22.1.2/13.0-STABLE/AMD64/EC1E865BBD>) |
+| 8086:1e22 | 1028:0597 | Intel            | 7 Series/C216 Chipset Family SMBu... | 5     | ichsmb     | [B246D110AF](<Notebook/Dell/Inspiron/Inspiron 3521/D0B94644586B/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/B246D110AF>) |
+| 8086:1e22 | 17aa:21f6 | Intel            | 7 Series/C216 Chipset Family SMBu... | 5     | ichsmb     | [4E7FC367BC](<Notebook/Lenovo/ThinkPad/ThinkPad W530 2447AV9/778B9CE5B6CA/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/4E7FC367BC>) |
+| 8086:1e22 | 8086:1e22 | Intel            | 7 Series/C216 Chipset Family SMBu... | 5     |            | [21C1794D7E](<Notebook/Others/Others/Others/F6ACC051C26B/OPNSENSE-21.7.4/12.1-RELEASE-P20-HBSD/AMD64/21C1794D7E>) |
+| 8086:8c22 | 8086:7270 | Intel            | 8 Series/C220 Series Chipset Fami... | 5     | ichsmb     | [6D580E8270](<Notebook/Apple/MacBookPro11/MacBookPro11,4/C2BAFC376883/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/6D580E8270>) |
+| 8086:9c22 | 17aa:2214 | Intel            | 8 Series SMBus Controller            | 5     | ichsmb     | [66CFDD2419](<Notebook/Lenovo/ThinkPad/ThinkPad X240 20AMS2QDOC/958035AEAC5C/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/66CFDD2419>) |
+| 8086:9d23 | 17aa:2238 | Intel            | Sunrise Point-LP SMBus               | 5     |            | [821C81E652](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 4th 20FB001XAU/5B2B74D5C2AB/NOMADBSD-1.4/12.2-RELEASE-P4/AMD64/821C81E652>) |
+| 8086:9d23 | 17aa:224b | Intel            | Sunrise Point-LP SMBus               | 5     | ichsmb     | [6C895CB96F](<Notebook/Lenovo/ThinkPad/ThinkPad T470s W10DG 20JTS0A900/5B70EA1A7528/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/6C895CB96F>) |
+| 8086:9d23 | 8086:9d23 | Intel            | Sunrise Point-LP SMBus               | 5     | ichsmb     | [5A75DB9142](<Notebook/TUXEDO/InfinityBook13/InfinityBook13V3/0B9DECE35038/HELLOSYSTEM-0.7.0/13.0-RELEASE-P7/AMD64/5A75DB9142>) |
+| 8086:a0a3 | f111:0001 | Intel            | Tiger Lake-LP SMBus Controller       | 5     | ichsmb     | [1F58E0594F](<Notebook/Framework/Laptop/Laptop/12E6C3C95AB5/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/1F58E0594F>) |
+| 1002:4385 | 1002:4385 | AMD              | SBx00 SMBus Controller               | 4     | intsmb     | [1CCF85F60D](<Notebook/ASUSTek Computer/1215/1215B/A9FC3E123192/FREEBSD-13.0/13.0-RELEASE/AMD64/1CCF85F60D>) |
+| 1022:790b | 103c:84ac | AMD              | FCH SMBus Controller                 | 4     | intsmb     | [766E62F699](<Notebook/Hewlett-Packard/Laptop/Laptop 15-db0xxx/3E8F8F48759C/NOMADBSD-5806F915/13.0-RELEASE/AMD64/766E62F699>) |
+| 1022:790b | 17aa:5097 | AMD              | FCH SMBus Controller                 | 4     | intsmb     | [6C208C85A5](<Notebook/Lenovo/ThinkPad/ThinkPad E14 Gen 3 20Y7003SGE/284E69188279/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/6C208C85A5>) |
+| 8086:1c22 | 1028:0493 | Intel            | 6 Series/C200 Series Chipset Fami... | 4     | ichsmb     | [2E8B431CC6](<Notebook/Dell/Latitude/Latitude E6420/6637B5C9AD24/GHOSTBSD-20.04.02/13.0-STABLE/AMD64/2E8B431CC6>) |
+| 8086:1e22 | 1028:0534 | Intel            | 7 Series/C216 Chipset Family SMBu... | 4     | ichsmb     | [FDDE41404D](<Notebook/Dell/Latitude/Latitude E6430/9A4F06581327/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/FDDE41404D>) |
+| 8086:1e22 | 17aa:21f9 | Intel            | 7 Series/C216 Chipset Family SMBu... | 4     | ichsmb     | [2494D9D2DB](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 3443CTO/870107710CBE/OPNSENSE-21.7/12.1-RELEASE-P20-HBSD/AMD64/2494D9D2DB>) |
+| 8086:3b30 | 1028:040a | Intel            | 5 Series/3400 Series Chipset SMBu... | 4     | ichsmb     | [8C904D84E0](<Notebook/Dell/Latitude/Latitude E6410/D86C1197F0AC/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/8C904D84E0>) |
+| 8086:3b30 | 8086:7270 | Intel            | 5 Series/3400 Series Chipset SMBu... | 4     | ichsmb     | [7F25AB7C67](<Notebook/Apple/MacBookPro6/MacBookPro6,2/2059E6ED7633/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/7F25AB7C67>) |
+| 8086:5ad4 | 8086:7270 | Intel            | Celeron N3350/Pentium N4200/Atom ... | 4     | ichsmb     | [D1EB8226EB](<Notebook/SIEMENS/SIMATIC/SIMATIC IPC127E/F8EC425F9C5B/OPNSENSE-22.1.2/13.0-STABLE/AMD64/D1EB8226EB>) |
+| 8086:8c22 | 1028:05be | Intel            | 8 Series/C220 Series Chipset Fami... | 4     | ichsmb     | [E0576DD008](<Notebook/Dell/Latitude/Latitude E6540/47352B0D75D6/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E0576DD008>) |
+| 8086:8c22 | 1028:05cc | Intel            | 8 Series/C220 Series Chipset Fami... | 4     |            | [1847C0AADB](<Notebook/Dell/Precision/Precision M4800/534E5DEB811F/OPNSENSE-21.1.3/12.1-RELEASE-P14-HBSD/AMD64/1847C0AADB>) |
+| 8086:9ca2 | 8086:7270 | Intel            | Wildcat Point-LP SMBus Controller    | 4     | ichsmb     | [E04A1B354C](<Notebook/Apple/MacBookPro12/MacBookPro12,1/98B93121E415/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/E04A1B354C>) |
+| 8086:9d23 | 17aa:2245 | Intel            | Sunrise Point-LP SMBus               | 4     | ichsmb     | [668BF95221](<Notebook/Lenovo/ThinkPad/ThinkPad T470 W10DG 20JNS0JU01/ADC556F95A12/GHOSTBSD-20.04.02/13.0-STABLE/AMD64/668BF95221>) |
+| 8086:9d23 | 17aa:224f | Intel            | Sunrise Point-LP SMBus               | 4     | ichsmb     | [7AEA2CCAA7](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 5th 20HRS04C00/46797EE9B847/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/7AEA2CCAA7>) |
+| 8086:9d23 | 17aa:2258 | Intel            | Sunrise Point-LP SMBus               | 4     | ichsmb     | [556FCB7E5E](<Notebook/Lenovo/ThinkPad/ThinkPad T480s 20L8S1GX00/EA208CC61F28/FREEBSD-13.0/13.0-RELEASE/AMD64/556FCB7E5E>) |
+| 8086:9d23 | 17aa:5053 | Intel            | Sunrise Point-LP SMBus               | 4     | ichsmb     | [DEAC163B52](<Notebook/Lenovo/ThinkPad/ThinkPad T460 20FNCTO1WW/88EC95397971/OPNSENSE-22.1.1/13.0-STABLE/AMD64/DEAC163B52>) |
+| 8086:9d23 | 17aa:5068 | Intel            | Sunrise Point-LP SMBus               | 4     | ichsmb     | [BE311B6A34](<Notebook/Lenovo/ThinkPad/ThinkPad E580 20KSCTO1WW/FE16B0524669/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/BE311B6A34>) |
+| 8086:9d23 | 8086:7270 | Intel            | Sunrise Point-LP SMBus               | 4     | ichsmb     | [372C1B80BD](<Notebook/AAEON/GENE-SKU/GENE-SKU7/8ED85FC1D82E/OPNSENSE-21.7.3/12.1-RELEASE-P20-HBSD/AMD64/372C1B80BD>) |
+| 8086:a323 | 17aa:3814 | Intel            | Cannon Lake PCH SMBus Controller     | 4     | ichsmb     | [384D2F888B](<Notebook/Lenovo/Legion/Legion Y540-15IRH 81SX/DB27396229F8/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/384D2F888B>) |
+| 1022:790b | 1043:18f1 | AMD              | FCH SMBus Controller                 | 3     | intsmb     | [2D72B6939D](<Notebook/ASUSTek Computer/TUF/TUF Gaming FX505DU_FX505DU/FE9E4108BBBD/NOMADBSD-5806F915/13.0-RELEASE/AMD64/2D72B6939D>) |
+| 1022:790b | 17aa:5122 | AMD              | FCH SMBus Controller                 | 3     | intsmb     | [0C153D0C98](<Notebook/Lenovo/ThinkPad/ThinkPad A485 20MU000VUS/0748151D3905/MIDNIGHTBSD-2.1.1/2.1.1/AMD64/0C153D0C98>) |
+| 1022:790b | 1d05:109f | AMD              | FCH SMBus Controller                 | 3     | intsmb     | [6F779D5170](<Notebook/TUXEDO/Pulse/Pulse 15 Gen1/C92D236C248C/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/6F779D5170>) |
+| 8086:02a3 | 1028:09ec | Intel            | Comet Lake PCH-LP SMBus Host Cont... | 3     |            | [80D7BF959A](<Notebook/Dell/Latitude/Latitude 3410/3DC4614C13E4/FREEBSD-13.0-RC1/13.0-RC1/AMD64/80D7BF959A>) |
+| 8086:02a3 | 1558:1401 | Intel            | Comet Lake PCH-LP SMBus Host Cont... | 3     |            | [713B33351F](<Notebook/System76/Lemur/Lemur Pro/FB3C4199D24B/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/713B33351F>) |
+| 8086:02a3 | 17aa:5079 | Intel            | Comet Lake PCH-LP SMBus Host Cont... | 3     | ichsmb     | [0FA4700D17](<Notebook/Lenovo/ThinkPad/ThinkPad E15 20RD0011MX/534BB4FF83C1/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/0FA4700D17>) |
+| 8086:02a3 | 8086:7270 | Intel            | Comet Lake PCH-LP SMBus Host Cont... | 3     |            | [F99C9F56B7](<Notebook/System76/Darter/Darter Pro/0CE03E6D5308/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/F99C9F56B7>) |
+| 8086:1c22 | 1025:0504 | Intel            | 6 Series/C200 Series Chipset Fami... | 3     | ichsmb     | [BD22FC8A49](<Notebook/Acer/Aspire/Aspire 5750G/1FF59E502D89/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/BD22FC8A49>) |
+| 8086:1c22 | 1028:049b | Intel            | 6 Series/C200 Series Chipset Fami... | 3     | ichsmb     | [1ED3FF35F6](<Notebook/Dell/Latitude/Latitude E5420/7F50D3A16CDB/HELLOSYSTEM-0.5.0/13.0-RELEASE/AMD64/1ED3FF35F6>) |
+| 8086:1c22 | 1043:1147 | Intel            | 6 Series/C200 Series Chipset Fami... | 3     | ichsmb     | [A07366611D](<Notebook/ASUSTek Computer/U31/U31SD/4817D15C5C95/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/A07366611D>) |
+| 8086:1c22 | 10f7:8338 | Intel            | 6 Series/C200 Series Chipset Fami... | 3     |            | [6BBADBA65D](<Notebook/Panasonic/CF-NX1/CF-NX1GDHYS/343F5A72B70D/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/6BBADBA65D>) |
+| 8086:1c22 | 17aa:3975 | Intel            | 6 Series/C200 Series Chipset Fami... | 3     |            | [B8E35AACDB](<Notebook/Lenovo/G470/G470 20078/35FE7475B2FF/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/B8E35AACDB>) |
+| 8086:1c22 | 8086:1c22 | Intel            | 6 Series/C200 Series Chipset Fami... | 3     |            | [341401BB02](<Notebook/Others/Others/Others/D4245F739188/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/341401BB02>) |
+| 8086:1e22 | 1028:0535 | Intel            | 7 Series/C216 Chipset Family SMBu... | 3     | ichsmb     | [0FA21BCF23](<Notebook/Dell/Latitude/Latitude E6530/9F002062E68D/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/0FA21BCF23>) |
+| 8086:1e22 | 1043:108d | Intel            | 7 Series/C216 Chipset Family SMBu... | 3     | ichsmb     | [7F4E6F4541](<Notebook/ASUSTek Computer/X202/X202E/4F1DF3965EB5/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/7F4E6F4541>) |
+| 8086:1e22 | 1043:14c7 | Intel            | 7 Series/C216 Chipset Family SMBu... | 3     | ichsmb     | [C7C812C2C9](<Notebook/ASUSTek Computer/X55/X55CR/D99F3FC27DCF/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/C7C812C2C9>) |
+| 8086:1e22 | 1043:1517 | Intel            | 7 Series/C216 Chipset Family SMBu... | 3     | ichsmb     | [9FEBAB6C01](<Notebook/ASUSTek Computer/UX31/UX31A/2ABD09D4BEE1/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/9FEBAB6C01>) |
+| 8086:1e22 | 1179:ff1e | Intel            | 7 Series/C216 Chipset Family SMBu... | 3     | ichsmb     | [06598A2ED3](<Notebook/Toshiba/Dakar10/Dakar10FW8/2F3FE05C620E/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/06598A2ED3>) |
+| 8086:1e22 | 17aa:2203 | Intel            | 7 Series/C216 Chipset Family SMBu... | 3     | ichsmb     | [EFDFEE9023](<Notebook/Lenovo/ThinkPad/ThinkPad X230 Tablet 343522U/EB8C39CCF903/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/EFDFEE9023>) |
+| 8086:266a | 1014:056b | Intel            | 82801FB/FBM/FR/FW/FRW (ICH6 Famil... | 3     | ichsmb     | [6FD6FD89C5](<Notebook/IBM/ThinkPad/ThinkPad R52 185869G/DED57F076B3E/FREEBSD-12.2-P6/12.2-RELEASE-P6/I386/6FD6FD89C5>) |
+| 8086:27da | 1043:83ad | Intel            | NM10/ICH7 Family SMBus Controller    | 3     | ichsmb     | [D171D1EC99](<Notebook/ASUSTek Computer/1001/1001PX/E2F07739895A/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/D171D1EC99>) |
+| 8086:2930 | 1028:024d | Intel            | 82801I (ICH9 Family) SMBus Contro... | 3     | ichsmb     | [FDB3DE3036](<Notebook/Dell/Latitude/Latitude E4300/B023391CA6F2/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/FDB3DE3036>) |
+| 8086:3b30 | 1043:1c77 | Intel            | 5 Series/3400 Series Chipset SMBu... | 3     | ichsmb     | [BA7FB8E83C](<Notebook/ASUSTek Computer/G73/G73Jh/D3F6616C8BB1/FREEBSD-12.2-P3/12.2-RELEASE-P3/AMD64/BA7FB8E83C>) |
+| 8086:8c22 | 1028:05bd | Intel            | 8 Series/C220 Series Chipset Fami... | 3     | ichsmb     | [8FA2C1F5C4](<Notebook/Dell/Latitude/Latitude E6440/90F4D14BB79B/FREEBSD-13.0-P2/13.0-RELEASE-P1/AMD64/8FA2C1F5C4>) |
+| 8086:8c22 | 17aa:2211 | Intel            | 8 Series/C220 Series Chipset Fami... | 3     | ichsmb     | [B6DFFE77EB](<Notebook/Lenovo/ThinkPad/ThinkPad W540 20BG0014US/3AD854A625A5/OPNSENSE-21.7.2/12.1-RELEASE-P20-HBSD/AMD64/B6DFFE77EB>) |
+| 8086:8c22 | 17aa:3978 | Intel            | 8 Series/C220 Series Chipset Fami... | 3     | ichsmb     | [1FEB455E8C](<Notebook/Lenovo/Y50-70/Y50-70 20378/45CB117B153A/OPNSENSE-21.7.7/12.1-RELEASE-P19-HBSD/AMD64/1FEB455E8C>) |
+| 8086:9c22 | 103c:1991 | Intel            | 8 Series SMBus Controller            | 3     | ichsmb     | [362940ACBB](<Notebook/Hewlett-Packard/EliteBook/EliteBook 820 G1/43570E209C4E/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/362940ACBB>) |
+| 8086:9c22 | 104d:90b6 | Intel            | 8 Series SMBus Controller            | 3     | ichsmb     | [03EF84679C](<Notebook/Sony/SVP1322/SVP13225SCBI/C462BD727B55/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/03EF84679C>) |
+| 8086:9ca2 | 1028:062e | Intel            | Wildcat Point-LP SMBus Controller    | 3     | ichsmb     | [8A3867F171](<Notebook/Dell/Latitude/Latitude E7450/384980EB885D/FREEBSD-13.0-P6/13.0-RELEASE-P6/AMD64/8A3867F171>) |
+| 8086:9ca2 | 1028:06ae | Intel            | Wildcat Point-LP SMBus Controller    | 3     | ichsmb     | [3A239EA97A](<Notebook/Dell/Inspiron/Inspiron 5558/AF88938C2D41/FREEBSD-12.3/12.3-RELEASE/AMD64/3A239EA97A>) |
+| 8086:9ca2 | 17aa:2227 | Intel            | Wildcat Point-LP SMBus Controller    | 3     | ichsmb     | [B60382DA32](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 3rd 20BT000BUS/FBDB9E088872/FREEBSD-12.2-P4/12.2-RELEASE/AMD64/B60382DA32>) |
+| 8086:9d23 | 1028:078c | Intel            | Sunrise Point-LP SMBus               | 3     |            | [9073F1975D](<Notebook/Dell/Inspiron/Inspiron 15-3567/26EF6087DCBB/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/9073F1975D>) |
+| 8086:9d23 | 1028:079f | Intel            | Sunrise Point-LP SMBus               | 3     | ichsmb     | [089B61BB38](<Notebook/Dell/Latitude/Latitude 7280/E9E3F30F4DB0/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/089B61BB38>) |
+| 8086:9d23 | 17aa:225c | Intel            | Sunrise Point-LP SMBus               | 3     |            | [16206C4970](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 6th 20KG0022US/0E31F9E108FF/FREEBSD-12.2/12.2-RELEASE/AMD64/16206C4970>) |
+| 8086:9d23 | 19e5:3e04 | Intel            | Sunrise Point-LP SMBus               | 3     |            | [F7E09652D9](<Notebook/HUAWEI/MACH-WX/MACH-WX9/4067EE7CBCE5/FREEBSD-12.2-P4/12.2-RELEASE-P4/AMD64/F7E09652D9>) |
+| 8086:9da3 | 1028:08b8 | Intel            | Cannon Point-LP SMBus Controller     | 3     |            | [1BB6C1F63F](<Notebook/Dell/Latitude/Latitude 5400/418002D1A36C/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/1BB6C1F63F>) |
+| 8086:9da3 | 17aa:2292 | Intel            | Cannon Point-LP SMBus Controller     | 3     |            | [3CF2AD31A8](<Notebook/Others/Others/Others/CEE39BFDF5CD/DRAGONFLY-6.0/6.0-RELEASE/AMD64/3CF2AD31A8>) |
+| 8086:a0a3 | 17aa:22d5 | Intel            | Tiger Lake-LP SMBus Controller       | 3     | ichsmb     | [8F9E9DDDE5](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon Gen 9 20XWCTO1WW/83AC7FC10181/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/8F9E9DDDE5>) |
+| 8086:a123 | 1028:0798 | Intel            | 100 Series/C230 Series Chipset Fa... | 3     | ichsmb     | [652E2E284F](<Notebook/Dell/Inspiron/Inspiron 15 7000 Gaming/2663B977A92F/FREEBSD-13.0-P6/13.0-RELEASE/AMD64/652E2E284F>) |
+| 8086:a123 | 17aa:5050 | Intel            | 100 Series/C230 Series Chipset Fa... | 3     | ichsmb     | [3EF1595AF6](<Notebook/Lenovo/ThinkPad/ThinkPad T460p 20FXS09D11/AEEBF4FDEE51/FREEBSD-13.0-P6/13.0-RELEASE-P4/AMD64/3EF1595AF6>) |
+| 1002:4385 | 103c:3577 | AMD              | SBx00 SMBus Controller               | 2     | intsmb     | [F83C769501](<Notebook/Hewlett-Packard/2000/2000/5F42EBFDBCAE/FREEBSD-12.2/12.2-RELEASE/AMD64/F83C769501>) |
+| 1022:780b | 1025:0715 | AMD              | FCH SMBus Controller                 | 2     | intsmb     | [CC83218496](<Notebook/Acer/Aspire/Aspire E1-421/030AC00DD903/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/CC83218496>) |
+| 1022:780b | 1025:0865 | AMD              | FCH SMBus Controller                 | 2     | intsmb     | [5306253276](<Notebook/Acer/Aspire/Aspire E5-521G/6C9872FCA376/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/5306253276>) |
 
 ### Sound (PCI)
 
-| ID        | Subsystem | MFG        | Name                         | Count | Driver     | Probe      |
-|-----------|-----------|------------|------------------------------|-------|------------|------------|
-| 8086:1c20 | 17aa:21da | Intel      | 6 Series/C200 Series Chip... | 14    | hdac       | 66743A51CC |
-| 8086:293e | 17aa:20f2 | Intel      | 82801I (ICH9 Family) HD A... | 11    | hdac       | BDBD2D0A05 |
-| 10de:0ac0 | 10de:cb79 | Nvidia     | MCP79 High Definition Audio  | 8     | hdac       | F46146B79E |
-| 8086:1c20 | 17aa:21ce | Intel      | 6 Series/C200 Series Chip... | 8     | hdac       | DC29D714D9 |
-| 8086:1e20 | 17aa:21f3 | Intel      | 7 Series/C216 Chipset Fam... | 8     | hdac       | 0F001F65D2 |
-| 8086:3b56 | 17aa:215e | Intel      | 5 Series/3400 Series Chip... | 8     | hdac       | C887FF2917 |
-| 8086:1c20 | 8086:7270 | Intel      | 6 Series/C200 Series Chip... | 7     | hdac       | 193936B5CA |
-| 8086:1e20 | 17aa:21fa | Intel      | 7 Series/C216 Chipset Fam... | 7     | hdac       | AB871769F0 |
-| 8086:0c0c | 17aa:220e | Intel      | Xeon E3-1200 v3/4th Gen C... | 6     | hdac       | 7660F9B6DB |
-| 8086:160c | 17aa:2226 | Intel      | Broadwell-U Audio Controller | 6     | hdac       | 107AC19795 |
-| 8086:160c | 17aa:5034 | Intel      | Broadwell-U Audio Controller | 6     | hdac       | AC567BD12D |
-| 8086:284b | 17aa:20ac | Intel      | 82801H (ICH8 Family) HD A... | 6     | hdac       | D223A9B1FB |
-| 8086:8c20 | 17aa:220e | Intel      | 8 Series/C220 Series Chip... | 6     | hdac       | 7660F9B6DB |
-| 8086:9ca0 | 17aa:2226 | Intel      | Wildcat Point-LP High Def... | 6     | hdac       | 107AC19795 |
-| 8086:9dc8 | 17aa:2279 | Intel      | Cannon Point-LP High Defi... | 6     | hdac       | 6311D603FF |
-| 8086:0a0c | 1028:05ca | Intel      | Haswell-ULT HD Audio Cont... | 5     | hdac       | 1DBD9A5CEE |
-| 8086:0a0c | 1028:0651 | Intel      | Haswell-ULT HD Audio Cont... | 5     | hdac       | 0D1D75A914 |
-| 8086:1c20 | 17aa:21cf | Intel      | 6 Series/C200 Series Chip... | 5     | hdac       | 49DACEE7D0 |
-| 8086:9c20 | 1028:05ca | Intel      | 8 Series HD Audio Controller | 5     | hdac       | 1DBD9A5CEE |
-| 8086:9c20 | 1028:0651 | Intel      | 8 Series HD Audio Controller | 5     | hdac       | 0D1D75A914 |
-| 8086:9d70 | 17aa:2238 | Intel      | Sunrise Point-LP HD Audio    | 5     | hdac       | 821C81E652 |
-| 1022:1457 | 1022:c950 | AMD        | Family 17h (Models 00h-0f... | 4     | hdac       | F4A0F0941B |
-| 8086:0a0c | 8086:0a0c | Intel      | Haswell-ULT HD Audio Cont... | 4     | hdac       | 1F2D078D2E |
-| 8086:1e20 | 1028:0597 | Intel      | 7 Series/C216 Chipset Fam... | 4     | hdac       | 9050866FB2 |
-| 8086:1e20 | 17aa:21f6 | Intel      | 7 Series/C216 Chipset Fam... | 4     | hdac       | 39F3A4F234 |
-| 8086:1e20 | 17aa:21fb | Intel      | 7 Series/C216 Chipset Fam... | 4     | hdac       | FACF6FA0F8 |
-| 8086:1e20 | 8086:1e20 | Intel      | 7 Series/C216 Chipset Fam... | 4     | hdac       | 424ADD8B03 |
-| 8086:1e20 | 8086:7270 | Intel      | 7 Series/C216 Chipset Fam... | 4     | hdac       | AFC70D9C77 |
-| 8086:27d8 | 17aa:2010 | Intel      | NM10/ICH7 Family High Def... | 4     | hdac       | 5375F351A5 |
-| 8086:8c20 | 1028:05cc | Intel      | 8 Series/C220 Series Chip... | 4     | hdac       | 1847C0AADB |
-| 8086:8c20 | 8086:7270 | Intel      | 8 Series/C220 Series Chip... | 4     | hdac       | 1C9FEEF8E7 |
-| 8086:9d70 | 103c:8079 | Intel      | Sunrise Point-LP HD Audio    | 4     | hdac       | 2B97986DE1 |
-| 8086:9d71 | 17aa:5062 | Intel      | Sunrise Point-LP HD Audio    | 4     | hdac       | 88C27E65D7 |
-| 8086:9dc8 | 17aa:5072 | Intel      | Cannon Point-LP High Defi... | 4     | hdac       | 852A900303 |
-| 1002:15de | 1002:15de | AMD        | Raven/Raven2/Fenghuang HD... | 3     | hdac       | BE2AD24D1B |
-| 1002:15de | 17aa:5122 | AMD        | Raven/Raven2/Fenghuang HD... | 3     | hdac       | 2F1BA02130 |
-| 1022:15e3 | 17aa:5122 | AMD        | Family 17h (Models 10h-1f... | 3     | hdac       | 2F1BA02130 |
-| 10de:0be2 |           | Nvidia     | GT216 HDMI Audio Controller  | 3     | hdac       | 0AB44E95DF |
-| 10de:0fb9 |           | Nvidia     | GP107GL High Definition A... | 3     | hdac       | 676F16AC86 |
-| 10de:10fa | 17aa:3ffb | Nvidia     | TU107 GeForce GTX 1650 Hi... | 3     | hdac       | 9FED35D792 |
-| 8086:02c8 | 1028:09ec | Intel      | Comet Lake PCH-LP cAVS       | 3     | hdac       | 80D7BF959A |
-| 8086:0a0c | 17aa:220c | Intel      | Haswell-ULT HD Audio Cont... | 3     | hdac       | B644ED3914 |
-| 8086:0a0c | 17aa:2214 | Intel      | Haswell-ULT HD Audio Cont... | 3     | hdac       | CBFA45FE44 |
-| 8086:0a0c | 17aa:3978 | Intel      | Haswell-ULT HD Audio Cont... | 3     | hdac       | D3D9DC620F |
-| 8086:0c0c | 1028:05bd | Intel      | Xeon E3-1200 v3/4th Gen C... | 3     | hdac       | 3A656DED12 |
-| 8086:0c0c | 1028:05cc | Intel      | Xeon E3-1200 v3/4th Gen C... | 3     | hdac       | 1847C0AADB |
-| 8086:160c | 17aa:2227 | Intel      | Broadwell-U Audio Controller | 3     | hdac       | B60382DA32 |
-| 8086:1c20 | 1028:0493 | Intel      | 6 Series/C200 Series Chip... | 3     | hdac       | 6BF1F5FE84 |
-| 8086:1c20 | 10f7:8338 | Intel      | 6 Series/C200 Series Chip... | 3     | hdac       | 6BBADBA65D |
-| 8086:1c20 | 17aa:3975 | Intel      | 6 Series/C200 Series Chip... | 3     | hdac       | B8E35AACDB |
-| 8086:1e20 | 17aa:21f9 | Intel      | 7 Series/C216 Chipset Fam... | 3     | hdac       | B659B95D1A |
-| 8086:284b | 106b:00a1 | Intel      | 82801H (ICH8 Family) HD A... | 3     | hdac       | ED3684513F |
-| 8086:3b56 | 1028:040a | Intel      | 5 Series/3400 Series Chip... | 3     | hdac       | 211FE874FD |
-| 8086:3b56 | 8086:7270 | Intel      | 5 Series/3400 Series Chip... | 3     | hdac       | 0AB44E95DF |
-| 8086:8c20 | 1028:05bd | Intel      | 8 Series/C220 Series Chip... | 3     | hdac       | 3A656DED12 |
-| 8086:9c20 | 17aa:2214 | Intel      | 8 Series HD Audio Controller | 3     | hdac       | CBFA45FE44 |
-| 8086:9c20 | 17aa:3978 | Intel      | 8 Series HD Audio Controller | 3     | hdac       | D3D9DC620F |
-| 8086:9c20 | 8086:7270 | Intel      | 8 Series HD Audio Controller | 3     | hdac       | 1F2D078D2E |
-| 8086:9ca0 | 17aa:2227 | Intel      | Wildcat Point-LP High Def... | 3     | hdac       | B60382DA32 |
-| 8086:9ca0 | 17aa:5034 | Intel      | Wildcat Point-LP High Def... | 3     | hdac       | D783B3B4DD |
-| 8086:9ca0 | 17aa:5036 | Intel      | Wildcat Point-LP High Def... | 3     | hdac       | AC567BD12D |
-| 8086:9d71 | 17aa:224f | Intel      | Sunrise Point-LP HD Audio    | 3     | hdac       | 4993AD0FEB |
-| 8086:9d71 | 17aa:2258 | Intel      | Sunrise Point-LP HD Audio    | 3     | hdac       | EBD44C21D9 |
-| 8086:9d71 | 17aa:225c | Intel      | Sunrise Point-LP HD Audio    | 3     | hdac       | 16206C4970 |
-| 8086:9d71 | 19e5:3e04 | Intel      | Sunrise Point-LP HD Audio    | 3     | hdac       | F7E09652D9 |
-| 1002:15b3 | 103c:84ac | AMD        | High Definition Audio Con... | 2     | hdac       | 3E500C12A3 |
-| 1002:15de | 17aa:5125 | AMD        | Raven/Raven2/Fenghuang HD... | 2     | hdac       | 7A706E46DE |
-| 1002:1637 | 1558:a500 | AMD        | Renoir Radeon High Defini... | 2     | hdac       | 792FB07DD9 |
-| 1002:1637 | 17aa:5082 | AMD        | Renoir Radeon High Defini... | 2     | hdac       | ED75B3D15B |
-| 1002:1637 | 1d05:109f | AMD        | Renoir Radeon High Defini... | 2     | hdac       | 5359B4DEE9 |
-| 1002:4383 | 103c:3577 | AMD        | SBx00 Azalia (Intel HDA)     | 2     | hdac       | F83C769501 |
-| 1002:9840 | 1025:0865 | AMD        | Kabini HDMI/DP Audio         | 2     | hdac       | E2B6DBFE40 |
-| 1002:9840 | 17aa:3801 | AMD        | Kabini HDMI/DP Audio         | 2     | hdac       | 1D227A9CD2 |
-| 1002:aa90 | 0000:aa90 | AMD        | Turks HDMI Audio [Radeon ... | 2     | hdac       | 193936B5CA |
-| 1002:aa90 | 103c:17a9 | AMD        | Turks HDMI Audio [Radeon ... | 2     | hdac       | 52BA4E835F |
-| 1002:aaf8 | 1025:1246 | AMD        | Vega 10 HDMI Audio [Radeo... | 2     | hdac       | 9E03A76684 |
-| 1022:1457 | 1025:1246 | AMD        | Family 17h (Models 00h-0f... | 2     | hdac       | 9E03A76684 |
-| 1022:15e3 | 103c:8786 | AMD        | Family 17h (Models 10h-1f... | 2     | hdac       | 19F307FF6D |
-| 1022:15e3 | 1043:18f1 | AMD        | Family 17h (Models 10h-1f... | 2     | hdac       | 1952513DB8 |
-| 1022:15e3 | 1558:a500 | AMD        | Family 17h (Models 10h-1f... | 2     | hdac       | 792FB07DD9 |
-| 1022:15e3 | 17aa:5082 | AMD        | Family 17h (Models 10h-1f... | 2     | hdac       | ED75B3D15B |
-| 1022:15e3 | 17aa:5125 | AMD        | Family 17h (Models 10h-1f... | 2     | hdac       | 7A706E46DE |
-| 1022:15e3 | 1d05:109f | AMD        | Family 17h (Models 10h-1f... | 2     | hdac       | 5359B4DEE9 |
-| 1022:780d | 1022:780d | AMD        | FCH Azalia Controller        | 2     | hdac       | 4433B8842F |
-| 1022:780d | 1025:0865 | AMD        | FCH Azalia Controller        | 2     | hdac       | E2B6DBFE40 |
-| 1022:780d | 1179:ff1e | AMD        | FCH Azalia Controller        | 2     | hdac       | 9FB68E38D8 |
-| 1022:780d | 17aa:3801 | AMD        | FCH Azalia Controller        | 2     | hdac       | 1D227A9CD2 |
-| 10de:0e1b | 106b:0130 | Nvidia     | GK107 HDMI Audio Controller  | 2     | hdac       | 1C9FEEF8E7 |
-| 10de:10fa | 1043:109f | Nvidia     | TU107 GeForce GTX 1650 Hi... | 2     | hdac       | 1952513DB8 |
-| 10de:1aeb | 103c:8786 | Nvidia     | TU116 High Definition Aud... | 2     | hdac       | 19F307FF6D |
-| 8086:02c8 | 1558:1401 | Intel      | Comet Lake PCH-LP cAVS       | 2     | hdac       | 0BD96EF663 |
-| 8086:02c8 | 17aa:5079 | Intel      | Comet Lake PCH-LP cAVS       | 2     | hdac       | 94D082C57C |
-| 8086:06c8 | 17aa:380f | Intel      | Comet Lake PCH cAVS          | 2     | hdac       | 2BE8CF963C |
-| 8086:0a0c | 1025:0a11 | Intel      | Haswell-ULT HD Audio Cont... | 2     | hdac       | D15CAACA04 |
-| 8086:0a0c | 1028:05cb | Intel      | Haswell-ULT HD Audio Cont... | 2     | hdac       | 6EC8FD788A |
-| 8086:0a0c | 103c:1991 | Intel      | Haswell-ULT HD Audio Cont... | 2     | hdac       | 565343B334 |
-| 8086:0a0c | 104d:90b6 | Intel      | Haswell-ULT HD Audio Cont... | 2     | hdac       | 23316D0F2B |
-| 8086:0a0c | 17aa:2217 | Intel      | Haswell-ULT HD Audio Cont... | 2     | hdac       | E9155D12C7 |
-| 8086:0a0c | 8086:2010 | Intel      | Haswell-ULT HD Audio Cont... | 2     | hdac       | 6501322932 |
-| 8086:0c0c | 10cf:17c6 | Intel      | Xeon E3-1200 v3/4th Gen C... | 2     | hdac       | D3D033F879 |
+| ID        | Subsystem | MFG              | Name                                 | Count | Driver     | Probe |
+|-----------|-----------|------------------|--------------------------------------|-------|------------|-------|
+| 8086:1c20 | 17aa:21da | Intel            | 6 Series/C200 Series Chipset Fami... | 19    | hdac       | [148A268A0F](<Notebook/Lenovo/ThinkPad/ThinkPad X220 4293B43/AD955BCC7F71/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/148A268A0F>) |
+| 8086:3b56 | 17aa:215e | Intel            | 5 Series/3400 Series Chipset High... | 19    | hdac       | [BCD5BEA2B7](<Notebook/Lenovo/ThinkPad/ThinkPad T410 2537BN8/4A58F0F69086/OPNSENSE-22.1.2/13.0-STABLE/AMD64/BCD5BEA2B7>) |
+| 8086:293e | 17aa:20f2 | Intel            | 82801I (ICH9 Family) HD Audio Con... | 17    | hdac       | [B0A9802877](<Notebook/Lenovo/ThinkPad/ThinkPad SL510 2847R96/16806C85881A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/B0A9802877>) |
+| 10de:0ac0 | 10de:cb79 | Nvidia           | MCP79 High Definition Audio          | 14    | hdac       | [D680290D84](<Notebook/Apple/MacBook6/MacBook6,1/B24103297D7A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/D680290D84>) |
+| 8086:1e20 | 17aa:21fa | Intel            | 7 Series/C216 Chipset Family High... | 14    | hdac       | [06C6A282CA](<Notebook/Lenovo/ThinkPad/ThinkPad X230 23254G7/FF7D8D42B37A/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/06C6A282CA>) |
+| 1022:1457 | 1022:c950 | AMD              | Family 17h (Models 00h-0fh) HD Au... | 12    | hdac       | [4D8F19BA12](<Notebook/Deciso/Netboard/Netboard A20/94D2C7F0ED24/OPNSENSE-22.1/13.0-STABLE/AMD64/4D8F19BA12>) |
+| 8086:0a0c | 8086:0a0c | Intel            | Haswell-ULT HD Audio Controller      | 12    | hdac       | [974E1F4E5E](<Notebook/Others/Others/Others/499A7AC3FA34/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/974E1F4E5E>) |
+| 8086:160c | 17aa:2226 | Intel            | Broadwell-U Audio Controller         | 12    | hdac       | [4BA527DC9B](<Notebook/Lenovo/ThinkPad/ThinkPad X250 20CMCTO1WW/E6AE328AD30B/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/4BA527DC9B>) |
+| 8086:1c20 | 17aa:21ce | Intel            | 6 Series/C200 Series Chipset Fami... | 12    | hdac       | [8BD2318FB6](<Notebook/Lenovo/ThinkPad/ThinkPad T420 4236MBU/D2E0D93C2306/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/8BD2318FB6>) |
+| 8086:9c20 | 8086:7270 | Intel            | 8 Series HD Audio Controller         | 12    | hdac       | [974E1F4E5E](<Notebook/Others/Others/Others/499A7AC3FA34/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/974E1F4E5E>) |
+| 8086:9ca0 | 17aa:2226 | Intel            | Wildcat Point-LP High Definition ... | 12    | hdac       | [4BA527DC9B](<Notebook/Lenovo/ThinkPad/ThinkPad X250 20CMCTO1WW/E6AE328AD30B/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/4BA527DC9B>) |
+| 8086:1e20 | 17aa:21f3 | Intel            | 7 Series/C216 Chipset Family High... | 11    | hdac       | [86FD351C81](<Notebook/Lenovo/ThinkPad/ThinkPad T430 2349AK1/08273574C200/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/86FD351C81>) |
+| 8086:1c20 | 8086:7270 | Intel            | 6 Series/C200 Series Chipset Fami... | 10    | hdac       | [AA484C30A8](<Notebook/Apple/MacBookPro8/MacBookPro8,1/83A908F15226/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/AA484C30A8>) |
+| 8086:1e20 | 8086:7270 | Intel            | 7 Series/C216 Chipset Family High... | 10    | hdac       | [64CCF1E6A0](<Notebook/Apple/MacBookPro10/MacBookPro10,1/60ED6011F0FC/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/64CCF1E6A0>) |
+| 8086:0c0c | 17aa:220e | Intel            | Xeon E3-1200 v3/4th Gen Core Proc... | 9     | hdac       | [CBA9255F4A](<Notebook/Lenovo/ThinkPad/ThinkPad T440p 20AWS1JN00/4F89B9A156FF/FREEBSD-13.0/13.0-RELEASE/AMD64/CBA9255F4A>) |
+| 8086:284b | 17aa:20ac | Intel            | 82801H (ICH8 Family) HD Audio Con... | 9     | hdac       | [F5F25EFDCC](<Notebook/Lenovo/ThinkPad/ThinkPad T61 766301U/A1D00057611B/HELLOSYSTEM-0.7.0/13.0-RELEASE-P7/AMD64/F5F25EFDCC>) |
+| 8086:8c20 | 17aa:220e | Intel            | 8 Series/C220 Series Chipset High... | 9     | hdac       | [CBA9255F4A](<Notebook/Lenovo/ThinkPad/ThinkPad T440p 20AWS1JN00/4F89B9A156FF/FREEBSD-13.0/13.0-RELEASE/AMD64/CBA9255F4A>) |
+| 8086:0a0c | 17aa:220c | Intel            | Haswell-ULT HD Audio Controller      | 8     | hdac       | [2AF47B6502](<Notebook/Lenovo/ThinkPad/ThinkPad T440s 20AQ006HUS/5B022BB303EA/NOMADBSD-5806F915/13.0-RELEASE/AMD64/2AF47B6502>) |
+| 8086:0a0c | 17aa:3978 | Intel            | Haswell-ULT HD Audio Controller      | 8     | hdac       | [A1F85AFF27](<Notebook/Lenovo/Z50-70/Z50-70 20354/491D65A1BD89/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/A1F85AFF27>) |
+| 8086:160c | 17aa:5034 | Intel            | Broadwell-U Audio Controller         | 8     | hdac       | [BC2860431E](<Notebook/Lenovo/ThinkPad/ThinkPad T450 20BUS0VH08/CDAB4EDF622D/GHOSTBSD-22.01.12/13.0-STABLE/AMD64/BC2860431E>) |
+| 8086:1c20 | 17aa:21cf | Intel            | 6 Series/C200 Series Chipset Fami... | 8     | hdac       | [82F5612822](<Notebook/Lenovo/ThinkPad/ThinkPad T520 4243E51/EB551E7DDB1F/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/82F5612822>) |
+| 8086:9c20 | 17aa:3978 | Intel            | 8 Series HD Audio Controller         | 8     | hdac       | [A1F85AFF27](<Notebook/Lenovo/Z50-70/Z50-70 20354/491D65A1BD89/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/A1F85AFF27>) |
+| 8086:0a0c | 1028:0651 | Intel            | Haswell-ULT HD Audio Controller      | 7     | hdac       | [6283CB4190](<Notebook/Dell/Inspiron/Inspiron 3442/DF9A7A49AE6A/FREEBSD-13.0-P3/13.0-RELEASE/AMD64/6283CB4190>) |
+| 8086:1e20 | 17aa:3977 | Intel            | 7 Series/C216 Chipset Family High... | 7     | hdac       | [478714C7C9](<Notebook/Lenovo/G580/G580 20150/D8442DC4CB7A/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/478714C7C9>) |
+| 8086:27d8 | 17aa:2010 | Intel            | NM10/ICH7 Family High Definition ... | 7     | hdac       | [91D67BA784](<Notebook/Lenovo/ThinkPad/ThinkPad R60e 0658W2M/505133B14946/FREEBSD-13.0/13.0-RELEASE/I386/91D67BA784>) |
+| 8086:9c20 | 1028:0651 | Intel            | 8 Series HD Audio Controller         | 7     | hdac       | [6283CB4190](<Notebook/Dell/Inspiron/Inspiron 3442/DF9A7A49AE6A/FREEBSD-13.0-P3/13.0-RELEASE/AMD64/6283CB4190>) |
+| 8086:9dc8 | 17aa:2279 | Intel            | Cannon Point-LP High Definition A... | 7     | hdac       | [4147A5824D](<Notebook/Lenovo/ThinkPad/ThinkPad T590 20N4CTO1WW/3C494D1552EB/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/4147A5824D>) |
+| 1002:15de | 1002:15de | AMD              | Raven/Raven2/Fenghuang HDMI/DP Au... | 6     | hdac       | [0B73DF29BF](<Notebook/ASUSTek Computer/VivoBook_ASUSLaptop/VivoBook_ASUSLaptop X512DA_F512DA/0940BAB70ED0/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/0B73DF29BF>) |
+| 8086:0a0c | 1028:05ca | Intel            | Haswell-ULT HD Audio Controller      | 6     | hdac       | [762D8366D0](<Notebook/Dell/Latitude/Latitude E7240/B8876AE6AF27/FREEBSD-13.0-RC4/13.0-RC4/AMD64/762D8366D0>) |
+| 8086:1e20 | 17aa:21fb | Intel            | 7 Series/C216 Chipset Family High... | 6     | hdac       | [0B6AB3BA1B](<Notebook/Lenovo/ThinkPad/ThinkPad T430s 2356JH4/C3D86E55EECC/OPNSENSE-21.7.6/12.1-RELEASE-P21-HBSD/AMD64/0B6AB3BA1B>) |
+| 8086:284b | 106b:00a1 | Intel            | 82801H (ICH8 Family) HD Audio Con... | 6     | hdac       | [E0CF5200DE](<Notebook/Apple/MacBook4/MacBook4,1/07CFC301CF14/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E0CF5200DE>) |
+| 8086:9c20 | 1028:05ca | Intel            | 8 Series HD Audio Controller         | 6     | hdac       | [762D8366D0](<Notebook/Dell/Latitude/Latitude E7240/B8876AE6AF27/FREEBSD-13.0-RC4/13.0-RC4/AMD64/762D8366D0>) |
+| 8086:9dc8 | 17aa:5072 | Intel            | Cannon Point-LP High Definition A... | 6     | hdac       | [98072B8DB6](<Notebook/Lenovo/ThinkPad/ThinkPad E590 20NB0012RT/F14FDAEA6645/FREEBSD-13.0-P3/13.0-RELEASE-P3/AMD64/98072B8DB6>) |
+| 8086:0a0c | 17aa:2214 | Intel            | Haswell-ULT HD Audio Controller      | 5     | hdac       | [66CFDD2419](<Notebook/Lenovo/ThinkPad/ThinkPad X240 20AMS2QDOC/958035AEAC5C/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/66CFDD2419>) |
+| 8086:1e20 | 1028:0597 | Intel            | 7 Series/C216 Chipset Family High... | 5     | hdac       | [B246D110AF](<Notebook/Dell/Inspiron/Inspiron 3521/D0B94644586B/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/B246D110AF>) |
+| 8086:1e20 | 17aa:21f6 | Intel            | 7 Series/C216 Chipset Family High... | 5     | hdac       | [4E7FC367BC](<Notebook/Lenovo/ThinkPad/ThinkPad W530 2447AV9/778B9CE5B6CA/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/4E7FC367BC>) |
+| 8086:1e20 | 8086:1e20 | Intel            | 7 Series/C216 Chipset Family High... | 5     | hdac       | [21C1794D7E](<Notebook/Others/Others/Others/F6ACC051C26B/OPNSENSE-21.7.4/12.1-RELEASE-P20-HBSD/AMD64/21C1794D7E>) |
+| 8086:8c20 | 8086:7270 | Intel            | 8 Series/C220 Series Chipset High... | 5     | hdac       | [6D580E8270](<Notebook/Apple/MacBookPro11/MacBookPro11,4/C2BAFC376883/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/6D580E8270>) |
+| 8086:9c20 | 17aa:2214 | Intel            | 8 Series HD Audio Controller         | 5     | hdac       | [66CFDD2419](<Notebook/Lenovo/ThinkPad/ThinkPad X240 20AMS2QDOC/958035AEAC5C/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/66CFDD2419>) |
+| 8086:9d70 | 103c:8079 | Intel            | Sunrise Point-LP HD Audio            | 5     | hdac       | [03BE88DED4](<Notebook/Hewlett-Packard/EliteBook/EliteBook 840 G3/B1E6E03EA5B1/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/03BE88DED4>) |
+| 8086:9d70 | 17aa:2238 | Intel            | Sunrise Point-LP HD Audio            | 5     | hdac       | [821C81E652](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 4th 20FB001XAU/5B2B74D5C2AB/NOMADBSD-1.4/12.2-RELEASE-P4/AMD64/821C81E652>) |
+| 8086:9d71 | 17aa:5062 | Intel            | Sunrise Point-LP HD Audio            | 5     | hdac       | [EFCCC9B019](<Notebook/Lenovo/ThinkPad/ThinkPad X270 20HMCTO1WW/4FD7701AE58F/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/EFCCC9B019>) |
+| 8086:a0c8 | f111:0001 | Intel            | Tiger Lake-LP Smart Sound Technol... | 5     | hdac       | [1F58E0594F](<Notebook/Framework/Laptop/Laptop/12E6C3C95AB5/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/1F58E0594F>) |
+| 1002:15b3 | 103c:84ac | AMD              | High Definition Audio Controller     | 4     | hdac       | [766E62F699](<Notebook/Hewlett-Packard/Laptop/Laptop 15-db0xxx/3E8F8F48759C/NOMADBSD-5806F915/13.0-RELEASE/AMD64/766E62F699>) |
+| 1002:1637 | 17aa:5097 | AMD              | Renoir Radeon High Definition Aud... | 4     | hdac       | [6C208C85A5](<Notebook/Lenovo/ThinkPad/ThinkPad E14 Gen 3 20Y7003SGE/284E69188279/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/6C208C85A5>) |
+| 1022:15e3 | 17aa:5097 | AMD              | Family 17h/19h HD Audio Controller   | 4     | hdac       | [6C208C85A5](<Notebook/Lenovo/ThinkPad/ThinkPad E14 Gen 3 20Y7003SGE/284E69188279/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/6C208C85A5>) |
+| 10de:0be2 |           | Nvidia           | GT216 HDMI Audio Controller          | 4     | hdac       | [7F25AB7C67](<Notebook/Apple/MacBookPro6/MacBookPro6,2/2059E6ED7633/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/7F25AB7C67>) |
+| 10de:10fa | 17aa:3ffb | Nvidia           | TU107 GeForce GTX 1650 High Defin... | 4     | hdac       | [D8F8901AE7](<Notebook/Lenovo/Legion/Legion Y7000 2019 PG0 81T0/21E64ED02159/NOMADBSD-5806F915/13.0-RELEASE/AMD64/D8F8901AE7>) |
+| 8086:0c0c | 1028:05be | Intel            | Xeon E3-1200 v3/4th Gen Core Proc... | 4     | hdac       | [E0576DD008](<Notebook/Dell/Latitude/Latitude E6540/47352B0D75D6/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E0576DD008>) |
+| 8086:1c20 | 1028:0493 | Intel            | 6 Series/C200 Series Chipset Fami... | 4     | hdac       | [2E8B431CC6](<Notebook/Dell/Latitude/Latitude E6420/6637B5C9AD24/GHOSTBSD-20.04.02/13.0-STABLE/AMD64/2E8B431CC6>) |
+| 8086:1e20 | 1028:0534 | Intel            | 7 Series/C216 Chipset Family High... | 4     | hdac       | [FDDE41404D](<Notebook/Dell/Latitude/Latitude E6430/9A4F06581327/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/FDDE41404D>) |
+| 8086:1e20 | 17aa:21f9 | Intel            | 7 Series/C216 Chipset Family High... | 4     | hdac       | [2494D9D2DB](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 3443CTO/870107710CBE/OPNSENSE-21.7/12.1-RELEASE-P20-HBSD/AMD64/2494D9D2DB>) |
+| 8086:3b56 | 1028:040a | Intel            | 5 Series/3400 Series Chipset High... | 4     | hdac       | [8C904D84E0](<Notebook/Dell/Latitude/Latitude E6410/D86C1197F0AC/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/8C904D84E0>) |
+| 8086:3b56 | 1179:0001 | Intel            | 5 Series/3400 Series Chipset High... | 4     | hdac       | [2AC9BEA1E6](<Notebook/Toshiba/PORTEGE/PORTEGE M780/9BA4726CBC1C/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/2AC9BEA1E6>) |
+| 8086:3b56 | 8086:7270 | Intel            | 5 Series/3400 Series Chipset High... | 4     | hdac       | [7F25AB7C67](<Notebook/Apple/MacBookPro6/MacBookPro6,2/2059E6ED7633/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/7F25AB7C67>) |
+| 8086:8c20 | 1028:05be | Intel            | 8 Series/C220 Series Chipset High... | 4     | hdac       | [E0576DD008](<Notebook/Dell/Latitude/Latitude E6540/47352B0D75D6/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E0576DD008>) |
+| 8086:8c20 | 1028:05cc | Intel            | 8 Series/C220 Series Chipset High... | 4     | hdac       | [1847C0AADB](<Notebook/Dell/Precision/Precision M4800/534E5DEB811F/OPNSENSE-21.1.3/12.1-RELEASE-P14-HBSD/AMD64/1847C0AADB>) |
+| 8086:9c20 | 17aa:220c | Intel            | 8 Series HD Audio Controller         | 4     | hdac       | [2AF47B6502](<Notebook/Lenovo/ThinkPad/ThinkPad T440s 20AQ006HUS/5B022BB303EA/NOMADBSD-5806F915/13.0-RELEASE/AMD64/2AF47B6502>) |
+| 8086:9c20 | 17aa:2212 | Intel            | 8 Series HD Audio Controller         | 4     | hdac       | [9584AE69FA](<Notebook/Lenovo/ThinkPad/ThinkPad T440 20B7000PHV/72D6D517DC8B/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/9584AE69FA>) |
+| 8086:9ca0 | 17aa:5034 | Intel            | Wildcat Point-LP High Definition ... | 4     | hdac       | [BC2860431E](<Notebook/Lenovo/ThinkPad/ThinkPad T450 20BUS0VH08/CDAB4EDF622D/GHOSTBSD-22.01.12/13.0-STABLE/AMD64/BC2860431E>) |
+| 8086:9ca0 | 17aa:5036 | Intel            | Wildcat Point-LP High Definition ... | 4     | hdac       | [748312BFBF](<Notebook/Lenovo/ThinkPad/ThinkPad T450s 20BX001PUS/28A99AA52D2D/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/748312BFBF>) |
+| 8086:9ca0 | 8086:7270 | Intel            | Wildcat Point-LP High Definition ... | 4     | hdac       | [E04A1B354C](<Notebook/Apple/MacBookPro12/MacBookPro12,1/98B93121E415/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/E04A1B354C>) |
+| 8086:9d70 | 17aa:5053 | Intel            | Sunrise Point-LP HD Audio            | 4     | hdac       | [DEAC163B52](<Notebook/Lenovo/ThinkPad/ThinkPad T460 20FNCTO1WW/88EC95397971/OPNSENSE-22.1.1/13.0-STABLE/AMD64/DEAC163B52>) |
+| 8086:9d71 | 17aa:224f | Intel            | Sunrise Point-LP HD Audio            | 4     | hdac       | [7AEA2CCAA7](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 5th 20HRS04C00/46797EE9B847/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/7AEA2CCAA7>) |
+| 8086:9d71 | 17aa:2258 | Intel            | Sunrise Point-LP HD Audio            | 4     | hdac       | [556FCB7E5E](<Notebook/Lenovo/ThinkPad/ThinkPad T480s 20L8S1GX00/EA208CC61F28/FREEBSD-13.0/13.0-RELEASE/AMD64/556FCB7E5E>) |
+| 8086:9d71 | 17aa:5068 | Intel            | Sunrise Point-LP HD Audio            | 4     | hdac       | [BE311B6A34](<Notebook/Lenovo/ThinkPad/ThinkPad E580 20KSCTO1WW/FE16B0524669/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/BE311B6A34>) |
+| 8086:a348 | 17aa:380f | Intel            | Cannon Lake PCH cAVS                 | 4     | hdac       | [384D2F888B](<Notebook/Lenovo/Legion/Legion Y540-15IRH 81SX/DB27396229F8/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/384D2F888B>) |
+| 1002:15de | 17aa:5122 | AMD              | Raven/Raven2/Fenghuang HDMI/DP Au... | 3     | hdac       | [0C153D0C98](<Notebook/Lenovo/ThinkPad/ThinkPad A485 20MU000VUS/0748151D3905/MIDNIGHTBSD-2.1.1/2.1.1/AMD64/0C153D0C98>) |
+| 1002:1637 | 1d05:109f | AMD              | Renoir Radeon High Definition Aud... | 3     | hdac       | [6F779D5170](<Notebook/TUXEDO/Pulse/Pulse 15 Gen1/C92D236C248C/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/6F779D5170>) |
+| 1002:aa90 | 0000:aa90 | AMD              | Turks HDMI Audio [Radeon HD 6500/... | 3     | hdac       | [5F78C3411F](<Notebook/Apple/MacBookPro8/MacBookPro8,2/8AC4ECAB97F3/OPNSENSE-21.7.2/12.1-RELEASE-P20-HBSD/AMD64/5F78C3411F>) |
+| 1002:aa90 | 103c:17a9 | AMD              | Turks HDMI Audio [Radeon HD 6500/... | 3     | hdac       | [F47789D894](<Notebook/Hewlett-Packard/EliteBook/EliteBook 8570p/6FBB1F806232/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/F47789D894>) |
+| 1022:157a | 103c:84ac | AMD              | Family 15h (Models 60h-6fh) Audio... | 3     | hdac       | [766E62F699](<Notebook/Hewlett-Packard/Laptop/Laptop 15-db0xxx/3E8F8F48759C/NOMADBSD-5806F915/13.0-RELEASE/AMD64/766E62F699>) |
+| 1022:15e3 | 1043:18f1 | AMD              | Family 17h/19h HD Audio Controller   | 3     | hdac       | [2D72B6939D](<Notebook/ASUSTek Computer/TUF/TUF Gaming FX505DU_FX505DU/FE9E4108BBBD/NOMADBSD-5806F915/13.0-RELEASE/AMD64/2D72B6939D>) |
+| 1022:15e3 | 17aa:5122 | AMD              | Family 17h/19h HD Audio Controller   | 3     | hdac       | [0C153D0C98](<Notebook/Lenovo/ThinkPad/ThinkPad A485 20MU000VUS/0748151D3905/MIDNIGHTBSD-2.1.1/2.1.1/AMD64/0C153D0C98>) |
+| 1022:15e3 | 1d05:109f | AMD              | Family 17h/19h HD Audio Controller   | 3     | hdac       | [6F779D5170](<Notebook/TUXEDO/Pulse/Pulse 15 Gen1/C92D236C248C/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/6F779D5170>) |
+| 1022:780d | 1022:780d | AMD              | FCH Azalia Controller                | 3     | hdac       | [699E8FDF32](<Notebook/Others/Others/Others/5B920EC7C919/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/699E8FDF32>) |
+| 10de:0fb9 |           | Nvidia           | GP107GL High Definition Audio Con... | 3     | hdac       | [6D5E1A13D0](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Extreme 20MF000BUS/A5269BACD212/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/6D5E1A13D0>) |
+| 8086:02c8 | 1028:09ec | Intel            | Comet Lake PCH-LP cAVS               | 3     | hdac       | [80D7BF959A](<Notebook/Dell/Latitude/Latitude 3410/3DC4614C13E4/FREEBSD-13.0-RC1/13.0-RC1/AMD64/80D7BF959A>) |
+| 8086:02c8 | 1558:1401 | Intel            | Comet Lake PCH-LP cAVS               | 3     | hdac       | [713B33351F](<Notebook/System76/Lemur/Lemur Pro/FB3C4199D24B/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/713B33351F>) |
+| 8086:02c8 | 17aa:5079 | Intel            | Comet Lake PCH-LP cAVS               | 3     | hdac       | [0FA4700D17](<Notebook/Lenovo/ThinkPad/ThinkPad E15 20RD0011MX/534BB4FF83C1/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/0FA4700D17>) |
+| 8086:02c8 | 8086:7270 | Intel            | Comet Lake PCH-LP cAVS               | 3     | hdac       | [F99C9F56B7](<Notebook/System76/Darter/Darter Pro/0CE03E6D5308/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/F99C9F56B7>) |
+| 8086:0a0c | 103c:1991 | Intel            | Haswell-ULT HD Audio Controller      | 3     | hdac       | [362940ACBB](<Notebook/Hewlett-Packard/EliteBook/EliteBook 820 G1/43570E209C4E/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/362940ACBB>) |
+| 8086:0a0c | 104d:90b6 | Intel            | Haswell-ULT HD Audio Controller      | 3     | hdac       | [03EF84679C](<Notebook/Sony/SVP1322/SVP13225SCBI/C462BD727B55/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/03EF84679C>) |
+| 8086:0a0c | 8086:2010 | Intel            | Haswell-ULT HD Audio Controller      | 3     | hdac       | [E9D8F7DE51](<Notebook/ASUSTek Computer/TP300/TP300LD/F5293578B164/FREEBSD-13.0/13.0-RELEASE/AMD64/E9D8F7DE51>) |
+| 8086:0c0c | 1028:05bd | Intel            | Xeon E3-1200 v3/4th Gen Core Proc... | 3     | hdac       | [8FA2C1F5C4](<Notebook/Dell/Latitude/Latitude E6440/90F4D14BB79B/FREEBSD-13.0-P2/13.0-RELEASE-P1/AMD64/8FA2C1F5C4>) |
+| 8086:0c0c | 1028:05cc | Intel            | Xeon E3-1200 v3/4th Gen Core Proc... | 3     | hdac       | [1847C0AADB](<Notebook/Dell/Precision/Precision M4800/534E5DEB811F/OPNSENSE-21.1.3/12.1-RELEASE-P14-HBSD/AMD64/1847C0AADB>) |
+| 8086:0c0c | 17aa:2211 | Intel            | Xeon E3-1200 v3/4th Gen Core Proc... | 3     | hdac       | [B6DFFE77EB](<Notebook/Lenovo/ThinkPad/ThinkPad W540 20BG0014US/3AD854A625A5/OPNSENSE-21.7.2/12.1-RELEASE-P20-HBSD/AMD64/B6DFFE77EB>) |
+| 8086:0c0c | 17aa:3978 | Intel            | Xeon E3-1200 v3/4th Gen Core Proc... | 3     | hdac       | [1FEB455E8C](<Notebook/Lenovo/Y50-70/Y50-70 20378/45CB117B153A/OPNSENSE-21.7.7/12.1-RELEASE-P19-HBSD/AMD64/1FEB455E8C>) |
+| 8086:0c0c | 8086:2010 | Intel            | Xeon E3-1200 v3/4th Gen Core Proc... | 3     | hdac       | [5624C69D4B](<Notebook/ASUSTek Computer/G551/G551JW/B7E7048EB864/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/5624C69D4B>) |
+| 8086:0d0c | 106b:0147 | Intel            | Crystal Well HD Audio Controller     | 3     | hdac       | [6D580E8270](<Notebook/Apple/MacBookPro11/MacBookPro11,4/C2BAFC376883/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/6D580E8270>) |
+| 8086:160c | 1028:062e | Intel            | Broadwell-U Audio Controller         | 3     | hdac       | [8A3867F171](<Notebook/Dell/Latitude/Latitude E7450/384980EB885D/FREEBSD-13.0-P6/13.0-RELEASE-P6/AMD64/8A3867F171>) |
+| 8086:160c | 1028:06ae | Intel            | Broadwell-U Audio Controller         | 3     | hdac       | [3A239EA97A](<Notebook/Dell/Inspiron/Inspiron 5558/AF88938C2D41/FREEBSD-12.3/12.3-RELEASE/AMD64/3A239EA97A>) |
+| 8086:160c | 17aa:2227 | Intel            | Broadwell-U Audio Controller         | 3     | hdac       | [B60382DA32](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 3rd 20BT000BUS/FBDB9E088872/FREEBSD-12.2-P4/12.2-RELEASE/AMD64/B60382DA32>) |
+| 8086:1c20 | 1025:0504 | Intel            | 6 Series/C200 Series Chipset Fami... | 3     | hdac       | [BD22FC8A49](<Notebook/Acer/Aspire/Aspire 5750G/1FF59E502D89/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/BD22FC8A49>) |
+| 8086:1c20 | 1028:049b | Intel            | 6 Series/C200 Series Chipset Fami... | 3     | hdac       | [1ED3FF35F6](<Notebook/Dell/Latitude/Latitude E5420/7F50D3A16CDB/HELLOSYSTEM-0.5.0/13.0-RELEASE/AMD64/1ED3FF35F6>) |
+| 8086:1c20 | 10f7:8338 | Intel            | 6 Series/C200 Series Chipset Fami... | 3     | hdac       | [6BBADBA65D](<Notebook/Panasonic/CF-NX1/CF-NX1GDHYS/343F5A72B70D/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/6BBADBA65D>) |
+| 8086:1c20 | 17aa:3975 | Intel            | 6 Series/C200 Series Chipset Fami... | 3     | hdac       | [B8E35AACDB](<Notebook/Lenovo/G470/G470 20078/35FE7475B2FF/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/B8E35AACDB>) |
+| 8086:1e20 | 1028:0535 | Intel            | 7 Series/C216 Chipset Family High... | 3     | hdac       | [0FA21BCF23](<Notebook/Dell/Latitude/Latitude E6530/9F002062E68D/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/0FA21BCF23>) |
+| 8086:1e20 | 103c:17a7 | Intel            | 7 Series/C216 Chipset Family High... | 3     | hdac       | [F47789D894](<Notebook/Hewlett-Packard/EliteBook/EliteBook 8570p/6FBB1F806232/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/F47789D894>) |
+| 8086:1e20 | 1043:108d | Intel            | 7 Series/C216 Chipset Family High... | 3     | hdac       | [7F4E6F4541](<Notebook/ASUSTek Computer/X202/X202E/4F1DF3965EB5/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/7F4E6F4541>) |
 
 ### Storage (PCI)
 
-| ID        | Subsystem | MFG        | Name                         | Count | Driver     | Probe      |
-|-----------|-----------|------------|------------------------------|-------|------------|------------|
-| 1217:8231 | 1028:0493 | O2 Micro   | O2Micro Integrated MS/MSP... | 3     |            | 6BF1F5FE84 |
-| 1217:8331 | 1028:049b | O2 Micro   | O2 Flash Memory Card         | 2     |            | 4B4CD45AC7 |
-| 104c:803b | 1025:011f | Texas I... | PCIxx12 Flash Media Contr... | 1     |            | 5D6A8A51D0 |
-| 104c:803b | 103c:30aa | Texas I... | PCIxx12 Flash Media Contr... | 1     |            | 256E0AE719 |
-| 104c:803b | 104d:81e6 | Texas I... | PCIxx12 Flash Media Contr... | 1     |            | ACE534D784 |
-| 104c:803b | 104d:9016 | Texas I... | PCIxx12 Flash Media Contr... | 1     |            | B417DF513F |
-| 104c:803b | 1179:ff00 | Texas I... | PCIxx12 Flash Media Contr... | 1     |            | E6E0A1294C |
-| 104c:ac8f | 104d:8190 | Texas I... | PCI7420/7620 SD/MS-Pro Co... | 1     |            | F2F3923EA6 |
-| 1217:7130 | 1028:0273 | O2 Micro   | Integrated MS/xD Controller  | 1     |            | EF1C0E0F2E |
-| 1217:7130 | 10cf:13c6 | O2 Micro   | Integrated MS/xD Controller  | 1     |            | AC880C0076 |
-| 1217:7130 | 1179:ff50 | O2 Micro   | Integrated MS/xD Controller  | 1     |            | 71FD81DF30 |
-| 1217:8330 | 1028:04a3 | O2 Micro   | OZ600 MS/xD Controller       | 1     |            | 04FB75B4EA |
-| 1217:8330 | 1028:04a4 | O2 Micro   | OZ600 MS/xD Controller       | 1     |            | B6C974B8BD |
+| ID        | Subsystem | MFG              | Name                                 | Count | Driver     | Probe |
+|-----------|-----------|------------------|--------------------------------------|-------|------------|-------|
+| 1217:8231 | 1028:0493 | O2 Micro         | O2Micro Integrated MS/MSPRO contr... | 4     |            | [2E8B431CC6](<Notebook/Dell/Latitude/Latitude E6420/6637B5C9AD24/GHOSTBSD-20.04.02/13.0-STABLE/AMD64/2E8B431CC6>) |
+| 1217:8331 | 1028:049b | O2 Micro         | O2 Flash Memory Card                 | 3     |            | [1ED3FF35F6](<Notebook/Dell/Latitude/Latitude E5420/7F50D3A16CDB/HELLOSYSTEM-0.5.0/13.0-RELEASE/AMD64/1ED3FF35F6>) |
+| 1217:7130 | 1179:ff50 | O2 Micro         | Integrated MS/xD Controller          | 2     |            | [13E4AA7026](<Notebook/Toshiba/Satellite/Satellite P300/AFEE934437AF/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/13E4AA7026>) |
+| 1217:8330 | 1028:04a3 | O2 Micro         | OZ600 MS/xD Controller               | 2     |            | [2F848FD2C0](<Notebook/Dell/Precision/Precision M4600/B6B9C54EEBB2/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/2F848FD2C0>) |
+| 104c:803b | 1025:011f | Texas Instrum... | PCIxx12 Flash Media Controller       | 1     |            | [5D6A8A51D0](<Notebook/Acer/Extensa/Extensa 5220/D9CE76F90EBD/FREEBSD-12.2-P3/12.2-RELEASE-P3/AMD64/5D6A8A51D0>) |
+| 104c:803b | 103c:30aa | Texas Instrum... | PCIxx12 Flash Media Controller       | 1     |            | [256E0AE719](<Notebook/Hewlett-Packard/Compaq/Compaq nc6320/BA8F7F88D1FF/FREEBSD-12.1-P4/12.1-RELEASE-P3/AMD64/256E0AE719>) |
+| 104c:803b | 104d:81e6 | Texas Instrum... | PCIxx12 Flash Media Controller       | 1     |            | [ACE534D784](<Notebook/Sony/VGN-SZ3/VGN-SZ3VWP_X/ECFA4AD781DF/GHOSTBSD-20.04.02/12.1-STABLE/AMD64/ACE534D784>) |
+| 104c:803b | 104d:9016 | Texas Instrum... | PCIxx12 Flash Media Controller       | 1     |            | [B417DF513F](<Notebook/Sony/VGN-AR630/VGN-AR630E/0309566B32D1/FREEBSD-12.1-P8/12.1-RELEASE-P8/AMD64/B417DF513F>) |
+| 104c:803b | 1179:ff00 | Texas Instrum... | PCIxx12 Flash Media Controller       | 1     |            | [E6E0A1294C](<Notebook/Toshiba/Satellite/Satellite M100/9A0C6DBE0166/FREEBSD-12.2-STABLE/12.2-STABLE/I386/E6E0A1294C>) |
+| 104c:ac8f | 104d:8190 | Texas Instrum... | PCI7420/7620 SD/MS-Pro Controller    | 1     |            | [F2F3923EA6](<Notebook/Sony/VGN-S/VGN-S150/194677ED6A48/FREEBSD-13.0-CURRENT/13.0-CURRENT/I386/F2F3923EA6>) |
+| 1217:7130 | 1028:0273 | O2 Micro         | Integrated MS/xD Controller          | 1     |            | [EF1C0E0F2E](<Notebook/Dell/Vostro/Vostro 1510/810B328E2D37/FREEBSD-12.2/12.2-RELEASE/AMD64/EF1C0E0F2E>) |
+| 1217:7130 | 10cf:13c6 | O2 Micro         | Integrated MS/xD Controller          | 1     |            | [AC880C0076](<Notebook/Fujitsu/FMVNF70/FMVNF70YJ/2CAC733E41C3/FREEBSD-12.2-P3/12.2-RELEASE-P3/AMD64/AC880C0076>) |
+| 1217:7130 | 1462:3ff3 | O2 Micro         | Integrated MS/xD Controller          | 1     |            | [7DB1345E97](<Notebook/LG Electronics/E500/E500-GP01A9/E9442CB525C8/FREEBSD-13.0-P2/13.0-RELEASE-P1/AMD64/7DB1345E97>) |
+| 1217:8130 | 1028:02eb | O2 Micro         | Integrated MS/MSPRO/xD Controller    | 1     |            | [B0A51AC0AF](<Notebook/Dell/Studio/Studio 1747/121152236620/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/B0A51AC0AF>) |
+| 1217:8130 | 10cf:1568 | O2 Micro         | Integrated MS/MSPRO/xD Controller    | 1     |            | [51B5325C85](<Notebook/Fujitsu/LIFEBOOK/LIFEBOOK NH570/6DEB38A1F3EF/OPNSENSE-21.7.1/12.1-RELEASE-P19-HBSD/AMD64/51B5325C85>) |
+| 1217:8330 | 1028:04a4 | O2 Micro         | OZ600 MS/xD Controller               | 1     |            | [B6C974B8BD](<Notebook/Dell/Precision/Precision M6600/4B49B0BB08DA/FREEBSD-12.1-P8/12.1-RELEASE-P8/AMD64/B6C974B8BD>) |
+| 1217:8331 | 1028:049a | O2 Micro         | O2 Flash Memory Card                 | 1     |            | [E0DD26220F](<Notebook/Dell/Latitude/Latitude E5520/15949FA8A5BD/GHOSTBSD-20.04.02/13.0-STABLE/AMD64/E0DD26220F>) |
 
 ### Storage/ata (PCI)
 
-| ID        | Subsystem | MFG        | Name                         | Count | Driver     | Probe      |
-|-----------|-----------|------------|------------------------------|-------|------------|------------|
-| 8086:1c03 | 17aa:21da | Intel      | 6 Series/C200 Series Chip... | 13    | ahci       | 66743A51CC |
-| 8086:2929 | 17aa:20f8 | Intel      | 82801IBM/IEM (ICH9M/ICH9M... | 10    | ahci       | BDBD2D0A05 |
-| 8086:3b2f | 17aa:2168 | Intel      | 5 Series/3400 Series Chip... | 9     | ahci       | C887FF2917 |
-| 10de:0ab9 | 10de:cb79 | Nvidia     | MCP79 AHCI Controller        | 8     | ahci       | F46146B79E |
-| 8086:1c03 | 17aa:21ce | Intel      | 6 Series/C200 Series Chip... | 8     | ahci       | DC29D714D9 |
-| 8086:1c03 | 8086:7270 | Intel      | 6 Series/C200 Series Chip... | 7     | ahci       | 193936B5CA |
-| 8086:1e03 | 17aa:21f3 | Intel      | 7 Series Chipset Family 6... | 7     | ahci       | 0F001F65D2 |
-| 8086:1e03 | 17aa:21fa | Intel      | 7 Series Chipset Family 6... | 7     | ahci       | AB871769F0 |
-| 1022:7901 | 1022:7901 | AMD        | FCH SATA Controller [AHCI... | 6     | ahci       | 4AC6C9B3EB |
-| 8086:2829 | 17aa:20a7 | Intel      | 82801HM/HEM (ICH8M/ICH8M-... | 6     | ahci       | D223A9B1FB |
-| 8086:8c03 | 17aa:220e | Intel      | 8 Series/C220 Series Chip... | 6     | ahci       | 7660F9B6DB |
-| 8086:9c83 | 17aa:2226 | Intel      | Wildcat Point-LP SATA Con... | 6     | ahci       | 107AC19795 |
-| 8086:9c83 | 17aa:5034 | Intel      | Wildcat Point-LP SATA Con... | 6     | ahci       | AC567BD12D |
-| 8086:1c03 | 17aa:21cf | Intel      | 6 Series/C200 Series Chip... | 5     | ahci       | 49DACEE7D0 |
-| 8086:9c03 | 1028:0651 | Intel      | 8 Series SATA Controller ... | 5     | ahci       | 0D1D75A914 |
-| 144d:a801 | 144d:a801 | Samsung... | SM951 AHCI                   | 4     | ahci       | 0621ACAB4E |
-| 8086:1e03 | 17aa:21fb | Intel      | 7 Series Chipset Family 6... | 4     | ahci       | FACF6FA0F8 |
-| 8086:1e03 | 8086:7270 | Intel      | 7 Series Chipset Family 6... | 4     | ahci       | AFC70D9C77 |
-| 8086:27c5 | 17aa:200d | Intel      | 82801GBM/GHM (ICH7-M Fami... | 4     | ahci       | 5375F351A5 |
-| 8086:9c03 | 8086:7270 | Intel      | 8 Series SATA Controller ... | 4     | ahci       | 1F2D078D2E |
-| 8086:9d03 | 103c:8079 | Intel      | Sunrise Point-LP SATA Con... | 4     | ahci       | 2B97986DE1 |
-| 1022:7901 | 17aa:5122 | AMD        | FCH SATA Controller [AHCI... | 3     | ahci       | 2F1BA02130 |
-| 8086:1c03 | 1028:0493 | Intel      | 6 Series/C200 Series Chip... | 3     | ahci       | 6BF1F5FE84 |
-| 8086:1c03 | 17aa:3975 | Intel      | 6 Series/C200 Series Chip... | 3     | ahci       | B8E35AACDB |
-| 8086:1e03 | 1028:0597 | Intel      | 7 Series Chipset Family 6... | 3     | ahci       | 9050866FB2 |
-| 8086:1e03 | 1043:14c7 | Intel      | 7 Series Chipset Family 6... | 3     | ahci       | E887EE2FF5 |
-| 8086:1e03 | 17aa:21f6 | Intel      | 7 Series Chipset Family 6... | 3     | ahci       | 39F3A4F234 |
-| 8086:1e03 | 17aa:21f9 | Intel      | 7 Series Chipset Family 6... | 3     | ahci       | B659B95D1A |
-| 8086:1e03 | 8086:1e03 | Intel      | 7 Series Chipset Family 6... | 3     | ahci       | 424ADD8B03 |
-| 8086:2829 | 106b:00a1 | Intel      | 82801HM/HEM (ICH8M/ICH8M-... | 3     | ahci       | ED3684513F |
-| 8086:3b29 | 1043:1c77 | Intel      | 5 Series/3400 Series Chip... | 3     | ahci       | BA7FB8E83C |
-| 8086:3b29 | 8086:7270 | Intel      | 5 Series/3400 Series Chip... | 3     | ahci       | 0AB44E95DF |
-| 8086:8c03 | 1028:05bd | Intel      | 8 Series/C220 Series Chip... | 3     | ahci       | 3A656DED12 |
-| 8086:9c03 | 17aa:220c | Intel      | 8 Series SATA Controller ... | 3     | ahci       | B644ED3914 |
-| 8086:9c03 | 17aa:2214 | Intel      | 8 Series SATA Controller ... | 3     | ahci       | CBFA45FE44 |
-| 8086:9c03 | 17aa:3978 | Intel      | 8 Series SATA Controller ... | 3     | ahci       | D3D9DC620F |
-| 8086:9d03 | 17aa:5062 | Intel      | Sunrise Point-LP SATA Con... | 3     | ahci       | 88C27E65D7 |
-| 8086:9dd3 | 17aa:5072 | Intel      | Cannon Point-LP SATA Cont... | 3     | ahci       | 852A900303 |
-| 1002:4391 | 103c:3577 | AMD        | SB7x0/SB8x0/SB9x0 SATA Co... | 2     | ahci       | F83C769501 |
-| 1022:43c8 | 1025:1246 | AMD        | 400 Series Chipset SATA C... | 2     | ahci       | 9E03A76684 |
-| 1022:7801 | 1025:0865 | AMD        | FCH SATA Controller [AHCI... | 2     | ahci       | E2B6DBFE40 |
-| 1022:7801 | 1179:ff1e | AMD        | FCH SATA Controller [AHCI... | 2     | ahci       | 9FB68E38D8 |
-| 1022:7801 | 17aa:3801 | AMD        | FCH SATA Controller [AHCI... | 2     | ahci       | 1D227A9CD2 |
-| 1022:7901 | 1025:1246 | AMD        | FCH SATA Controller [AHCI... | 2     | ahci       | 9E03A76684 |
-| 1022:7901 | 103c:8786 | AMD        | FCH SATA Controller [AHCI... | 2     | ahci       | 19F307FF6D |
-| 1022:7901 | 1d05:109f | AMD        | FCH SATA Controller [AHCI... | 2     | ahci       | 5359B4DEE9 |
-| 1022:7904 | 103c:84ac | AMD        | FCH SATA Controller [AHCI... | 2     | ahci       | 3E500C12A3 |
-| 8086:02d3 | 17aa:5079 | Intel      | Comet Lake SATA AHCI Cont... | 2     | ahci       | 94D082C57C |
-| 8086:06d3 | 17aa:3808 | Intel      | 400 Series Chipset Family... | 2     | ahci       | 2BE8CF963C |
-| 8086:1c03 | 1028:049b | Intel      | 6 Series/C200 Series Chip... | 2     | ahci       | 32F03AA888 |
-| 8086:1c03 | 10f7:8338 | Intel      | 6 Series/C200 Series Chip... | 2     | ahci       | 6BBADBA65D |
-| 8086:1c03 | 17aa:21e2 | Intel      | 6 Series/C200 Series Chip... | 2     | ahci       | AA98E655F3 |
-| 8086:1c03 | 8086:1c03 | Intel      | 6 Series/C200 Series Chip... | 2     | ahci       | DEF6A6516D |
-| 8086:1e03 | 103c:17a7 | Intel      | 7 Series Chipset Family 6... | 2     | ahci       | 52BA4E835F |
-| 8086:1e03 | 104d:90b8 | Intel      | 7 Series Chipset Family 6... | 2     | ahci       | 64F3F02018 |
-| 8086:1e03 | 17aa:2203 | Intel      | 7 Series Chipset Family 6... | 2     | ahci       | 55DEBB2F24 |
-| 8086:1e03 | 17aa:3977 | Intel      | 7 Series Chipset Family 6... | 2     | ahci       | CCEC69B736 |
-| 8086:27c1 | 144d:c08f | Intel      | NM10/ICH7 Family SATA Con... | 2     | ahci       | A38A620353 |
-| 8086:2929 | 1179:ff00 | Intel      | 82801IBM/IEM (ICH9M/ICH9M... | 2     | ahci       | E07FD4EDD9 |
-| 8086:5ae3 | 8086:7270 | Intel      | Celeron N3350/Pentium N42... | 2     | ahci       | BC138C0580 |
-| 8086:8c03 | 1028:05cc | Intel      | 8 Series/C220 Series Chip... | 2     | ahci       | 8AFB8E7443 |
-| 8086:8c03 | 1043:157d | Intel      | 8 Series/C220 Series Chip... | 2     | ahci       | 37BE4EA27A |
-| 8086:8c03 | 10cf:17c9 | Intel      | 8 Series/C220 Series Chip... | 2     | ahci       | D3D033F879 |
-| 8086:8c03 | 17aa:2211 | Intel      | 8 Series/C220 Series Chip... | 2     | ahci       | 91D2CD471C |
-| 8086:9c03 | 1025:0a11 | Intel      | 8 Series SATA Controller ... | 2     | ahci       | D15CAACA04 |
-| 8086:9c03 | 1028:05ca | Intel      | 8 Series SATA Controller ... | 2     | ahci       | B79278A4AD |
-| 8086:9c03 | 104d:90b6 | Intel      | 8 Series SATA Controller ... | 2     | ahci       | 23316D0F2B |
-| 8086:9c03 | 17aa:2217 | Intel      | 8 Series SATA Controller ... | 2     | ahci       | E9155D12C7 |
-| 8086:9c83 | 17aa:2227 | Intel      | Wildcat Point-LP SATA Con... | 2     | ahci       | B60382DA32 |
-| 8086:9d03 | 1028:06df | Intel      | Sunrise Point-LP SATA Con... | 2     | ahci       | DA926F1065 |
-| 8086:9d03 | 1043:1c7d | Intel      | Sunrise Point-LP SATA Con... | 2     | ahci       | 57018EDD10 |
-| 8086:9d03 | 1558:1313 | Intel      | Sunrise Point-LP SATA Con... | 2     | ahci       | C23A22A72D |
-| 8086:9d03 | 17aa:2238 | Intel      | Sunrise Point-LP SATA Con... | 2     | ahci       | 821C81E652 |
-| 8086:9d03 | 17aa:225a | Intel      | Sunrise Point-LP SATA Con... | 2     | ahci       | D5A1C088B3 |
-| 8086:9d03 | 17aa:504a | Intel      | Sunrise Point-LP SATA Con... | 2     | ahci       | AA3DEADEDD |
-| 8086:9d03 | 17aa:5053 | Intel      | Sunrise Point-LP SATA Con... | 2     | ahci       | A069A19A1B |
-| 8086:9d03 | 8086:9d03 | Intel      | Sunrise Point-LP SATA Con... | 2     | ahci       | 2E51DFE463 |
-| 8086:a103 | 1028:0798 | Intel      | HM170/QM170 Chipset SATA ... | 2     | ahci       | 0E99E72EC9 |
-| 8086:a103 | 103c:8257 | Intel      | HM170/QM170 Chipset SATA ... | 2     | ahci       | BB8BEB97BE |
-| 8086:a103 | 1558:8509 | Intel      | HM170/QM170 Chipset SATA ... | 2     | ahci       | E84B5B6E5F |
-| 8086:a353 | 17aa:3808 | Intel      | Cannon Lake Mobile PCH SA... | 2     | ahci       | DCE3BA8C99 |
-| 1002:4391 | 1002:4390 | AMD        | SB7x0/SB8x0/SB9x0 SATA Co... | 1     | ahci       | 5834A52924 |
-| 1002:4391 | 1025:0294 | AMD        | SB7x0/SB8x0/SB9x0 SATA Co... | 1     | ahci       | 65D215A03B |
-| 1002:4391 | 1043:103b | AMD        | SB7x0/SB8x0/SB9x0 SATA Co... | 1     | ahci       | 3EFF93BFB5 |
-| 1002:4391 | 1179:ff1e | AMD        | SB7x0/SB8x0/SB9x0 SATA Co... | 1     | ahci       | 6398601E16 |
-| 1002:4391 | 1179:ff6a | AMD        | SB7x0/SB8x0/SB9x0 SATA Co... | 1     | ahci       | E8BED535A9 |
-| 1022:43c8 | 1558:50f0 | AMD        | 400 Series Chipset SATA C... | 1     | ahci       | 0AC6AED43B |
-| 1022:7801 | 1022:7800 | AMD        | FCH SATA Controller [AHCI... | 1     | ahci       | 9E0509BD54 |
-| 1022:7801 | 1022:7801 | AMD        | FCH SATA Controller [AHCI... | 1     | ahci       | 4433B8842F |
-| 1022:7801 | 1025:080d | AMD        | FCH SATA Controller [AHCI... | 1     | ahci       | CE0C079FD5 |
-| 1022:7801 | 1025:0864 | AMD        | FCH SATA Controller [AHCI... | 1     | ahci       | C9AB1CB207 |
-| 1022:7801 | 17aa:397c | AMD        | FCH SATA Controller [AHCI... | 1     | ahci       | 8BFCFF9039 |
-| 1022:7804 | 103c:1885 | AMD        | FCH SATA Controller [AHCI... | 1     | ahci       | AE2DE01D19 |
-| 1022:7804 | 103c:22cd | AMD        | FCH SATA Controller [AHCI... | 1     | ahci       | 861BDC647D |
-| 1022:7901 | 1025:134d | AMD        | FCH SATA Controller [AHCI... | 1     | ahci       | 1AC21E1660 |
-| 1022:7901 | 1028:09f5 | AMD        | FCH SATA Controller [AHCI... | 1     | ahci       | BA74D8EEE0 |
-| 1022:7901 | 103c:85e0 | AMD        | FCH SATA Controller [AHCI... | 1     | ahci       | 5CD8E23152 |
-| 1022:7901 | 103c:8730 | AMD        | FCH SATA Controller [AHCI... | 1     | ahci       | DD877E6C6C |
-| 1022:7901 | 103c:87b1 | AMD        | FCH SATA Controller [AHCI... | 1     | ahci       | 5E5632D9B6 |
-| 1022:7901 | 1043:10c2 | AMD        | FCH SATA Controller [AHCI... | 1     | ahci       | 7F35EF7FA9 |
+| ID        | Subsystem | MFG              | Name                                 | Count | Driver     | Probe |
+|-----------|-----------|------------------|--------------------------------------|-------|------------|-------|
+| 8086:1c03 | 17aa:21da | Intel            | 6 Series/C200 Series Chipset Fami... | 18    | ahci       | [148A268A0F](<Notebook/Lenovo/ThinkPad/ThinkPad X220 4293B43/AD955BCC7F71/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/148A268A0F>) |
+| 8086:3b2f | 17aa:2168 | Intel            | 5 Series/3400 Series Chipset 6 po... | 18    | ahci       | [BCD5BEA2B7](<Notebook/Lenovo/ThinkPad/ThinkPad T410 2537BN8/4A58F0F69086/OPNSENSE-22.1.2/13.0-STABLE/AMD64/BCD5BEA2B7>) |
+| 1022:7901 | 1022:7901 | AMD              | FCH SATA Controller [AHCI mode]      | 16    | ahci       | [4D8F19BA12](<Notebook/Deciso/Netboard/Netboard A20/94D2C7F0ED24/OPNSENSE-22.1/13.0-STABLE/AMD64/4D8F19BA12>) |
+| 8086:2929 | 17aa:20f8 | Intel            | 82801IBM/IEM (ICH9M/ICH9M-E) 4 po... | 16    | ahci       | [B0A9802877](<Notebook/Lenovo/ThinkPad/ThinkPad SL510 2847R96/16806C85881A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/B0A9802877>) |
+| 10de:0ab9 | 10de:cb79 | Nvidia           | MCP79 AHCI Controller                | 14    | ahci       | [D680290D84](<Notebook/Apple/MacBook6/MacBook6,1/B24103297D7A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/D680290D84>) |
+| 8086:1e03 | 17aa:21fa | Intel            | 7 Series Chipset Family 6-port SA... | 13    | ahci       | [06C6A282CA](<Notebook/Lenovo/ThinkPad/ThinkPad X230 23254G7/FF7D8D42B37A/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/06C6A282CA>) |
+| 8086:1c03 | 17aa:21ce | Intel            | 6 Series/C200 Series Chipset Fami... | 12    | ahci       | [8BD2318FB6](<Notebook/Lenovo/ThinkPad/ThinkPad T420 4236MBU/D2E0D93C2306/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/8BD2318FB6>) |
+| 8086:9c03 | 8086:7270 | Intel            | 8 Series SATA Controller 1 [AHCI ... | 12    | ahci       | [974E1F4E5E](<Notebook/Others/Others/Others/499A7AC3FA34/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/974E1F4E5E>) |
+| 8086:9c83 | 17aa:2226 | Intel            | Wildcat Point-LP SATA Controller ... | 12    | ahci       | [4BA527DC9B](<Notebook/Lenovo/ThinkPad/ThinkPad X250 20CMCTO1WW/E6AE328AD30B/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/4BA527DC9B>) |
+| 8086:1e03 | 17aa:21f3 | Intel            | 7 Series Chipset Family 6-port SA... | 10    | ahci       | [86FD351C81](<Notebook/Lenovo/ThinkPad/ThinkPad T430 2349AK1/08273574C200/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/86FD351C81>) |
+| 8086:1e03 | 8086:7270 | Intel            | 7 Series Chipset Family 6-port SA... | 10    | ahci       | [64CCF1E6A0](<Notebook/Apple/MacBookPro10/MacBookPro10,1/60ED6011F0FC/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/64CCF1E6A0>) |
+| 8086:1c03 | 8086:7270 | Intel            | 6 Series/C200 Series Chipset Fami... | 9     | ahci       | [AA484C30A8](<Notebook/Apple/MacBookPro8/MacBookPro8,1/83A908F15226/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/AA484C30A8>) |
+| 8086:2829 | 17aa:20a7 | Intel            | 82801HM/HEM (ICH8M/ICH8M-E) SATA ... | 9     | ahci       | [F5F25EFDCC](<Notebook/Lenovo/ThinkPad/ThinkPad T61 766301U/A1D00057611B/HELLOSYSTEM-0.7.0/13.0-RELEASE-P7/AMD64/F5F25EFDCC>) |
+| 8086:8c03 | 17aa:220e | Intel            | 8 Series/C220 Series Chipset Fami... | 9     | ahci       | [CBA9255F4A](<Notebook/Lenovo/ThinkPad/ThinkPad T440p 20AWS1JN00/4F89B9A156FF/FREEBSD-13.0/13.0-RELEASE/AMD64/CBA9255F4A>) |
+| 8086:1c03 | 17aa:21cf | Intel            | 6 Series/C200 Series Chipset Fami... | 8     | ahci       | [82F5612822](<Notebook/Lenovo/ThinkPad/ThinkPad T520 4243E51/EB551E7DDB1F/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/82F5612822>) |
+| 8086:9c03 | 17aa:220c | Intel            | 8 Series SATA Controller 1 [AHCI ... | 8     | ahci       | [2AF47B6502](<Notebook/Lenovo/ThinkPad/ThinkPad T440s 20AQ006HUS/5B022BB303EA/NOMADBSD-5806F915/13.0-RELEASE/AMD64/2AF47B6502>) |
+| 8086:9c03 | 17aa:3978 | Intel            | 8 Series SATA Controller 1 [AHCI ... | 8     | ahci       | [A1F85AFF27](<Notebook/Lenovo/Z50-70/Z50-70 20354/491D65A1BD89/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/A1F85AFF27>) |
+| 8086:9c83 | 17aa:5034 | Intel            | Wildcat Point-LP SATA Controller ... | 8     | ahci       | [BC2860431E](<Notebook/Lenovo/ThinkPad/ThinkPad T450 20BUS0VH08/CDAB4EDF622D/GHOSTBSD-22.01.12/13.0-STABLE/AMD64/BC2860431E>) |
+| 144d:a801 | 144d:a801 | Samsung Elect... | SM951 AHCI                           | 7     | ahci       | [E04A1B354C](<Notebook/Apple/MacBookPro12/MacBookPro12,1/98B93121E415/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/E04A1B354C>) |
+| 8086:1e03 | 17aa:3977 | Intel            | 7 Series Chipset Family 6-port SA... | 7     | ahci       | [478714C7C9](<Notebook/Lenovo/G580/G580 20150/D8442DC4CB7A/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/478714C7C9>) |
+| 8086:9c03 | 1028:0651 | Intel            | 8 Series SATA Controller 1 [AHCI ... | 7     | ahci       | [6283CB4190](<Notebook/Dell/Inspiron/Inspiron 3442/DF9A7A49AE6A/FREEBSD-13.0-P3/13.0-RELEASE/AMD64/6283CB4190>) |
+| 8086:1e03 | 17aa:21fb | Intel            | 7 Series Chipset Family 6-port SA... | 6     | ahci       | [0B6AB3BA1B](<Notebook/Lenovo/ThinkPad/ThinkPad T430s 2356JH4/C3D86E55EECC/OPNSENSE-21.7.6/12.1-RELEASE-P21-HBSD/AMD64/0B6AB3BA1B>) |
+| 8086:27c5 | 17aa:200d | Intel            | 82801GBM/GHM (ICH7-M Family) SATA... | 6     | ahci       | [E2D5391A1A](<Notebook/Lenovo/ThinkPad/ThinkPad T60 1951FEG/8CFF73D19B7A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E2D5391A1A>) |
+| 8086:2829 | 106b:00a1 | Intel            | 82801HM/HEM (ICH8M/ICH8M-E) SATA ... | 6     | ahci       | [E0CF5200DE](<Notebook/Apple/MacBook4/MacBook4,1/07CFC301CF14/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E0CF5200DE>) |
+| 8086:9d03 | 103c:8079 | Intel            | Sunrise Point-LP SATA Controller ... | 6     | ahci       | [F259F73C17](<Notebook/Hewlett-Packard/EliteBook/EliteBook 840 G3/372FB522FD12/OPNSENSE-22.1/13.0-STABLE/AMD64/F259F73C17>) |
+| 8086:1e03 | 1028:0597 | Intel            | 7 Series Chipset Family 6-port SA... | 5     | ahci       | [B246D110AF](<Notebook/Dell/Inspiron/Inspiron 3521/D0B94644586B/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/B246D110AF>) |
+| 8086:27c1 | 1043:83ad | Intel            | NM10/ICH7 Family SATA Controller ... | 5     | ahci       | [D171D1EC99](<Notebook/ASUSTek Computer/1001/1001PX/E2F07739895A/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/D171D1EC99>) |
+| 8086:9c03 | 17aa:2214 | Intel            | 8 Series SATA Controller 1 [AHCI ... | 5     | ahci       | [66CFDD2419](<Notebook/Lenovo/ThinkPad/ThinkPad X240 20AMS2QDOC/958035AEAC5C/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/66CFDD2419>) |
+| 1022:7801 | 1022:7800 | AMD              | FCH SATA Controller [AHCI mode]      | 4     | ahci       | [EC1E865BBD](<Notebook/AEWIN/CB/CB-7979/515CE581A2B3/OPNSENSE-22.1.2/13.0-STABLE/AMD64/EC1E865BBD>) |
+| 1022:7904 | 103c:84ac | AMD              | FCH SATA Controller [AHCI mode]      | 4     | ahci       | [766E62F699](<Notebook/Hewlett-Packard/Laptop/Laptop 15-db0xxx/3E8F8F48759C/NOMADBSD-5806F915/13.0-RELEASE/AMD64/766E62F699>) |
+| 8086:1c03 | 1028:0493 | Intel            | 6 Series/C200 Series Chipset Fami... | 4     | ahci       | [2E8B431CC6](<Notebook/Dell/Latitude/Latitude E6420/6637B5C9AD24/GHOSTBSD-20.04.02/13.0-STABLE/AMD64/2E8B431CC6>) |
+| 8086:1e03 | 17aa:21f6 | Intel            | 7 Series Chipset Family 6-port SA... | 4     | ahci       | [4E7FC367BC](<Notebook/Lenovo/ThinkPad/ThinkPad W530 2447AV9/778B9CE5B6CA/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/4E7FC367BC>) |
+| 8086:1e03 | 17aa:21f9 | Intel            | 7 Series Chipset Family 6-port SA... | 4     | ahci       | [2494D9D2DB](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 3443CTO/870107710CBE/OPNSENSE-21.7/12.1-RELEASE-P20-HBSD/AMD64/2494D9D2DB>) |
+| 8086:1e03 | 8086:1e03 | Intel            | 7 Series Chipset Family 6-port SA... | 4     | ahci       | [21C1794D7E](<Notebook/Others/Others/Others/F6ACC051C26B/OPNSENSE-21.7.4/12.1-RELEASE-P20-HBSD/AMD64/21C1794D7E>) |
+| 8086:3b29 | 1043:1c77 | Intel            | 5 Series/3400 Series Chipset 4 po... | 4     | ahci       | [92B975763F](<Notebook/ASUSTek Computer/K52/K52Jc/DB01933C6182/HELLOSYSTEM-0.7.0/12.2-RELEASE-P7/AMD64/92B975763F>) |
+| 8086:3b29 | 8086:7270 | Intel            | 5 Series/3400 Series Chipset 4 po... | 4     | ahci       | [7F25AB7C67](<Notebook/Apple/MacBookPro6/MacBookPro6,2/2059E6ED7633/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/7F25AB7C67>) |
+| 8086:5ae3 | 8086:7270 | Intel            | Celeron N3350/Pentium N4200/Atom ... | 4     | ahci       | [D1EB8226EB](<Notebook/SIEMENS/SIMATIC/SIMATIC IPC127E/F8EC425F9C5B/OPNSENSE-22.1.2/13.0-STABLE/AMD64/D1EB8226EB>) |
+| 8086:8c03 | 1028:05be | Intel            | 8 Series/C220 Series Chipset Fami... | 4     | ahci       | [E0576DD008](<Notebook/Dell/Latitude/Latitude E6540/47352B0D75D6/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E0576DD008>) |
+| 8086:9d03 | 17aa:5053 | Intel            | Sunrise Point-LP SATA Controller ... | 4     | ahci       | [DEAC163B52](<Notebook/Lenovo/ThinkPad/ThinkPad T460 20FNCTO1WW/88EC95397971/OPNSENSE-22.1.1/13.0-STABLE/AMD64/DEAC163B52>) |
+| 8086:9d03 | 17aa:5062 | Intel            | Sunrise Point-LP SATA Controller ... | 4     | ahci       | [2E1C585715](<Notebook/Lenovo/ThinkPad/ThinkPad X270 W10DG 20K5S0BM01/C223E0B01844/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/2E1C585715>) |
+| 8086:9d03 | 8086:9d03 | Intel            | Sunrise Point-LP SATA Controller ... | 4     | ahci       | [5A75DB9142](<Notebook/TUXEDO/InfinityBook13/InfinityBook13V3/0B9DECE35038/HELLOSYSTEM-0.7.0/13.0-RELEASE-P7/AMD64/5A75DB9142>) |
+| 8086:9dd3 | 17aa:5072 | Intel            | Cannon Point-LP SATA Controller [... | 4     | ahci       | [901005EDD3](<Notebook/Lenovo/ThinkPad/ThinkPad E490 20N8CTO1WW/D4AF7E066D53/FREEBSD-13.0-P2/13.0-RELEASE-P1/AMD64/901005EDD3>) |
+| 8086:a353 | 17aa:3808 | Intel            | Cannon Lake Mobile PCH SATA AHCI ... | 4     | ahci       | [384D2F888B](<Notebook/Lenovo/Legion/Legion Y540-15IRH 81SX/DB27396229F8/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/384D2F888B>) |
+| 1002:4391 | 1002:4390 | AMD              | SB7x0/SB8x0/SB9x0 SATA Controller... | 3     | ahci       | [1CCF85F60D](<Notebook/ASUSTek Computer/1215/1215B/A9FC3E123192/FREEBSD-13.0/13.0-RELEASE/AMD64/1CCF85F60D>) |
+| 1022:7901 | 1043:18f1 | AMD              | FCH SATA Controller [AHCI mode]      | 3     | ahci       | [2D72B6939D](<Notebook/ASUSTek Computer/TUF/TUF Gaming FX505DU_FX505DU/FE9E4108BBBD/NOMADBSD-5806F915/13.0-RELEASE/AMD64/2D72B6939D>) |
+| 1022:7901 | 17aa:5122 | AMD              | FCH SATA Controller [AHCI mode]      | 3     | ahci       | [0C153D0C98](<Notebook/Lenovo/ThinkPad/ThinkPad A485 20MU000VUS/0748151D3905/MIDNIGHTBSD-2.1.1/2.1.1/AMD64/0C153D0C98>) |
+| 1022:7901 | 1d05:109f | AMD              | FCH SATA Controller [AHCI mode]      | 3     | ahci       | [6F779D5170](<Notebook/TUXEDO/Pulse/Pulse 15 Gen1/C92D236C248C/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/6F779D5170>) |
+| 8086:02d3 | 17aa:5079 | Intel            | Comet Lake SATA AHCI Controller      | 3     | ahci       | [0FA4700D17](<Notebook/Lenovo/ThinkPad/ThinkPad E15 20RD0011MX/534BB4FF83C1/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/0FA4700D17>) |
+| 8086:1c03 | 1025:0504 | Intel            | 6 Series/C200 Series Chipset Fami... | 3     | ahci       | [BD22FC8A49](<Notebook/Acer/Aspire/Aspire 5750G/1FF59E502D89/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/BD22FC8A49>) |
+| 8086:1c03 | 1028:049b | Intel            | 6 Series/C200 Series Chipset Fami... | 3     | ahci       | [1ED3FF35F6](<Notebook/Dell/Latitude/Latitude E5420/7F50D3A16CDB/HELLOSYSTEM-0.5.0/13.0-RELEASE/AMD64/1ED3FF35F6>) |
+| 8086:1c03 | 1043:1147 | Intel            | 6 Series/C200 Series Chipset Fami... | 3     | ahci       | [A07366611D](<Notebook/ASUSTek Computer/U31/U31SD/4817D15C5C95/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/A07366611D>) |
+| 8086:1c03 | 17aa:3975 | Intel            | 6 Series/C200 Series Chipset Fami... | 3     | ahci       | [B8E35AACDB](<Notebook/Lenovo/G470/G470 20078/35FE7475B2FF/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/B8E35AACDB>) |
+| 8086:1c03 | 8086:1c03 | Intel            | 6 Series/C200 Series Chipset Fami... | 3     | ahci       | [46E5F9B021](<Notebook/Others/Others/Others/D4245F739188/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/46E5F9B021>) |
+| 8086:1e03 | 1028:0535 | Intel            | 7 Series Chipset Family 6-port SA... | 3     | ahci       | [0FA21BCF23](<Notebook/Dell/Latitude/Latitude E6530/9F002062E68D/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/0FA21BCF23>) |
+| 8086:1e03 | 103c:17a7 | Intel            | 7 Series Chipset Family 6-port SA... | 3     | ahci       | [61406080A7](<Notebook/Hewlett-Packard/EliteBook/EliteBook 8570p/6FBB1F806232/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/61406080A7>) |
+| 8086:1e03 | 1043:108d | Intel            | 7 Series Chipset Family 6-port SA... | 3     | ahci       | [7F4E6F4541](<Notebook/ASUSTek Computer/X202/X202E/4F1DF3965EB5/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/7F4E6F4541>) |
+| 8086:1e03 | 1043:14c7 | Intel            | 7 Series Chipset Family 6-port SA... | 3     | ahci       | [C7C812C2C9](<Notebook/ASUSTek Computer/X55/X55CR/D99F3FC27DCF/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/C7C812C2C9>) |
+| 8086:1e03 | 1043:1517 | Intel            | 7 Series Chipset Family 6-port SA... | 3     | ahci       | [9FEBAB6C01](<Notebook/ASUSTek Computer/UX31/UX31A/2ABD09D4BEE1/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/9FEBAB6C01>) |
+| 8086:1e03 | 1179:0001 | Intel            | 7 Series Chipset Family 6-port SA... | 3     | ahci       | [E621531452](<Notebook/Toshiba/dynabook/dynabook Satellite B453-L/51209A708293/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/E621531452>) |
+| 8086:1e03 | 1179:ff1e | Intel            | 7 Series Chipset Family 6-port SA... | 3     | ahci       | [06598A2ED3](<Notebook/Toshiba/Dakar10/Dakar10FW8/2F3FE05C620E/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/06598A2ED3>) |
+| 8086:1e03 | 17aa:2203 | Intel            | 7 Series Chipset Family 6-port SA... | 3     | ahci       | [EFDFEE9023](<Notebook/Lenovo/ThinkPad/ThinkPad X230 Tablet 343522U/EB8C39CCF903/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/EFDFEE9023>) |
+| 8086:3b29 | 1179:0001 | Intel            | 5 Series/3400 Series Chipset 4 po... | 3     | ahci       | [2AC9BEA1E6](<Notebook/Toshiba/PORTEGE/PORTEGE M780/9BA4726CBC1C/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/2AC9BEA1E6>) |
+| 8086:8c03 | 1028:05bd | Intel            | 8 Series/C220 Series Chipset Fami... | 3     | ahci       | [8FA2C1F5C4](<Notebook/Dell/Latitude/Latitude E6440/90F4D14BB79B/FREEBSD-13.0-P2/13.0-RELEASE-P1/AMD64/8FA2C1F5C4>) |
+| 8086:8c03 | 17aa:2211 | Intel            | 8 Series/C220 Series Chipset Fami... | 3     | ahci       | [B6DFFE77EB](<Notebook/Lenovo/ThinkPad/ThinkPad W540 20BG0014US/3AD854A625A5/OPNSENSE-21.7.2/12.1-RELEASE-P20-HBSD/AMD64/B6DFFE77EB>) |
+| 8086:8c03 | 17aa:3978 | Intel            | 8 Series/C220 Series Chipset Fami... | 3     | ahci       | [1FEB455E8C](<Notebook/Lenovo/Y50-70/Y50-70 20378/45CB117B153A/OPNSENSE-21.7.7/12.1-RELEASE-P19-HBSD/AMD64/1FEB455E8C>) |
+| 8086:9c03 | 1028:05ca | Intel            | 8 Series SATA Controller 1 [AHCI ... | 3     | ahci       | [762D8366D0](<Notebook/Dell/Latitude/Latitude E7240/B8876AE6AF27/FREEBSD-13.0-RC4/13.0-RC4/AMD64/762D8366D0>) |
+| 8086:9c03 | 104d:90b6 | Intel            | 8 Series SATA Controller 1 [AHCI ... | 3     | ahci       | [03EF84679C](<Notebook/Sony/SVP1322/SVP13225SCBI/C462BD727B55/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/03EF84679C>) |
+| 8086:9c83 | 1028:06ae | Intel            | Wildcat Point-LP SATA Controller ... | 3     | ahci       | [3A239EA97A](<Notebook/Dell/Inspiron/Inspiron 5558/AF88938C2D41/FREEBSD-12.3/12.3-RELEASE/AMD64/3A239EA97A>) |
+| 8086:9d03 | 1028:078c | Intel            | Sunrise Point-LP SATA Controller ... | 3     | ahci       | [9073F1975D](<Notebook/Dell/Inspiron/Inspiron 15-3567/26EF6087DCBB/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/9073F1975D>) |
+| 1002:4391 | 103c:3577 | AMD              | SB7x0/SB8x0/SB9x0 SATA Controller... | 2     | ahci       | [F83C769501](<Notebook/Hewlett-Packard/2000/2000/5F42EBFDBCAE/FREEBSD-12.2/12.2-RELEASE/AMD64/F83C769501>) |
+| 1022:43c8 | 1025:1246 | AMD              | 400 Series Chipset SATA Controller   | 2     | ahci       | [9E03A76684](<Notebook/Acer/Predator/Predator PH517-61/401258E70C57/FREEBSD-13.0/13.0-RELEASE/AMD64/9E03A76684>) |
+| 1022:7801 | 1025:0715 | AMD              | FCH SATA Controller [AHCI mode]      | 2     | ahci       | [CC83218496](<Notebook/Acer/Aspire/Aspire E1-421/030AC00DD903/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/CC83218496>) |
+| 1022:7801 | 1025:0865 | AMD              | FCH SATA Controller [AHCI mode]      | 2     | ahci       | [5306253276](<Notebook/Acer/Aspire/Aspire E5-521G/6C9872FCA376/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/5306253276>) |
+| 1022:7801 | 1179:ff1e | AMD              | FCH SATA Controller [AHCI mode]      | 2     | ahci       | [9FB68E38D8](<Notebook/Toshiba/Satellite/Satellite C75D-B/A00F7E268B18/FREEBSD-12.1-P9/12.1-RELEASE-P9/AMD64/9FB68E38D8>) |
+| 1022:7801 | 17aa:3801 | AMD              | FCH SATA Controller [AHCI mode]      | 2     | ahci       | [1D227A9CD2](<Notebook/Lenovo/G50-45/G50-45 80E3/E53F1DE394A5/NOMADBSD-1.3.2/12.1-RELEASE-P6/AMD64/1D227A9CD2>) |
+| 1022:7901 | 1025:1246 | AMD              | FCH SATA Controller [AHCI mode]      | 2     | ahci       | [9E03A76684](<Notebook/Acer/Predator/Predator PH517-61/401258E70C57/FREEBSD-13.0/13.0-RELEASE/AMD64/9E03A76684>) |
+| 1022:7901 | 103c:8730 | AMD              | FCH SATA Controller [AHCI mode]      | 2     | ahci       | [494195B923](<Notebook/Hewlett-Packard/ProBook/ProBook 445 G7/06DE97DEA747/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/494195B923>) |
+| 1022:7901 | 103c:8786 | AMD              | FCH SATA Controller [AHCI mode]      | 2     | ahci       | [19F307FF6D](<Notebook/Hewlett-Packard/OMEN/OMEN Laptop 15-en0xxx/99830226F687/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/19F307FF6D>) |
+| 1022:7901 | 103c:87b1 | AMD              | FCH SATA Controller [AHCI mode]      | 2     | ahci       | [B8408CB369](<Notebook/Hewlett-Packard/Pavilion/Pavilion Gaming Laptop 15-ec1xxx/447033DB0DB6/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/B8408CB369>) |
+| 1022:7901 | 103c:88dd | AMD              | FCH SATA Controller [AHCI mode]      | 2     | ahci       | [7859F220B9](<Notebook/Hewlett-Packard/Pavilion/Pavilion Gaming Laptop 15-ec2xxx/32343F8FB2CF/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/7859F220B9>) |
+| 1022:7901 | 1043:10c2 | AMD              | FCH SATA Controller [AHCI mode]      | 2     | ahci       | [0FE1337B93](<Notebook/ASUSTek Computer/VivoBook_ASUSLaptop/VivoBook_ASUSLaptop X712DAP_M712DA/510E40E5A8D2/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/0FE1337B93>) |
+| 1022:7901 | 1043:1821 | AMD              | FCH SATA Controller [AHCI mode]      | 2     | ahci       | [0B73DF29BF](<Notebook/ASUSTek Computer/VivoBook_ASUSLaptop/VivoBook_ASUSLaptop X512DA_F512DA/0940BAB70ED0/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/0B73DF29BF>) |
+| 1022:7901 | 1043:1e21 | AMD              | FCH SATA Controller [AHCI mode]      | 2     | ahci       | [11BBFCE5D4](<Notebook/ASUSTek Computer/ASUS/ASUS TUF Gaming A15 FA506IH_FA506IH/791A09644467/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/11BBFCE5D4>) |
+| 1022:7904 | 103c:8330 | AMD              | FCH SATA Controller [AHCI mode]      | 2     | ahci       | [8E9A6CFF62](<Notebook/Hewlett-Packard/Laptop/Laptop 15-rb0xx/94A2E681C681/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/8E9A6CFF62>) |
+| 144d:1600 |           | Samsung Elect... | Apple PCIe SSD                       | 2     | ahci       | [46BF9EDC63](<Notebook/Apple/MacBookAir6/MacBookAir6,1/47A05046B480/NOMADBSD-5806F915/13.0-RELEASE-P1/AMD64/46BF9EDC63>) |
+| 197b:2360 | 1043:1348 | JMicron Techn... | JMB360 AHCI Controller               | 2     | ahci       | [936A577D1A](<Notebook/ASUSTek Computer/M51/M51Sr/7A36C31A2F7E/NOMADBSD-5806F915/13.0-RELEASE/AMD64/936A577D1A>) |
+| 197b:2360 | 197b:2360 | JMicron Techn... | JMB360 AHCI Controller               | 2     | ahci       | [455AF20B0D](<Notebook/Apple/MacBookPro8/MacBookPro8,3/E778A38BBA47/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/455AF20B0D>) |
+| 8086:02d3 | 8086:7270 | Intel            | Comet Lake SATA AHCI Controller      | 2     | ahci       | [F99C9F56B7](<Notebook/System76/Darter/Darter Pro/0CE03E6D5308/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/F99C9F56B7>) |
+| 8086:06d3 | 17aa:3808 | Intel            | 400 Series Chipset Family SATA AH... | 2     | ahci       | [2BE8CF963C](<Notebook/Lenovo/Legion/Legion 5P 15IMH05H 82AW/5AF94BC5A494/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/2BE8CF963C>) |
+| 8086:06d3 | 1d05:1085 | Intel            | 400 Series Chipset Family SATA AH... | 2     | ahci       | [5983302B1D](<Notebook/Avell High Performance/A62/A62 LIV/45914491EAA0/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/5983302B1D>) |
+| 8086:0f23 | 17aa:2224 | Intel            | Atom Processor E3800 Series SATA ... | 2     | ahci       | [0E448AF5F5](<Notebook/Lenovo/ThinkPad/ThinkPad Yoga 11e 20DAS0AE00/26BBAB82192F/HELLOSYSTEM-0.6.0/13.0-RELEASE/AMD64/0E448AF5F5>) |
+| 8086:1c03 | 1028:04b0 | Intel            | 6 Series/C200 Series Chipset Fami... | 2     | ahci       | [19BE37F181](<Notebook/Dell/Inspiron/Inspiron N5110/5EF98B1DA6B5/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/19BE37F181>) |
+| 8086:1c03 | 1028:04b3 | Intel            | 6 Series/C200 Series Chipset Fami... | 2     | ahci       | [0B290F2AC3](<Notebook/Dell/Vostro/Vostro 3550/699120C48004/GHOSTBSD-22.01.29/13.0-STABLE/AMD64/0B290F2AC3>) |
+| 8086:1c03 | 10f7:8338 | Intel            | 6 Series/C200 Series Chipset Fami... | 2     | ahci       | [6BBADBA65D](<Notebook/Panasonic/CF-NX1/CF-NX1GDHYS/343F5A72B70D/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/6BBADBA65D>) |
+| 8086:1c03 | 1179:fc30 | Intel            | 6 Series/C200 Series Chipset Fami... | 2     | ahci       | [44818070A2](<Notebook/Toshiba/Satellite/Satellite P755/DC89EDA3D6F9/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/44818070A2>) |
+| 8086:1c03 | 17aa:21db | Intel            | 6 Series/C200 Series Chipset Fami... | 2     | ahci       | [DBD5C6E5E3](<Notebook/Lenovo/ThinkPad/ThinkPad X220 Tablet 4298B65/7AF33DC5AA71/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/DBD5C6E5E3>) |
+| 8086:1c03 | 17aa:21e2 | Intel            | 6 Series/C200 Series Chipset Fami... | 2     | ahci       | [AA98E655F3](<Notebook/Lenovo/ThinkPad/ThinkPad E420 1141A83/01AFCFDA1374/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/AA98E655F3>) |
+| 8086:1e03 | 1025:0742 | Intel            | 7 Series Chipset Family 6-port SA... | 2     | ahci       | [D175137636](<Notebook/Acer/V5/V5-131/AD483E0D64C3/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/D175137636>) |
+| 8086:1e03 | 1028:0534 | Intel            | 7 Series Chipset Family 6-port SA... | 2     | ahci       | [FDDE41404D](<Notebook/Dell/Latitude/Latitude E6430/9A4F06581327/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/FDDE41404D>) |
+| 8086:1e03 | 1043:117d | Intel            | 7 Series Chipset Family 6-port SA... | 2     | ahci       | [45F61AB19E](<Notebook/ASUSTek Computer/X502/X502CA/DA331651DD7B/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/45F61AB19E>) |
 
 ### Storage/ide (PCI)
 
-| ID        | Subsystem | MFG        | Name                         | Count | Driver     | Probe      |
-|-----------|-----------|------------|------------------------------|-------|------------|------------|
-| 8086:2850 | 17aa:20a6 | Intel      | 82801HM/HEM (ICH8M/ICH8M-... | 6     | atapci     | D223A9B1FB |
-| 8086:27df | 17aa:200c | Intel      | 82801G (ICH7 Family) IDE ... | 4     | atapci     | 5375F351A5 |
-| 8086:2850 | 106b:00a1 | Intel      | 82801HM/HEM (ICH8M/ICH8M-... | 3     | atapci     | ED3684513F |
-| 8086:27c0 | 104d:9075 | Intel      | NM10/ICH7 Family SATA Con... | 2     | atapci     | 30BB4FC23C |
-| 8086:2a46 | 17aa:20ea | Intel      | Mobile 4 Series Chipset P... | 2     | atapci     | F8CE633ED7 |
-| 1002:4380 | 1028:01f5 | AMD        | SB600 Non-Raid-5 SATA        | 1     | ahci       | 9EE3E7CBC2 |
-| 1002:4380 | 107b:0184 | AMD        | SB600 Non-Raid-5 SATA        | 1     | ahci       | D9EF473A7A |
-| 1002:438c | 1002:438c | AMD        | SB600 IDE                    | 1     | atapci     | D9EF473A7A |
-| 1002:438c | 1028:01f5 | AMD        | SB600 IDE                    | 1     | atapci     | 9EE3E7CBC2 |
-| 1002:439c | 1179:ff6a | AMD        | SB7x0/SB8x0/SB9x0 IDE Con... | 1     | atapci     | E8BED535A9 |
-| 1022:780c | 1022:780c | AMD        | FCH IDE Controller           | 1     | atapci     | 9E0509BD54 |
-| 1039:1183 | 1043:1aa7 | Silicon... | SATA Controller / IDE mode   | 1     | atapci     | A2EE0C9EDB |
-| 1039:5513 | 1039:5513 | Silicon... | 5513 IDE Controller          | 1     | atapci     | 56A5581907 |
-| 1039:5513 | 1043:1197 | Silicon... | 5513 IDE Controller          | 1     | atapci     | 1F098AC490 |
-| 1039:5513 | 1043:1aa7 | Silicon... | 5513 IDE Controller          | 1     | atapci     | A2EE0C9EDB |
-| 10b9:5229 | 103c:0850 | ULi Ele... | M5229 IDE                    | 1     | atapci     | B7C0CB252F |
-| 8086:1c01 | 103c:162a | Intel      | 6 Series/C200 Series Chip... | 1     | atapci     | 5707FC27CE |
-| 8086:1c01 | 10f7:8338 | Intel      | 6 Series/C200 Series Chip... | 1     | atapci     | 3E876BADA1 |
-| 8086:1c01 | 17aa:21da | Intel      | 6 Series/C200 Series Chip... | 1     | atapci     | D507033DA7 |
-| 8086:1c09 | 103c:162a | Intel      | 6 Series/C200 Series Chip... | 1     | atapci     | 5707FC27CE |
-| 8086:1c09 | 10f7:8338 | Intel      | 6 Series/C200 Series Chip... | 1     | atapci     | 3E876BADA1 |
-| 8086:1c09 | 17aa:21da | Intel      | 6 Series/C200 Series Chip... | 1     | atapci     | D507033DA7 |
-| 8086:1e01 | 1028:0572 | Intel      | 7 Series Chipset Family 4... | 1     | atapci     | 599D3E84D7 |
-| 8086:1e01 | 1028:0597 | Intel      | 7 Series Chipset Family 4... | 1     | atapci     | AFD71FDF87 |
-| 8086:1e01 | 1028:05b8 | Intel      | 7 Series Chipset Family 4... | 1     | atapci     | B663DF318C |
-| 8086:1e01 | 103c:18df | Intel      | 7 Series Chipset Family 4... | 1     | atapci     | E1837571DF |
-| 8086:1e01 | 17aa:21f3 | Intel      | 7 Series Chipset Family 4... | 1     | atapci     | 2C985C22EF |
-| 8086:1e01 | 17aa:21f6 | Intel      | 7 Series Chipset Family 4... | 1     | atapci     | F7D13E4696 |
-| 8086:1e01 | 8086:1e01 | Intel      | 7 Series Chipset Family 4... | 1     | atapci     | F9ED1DCE06 |
-| 8086:1e09 | 1028:0572 | Intel      | 7 Series Chipset Family 2... | 1     | atapci     | 599D3E84D7 |
-| 8086:1e09 | 1028:0597 | Intel      | 7 Series Chipset Family 2... | 1     | atapci     | AFD71FDF87 |
-| 8086:1e09 | 1028:05b8 | Intel      | 7 Series Chipset Family 2... | 1     | atapci     | B663DF318C |
-| 8086:1e09 | 103c:18df | Intel      | 7 Series Chipset Family 2... | 1     | atapci     | E1837571DF |
-| 8086:1e09 | 17aa:21f3 | Intel      | 7 Series Chipset Family 2... | 1     | atapci     | 2C985C22EF |
-| 8086:1e09 | 17aa:21f6 | Intel      | 7 Series Chipset Family 2... | 1     | atapci     | F7D13E4696 |
-| 8086:1e09 | 8086:1e09 | Intel      | 7 Series Chipset Family 2... | 1     | atapci     | F9ED1DCE06 |
-| 8086:248a | 1014:0220 | Intel      | 82801CAM IDE U100 Controller | 1     | atapci     | A0F38DE52F |
-| 8086:248a | 107b:0400 | Intel      | 82801CAM IDE U100 Controller | 1     | atapci     | 41E40C653E |
-| 8086:24ca | 1014:052d | Intel      | 82801DBM (ICH4-M) IDE Con... | 1     | atapci     | BDD45ACD8D |
-| 8086:24ca | 1043:1897 | Intel      | 82801DBM (ICH4-M) IDE Con... | 1     | atapci     | 0D292BCA2F |
-| 8086:24ca | 104d:8188 | Intel      | 82801DBM (ICH4-M) IDE Con... | 1     | atapci     | F2F3923EA6 |
-| 8086:24ca | 10f7:8338 | Intel      | 82801DBM (ICH4-M) IDE Con... | 1     | atapci     | F6EC2858A5 |
-| 8086:2653 | 1028:0182 | Intel      | 82801FBM (ICH6M) SATA Con... | 1     | atapci     | D2CBB1F229 |
-| 8086:27c4 | 1028:01bd | Intel      | 82801GBM/GHM (ICH7-M Fami... | 1     | atapci     | 7F814A7E8D |
-| 8086:27c4 | 1028:01c2 | Intel      | 82801GBM/GHM (ICH7-M Fami... | 1     | atapci     | 1BD280A155 |
-| 8086:27c4 | 1028:02d6 | Intel      | 82801GBM/GHM (ICH7-M Fami... | 1     | atapci     | 899CE6FFE4 |
-| 8086:27c4 | 1043:830f | Intel      | 82801GBM/GHM (ICH7-M Fami... | 1     | atapci     | E920222F0E |
-| 8086:27c4 | 104d:81e6 | Intel      | 82801GBM/GHM (ICH7-M Fami... | 1     | atapci     | ACE534D784 |
-| 8086:27c4 | 1179:ff00 | Intel      | 82801GBM/GHM (ICH7-M Fami... | 1     | atapci     | E6E0A1294C |
-| 8086:27c4 | 144d:c062 | Intel      | 82801GBM/GHM (ICH7-M Fami... | 1     | atapci     | CAB912C576 |
-| 8086:27c4 | 144d:ca00 | Intel      | 82801GBM/GHM (ICH7-M Fami... | 1     | atapci     | 3307E80418 |
-| 8086:27c4 | 152d:1777 | Intel      | 82801GBM/GHM (ICH7-M Fami... | 1     | atapci     | D11EC93413 |
-| 8086:27c4 | 1631:0193 | Intel      | 82801GBM/GHM (ICH7-M Fami... | 1     | atapci     | 4D9EB84DAA |
-| 8086:27c4 | 17aa:3835 | Intel      | 82801GBM/GHM (ICH7-M Fami... | 1     | atapci     | 0DE11A4114 |
-| 8086:27df | 1025:022f | Intel      | 82801G (ICH7 Family) IDE ... | 1     | atapci     | 8514FF3EE8 |
-| 8086:27df | 1028:02b0 | Intel      | 82801G (ICH7 Family) IDE ... | 1     | atapci     | 047950E61B |
-| 8086:27df | 103c:30a2 | Intel      | 82801G (ICH7 Family) IDE ... | 1     | atapci     | C9C7BAE008 |
-| 8086:27df | 103c:30aa | Intel      | 82801G (ICH7 Family) IDE ... | 1     | atapci     | 256E0AE719 |
-| 8086:27df | 103c:30bb | Intel      | 82801G (ICH7 Family) IDE ... | 1     | atapci     | 733C5EDB74 |
-| 8086:27df | 104d:81e6 | Intel      | 82801G (ICH7 Family) IDE ... | 1     | atapci     | ACE534D784 |
-| 8086:27df | 17aa:3810 | Intel      | 82801G (ICH7 Family) IDE ... | 1     | atapci     | 0DE11A4114 |
-| 8086:2850 | 1025:011f | Intel      | 82801HM/HEM (ICH8M/ICH8M-... | 1     | atapci     | 5D6A8A51D0 |
-| 8086:2850 | 1028:022f | Intel      | 82801HM/HEM (ICH8M/ICH8M-... | 1     | atapci     | D08EA3542E |
-| 8086:2850 | 1028:0273 | Intel      | 82801HM/HEM (ICH8M/ICH8M-... | 1     | atapci     | EF1C0E0F2E |
-| 8086:2850 | 103c:30cc | Intel      | 82801HM/HEM (ICH8M/ICH8M-... | 1     | atapci     | 316FFB0740 |
-| 8086:2850 | 103c:30d7 | Intel      | 82801HM/HEM (ICH8M/ICH8M-... | 1     | atapci     | F63D65B78C |
-| 8086:2850 | 1043:1017 | Intel      | 82801HM/HEM (ICH8M/ICH8M-... | 1     | atapci     | A04133B68D |
-| 8086:2850 | 1043:15d7 | Intel      | 82801HM/HEM (ICH8M/ICH8M-... | 1     | atapci     | 593C12AA06 |
-| 8086:2850 | 104d:9016 | Intel      | 82801HM/HEM (ICH8M/ICH8M-... | 1     | atapci     | B417DF513F |
-| 8086:2850 | 10cf:140f | Intel      | 82801HM/HEM (ICH8M/ICH8M-... | 1     | atapci     | AC880C0076 |
-| 8086:2850 | 17aa:386d | Intel      | 82801HM/HEM (ICH8M/ICH8M-... | 1     | atapci     | 6B81593DE9 |
-| 8086:2928 | 1025:0176 | Intel      | 82801IBM/IEM (ICH9M/ICH9M... | 1     | atapci     | 6CA9384F34 |
-| 8086:2928 | 1028:024d | Intel      | 82801IBM/IEM (ICH9M/ICH9M... | 1     | atapci     | 981DE7FD20 |
-| 8086:2928 | 1631:018b | Intel      | 82801IBM/IEM (ICH9M/ICH9M... | 1     | atapci     | 2A98CAE4E8 |
-| 8086:2928 | 17aa:20f7 | Intel      | 82801IBM/IEM (ICH9M/ICH9M... | 1     | atapci     | 981517A51A |
-| 8086:292d | 1025:0176 | Intel      | 82801IBM/IEM (ICH9M/ICH9M... | 1     | atapci     | 6CA9384F34 |
-| 8086:292d | 1028:024d | Intel      | 82801IBM/IEM (ICH9M/ICH9M... | 1     | atapci     | 981DE7FD20 |
-| 8086:292d | 1631:018b | Intel      | 82801IBM/IEM (ICH9M/ICH9M... | 1     | atapci     | 2A98CAE4E8 |
-| 8086:2a06 | 17aa:20d3 | Intel      | Mobile PM965/GM965 PT IDE... | 1     | atapci     | 3EB96DCE87 |
-| 8086:2a46 | 1028:024f | Intel      | Mobile 4 Series Chipset P... | 1     | atapci     | D25DACC162 |
-| 8086:2a46 | 103c:30e1 | Intel      | Mobile 4 Series Chipset P... | 1     | atapci     | 1FD927E2CD |
-| 8086:2a46 | 103c:30e7 | Intel      | Mobile 4 Series Chipset P... | 1     | atapci     | A76C55B066 |
-| 8086:3b28 | 1025:0498 | Intel      | 5 Series/3400 Series Chip... | 1     | atapci     | D0C0433452 |
-| 8086:3b2d | 1025:0498 | Intel      | 5 Series/3400 Series Chip... | 1     | atapci     | D0C0433452 |
-| 8086:3b2d | 1028:0456 | Intel      | 5 Series/3400 Series Chip... | 1     | atapci     | C1A55B1147 |
-| 8086:3b2d | 103c:1521 | Intel      | 5 Series/3400 Series Chip... | 1     | atapci     | 78D9A31074 |
-| 8086:3b2d | 103c:172a | Intel      | 5 Series/3400 Series Chip... | 1     | atapci     | 7968C7D2DD |
-| 8086:3b2e | 1028:0456 | Intel      | 5 Series/3400 Series Chip... | 1     | atapci     | C1A55B1147 |
-| 8086:3b2e | 103c:1521 | Intel      | 5 Series/3400 Series Chip... | 1     | atapci     | 78D9A31074 |
-| 8086:3b2e | 103c:172a | Intel      | 5 Series/3400 Series Chip... | 1     | atapci     | 7968C7D2DD |
-| 8086:3b66 | 10cf:152e | Intel      | 5 Series/3400 Series Chip... | 1     | atapci     | 57506CBDCF |
-| 8086:8c01 | 103c:2101 | Intel      | 8 Series Chipset Family 4... | 1     | atapci     | 6BC6C5B2BF |
-| 8086:8c09 | 103c:2101 | Intel      | 8 Series/C220 Series Chip... | 1     | atapci     | 6BC6C5B2BF |
+| ID        | Subsystem | MFG              | Name                                 | Count | Driver     | Probe |
+|-----------|-----------|------------------|--------------------------------------|-------|------------|-------|
+| 8086:2850 | 17aa:20a6 | Intel            | 82801HM/HEM (ICH8M/ICH8M-E) IDE C... | 9     | atapci     | [F5F25EFDCC](<Notebook/Lenovo/ThinkPad/ThinkPad T61 766301U/A1D00057611B/HELLOSYSTEM-0.7.0/13.0-RELEASE-P7/AMD64/F5F25EFDCC>) |
+| 8086:27df | 17aa:200c | Intel            | 82801G (ICH7 Family) IDE Controller  | 6     | atapci     | [E2D5391A1A](<Notebook/Lenovo/ThinkPad/ThinkPad T60 1951FEG/8CFF73D19B7A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E2D5391A1A>) |
+| 8086:2850 | 106b:00a1 | Intel            | 82801HM/HEM (ICH8M/ICH8M-E) IDE C... | 6     | atapci     | [E0CF5200DE](<Notebook/Apple/MacBook4/MacBook4,1/07CFC301CF14/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E0CF5200DE>) |
+| 8086:2653 | 1014:056a | Intel            | 82801FBM (ICH6M) SATA Controller     | 3     | atapci     | [6FD6FD89C5](<Notebook/IBM/ThinkPad/ThinkPad R52 185869G/DED57F076B3E/FREEBSD-12.2-P6/12.2-RELEASE-P6/I386/6FD6FD89C5>) |
+| 1039:5513 | 1039:5513 | Silicon Integ... | 5513 IDE Controller                  | 2     | atapci     | [F4C9B911FE](<Notebook/Fujitsu Siemens/ESPRIMO/ESPRIMO Mobile V5535/8864DF79847F/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/F4C9B911FE>) |
+| 8086:27c0 | 104d:9075 | Intel            | NM10/ICH7 Family SATA Controller ... | 2     | atapci     | [30BB4FC23C](<Notebook/Sony/VPCM13/VPCM13M1R/5AB92F9110B8/NOMADBSD-1.3.2/12.1-RELEASE-P6/I386/30BB4FC23C>) |
+| 8086:27c4 | 1043:830f | Intel            | 82801GBM/GHM (ICH7-M Family) SATA... | 2     | atapci     | [DA8689C840](<Notebook/ASUSTek Computer/1000/1000/B72FBE0D3AF3/NOMADBSD-5806F915/13.0-RELEASE/I386/DA8689C840>) |
+| 8086:27c4 | 144d:ca00 | Intel            | 82801GBM/GHM (ICH7-M Family) SATA... | 2     | atapci     | [D33644912A](<Notebook/Samsung Electronics/NC/NC10/84A2300B9353/FREEBSD-13.0/13.0-RELEASE/I386/D33644912A>) |
+| 8086:2850 | 1028:01f9 | Intel            | 82801HM/HEM (ICH8M/ICH8M-E) IDE C... | 2     | atapci     | [AE56D2CEDD](<Notebook/Dell/Latitude/Latitude D630/94367DB4F4E1/NOMADBSD-5806F915/13.0-RELEASE/AMD64/AE56D2CEDD>) |
+| 8086:2850 | 103c:30d8 | Intel            | 82801HM/HEM (ICH8M/ICH8M-E) IDE C... | 2     | atapci     | [6B0D316AFC](<Notebook/Hewlett-Packard/Compaq/Compaq 6720s/6AAE44ED8554/FREEBSD-12.2-P4/12.2-RELEASE-P4/AMD64/6B0D316AFC>) |
+| 8086:2850 | 106b:00a3 | Intel            | 82801HM/HEM (ICH8M/ICH8M-E) IDE C... | 2     | atapci     | [D852363467](<Notebook/Apple/MacBookPro4/MacBookPro4,1/A1E7ACA2078D/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/D852363467>) |
+| 8086:2928 | 1028:024d | Intel            | 82801IBM/IEM (ICH9M/ICH9M-E) 2 po... | 2     | atapci     | [1150E00893](<Notebook/Dell/Latitude/Latitude E4300/6B1C9FA52734/FREEBSD-13.0/13.0-RELEASE/AMD64/1150E00893>) |
+| 8086:292d | 1028:024d | Intel            | 82801IBM/IEM (ICH9M/ICH9M-E) 2 po... | 2     | atapci     | [1150E00893](<Notebook/Dell/Latitude/Latitude E4300/6B1C9FA52734/FREEBSD-13.0/13.0-RELEASE/AMD64/1150E00893>) |
+| 8086:2a46 | 17aa:20ea | Intel            | Mobile 4 Series Chipset PT IDER C... | 2     | atapci     | [F8CE633ED7](<Notebook/Lenovo/ThinkPad/ThinkPad T400 2768WGC/03A2B8A4DEF6/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/F8CE633ED7>) |
+| 1002:4380 | 1028:01f5 | AMD              | SB600 Non-Raid-5 SATA                | 1     | ahci       | [9EE3E7CBC2](<Notebook/Dell/Inspiron/Inspiron 1501/4913C465B93F/FREEBSD-12.1/12.1-RELEASE/AMD64/9EE3E7CBC2>) |
+| 1002:4380 | 107b:0184 | AMD              | SB600 Non-Raid-5 SATA                | 1     | ahci       | [D9EF473A7A](<Notebook/Acer/Aspire/Aspire 5515/9253705EE60E/FREEBSD-12.2/12.2-RELEASE/AMD64/D9EF473A7A>) |
+| 1002:4380 | 1631:c109 | AMD              | SB600 Non-Raid-5 SATA                | 1     | ahci       | [235D60060D](<Notebook/Packard Bell/EasyNote_MX61/EasyNote_MX61-B-038/01DB7104A4E5/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/235D60060D>) |
+| 1002:438c | 1002:438c | AMD              | SB600 IDE                            | 1     | atapci     | [D9EF473A7A](<Notebook/Acer/Aspire/Aspire 5515/9253705EE60E/FREEBSD-12.2/12.2-RELEASE/AMD64/D9EF473A7A>) |
+| 1002:438c | 1028:01f5 | AMD              | SB600 IDE                            | 1     | atapci     | [9EE3E7CBC2](<Notebook/Dell/Inspiron/Inspiron 1501/4913C465B93F/FREEBSD-12.1/12.1-RELEASE/AMD64/9EE3E7CBC2>) |
+| 1002:438c | 1631:c109 | AMD              | SB600 IDE                            | 1     | atapci     | [235D60060D](<Notebook/Packard Bell/EasyNote_MX61/EasyNote_MX61-B-038/01DB7104A4E5/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/235D60060D>) |
+| 1002:439c | 1179:ff6a | AMD              | SB7x0/SB8x0/SB9x0 IDE Controller     | 1     | atapci     | [E8BED535A9](<Notebook/Toshiba/Satellite/Satellite L355D/1A5898429343/DRAGONFLY-5.8/5.8-RELEASE/AMD64/E8BED535A9>) |
+| 1022:7800 | 1025:059f | AMD              | FCH SATA Controller [IDE mode]       | 1     | ahci       | [E117631726](<Notebook/Acer/Aspire/Aspire 5560/5A56D599D735/FREEBSD-13.0/13.0-RELEASE/AMD64/E117631726>) |
+| 1022:7800 | 103c:169b | AMD              | FCH SATA Controller [IDE mode]       | 1     | ahci       | [9754BC2E72](<Notebook/Hewlett-Packard/Pavilion/Pavilion g6/5DCE7C1D9730/GHOSTBSD-20.04.02/13.0-STABLE/AMD64/9754BC2E72>) |
+| 1022:780c | 1022:780c | AMD              | FCH IDE Controller                   | 1     | atapci     | [9E0509BD54](<Notebook/DFI/BE17/BE17X/6FD257A4BC0C/OPNSENSE-21.1.1/12.1-RELEASE-P13-HBSD/AMD64/9E0509BD54>) |
+| 1022:780c | 103c:22c7 | AMD              | FCH IDE Controller                   | 1     | atapci     | [9929E0C39B](<Notebook/Hewlett-Packard/Pavilion/Pavilion 17/0E6EA46FA017/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/9929E0C39B>) |
+| 1039:1183 | 1039:1183 | Silicon Integ... | SATA Controller / IDE mode           | 1     | atapci     | [F4C9B911FE](<Notebook/Fujitsu Siemens/ESPRIMO/ESPRIMO Mobile V5535/8864DF79847F/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/F4C9B911FE>) |
+| 1039:1183 | 1043:1aa7 | Silicon Integ... | SATA Controller / IDE mode           | 1     | atapci     | [A2EE0C9EDB](<Notebook/ASUSTek Computer/X71/X71SL/C5769FF2BEDC/NOMADBSD-1.3.2/12.1-RELEASE-P6/AMD64/A2EE0C9EDB>) |
+| 1039:5513 | 1043:1197 | Silicon Integ... | 5513 IDE Controller                  | 1     | atapci     | [2962E2B02F](<Notebook/ASUSTek Computer/A/A9T/CD438D683462/FREEBSD-13.0-P7/13.0-RELEASE-P6/I386/2962E2B02F>) |
+| 1039:5513 | 1043:1aa7 | Silicon Integ... | 5513 IDE Controller                  | 1     | atapci     | [A2EE0C9EDB](<Notebook/ASUSTek Computer/X71/X71SL/C5769FF2BEDC/NOMADBSD-1.3.2/12.1-RELEASE-P6/AMD64/A2EE0C9EDB>) |
+| 10b9:5229 | 103c:0850 | ULi Electronics  | M5229 IDE                            | 1     | atapci     | [B7C0CB252F](<Notebook/Hewlett-Packard/nx/nx9010/C0E10A77D690/FREEBSD-12.1-P10/12.1-RELEASE-P9/I386/B7C0CB252F>) |
+| 1106:0571 | 1734:10cb | VIA Technologies | VT82C586A/B/VT82C686/A/B/VT823x/A... | 1     | atapci     | [77676FBCFC](<Notebook/Fujitsu Siemens/AMILO/AMILO PRO V3515/EF7743F9AC9A/NOMADBSD-5806F915/13.0-RELEASE/I386/77676FBCFC>) |
+| 1106:0591 | 1734:10cb | VIA Technologies | VT8237A SATA 2-Port Controller       | 1     | atapci     | [77676FBCFC](<Notebook/Fujitsu Siemens/AMILO/AMILO PRO V3515/EF7743F9AC9A/NOMADBSD-5806F915/13.0-RELEASE/I386/77676FBCFC>) |
+| 8086:1c01 | 103c:162a | Intel            | 6 Series/C200 Series Chipset Fami... | 1     | atapci     | [5707FC27CE](<Notebook/Hewlett-Packard/EliteBook/EliteBook 2760p/D5F3CAD4D63E/OPNSENSE-21.1.3/12.1-RELEASE-P14-HBSD/AMD64/5707FC27CE>) |
+| 8086:1c01 | 103c:162b | Intel            | 6 Series/C200 Series Chipset Fami... | 1     | atapci     | [8FE8CAF37D](<Notebook/Hewlett-Packard/EliteBook/EliteBook 2560p/AF379A15C8AC/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/8FE8CAF37D>) |
+| 8086:1c01 | 10f7:8338 | Intel            | 6 Series/C200 Series Chipset Fami... | 1     | atapci     | [3E876BADA1](<Notebook/Panasonic/CF-C1/CF-C1BD06EFG/A7F4B3124493/NOMADBSD-1.3.1/12.1-RELEASE-P2/AMD64/3E876BADA1>) |
+| 8086:1c01 | 17aa:21da | Intel            | 6 Series/C200 Series Chipset Fami... | 1     | atapci     | [D507033DA7](<Notebook/Lenovo/ThinkPad/ThinkPad X220 429136G/C359C0ADDDE5/FREEBSD-12.1/12.1-RELEASE/AMD64/D507033DA7>) |
+| 8086:1c01 | 8086:1c01 | Intel            | 6 Series/C200 Series Chipset Fami... | 1     | atapci     | [341401BB02](<Notebook/Others/Others/Others/D4245F739188/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/341401BB02>) |
+| 8086:1c01 | 8086:7270 | Intel            | 6 Series/C200 Series Chipset Fami... | 1     | atapci     | [1D941EE61D](<Notebook/Apple/MacBookPro8/MacBookPro8,1/25A23F585646/FREEBSD-13.0-P3/13.0-RELEASE-P3/AMD64/1D941EE61D>) |
+| 8086:1c09 | 103c:162a | Intel            | 6 Series/C200 Series Chipset Fami... | 1     | atapci     | [5707FC27CE](<Notebook/Hewlett-Packard/EliteBook/EliteBook 2760p/D5F3CAD4D63E/OPNSENSE-21.1.3/12.1-RELEASE-P14-HBSD/AMD64/5707FC27CE>) |
+| 8086:1c09 | 103c:162b | Intel            | 6 Series/C200 Series Chipset Fami... | 1     | atapci     | [8FE8CAF37D](<Notebook/Hewlett-Packard/EliteBook/EliteBook 2560p/AF379A15C8AC/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/8FE8CAF37D>) |
+| 8086:1c09 | 10f7:8338 | Intel            | 6 Series/C200 Series Chipset Fami... | 1     | atapci     | [3E876BADA1](<Notebook/Panasonic/CF-C1/CF-C1BD06EFG/A7F4B3124493/NOMADBSD-1.3.1/12.1-RELEASE-P2/AMD64/3E876BADA1>) |
+| 8086:1c09 | 17aa:21da | Intel            | 6 Series/C200 Series Chipset Fami... | 1     | atapci     | [D507033DA7](<Notebook/Lenovo/ThinkPad/ThinkPad X220 429136G/C359C0ADDDE5/FREEBSD-12.1/12.1-RELEASE/AMD64/D507033DA7>) |
+| 8086:1c09 | 8086:1c09 | Intel            | 6 Series/C200 Series Chipset Fami... | 1     | atapci     | [341401BB02](<Notebook/Others/Others/Others/D4245F739188/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/341401BB02>) |
+| 8086:1e01 | 1028:0572 | Intel            | 7 Series Chipset Family 4-port SA... | 1     | atapci     | [599D3E84D7](<Notebook/Dell/Inspiron/Inspiron 7520/028C6D0EF143/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/599D3E84D7>) |
+| 8086:1e01 | 1028:0597 | Intel            | 7 Series Chipset Family 4-port SA... | 1     | atapci     | [AFD71FDF87](<Notebook/Dell/Inspiron/Inspiron 3521/D0B94644586B/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/AFD71FDF87>) |
+| 8086:1e01 | 1028:05b8 | Intel            | 7 Series Chipset Family 4-port SA... | 1     | atapci     | [B663DF318C](<Notebook/Dell/Inspiron/Inspiron 5521/43F594F1BED2/FREEBSD-12.2-P2/12.2-RELEASE-P1/AMD64/B663DF318C>) |
+| 8086:1e01 | 103c:17a7 | Intel            | 7 Series Chipset Family 4-port SA... | 1     | atapci     | [F47789D894](<Notebook/Hewlett-Packard/EliteBook/EliteBook 8570p/6FBB1F806232/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/F47789D894>) |
+| 8086:1e01 | 103c:18df | Intel            | 7 Series Chipset Family 4-port SA... | 1     | atapci     | [B872E9B044](<Notebook/Hewlett-Packard/EliteBook/EliteBook Folio 9470m/9128D8D88AE4/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/B872E9B044>) |
+| 8086:1e01 | 17aa:21f3 | Intel            | 7 Series Chipset Family 4-port SA... | 1     | atapci     | [2C985C22EF](<Notebook/Lenovo/ThinkPad/ThinkPad T430 23495P8/226EE44DEE9C/FREEBSD-13.0-RC5/13.0-RC5-P1/AMD64/2C985C22EF>) |
+| 8086:1e01 | 17aa:21f6 | Intel            | 7 Series Chipset Family 4-port SA... | 1     | atapci     | [F7D13E4696](<Notebook/Lenovo/ThinkPad/ThinkPad T530 24295VU/33593EE17210/NOMADBSD-1.3.2/12.1-RELEASE-P6/AMD64/F7D13E4696>) |
+| 8086:1e01 | 17aa:21fa | Intel            | 7 Series Chipset Family 4-port SA... | 1     | atapci     | [94D66A0677](<Notebook/Lenovo/ThinkPad/ThinkPad X230 2325A95/F9984DCBFF97/FREEBSD-13.0/13.0-RELEASE/AMD64/94D66A0677>) |
+| 8086:1e01 | 8086:1e01 | Intel            | 7 Series Chipset Family 4-port SA... | 1     | atapci     | [F9ED1DCE06](<Notebook/Others/Others/Others/98434EEC1CB3/NOMADBSD-1.3.1/12.1-RELEASE-P2/AMD64/F9ED1DCE06>) |
+| 8086:1e09 | 1028:0572 | Intel            | 7 Series Chipset Family 2-port SA... | 1     | atapci     | [599D3E84D7](<Notebook/Dell/Inspiron/Inspiron 7520/028C6D0EF143/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/599D3E84D7>) |
+| 8086:1e09 | 1028:0597 | Intel            | 7 Series Chipset Family 2-port SA... | 1     | atapci     | [AFD71FDF87](<Notebook/Dell/Inspiron/Inspiron 3521/D0B94644586B/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/AFD71FDF87>) |
+| 8086:1e09 | 1028:05b8 | Intel            | 7 Series Chipset Family 2-port SA... | 1     | atapci     | [B663DF318C](<Notebook/Dell/Inspiron/Inspiron 5521/43F594F1BED2/FREEBSD-12.2-P2/12.2-RELEASE-P1/AMD64/B663DF318C>) |
+| 8086:1e09 | 103c:17a7 | Intel            | 7 Series Chipset Family 2-port SA... | 1     | atapci     | [F47789D894](<Notebook/Hewlett-Packard/EliteBook/EliteBook 8570p/6FBB1F806232/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/F47789D894>) |
+| 8086:1e09 | 103c:18df | Intel            | 7 Series Chipset Family 2-port SA... | 1     | atapci     | [B872E9B044](<Notebook/Hewlett-Packard/EliteBook/EliteBook Folio 9470m/9128D8D88AE4/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/B872E9B044>) |
+| 8086:1e09 | 17aa:21f3 | Intel            | 7 Series Chipset Family 2-port SA... | 1     | atapci     | [2C985C22EF](<Notebook/Lenovo/ThinkPad/ThinkPad T430 23495P8/226EE44DEE9C/FREEBSD-13.0-RC5/13.0-RC5-P1/AMD64/2C985C22EF>) |
+| 8086:1e09 | 17aa:21f6 | Intel            | 7 Series Chipset Family 2-port SA... | 1     | atapci     | [F7D13E4696](<Notebook/Lenovo/ThinkPad/ThinkPad T530 24295VU/33593EE17210/NOMADBSD-1.3.2/12.1-RELEASE-P6/AMD64/F7D13E4696>) |
+| 8086:1e09 | 17aa:21fa | Intel            | 7 Series Chipset Family 2-port SA... | 1     | atapci     | [94D66A0677](<Notebook/Lenovo/ThinkPad/ThinkPad X230 2325A95/F9984DCBFF97/FREEBSD-13.0/13.0-RELEASE/AMD64/94D66A0677>) |
+| 8086:1e09 | 8086:1e09 | Intel            | 7 Series Chipset Family 2-port SA... | 1     | atapci     | [F9ED1DCE06](<Notebook/Others/Others/Others/98434EEC1CB3/NOMADBSD-1.3.1/12.1-RELEASE-P2/AMD64/F9ED1DCE06>) |
+| 8086:248a | 1014:0220 | Intel            | 82801CAM IDE U100 Controller         | 1     | atapci     | [A0F38DE52F](<Notebook/IBM/2647NG8/2647NG8/06EF76B3C721/NOMADBSD-1.3.2/12.1-RELEASE-P6/I386/A0F38DE52F>) |
+| 8086:248a | 107b:0400 | Intel            | 82801CAM IDE U100 Controller         | 1     | atapci     | [41E40C653E](<Notebook/Gateway/Solo/Solo 450/3E11C9EAD72B/FREEBSD-12.2-P4/12.2-RELEASE-P4/I386/41E40C653E>) |
+| 8086:24ca | 1014:052d | Intel            | 82801DBM (ICH4-M) IDE Controller     | 1     | atapci     | [ACF931A3E0](<Notebook/IBM/ThinkPad/ThinkPad T42 2374K46/696337B58774/FREEBSD-13.0-P2/13.0-RELEASE-P1/I386/ACF931A3E0>) |
+| 8086:24ca | 1043:1897 | Intel            | 82801DBM (ICH4-M) IDE Controller     | 1     | atapci     | [0D292BCA2F](<Notebook/ASUSTek Computer/A3/A3L/F71442C2DD56/FREEBSD-6.4/6.4-RELEASE/I386/0D292BCA2F>) |
+| 8086:24ca | 104d:8188 | Intel            | 82801DBM (ICH4-M) IDE Controller     | 1     | atapci     | [F2F3923EA6](<Notebook/Sony/VGN-S/VGN-S150/194677ED6A48/FREEBSD-13.0-CURRENT/13.0-CURRENT/I386/F2F3923EA6>) |
+| 8086:24ca | 10f7:8338 | Intel            | 82801DBM (ICH4-M) IDE Controller     | 1     | atapci     | [F6EC2858A5](<Notebook/Matsushita Electric Industrial/CF-T2/CF-T2BW1AXR/C85EB722BC8F/FREEBSD-14.0-CURRENT/14.0-CURRENT/I386/F6EC2858A5>) |
+| 8086:2653 | 1028:0182 | Intel            | 82801FBM (ICH6M) SATA Controller     | 1     | atapci     | [D2CBB1F229](<Notebook/Dell/Latitude/Latitude D610/65F95AF4AC23/FREEBSD-12.2-P6/12.2-RELEASE-P6/I386/D2CBB1F229>) |
+| 8086:27c4 | 1028:01bd | Intel            | 82801GBM/GHM (ICH7-M Family) SATA... | 1     | atapci     | [7F814A7E8D](<Notebook/Dell/Inspiron/Inspiron MM061/75FBCB419A60/FREEBSD-12.0/12.0-RELEASE/AMD64/7F814A7E8D>) |
+| 8086:27c4 | 1028:01c2 | Intel            | 82801GBM/GHM (ICH7-M Family) SATA... | 1     | atapci     | [1BD280A155](<Notebook/Dell/Latitude/Latitude D620/F4E03DF8D5CC/FREEBSD-13.0/13.0-RELEASE/AMD64/1BD280A155>) |
+| 8086:27c4 | 1028:02d6 | Intel            | 82801GBM/GHM (ICH7-M Family) SATA... | 1     | atapci     | [899CE6FFE4](<Notebook/Dell/Latitude/Latitude 2100/C4B464EE391B/FREEBSD-12.2/12.2-RELEASE/I386/899CE6FFE4>) |
+| 8086:27c4 | 103c:308f | Intel            | 82801GBM/GHM (ICH7-M Family) SATA... | 1     | atapci     | [EF66D7A110](<Notebook/Hewlett-Packard/Mini/Mini 110-1000/8C874FBA53B0/FREEBSD-13.0/13.0-RELEASE/I386/EF66D7A110>) |
+| 8086:27c4 | 104d:81e6 | Intel            | 82801GBM/GHM (ICH7-M Family) SATA... | 1     | atapci     | [ACE534D784](<Notebook/Sony/VGN-SZ3/VGN-SZ3VWP_X/ECFA4AD781DF/GHOSTBSD-20.04.02/12.1-STABLE/AMD64/ACE534D784>) |
+| 8086:27c4 | 1179:ff00 | Intel            | 82801GBM/GHM (ICH7-M Family) SATA... | 1     | atapci     | [E6E0A1294C](<Notebook/Toshiba/Satellite/Satellite M100/9A0C6DBE0166/FREEBSD-12.2-STABLE/12.2-STABLE/I386/E6E0A1294C>) |
+| 8086:27c4 | 144d:c062 | Intel            | 82801GBM/GHM (ICH7-M Family) SATA... | 1     | atapci     | [CAB912C576](<Notebook/Samsung Electronics/N/N140/C66A47CB59A2/FREEBSD-12.2-P2/12.2-RELEASE-P1/I386/CAB912C576>) |
+| 8086:27c4 | 152d:1777 | Intel            | 82801GBM/GHM (ICH7-M Family) SATA... | 1     | atapci     | [D11EC93413](<Notebook/Others/Others/Others/4B4A5DF5D5E3/FREEBSD-12.2-P3/12.2-RELEASE-P3/I386/D11EC93413>) |
+| 8086:27c4 | 1631:0193 | Intel            | 82801GBM/GHM (ICH7-M Family) SATA... | 1     | atapci     | [4D9EB84DAA](<Notebook/Packard Bell/AOA/AOA110/A6F5C97A1FF3/FREEBSD-12.2-P6/12.2-RELEASE-P6/I386/4D9EB84DAA>) |
+| 8086:27c4 | 17aa:200e | Intel            | 82801GBM/GHM (ICH7-M Family) SATA... | 1     | atapci     | [91D67BA784](<Notebook/Lenovo/ThinkPad/ThinkPad R60e 0658W2M/505133B14946/FREEBSD-13.0/13.0-RELEASE/I386/91D67BA784>) |
+| 8086:27c4 | 17aa:3835 | Intel            | 82801GBM/GHM (ICH7-M Family) SATA... | 1     | atapci     | [0DE11A4114](<Notebook/Lenovo/41875/41875PG/FBB3F4F7ABC6/FREEBSD-12.2-P2/12.2-RELEASE-P1/I386/0DE11A4114>) |
+| 8086:27df | 1025:022f | Intel            | 82801G (ICH7 Family) IDE Controller  | 1     | atapci     | [8514FF3EE8](<Notebook/Acer/Aspire/Aspire one/9F3962A84F7A/FREEBSD-12.1/12.1-RELEASE/I386/8514FF3EE8>) |
+| 8086:27df | 1028:02b0 | Intel            | 82801G (ICH7 Family) IDE Controller  | 1     | atapci     | [047950E61B](<Notebook/Dell/Inspiron/Inspiron 910/399325EDD43B/FREEBSD-12.2-P3/12.2-RELEASE-P3/I386/047950E61B>) |
+| 8086:27df | 103c:30a2 | Intel            | 82801G (ICH7 Family) IDE Controller  | 1     | atapci     | [C9C7BAE008](<Notebook/Hewlett-Packard/Compaq/Compaq nx7400/6623CE659622/FREEBSD-12.2/12.2-RELEASE/AMD64/C9C7BAE008>) |
+| 8086:27df | 103c:30aa | Intel            | 82801G (ICH7 Family) IDE Controller  | 1     | atapci     | [256E0AE719](<Notebook/Hewlett-Packard/Compaq/Compaq nc6320/BA8F7F88D1FF/FREEBSD-12.1-P4/12.1-RELEASE-P3/AMD64/256E0AE719>) |
+| 8086:27df | 103c:30bb | Intel            | 82801G (ICH7 Family) IDE Controller  | 1     | atapci     | [733C5EDB74](<Notebook/Hewlett-Packard/Pavilion/Pavilion dv6000/124DCA351C5C/NOMADBSD-1.4/12.2-RELEASE-P4/AMD64/733C5EDB74>) |
+| 8086:27df | 104d:81e6 | Intel            | 82801G (ICH7 Family) IDE Controller  | 1     | atapci     | [ACE534D784](<Notebook/Sony/VGN-SZ3/VGN-SZ3VWP_X/ECFA4AD781DF/GHOSTBSD-20.04.02/12.1-STABLE/AMD64/ACE534D784>) |
+| 8086:27df | 17aa:3810 | Intel            | 82801G (ICH7 Family) IDE Controller  | 1     | atapci     | [0DE11A4114](<Notebook/Lenovo/41875/41875PG/FBB3F4F7ABC6/FREEBSD-12.2-P2/12.2-RELEASE-P1/I386/0DE11A4114>) |
+| 8086:2828 | 1028:01f9 | Intel            | 82801HM/HEM (ICH8M/ICH8M-E) SATA ... | 1     | atapci     | [B34DB656B5](<Notebook/Dell/Latitude/Latitude D630/3C23C4DC4DEC/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/B34DB656B5>) |
+| 8086:2850 | 1025:011f | Intel            | 82801HM/HEM (ICH8M/ICH8M-E) IDE C... | 1     | atapci     | [5D6A8A51D0](<Notebook/Acer/Extensa/Extensa 5220/D9CE76F90EBD/FREEBSD-12.2-P3/12.2-RELEASE-P3/AMD64/5D6A8A51D0>) |
+| 8086:2850 | 1025:0136 | Intel            | 82801HM/HEM (ICH8M/ICH8M-E) IDE C... | 1     | atapci     | [29FE65832B](<Notebook/Acer/Aspire/Aspire 5315/8F6D120ECE96/FREEBSD-12.2-P4/12.2-RELEASE-P4/I386/29FE65832B>) |
+| 8086:2850 | 1028:01ff | Intel            | 82801HM/HEM (ICH8M/ICH8M-E) IDE C... | 1     | atapci     | [08FE78379D](<Notebook/Dell/Precision/Precision M4300/9A5AD1C0634C/OPNSENSE-21.7.6/12.1-RELEASE-P21-HBSD/AMD64/08FE78379D>) |
+| 8086:2850 | 1028:0200 | Intel            | 82801HM/HEM (ICH8M/ICH8M-E) IDE C... | 1     | atapci     | [EF0DAC3DE0](<Notebook/Dell/Latitude/Latitude D530/A3518C2809C8/OPNSENSE-21.1.6/12.1-RELEASE-P16-HBSD/AMD64/EF0DAC3DE0>) |
+| 8086:2850 | 1028:0227 | Intel            | 82801HM/HEM (ICH8M/ICH8M-E) IDE C... | 1     | atapci     | [1C594C9DED](<Notebook/Dell/Vostro/Vostro 1400/F4BFABD756AB/FREEBSD-12.2-P11/12.2-RELEASE-P7/AMD64/1C594C9DED>) |
+| 8086:2850 | 1028:022f | Intel            | 82801HM/HEM (ICH8M/ICH8M-E) IDE C... | 1     | atapci     | [D08EA3542E](<Notebook/Dell/Inspiron/Inspiron 1525/5F154BEB509E/FREEBSD-12.1-P7/12.1-RELEASE-P7/AMD64/D08EA3542E>) |
+| 8086:2850 | 1028:0273 | Intel            | 82801HM/HEM (ICH8M/ICH8M-E) IDE C... | 1     | atapci     | [EF1C0E0F2E](<Notebook/Dell/Vostro/Vostro 1510/810B328E2D37/FREEBSD-12.2/12.2-RELEASE/AMD64/EF1C0E0F2E>) |
+| 8086:2850 | 103c:30cc | Intel            | 82801HM/HEM (ICH8M/ICH8M-E) IDE C... | 1     | atapci     | [316FFB0740](<Notebook/Hewlett-Packard/Pavilion/Pavilion dv6500/32D4B6005261/FREEBSD-12.1-P8/12.1-RELEASE-P8/AMD64/316FFB0740>) |
+| 8086:2850 | 103c:30d7 | Intel            | 82801HM/HEM (ICH8M/ICH8M-E) IDE C... | 1     | atapci     | [F63D65B78C](<Notebook/Hewlett-Packard/Compaq/Compaq 6820s/FE297EF5F225/FREEBSD-12.2/12.2-RELEASE/I386/F63D65B78C>) |
+| 8086:2850 | 1043:1017 | Intel            | 82801HM/HEM (ICH8M/ICH8M-E) IDE C... | 1     | atapci     | [1932B06FEE](<Notebook/ASUSTek Computer/X58/X58LE/DA0A971CACF7/OPNSENSE-21.1.8/12.1-RELEASE-P19-HBSD/AMD64/1932B06FEE>) |
+| 8086:2850 | 1043:15d7 | Intel            | 82801HM/HEM (ICH8M/ICH8M-E) IDE C... | 1     | atapci     | [593C12AA06](<Notebook/ASUSTek Computer/G1/G1S/7B906B209C35/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/593C12AA06>) |
+| 8086:2850 | 1043:17e7 | Intel            | 82801HM/HEM (ICH8M/ICH8M-E) IDE C... | 1     | atapci     | [936A577D1A](<Notebook/ASUSTek Computer/M51/M51Sr/7A36C31A2F7E/NOMADBSD-5806F915/13.0-RELEASE/AMD64/936A577D1A>) |
+| 8086:2850 | 104d:9016 | Intel            | 82801HM/HEM (ICH8M/ICH8M-E) IDE C... | 1     | atapci     | [B417DF513F](<Notebook/Sony/VGN-AR630/VGN-AR630E/0309566B32D1/FREEBSD-12.1-P8/12.1-RELEASE-P8/AMD64/B417DF513F>) |
 
 ### Storage/nvme (PCI)
 
-| ID        | Subsystem | MFG        | Name                         | Count | Driver     | Probe      |
-|-----------|-----------|------------|------------------------------|-------|------------|------------|
-| 144d:a808 | 144d:a801 | Samsung... | NVMe SSD Controller SM981... | 35    | nvme       | F9C37F2C8D |
-| 144d:a804 | 144d:a801 | Samsung... | NVMe SSD Controller SM961... | 9     | nvme       | 7C7573EB45 |
-| 15b7:5006 | 15b7:5006 | Sandisk    | WD Black SN750 / PC SN730... | 9     | nvme       | BA74D8EEE0 |
-| 8086:f1a6 | 8086:390b | Intel      | SSD Pro 7600p/760p/E 6100... | 6     | nvme       | 2F1BA02130 |
-| 1987:5012 | 1987:5012 | Phison ... | E12 NVMe Controller          | 5     | nvme       | 6311D603FF |
-| 1179:0115 | 1179:0001 | Toshiba    | XG4 NVMe SSD Controller      | 4     | nvme       | E27342AB94 |
-| 1179:0116 | 1179:0001 | Toshiba    | unknown                      | 4     | nvme       | 7D5F7B5033 |
-| 15b7:5009 | 15b7:5009 | Sandisk    | WD Blue SN550 NVMe SSD       | 4     | nvme       | BE2AD24D1B |
-| 1c5c:1327 |           | SK Hynix   | BC501 NVMe Solid State Dr... | 4     | nvme       | 337A8B5A3D |
-| c0a9:2263 | c0a9:2263 | Micron/... | P1 NVMe PCIe SSD             | 4     | nvme       | 9BDF9ECEC8 |
-| 1179:0113 | 1179:0001 | Toshiba    | BG3 NVMe SSD Controller      | 3     | nvme       | 270BD22B8D |
-| 126f:2263 | 126f:2263 | Silicon... | SM2263EN/SM2263XT SSD Con... | 3     | nvme       | 88C27E65D7 |
-| 1344:5410 | 1344:0100 | Micron ... |                              | 3     | nvme       | A1C2EAEE5F |
-| 1c5c:1627 | 1c5c:1627 | SK Hynix   | hynix unknown                | 3     | nvme       | 7B7C8BF457 |
-| 8086:f1a8 | 8086:390d | Intel      | SSD 660P Series              | 3     | nvme       | DD877E6C6C |
-| 1179:011a | 1179:0001 | Toshiba    | XG6 NVMe SSD Controller      | 2     | nvme       | 2AD87768AF |
-| 126f:2262 | 126f:2262 | Silicon... | SM2262/SM2262EN SSD Contr... | 2     | nvme       | 1C9FEEF8E7 |
-| 144d:a802 | 144d:a801 | Samsung... | NVMe SSD Controller SM951... | 2     | nvme       | BC97C1C0FA |
-| 144d:a809 | 144d:a801 | Samsung... | NVMe Controller              | 2     | nvme       | 94D082C57C |
-| 15b7:5002 | 15b7:5002 | Sandisk    | WD Black 2018/SN750 / PC ... | 2     | nvme       | 045A80D8BC |
-| 1c5c:1339 |           | SK Hynix   | BC511                        | 2     | nvme       | 80D7BF959A |
-| 1cc1:8201 | 1cc1:8201 | ADATA T... | XPG SX8200 Pro PCIe Gen3x... | 2     | nvme       | BE88E8F865 |
-| 10ec:5760 | 5760:10ec | Realtek... |                              | 1     | nvme       | F8BDEC0105 |
-| 10ec:5763 | 10ec:5763 | Realtek... |                              | 1     | nvme       | A1FC75A9B7 |
-| 1179:010f | 1179:0001 | Toshiba    | NVMe Controller              | 1     | nvme       | DDC907CCF4 |
-| 1344:5405 | 1344:0100 | Micron ... |                              | 1     | nvme       | BA74D8EEE0 |
-| 144d:a80a | 144d:a801 | Samsung... | NVMe SSD Controller PM9A1... | 1     | nvme       | 860B1CD65B |
-| 14a4:2300 | 1b4b:1093 | Lite-On... |                              | 1     | nvme       | A467FFACF3 |
-| 15b7:5004 | 15b7:5004 | Sandisk    | PC SN520 NVMe SSD            | 1     | nvme       | 2538B038ED |
-| 15b7:5005 | 15b7:5005 | Sandisk    | PC SN520 NVMe SSD            | 1     | nvme       | 1F226262CC |
-| 17aa:0004 | 17aa:1004 | Lenovo     |                              | 1     | nvme       | 16206C4970 |
-| 1987:5013 | 1987:5013 | Phison ... | PS5013 E13 NVMe Controller   | 1     | nvme       | 5CD8E23152 |
-| 1987:5016 | 1987:5016 | Phison ... | E16 PCIe4 NVMe Controller    | 1     | nvme       | ED75B3D15B |
-| 1c5c:1284 |           | SK Hynix   | PC300 NVMe Solid State Dr... | 1     | nvme       | 4993AD0FEB |
-| 1c5c:1504 | 0100:1093 | SK Hynix   | SC300 512GB M.2 2280 SATA... | 1     | nvme       | 310BD9E4AF |
-| 1c5c:1639 | 1c5c:1639 | SK Hynix   | hynix unknown                | 1     | nvme       | 7C1EFA11B9 |
-| 1cc1:33f8 | 1cc1:33f8 | ADATA T... |                              | 1     | nvme       | DF77DD6562 |
-| 1cc4:17aa | 1cc4:1008 | Union M... |                              | 1     | nvme       | 7A706E46DE |
-| 1cc4:5008 | 1cc4:5008 | Union M... |                              | 1     | nvme       | CD2AD2800E |
-| 1d97:1160 | 1d97:1160 | Shenzhe... |                              | 1     | nvme       | 771D8EAD80 |
-| 1e0f:0001 | 1e0f:0001 | KIOXIA     |                              | 1     | nvme       | ECF07AD5FE |
-| 1e95:9100 | 126f:2263 | Solid S... |                              | 1     | nvme       | C2D56FC369 |
-| 2646:5008 | 2646:5008 | Kingsto... | U-SNS8154P3 NVMe SSD         | 1     | nvme       | 4031D186C2 |
-| 2646:500c | 2646:500c | Kingsto... |                              | 1     | nvme       | 37E4E7C85C |
-| 8086:f1a5 | 8086:390a | Intel      | SSD 600P Series              | 1     | nvme       | 6B2ABD4DF5 |
-| c0a9:5412 | c0a9:0100 | Micron/... |                              | 1     | nvme       | 12C985B708 |
+| ID        | Subsystem | MFG              | Name                                 | Count | Driver     | Probe |
+|-----------|-----------|------------------|--------------------------------------|-------|------------|-------|
+| 144d:a808 | 144d:a801 | Samsung Elect... | NVMe SSD Controller SM981/PM981/P... | 60    | nvme       | [F1796D75ED](<Notebook/Dell/Latitude/Latitude 3420/7017B57B1D52/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/F1796D75ED>) |
+| 15b7:5006 | 15b7:5006 | Sandisk          | WD Black SN750 / PC SN730 NVMe SSD   | 21    | nvme       | [6836FC60F6](<Notebook/Lenovo/ThinkPad/ThinkPad X13 Gen 1 20T2003PRT/7ED3441E6EB7/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/6836FC60F6>) |
+| 144d:a804 | 144d:a801 | Samsung Elect... | NVMe SSD Controller SM961/PM961/S... | 16    | nvme       | [6C895CB96F](<Notebook/Lenovo/ThinkPad/ThinkPad T470s W10DG 20JTS0A900/5B70EA1A7528/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/6C895CB96F>) |
+| 144d:a809 | 144d:a801 | Samsung Elect... | NVMe SSD Controller 980              | 12    | nvme       | [E660899158](<Notebook/Lenovo/IdeaPad/IdeaPad Gaming 3 15ARH05 82EY/9C5FD9AECCA2/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/E660899158>) |
+| 15b7:5009 | 15b7:5009 | Sandisk          | WD Blue SN550 NVMe SSD               | 11    | nvme       | [65454BCC92](<Notebook/HUAWEI/BOD-WXX/BOD-WXX9/8D0DA727E166/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/65454BCC92>) |
+| 8086:f1a6 | 8086:390b | Intel            | SSD Pro 7600p/760p/E 6100p Series    | 9     | nvme       | [E7B40F6E3B](<Notebook/Hewlett-Packard/Laptop/Laptop 14-dk0xxx/60E15DE8A8F4/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E7B40F6E3B>) |
+| 144d:a80a | 144d:a801 | Samsung Elect... | NVMe SSD Controller PM9A1/PM9A3/9... | 7     | nvme       | [18470AFD9D](<Notebook/Dell/Latitude/Latitude E5470/15484EF4407C/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/18470AFD9D>) |
+| 1987:5012 | 1987:5012 | Phison Electr... | E12 NVMe Controller                  | 7     | nvme       | [E7925AA387](<Notebook/Dell/XPS/XPS 15 9575/F70DDD78C18E/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/E7925AA387>) |
+| 1e0f:0001 | 1e0f:0001 | KIOXIA           | unknown                              | 7     | nvme       | [7716F59380](<Notebook/Timi/RedmiBook/RedmiBook Pro 15/2662C76FDAA0/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/7716F59380>) |
+| 1179:0113 | 1179:0001 | Toshiba          | BG3 NVMe SSD Controller              | 6     | nvme       | [BE311B6A34](<Notebook/Lenovo/ThinkPad/ThinkPad E580 20KSCTO1WW/FE16B0524669/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/BE311B6A34>) |
+| 1c5c:1339 |           | SK Hynix         | BC511                                | 6     | nvme       | [1A13B7BFD1](<Notebook/Lenovo/Legion/Legion 5 15ARH05 82B5/F36FD56B8299/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/1A13B7BFD1>) |
+| 2646:5008 | 2646:5008 | Kingston Tech... | U-SNS8154P3 NVMe SSD                 | 6     | nvme       | [CDC6F54D97](<Notebook/Hewlett-Packard/ZBook/ZBook Studio G4/DF14E45C3A50/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/CDC6F54D97>) |
+| 8086:f1a8 | 8086:390d | Intel            | SSD 660P Series                      | 6     | nvme       | [498BFE852C](<Notebook/Dell/Precision/Precision 7530/5BEE2A4C3CA7/FREEBSD-12.3/12.3-RELEASE/AMD64/498BFE852C>) |
+| 1179:0116 | 1179:0001 | Toshiba          | unknown                              | 5     | nvme       | [1697EBB0A5](<Notebook/ASUSTek Computer/Strix/Strix 17 GL703GE/BAA0EBC7F5C2/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/1697EBB0A5>) |
+| 126f:2262 | 126f:2262 | Silicon Motion   | SM2262/SM2262EN SSD Controller       | 5     | nvme       | [1970F517FD](<Notebook/GPD/G1621/G1621-02/9557AA82FE04/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/1970F517FD>) |
+| 1c5c:1327 |           | SK Hynix         | BC501 NVMe Solid State Drive         | 5     | nvme       | [98072B8DB6](<Notebook/Lenovo/ThinkPad/ThinkPad E590 20NB0012RT/F14FDAEA6645/FREEBSD-13.0-P3/13.0-RELEASE-P3/AMD64/98072B8DB6>) |
+| 1cc1:8201 | 1cc1:8201 | ADATA Technology | XPG SX8200 Pro PCIe Gen3x4 M.2 22... | 5     | nvme       | [089B61BB38](<Notebook/Dell/Latitude/Latitude 7280/E9E3F30F4DB0/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/089B61BB38>) |
+| c0a9:2263 | c0a9:2263 | Micron/Crucia... | P1 NVMe PCIe SSD                     | 5     | nvme       | [2684B5021C](<Notebook/MSI/P65/P65 Creator 8RE/DE54402374BF/FREEBSD-13.0-P3/13.0-RELEASE-P3/AMD64/2684B5021C>) |
+| 1179:0115 | 1179:0001 | Toshiba          | XG4 NVMe SSD Controller              | 4     | nvme       | [E27342AB94](<Notebook/Lenovo/ThinkPad/ThinkPad T470 20HD000MUK/7CA8942EE477/GHOSTBSD-20.04.02/13.0-STABLE/AMD64/E27342AB94>) |
+| 1179:011a | 1179:0001 | Toshiba          | XG6 NVMe SSD Controller              | 4     | nvme       | [E54D79065E](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Extreme Gen 3 20TLA055CD/8C11449058DA/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/E54D79065E>) |
+| 126f:2263 | 126f:2263 | Silicon Motion   | SM2263EN/SM2263XT SSD Controller     | 4     | nvme       | [2A8624EE35](<Notebook/Acer/Aspire/Aspire E5-476G/E5CCDABDF586/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/2A8624EE35>) |
+| 1344:5410 | 1344:0100 | Micron Techno... |                                      | 4     | nvme       | [384D2F888B](<Notebook/Lenovo/Legion/Legion Y540-15IRH 81SX/DB27396229F8/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/384D2F888B>) |
+| 2646:500c | 2646:500c | Kingston Tech... |                                      | 4     | nvme       | [5B9C617DC8](<Notebook/MSI/GF63/GF63 Thin 10SCSR/CF159C44766D/GHOSTBSD-22.01.12/13.0-STABLE/AMD64/5B9C617DC8>) |
+| 144d:a802 | 144d:a801 | Samsung Elect... | NVMe SSD Controller SM951/PM951      | 3     | nvme       | [5A75DB9142](<Notebook/TUXEDO/InfinityBook13/InfinityBook13V3/0B9DECE35038/HELLOSYSTEM-0.7.0/13.0-RELEASE-P7/AMD64/5A75DB9142>) |
+| 15b7:5002 | 15b7:5002 | Sandisk          | WD Black 2018/SN750 / PC SN720 NV... | 3     | nvme       | [B00C8E76E8](<Notebook/Hewlett-Packard/OMEN/OMEN by HP Laptop 17-cb1xxx/73864F742E56/NOMADBSD-5806F915/13.0-RELEASE/AMD64/B00C8E76E8>) |
+| 1c5c:1627 | 1c5c:1627 | SK Hynix         | hynix unknown                        | 3     | nvme       | [7B7C8BF457](<Notebook/Hewlett-Packard/OMEN/OMEN Laptop 15-en0xxx/B7177F3FD5A2/FREEBSD-12.2-P2/12.2-RELEASE-P2/AMD64/7B7C8BF457>) |
+| 1c5c:174a | 1c5c:174a | SK Hynix         | Gold P31 SSD                         | 3     | nvme       | [D8A6D0DAF3](<Notebook/Lenovo/ThinkPad/ThinkPad E14 Gen 3 20Y7CTO1WW/E4201D2552DD/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/D8A6D0DAF3>) |
+| 1cc1:33f8 | 1cc1:33f8 | ADATA Technology |                                      | 3     | nvme       | [85F5C972A5](<Notebook/Avell High Performance/A60/A60 MUV/0C5CDFF081CF/FREEBSD-13.0-P3/13.0-RELEASE-P3/AMD64/85F5C972A5>) |
+| 10ec:5763 | 10ec:5763 | Realtek Semic... |                                      | 2     | nvme       | [CEB18E38A3](<Notebook/Lenovo/IdeaPad/IdeaPad S145-15IWL 81MV/3D212F0359DA/HELLOSYSTEM-0.6.0/13.0-RELEASE/AMD64/CEB18E38A3>) |
+| 1344:5405 | 1344:0100 | Micron Techno... |                                      | 2     | nvme       | [D028FC63D4](<Notebook/Lenovo/ThinkPad/ThinkPad P14s Gen 1 20Y1002AFR/CFF1A3F59309/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/D028FC63D4>) |
+| 15b7:5007 | 15b7:5007 | Sandisk          | unknown                              | 2     | nvme       | [8D4B342FDA](<Notebook/Dell/Inspiron/Inspiron 3505/4D47E92A2957/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/8D4B342FDA>) |
+| 1987:5016 | 1987:5016 | Phison Electr... | E16 PCIe4 NVMe Controller            | 2     | nvme       | [A620D284CB](<Notebook/Dell/Latitude/Latitude 5510/9741CEB43BDE/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/A620D284CB>) |
+| 1d79:2263 | 1d79:2263 |                  |                                      | 2     | nvme       | [30590E8CCF](<Notebook/Deciso/DEC2700/DEC2700 - OPNsense Appliance/504812C630AE/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/30590E8CCF>) |
+| 1e4b:1202 | 1e4b:1202 | MAXIO Technol... | NVMe SSD Controller MAP1202          | 2     | nvme       | [1099E6C574](<Notebook/WOOKING/X/X5/31699ACF8451/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/1099E6C574>) |
+| c0a9:5412 | c0a9:0100 | Micron/Crucia... |                                      | 2     | nvme       | [2A54A0C338](<Notebook/Lenovo/Yoga/Yoga Slim 7 Pro 14ACH5 82MS/FD0797BFCA5B/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/2A54A0C338>) |
+| 106b:2003 | 106b:2003 | Apple            | S3X NVMe Controller                  | 1     |            | [0BF74DEA55](<Notebook/Apple/MacBookPro13/MacBookPro13,2/AF2B1737F99A/FREEBSD-13.0/13.0-RELEASE/AMD64/0BF74DEA55>) |
+| 10ec:5760 | 5760:10ec | Realtek Semic... |                                      | 1     | nvme       | [F8BDEC0105](<Notebook/Lenovo/Legion/Legion Y530-15ICH 81FV/08A5EEEA18A0/HELLOSYSTEM-0.5.0/12.1-RELEASE/AMD64/F8BDEC0105>) |
+| 1179:010f | 1179:0001 | Toshiba          | NVMe Controller                      | 1     | nvme       | [DDC907CCF4](<Notebook/Lenovo/ThinkPad/ThinkPad T460p 20FXCTO1WW/2691D3C1AAC3/FREEBSD-12.2/12.2-RELEASE/AMD64/DDC907CCF4>) |
+| 1344:5407 | 1344:0100 | Micron Techno... |                                      | 1     | nvme       | [61E3F35EE8](<Notebook/MSI/Summit/Summit E13FlipEvo A11MT/094CDDAA6BF0/FREEBSD-13.0/13.0-RELEASE/AMD64/61E3F35EE8>) |
+| 1344:5411 | 1344:2100 | Micron Techno... |                                      | 1     | nvme       | [20CDC9D999](<Notebook/ASUSTek Computer/ROG/ROG Zephyrus G14 GA402RJ_GA402RJ/8B17C1C0752C/FREEBSD-13.0/13.0-RELEASE/AMD64/20CDC9D999>) |
+| 14a4:2300 | 1b4b:1093 | Lite-On Techn... |                                      | 1     | nvme       | [A467FFACF3](<Notebook/Razer/Blade/Blade Stealth/9A2A95D1E5BE/FREEBSD-12.1-P8/12.1-RELEASE-P8/AMD64/A467FFACF3>) |
+| 15b7:5003 | 15b7:5003 | Sandisk          | WD Blue SN500 / PC SN520 NVMe SSD    | 1     | nvme       | [2D72B6939D](<Notebook/ASUSTek Computer/TUF/TUF Gaming FX505DU_FX505DU/FE9E4108BBBD/NOMADBSD-5806F915/13.0-RELEASE/AMD64/2D72B6939D>) |
+| 15b7:5004 | 15b7:5004 | Sandisk          | PC SN520 NVMe SSD                    | 1     | nvme       | [2538B038ED](<Notebook/Dell/Latitude/Latitude 5500/930A1837DF8D/FREEBSD-13.0/13.0-RELEASE/AMD64/2538B038ED>) |
+| 15b7:5005 | 15b7:5005 | Sandisk          | PC SN520 NVMe SSD                    | 1     | nvme       | [1F226262CC](<Notebook/Lenovo/IdeaPad/IdeaPad S145-15API 81UT/1314B494F080/NOMADBSD-1.4/12.2-RELEASE-P4/AMD64/1F226262CC>) |
+| 15b7:5008 | 15b7:5008 | Sandisk          |                                      | 1     | nvme       | [42B4BCBCC2](<Notebook/Lenovo/ThinkBook/ThinkBook 14 G3 ACL 21A2/0D8018F67544/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/42B4BCBCC2>) |
+| 15b7:5011 | 15b7:5011 | Sandisk          | WD PC SN810 / Black SN850 NVMe SSD   | 1     | nvme       | [1F58E0594F](<Notebook/Framework/Laptop/Laptop/12E6C3C95AB5/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/1F58E0594F>) |
+| 17aa:0004 | 17aa:1004 | Lenovo           |                                      | 1     | nvme       | [16206C4970](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 6th 20KG0022US/0E31F9E108FF/FREEBSD-12.2/12.2-RELEASE/AMD64/16206C4970>) |
+| 1987:5013 | 1987:5013 | Phison Electr... | PS5013 E13 NVMe Controller           | 1     | nvme       | [5CD8E23152](<Notebook/Hewlett-Packard/Laptop/Laptop 14-dk0xxx/36C7EBCBD6A0/GHOSTBSD-20.04.02/12.2-STABLE/AMD64/5CD8E23152>) |
+| 1c5c:1284 |           | SK Hynix         | PC300 NVMe Solid State Drive 512GB   | 1     | nvme       | [4993AD0FEB](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 5th 20HQS1QC00/BB184D2CE6FD/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/4993AD0FEB>) |
+| 1c5c:1504 | 0100:1093 | SK Hynix         | SC300 512GB M.2 2280 SATA Solid S... | 1     | nvme       | [310BD9E4AF](<Notebook/Acer/Predator/Predator PH517-61/99D78D0568E6/FREEBSD-12.1-P5/12.1-RELEASE-P5/AMD64/310BD9E4AF>) |
+| 1c5c:1639 | 1c5c:1639 | SK Hynix         | hynix unknown                        | 1     | nvme       | [7C1EFA11B9](<Notebook/Dell/XPS/XPS 13 9300/77238F8775D9/FREEBSD-13.0-CURRENT/13.0-CURRENT/AMD64/7C1EFA11B9>) |
+| 1cc4:17aa | 1cc4:1008 | Union Memory ... |                                      | 1     | nvme       | [7A706E46DE](<Notebook/Lenovo/ThinkPad/ThinkPad T495 20NJS0KP00/BBAE20B5A9E1/FREEBSD-13.0-CURRENT/13.0-CURRENT/AMD64/7A706E46DE>) |
+| 1cc4:5008 | 1cc4:5008 | Union Memory ... |                                      | 1     | nvme       | [CD2AD2800E](<Notebook/Lenovo/IdeaPad/IdeaPad S540-15IWL GTX 81SW/0458A4F245C9/FREEBSD-13.0-CURRENT/13.0-CURRENT/AMD64/CD2AD2800E>) |
+| 1d97:1160 | 1d97:1160 | Shenzhen Long... |                                      | 1     | nvme       | [771D8EAD80](<Notebook/Lenovo/ThinkPad/ThinkPad T580 20L9000ECD/C8BA3097B4CB/FREEBSD-12.2/12.2-RELEASE/AMD64/771D8EAD80>) |
+| 1e95:9100 | 126f:2263 | Solid State S... |                                      | 1     | nvme       | [C2D56FC369](<Notebook/Dell/Inspiron/Inspiron 3793/0A7645BB9BDA/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/C2D56FC369>) |
+| 2646:2263 | 2646:2263 | Kingston Tech... | A2000 NVMe SSD                       | 1     | nvme       | [80A9BA918E](<Notebook/SLIMBOOK/Others/Others/0C91938E8FB9/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/80A9BA918E>) |
+| 2646:500d | 2646:500d | Kingston Tech... | OM3PDP3 NVMe SSD                     | 1     | nvme       | [3BD9CD5B98](<Notebook/BESSTAR Tech/U/U820/A06106A328DE/OPNSENSE-21.7.4/12.1-RELEASE-P20-HBSD/AMD64/3BD9CD5B98>) |
+| 2646:5010 | 2646:5010 | Kingston Tech... |                                      | 1     | nvme       | [7859F220B9](<Notebook/Hewlett-Packard/Pavilion/Pavilion Gaming Laptop 15-ec2xxx/32343F8FB2CF/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/7859F220B9>) |
+| 8086:0975 | 8086:8410 | Intel            |                                      | 1     | nvme       | [4C22212C20](<Notebook/Hewlett-Packard/Pavilion/Pavilion Gaming Laptop 16-a0xxx/ADBD8C5E6883/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/4C22212C20>) |
+| 8086:0975 | 8086:8510 | Intel            |                                      | 1     | nvme       | [4C22212C20](<Notebook/Hewlett-Packard/Pavilion/Pavilion Gaming Laptop 16-a0xxx/ADBD8C5E6883/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/4C22212C20>) |
+| 8086:f1a5 | 8086:390a | Intel            | SSD 600P Series                      | 1     | nvme       | [6B2ABD4DF5](<Notebook/Lenovo/ThinkPad/ThinkPad T470 20HES5PK00/4A30154BF0C2/FREEBSD-12.2-P4/12.2-RELEASE-P4/AMD64/6B2ABD4DF5>) |
+| c0a9:5403 | c0a9:2100 | Micron/Crucia... | NVMe Controller                      | 1     | nvme       | [1D261120D3](<Notebook/Lenovo/ThinkPad/ThinkPad T470s W10DG 20JS001FGE/D2EB797FBDB6/NOMADBSD-5806F915/13.0-RELEASE-P3/AMD64/1D261120D3>) |
+| c0a9:540a | c0a9:540a | Micron/Crucia... | P2 NVMe PCIe SSD                     | 1     | nvme       | [9E440B5500](<Notebook/Dell/Inspiron/Inspiron 5502/B3B09B220C14/FREEBSD-13.1-BETA1/13.1-BETA1/AMD64/9E440B5500>) |
 
 ### Storage/raid (PCI)
 
-| ID        | Subsystem | MFG        | Name                         | Count | Driver     | Probe      |
-|-----------|-----------|------------|------------------------------|-------|------------|------------|
-| 8086:282a | 1028:05ca | Intel      | 82801 Mobile SATA Control... | 3     | ahci       | 1DBD9A5CEE |
-| 8086:02d7 | 1028:09ec | Intel      | Comet Lake PCH-LP SATA RA... | 2     |            | 465DD01C0D |
-| 8086:282a | 1028:040a | Intel      | 82801 Mobile SATA Control... | 2     | ahci       | 211FE874FD |
-| 8086:282a | 1028:05cc | Intel      | 82801 Mobile SATA Control... | 2     | ahci       | 1847C0AADB |
-| 8086:02d7 | 1028:09a1 | Intel      | Comet Lake PCH-LP SATA RA... | 1     |            | 7DEF696A61 |
-| 8086:2822 | 1028:06df | Intel      | SATA Controller [RAID mode]  | 1     | ahci       | C8477DA717 |
-| 8086:282a | 1028:024d | Intel      | 82801 Mobile SATA Control... | 1     | ahci       | D5051EF185 |
-| 8086:282a | 1028:024f | Intel      | 82801 Mobile SATA Control... | 1     | ahci       | D25DACC162 |
-| 8086:282a | 1028:048f | Intel      | 82801 Mobile SATA Control... | 1     | ahci       | 67A336FAC6 |
-| 8086:282a | 1028:0492 | Intel      | 82801 Mobile SATA Control... | 1     | ahci       | 2EBFA76C28 |
-| 8086:282a | 1028:04a4 | Intel      | 82801 Mobile SATA Control... | 1     | ahci       | B6C974B8BD |
-| 8086:282a | 1028:0532 | Intel      | 82801 Mobile SATA Control... | 1     | ahci       | 696E95FC08 |
-| 8086:282a | 1028:0533 | Intel      | 82801 Mobile SATA Control... | 1     | ahci       | ABE1869A95 |
-| 8086:282a | 1028:0534 | Intel      | 82801 Mobile SATA Control... | 1     | ahci       | 8D24817728 |
-| 8086:282a | 1028:057d | Intel      | 82801 Mobile SATA Control... | 1     | ahci       | 563AD840B0 |
-| 8086:282a | 1028:05a9 | Intel      | 82801 Mobile SATA Control... | 1     | ahci       | 0E0CDF952A |
-| 8086:282a | 1028:05cb | Intel      | 82801 Mobile SATA Control... | 1     | ahci       | 6EC8FD788A |
-| 8086:282a | 1028:079f | Intel      | 82801 Mobile SATA Control... | 1     | ahci       | DEFAEE0E5C |
-| 8086:282a | 1028:0816 | Intel      | 82801 Mobile SATA Control... | 1     | ahci       | 3FBA47B07F |
-| 8086:282a | 1028:0839 | Intel      | 82801 Mobile SATA Control... | 1     | ahci       | B28CC12AEB |
-| 8086:282a | 1028:08b8 | Intel      | 82801 Mobile SATA Control... | 1     | ahci       | F242897C33 |
-| 8086:282a | 1028:08ea | Intel      | 82801 Mobile SATA Control... | 1     | ahci       | 18863BC535 |
-| 8086:282a | 1028:097a | Intel      | 82801 Mobile SATA Control... | 1     | ahci       | C784E7B290 |
-| 8086:282a | 103c:1818 | Intel      | 82801 Mobile SATA Control... | 1     | ahci       | 4637A9EEFF |
-| 8086:282a | 103c:1991 | Intel      | 82801 Mobile SATA Control... | 1     | ahci       | 12AC8FC96F |
-| 8086:282a | 103c:84a6 | Intel      | 82801 Mobile SATA Control... | 1     | ahci       | BF572BC102 |
-| 8086:282a | 103c:84a7 | Intel      | 82801 Mobile SATA Control... | 1     | ahci       | CB09A1B771 |
-| 8086:282a | 103c:84bb | Intel      | 82801 Mobile SATA Control... | 1     | ahci       | C355A6280B |
-| 8086:282a | 103c:84ca | Intel      | 82801 Mobile SATA Control... | 1     | ahci       | 10AF242F8B |
-| 8086:282a | 103c:8532 | Intel      | 82801 Mobile SATA Control... | 1     | ahci       | 366F8D1EAF |
-| 8086:282a | 103c:85ff | Intel      | 82801 Mobile SATA Control... | 1     | ahci       | 3CB0E979F8 |
-| 8086:282a | 1043:1311 | Intel      | 82801 Mobile SATA Control... | 1     | ahci       | 7B85836A46 |
-| 8086:282a | 1043:1487 | Intel      | 82801 Mobile SATA Control... | 1     | ahci       | 9B84D1E7E6 |
-| 8086:282a | 1462:12b8 | Intel      | 82801 Mobile SATA Control... | 1     | ahci       | A40E426983 |
-| 8086:282a | 1462:12bc | Intel      | 82801 Mobile SATA Control... | 1     | ahci       | FEA3CDB5D1 |
-| 8086:282a | 1558:7a01 | Intel      | 82801 Mobile SATA Control... | 1     | ahci       | BA4260C181 |
+| ID        | Subsystem | MFG              | Name                                 | Count | Driver     | Probe |
+|-----------|-----------|------------------|--------------------------------------|-------|------------|-------|
+| 8086:282a | 1028:05ca | Intel            | 82801 Mobile SATA Controller [RAI... | 3     | ahci       | [1DBD9A5CEE](<Notebook/Dell/Latitude/Latitude E7240/A314AF9EB83E/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/1DBD9A5CEE>) |
+| 8086:02d7 | 1028:09ec | Intel            | Comet Lake PCH-LP SATA RAID Premi... | 2     |            | [465DD01C0D](<Notebook/Dell/Latitude/Latitude 3410/1811D7B7C616/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/465DD01C0D>) |
+| 8086:282a | 1028:024d | Intel            | 82801 Mobile SATA Controller [RAI... | 2     | ahci       | [FDB3DE3036](<Notebook/Dell/Latitude/Latitude E4300/B023391CA6F2/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/FDB3DE3036>) |
+| 8086:282a | 1028:040a | Intel            | 82801 Mobile SATA Controller [RAI... | 2     | ahci       | [211FE874FD](<Notebook/Dell/Latitude/Latitude E6410/DB3461E065EF/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/211FE874FD>) |
+| 8086:282a | 1028:0534 | Intel            | 82801 Mobile SATA Controller [RAI... | 2     | ahci       | [4149FA5EC3](<Notebook/Dell/Latitude/Latitude E6430/E144DFECFF1E/GHOSTBSD-20.04.02/13.0-STABLE/AMD64/4149FA5EC3>) |
+| 8086:282a | 1028:05cc | Intel            | 82801 Mobile SATA Controller [RAI... | 2     | ahci       | [1847C0AADB](<Notebook/Dell/Precision/Precision M4800/534E5DEB811F/OPNSENSE-21.1.3/12.1-RELEASE-P14-HBSD/AMD64/1847C0AADB>) |
+| 8086:02d7 | 1028:09a1 | Intel            | Comet Lake PCH-LP SATA RAID Premi... | 1     |            | [7DEF696A61](<Notebook/Lenovo/IdeaPad/IdeaPad S145-15API 81UT/1314B494F080/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/7DEF696A61>) |
+| 8086:2822 | 1028:06de | Intel            | SATA Controller [RAID mode]          | 1     | ahci       | [9E479E9C50](<Notebook/Dell/Latitude/Latitude E5470/A17BA6584F09/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/9E479E9C50>) |
+| 8086:2822 | 1028:06df | Intel            | SATA Controller [RAID mode]          | 1     | ahci       | [C8477DA717](<Notebook/Dell/Latitude/Latitude E5570/5EFE1EB32C53/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/C8477DA717>) |
+| 8086:282a | 1025:142f | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [F613CB0452](<Notebook/Acer/Aspire/Aspire A715-75G/5A7BF4BB1855/FREEBSD-12.2-P6/12.2-RELEASE-P6/AMD64/F613CB0452>) |
+| 8086:282a | 1028:024f | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [D25DACC162](<Notebook/Dell/Latitude/Latitude E6500/2081BE9FC0C6/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/D25DACC162>) |
+| 8086:282a | 1028:048f | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [67A336FAC6](<Notebook/Alienware/M18/M18xR1/7BD063FE9CC3/NOMADBSD-1.4-RC1/12.2-RELEASE-P2/AMD64/67A336FAC6>) |
+| 8086:282a | 1028:0492 | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [2EBFA76C28](<Notebook/Dell/Latitude/Latitude E6320/08F801AE4D74/FREEBSD-11.4-BETA1-P1/11.4-BETA1/AMD64/2EBFA76C28>) |
+| 8086:282a | 1028:04a3 | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [2F848FD2C0](<Notebook/Dell/Precision/Precision M4600/B6B9C54EEBB2/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/2F848FD2C0>) |
+| 8086:282a | 1028:04a4 | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [B6C974B8BD](<Notebook/Dell/Precision/Precision M6600/4B49B0BB08DA/FREEBSD-12.1-P8/12.1-RELEASE-P8/AMD64/B6C974B8BD>) |
+| 8086:282a | 1028:0532 | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [696E95FC08](<Notebook/Dell/Latitude/Latitude E6230/F8723A7ABD56/FREEBSD-12.2-P3/12.2-RELEASE-P3/AMD64/696E95FC08>) |
+| 8086:282a | 1028:0533 | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [ABE1869A95](<Notebook/Dell/Latitude/Latitude E6330/AEB475DBE983/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/ABE1869A95>) |
+| 8086:282a | 1028:053c | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [E795C7EC91](<Notebook/Dell/Latitude/Latitude E5430 non-vPro/B804F93C38F2/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E795C7EC91>) |
+| 8086:282a | 1028:057d | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [563AD840B0](<Notebook/Dell/Latitude/Latitude E6430s/34197D1EF8AB/OPNSENSE-21.1.4/12.1-RELEASE-P15-HBSD/AMD64/563AD840B0>) |
+| 8086:282a | 1028:05a9 | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [0E0CDF952A](<Notebook/Alienware/14/14/E2FE4EC2EDCD/FREEBSD-11.4-P8/11.4-RELEASE-P8/AMD64/0E0CDF952A>) |
+| 8086:282a | 1028:05aa | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [AFF2BE63CD](<Notebook/Alienware/17/17/D91B1F6D4765/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/AFF2BE63CD>) |
+| 8086:282a | 1028:05cb | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [6EC8FD788A](<Notebook/Dell/Latitude/Latitude E7440/CB2F8814A9AD/FREEBSD-12.2-P5/12.2-RELEASE-P4/AMD64/6EC8FD788A>) |
+| 8086:282a | 1028:05de | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [3F2E8586A7](<Notebook/Dell/Latitude/Latitude E5440/58A58ED92DC1/GHOSTBSD-20.04.02/13.0-STABLE/AMD64/3F2E8586A7>) |
+| 8086:282a | 1028:062e | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [4F1E40AD63](<Notebook/Dell/Latitude/Latitude E7450/668239F223FB/FREEBSD-13.0/13.0-RELEASE/AMD64/4F1E40AD63>) |
+| 8086:282a | 1028:0798 | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [652E2E284F](<Notebook/Dell/Inspiron/Inspiron 15 7000 Gaming/2663B977A92F/FREEBSD-13.0-P6/13.0-RELEASE/AMD64/652E2E284F>) |
+| 8086:282a | 1028:079f | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [DEFAEE0E5C](<Notebook/Dell/Latitude/Latitude 7280/8B9B22EBEE09/HELLOSYSTEM-0.3.0/12.1-RELEASE/AMD64/DEFAEE0E5C>) |
+| 8086:282a | 1028:07a0 | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [8A0388B49D](<Notebook/Dell/Latitude/Latitude 7480/720DC2256764/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/8A0388B49D>) |
+| 8086:282a | 1028:0816 | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [3FBA47B07F](<Notebook/Dell/Latitude/Latitude 5490/1CD0D7351EE9/NOMADBSD-1.3.2/12.1-RELEASE-P6/AMD64/3FBA47B07F>) |
+| 8086:282a | 1028:0839 | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [B28CC12AEB](<Notebook/Dell/Latitude/Latitude 3490/28BA507A8EF2/FREEBSD-12.1/12.1-RELEASE/AMD64/B28CC12AEB>) |
+| 8086:282a | 1028:08a7 | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [BB318FBC50](<Notebook/Dell/Vostro/Vostro 5481/A39FECE76BCC/FREEBSD-13.0/13.0-RELEASE/AMD64/BB318FBC50>) |
+| 8086:282a | 1028:08b8 | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [F242897C33](<Notebook/Dell/Latitude/Latitude 5400/D6E137827188/NOMADBSD-1.3.2/12.1-RELEASE-P6/AMD64/F242897C33>) |
+| 8086:282a | 1028:08ea | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [0871C1269B](<Notebook/Dell/G5/G5 5590/DA4017866B4B/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/0871C1269B>) |
+| 8086:282a | 1028:097a | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [C784E7B290](<Notebook/Dell/Inspiron/Inspiron 3793/F2856C40BD26/FREEBSD-13.0/13.0-RELEASE/AMD64/C784E7B290>) |
+| 8086:282a | 103c:1818 | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [4637A9EEFF](<Notebook/Hewlett-Packard/ENVY/ENVY dv7/481D449CE788/FREEBSD-13.0-BETA2/13.0-BETA2/AMD64/4637A9EEFF>) |
+| 8086:282a | 103c:1991 | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [12AC8FC96F](<Notebook/Hewlett-Packard/EliteBook/EliteBook 820 G1/54A5B42739D0/NOMADBSD-1.3.2/12.1-RELEASE-P6/I386/12AC8FC96F>) |
+| 8086:282a | 103c:84a6 | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [BF572BC102](<Notebook/Hewlett-Packard/Laptop/Laptop 15-da0xxx/C188AB0F30C2/NOMADBSD-1.4/12.2-RELEASE-P4/AMD64/BF572BC102>) |
+| 8086:282a | 103c:84a7 | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [CB09A1B771](<Notebook/Hewlett-Packard/Laptop/Laptop 15-da0xxx/2AE64D2F2687/GHOSTBSD-20.04.02/13.0-STABLE/AMD64/CB09A1B771>) |
+| 8086:282a | 103c:84bb | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [C355A6280B](<Notebook/Hewlett-Packard/Pavilion/Pavilion Laptop 14-ce2xxx/2D1874C4BD0F/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/C355A6280B>) |
+| 8086:282a | 103c:84ca | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [10AF242F8B](<Notebook/Hewlett-Packard/Laptop/Laptop 17-by0xxx/846766CC11EC/FREEBSD-13.0/13.0-RELEASE/AMD64/10AF242F8B>) |
+| 8086:282a | 103c:8532 | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [366F8D1EAF](<Notebook/Hewlett-Packard/250/250 G7 Notebook PC/39DC7A0ADB36/OPNSENSE-21.1.1/12.1-RELEASE-P13-HBSD/AMD64/366F8D1EAF>) |
+| 8086:282a | 103c:85f2 | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [8EBEAC18CA](<Notebook/Hewlett-Packard/Laptop/Laptop 15s-du1xxx/869AC20DA495/FREEBSD-13.0/13.0-RELEASE/AMD64/8EBEAC18CA>) |
+| 8086:282a | 103c:85f3 | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [A6D7796CEA](<Notebook/Hewlett-Packard/Laptop/Laptop 15-dw2xxx/E0130C6C868E/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/A6D7796CEA>) |
+| 8086:282a | 103c:85ff | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [3CB0E979F8](<Notebook/Hewlett-Packard/Pavilion/Pavilion Gaming Laptop 17-cd0xxx/CE71000409AE/FREEBSD-12.2-P4/12.2-RELEASE-P4/AMD64/3CB0E979F8>) |
+| 8086:282a | 103c:8748 | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [B00C8E76E8](<Notebook/Hewlett-Packard/OMEN/OMEN by HP Laptop 17-cb1xxx/73864F742E56/NOMADBSD-5806F915/13.0-RELEASE/AMD64/B00C8E76E8>) |
+| 8086:282a | 103c:87af | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [4C22212C20](<Notebook/Hewlett-Packard/Pavilion/Pavilion Gaming Laptop 16-a0xxx/ADBD8C5E6883/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/4C22212C20>) |
+| 8086:282a | 1043:1311 | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [7B85836A46](<Notebook/ASUSTek Computer/VivoBook/VivoBook 15_ASUS Laptop X507UF/953C1C37BCE9/FREEBSD-12.1/12.1-RELEASE-P2/AMD64/7B85836A46>) |
+| 8086:282a | 1043:1487 | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [9B84D1E7E6](<Notebook/ASUSTek Computer/G75/G75VW/94832287FBE4/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/9B84D1E7E6>) |
+| 8086:282a | 1043:1771 | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [902B4298D4](<Notebook/ASUSTek Computer/VivoBook_ASUSLaptop/VivoBook_ASUSLaptop X403FA_X403FA/9A25EFD33F6A/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/902B4298D4>) |
+| 8086:282a | 104d:909b | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [A366B5FAB3](<Notebook/Sony/SVS1511/SVS1511AJB/3D112813F189/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/A366B5FAB3>) |
+| 8086:282a | 1462:12b8 | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [A40E426983](<Notebook/MSI/GL65/GL65 Leopard 10SFSK/F737BF69AEE5/FREEBSD-13.0/13.0-RELEASE/AMD64/A40E426983>) |
+| 8086:282a | 1462:12bc | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [FEA3CDB5D1](<Notebook/MSI/GE75/GE75 Raider 10SGS/305FAD757475/FREEBSD-13.0-RC3/13.0-RC3/AMD64/FEA3CDB5D1>) |
+| 8086:282a | 1558:7a01 | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [BA4260C181](<Notebook/Notebook/N7/N7x0WU/277E90DECDB8/FREEBSD-13.0-P1/13.0-RELEASE-P1/AMD64/BA4260C181>) |
+| 8086:282a | 17aa:3814 | Intel            | 82801 Mobile SATA Controller [RAI... | 1     | ahci       | [56BE8AAFA1](<Notebook/Lenovo/IdeaPad/IdeaPad 320-15IKB Touch 81BH/A53FE8EA2AE1/PCBSD-13.0-P5/13.0-RELEASE-P4/AMD64/56BE8AAFA1>) |
 
 ### System peripheral (PCI)
 
-| ID        | Subsystem | MFG        | Name                         | Count | Driver     | Probe      |
-|-----------|-----------|------------|------------------------------|-------|------------|------------|
-| 1022:15d1 | 1022:15d1 | AMD        | Raven/Raven2 IOMMU           | 16    |            | 2F1BA02130 |
-| 1180:e823 | 17aa:21da | Ricoh      | PCIe SDXC/MMC Host Contro... | 14    | sdhci_pci  | 66743A51CC |
-| 1180:e823 | 17aa:21f3 | Ricoh      | PCIe SDXC/MMC Host Contro... | 8     | sdhci_pci  | 0F001F65D2 |
-| 1180:e823 | 17aa:21ce | Ricoh      | PCIe SDXC/MMC Host Contro... | 7     | sdhci_pci  | DC29D714D9 |
-| 1180:e822 | 17aa:2133 | Ricoh      | MMC/SD Host Controller       | 6     | sdhci_pci  | C887FF2917 |
-| 1180:e823 | 17aa:21fa | Ricoh      | PCIe SDXC/MMC Host Contro... | 6     | sdhci_pci  | D2E3890C19 |
-| 8086:1911 | 17aa:2279 | Intel      | Xeon E3-1200 v5/v6 / E3-1... | 6     |            | 6311D603FF |
-| 1180:e230 | 17aa:2134 | Ricoh      | R5U2xx (R5U230 / R5U231 /... | 5     |            | C887FF2917 |
-| 8086:15bf | 17aa:2279 | Intel      | JHL6240 Thunderbolt 3 NHI... | 5     |            | 6311D603FF |
-| 8086:1911 | 17aa:2238 | Intel      | Xeon E3-1200 v5/v6 / E3-1... | 5     |            | 821C81E652 |
-| 1022:1451 | 1022:1451 | AMD        | Family 17h (Models 00h-0f... | 4     |            | F4A0F0941B |
-| 1180:e823 | 17aa:21f6 | Ricoh      | PCIe SDXC/MMC Host Contro... | 4     | sdhci_pci  | 39F3A4F234 |
-| 197b:2382 | 17aa:212e | JMicron... | SD/MMC Host Controller       | 4     |            | BDBD2D0A05 |
-| 197b:2383 | 17aa:212f | JMicron... | MS Host Controller           | 4     |            | BDBD2D0A05 |
-| 197b:2384 | 17aa:2130 | JMicron... | xD Host Controller           | 4     |            | BDBD2D0A05 |
-| 8086:1911 | 17aa:5072 | Intel      | Xeon E3-1200 v5/v6 / E3-1... | 4     |            | 852A900303 |
-| 1180:e823 | 17aa:21cf | Ricoh      | PCIe SDXC/MMC Host Contro... | 3     | sdhci_pci  | 49DACEE7D0 |
-| 1180:e823 | 17aa:21f9 | Ricoh      | PCIe SDXC/MMC Host Contro... | 3     | sdhci_pci  | B659B95D1A |
-| 8086:15bf | 2222:1111 | Intel      | JHL6240 Thunderbolt 3 NHI... | 3     |            | EBD44C21D9 |
-| 8086:1911 | 1028:09ec | Intel      | Xeon E3-1200 v5/v6 / E3-1... | 3     |            | 80D7BF959A |
-| 8086:1911 | 17aa:224f | Intel      | Xeon E3-1200 v5/v6 / E3-1... | 3     |            | 4993AD0FEB |
-| 8086:1911 | 17aa:2258 | Intel      | Xeon E3-1200 v5/v6 / E3-1... | 3     |            | EBD44C21D9 |
-| 8086:1911 | 17aa:225c | Intel      | Xeon E3-1200 v5/v6 / E3-1... | 3     |            | 16206C4970 |
-| 1022:1451 | 1025:1246 | AMD        | Family 17h (Models 00h-0f... | 2     |            | 9E03A76684 |
-| 1022:1577 | 103c:84ac | AMD        | Family 15h (Models 60h-6f... | 2     |            | 3E500C12A3 |
-| 1022:1631 | 103c:8786 | AMD        | Renoir IOMMU                 | 2     |            | 19F307FF6D |
-| 1022:1631 | 1558:a500 | AMD        | Renoir IOMMU                 | 2     |            | 792FB07DD9 |
-| 1022:1631 | 17aa:5082 | AMD        | Renoir IOMMU                 | 2     |            | ED75B3D15B |
-| 1022:1631 | 1d05:109f | AMD        | Renoir IOMMU                 | 2     |            | 5359B4DEE9 |
-| 1180:0592 | 17aa:20ca | Ricoh      | R5C592 Memory Stick Bus H... | 2     |            | D223A9B1FB |
-| 1180:0843 | 1028:024d | Ricoh      | R5C843 MMC Host Controller   | 2     |            | D5051EF185 |
-| 1180:0843 | 17aa:20c9 | Ricoh      | R5C843 MMC Host Controller   | 2     |            | D223A9B1FB |
-| 1180:0852 | 17aa:20cb | Ricoh      | xD-Picture Card Controller   | 2     |            | D223A9B1FB |
-| 1180:e230 | 1179:0001 | Ricoh      | R5U2xx (R5U230 / R5U231 /... | 2     |            | 6357D0D51F |
-| 1180:e822 | 17aa:21cf | Ricoh      | MMC/SD Host Controller       | 2     | sdhci_pci  | 242CD8A6E7 |
-| 1180:e823 | 17aa:21e2 | Ricoh      | PCIe SDXC/MMC Host Contro... | 2     | sdhci_pci  | AA98E655F3 |
-| 1180:e823 | 17aa:21fb | Ricoh      | PCIe SDXC/MMC Host Contro... | 2     | sdhci_pci  | FACF6FA0F8 |
-| 1180:e823 | 17aa:2203 | Ricoh      | PCIe SDXC/MMC Host Contro... | 2     | sdhci_pci  | 55DEBB2F24 |
-| 1180:e852 | 1179:0001 | Ricoh      | PCIe xD-Picture Card Cont... | 2     |            | 6357D0D51F |
-| 197b:2382 | 104d:9075 | JMicron... | SD/MMC Host Controller       | 2     |            | 30BB4FC23C |
-| 197b:2383 | 104d:9075 | JMicron... | MS Host Controller           | 2     |            | 30BB4FC23C |
-| 197b:2392 | 103c:17a7 | JMicron... | SD/MMC Host Controller       | 2     |            | 52BA4E835F |
-| 8086:1513 | 2222:1111 | Intel      | CV82524 Thunderbolt Contr... | 2     |            | D1AAEAAD42 |
-| 8086:156c |           | Intel      | DSL5520 Thunderbolt 2 NHI... | 2     |            | 0621ACAB4E |
-| 8086:156c | 2222:1111 | Intel      | DSL5520 Thunderbolt 2 NHI... | 2     |            | 1C9FEEF8E7 |
-| 8086:15d2 | 2222:1111 | Intel      | JHL6540 Thunderbolt 3 NHI... | 2     |            | 16206C4970 |
-| 8086:1911 |           | Intel      | Xeon E3-1200 v5/v6 / E3-1... | 2     |            | 0BD96EF663 |
-| 8086:1911 | 1028:08b8 | Intel      | Xeon E3-1200 v5/v6 / E3-1... | 2     |            | B9D1F08BCF |
-| 8086:1911 | 17aa:2233 | Intel      | Xeon E3-1200 v5/v6 / E3-1... | 2     |            | 8325C794B3 |
-| 8086:1911 | 17aa:225a | Intel      | Xeon E3-1200 v5/v6 / E3-1... | 2     |            | D5A1C088B3 |
-| 8086:1911 | 17aa:2267 | Intel      | Xeon E3-1200 v5/v6 / E3-1... | 2     |            | 045A80D8BC |
-| 8086:1911 | 17aa:2292 | Intel      | Xeon E3-1200 v5/v6 / E3-1... | 2     |            | 4376ACCB5E |
-| 8086:1911 | 17aa:3864 | Intel      | Xeon E3-1200 v5/v6 / E3-1... | 2     |            | DCE3BA8C99 |
-| 8086:1911 | 17aa:387d | Intel      | Xeon E3-1200 v5/v6 / E3-1... | 2     |            | 2BE8CF963C |
-| 8086:1911 | 17aa:5079 | Intel      | Xeon E3-1200 v5/v6 / E3-1... | 2     |            | 94D082C57C |
-| 8086:8a17 |           | Intel      | Ice Lake Thunderbolt 3 NH... | 2     |            | 3278083BA9 |
-| 8086:9c60 | 1025:0a11 | Intel      | 8 Series Low Power Sub-Sy... | 2     |            | D15CAACA04 |
-| 1022:1481 | 1558:50f0 | AMD        | Starship/Matisse IOMMU       | 1     |            | 0AC6AED43B |
-| 1022:15d1 | 1025:134d | AMD        | Raven/Raven2 IOMMU           | 1     |            | 1AC21E1660 |
-| 1022:15d1 | 103c:85b3 | AMD        | Raven/Raven2 IOMMU           | 1     |            | ECF07AD5FE |
-| 1022:15d1 | 103c:85e0 | AMD        | Raven/Raven2 IOMMU           | 1     |            | 5CD8E23152 |
-| 1022:15d1 | 17aa:3804 | AMD        | Raven/Raven2 IOMMU           | 1     |            | 4AC6C9B3EB |
-| 1022:1631 | 1022:1631 | AMD        | Renoir IOMMU                 | 1     |            | DD877E6C6C |
-| 1022:1631 | 1028:09f5 | AMD        | Renoir IOMMU                 | 1     |            | BA74D8EEE0 |
-| 1022:1631 | 103c:87b1 | AMD        | Renoir IOMMU                 | 1     |            | 5E5632D9B6 |
-| 1022:1631 | 17aa:5081 | AMD        | Renoir IOMMU                 | 1     |            | BD88655975 |
-| 1022:1631 | 1d72:1951 | AMD        | Renoir IOMMU                 | 1     |            | A7BF2669CE |
-| 1180:0575 | 10f7:8338 | Ricoh      | R5C575 SD Bus Host Adapter   | 1     |            | F6EC2858A5 |
-| 1180:0592 | 1028:01bd | Ricoh      | R5C592 Memory Stick Bus H... | 1     |            | 7F814A7E8D |
-| 1180:0592 | 1028:022f | Ricoh      | R5C592 Memory Stick Bus H... | 1     |            | D08EA3542E |
-| 1180:0592 | 1028:029f | Ricoh      | R5C592 Memory Stick Bus H... | 1     |            | A4C1D361EB |
-| 1180:0592 | 1028:02a2 | Ricoh      | R5C592 Memory Stick Bus H... | 1     |            | 0B60C1CB25 |
-| 1180:0592 | 103c:1521 | Ricoh      | R5C592 Memory Stick Bus H... | 1     |            | 78D9A31074 |
-| 1180:0592 | 103c:30bb | Ricoh      | R5C592 Memory Stick Bus H... | 1     |            | 733C5EDB74 |
-| 1180:0592 | 103c:30cc | Ricoh      | R5C592 Memory Stick Bus H... | 1     |            | 316FFB0740 |
-| 1180:0592 | 1043:1017 | Ricoh      | R5C592 Memory Stick Bus H... | 1     |            | A04133B68D |
-| 1180:0592 | 1043:1197 | Ricoh      | R5C592 Memory Stick Bus H... | 1     |            | 1F098AC490 |
-| 1180:0592 | 1043:15d7 | Ricoh      | R5C592 Memory Stick Bus H... | 1     |            | 593C12AA06 |
-| 1180:0592 | 1043:1877 | Ricoh      | R5C592 Memory Stick Bus H... | 1     |            | A2EE0C9EDB |
-| 1180:0592 | 104d:9035 | Ricoh      | R5C592 Memory Stick Bus H... | 1     |            | 4A6CA78BC0 |
-| 1180:0592 | 17aa:382c | Ricoh      | R5C592 Memory Stick Bus H... | 1     |            | 6B81593DE9 |
-| 1180:0592 | 1b0a:200d | Ricoh      | R5C592 Memory Stick Bus H... | 1     |            | 50D37406DF |
-| 1180:0843 | 1028:01bd | Ricoh      | R5C843 MMC Host Controller   | 1     |            | 7F814A7E8D |
-| 1180:0843 | 1028:01f5 | Ricoh      | R5C843 MMC Host Controller   | 1     |            | 9EE3E7CBC2 |
-| 1180:0843 | 1028:022f | Ricoh      | R5C843 MMC Host Controller   | 1     |            | D08EA3542E |
-| 1180:0843 | 1028:024f | Ricoh      | R5C843 MMC Host Controller   | 1     |            | D25DACC162 |
-| 1180:0843 | 1028:0262 | Ricoh      | R5C843 MMC Host Controller   | 1     |            | 54854343E4 |
-| 1180:0843 | 1028:029f | Ricoh      | R5C843 MMC Host Controller   | 1     |            | A4C1D361EB |
-| 1180:0843 | 1028:02a2 | Ricoh      | R5C843 MMC Host Controller   | 1     |            | 0B60C1CB25 |
-| 1180:0843 | 103c:1521 | Ricoh      | R5C843 MMC Host Controller   | 1     |            | 78D9A31074 |
-| 1180:0843 | 103c:172a | Ricoh      | R5C843 MMC Host Controller   | 1     |            | 7968C7D2DD |
-| 1180:0843 | 103c:30bb | Ricoh      | R5C843 MMC Host Controller   | 1     |            | 733C5EDB74 |
-| 1180:0843 | 103c:30cc | Ricoh      | R5C843 MMC Host Controller   | 1     |            | 316FFB0740 |
-| 1180:0843 | 103c:30e1 | Ricoh      | R5C843 MMC Host Controller   | 1     |            | 1FD927E2CD |
-| 1180:0843 | 1043:1017 | Ricoh      | R5C843 MMC Host Controller   | 1     |            | A04133B68D |
-| 1180:0843 | 1043:1877 | Ricoh      | R5C843 MMC Host Controller   | 1     |            | A2EE0C9EDB |
-| 1180:0843 | 17aa:382b | Ricoh      | R5C843 MMC Host Controller   | 1     |            | 6B81593DE9 |
-| 1180:0843 | 1b0a:200d | Ricoh      | R5C843 MMC Host Controller   | 1     |            | 50D37406DF |
-| 1180:0852 | 1028:01bd | Ricoh      | xD-Picture Card Controller   | 1     |            | 7F814A7E8D |
-| 1180:0852 | 1028:022f | Ricoh      | xD-Picture Card Controller   | 1     |            | D08EA3542E |
+| ID        | Subsystem | MFG              | Name                                 | Count | Driver     | Probe |
+|-----------|-----------|------------------|--------------------------------------|-------|------------|-------|
+| 1022:15d1 | 1022:15d1 | AMD              | Raven/Raven2 IOMMU                   | 23    | amdiommu   | [0C153D0C98](<Notebook/Lenovo/ThinkPad/ThinkPad A485 20MU000VUS/0748151D3905/MIDNIGHTBSD-2.1.1/2.1.1/AMD64/0C153D0C98>) |
+| 1180:e823 | 17aa:21da | Ricoh            | PCIe SDXC/MMC Host Controller        | 18    | sdhci_pci  | [148A268A0F](<Notebook/Lenovo/ThinkPad/ThinkPad X220 4293B43/AD955BCC7F71/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/148A268A0F>) |
+| 1180:e822 | 17aa:2133 | Ricoh            | MMC/SD Host Controller               | 15    | sdhci_pci  | [BCD5BEA2B7](<Notebook/Lenovo/ThinkPad/ThinkPad T410 2537BN8/4A58F0F69086/OPNSENSE-22.1.2/13.0-STABLE/AMD64/BCD5BEA2B7>) |
+| 1180:e230 | 17aa:2134 | Ricoh            | R5U2xx (R5U230 / R5U231 / R5U241)... | 14    |            | [BCD5BEA2B7](<Notebook/Lenovo/ThinkPad/ThinkPad T410 2537BN8/4A58F0F69086/OPNSENSE-22.1.2/13.0-STABLE/AMD64/BCD5BEA2B7>) |
+| 1022:1451 | 1022:1451 | AMD              | Family 17h (Models 00h-0fh) I/O M... | 12    | amdiommu   | [4D8F19BA12](<Notebook/Deciso/Netboard/Netboard A20/94D2C7F0ED24/OPNSENSE-22.1/13.0-STABLE/AMD64/4D8F19BA12>) |
+| 1180:e823 | 17aa:21fa | Ricoh            | PCIe SDXC/MMC Host Controller        | 12    | sdhci_pci  | [B8729E39E1](<Notebook/Lenovo/ThinkPad/ThinkPad X230 2325O76/7FE8AEFC4054/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/B8729E39E1>) |
+| 1180:e823 | 17aa:21ce | Ricoh            | PCIe SDXC/MMC Host Controller        | 11    | sdhci_pci  | [8BD2318FB6](<Notebook/Lenovo/ThinkPad/ThinkPad T420 4236MBU/D2E0D93C2306/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/8BD2318FB6>) |
+| 1180:e823 | 17aa:21f3 | Ricoh            | PCIe SDXC/MMC Host Controller        | 9     | sdhci_pci  | [66C64C1AF9](<Notebook/Lenovo/ThinkPad/ThinkPad T430 2347G7G/3675D1C32D5B/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/66C64C1AF9>) |
+| 1022:1631 | 1022:1631 | AMD              | Renoir/Cezanne IOMMU                 | 8     | amdiommu   | [494195B923](<Notebook/Hewlett-Packard/ProBook/ProBook 445 G7/06DE97DEA747/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/494195B923>) |
+| 8086:1911 | 17aa:2279 | Intel            | Xeon E3-1200 v5/v6 / E3-1500 v5 /... | 7     |            | [4147A5824D](<Notebook/Lenovo/ThinkPad/ThinkPad T590 20N4CTO1WW/3C494D1552EB/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/4147A5824D>) |
+| 1180:0592 | 17aa:20ca | Ricoh            | R5C592 Memory Stick Bus Host Adapter | 6     |            | [9CC0F26F6F](<Notebook/Lenovo/ThinkPad/ThinkPad R61 8935WCS/1AC798DB7C89/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/9CC0F26F6F>) |
+| 1180:0843 | 17aa:20c9 | Ricoh            | R5C843 MMC Host Controller           | 6     |            | [9CC0F26F6F](<Notebook/Lenovo/ThinkPad/ThinkPad R61 8935WCS/1AC798DB7C89/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/9CC0F26F6F>) |
+| 1180:0852 | 17aa:20cb | Ricoh            | xD-Picture Card Controller           | 6     |            | [9CC0F26F6F](<Notebook/Lenovo/ThinkPad/ThinkPad R61 8935WCS/1AC798DB7C89/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/9CC0F26F6F>) |
+| 1180:e823 | 17aa:21cf | Ricoh            | PCIe SDXC/MMC Host Controller        | 6     | sdhci_pci  | [82F5612822](<Notebook/Lenovo/ThinkPad/ThinkPad T520 4243E51/EB551E7DDB1F/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/82F5612822>) |
+| 197b:2382 | 17aa:212e | JMicron Techn... | SD/MMC Host Controller               | 6     |            | [B0A9802877](<Notebook/Lenovo/ThinkPad/ThinkPad SL510 2847R96/16806C85881A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/B0A9802877>) |
+| 197b:2383 | 17aa:212f | JMicron Techn... | MS Host Controller                   | 6     |            | [B0A9802877](<Notebook/Lenovo/ThinkPad/ThinkPad SL510 2847R96/16806C85881A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/B0A9802877>) |
+| 197b:2384 | 17aa:2130 | JMicron Techn... | xD Host Controller                   | 6     |            | [B0A9802877](<Notebook/Lenovo/ThinkPad/ThinkPad SL510 2847R96/16806C85881A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/B0A9802877>) |
+| 8086:15bf | 17aa:2279 | Intel            | JHL6240 Thunderbolt 3 NHI (Low Po... | 6     |            | [4147A5824D](<Notebook/Lenovo/ThinkPad/ThinkPad T590 20N4CTO1WW/3C494D1552EB/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/4147A5824D>) |
+| 8086:1911 | 17aa:5072 | Intel            | Xeon E3-1200 v5/v6 / E3-1500 v5 /... | 6     |            | [98072B8DB6](<Notebook/Lenovo/ThinkPad/ThinkPad E590 20NB0012RT/F14FDAEA6645/FREEBSD-13.0-P3/13.0-RELEASE-P3/AMD64/98072B8DB6>) |
+| 1180:e823 | 17aa:21f6 | Ricoh            | PCIe SDXC/MMC Host Controller        | 5     | sdhci_pci  | [4E7FC367BC](<Notebook/Lenovo/ThinkPad/ThinkPad W530 2447AV9/778B9CE5B6CA/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/4E7FC367BC>) |
+| 8086:15bf | 2222:1111 | Intel            | JHL6240 Thunderbolt 3 NHI (Low Po... | 5     |            | [556FCB7E5E](<Notebook/Lenovo/ThinkPad/ThinkPad T480s 20L8S1GX00/EA208CC61F28/FREEBSD-13.0/13.0-RELEASE/AMD64/556FCB7E5E>) |
+| 8086:1911 | 17aa:2238 | Intel            | Xeon E3-1200 v5/v6 / E3-1500 v5 /... | 5     |            | [821C81E652](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 4th 20FB001XAU/5B2B74D5C2AB/NOMADBSD-1.4/12.2-RELEASE-P4/AMD64/821C81E652>) |
+| 8086:9a11 | f111:0001 | Intel            | GNA Scoring Accelerator module       | 5     |            | [1F58E0594F](<Notebook/Framework/Laptop/Laptop/12E6C3C95AB5/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/1F58E0594F>) |
+| 1022:1577 | 1022:1577 | AMD              | Family 15h (Models 60h-6fh) I/O M... | 4     |            | [E54BE582A7](<Notebook/Dell/Inspiron/Inspiron 5555/986E47B6651F/FREEBSD-13.0-P6/13.0-RELEASE-P6/AMD64/E54BE582A7>) |
+| 1022:1577 | 103c:84ac | AMD              | Family 15h (Models 60h-6fh) I/O M... | 4     |            | [766E62F699](<Notebook/Hewlett-Packard/Laptop/Laptop 15-db0xxx/3E8F8F48759C/NOMADBSD-5806F915/13.0-RELEASE/AMD64/766E62F699>) |
+| 1022:1631 | 17aa:5097 | AMD              | Renoir/Cezanne IOMMU                 | 4     |            | [6C208C85A5](<Notebook/Lenovo/ThinkPad/ThinkPad E14 Gen 3 20Y7003SGE/284E69188279/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/6C208C85A5>) |
+| 1180:e823 | 17aa:21f9 | Ricoh            | PCIe SDXC/MMC Host Controller        | 4     | sdhci_pci  | [28BBEB8B2E](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 3443CTO/870107710CBE/OPNSENSE-21.7/12.1-RELEASE-P20-HBSD/AMD64/28BBEB8B2E>) |
+| 1180:e823 | 17aa:21fb | Ricoh            | PCIe SDXC/MMC Host Controller        | 4     | sdhci_pci  | [0B6AB3BA1B](<Notebook/Lenovo/ThinkPad/ThinkPad T430s 2356JH4/C3D86E55EECC/OPNSENSE-21.7.6/12.1-RELEASE-P21-HBSD/AMD64/0B6AB3BA1B>) |
+| 14e4:16be | 1025:0504 | Broadcom         | BCM57765/57785 MS Card Reader        | 4     |            | [BD22FC8A49](<Notebook/Acer/Aspire/Aspire 5750G/1FF59E502D89/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/BD22FC8A49>) |
+| 14e4:16bf | 1025:0504 | Broadcom         | BCM57765/57785 xD-Picture Card Re... | 4     |            | [BD22FC8A49](<Notebook/Acer/Aspire/Aspire 5750G/1FF59E502D89/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/BD22FC8A49>) |
+| 8086:1911 | 17aa:224f | Intel            | Xeon E3-1200 v5/v6 / E3-1500 v5 /... | 4     |            | [7AEA2CCAA7](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 5th 20HRS04C00/46797EE9B847/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/7AEA2CCAA7>) |
+| 8086:1911 | 17aa:2258 | Intel            | Xeon E3-1200 v5/v6 / E3-1500 v5 /... | 4     |            | [556FCB7E5E](<Notebook/Lenovo/ThinkPad/ThinkPad T480s 20L8S1GX00/EA208CC61F28/FREEBSD-13.0/13.0-RELEASE/AMD64/556FCB7E5E>) |
+| 8086:1911 | 17aa:3864 | Intel            | Xeon E3-1200 v5/v6 / E3-1500 v5 /... | 4     |            | [384D2F888B](<Notebook/Lenovo/Legion/Legion Y540-15IRH 81SX/DB27396229F8/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/384D2F888B>) |
+| 8086:1911 | 17aa:5068 | Intel            | Xeon E3-1200 v5/v6 / E3-1500 v5 /... | 4     |            | [BE311B6A34](<Notebook/Lenovo/ThinkPad/ThinkPad E580 20KSCTO1WW/FE16B0524669/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/BE311B6A34>) |
+| 8086:1911 | 8086:7270 | Intel            | Xeon E3-1200 v5/v6 / E3-1500 v5 /... | 4     |            | [3BD9CD5B98](<Notebook/BESSTAR Tech/U/U820/A06106A328DE/OPNSENSE-21.7.4/12.1-RELEASE-P20-HBSD/AMD64/3BD9CD5B98>) |
+| 1022:1631 | 1d05:109f | AMD              | Renoir/Cezanne IOMMU                 | 3     | amdiommu   | [6F779D5170](<Notebook/TUXEDO/Pulse/Pulse 15 Gen1/C92D236C248C/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/6F779D5170>) |
+| 1180:0843 | 1028:024d | Ricoh            | R5C843 MMC Host Controller           | 3     |            | [FDB3DE3036](<Notebook/Dell/Latitude/Latitude E4300/B023391CA6F2/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/FDB3DE3036>) |
+| 1180:e230 | 1179:0001 | Ricoh            | R5U2xx (R5U230 / R5U231 / R5U241)... | 3     |            | [2AC9BEA1E6](<Notebook/Toshiba/PORTEGE/PORTEGE M780/9BA4726CBC1C/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/2AC9BEA1E6>) |
+| 1180:e823 | 17aa:2203 | Ricoh            | PCIe SDXC/MMC Host Controller        | 3     | sdhci_pci  | [EFDFEE9023](<Notebook/Lenovo/ThinkPad/ThinkPad X230 Tablet 343522U/EB8C39CCF903/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/EFDFEE9023>) |
+| 1180:e852 | 1179:0001 | Ricoh            | PCIe xD-Picture Card Controller      | 3     |            | [2AC9BEA1E6](<Notebook/Toshiba/PORTEGE/PORTEGE M780/9BA4726CBC1C/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/2AC9BEA1E6>) |
+| 8086:1911 |           | Intel            | Xeon E3-1200 v5/v6 / E3-1500 v5 /... | 3     |            | [713B33351F](<Notebook/System76/Lemur/Lemur Pro/FB3C4199D24B/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/713B33351F>) |
+| 8086:1911 | 1028:08b8 | Intel            | Xeon E3-1200 v5/v6 / E3-1500 v5 /... | 3     |            | [1BB6C1F63F](<Notebook/Dell/Latitude/Latitude 5400/418002D1A36C/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/1BB6C1F63F>) |
+| 8086:1911 | 1028:09ec | Intel            | Xeon E3-1200 v5/v6 / E3-1500 v5 /... | 3     |            | [80D7BF959A](<Notebook/Dell/Latitude/Latitude 3410/3DC4614C13E4/FREEBSD-13.0-RC1/13.0-RC1/AMD64/80D7BF959A>) |
+| 8086:1911 | 17aa:2233 | Intel            | Xeon E3-1200 v5/v6 / E3-1500 v5 /... | 3     |            | [DBB0E378D5](<Notebook/Lenovo/ThinkPad/ThinkPad T460s 20FAS4KH02/DCA0C34D1413/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/DBB0E378D5>) |
+| 8086:1911 | 17aa:225c | Intel            | Xeon E3-1200 v5/v6 / E3-1500 v5 /... | 3     |            | [16206C4970](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 6th 20KG0022US/0E31F9E108FF/FREEBSD-12.2/12.2-RELEASE/AMD64/16206C4970>) |
+| 8086:1911 | 17aa:2292 | Intel            | Xeon E3-1200 v5/v6 / E3-1500 v5 /... | 3     |            | [3CF2AD31A8](<Notebook/Others/Others/Others/CEE39BFDF5CD/DRAGONFLY-6.0/6.0-RELEASE/AMD64/3CF2AD31A8>) |
+| 8086:1911 | 17aa:5079 | Intel            | Xeon E3-1200 v5/v6 / E3-1500 v5 /... | 3     |            | [0FA4700D17](<Notebook/Lenovo/ThinkPad/ThinkPad E15 20RD0011MX/534BB4FF83C1/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/0FA4700D17>) |
+| 8086:9a11 | 17aa:22d5 | Intel            | GNA Scoring Accelerator module       | 3     |            | [8F9E9DDDE5](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon Gen 9 20XWCTO1WW/83AC7FC10181/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/8F9E9DDDE5>) |
+| 1022:1451 | 1025:1246 | AMD              | Family 17h (Models 00h-0fh) I/O M... | 2     |            | [9E03A76684](<Notebook/Acer/Predator/Predator PH517-61/401258E70C57/FREEBSD-13.0/13.0-RELEASE/AMD64/9E03A76684>) |
+| 1022:1577 | 103c:8330 | AMD              | Family 15h (Models 60h-6fh) I/O M... | 2     |            | [8E9A6CFF62](<Notebook/Hewlett-Packard/Laptop/Laptop 15-rb0xx/94A2E681C681/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/8E9A6CFF62>) |
+| 1022:15d1 | 103c:85e0 | AMD              | Raven/Raven2 IOMMU                   | 2     |            | [E7B40F6E3B](<Notebook/Hewlett-Packard/Laptop/Laptop 14-dk0xxx/60E15DE8A8F4/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E7B40F6E3B>) |
+| 1022:15d1 | 17aa:3804 | AMD              | Raven/Raven2 IOMMU                   | 2     |            | [ADE9F77281](<Notebook/Lenovo/IdeaPad/IdeaPad 330-15ARR 81D2/B11617CFB899/FREEBSD-13.0/13.0-RELEASE/AMD64/ADE9F77281>) |
+| 1022:1631 | 103c:8786 | AMD              | Renoir/Cezanne IOMMU                 | 2     |            | [19F307FF6D](<Notebook/Hewlett-Packard/OMEN/OMEN Laptop 15-en0xxx/99830226F687/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/19F307FF6D>) |
+| 1022:1631 | 103c:87b1 | AMD              | Renoir/Cezanne IOMMU                 | 2     |            | [B8408CB369](<Notebook/Hewlett-Packard/Pavilion/Pavilion Gaming Laptop 15-ec1xxx/447033DB0DB6/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/B8408CB369>) |
+| 1022:1631 | 103c:88dd | AMD              | Renoir/Cezanne IOMMU                 | 2     |            | [7859F220B9](<Notebook/Hewlett-Packard/Pavilion/Pavilion Gaming Laptop 15-ec2xxx/32343F8FB2CF/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/7859F220B9>) |
+| 1022:1631 | 1558:a500 | AMD              | Renoir/Cezanne IOMMU                 | 2     |            | [792FB07DD9](<Notebook/Notebook/NL5/NL5xRU/5E9A5B67425F/FREEBSD-13.0/13.0-RELEASE/AMD64/792FB07DD9>) |
+| 1022:1631 | 17aa:5081 | AMD              | Renoir/Cezanne IOMMU                 | 2     |            | [D910C79D75](<Notebook/Lenovo/ThinkPad/ThinkPad P14s Gen 1 20Y1CTO1WW/5E03AED6E452/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/D910C79D75>) |
+| 1022:1631 | 17aa:5082 | AMD              | Renoir/Cezanne IOMMU                 | 2     |            | [ED75B3D15B](<Notebook/Lenovo/ThinkPad/ThinkPad X13 Gen 1 20UF000QRT/28FFDBA7F5C3/FREEBSD-13.0-BETA1/13.0-BETA2/AMD64/ED75B3D15B>) |
+| 1180:0592 | 1043:1877 | Ricoh            | R5C592 Memory Stick Bus Host Adapter | 2     |            | [883DED6CB1](<Notebook/ASUSTek Computer/N50/N50Vc/77A5AA89F908/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/883DED6CB1>) |
+| 1180:0843 | 1043:1877 | Ricoh            | R5C843 MMC Host Controller           | 2     |            | [883DED6CB1](<Notebook/ASUSTek Computer/N50/N50Vc/77A5AA89F908/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/883DED6CB1>) |
+| 1180:0852 | 1043:1877 | Ricoh            | xD-Picture Card Controller           | 2     |            | [883DED6CB1](<Notebook/ASUSTek Computer/N50/N50Vc/77A5AA89F908/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/883DED6CB1>) |
+| 1180:e822 | 17aa:21cf | Ricoh            | MMC/SD Host Controller               | 2     | sdhci_pci  | [242CD8A6E7](<Notebook/Lenovo/ThinkPad/ThinkPad T520 4243FS9/1AD526962333/FREEBSD-12.2/12.2-RELEASE/AMD64/242CD8A6E7>) |
+| 1180:e822 | 17aa:21fa | Ricoh            | MMC/SD Host Controller               | 2     | sdhci_pci  | [06C6A282CA](<Notebook/Lenovo/ThinkPad/ThinkPad X230 23254G7/FF7D8D42B37A/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/06C6A282CA>) |
+| 1180:e823 | 17aa:21db | Ricoh            | PCIe SDXC/MMC Host Controller        | 2     | sdhci_pci  | [DBD5C6E5E3](<Notebook/Lenovo/ThinkPad/ThinkPad X220 Tablet 4298B65/7AF33DC5AA71/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/DBD5C6E5E3>) |
+| 1180:e823 | 17aa:21e2 | Ricoh            | PCIe SDXC/MMC Host Controller        | 2     | sdhci_pci  | [AA98E655F3](<Notebook/Lenovo/ThinkPad/ThinkPad E420 1141A83/01AFCFDA1374/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/AA98E655F3>) |
+| 14e4:16be | 1025:0647 | Broadcom         | BCM57765/57785 MS Card Reader        | 2     |            | [A5AA8AA49A](<Notebook/Gateway/NE56/NE56R/263D8B710681/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/A5AA8AA49A>) |
+| 14e4:16bf | 1025:0647 | Broadcom         | BCM57765/57785 xD-Picture Card Re... | 2     |            | [A5AA8AA49A](<Notebook/Gateway/NE56/NE56R/263D8B710681/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/A5AA8AA49A>) |
+| 197b:2382 | 1043:1a07 | JMicron Techn... | SD/MMC Host Controller               | 2     |            | [92B975763F](<Notebook/ASUSTek Computer/K52/K52Jc/DB01933C6182/HELLOSYSTEM-0.7.0/12.2-RELEASE-P7/AMD64/92B975763F>) |
+| 197b:2382 | 104d:9075 | JMicron Techn... | SD/MMC Host Controller               | 2     |            | [30BB4FC23C](<Notebook/Sony/VPCM13/VPCM13M1R/5AB92F9110B8/NOMADBSD-1.3.2/12.1-RELEASE-P6/I386/30BB4FC23C>) |
+| 197b:2383 | 1043:1a07 | JMicron Techn... | MS Host Controller                   | 2     |            | [92B975763F](<Notebook/ASUSTek Computer/K52/K52Jc/DB01933C6182/HELLOSYSTEM-0.7.0/12.2-RELEASE-P7/AMD64/92B975763F>) |
+| 197b:2383 | 104d:9075 | JMicron Techn... | MS Host Controller                   | 2     |            | [30BB4FC23C](<Notebook/Sony/VPCM13/VPCM13M1R/5AB92F9110B8/NOMADBSD-1.3.2/12.1-RELEASE-P6/I386/30BB4FC23C>) |
+| 197b:2384 | 1043:1a07 | JMicron Techn... | xD Host Controller                   | 2     |            | [92B975763F](<Notebook/ASUSTek Computer/K52/K52Jc/DB01933C6182/HELLOSYSTEM-0.7.0/12.2-RELEASE-P7/AMD64/92B975763F>) |
+| 197b:2392 | 103c:17a7 | JMicron Techn... | SD/MMC Host Controller               | 2     |            | [462FC329A9](<Notebook/Hewlett-Packard/EliteBook/EliteBook 8570p/8F084339058D/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/462FC329A9>) |
+| 197b:2392 | 103c:18df | JMicron Techn... | SD/MMC Host Controller               | 2     |            | [E2CC942E3E](<Notebook/Hewlett-Packard/EliteBook/EliteBook Folio 9470m/CDDE53EE5395/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E2CC942E3E>) |
+| 8086:1513 | 2222:1111 | Intel            | CV82524 Thunderbolt Controller [L... | 2     |            | [D1AAEAAD42](<Notebook/Apple/MacBookPro8/MacBookPro8,1/F41F7A2B2311/NOMADBSD-1.3.2/12.1-RELEASE-P6/AMD64/D1AAEAAD42>) |
+| 8086:156c |           | Intel            | DSL5520 Thunderbolt 2 NHI [Falcon... | 2     |            | [0621ACAB4E](<Notebook/Apple/MacBookPro8/MacBookPro8,1/F41F7A2B2311/NOMADBSD-1.3.2/12.1-RELEASE-P6/AMD64/0621ACAB4E>) |
+| 8086:156c | 2222:1111 | Intel            | DSL5520 Thunderbolt 2 NHI [Falcon... | 2     |            | [1C9FEEF8E7](<Notebook/Apple/MacBookPro11/MacBookPro11,3/00F93121F8F4/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/1C9FEEF8E7>) |
+| 8086:15bf | 17aa:2286 | Intel            | JHL6240 Thunderbolt 3 NHI (Low Po... | 2     |            | [D377309110](<Notebook/Lenovo/ThinkPad/ThinkPad T490s 20NYS3TU00/8D5A2ED4C475/HELLOSYSTEM-0.5.0/12.2-RELEASE-P7/AMD64/D377309110>) |
+| 8086:15d2 | 17aa:2292 | Intel            | JHL6540 Thunderbolt 3 NHI (C step... | 2     |            | [3CF2AD31A8](<Notebook/Others/Others/Others/CEE39BFDF5CD/DRAGONFLY-6.0/6.0-RELEASE/AMD64/3CF2AD31A8>) |
+| 8086:15d2 | 17aa:22be | Intel            | JHL6540 Thunderbolt 3 NHI (C step... | 2     |            | [85E94A1288](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon Gen 8 20U9CTO1WW/B74176FFA919/FREEBSD-13.0/13.0-RELEASE/AMD64/85E94A1288>) |
+| 8086:15d2 | 2222:1111 | Intel            | JHL6540 Thunderbolt 3 NHI (C step... | 2     |            | [16206C4970](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 6th 20KG0022US/0E31F9E108FF/FREEBSD-12.2/12.2-RELEASE/AMD64/16206C4970>) |
+| 8086:15e8 | 1558:1403 | Intel            | JHL7540 Thunderbolt 3 NHI [Titan ... | 2     |            | [EBE0575F31](<Notebook/System76/Galago/Galago Pro/25605F0322E6/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/EBE0575F31>) |
+| 8086:15e8 | 1558:1404 | Intel            | JHL7540 Thunderbolt 3 NHI [Titan ... | 2     |            | [F99C9F56B7](<Notebook/System76/Darter/Darter Pro/0CE03E6D5308/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/F99C9F56B7>) |
+| 8086:15e8 | 8086:2086 | Intel            | JHL7540 Thunderbolt 3 NHI [Titan ... | 2     |            | [85F5C972A5](<Notebook/Avell High Performance/A60/A60 MUV/0C5CDFF081CF/FREEBSD-13.0-P3/13.0-RELEASE-P3/AMD64/85F5C972A5>) |
+| 8086:15eb | 17aa:2297 | Intel            | JHL7540 Thunderbolt 3 NHI [Titan ... | 2     |            | [5B08C1DE3D](<Notebook/Lenovo/ThinkPad/ThinkPad P53 20QNCTO1WW/EDACF56B05E1/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/5B08C1DE3D>) |
+| 8086:1911 | 1028:0831 | Intel            | Xeon E3-1200 v5/v6 / E3-1500 v5 /... | 2     |            | [498BFE852C](<Notebook/Dell/Precision/Precision 7530/5BEE2A4C3CA7/FREEBSD-12.3/12.3-RELEASE/AMD64/498BFE852C>) |
+| 8086:1911 | 1028:087c | Intel            | Xeon E3-1200 v5/v6 / E3-1500 v5 /... | 2     |            | [EE8980FEC1](<Notebook/Dell/XPS/XPS 15 9570/9A64E9C4BBC5/FREEBSD-13.0-P4/13.0-RELEASE/AMD64/EE8980FEC1>) |
+| 8086:1911 | 1028:09a1 | Intel            | Xeon E3-1200 v5/v6 / E3-1500 v5 /... | 2     |            | [A620D284CB](<Notebook/Dell/Latitude/Latitude 5510/9741CEB43BDE/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/A620D284CB>) |
+| 8086:1911 | 17aa:224d | Intel            | Xeon E3-1200 v5/v6 / E3-1500 v5 /... | 2     |            | [E4F43CFCAD](<Notebook/Lenovo/ThinkPad/ThinkPad P51 20HHCTO1WW/771FB79FBCC7/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/E4F43CFCAD>) |
+| 8086:1911 | 17aa:2256 | Intel            | Xeon E3-1200 v5/v6 / E3-1500 v5 /... | 2     |            | [5B9001009E](<Notebook/Lenovo/ThinkPad/ThinkPad X280 20KF001UUS/7976EB1CF6FF/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/5B9001009E>) |
+| 8086:1911 | 17aa:225a | Intel            | Xeon E3-1200 v5/v6 / E3-1500 v5 /... | 2     |            | [D5A1C088B3](<Notebook/Lenovo/ThinkPad/ThinkPad T580 20LAS2TG00/62C47C000AF5/HELLOSYSTEM-0.4.0/12.1-RELEASE/AMD64/D5A1C088B3>) |
+| 8086:1911 | 17aa:2267 | Intel            | Xeon E3-1200 v5/v6 / E3-1500 v5 /... | 2     |            | [6D5E1A13D0](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Extreme 20MF000BUS/A5269BACD212/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/6D5E1A13D0>) |
+| 8086:1911 | 17aa:2286 | Intel            | Xeon E3-1200 v5/v6 / E3-1500 v5 /... | 2     |            | [D377309110](<Notebook/Lenovo/ThinkPad/ThinkPad T490s 20NYS3TU00/8D5A2ED4C475/HELLOSYSTEM-0.5.0/12.2-RELEASE-P7/AMD64/D377309110>) |
+| 8086:1911 | 17aa:2297 | Intel            | Xeon E3-1200 v5/v6 / E3-1500 v5 /... | 2     |            | [5B08C1DE3D](<Notebook/Lenovo/ThinkPad/ThinkPad P53 20QNCTO1WW/EDACF56B05E1/FREEBSD-13.0-P4/13.0-RELEASE-P4/AMD64/5B08C1DE3D>) |
+| 8086:1911 | 17aa:22af | Intel            | Xeon E3-1200 v5/v6 / E3-1500 v5 /... | 2     |            | [6836FC60F6](<Notebook/Lenovo/ThinkPad/ThinkPad X13 Gen 1 20T2003PRT/7ED3441E6EB7/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/6836FC60F6>) |
+| 8086:1911 | 17aa:22be | Intel            | Xeon E3-1200 v5/v6 / E3-1500 v5 /... | 2     |            | [85E94A1288](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon Gen 8 20U9CTO1WW/B74176FFA919/FREEBSD-13.0/13.0-RELEASE/AMD64/85E94A1288>) |
+| 8086:1911 | 17aa:3861 | Intel            | Xeon E3-1200 v5/v6 / E3-1500 v5 /... | 2     |            | [CEB18E38A3](<Notebook/Lenovo/IdeaPad/IdeaPad S145-15IWL 81MV/3D212F0359DA/HELLOSYSTEM-0.6.0/13.0-RELEASE/AMD64/CEB18E38A3>) |
+| 8086:1911 | 17aa:387d | Intel            | Xeon E3-1200 v5/v6 / E3-1500 v5 /... | 2     |            | [2BE8CF963C](<Notebook/Lenovo/Legion/Legion 5P 15IMH05H 82AW/5AF94BC5A494/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/2BE8CF963C>) |
+| 8086:1911 | 1d05:1085 | Intel            | Xeon E3-1200 v5/v6 / E3-1500 v5 /... | 2     |            | [5983302B1D](<Notebook/Avell High Performance/A62/A62 LIV/45914491EAA0/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/5983302B1D>) |
+| 8086:1911 | 8086:1911 | Intel            | Xeon E3-1200 v5/v6 / E3-1500 v5 /... | 2     |            | [4CE05F93A8](<Notebook/Chuwi/MiniBook/MiniBook/7C143B97B52B/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/4CE05F93A8>) |
 
 ### Usb controller (PCI)
 
-| ID        | Subsystem | MFG        | Name                         | Count | Driver     | Probe      |
-|-----------|-----------|------------|------------------------------|-------|------------|------------|
-| 8086:1c26 | 17aa:21da | Intel      | 6 Series/C200 Series Chip... | 14    | ehci       | 66743A51CC |
-| 8086:1c2d | 17aa:21da | Intel      | 6 Series/C200 Series Chip... | 14    | ehci       | 66743A51CC |
-| 8086:2934 | 17aa:20f0 | Intel      | 82801I (ICH9 Family) USB ... | 11    | uhci       | BDBD2D0A05 |
-| 8086:2935 | 17aa:20f0 | Intel      | 82801I (ICH9 Family) USB ... | 11    | uhci       | BDBD2D0A05 |
-| 8086:2936 | 17aa:20f0 | Intel      | 82801I (ICH9 Family) USB ... | 11    | uhci       | BDBD2D0A05 |
-| 8086:2937 | 17aa:20f0 | Intel      | 82801I (ICH9 Family) USB ... | 11    | uhci       | BDBD2D0A05 |
-| 8086:2938 | 17aa:20f0 | Intel      | 82801I (ICH9 Family) USB ... | 11    | uhci       | BDBD2D0A05 |
-| 8086:2939 | 17aa:20f0 | Intel      | 82801I (ICH9 Family) USB ... | 11    | uhci       | BDBD2D0A05 |
-| 8086:293a | 17aa:20f1 | Intel      | 82801I (ICH9 Family) USB2... | 11    | ehci       | BDBD2D0A05 |
-| 8086:293c | 17aa:20f1 | Intel      | 82801I (ICH9 Family) USB2... | 11    | ehci       | BDBD2D0A05 |
-| 8086:3b34 | 17aa:2163 | Intel      | 5 Series/3400 Series Chip... | 10    | ehci       | C887FF2917 |
-| 8086:3b3c | 17aa:2163 | Intel      | 5 Series/3400 Series Chip... | 10    | ehci       | C887FF2917 |
-| 10de:0aa5 | 10de:cb79 | Nvidia     | MCP79 OHCI USB 1.1 Contro... | 8     | ohci       | F46146B79E |
-| 10de:0aa6 | 10de:cb79 | Nvidia     | MCP79 EHCI USB 2.0 Contro... | 8     | ehci       | F46146B79E |
-| 10de:0aa7 | 10de:cb79 | Nvidia     | MCP79 OHCI USB 1.1 Contro... | 8     | ohci       | F46146B79E |
-| 10de:0aa9 | 10de:cb79 | Nvidia     | MCP79 EHCI USB 2.0 Contro... | 8     | ehci       | F46146B79E |
-| 8086:1c26 | 17aa:21ce | Intel      | 6 Series/C200 Series Chip... | 8     | ehci       | DC29D714D9 |
-| 8086:1c2d | 17aa:21ce | Intel      | 6 Series/C200 Series Chip... | 8     | ehci       | DC29D714D9 |
-| 8086:1e26 | 17aa:21f3 | Intel      | 7 Series/C216 Chipset Fam... | 8     | ehci       | 0F001F65D2 |
-| 8086:1e2d | 17aa:21f3 | Intel      | 7 Series/C216 Chipset Fam... | 8     | ehci       | 0F001F65D2 |
-| 8086:1e31 | 17aa:21f3 | Intel      | 7 Series/C210 Series Chip... | 8     | xhci       | 0F001F65D2 |
-| 8086:1c26 | 8086:7270 | Intel      | 6 Series/C200 Series Chip... | 7     | ehci       | 193936B5CA |
-| 8086:1c27 | 8086:7270 | Intel      | 6 Series/C200 Series Chip... | 7     | uhci       | 193936B5CA |
-| 8086:1c2c | 8086:7270 | Intel      | 6 Series/C200 Series Chip... | 7     | uhci       | 193936B5CA |
-| 8086:1c2d | 8086:7270 | Intel      | 6 Series/C200 Series Chip... | 7     | ehci       | 193936B5CA |
-| 8086:1e26 | 17aa:21fa | Intel      | 7 Series/C216 Chipset Fam... | 7     | ehci       | AB871769F0 |
-| 8086:1e2d | 17aa:21fa | Intel      | 7 Series/C216 Chipset Fam... | 7     | ehci       | AB871769F0 |
-| 8086:1e31 | 17aa:21fa | Intel      | 7 Series/C210 Series Chip... | 7     | xhci       | AB871769F0 |
-| 8086:9d2f | 1043:201f | Intel      | Sunrise Point-LP USB 3.0 ... | 7     | xhci       | A9C4506364 |
-| 8086:15c1 | 17aa:2279 | Intel      | JHL6240 Thunderbolt 3 USB... | 6     | xhci       | 6311D603FF |
-| 8086:2830 | 17aa:20aa | Intel      | 82801H (ICH8 Family) USB ... | 6     | uhci       | D223A9B1FB |
-| 8086:2831 | 17aa:20aa | Intel      | 82801H (ICH8 Family) USB ... | 6     | uhci       | D223A9B1FB |
-| 8086:2834 | 17aa:20aa | Intel      | 82801H (ICH8 Family) USB ... | 6     | uhci       | D223A9B1FB |
-| 8086:2835 | 17aa:20aa | Intel      | 82801H (ICH8 Family) USB ... | 6     | uhci       | D223A9B1FB |
-| 8086:2836 | 17aa:20ab | Intel      | 82801H (ICH8 Family) USB2... | 6     | ehci       | D223A9B1FB |
-| 8086:283a | 17aa:20ab | Intel      | 82801H (ICH8 Family) USB2... | 6     | ehci       | D223A9B1FB |
-| 8086:8c26 | 17aa:220e | Intel      | 8 Series/C220 Series Chip... | 6     | ehci       | 7660F9B6DB |
-| 8086:8c2d | 17aa:220e | Intel      | 8 Series/C220 Series Chip... | 6     | ehci       | 7660F9B6DB |
-| 8086:8c31 | 17aa:220e | Intel      | 8 Series/C220 Series Chip... | 6     | xhci       | 7660F9B6DB |
-| 8086:9ca6 | 17aa:5034 | Intel      | Wildcat Point-LP USB EHCI... | 6     | ehci       | AC567BD12D |
-| 8086:9cb1 | 17aa:2226 | Intel      | Wildcat Point-LP USB xHCI... | 6     | xhci       | 107AC19795 |
-| 8086:9cb1 | 17aa:5034 | Intel      | Wildcat Point-LP USB xHCI... | 6     | xhci       | AC567BD12D |
-| 8086:9ded | 17aa:2279 | Intel      | Cannon Point-LP USB 3.1 x... | 6     | xhci       | 6311D603FF |
-| 8086:1c26 | 17aa:21cf | Intel      | 6 Series/C200 Series Chip... | 5     | ehci       | 49DACEE7D0 |
-| 8086:1c2d | 17aa:21cf | Intel      | 6 Series/C200 Series Chip... | 5     | ehci       | 49DACEE7D0 |
-| 8086:9c26 | 1028:05ca | Intel      | 8 Series USB EHCI #1         | 5     | ehci       | 1DBD9A5CEE |
-| 8086:9c26 | 1028:0651 | Intel      | 8 Series USB EHCI #1         | 5     | ehci       | 0D1D75A914 |
-| 8086:9c31 | 1028:05ca | Intel      | 8 Series USB xHCI HC         | 5     | xhci       | 1DBD9A5CEE |
-| 8086:9ca6 | 17aa:2226 | Intel      | Wildcat Point-LP USB EHCI... | 5     | ehci       | 107AC19795 |
-| 8086:9d2f | 17aa:2238 | Intel      | Sunrise Point-LP USB 3.0 ... | 5     | xhci       | 821C81E652 |
-| 8086:9d2f | 17aa:5062 | Intel      | Sunrise Point-LP USB 3.0 ... | 5     | xhci       | 88C27E65D7 |
-| 1022:145f | 1022:145c | AMD        | Zeppelin USB 3.0 Host con... | 4     | xhci       | F4A0F0941B |
-| 8086:15c1 | 2222:1111 | Intel      | JHL6240 Thunderbolt 3 USB... | 4     | xhci       | EBD44C21D9 |
-| 8086:1e26 | 1028:0597 | Intel      | 7 Series/C216 Chipset Fam... | 4     | ehci       | 9050866FB2 |
-| 8086:1e26 | 17aa:21f6 | Intel      | 7 Series/C216 Chipset Fam... | 4     | ehci       | 39F3A4F234 |
-| 8086:1e26 | 17aa:21fb | Intel      | 7 Series/C216 Chipset Fam... | 4     | ehci       | FACF6FA0F8 |
-| 8086:1e26 | 8086:1e26 | Intel      | 7 Series/C216 Chipset Fam... | 4     | ehci       | 424ADD8B03 |
-| 8086:1e26 | 8086:7270 | Intel      | 7 Series/C216 Chipset Fam... | 4     | ehci       | AFC70D9C77 |
-| 8086:1e2d | 1028:0597 | Intel      | 7 Series/C216 Chipset Fam... | 4     | ehci       | 9050866FB2 |
-| 8086:1e2d | 17aa:21f6 | Intel      | 7 Series/C216 Chipset Fam... | 4     | ehci       | 39F3A4F234 |
-| 8086:1e2d | 17aa:21fb | Intel      | 7 Series/C216 Chipset Fam... | 4     | ehci       | FACF6FA0F8 |
-| 8086:1e2d | 8086:1e2d | Intel      | 7 Series/C216 Chipset Fam... | 4     | ehci       | 424ADD8B03 |
-| 8086:1e2d | 8086:7270 | Intel      | 7 Series/C216 Chipset Fam... | 4     | ehci       | AFC70D9C77 |
-| 8086:1e31 | 1028:0597 | Intel      | 7 Series/C210 Series Chip... | 4     | xhci       | 9050866FB2 |
-| 8086:1e31 | 17aa:21f6 | Intel      | 7 Series/C210 Series Chip... | 4     | xhci       | 39F3A4F234 |
-| 8086:1e31 | 17aa:21fb | Intel      | 7 Series/C210 Series Chip... | 4     | xhci       | FACF6FA0F8 |
-| 8086:1e31 | 8086:1e31 | Intel      | 7 Series/C210 Series Chip... | 4     | xhci       | 424ADD8B03 |
-| 8086:1e31 | 8086:7270 | Intel      | 7 Series/C210 Series Chip... | 4     | xhci       | AFC70D9C77 |
-| 8086:27c8 | 17aa:200a | Intel      | NM10/ICH7 Family USB UHCI... | 4     | uhci       | 5375F351A5 |
-| 8086:27c9 | 17aa:200a | Intel      | NM10/ICH7 Family USB UHCI... | 4     | uhci       | 5375F351A5 |
-| 8086:27ca | 17aa:200a | Intel      | NM10/ICH7 Family USB UHCI... | 4     | uhci       | 5375F351A5 |
-| 8086:27cb | 17aa:200a | Intel      | NM10/ICH7 Family USB UHCI... | 4     | uhci       | 5375F351A5 |
-| 8086:27cc | 17aa:200b | Intel      | NM10/ICH7 Family USB2 EHC... | 4     | ehci       | 5375F351A5 |
-| 8086:8c26 | 1028:05cc | Intel      | 8 Series/C220 Series Chip... | 4     | ehci       | 1847C0AADB |
-| 8086:8c2d | 1028:05cc | Intel      | 8 Series/C220 Series Chip... | 4     | ehci       | 1847C0AADB |
-| 8086:8c31 | 1028:05cc | Intel      | 8 Series/C220 Series Chip... | 4     | xhci       | 1847C0AADB |
-| 8086:8c31 | 8086:7270 | Intel      | 8 Series/C220 Series Chip... | 4     | xhci       | 1C9FEEF8E7 |
-| 8086:9c26 | 1043:201f | Intel      | 8 Series USB EHCI #1         | 4     | ehci       | E056F1C77C |
-| 8086:9c26 | 8086:7270 | Intel      | 8 Series USB EHCI #1         | 4     | ehci       | 1F2D078D2E |
-| 8086:9c31 | 1043:201f | Intel      | 8 Series USB xHCI HC         | 4     | xhci       | E056F1C77C |
-| 8086:9c31 | 8086:7270 | Intel      | 8 Series USB xHCI HC         | 4     | xhci       | 1F2D078D2E |
-| 8086:9d2f | 103c:8079 | Intel      | Sunrise Point-LP USB 3.0 ... | 4     | xhci       | 2B97986DE1 |
-| 8086:9ded | 17aa:5072 | Intel      | Cannon Point-LP USB 3.1 x... | 4     | xhci       | 852A900303 |
-| 1022:15e0 | 1043:201f | AMD        | Raven USB 3.1                | 3     | xhci       | 37E4E7C85C |
-| 1022:15e0 | 17aa:5122 | AMD        | Raven USB 3.1                | 3     | xhci       | 2F1BA02130 |
-| 1022:15e1 | 1043:201f | AMD        | Raven USB 3.1                | 3     | xhci       | 37E4E7C85C |
-| 1022:15e1 | 17aa:5122 | AMD        | Raven USB 3.1                | 3     | xhci       | 2F1BA02130 |
-| 1033:0194 | 17aa:21da | NEC Com... | uPD720200 USB 3.0 Host Co... | 3     | xhci       | 837F5D3DA2 |
-| 10de:1ada |           | Nvidia     | TU106 USB 3.1 Host Contro... | 3     | xhci       | 0AC6AED43B |
-| 10ec:816d | 17aa:5122 | Realtek... | RTL811x EHCI host controller | 3     | ehci       | 2F1BA02130 |
-| 1912:0015 |           | Renesas... | uPD720202 USB 3.0 Host Co... | 3     | xhci       | BD88655975 |
-| 8086:02ed | 1028:09ec | Intel      | Comet Lake PCH-LP USB 3.1... | 3     | xhci       | 80D7BF959A |
-| 8086:1c26 | 1028:0493 | Intel      | 6 Series/C200 Series Chip... | 3     | ehci       | 6BF1F5FE84 |
-| 8086:1c26 | 10f7:8338 | Intel      | 6 Series/C200 Series Chip... | 3     | ehci       | 6BBADBA65D |
-| 8086:1c26 | 17aa:3975 | Intel      | 6 Series/C200 Series Chip... | 3     | ehci       | B8E35AACDB |
-| 8086:1c2d | 1028:0493 | Intel      | 6 Series/C200 Series Chip... | 3     | ehci       | 6BF1F5FE84 |
-| 8086:1c2d | 10f7:8338 | Intel      | 6 Series/C200 Series Chip... | 3     | ehci       | 6BBADBA65D |
-| 8086:1c2d | 17aa:3975 | Intel      | 6 Series/C200 Series Chip... | 3     | ehci       | B8E35AACDB |
-| 8086:1e26 | 1043:14c7 | Intel      | 7 Series/C216 Chipset Fam... | 3     | ehci       | E887EE2FF5 |
-| 8086:1e26 | 17aa:21f9 | Intel      | 7 Series/C216 Chipset Fam... | 3     | ehci       | B659B95D1A |
+| ID        | Subsystem | MFG              | Name                                 | Count | Driver     | Probe |
+|-----------|-----------|------------------|--------------------------------------|-------|------------|-------|
+| 8086:3b34 | 17aa:2163 | Intel            | 5 Series/3400 Series Chipset USB2... | 21    | ehci       | [BCD5BEA2B7](<Notebook/Lenovo/ThinkPad/ThinkPad T410 2537BN8/4A58F0F69086/OPNSENSE-22.1.2/13.0-STABLE/AMD64/BCD5BEA2B7>) |
+| 8086:3b3c | 17aa:2163 | Intel            | 5 Series/3400 Series Chipset USB2... | 21    | ehci       | [BCD5BEA2B7](<Notebook/Lenovo/ThinkPad/ThinkPad T410 2537BN8/4A58F0F69086/OPNSENSE-22.1.2/13.0-STABLE/AMD64/BCD5BEA2B7>) |
+| 8086:1c26 | 17aa:21da | Intel            | 6 Series/C200 Series Chipset Fami... | 19    | ehci       | [148A268A0F](<Notebook/Lenovo/ThinkPad/ThinkPad X220 4293B43/AD955BCC7F71/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/148A268A0F>) |
+| 8086:1c2d | 17aa:21da | Intel            | 6 Series/C200 Series Chipset Fami... | 19    | ehci       | [148A268A0F](<Notebook/Lenovo/ThinkPad/ThinkPad X220 4293B43/AD955BCC7F71/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/148A268A0F>) |
+| 8086:2934 | 17aa:20f0 | Intel            | 82801I (ICH9 Family) USB UHCI Con... | 17    | uhci       | [B0A9802877](<Notebook/Lenovo/ThinkPad/ThinkPad SL510 2847R96/16806C85881A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/B0A9802877>) |
+| 8086:2935 | 17aa:20f0 | Intel            | 82801I (ICH9 Family) USB UHCI Con... | 17    | uhci       | [B0A9802877](<Notebook/Lenovo/ThinkPad/ThinkPad SL510 2847R96/16806C85881A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/B0A9802877>) |
+| 8086:2936 | 17aa:20f0 | Intel            | 82801I (ICH9 Family) USB UHCI Con... | 17    | uhci       | [B0A9802877](<Notebook/Lenovo/ThinkPad/ThinkPad SL510 2847R96/16806C85881A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/B0A9802877>) |
+| 8086:2937 | 17aa:20f0 | Intel            | 82801I (ICH9 Family) USB UHCI Con... | 17    | uhci       | [B0A9802877](<Notebook/Lenovo/ThinkPad/ThinkPad SL510 2847R96/16806C85881A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/B0A9802877>) |
+| 8086:2938 | 17aa:20f0 | Intel            | 82801I (ICH9 Family) USB UHCI Con... | 17    | uhci       | [B0A9802877](<Notebook/Lenovo/ThinkPad/ThinkPad SL510 2847R96/16806C85881A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/B0A9802877>) |
+| 8086:2939 | 17aa:20f0 | Intel            | 82801I (ICH9 Family) USB UHCI Con... | 17    | uhci       | [B0A9802877](<Notebook/Lenovo/ThinkPad/ThinkPad SL510 2847R96/16806C85881A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/B0A9802877>) |
+| 8086:293a | 17aa:20f1 | Intel            | 82801I (ICH9 Family) USB2 EHCI Co... | 17    | ehci       | [B0A9802877](<Notebook/Lenovo/ThinkPad/ThinkPad SL510 2847R96/16806C85881A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/B0A9802877>) |
+| 8086:293c | 17aa:20f1 | Intel            | 82801I (ICH9 Family) USB2 EHCI Co... | 17    | ehci       | [B0A9802877](<Notebook/Lenovo/ThinkPad/ThinkPad SL510 2847R96/16806C85881A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/B0A9802877>) |
+| 10de:0aa5 | 10de:cb79 | Nvidia           | MCP79 OHCI USB 1.1 Controller        | 14    | ohci       | [D680290D84](<Notebook/Apple/MacBook6/MacBook6,1/B24103297D7A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/D680290D84>) |
+| 10de:0aa6 | 10de:cb79 | Nvidia           | MCP79 EHCI USB 2.0 Controller        | 14    | ehci       | [D680290D84](<Notebook/Apple/MacBook6/MacBook6,1/B24103297D7A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/D680290D84>) |
+| 10de:0aa7 | 10de:cb79 | Nvidia           | MCP79 OHCI USB 1.1 Controller        | 14    | ohci       | [D680290D84](<Notebook/Apple/MacBook6/MacBook6,1/B24103297D7A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/D680290D84>) |
+| 10de:0aa9 | 10de:cb79 | Nvidia           | MCP79 EHCI USB 2.0 Controller        | 14    | ehci       | [D680290D84](<Notebook/Apple/MacBook6/MacBook6,1/B24103297D7A/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/D680290D84>) |
+| 8086:1e26 | 17aa:21fa | Intel            | 7 Series/C216 Chipset Family USB ... | 14    | ehci       | [06C6A282CA](<Notebook/Lenovo/ThinkPad/ThinkPad X230 23254G7/FF7D8D42B37A/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/06C6A282CA>) |
+| 8086:1e2d | 17aa:21fa | Intel            | 7 Series/C216 Chipset Family USB ... | 14    | ehci       | [06C6A282CA](<Notebook/Lenovo/ThinkPad/ThinkPad X230 23254G7/FF7D8D42B37A/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/06C6A282CA>) |
+| 8086:1e31 | 17aa:21fa | Intel            | 7 Series/C210 Series Chipset Fami... | 13    | xhci       | [06C6A282CA](<Notebook/Lenovo/ThinkPad/ThinkPad X230 23254G7/FF7D8D42B37A/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/06C6A282CA>) |
+| 8086:9c31 | 8086:7270 | Intel            | 8 Series USB xHCI HC                 | 13    | xhci       | [974E1F4E5E](<Notebook/Others/Others/Others/499A7AC3FA34/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/974E1F4E5E>) |
+| 1022:145f | 1022:145c | AMD              | Zeppelin USB 3.0 Host controller     | 12    | xhci       | [4D8F19BA12](<Notebook/Deciso/Netboard/Netboard A20/94D2C7F0ED24/OPNSENSE-22.1/13.0-STABLE/AMD64/4D8F19BA12>) |
+| 8086:1c26 | 17aa:21ce | Intel            | 6 Series/C200 Series Chipset Fami... | 12    | ehci       | [8BD2318FB6](<Notebook/Lenovo/ThinkPad/ThinkPad T420 4236MBU/D2E0D93C2306/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/8BD2318FB6>) |
+| 8086:1c2d | 17aa:21ce | Intel            | 6 Series/C200 Series Chipset Fami... | 12    | ehci       | [8BD2318FB6](<Notebook/Lenovo/ThinkPad/ThinkPad T420 4236MBU/D2E0D93C2306/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/8BD2318FB6>) |
+| 8086:9c26 | 8086:7270 | Intel            | 8 Series USB EHCI #1                 | 12    | ehci       | [974E1F4E5E](<Notebook/Others/Others/Others/499A7AC3FA34/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/974E1F4E5E>) |
+| 8086:9cb1 | 17aa:2226 | Intel            | Wildcat Point-LP USB xHCI Controller | 12    | xhci       | [4BA527DC9B](<Notebook/Lenovo/ThinkPad/ThinkPad X250 20CMCTO1WW/E6AE328AD30B/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/4BA527DC9B>) |
+| 8086:1c26 | 8086:7270 | Intel            | 6 Series/C200 Series Chipset Fami... | 11    | ehci       | [AA484C30A8](<Notebook/Apple/MacBookPro8/MacBookPro8,1/83A908F15226/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/AA484C30A8>) |
+| 8086:1c2d | 8086:7270 | Intel            | 6 Series/C200 Series Chipset Fami... | 11    | ehci       | [AA484C30A8](<Notebook/Apple/MacBookPro8/MacBookPro8,1/83A908F15226/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/AA484C30A8>) |
+| 8086:1e26 | 17aa:21f3 | Intel            | 7 Series/C216 Chipset Family USB ... | 11    | ehci       | [86FD351C81](<Notebook/Lenovo/ThinkPad/ThinkPad T430 2349AK1/08273574C200/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/86FD351C81>) |
+| 8086:1e2d | 17aa:21f3 | Intel            | 7 Series/C216 Chipset Family USB ... | 11    | ehci       | [86FD351C81](<Notebook/Lenovo/ThinkPad/ThinkPad T430 2349AK1/08273574C200/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/86FD351C81>) |
+| 8086:1e31 | 17aa:21f3 | Intel            | 7 Series/C210 Series Chipset Fami... | 11    | xhci       | [86FD351C81](<Notebook/Lenovo/ThinkPad/ThinkPad T430 2349AK1/08273574C200/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/86FD351C81>) |
+| 8086:1c27 | 8086:7270 | Intel            | 6 Series/C200 Series Chipset Fami... | 10    | uhci       | [AA484C30A8](<Notebook/Apple/MacBookPro8/MacBookPro8,1/83A908F15226/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/AA484C30A8>) |
+| 8086:1c2c | 8086:7270 | Intel            | 6 Series/C200 Series Chipset Fami... | 10    | uhci       | [AA484C30A8](<Notebook/Apple/MacBookPro8/MacBookPro8,1/83A908F15226/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/AA484C30A8>) |
+| 8086:1e26 | 8086:7270 | Intel            | 7 Series/C216 Chipset Family USB ... | 10    | ehci       | [64CCF1E6A0](<Notebook/Apple/MacBookPro10/MacBookPro10,1/60ED6011F0FC/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/64CCF1E6A0>) |
+| 8086:1e2d | 8086:7270 | Intel            | 7 Series/C216 Chipset Family USB ... | 10    | ehci       | [64CCF1E6A0](<Notebook/Apple/MacBookPro10/MacBookPro10,1/60ED6011F0FC/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/64CCF1E6A0>) |
+| 8086:1e31 | 8086:7270 | Intel            | 7 Series/C210 Series Chipset Fami... | 10    | xhci       | [64CCF1E6A0](<Notebook/Apple/MacBookPro10/MacBookPro10,1/60ED6011F0FC/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/64CCF1E6A0>) |
+| 8086:2834 |           | Intel            | 82801H (ICH8 Family) USB UHCI Con... | 10    | uhci       | [E0CF5200DE](<Notebook/Apple/MacBook4/MacBook4,1/07CFC301CF14/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E0CF5200DE>) |
+| 8086:2830 | 17aa:20aa | Intel            | 82801H (ICH8 Family) USB UHCI Con... | 9     | uhci       | [F5F25EFDCC](<Notebook/Lenovo/ThinkPad/ThinkPad T61 766301U/A1D00057611B/HELLOSYSTEM-0.7.0/13.0-RELEASE-P7/AMD64/F5F25EFDCC>) |
+| 8086:2831 | 17aa:20aa | Intel            | 82801H (ICH8 Family) USB UHCI Con... | 9     | uhci       | [F5F25EFDCC](<Notebook/Lenovo/ThinkPad/ThinkPad T61 766301U/A1D00057611B/HELLOSYSTEM-0.7.0/13.0-RELEASE-P7/AMD64/F5F25EFDCC>) |
+| 8086:2834 | 17aa:20aa | Intel            | 82801H (ICH8 Family) USB UHCI Con... | 9     | uhci       | [F5F25EFDCC](<Notebook/Lenovo/ThinkPad/ThinkPad T61 766301U/A1D00057611B/HELLOSYSTEM-0.7.0/13.0-RELEASE-P7/AMD64/F5F25EFDCC>) |
+| 8086:2835 | 17aa:20aa | Intel            | 82801H (ICH8 Family) USB UHCI Con... | 9     | uhci       | [F5F25EFDCC](<Notebook/Lenovo/ThinkPad/ThinkPad T61 766301U/A1D00057611B/HELLOSYSTEM-0.7.0/13.0-RELEASE-P7/AMD64/F5F25EFDCC>) |
+| 8086:2836 | 17aa:20ab | Intel            | 82801H (ICH8 Family) USB2 EHCI Co... | 9     | ehci       | [F5F25EFDCC](<Notebook/Lenovo/ThinkPad/ThinkPad T61 766301U/A1D00057611B/HELLOSYSTEM-0.7.0/13.0-RELEASE-P7/AMD64/F5F25EFDCC>) |
+| 8086:283a | 17aa:20ab | Intel            | 82801H (ICH8 Family) USB2 EHCI Co... | 9     | ehci       | [F5F25EFDCC](<Notebook/Lenovo/ThinkPad/ThinkPad T61 766301U/A1D00057611B/HELLOSYSTEM-0.7.0/13.0-RELEASE-P7/AMD64/F5F25EFDCC>) |
+| 8086:8c26 | 17aa:220e | Intel            | 8 Series/C220 Series Chipset Fami... | 9     | ehci       | [CBA9255F4A](<Notebook/Lenovo/ThinkPad/ThinkPad T440p 20AWS1JN00/4F89B9A156FF/FREEBSD-13.0/13.0-RELEASE/AMD64/CBA9255F4A>) |
+| 8086:8c2d | 17aa:220e | Intel            | 8 Series/C220 Series Chipset Fami... | 9     | ehci       | [CBA9255F4A](<Notebook/Lenovo/ThinkPad/ThinkPad T440p 20AWS1JN00/4F89B9A156FF/FREEBSD-13.0/13.0-RELEASE/AMD64/CBA9255F4A>) |
+| 8086:8c31 | 17aa:220e | Intel            | 8 Series/C220 Series Chipset Fami... | 9     | xhci       | [CBA9255F4A](<Notebook/Lenovo/ThinkPad/ThinkPad T440p 20AWS1JN00/4F89B9A156FF/FREEBSD-13.0/13.0-RELEASE/AMD64/CBA9255F4A>) |
+| 8086:9d2f | 1043:201f | Intel            | Sunrise Point-LP USB 3.0 xHCI Con... | 9     | xhci       | [795F6E5A42](<Notebook/ASUSTek Computer/X556/X556UAK/50A55BA89BAB/FREEBSD-13.0-P2/13.0-RELEASE-P1/AMD64/795F6E5A42>) |
+| 8086:1c26 | 17aa:21cf | Intel            | 6 Series/C200 Series Chipset Fami... | 8     | ehci       | [82F5612822](<Notebook/Lenovo/ThinkPad/ThinkPad T520 4243E51/EB551E7DDB1F/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/82F5612822>) |
+| 8086:1c2d | 17aa:21cf | Intel            | 6 Series/C200 Series Chipset Fami... | 8     | ehci       | [82F5612822](<Notebook/Lenovo/ThinkPad/ThinkPad T520 4243E51/EB551E7DDB1F/GHOSTBSD-21.08.27/13.0-STABLE/AMD64/82F5612822>) |
+| 8086:9c26 | 17aa:220c | Intel            | 8 Series USB EHCI #1                 | 8     | ehci       | [2AF47B6502](<Notebook/Lenovo/ThinkPad/ThinkPad T440s 20AQ006HUS/5B022BB303EA/NOMADBSD-5806F915/13.0-RELEASE/AMD64/2AF47B6502>) |
+| 8086:9c31 | 17aa:220c | Intel            | 8 Series USB xHCI HC                 | 8     | xhci       | [2AF47B6502](<Notebook/Lenovo/ThinkPad/ThinkPad T440s 20AQ006HUS/5B022BB303EA/NOMADBSD-5806F915/13.0-RELEASE/AMD64/2AF47B6502>) |
+| 8086:9c31 | 17aa:3978 | Intel            | 8 Series USB xHCI HC                 | 8     | xhci       | [A1F85AFF27](<Notebook/Lenovo/Z50-70/Z50-70 20354/491D65A1BD89/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/A1F85AFF27>) |
+| 8086:9ca6 | 17aa:2226 | Intel            | Wildcat Point-LP USB EHCI Controller | 8     | ehci       | [4AE2360503](<Notebook/Lenovo/ThinkPad/ThinkPad X250 20CL001GUS/AB333C060A09/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/4AE2360503>) |
+| 8086:9ca6 | 17aa:5034 | Intel            | Wildcat Point-LP USB EHCI Controller | 8     | ehci       | [BC2860431E](<Notebook/Lenovo/ThinkPad/ThinkPad T450 20BUS0VH08/CDAB4EDF622D/GHOSTBSD-22.01.12/13.0-STABLE/AMD64/BC2860431E>) |
+| 8086:9cb1 | 17aa:5034 | Intel            | Wildcat Point-LP USB xHCI Controller | 8     | xhci       | [BC2860431E](<Notebook/Lenovo/ThinkPad/ThinkPad T450 20BUS0VH08/CDAB4EDF622D/GHOSTBSD-22.01.12/13.0-STABLE/AMD64/BC2860431E>) |
+| 8086:15c1 | 17aa:2279 | Intel            | JHL6240 Thunderbolt 3 USB 3.1 Con... | 7     | xhci       | [4147A5824D](<Notebook/Lenovo/ThinkPad/ThinkPad T590 20N4CTO1WW/3C494D1552EB/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/4147A5824D>) |
+| 8086:15c1 | 2222:1111 | Intel            | JHL6240 Thunderbolt 3 USB 3.1 Con... | 7     | xhci       | [556FCB7E5E](<Notebook/Lenovo/ThinkPad/ThinkPad T480s 20L8S1GX00/EA208CC61F28/FREEBSD-13.0/13.0-RELEASE/AMD64/556FCB7E5E>) |
+| 8086:1e26 | 17aa:3977 | Intel            | 7 Series/C216 Chipset Family USB ... | 7     | ehci       | [478714C7C9](<Notebook/Lenovo/G580/G580 20150/D8442DC4CB7A/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/478714C7C9>) |
+| 8086:1e2d | 17aa:3977 | Intel            | 7 Series/C216 Chipset Family USB ... | 7     | ehci       | [478714C7C9](<Notebook/Lenovo/G580/G580 20150/D8442DC4CB7A/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/478714C7C9>) |
+| 8086:27c8 | 17aa:200a | Intel            | NM10/ICH7 Family USB UHCI Control... | 7     | uhci       | [91D67BA784](<Notebook/Lenovo/ThinkPad/ThinkPad R60e 0658W2M/505133B14946/FREEBSD-13.0/13.0-RELEASE/I386/91D67BA784>) |
+| 8086:27c9 | 17aa:200a | Intel            | NM10/ICH7 Family USB UHCI Control... | 7     | uhci       | [91D67BA784](<Notebook/Lenovo/ThinkPad/ThinkPad R60e 0658W2M/505133B14946/FREEBSD-13.0/13.0-RELEASE/I386/91D67BA784>) |
+| 8086:27ca | 17aa:200a | Intel            | NM10/ICH7 Family USB UHCI Control... | 7     | uhci       | [91D67BA784](<Notebook/Lenovo/ThinkPad/ThinkPad R60e 0658W2M/505133B14946/FREEBSD-13.0/13.0-RELEASE/I386/91D67BA784>) |
+| 8086:27cb | 17aa:200a | Intel            | NM10/ICH7 Family USB UHCI Control... | 7     | uhci       | [91D67BA784](<Notebook/Lenovo/ThinkPad/ThinkPad R60e 0658W2M/505133B14946/FREEBSD-13.0/13.0-RELEASE/I386/91D67BA784>) |
+| 8086:27cc | 17aa:200b | Intel            | NM10/ICH7 Family USB2 EHCI Contro... | 7     | ehci       | [91D67BA784](<Notebook/Lenovo/ThinkPad/ThinkPad R60e 0658W2M/505133B14946/FREEBSD-13.0/13.0-RELEASE/I386/91D67BA784>) |
+| 8086:9c26 | 1028:0651 | Intel            | 8 Series USB EHCI #1                 | 7     | ehci       | [6283CB4190](<Notebook/Dell/Inspiron/Inspiron 3442/DF9A7A49AE6A/FREEBSD-13.0-P3/13.0-RELEASE/AMD64/6283CB4190>) |
+| 8086:9c26 | 17aa:3978 | Intel            | 8 Series USB EHCI #1                 | 7     | ehci       | [A1F85AFF27](<Notebook/Lenovo/Z50-70/Z50-70 20354/491D65A1BD89/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/A1F85AFF27>) |
+| 8086:9d2f | 17aa:5062 | Intel            | Sunrise Point-LP USB 3.0 xHCI Con... | 7     | xhci       | [2E1C585715](<Notebook/Lenovo/ThinkPad/ThinkPad X270 W10DG 20K5S0BM01/C223E0B01844/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/2E1C585715>) |
+| 8086:9ded | 17aa:2279 | Intel            | Cannon Point-LP USB 3.1 xHCI Cont... | 7     | xhci       | [4147A5824D](<Notebook/Lenovo/ThinkPad/ThinkPad T590 20N4CTO1WW/3C494D1552EB/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/4147A5824D>) |
+| 8086:1e26 | 17aa:21fb | Intel            | 7 Series/C216 Chipset Family USB ... | 6     | ehci       | [0B6AB3BA1B](<Notebook/Lenovo/ThinkPad/ThinkPad T430s 2356JH4/C3D86E55EECC/OPNSENSE-21.7.6/12.1-RELEASE-P21-HBSD/AMD64/0B6AB3BA1B>) |
+| 8086:1e2d | 17aa:21fb | Intel            | 7 Series/C216 Chipset Family USB ... | 6     | ehci       | [0B6AB3BA1B](<Notebook/Lenovo/ThinkPad/ThinkPad T430s 2356JH4/C3D86E55EECC/OPNSENSE-21.7.6/12.1-RELEASE-P21-HBSD/AMD64/0B6AB3BA1B>) |
+| 8086:1e31 | 17aa:21fb | Intel            | 7 Series/C210 Series Chipset Fami... | 6     | xhci       | [0B6AB3BA1B](<Notebook/Lenovo/ThinkPad/ThinkPad T430s 2356JH4/C3D86E55EECC/OPNSENSE-21.7.6/12.1-RELEASE-P21-HBSD/AMD64/0B6AB3BA1B>) |
+| 8086:1e31 | 17aa:3977 | Intel            | 7 Series/C210 Series Chipset Fami... | 6     | xhci       | [478714C7C9](<Notebook/Lenovo/G580/G580 20150/D8442DC4CB7A/HELLOSYSTEM-0.6.0/12.2-RELEASE/AMD64/478714C7C9>) |
+| 8086:2830 | 106b:00a1 | Intel            | 82801H (ICH8 Family) USB UHCI Con... | 6     | uhci       | [E0CF5200DE](<Notebook/Apple/MacBook4/MacBook4,1/07CFC301CF14/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E0CF5200DE>) |
+| 8086:2831 | 106b:00a1 | Intel            | 82801H (ICH8 Family) USB UHCI Con... | 6     | uhci       | [E0CF5200DE](<Notebook/Apple/MacBook4/MacBook4,1/07CFC301CF14/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E0CF5200DE>) |
+| 8086:2832 | 106b:00a1 | Intel            | 82801H (ICH8 Family) USB UHCI Con... | 6     | uhci       | [E0CF5200DE](<Notebook/Apple/MacBook4/MacBook4,1/07CFC301CF14/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E0CF5200DE>) |
+| 8086:2832 | 17aa:20aa | Intel            | 82801H (ICH8 Family) USB UHCI Con... | 6     | uhci       | [F5F25EFDCC](<Notebook/Lenovo/ThinkPad/ThinkPad T61 766301U/A1D00057611B/HELLOSYSTEM-0.7.0/13.0-RELEASE-P7/AMD64/F5F25EFDCC>) |
+| 8086:2835 | 106b:00a1 | Intel            | 82801H (ICH8 Family) USB UHCI Con... | 6     | uhci       | [E0CF5200DE](<Notebook/Apple/MacBook4/MacBook4,1/07CFC301CF14/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E0CF5200DE>) |
+| 8086:2836 | 106b:00a1 | Intel            | 82801H (ICH8 Family) USB2 EHCI Co... | 6     | ehci       | [E0CF5200DE](<Notebook/Apple/MacBook4/MacBook4,1/07CFC301CF14/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E0CF5200DE>) |
+| 8086:283a | 106b:00a1 | Intel            | 82801H (ICH8 Family) USB2 EHCI Co... | 6     | ehci       | [E0CF5200DE](<Notebook/Apple/MacBook4/MacBook4,1/07CFC301CF14/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/E0CF5200DE>) |
+| 8086:9a1b | 2222:1111 | Intel            | Tiger Lake-LP Thunderbolt 4 NHI #0   | 6     |            | [9E440B5500](<Notebook/Dell/Inspiron/Inspiron 5502/B3B09B220C14/FREEBSD-13.1-BETA1/13.1-BETA1/AMD64/9E440B5500>) |
+| 8086:9c26 | 1028:05ca | Intel            | 8 Series USB EHCI #1                 | 6     | ehci       | [762D8366D0](<Notebook/Dell/Latitude/Latitude E7240/B8876AE6AF27/FREEBSD-13.0-RC4/13.0-RC4/AMD64/762D8366D0>) |
+| 8086:9c31 | 1028:05ca | Intel            | 8 Series USB xHCI HC                 | 6     | xhci       | [762D8366D0](<Notebook/Dell/Latitude/Latitude E7240/B8876AE6AF27/FREEBSD-13.0-RC4/13.0-RC4/AMD64/762D8366D0>) |
+| 8086:9c31 | 1043:201f | Intel            | 8 Series USB xHCI HC                 | 6     | xhci       | [28B3002182](<Notebook/ASUSTek Computer/X555/X555LA/845132047FF4/HELLOSYSTEM-0.7.0/13.0-RELEASE-P7/AMD64/28B3002182>) |
+| 8086:9d2f | 103c:8079 | Intel            | Sunrise Point-LP USB 3.0 xHCI Con... | 6     | xhci       | [F259F73C17](<Notebook/Hewlett-Packard/EliteBook/EliteBook 840 G3/372FB522FD12/OPNSENSE-22.1/13.0-STABLE/AMD64/F259F73C17>) |
+| 8086:9ded | 17aa:5072 | Intel            | Cannon Point-LP USB 3.1 xHCI Cont... | 6     | xhci       | [98072B8DB6](<Notebook/Lenovo/ThinkPad/ThinkPad E590 20NB0012RT/F14FDAEA6645/FREEBSD-13.0-P3/13.0-RELEASE-P3/AMD64/98072B8DB6>) |
+| 1022:15e0 | 1043:201f | AMD              | Raven USB 3.1                        | 5     | xhci       | [2D72B6939D](<Notebook/ASUSTek Computer/TUF/TUF Gaming FX505DU_FX505DU/FE9E4108BBBD/NOMADBSD-5806F915/13.0-RELEASE/AMD64/2D72B6939D>) |
+| 1022:15e1 | 1043:201f | AMD              | Raven USB 3.1                        | 5     | xhci       | [2D72B6939D](<Notebook/ASUSTek Computer/TUF/TUF Gaming FX505DU_FX505DU/FE9E4108BBBD/NOMADBSD-5806F915/13.0-RELEASE/AMD64/2D72B6939D>) |
+| 1022:7808 | 1022:7808 | AMD              | FCH USB EHCI Controller              | 5     | ehci       | [EC1E865BBD](<Notebook/AEWIN/CB/CB-7979/515CE581A2B3/OPNSENSE-22.1.2/13.0-STABLE/AMD64/EC1E865BBD>) |
+| 8086:1e26 | 1028:0597 | Intel            | 7 Series/C216 Chipset Family USB ... | 5     | ehci       | [B246D110AF](<Notebook/Dell/Inspiron/Inspiron 3521/D0B94644586B/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/B246D110AF>) |
+| 8086:1e26 | 17aa:21f6 | Intel            | 7 Series/C216 Chipset Family USB ... | 5     | ehci       | [4E7FC367BC](<Notebook/Lenovo/ThinkPad/ThinkPad W530 2447AV9/778B9CE5B6CA/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/4E7FC367BC>) |
+| 8086:1e26 | 8086:1e26 | Intel            | 7 Series/C216 Chipset Family USB ... | 5     | ehci       | [21C1794D7E](<Notebook/Others/Others/Others/F6ACC051C26B/OPNSENSE-21.7.4/12.1-RELEASE-P20-HBSD/AMD64/21C1794D7E>) |
+| 8086:1e2d | 1028:0597 | Intel            | 7 Series/C216 Chipset Family USB ... | 5     | ehci       | [B246D110AF](<Notebook/Dell/Inspiron/Inspiron 3521/D0B94644586B/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/B246D110AF>) |
+| 8086:1e2d | 17aa:21f6 | Intel            | 7 Series/C216 Chipset Family USB ... | 5     | ehci       | [4E7FC367BC](<Notebook/Lenovo/ThinkPad/ThinkPad W530 2447AV9/778B9CE5B6CA/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/4E7FC367BC>) |
+| 8086:1e2d | 8086:1e2d | Intel            | 7 Series/C216 Chipset Family USB ... | 5     | ehci       | [21C1794D7E](<Notebook/Others/Others/Others/F6ACC051C26B/OPNSENSE-21.7.4/12.1-RELEASE-P20-HBSD/AMD64/21C1794D7E>) |
+| 8086:1e31 | 1028:0597 | Intel            | 7 Series/C210 Series Chipset Fami... | 5     | xhci       | [B246D110AF](<Notebook/Dell/Inspiron/Inspiron 3521/D0B94644586B/HELLOSYSTEM-0.7.0/13.0-RELEASE/AMD64/B246D110AF>) |
+| 8086:1e31 | 17aa:21f6 | Intel            | 7 Series/C210 Series Chipset Fami... | 5     | xhci       | [4E7FC367BC](<Notebook/Lenovo/ThinkPad/ThinkPad W530 2447AV9/778B9CE5B6CA/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/4E7FC367BC>) |
+| 8086:1e31 | 8086:1e31 | Intel            | 7 Series/C210 Series Chipset Fami... | 5     | xhci       | [21C1794D7E](<Notebook/Others/Others/Others/F6ACC051C26B/OPNSENSE-21.7.4/12.1-RELEASE-P20-HBSD/AMD64/21C1794D7E>) |
+| 8086:22b5 | 8086:7270 | Intel            | Atom/Celeron/Pentium Processor x5... | 5     | xhci       | [3454B5492B](<Notebook/AZW/BT3/BT3 PRO/8FB6E0960427/OPNSENSE-21.7.5/12.1-RELEASE-P21-HBSD/AMD64/3454B5492B>) |
+| 8086:27c8 | 1043:83ad | Intel            | NM10/ICH7 Family USB UHCI Control... | 5     | uhci       | [D171D1EC99](<Notebook/ASUSTek Computer/1001/1001PX/E2F07739895A/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/D171D1EC99>) |
+| 8086:27c9 | 1043:83ad | Intel            | NM10/ICH7 Family USB UHCI Control... | 5     | uhci       | [D171D1EC99](<Notebook/ASUSTek Computer/1001/1001PX/E2F07739895A/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/D171D1EC99>) |
+| 8086:27ca | 1043:83ad | Intel            | NM10/ICH7 Family USB UHCI Control... | 5     | uhci       | [D171D1EC99](<Notebook/ASUSTek Computer/1001/1001PX/E2F07739895A/HELLOSYSTEM-0.8.0/13.0-RELEASE/AMD64/D171D1EC99>) |
 
 ### Wireless controller (PCI)
 
-| ID        | Subsystem | MFG        | Name                         | Count | Driver     | Probe      |
-|-----------|-----------|------------|------------------------------|-------|------------|------------|
-| 8086:7360 | 8086:0020 | Intel      | XMM7360 LTE Advanced Modem   | 1     |            | BD88655975 |
+| ID        | Subsystem | MFG              | Name                                 | Count | Driver     | Probe |
+|-----------|-----------|------------------|--------------------------------------|-------|------------|-------|
+| 8086:7360 | 8086:0020 | Intel            | XMM7360 LTE Advanced Modem           | 3     |            | [D910C79D75](<Notebook/Lenovo/ThinkPad/ThinkPad P14s Gen 1 20Y1CTO1WW/5E03AED6E452/FREEBSD-14.0-CURRENT/14.0-CURRENT/AMD64/D910C79D75>) |
+| 8086:7360 | 1028:5820 | Intel            | XMM7360 LTE Advanced Modem           | 1     |            | [1BB6C1F63F](<Notebook/Dell/Latitude/Latitude 5400/418002D1A36C/HELLOSYSTEM-0.5.0/12.2-RELEASE/AMD64/1BB6C1F63F>) |
 
 ### Others (PCI)
 
-| ID        | Subsystem | MFG        | Name                         | Count | Driver     | Probe      |
-|-----------|-----------|------------|------------------------------|-------|------------|------------|
-| 8086:9d35 | 17aa:2238 | Intel      | Sunrise Point-LP Integrat... | 5     |            | 821C81E652 |
-| 1022:1455 | 1022:1455 | AMD        | Zeppelin/Renoir PCIe Dumm... | 4     |            | F4A0F0941B |
-| 1022:145a | 1022:145a | AMD        | Zeppelin/Raven/Raven2 PCI... | 4     |            | F4A0F0941B |
-| 1022:1455 | 1025:1246 | AMD        | Zeppelin/Renoir PCIe Dumm... | 2     |            | 9E03A76684 |
-| 1022:145a | 1025:1246 | AMD        | Zeppelin/Raven/Raven2 PCI... | 2     |            | 9E03A76684 |
-| 1022:1485 | 1558:50f0 | AMD        | Starship/Matisse Reserved... | 1     |            | 0AC6AED43B |
-| 1022:148a | 1558:50f0 | AMD        | Starship/Matisse PCIe Dum... | 1     |            | 0AC6AED43B |
-| 1022:15e6 | 1022:15e4 | AMD        | Raven/Raven2/Renoir Non-S... | 1     |            | BE2AD24D1B |
-| 8086:9d24 |           | Intel      | Skylake-U/Y SPI Controller   | 1     |            | 4FFE68C199 |
-| 8086:9d35 | 1028:0809 | Intel      | Sunrise Point-LP Integrat... | 1     |            | 0B335F5918 |
+| ID        | Subsystem | MFG              | Name                                 | Count | Driver     | Probe |
+|-----------|-----------|------------------|--------------------------------------|-------|------------|-------|
+| 1022:1455 | 1022:1455 | AMD              | Zeppelin/Renoir PCIe Dummy Function  | 12    |            | [4D8F19BA12](<Notebook/Deciso/Netboard/Netboard A20/94D2C7F0ED24/OPNSENSE-22.1/13.0-STABLE/AMD64/4D8F19BA12>) |
+| 1022:145a | 1022:145a | AMD              | Zeppelin/Raven/Raven2 PCIe Dummy ... | 12    |            | [4D8F19BA12](<Notebook/Deciso/Netboard/Netboard A20/94D2C7F0ED24/OPNSENSE-22.1/13.0-STABLE/AMD64/4D8F19BA12>) |
+| 8086:9d35 | 17aa:2238 | Intel            | Sunrise Point-LP Integrated Senso... | 5     |            | [821C81E652](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 4th 20FB001XAU/5B2B74D5C2AB/NOMADBSD-1.4/12.2-RELEASE-P4/AMD64/821C81E652>) |
+| 1022:15e6 | 1022:15e4 | AMD              | Raven/Raven2/Renoir Non-Sensor Fu... | 3     |            | [30590E8CCF](<Notebook/Deciso/DEC2700/DEC2700 - OPNsense Appliance/504812C630AE/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/30590E8CCF>) |
+| 1022:1455 | 1025:1246 | AMD              | Zeppelin/Renoir PCIe Dummy Function  | 2     |            | [9E03A76684](<Notebook/Acer/Predator/Predator PH517-61/401258E70C57/FREEBSD-13.0/13.0-RELEASE/AMD64/9E03A76684>) |
+| 1022:145a |           | AMD              | Zeppelin/Raven/Raven2 PCIe Dummy ... | 2     |            | [30590E8CCF](<Notebook/Deciso/DEC2700/DEC2700 - OPNsense Appliance/504812C630AE/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/30590E8CCF>) |
+| 1022:145a | 1022:7901 | AMD              | Zeppelin/Raven/Raven2 PCIe Dummy ... | 2     |            | [30590E8CCF](<Notebook/Deciso/DEC2700/DEC2700 - OPNsense Appliance/504812C630AE/OPNSENSE-21.7.7/12.1-RELEASE-P21-HBSD/AMD64/30590E8CCF>) |
+| 1022:145a | 1025:1246 | AMD              | Zeppelin/Raven/Raven2 PCIe Dummy ... | 2     |            | [9E03A76684](<Notebook/Acer/Predator/Predator PH517-61/401258E70C57/FREEBSD-13.0/13.0-RELEASE/AMD64/9E03A76684>) |
+| 1022:1485 | 1022:1485 | AMD              | Starship/Matisse Reserved SPP        | 1     |            | [1099E6C574](<Notebook/WOOKING/X/X5/31699ACF8451/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/1099E6C574>) |
+| 1022:1485 | 1558:50f0 | AMD              | Starship/Matisse Reserved SPP        | 1     |            | [0AC6AED43B](<Notebook/System76/Serval/Serval WS/3345B6D70744/FREEBSD-12.2/12.2-RELEASE/AMD64/0AC6AED43B>) |
+| 1022:148a | 1022:148a | AMD              | Starship/Matisse PCIe Dummy Function | 1     |            | [1099E6C574](<Notebook/WOOKING/X/X5/31699ACF8451/FREEBSD-13.0-P7/13.0-RELEASE-P7/AMD64/1099E6C574>) |
+| 1022:148a | 1558:50f0 | AMD              | Starship/Matisse PCIe Dummy Function | 1     |            | [0AC6AED43B](<Notebook/System76/Serval/Serval WS/3345B6D70744/FREEBSD-12.2/12.2-RELEASE/AMD64/0AC6AED43B>) |
+| 1022:15e6 | 1025:1456 | AMD              | Raven/Raven2/Renoir Non-Sensor Fu... | 1     |            | [7FB743C654](<Notebook/Acer/Aspire/Aspire A315-23/F20A633E5003/FREEBSD-13.0/13.0-RELEASE/AMD64/7FB743C654>) |
+| 1eac:1001 | 1eac:2003 | Quectel Wirel... | EM120R-GL LTE Modem                  | 1     |            | [8F9E9DDDE5](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon Gen 9 20XWCTO1WW/83AC7FC10181/FREEBSD-13.0-STABLE/13.0-STABLE/AMD64/8F9E9DDDE5>) |
+| 8086:9d24 |           | Intel            | Skylake-U/Y SPI Controller           | 1     |            | [4FFE68C199](<Notebook/Google/Chell/Chell/3496688BF4EE/NOMADBSD-1.3.2/12.1-RELEASE-P6/AMD64/4FFE68C199>) |
+| 8086:9d35 | 1028:073d | Intel            | Sunrise Point-LP Integrated Senso... | 1     |            | [3ED52AE70D](<Notebook/Dell/Inspiron/Inspiron 15-5568/F06D848AF807/NOMADBSD-5806F915/13.0-RELEASE/AMD64/3ED52AE70D>) |
+| 8086:9d35 | 1028:0743 | Intel            | Sunrise Point-LP Integrated Senso... | 1     |            | [4B8B5F7918](<Notebook/Dell/Inspiron/Inspiron 15-7579/1D7A72C5D7D8/FREEBSD-13.0/13.0-RELEASE/AMD64/4B8B5F7918>) |
+| 8086:9d35 | 1028:0809 | Intel            | Sunrise Point-LP Integrated Senso... | 1     |            | [0B335F5918](<Notebook/Dell/Inspiron/Inspiron 7773/3014CB7AF730/FREEBSD-13.0-CURRENT/13.0-CURRENT/AMD64/0B335F5918>) |
+| 8086:a135 | 1028:080d | Intel            | 100 Series/C230 Series Chipset Fa... | 1     |            | [E7925AA387](<Notebook/Dell/XPS/XPS 15 9575/F70DDD78C18E/FREEBSD-13.0-P5/13.0-RELEASE-P4/AMD64/E7925AA387>) |
 

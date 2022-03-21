@@ -1,0 +1,158 @@
+hostb0@pci0:0:0:0:	class=0x060000 rev=0x08 hdr=0x00 vendor=0x8086 device=0x5914 subvendor=0x1025 subdevice=0x118c
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E3-1200 v6/7th Gen Core Processor Host Bridge/DRAM Registers'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 09[e0] = vendor (length 16) Intel cap 0 version 1
+
+vgapci0@pci0:0:2:0:	class=0x030000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x5917 subvendor=0x1025 subdevice=0x118c
+    vendor     = 'Intel Corporation'
+    device     = 'UHD Graphics 620'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 64, base 0xb0000000, size 16777216, enabled
+    bar   [18] = type Prefetchable Memory, range 64, base 0xa0000000, size 268435456, enabled
+    bar   [20] = type I/O Port, range 32, base 0x3000, size 64, enabled
+    cap 09[40] = vendor (length 12) Intel cap 0 version 1
+    cap 10[70] = PCI-Express 2 root endpoint max data 128(128) FLR
+                 max read 128
+    cap 05[ac] = MSI supports 1 message enabled with 1 message
+    cap 01[d0] = powerspec 2  supports D0 D3  current D0
+    ecap 001b[100] = Process Address Space ID 1
+    ecap 000f[200] = ATS 1
+    ecap 0013[300] = Page Page Request 1
+
+xhci0@pci0:0:20:0:	class=0x0c0330 rev=0x21 hdr=0x00 vendor=0x8086 device=0x9d2f subvendor=0x1025 subdevice=0x118c
+    vendor     = 'Intel Corporation'
+    device     = 'Sunrise Point-LP USB 3.0 xHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 64, base 0xb1110000, size 65536, enabled
+    cap 01[70] = powerspec 2  supports D0 D3  current D0
+    cap 05[80] = MSI supports 8 messages, 64 bit enabled with 1 message
+
+pchtherm0@pci0:0:20:2:	class=0x118000 rev=0x21 hdr=0x00 vendor=0x8086 device=0x9d31 subvendor=0x1025 subdevice=0x118c
+    vendor     = 'Intel Corporation'
+    device     = 'Sunrise Point-LP Thermal subsystem'
+    class      = dasp
+    bar   [10] = type Memory, range 64, base 0xb112a000, size 4096, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 05[80] = MSI supports 1 message 
+
+ig4iic0@pci0:0:21:0:	class=0x118000 rev=0x21 hdr=0x00 vendor=0x8086 device=0x9d60 subvendor=0x1025 subdevice=0x118c
+    vendor     = 'Intel Corporation'
+    device     = 'Sunrise Point-LP Serial IO I2C Controller'
+    class      = dasp
+    bar   [10] = type Memory, range 64, base 0xb112b000, size 4096, enabled
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 09[90] = vendor (length 20) Intel cap 15 version 0
+
+ig4iic1@pci0:0:21:1:	class=0x118000 rev=0x21 hdr=0x00 vendor=0x8086 device=0x9d61 subvendor=0x1025 subdevice=0x118c
+    vendor     = 'Intel Corporation'
+    device     = 'Sunrise Point-LP Serial IO I2C Controller'
+    class      = dasp
+    bar   [10] = type Memory, range 64, base 0xb112c000, size 4096, enabled
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 09[90] = vendor (length 20) Intel cap 15 version 0
+
+none0@pci0:0:22:0:	class=0x078000 rev=0x21 hdr=0x00 vendor=0x8086 device=0x9d3a subvendor=0x1025 subdevice=0x118c
+    vendor     = 'Intel Corporation'
+    device     = 'Sunrise Point-LP CSME HECI'
+    class      = simple comms
+    bar   [10] = type Memory, range 64, base 0xb112d000, size 4096, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 05[8c] = MSI supports 1 message, 64 bit 
+
+ahci0@pci0:0:23:0:	class=0x010601 rev=0x21 hdr=0x00 vendor=0x8086 device=0x9d03 subvendor=0x1025 subdevice=0x118c
+    vendor     = 'Intel Corporation'
+    device     = 'Sunrise Point-LP SATA Controller [AHCI mode]'
+    class      = mass storage
+    subclass   = SATA
+    bar   [10] = type Memory, range 32, base 0xb1128000, size 8192, enabled
+    bar   [14] = type Memory, range 32, base 0xb1130000, size 256, enabled
+    bar   [18] = type I/O Port, range 32, base 0x3080, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0x3088, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0x3060, size 32, enabled
+    bar   [24] = type Memory, range 32, base 0xb112e000, size 2048, enabled
+    cap 05[80] = MSI supports 1 message enabled with 1 message
+    cap 01[70] = powerspec 3  supports D0 D3  current D0
+    cap 12[a8] = SATA Index-Data Pair
+
+pcib1@pci0:0:29:0:	class=0x060400 rev=0xf1 hdr=0x01 vendor=0x8086 device=0x9d18 subvendor=0x1025 subdevice=0x118c
+    vendor     = 'Intel Corporation'
+    device     = 'Sunrise Point-LP PCI Express Root Port'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(256) ARI disabled
+                 max read 128
+                 link x1(x2) speed 2.5(8.0) ASPM L1(L0s/L1)
+                 slot 8 power limit 250 mW
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge subvendor=0x1025 subdevice=0x118c
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 2 corrected
+    ecap 000d[140] = ACS 1
+    ecap 001e[200] = L1 PM Substates 1
+    ecap 0019[220] = PCIe Sec 1 lane errors 0
+
+pcib2@pci0:0:29:2:	class=0x060400 rev=0xf1 hdr=0x01 vendor=0x8086 device=0x9d1a subvendor=0x1025 subdevice=0x118c
+    vendor     = 'Intel Corporation'
+    device     = 'Sunrise Point-LP PCI Express Root Port'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(256) ARI disabled
+                 max read 128
+                 link x0(x2) speed 0.0(8.0) ASPM L0s/L1(L0s/L1)
+                 slot 10 power limit 250 mW
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge subvendor=0x1025 subdevice=0x118c
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000d[140] = ACS 1
+    ecap 001e[200] = L1 PM Substates 1
+    ecap 0019[220] = PCIe Sec 1 lane errors 0
+
+isab0@pci0:0:31:0:	class=0x060100 rev=0x21 hdr=0x00 vendor=0x8086 device=0x9d4e subvendor=0x1025 subdevice=0x118c
+    vendor     = 'Intel Corporation'
+    device     = 'Sunrise Point LPC Controller/eSPI Controller'
+    class      = bridge
+    subclass   = PCI-ISA
+
+none1@pci0:0:31:2:	class=0x058000 rev=0x21 hdr=0x00 vendor=0x8086 device=0x9d21 subvendor=0x1025 subdevice=0x118c
+    vendor     = 'Intel Corporation'
+    device     = 'Sunrise Point-LP PMC'
+    class      = memory
+    bar   [10] = type Memory, range 32, base 0xb1124000, size 16384, enabled
+
+hdac0@pci0:0:31:3:	class=0x040380 rev=0x21 hdr=0x00 vendor=0x8086 device=0x9d71 subvendor=0x1025 subdevice=0x118c
+    vendor     = 'Intel Corporation'
+    device     = 'Sunrise Point-LP HD Audio'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 64, base 0xb1120000, size 16384, enabled
+    bar   [20] = type Memory, range 64, base 0xb1100000, size 65536, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 05[60] = MSI supports 1 message, 64 bit enabled with 1 message
+
+ichsmb0@pci0:0:31:4:	class=0x0c0500 rev=0x21 hdr=0x00 vendor=0x8086 device=0x9d23 subvendor=0x1025 subdevice=0x118c
+    vendor     = 'Intel Corporation'
+    device     = 'Sunrise Point-LP SMBus'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [10] = type Memory, range 64, base 0xb112f000, size 256, enabled
+    bar   [20] = type I/O Port, range 32, base 0x3040, size 32, enabled
+
+iwm0@pci0:1:0:0:	class=0x028000 rev=0x59 hdr=0x00 vendor=0x8086 device=0x095a subvendor=0x8086 subdevice=0x5010
+    vendor     = 'Intel Corporation'
+    device     = 'Wireless 7265'
+    class      = network
+    bar   [10] = type Memory, range 64, base 0xb1000000, size 8192, enabled
+    cap 01[c8] = powerspec 3  supports D0 D3  current D0
+    cap 05[d0] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 10[40] = PCI-Express 2 endpoint max data 128(128) FLR RO NS
+                 max read 128
+                 link x1(x1) speed 2.5(2.5) ASPM L1(L1) ClockPM enabled
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 0003[140] = Serial 1 9cda3effffb9bbad
+    ecap 0018[14c] = LTR 1
+    ecap 001e[154] = L1 PM Substates 1

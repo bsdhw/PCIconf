@@ -1,0 +1,22 @@
+pcib1@pci0:0:0:0:	class=0x060400 card=0x00000000 chip=0x271114e4 rev=0x00 hdr=0x01
+    vendor     = 'Broadcom Inc. and subsidiaries'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[48] = powerspec 3  supports D0 D3  current D0
+    cap 10[ac] = PCI-Express 2 root port max data 128(512) RO NS
+                 link x1(x1) speed 5.0(5.0) ASPM disabled(L0s/L1)
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000b[180] = Vendor 1 ID 0
+    ecap 001e[240] = unknown 1
+
+bcm_xhci0@pci0:1:0:0:	class=0x0c0330 card=0x34831106 chip=0x34831106 rev=0x01 hdr=0x00
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VL805 USB 3.0 Host Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 64, base 0xc0000000, size 4096, enabled
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 05[90] = MSI supports 4 messages, 64 bit enabled with 1 message
+    cap 10[c4] = PCI-Express 2 endpoint max data 128(256) RO NS
+                 link x1(x1) speed 5.0(5.0) ASPM L0s/L1(L0s/L1)
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected

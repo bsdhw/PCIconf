@@ -1,0 +1,61 @@
+nvme0@pci2:1:0:0:	class=0x010802 rev=0x00 hdr=0x00 vendor=0x144d device=0xa808 subvendor=0x144d subdevice=0xa801
+    vendor     = 'Samsung Electronics Co Ltd'
+    device     = 'NVMe SSD Controller SM981/PM981/PM983'
+    class      = mass storage
+    subclass   = NVM
+    bar   [10] = type Memory, range 64, base 0x40000000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit 
+    cap 10[70] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x4(x4) speed 8.0(8.0) ASPM disabled(L1) ClockPM disabled
+    cap 11[b0] = MSI-X supports 33 messages, enabled
+                 Table in map 0x10[0x3000], PBA in map 0x10[0x2000]
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0003[148] = Serial 1 0000000000000000
+    ecap 0004[158] = Power Budgeting 1
+    ecap 0019[168] = PCIe Sec 1 lane errors 0
+    ecap 0018[188] = LTR 1
+    ecap 001e[190] = L1 PM Substates 1
+
+vgapci0@pci4:1:0:0:	class=0x030000 rev=0xc7 hdr=0x00 vendor=0x1002 device=0x699f subvendor=0x1da2 subdevice=0xe367
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'Lexa PRO [Radeon 540/540X/550/550X / RX 540X/550/550X]'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Prefetchable Memory, range 64, base 0xa400000000, size 268435456, enabled
+    bar   [18] = type Prefetchable Memory, range 64, base 0xa410000000, size 2097152, enabled
+    bar   [20] = type I/O Port, range 32, base 0, size 256, enabled
+    bar   [24] = type Memory, range 32, base 0x40000000, size 262144, enabled
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 10[58] = PCI-Express 2 legacy endpoint max data 128(256) RO NS
+                 max read 512
+                 link x8(x8) speed 8.0(8.0) ASPM disabled(L1) ClockPM disabled
+    cap 05[a0] = MSI supports 1 message, 64 bit enabled with 1 message
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 0015[200] = Resizable BAR 1
+    ecap 0019[270] = PCIe Sec 1 lane errors 0
+    ecap 000f[2b0] = ATS 1
+    ecap 0013[2c0] = Page Page Request 1
+    ecap 001b[2d0] = Process Address Space ID 1
+    ecap 0018[320] = LTR 1
+    ecap 000e[328] = ARI 1
+    ecap 001e[370] = L1 PM Substates 1
+
+none0@pci4:1:0:1:	class=0x040300 rev=0x00 hdr=0x00 vendor=0x1002 device=0xaae0 subvendor=0x1da2 subdevice=0xaae0
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'Baffin HDMI/DP Audio [Radeon RX 550 640SP / RX 560/560X]'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 64, base 0x40040000, size 16384, enabled
+    cap 09[48] = vendor (length 8)
+    cap 01[50] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 10[58] = PCI-Express 2 legacy endpoint max data 128(256) RO NS
+                 max read 512
+                 link x8(x8) speed 8.0(8.0) ASPM disabled(L1) ClockPM disabled
+    cap 05[a0] = MSI supports 1 message, 64 bit 
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0001[150] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 000e[328] = ARI 1

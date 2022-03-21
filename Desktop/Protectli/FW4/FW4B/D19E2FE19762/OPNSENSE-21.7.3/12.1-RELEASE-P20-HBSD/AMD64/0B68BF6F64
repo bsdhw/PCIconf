@@ -1,0 +1,191 @@
+hostb0@pci0:0:0:0:	class=0x060000 card=0x72708086 chip=0x22808086 rev=0x35 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Atom/Celeron/Pentium Processor x5-E8000/J3xxx/N3xxx Series SoC Transaction Register'
+    class      = bridge
+    subclass   = HOST-PCI
+
+vgapci0@pci0:0:2:0:	class=0x030000 card=0x72708086 chip=0x22b18086 rev=0x35 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Atom/Celeron/Pentium Processor x5-E8000/J3xxx/N3xxx Integrated Graphics Controller'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 64, base 0x90000000, size 16777216, enabled
+    bar   [18] = type Prefetchable Memory, range 64, base 0x80000000, size 268435456, enabled
+    bar   [20] = type I/O Port, range 32, base 0x5000, size 64, enabled
+    cap 01[d0] = powerspec 2  supports D0 D3  current D0
+    cap 05[90] = MSI supports 1 message 
+    cap 09[b0] = vendor (length 7) Intel cap 0 version 1
+
+ahci0@pci0:0:19:0:	class=0x010601 card=0x72708086 chip=0x22a38086 rev=0x35 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Atom/Celeron/Pentium Processor x5-E8000/J3xxx/N3xxx Series SATA Controller'
+    class      = mass storage
+    subclass   = SATA
+    bar   [20] = type I/O Port, range 32, base 0x5040, size 32, enabled
+    bar   [24] = type Memory, range 32, base 0x91414000, size 2048, enabled
+    cap 05[80] = MSI supports 1 message enabled with 1 message
+    cap 01[70] = powerspec 3  supports D0 D3  current D0
+    cap 12[a8] = SATA Index-Data Pair
+
+xhci0@pci0:0:20:0:	class=0x0c0330 card=0x72708086 chip=0x22b58086 rev=0x35 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Atom/Celeron/Pentium Processor x5-E8000/J3xxx/N3xxx Series USB xHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 64, base 0x91400000, size 65536, enabled
+    cap 01[70] = powerspec 2  supports D0 D3  current D0
+    cap 05[80] = MSI supports 8 messages, 64 bit enabled with 1 message
+
+hdac0@pci0:0:27:0:	class=0x040300 card=0x72708086 chip=0x22848086 rev=0x35 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Atom/Celeron/Pentium Processor x5-E8000/J3xxx/N3xxx Series High Definition Audio Controller'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 64, base 0x91410000, size 16384, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 05[60] = MSI supports 1 message, 64 bit enabled with 1 message
+
+pcib1@pci0:0:28:0:	class=0x060400 card=0x72708086 chip=0x22c88086 rev=0x35 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = 'Atom/Celeron/Pentium Processor x5-E8000/J3xxx/N3xxx Series PCI Express Port'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128)
+                 link x1(x1) speed 2.5(2.5) ASPM L1(L0s/L1)
+                 slot 0 power limit 100 mW
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge card=0x72708086
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+    ecap 0000[100] = unknown 0
+    ecap 001e[200] = unknown 1
+
+pcib2@pci0:0:28:1:	class=0x060400 card=0x72708086 chip=0x22ca8086 rev=0x35 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = 'Atom/Celeron/Pentium Processor x5-E8000/J3xxx/N3xxx Series PCI Express Port'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128)
+                 link x1(x1) speed 2.5(2.5) ASPM L1(L0s/L1)
+                 slot 1 power limit 100 mW
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge card=0x72708086
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+    ecap 0000[100] = unknown 0
+    ecap 001e[200] = unknown 1
+
+pcib3@pci0:0:28:2:	class=0x060400 card=0x72708086 chip=0x22cc8086 rev=0x35 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = 'Atom/Celeron/Pentium Processor x5-E8000/J3xxx/N3xxx Series PCI Express Port'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128)
+                 link x1(x1) speed 2.5(2.5) ASPM L1(L0s/L1)
+                 slot 2 power limit 100 mW
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge card=0x72708086
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+    ecap 0000[100] = unknown 0
+    ecap 001e[200] = unknown 1
+
+pcib4@pci0:0:28:3:	class=0x060400 card=0x72708086 chip=0x22ce8086 rev=0x35 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = 'Atom/Celeron/Pentium Processor x5-E8000/J3xxx/N3xxx Series PCI Express Port'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128)
+                 link x1(x1) speed 2.5(2.5) ASPM L1(L0s/L1)
+                 slot 3 power limit 100 mW
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge card=0x72708086
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+    ecap 0000[100] = unknown 0
+    ecap 001e[200] = unknown 1
+
+isab0@pci0:0:31:0:	class=0x060100 card=0x72708086 chip=0x229c8086 rev=0x35 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Atom/Celeron/Pentium Processor x5-E8000/J3xxx/N3xxx Series PCU'
+    class      = bridge
+    subclass   = PCI-ISA
+    cap 09[e0] = vendor (length 12) Intel cap 1 version 0
+		 features: 4 PCI-e x1 slots
+
+none0@pci0:0:31:3:	class=0x0c0500 card=0x72708086 chip=0x22928086 rev=0x35 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Atom/Celeron/Pentium Processor x5-E8000/J3xxx/N3xxx SMBus Controller'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [10] = type Memory, range 32, base 0x91415000, size 32, enabled
+    bar   [20] = type I/O Port, range 32, base 0x5060, size 32, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+
+igb0@pci0:1:0:0:	class=0x020000 card=0x00008086 chip=0x157b8086 rev=0x03 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'I210 Gigabit Network Connection'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0x91000000, size 131072, enabled
+    bar   [18] = type I/O Port, range 32, base 0x1000, size 32, enabled
+    bar   [1c] = type Memory, range 32, base 0x91020000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 11[70] = MSI-X supports 5 messages, enabled
+                 Table in map 0x1c[0x0], PBA in map 0x1c[0x2000]
+    cap 10[a0] = PCI-Express 2 endpoint max data 128(512) FLR RO NS
+                 link x1(x1) speed 2.5(2.5) ASPM L1(L0s/L1)
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 00e067ffff1e053c
+    ecap 0017[1a0] = TPH Requester 1
+
+igb1@pci0:2:0:0:	class=0x020000 card=0x00008086 chip=0x157b8086 rev=0x03 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'I210 Gigabit Network Connection'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0x91100000, size 131072, enabled
+    bar   [18] = type I/O Port, range 32, base 0x2000, size 32, enabled
+    bar   [1c] = type Memory, range 32, base 0x91120000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 11[70] = MSI-X supports 5 messages, enabled
+                 Table in map 0x1c[0x0], PBA in map 0x1c[0x2000]
+    cap 10[a0] = PCI-Express 2 endpoint max data 128(512) FLR RO NS
+                 link x1(x1) speed 2.5(2.5) ASPM L1(L0s/L1)
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 00e067ffff1e053d
+    ecap 0017[1a0] = TPH Requester 1
+
+igb2@pci0:3:0:0:	class=0x020000 card=0x00008086 chip=0x157b8086 rev=0x03 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'I210 Gigabit Network Connection'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0x91200000, size 131072, enabled
+    bar   [18] = type I/O Port, range 32, base 0x3000, size 32, enabled
+    bar   [1c] = type Memory, range 32, base 0x91220000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 11[70] = MSI-X supports 5 messages, enabled
+                 Table in map 0x1c[0x0], PBA in map 0x1c[0x2000]
+    cap 10[a0] = PCI-Express 2 endpoint max data 128(512) FLR RO NS
+                 link x1(x1) speed 2.5(2.5) ASPM L1(L0s/L1)
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 00e067ffff1e053e
+    ecap 0017[1a0] = TPH Requester 1
+
+igb3@pci0:4:0:0:	class=0x020000 card=0x00008086 chip=0x157b8086 rev=0x03 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'I210 Gigabit Network Connection'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0x91300000, size 131072, enabled
+    bar   [18] = type I/O Port, range 32, base 0x4000, size 32, enabled
+    bar   [1c] = type Memory, range 32, base 0x91320000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 11[70] = MSI-X supports 5 messages, enabled
+                 Table in map 0x1c[0x0], PBA in map 0x1c[0x2000]
+    cap 10[a0] = PCI-Express 2 endpoint max data 128(512) FLR RO NS
+                 link x1(x1) speed 2.5(2.5) ASPM L1(L0s/L1)
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 00e067ffff1e053f
+    ecap 0017[1a0] = TPH Requester 1

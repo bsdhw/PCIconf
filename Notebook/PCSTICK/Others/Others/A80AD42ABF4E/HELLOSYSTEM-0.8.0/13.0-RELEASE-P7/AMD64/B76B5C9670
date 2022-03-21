@@ -1,0 +1,43 @@
+hostb0@pci0:0:0:0:	class=0x060000 rev=0x0f hdr=0x00 vendor=0x8086 device=0x0f00 subvendor=0x8086 subdevice=0x0f31
+    vendor     = 'Intel Corporation'
+    device     = 'Atom Processor Z36xxx/Z37xxx Series SoC Transaction Register'
+    class      = bridge
+    subclass   = HOST-PCI
+
+vgapci0@pci0:0:2:0:	class=0x030000 rev=0x0f hdr=0x00 vendor=0x8086 device=0x0f31 subvendor=0x8086 subdevice=0x0f31
+    vendor     = 'Intel Corporation'
+    device     = 'Atom Processor Z36xxx/Z37xxx Series Graphics & Display'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 32, base 0x90000000, size 4194304, enabled
+    bar   [18] = type Prefetchable Memory, range 32, base 0x80000000, size 268435456, enabled
+    bar   [20] = type I/O Port, range 32, base 0x1000, size 8, enabled
+    cap 01[d0] = powerspec 2  supports D0 D3  current D0
+    cap 05[90] = MSI supports 1 message 
+    cap 09[b0] = vendor (length 7) Intel cap 0 version 1
+
+xhci0@pci0:0:20:0:	class=0x0c0330 rev=0x0f hdr=0x00 vendor=0x8086 device=0x0f35 subvendor=0x8086 subdevice=0x0f35
+    vendor     = 'Intel Corporation'
+    device     = 'Atom Processor Z36xxx/Z37xxx, Celeron N2000 Series USB xHCI'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 64, base 0x90800000, size 65536, enabled
+    cap 01[70] = powerspec 2  supports D0 D3  current D0
+    cap 05[80] = MSI supports 8 messages, 64 bit 
+
+none0@pci0:0:26:0:	class=0x108000 rev=0x0f hdr=0x00 vendor=0x8086 device=0x0f18 subvendor=0x8086 subdevice=0x0f18
+    vendor     = 'Intel Corporation'
+    device     = 'Atom Processor Z36xxx/Z37xxx Series Trusted Execution Engine'
+    class      = encrypt/decrypt
+    bar   [10] = type Memory, range 32, base 0x90700000, size 1048576, enabled
+    bar   [14] = type Memory, range 32, base 0x90600000, size 1048576, enabled
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 05[a0] = MSI supports 1 message 
+
+isab0@pci0:0:31:0:	class=0x060100 rev=0x0f hdr=0x00 vendor=0x8086 device=0x0f1c subvendor=0x8086 subdevice=0x0f1c
+    vendor     = 'Intel Corporation'
+    device     = 'Atom Processor Z36xxx/Z37xxx Series Power Control Unit'
+    class      = bridge
+    subclass   = PCI-ISA
+    cap 09[e0] = vendor (length 12) Intel cap 1 version 0
+		 features: 4 PCI-e x1 slots

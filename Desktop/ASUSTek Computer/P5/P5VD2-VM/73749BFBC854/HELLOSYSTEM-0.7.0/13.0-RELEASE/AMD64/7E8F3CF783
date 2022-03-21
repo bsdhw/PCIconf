@@ -1,0 +1,201 @@
+hostb0@pci0:0:0:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1106 device=0x0364 subvendor=0x1043 subdevice=0x81ce
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'CN896/VN896/P4M900 Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+    bar   [10] = type Prefetchable Memory, range 32, base 0xd0000000, size 134217728, disabled
+    cap 02[80] = AGP 4x 2x 1x SBA disabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+
+hostb1@pci0:0:0:1:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1106 device=0x1364 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'CN896/VN896/P4M900 Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb2@pci0:0:0:2:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1106 device=0x2364 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'CN896/VN896/P4M900 Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb3@pci0:0:0:3:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1106 device=0x3364 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'CN896/VN896/P4M900 Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb4@pci0:0:0:4:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1106 device=0x4364 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'CN896/VN896/P4M900 Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+none0@pci0:0:0:5:	class=0x080020 rev=0x00 hdr=0x00 vendor=0x1106 device=0x5364 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'CN896/VN896/P4M900 I/O APIC Interrupt Controller'
+    class      = base peripheral
+    subclass   = interrupt controller
+
+hostb5@pci0:0:0:6:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1106 device=0x6364 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'CN896/VN896/P4M900 Security Device'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb6@pci0:0:0:7:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1106 device=0x7364 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'CN896/VN896/P4M900 Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+pcib1@pci0:0:1:0:	class=0x060400 rev=0x00 hdr=0x01 vendor=0x1106 device=0xb198 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VT8237/CX700/VX700-Series PCI to PCI Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[70] = powerspec 2  supports D0 D3  current D0
+
+pcib2@pci0:0:2:0:	class=0x060400 rev=0x80 hdr=0x01 vendor=0x1106 device=0xa364 subvendor=0x1106 subdevice=0xc323
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'CN896/VN896/P4M900 PCI to PCI Bridge Controller'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 1 root port max data 128(256)
+                 max read 128
+                 link x16(x16) speed 2.5(2.5) ASPM disabled(L0s/L1)
+                 slot 0 power limit 150000 mW HotPlug(present) surprise
+    cap 01[68] = powerspec 2  supports D0 D3  current D0
+    cap 05[70] = MSI supports 1 message, 64 bit, vector masks enabled with 1 message
+    cap 08[88] = HT MSI fixed address window enabled at 0xfee00000
+    cap 0d[98] = PCI Bridge subvendor=0x1106 subdevice=0xc323
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 0002[140] = VC 1 max VC1
+    ecap 0005[180] = Root Complex Link Declaration 1
+
+atapci0@pci0:0:15:0:	class=0x01018f rev=0x80 hdr=0x00 vendor=0x1106 device=0x0591 subvendor=0x1043 subdevice=0x81cf
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VT8237A SATA 2-Port Controller'
+    class      = mass storage
+    subclass   = ATA
+    bar   [10] = type I/O Port, range 32, base 0xfc00, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0xf800, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0xf400, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0xf000, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0xec00, size 16, enabled
+    bar   [24] = type I/O Port, range 32, base 0xe800, size 256, enabled
+    cap 01[c0] = powerspec 2  supports D0 D3  current D0
+
+atapci1@pci0:0:15:1:	class=0x01018a rev=0x07 hdr=0x00 vendor=0x1106 device=0x0571 subvendor=0x1043 subdevice=0x81cf
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VT82C586A/B/VT82C686/A/B/VT823x/A/C PIPC Bus Master IDE'
+    class      = mass storage
+    subclass   = ATA
+    bar   [20] = type I/O Port, range 32, base 0xe400, size 16, enabled
+    cap 01[c0] = powerspec 2  supports D0 D3  current D0
+
+uhci0@pci0:0:16:0:	class=0x0c0300 rev=0xa0 hdr=0x00 vendor=0x1106 device=0x3038 subvendor=0x1043 subdevice=0x81cf
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VT82xx/62xx/VX700/8x0/900 UHCI USB 1.1 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xe000, size 32, enabled
+    cap 01[80] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+uhci1@pci0:0:16:1:	class=0x0c0300 rev=0xa0 hdr=0x00 vendor=0x1106 device=0x3038 subvendor=0x1043 subdevice=0x81cf
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VT82xx/62xx/VX700/8x0/900 UHCI USB 1.1 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xdc00, size 32, enabled
+    cap 01[80] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+uhci2@pci0:0:16:2:	class=0x0c0300 rev=0xa0 hdr=0x00 vendor=0x1106 device=0x3038 subvendor=0x1043 subdevice=0x81cf
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VT82xx/62xx/VX700/8x0/900 UHCI USB 1.1 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xd800, size 32, enabled
+    cap 01[80] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+uhci3@pci0:0:16:3:	class=0x0c0300 rev=0xa0 hdr=0x00 vendor=0x1106 device=0x3038 subvendor=0x1043 subdevice=0x81cf
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VT82xx/62xx/VX700/8x0/900 UHCI USB 1.1 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xd400, size 32, enabled
+    cap 01[80] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+ehci0@pci0:0:16:4:	class=0x0c0320 rev=0x86 hdr=0x00 vendor=0x1106 device=0x3104 subvendor=0x1043 subdevice=0x81cf
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'USB 2.0 EHCI-Compliant Host-Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xdffff000, size 256, enabled
+    cap 01[80] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+isab0@pci0:0:17:0:	class=0x060100 rev=0x00 hdr=0x00 vendor=0x1106 device=0x3337 subvendor=0x1043 subdevice=0x81cf
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VT8237A PCI to ISA Bridge'
+    class      = bridge
+    subclass   = PCI-ISA
+    cap 01[c0] = powerspec 2  supports D0 D3  current D0
+
+hostb7@pci0:0:17:7:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1106 device=0x287e subvendor=0x1106 subdevice=0x337e
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VT8237/8251 Ultra VLINK Controller'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 08[58] = HT interrupt
+
+hostb8@pci0:0:19:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1106 device=0x337b subvendor=0x0000 subdevice=0x0000
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VT8237A Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 08[60] = HT MSI fixed address window disabled at 0xfee00000
+
+pcib3@pci0:0:19:1:	class=0x060401 rev=0x00 hdr=0x01 vendor=0x1106 device=0x337a subvendor=0x1106 subdevice=0x337a
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VT8237A PCI to PCI Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 08[60] = HT MSI fixed address window disabled at 0xfee00000
+    cap 0d[70] = PCI Bridge subvendor=0x1106 subdevice=0x337a
+
+vgapci0@pci0:2:0:0:	class=0x030000 rev=0xa1 hdr=0x00 vendor=0x10de device=0x01d1 subvendor=0x1462 subdevice=0x0274
+    vendor     = 'NVIDIA Corporation'
+    device     = 'G72 [GeForce 7300 LE]'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 32, base 0xdc000000, size 16777216, enabled
+    bar   [14] = type Prefetchable Memory, range 64, base 0xc0000000, size 268435456, enabled
+    bar   [1c] = type Memory, range 64, base 0xdd000000, size 16777216, enabled
+    cap 01[60] = powerspec 2  supports D0 D3  current D0
+    cap 05[68] = MSI supports 1 message, 64 bit 
+    cap 10[78] = PCI-Express 1 endpoint max data 128(128) RO NS
+                 max read 512
+                 link x16(x16) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    ecap 0002[100] = VC 1 max VC0
+    ecap 0004[128] = Power Budgeting 1
+
+re0@pci0:4:7:0:	class=0x020000 rev=0x10 hdr=0x00 vendor=0x10ec device=0x8167 subvendor=0x1043 subdevice=0x820d
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    device     = 'RTL-8110SC/8169SC Gigabit Ethernet'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0xcc00, size 256, enabled
+    bar   [14] = type Memory, range 32, base 0xdfeff000, size 256, enabled
+    cap 01[dc] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+hdac0@pci0:128:1:0:	class=0x040300 rev=0x10 hdr=0x00 vendor=0x1106 device=0x3288 subvendor=0x1043 subdevice=0x81b3
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VX900/VT8xxx High Definition Audio Controller'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 64, base 0xbfffc000, size 16384, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 05[60] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 10[70] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+    ecap 0002[100] = VC 1 max VC0

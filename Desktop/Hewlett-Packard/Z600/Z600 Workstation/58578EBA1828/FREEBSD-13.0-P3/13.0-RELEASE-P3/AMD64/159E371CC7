@@ -1,0 +1,594 @@
+hostb0@pci0:0:0:0:	class=0x060000 rev=0x13 hdr=0x00 vendor=0x8086 device=0x3406 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = '5520 I/O Hub to ESI Port'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 05[60] = MSI supports 2 messages, vector masks 
+    cap 10[90] = PCI-Express 2 root port max data 128(128) ARI disabled
+                 max read 128
+                 link x4(x4) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    cap 01[e0] = powerspec 3  supports D0 D3  current D0
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000d[150] = ACS 1
+    ecap 000b[160] = Vendor [0] ID 0002 Rev 0 Length 12
+
+pcib1@pci0:0:1:0:	class=0x060400 rev=0x13 hdr=0x01 vendor=0x8086 device=0x3408 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = '5520/5500/X58 I/O Hub PCI Express Root Port 1'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge subvendor=0x103c subdevice=0x130a
+    cap 05[60] = MSI supports 2 messages, vector masks 
+    cap 10[90] = PCI-Express 2 root port max data 256(256) ARI disabled
+                 max read 128
+                 link x1(x4) speed 5.0(5.0) ASPM disabled(L0s/L1)
+                 slot 0 power limit 0 mW
+    cap 01[e0] = powerspec 3  supports D0 D3  current D0
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000d[150] = ACS 1
+    ecap 000b[160] = Vendor [0] ID 0002 Rev 0 Length 12
+
+pcib2@pci0:0:3:0:	class=0x060400 rev=0x13 hdr=0x01 vendor=0x8086 device=0x340a subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = '5520/5500/X58 I/O Hub PCI Express Root Port 3'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge subvendor=0x103c subdevice=0x130a
+    cap 05[60] = MSI supports 2 messages, vector masks 
+    cap 10[90] = PCI-Express 2 root port max data 256(256) ARI disabled
+                 max read 128
+                 link x16(x16) speed 5.0(5.0) ASPM disabled(L0s/L1)
+                 slot 2 power limit 75000 mW
+    cap 01[e0] = powerspec 3  supports D0 D3  current D0
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000d[150] = ACS 1
+    ecap 000b[160] = Vendor [0] ID 0002 Rev 0 Length 12
+
+pcib3@pci0:0:7:0:	class=0x060400 rev=0x13 hdr=0x01 vendor=0x8086 device=0x340e subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = '5520/5500/X58 I/O Hub PCI Express Root Port 7'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge subvendor=0x103c subdevice=0x130a
+    cap 05[60] = MSI supports 2 messages, vector masks 
+    cap 10[90] = PCI-Express 2 root port max data 128(256) ARI disabled
+                 max read 128
+                 link x0(x16) speed 0.0(5.0) ASPM disabled(L0s/L1)
+                 slot 4 power limit 75000 mW
+    cap 01[e0] = powerspec 3  supports D0 D3  current D0
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000d[150] = ACS 1
+    ecap 000b[160] = Vendor [0] ID 0002 Rev 0 Length 12
+
+none0@pci0:0:16:0:	class=0x080000 rev=0x13 hdr=0x00 vendor=0x8086 device=0x3425 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = '7500/5520/5500/X58 Physical and Link Layer Registers Port 0'
+    class      = base peripheral
+    subclass   = interrupt controller
+    cap 09[50] = vendor (length 255) Intel cap 15 version 0
+
+none1@pci0:0:16:1:	class=0x080000 rev=0x13 hdr=0x00 vendor=0x8086 device=0x3426 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = '7500/5520/5500/X58 Routing and Protocol Layer Registers Port 0'
+    class      = base peripheral
+    subclass   = interrupt controller
+
+none2@pci0:0:17:0:	class=0x080000 rev=0x13 hdr=0x00 vendor=0x8086 device=0x3427 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = '7500/5520/5500 Physical and Link Layer Registers Port 1'
+    class      = base peripheral
+    subclass   = interrupt controller
+    cap 09[50] = vendor (length 255) Intel cap 15 version 0
+
+none3@pci0:0:17:1:	class=0x080000 rev=0x13 hdr=0x00 vendor=0x8086 device=0x3428 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = '7500/5520/5500 Routing & Protocol Layer Register Port 1'
+    class      = base peripheral
+    subclass   = interrupt controller
+
+none4@pci0:0:20:0:	class=0x080000 rev=0x13 hdr=0x00 vendor=0x8086 device=0x342e subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = '7500/5520/5500/X58 I/O Hub System Management Registers'
+    class      = base peripheral
+    subclass   = interrupt controller
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+                 link x0(x0) ASPM disabled(L0s)
+
+none5@pci0:0:20:1:	class=0x080000 rev=0x13 hdr=0x00 vendor=0x8086 device=0x3422 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = '7500/5520/5500/X58 I/O Hub GPIO and Scratch Pad Registers'
+    class      = base peripheral
+    subclass   = interrupt controller
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+                 link x0(x0) ASPM disabled(L0s)
+
+none6@pci0:0:20:2:	class=0x080000 rev=0x13 hdr=0x00 vendor=0x8086 device=0x3423 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = '7500/5520/5500/X58 I/O Hub Control Status and RAS Registers'
+    class      = base peripheral
+    subclass   = interrupt controller
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+                 link x0(x0) ASPM disabled(L0s)
+
+none7@pci0:0:21:0:	class=0x080020 rev=0x13 hdr=0x00 vendor=0x8086 device=0x342f subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = '7500/5520/5500/X58 Trusted Execution Technology Registers'
+    class      = base peripheral
+    subclass   = interrupt controller
+
+uhci0@pci0:0:26:0:	class=0x0c0300 rev=0x00 hdr=0x00 vendor=0x8086 device=0x3a37 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = '82801JI (ICH10 Family) USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xc000, size 32, enabled
+    cap 13[50] = PCI Advanced Features: FLR TP
+
+uhci1@pci0:0:26:1:	class=0x0c0300 rev=0x00 hdr=0x00 vendor=0x8086 device=0x3a38 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = '82801JI (ICH10 Family) USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xc020, size 32, enabled
+    cap 13[50] = PCI Advanced Features: FLR TP
+
+uhci2@pci0:0:26:2:	class=0x0c0300 rev=0x00 hdr=0x00 vendor=0x8086 device=0x3a39 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = '82801JI (ICH10 Family) USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xc040, size 32, enabled
+    cap 13[50] = PCI Advanced Features: FLR TP
+
+ehci0@pci0:0:26:7:	class=0x0c0320 rev=0x00 hdr=0x00 vendor=0x8086 device=0x3a3c subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = '82801JI (ICH10 Family) USB2 EHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xe5004800, size 1024, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 0a[58] = EHCI Debug Port at offset 0xa0 in map 0x14
+    cap 13[98] = PCI Advanced Features: FLR TP
+
+hdac1@pci0:0:27:0:	class=0x040300 rev=0x00 hdr=0x00 vendor=0x8086 device=0x3a3e subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = '82801JI (ICH10 Family) HD Audio Controller'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 64, base 0xe5000000, size 16384, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 05[60] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 10[70] = PCI-Express 1 root endpoint max data 128(128) FLR NS
+                 max read 128
+    ecap 0002[100] = VC 1 max VC1
+    ecap 0005[130] = Root Complex Link Declaration 1
+
+pcib4@pci0:0:28:0:	class=0x060400 rev=0x00 hdr=0x01 vendor=0x8086 device=0x3a40 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = '82801JI (ICH10 Family) PCI Express Root Port 1'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 1 root port max data 128(128)
+                 max read 128
+                 link x0(x4) speed 0.0(2.5) ASPM disabled(L0s/L1)
+                 slot 3 power limit 10000 mW HotPlug(empty) surprise
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge subvendor=0x103c subdevice=0x130a
+    cap 01[a0] = powerspec 2  supports D0 D3  current D0
+    ecap 0002[100] = VC 1 max VC0
+    ecap 0005[180] = Root Complex Link Declaration 1
+
+pcib5@pci0:0:28:5:	class=0x060400 rev=0x00 hdr=0x01 vendor=0x8086 device=0x3a4a subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = '82801JI (ICH10 Family) PCI Express Root Port 6'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 1 root port max data 128(128)
+                 max read 128
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+                 slot 0 power limit 0 mW HotPlug(present) surprise
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge subvendor=0x103c subdevice=0x130a
+    cap 01[a0] = powerspec 2  supports D0 D3  current D0
+    ecap 0002[100] = VC 1 max VC0
+    ecap 0005[180] = Root Complex Link Declaration 1
+
+uhci3@pci0:0:29:0:	class=0x0c0300 rev=0x00 hdr=0x00 vendor=0x8086 device=0x3a34 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = '82801JI (ICH10 Family) USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xc060, size 32, enabled
+    cap 13[50] = PCI Advanced Features: FLR TP
+
+uhci4@pci0:0:29:1:	class=0x0c0300 rev=0x00 hdr=0x00 vendor=0x8086 device=0x3a35 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = '82801JI (ICH10 Family) USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xc080, size 32, enabled
+    cap 13[50] = PCI Advanced Features: FLR TP
+
+uhci5@pci0:0:29:2:	class=0x0c0300 rev=0x00 hdr=0x00 vendor=0x8086 device=0x3a36 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = '82801JI (ICH10 Family) USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xc0a0, size 32, enabled
+    cap 13[50] = PCI Advanced Features: FLR TP
+
+ehci1@pci0:0:29:7:	class=0x0c0320 rev=0x00 hdr=0x00 vendor=0x8086 device=0x3a3a subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = '82801JI (ICH10 Family) USB2 EHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xe5004c00, size 1024, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 0a[58] = EHCI Debug Port at offset 0xa0 in map 0x14
+    cap 13[98] = PCI Advanced Features: FLR TP
+
+pcib6@pci0:0:30:0:	class=0x060401 rev=0x90 hdr=0x01 vendor=0x8086 device=0x244e subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = '82801 PCI Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[50] = PCI Bridge subvendor=0x103c subdevice=0x130a
+
+isab0@pci0:0:31:0:	class=0x060100 rev=0x00 hdr=0x00 vendor=0x8086 device=0x3a16 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = '82801JIR (ICH10R) LPC Interface Controller'
+    class      = bridge
+    subclass   = PCI-ISA
+    cap 09[e0] = vendor (length 12) Intel cap 1 version 0
+		 features: SATA RAID-5, 4 PCI-e x1 slots
+
+ahci1@pci0:0:31:2:	class=0x010400 rev=0x00 hdr=0x00 vendor=0x8086 device=0x2822 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'SATA Controller [RAID mode]'
+    class      = mass storage
+    subclass   = RAID
+    bar   [10] = type I/O Port, range 32, base 0xc100, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0xc110, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0xc108, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0xc114, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0xc0c0, size 32, enabled
+    bar   [24] = type Memory, range 32, base 0xe5004000, size 2048, enabled
+    cap 05[80] = MSI supports 16 messages enabled with 16 messages
+    cap 01[70] = powerspec 3  supports D0 D3  current D0
+    cap 12[a8] = SATA Index-Data Pair
+    cap 13[b0] = PCI Advanced Features: FLR TP
+
+ahci0@pci0:3:0:0:	class=0x010601 rev=0x11 hdr=0x00 vendor=0x1b4b device=0x9215 subvendor=0x1b4b subdevice=0x9215
+    vendor     = 'Marvell Technology Group Ltd.'
+    device     = '88SE9215 PCIe 2.0 x1 4-port SATA 6 Gb/s Controller'
+    class      = mass storage
+    subclass   = SATA
+    bar   [10] = type I/O Port, range 32, base 0xd020, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0xd030, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0xd028, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0xd034, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0xd000, size 32, enabled
+    bar   [24] = type Memory, range 32, base 0xe6000000, size 2048, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message enabled with 1 message
+    cap 10[70] = PCI-Express 2 legacy endpoint max data 256(512) RO
+                 max read 512
+                 link x1(x1) speed 5.0(5.0) ASPM disabled(L0s/L1)
+    cap 12[e0] = SATA Index-Data Pair
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+
+vgapci0@pci0:15:0:0:	class=0x030000 rev=0xa2 hdr=0x00 vendor=0x10de device=0x1381 subvendor=0x3842 subdevice=0x2753
+    vendor     = 'NVIDIA Corporation'
+    device     = 'GM107 [GeForce GTX 750]'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 32, base 0xe2000000, size 16777216, enabled
+    bar   [14] = type Prefetchable Memory, range 64, base 0xd0000000, size 268435456, enabled
+    bar   [1c] = type Prefetchable Memory, range 64, base 0xe0000000, size 33554432, enabled
+    bar   [24] = type I/O Port, range 32, base 0xe000, size 128, enabled
+    cap 01[60] = powerspec 3  supports D0 D3  current D0
+    cap 05[68] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 10[78] = PCI-Express 2 legacy endpoint max data 256(256) RO NS
+                 max read 512
+                 link x16(x16) speed 5.0(5.0) ASPM disabled(L0s/L1) ClockPM enabled
+    ecap 0002[100] = VC 1 max VC0
+    ecap 001e[258] = L1 PM Substates 1
+    ecap 0004[128] = Power Budgeting 1
+    ecap 000b[600] = Vendor [1] ID 0001 Rev 1 Length 36
+
+hdac0@pci0:15:0:1:	class=0x040300 rev=0xa1 hdr=0x00 vendor=0x10de device=0x0fbc subvendor=0x3842 subdevice=0x2753
+    vendor     = 'NVIDIA Corporation'
+    device     = 'GM107 High Definition Audio Controller [GeForce 940MX]'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 32, base 0xe3000000, size 16384, enabled
+    cap 01[60] = powerspec 3  supports D0 D3  current D0
+    cap 05[68] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 10[78] = PCI-Express 2 endpoint max data 256(256) RO NS
+                 max read 512
+                 link x16(x16) speed 5.0(5.0) ASPM L0s/L1(L0s/L1) ClockPM enabled
+
+bge0@pci0:1:0:0:	class=0x020000 rev=0x10 hdr=0x00 vendor=0x14e4 device=0x1684 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Broadcom Inc. and subsidiaries'
+    device     = 'NetXtreme BCM5764M Gigabit Ethernet PCIe'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 64, base 0xe4000000, size 65536, enabled
+    cap 01[48] = powerspec 3  supports D0 D3  current D0
+    cap 03[40] = VPD
+    cap 09[60] = vendor (length 108)
+    cap 05[50] = MSI supports 1 message, 64 bit 
+    cap 10[cc] = PCI-Express 2 endpoint max data 128(256)
+                 max read 4096
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1) ClockPM disabled
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 0002[13c] = VC 1 max VC0
+    ecap 0003[160] = Serial 1 d8d385fffe74c6c8
+    ecap 0004[16c] = Power Budgeting 1
+
+hostb1@pci0:63:0:0:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c40 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 QuickPath Architecture Generic Non-Core Registers'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb2@pci0:63:0:1:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c01 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 QuickPath Architecture System Address Decoder'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb3@pci0:63:2:0:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c10 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 QPI Link 0'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb4@pci0:63:2:1:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c11 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 QPI Physical 0'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb5@pci0:63:2:4:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c14 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 QPI Link 1'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb6@pci0:63:2:5:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c15 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 QPI Physical 1'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb7@pci0:63:3:0:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c18 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 Integrated Memory Controller'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb8@pci0:63:3:1:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c19 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 Integrated Memory Controller Target Address Decoder'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb9@pci0:63:3:2:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c1a subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 Integrated Memory Controller RAS Registers'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb10@pci0:63:3:4:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c1c subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 Integrated Memory Controller Test Registers'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb11@pci0:63:4:0:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c20 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 Integrated Memory Controller Channel 0 Control Registers'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb12@pci0:63:4:1:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c21 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 Integrated Memory Controller Channel 0 Address Registers'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb13@pci0:63:4:2:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c22 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 Integrated Memory Controller Channel 0 Rank Registers'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb14@pci0:63:4:3:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c23 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 Integrated Memory Controller Channel 0 Thermal Control Registers'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb15@pci0:63:5:0:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c28 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 Integrated Memory Controller Channel 1 Control Registers'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb16@pci0:63:5:1:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c29 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 Integrated Memory Controller Channel 1 Address Registers'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb17@pci0:63:5:2:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c2a subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 Integrated Memory Controller Channel 1 Rank Registers'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb18@pci0:63:5:3:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c2b subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 Integrated Memory Controller Channel 1 Thermal Control Registers'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb19@pci0:63:6:0:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c30 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 Integrated Memory Controller Channel 2 Control Registers'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb20@pci0:63:6:1:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c31 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 Integrated Memory Controller Channel 2 Address Registers'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb21@pci0:63:6:2:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c32 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 Integrated Memory Controller Channel 2 Rank Registers'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb22@pci0:63:6:3:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c33 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 Integrated Memory Controller Channel 2 Thermal Control Registers'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb23@pci0:62:0:0:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c40 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 QuickPath Architecture Generic Non-Core Registers'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb24@pci0:62:0:1:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c01 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 QuickPath Architecture System Address Decoder'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb25@pci0:62:2:0:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c10 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 QPI Link 0'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb26@pci0:62:2:1:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c11 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 QPI Physical 0'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb27@pci0:62:2:4:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c14 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 QPI Link 1'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb28@pci0:62:2:5:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c15 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 QPI Physical 1'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb29@pci0:62:3:0:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c18 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 Integrated Memory Controller'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb30@pci0:62:3:1:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c19 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 Integrated Memory Controller Target Address Decoder'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb31@pci0:62:3:2:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c1a subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 Integrated Memory Controller RAS Registers'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb32@pci0:62:3:4:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c1c subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 Integrated Memory Controller Test Registers'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb33@pci0:62:4:0:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c20 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 Integrated Memory Controller Channel 0 Control Registers'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb34@pci0:62:4:1:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c21 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 Integrated Memory Controller Channel 0 Address Registers'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb35@pci0:62:4:2:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c22 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 Integrated Memory Controller Channel 0 Rank Registers'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb36@pci0:62:4:3:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c23 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 Integrated Memory Controller Channel 0 Thermal Control Registers'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb37@pci0:62:5:0:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c28 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 Integrated Memory Controller Channel 1 Control Registers'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb38@pci0:62:5:1:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c29 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 Integrated Memory Controller Channel 1 Address Registers'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb39@pci0:62:5:2:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c2a subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 Integrated Memory Controller Channel 1 Rank Registers'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb40@pci0:62:5:3:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c2b subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 Integrated Memory Controller Channel 1 Thermal Control Registers'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb41@pci0:62:6:0:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c30 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 Integrated Memory Controller Channel 2 Control Registers'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb42@pci0:62:6:1:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c31 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 Integrated Memory Controller Channel 2 Address Registers'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb43@pci0:62:6:2:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c32 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 Integrated Memory Controller Channel 2 Rank Registers'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb44@pci0:62:6:3:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x2c33 subvendor=0x103c subdevice=0x130a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon 5500/Core i7 Integrated Memory Controller Channel 2 Thermal Control Registers'
+    class      = bridge
+    subclass   = HOST-PCI

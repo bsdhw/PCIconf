@@ -1,0 +1,155 @@
+pcib1@pci0:0:0:0:	class=0x060400 rev=0x00 hdr=0x01 vendor=0xf15e device=0x0000 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'SiFive, Inc.'
+    class      = bridge
+    subclass   = PCI-PCI
+    bar   [10] = type Memory, range 64, base 0, size 1048576, enabled
+    cap 01[40] = powerspec 3  supports D0 D1 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit 
+    cap 10[70] = PCI-Express 2 root port max data 128(1024) RO
+                 max read 512
+                 link x8(x8) speed 8.0(8.0) ASPM disabled(L0s/L1)
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[148] = PCIe Sec 1 lane errors 0
+    ecap 000b[178] = Vendor [1] ID 0001 Rev 1 Length 56
+
+pcib2@pci0:1:0:0:	class=0x060400 rev=0x01 hdr=0x01 vendor=0x1b21 device=0x2824 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'ASMedia Technology Inc.'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit 
+    cap 10[80] = PCI-Express 2 upstream port max data 128(512) RO NS ARI disabled
+                 max read 128
+                 link x8(x8) speed 8.0(8.0) ASPM disabled(L1) ClockPM disabled
+    cap 0d[c0] = PCI Bridge subvendor=0x0000 subdevice=0x0000
+    ecap 0001[100] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0004[140] = Power Budgeting 1
+    ecap 0018[160] = LTR 1
+    ecap 0012[180] = Multicast 1
+    ecap 0019[1c0] = PCIe Sec 1 lane errors 0
+    ecap 000b[200] = Vendor [1] ID 001a Rev 0 Length 3584
+
+pcib3@pci0:2:0:0:	class=0x060400 rev=0x01 hdr=0x01 vendor=0x1b21 device=0x2824 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'ASMedia Technology Inc.'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit 
+    cap 10[80] = PCI-Express 2 downstream port max data 128(512) RO NS ARI disabled
+                 max read 128
+                 link x1(x2) speed 2.5(8.0) ASPM disabled(L1) ClockPM disabled
+                 slot 0 power limit 0 mW
+    cap 0d[c0] = PCI Bridge subvendor=0x0000 subdevice=0x0000
+    ecap 0001[100] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0004[140] = Power Budgeting 1
+    ecap 0018[160] = LTR 1
+    ecap 0012[180] = Multicast 1
+    ecap 0019[1c0] = PCIe Sec 1 lane errors 0
+    ecap 000b[200] = Vendor [1] ID 001a Rev 0 Length 3584
+
+pcib4@pci0:2:2:0:	class=0x060400 rev=0x01 hdr=0x01 vendor=0x1b21 device=0x2824 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'ASMedia Technology Inc.'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit 
+    cap 10[80] = PCI-Express 2 downstream port max data 128(512) RO NS ARI disabled
+                 max read 128
+                 link x1(x1) speed 5.0(8.0) ASPM disabled(L1) ClockPM disabled
+                 slot 0 power limit 0 mW
+    cap 0d[c0] = PCI Bridge subvendor=0x0000 subdevice=0x0000
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 0004[140] = Power Budgeting 1
+    ecap 0018[160] = LTR 1
+    ecap 0012[180] = Multicast 1
+    ecap 0019[1c0] = PCIe Sec 1 lane errors 0
+    ecap 000b[200] = Vendor [1] ID 001a Rev 0 Length 3584
+
+pcib5@pci0:2:3:0:	class=0x060400 rev=0x01 hdr=0x01 vendor=0x1b21 device=0x2824 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'ASMedia Technology Inc.'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit 
+    cap 10[80] = PCI-Express 2 downstream port max data 128(512) RO NS ARI disabled
+                 max read 128
+                 link x1(x1) speed 2.5(8.0) ASPM disabled(L1) ClockPM disabled
+                 slot 0 power limit 0 mW
+    cap 0d[c0] = PCI Bridge subvendor=0x0000 subdevice=0x0000
+    ecap 0001[100] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0004[140] = Power Budgeting 1
+    ecap 0018[160] = LTR 1
+    ecap 0012[180] = Multicast 1
+    ecap 0019[1c0] = PCIe Sec 1 lane errors 0
+    ecap 000b[200] = Vendor [1] ID 001a Rev 0 Length 3584
+
+pcib6@pci0:2:4:0:	class=0x060400 rev=0x01 hdr=0x01 vendor=0x1b21 device=0x2824 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'ASMedia Technology Inc.'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit 
+    cap 10[80] = PCI-Express 2 downstream port max data 128(512) RO NS ARI disabled
+                 max read 128
+                 link x4(x4) speed 8.0(8.0) ASPM disabled(L1) ClockPM disabled
+                 slot 0 power limit 0 mW
+    cap 0d[c0] = PCI Bridge subvendor=0x0000 subdevice=0x0000
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0004[140] = Power Budgeting 1
+    ecap 0018[160] = LTR 1
+    ecap 0012[180] = Multicast 1
+    ecap 0019[1c0] = PCIe Sec 1 lane errors 0
+    ecap 000b[200] = Vendor [1] ID 001a Rev 0 Length 3584
+
+pcib7@pci0:2:8:0:	class=0x060400 rev=0x01 hdr=0x01 vendor=0x1b21 device=0x2824 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'ASMedia Technology Inc.'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit 
+    cap 10[80] = PCI-Express 2 downstream port max data 128(512) RO NS ARI disabled
+                 max read 128
+                 link x1(x8) speed 2.5(8.0) ASPM disabled(L1) ClockPM disabled
+                 slot 0 power limit 0 mW
+    cap 0d[c0] = PCI Bridge subvendor=0x0000 subdevice=0x0000
+    ecap 0001[100] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0004[140] = Power Budgeting 1
+    ecap 0018[160] = LTR 1
+    ecap 0012[180] = Multicast 1
+    ecap 0019[1c0] = PCIe Sec 1 lane errors 0
+    ecap 000b[200] = Vendor [1] ID 001a Rev 0 Length 3584
+
+xhci0@pci0:4:0:0:	class=0x0c0330 rev=0x00 hdr=0x00 vendor=0x1b21 device=0x1142 subvendor=0x1b21 subdevice=0x1142
+    vendor     = 'ASMedia Technology Inc.'
+    device     = 'ASM1042A USB 3.0 Host Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 64, base 0x60100000, size 32768, enabled
+    cap 05[50] = MSI supports 8 messages, 64 bit 
+    cap 11[68] = MSI-X supports 8 messages
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x2080]
+    cap 01[78] = powerspec 3  supports D0 D3  current D0
+    cap 10[80] = PCI-Express 2 legacy endpoint max data 128(512) RO NS
+                 max read 512
+                 link x1(x1) speed 5.0(5.0) ASPM disabled(L0s/L1)
+    ecap 0002[100] = VC 1 max VC0
+
+nvme0@pci0:6:0:0:	class=0x010802 rev=0x00 hdr=0x00 vendor=0x144d device=0xa808 subvendor=0x144d subdevice=0xa801
+    vendor     = 'Samsung Electronics Co Ltd'
+    device     = 'NVMe SSD Controller SM981/PM981/PM983'
+    class      = mass storage
+    subclass   = NVM
+    bar   [10] = type Memory, range 64, base 0x60200000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit 
+    cap 10[70] = PCI-Express 2 endpoint max data 128(256) FLR RO NS
+                 max read 512
+                 link x4(x4) speed 8.0(8.0) ASPM disabled(L1) ClockPM disabled
+    cap 11[b0] = MSI-X supports 33 messages
+                 Table in map 0x10[0x3000], PBA in map 0x10[0x2000]
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0003[148] = Serial 1 0000000000000000
+    ecap 0004[158] = Power Budgeting 1
+    ecap 0019[168] = PCIe Sec 1 lane errors 0
+    ecap 0018[188] = LTR 1
+    ecap 001e[190] = L1 PM Substates 1
