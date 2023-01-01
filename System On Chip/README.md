@@ -26,7 +26,7 @@ Probe  - latest probe ID of this device.
 
 | ID        | Subsystem | MFG              | Name                                 | Count | Driver     | Probe |
 |-----------|-----------|------------------|--------------------------------------|-------|------------|-------|
-| 14e4:2711 |           | Broadcom         | BCM2711 PCIe Bridge                  | 17    | pcib       | [840C7F2142](<System On Chip/Raspberry Pi Foundation/Raspberry/Raspberry Pi/E2EEB2EBEC28/FREEBSD-14.0-CURRENT/14.0-CURRENT/ARM64/840C7F2142>) |
+| 14e4:2711 |           | Broadcom         | BCM2711 PCIe Bridge                  | 21    | pcib       | [070CCC68F8](<System On Chip/Raspberry Pi Foundation/Raspberry/Raspberry Pi/42A3D19C0B45/FREEBSD-13.0/13.0-RELEASE/ARM64/070CCC68F8>) |
 | 1d87:0100 |           | Fuzhou Rockch... | RK3399 PCI Express Root Port         | 2     | pcib       | [D96ADE87E5](<System On Chip/Others/Others/Others/6D58F26372BC/FREEBSD-14.0-CURRENT/14.0-CURRENT/ARM64/D96ADE87E5>) |
 | 1022:1a00 | 1022:1a00 | AMD              |                                      | 1     | hostb      | [608812BDE1](<System On Chip/Raspberry Pi Foundation/Raspberry/Raspberry Pi/95B932C60F7C/HARDENEDBSD-14.0-CURRENT-HBSD/14.0-CURRENT-HBSD/ARM64/608812BDE1>) |
 | 1022:1a01 |           | AMD              |                                      | 1     | hostb      | [608812BDE1](<System On Chip/Raspberry Pi Foundation/Raspberry/Raspberry Pi/95B932C60F7C/HARDENEDBSD-14.0-CURRENT-HBSD/14.0-CURRENT-HBSD/ARM64/608812BDE1>) |
@@ -77,7 +77,7 @@ Probe  - latest probe ID of this device.
 | ID        | Subsystem | MFG              | Name                                 | Count | Driver     | Probe |
 |-----------|-----------|------------------|--------------------------------------|-------|------------|-------|
 | 126f:2263 | 126f:2263 | Silicon Motion   | SM2263EN/SM2263XT SSD Controller     | 2     | nvme       | [B5C6AA26DE](<System On Chip/Firefly/ROC-RK3566/ROC-RK3566-PC/FAAF4C74704D/HELLOSYSTEM-13.0-STABLE/13.0-STABLE/ARM64/B5C6AA26DE>) |
-| 15b7:5009 | 15b7:5009 | Sandisk          | WD Blue SN550 NVMe SSD               | 1     | nvme       | [E1B15635FF](<System On Chip/Raspberry Pi Foundation/Raspberry/Raspberry Pi/D264F258A580/FREEBSD-13.0-CURRENT/13.0-CURRENT/ARM64/E1B15635FF>) |
+| 15b7:5009 | 15b7:5009 | SanDisk          | WD Blue SN550 NVMe SSD               | 1     | nvme       | [E1B15635FF](<System On Chip/Raspberry Pi Foundation/Raspberry/Raspberry Pi/D264F258A580/FREEBSD-13.0-CURRENT/13.0-CURRENT/ARM64/E1B15635FF>) |
 | 1d0f:8061 |           | Amazon.com       | NVMe EBS Controller                  | 1     | nvme       | [7A05270DDB](<System On Chip/Raspberry Pi Foundation/Raspberry/Raspberry Pi/26A7313AD2FD/FREEBSD-13.0-CURRENT/13.0-CURRENT/ARM64/7A05270DDB>) |
 | 8086:2522 | 8086:3810 | Intel            | NVMe Optane Memory Series            | 1     | nvme       | [4E4F164625](<System On Chip/Raspberry Pi Foundation/Raspberry/Raspberry Pi/9C45D78BD256/FREEBSD-14.0-CURRENT/14.0-CURRENT/ARM64/4E4F164625>) |
 | 8086:f1a6 | 8086:390b | Intel            | SSD Pro 7600p/760p/E 6100p Series    | 1     | nvme       | [9C6094360F](<System On Chip/Raspberry Pi Foundation/Raspberry/Raspberry Pi/ED12AFB3B398/FREEBSD-13.0-CURRENT/13.0-CURRENT/ARM64/9C6094360F>) |
@@ -86,6 +86,6 @@ Probe  - latest probe ID of this device.
 
 | ID        | Subsystem | MFG              | Name                                 | Count | Driver     | Probe |
 |-----------|-----------|------------------|--------------------------------------|-------|------------|-------|
-| 1106:3483 | 1106:3483 | VIA Technologies | VL805/806 xHCI USB 3.0 Controller    | 17    | bcm_xhci   | [840C7F2142](<System On Chip/Raspberry Pi Foundation/Raspberry/Raspberry Pi/E2EEB2EBEC28/FREEBSD-14.0-CURRENT/14.0-CURRENT/ARM64/840C7F2142>) |
+| 1106:3483 | 1106:3483 | VIA Technologies | VL805/806 xHCI USB 3.0 Controller    | 21    | bcm_xhci   | [070CCC68F8](<System On Chip/Raspberry Pi Foundation/Raspberry/Raspberry Pi/42A3D19C0B45/FREEBSD-13.0/13.0-RELEASE/ARM64/070CCC68F8>) |
 | 1b73:1009 |           | Fresco Logic     | FL1009 USB 3.0 Host Controller       | 1     | xhci       | [608812BDE1](<System On Chip/Raspberry Pi Foundation/Raspberry/Raspberry Pi/95B932C60F7C/HARDENEDBSD-14.0-CURRENT-HBSD/14.0-CURRENT-HBSD/ARM64/608812BDE1>) |
 
