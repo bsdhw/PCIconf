@@ -1,0 +1,206 @@
+hostb0@pci0:0:0:0:	class=0x060000 card=0x201717aa chip=0x27a08086 rev=0x03 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Mobile 945GM/PM/GMS, 943/940GML and 945GT Express Memory Controller Hub'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 09[e0] = vendor (length 9) Intel cap 7 version 1
+
+vgapci0@pci0:0:2:0:	class=0x030000 card=0x201a17aa chip=0x27a28086 rev=0x03 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Mobile 945GM/GMS, 943/940GML Express Integrated Graphics Controller'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 32, base 0xee100000, size 524288, enabled
+    bar   [14] = type I/O Port, range 32, base 0x1800, size 8, enabled
+    bar   [18] = type Prefetchable Memory, range 32, base 0xd0000000, size 268435456, enabled
+    bar   [1c] = type Memory, range 32, base 0xee200000, size 262144, enabled
+    cap 05[90] = MSI supports 1 message 
+    cap 01[d0] = powerspec 2  supports D0 D3  current D0
+
+vgapci1@pci0:0:2:1:	class=0x038000 card=0x201a17aa chip=0x27a68086 rev=0x03 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Mobile 945GM/GMS/GME, 943/940GML Express Integrated Graphics Controller'
+    class      = display
+    bar   [10] = type Memory, range 32, base 0xee180000, size 524288, enabled
+    cap 01[d0] = powerspec 2  supports D0 D3  current D0
+
+hdac0@pci0:0:27:0:	class=0x040300 card=0x201017aa chip=0x27d88086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'NM10/ICH7 Family High Definition Audio Controller'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 64, base 0xee240000, size 16384, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 05[60] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 10[70] = PCI-Express 1 root endpoint max data 128(128) NS
+                 max read 128
+    ecap 0002[100] = VC 1 max VC1
+    ecap 0005[130] = Root Complex Link Declaration 1
+
+pcib1@pci0:0:28:0:	class=0x060400 card=0x201117aa chip=0x27d08086 rev=0x02 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = 'NM10/ICH7 Family PCI Express Port 1'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 1 root port max data 128(128)
+                 max read 128
+                 link x1(x1) speed 2.5(2.5) ASPM L1(L0s/L1)
+                 slot 2 power limit 65 mW HotPlug(present) surprise
+    cap 05[80] = MSI supports 1 message enabled with 1 message
+    cap 0d[90] = PCI Bridge card=0x201117aa
+    cap 01[a0] = powerspec 2  supports D0 D3  current D0
+    ecap 0002[100] = VC 1 max VC1
+    ecap 0005[180] = Root Complex Link Declaration 1
+
+pcib2@pci0:0:28:1:	class=0x060400 card=0x201117aa chip=0x27d28086 rev=0x02 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = 'NM10/ICH7 Family PCI Express Port 2'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 1 root port max data 128(128)
+                 max read 128
+                 link x1(x1) speed 2.5(2.5) ASPM L1(L0s/L1)
+                 slot 3 power limit 65 mW HotPlug(present) surprise
+    cap 05[80] = MSI supports 1 message enabled with 1 message
+    cap 0d[90] = PCI Bridge card=0x201117aa
+    cap 01[a0] = powerspec 2  supports D0 D3  current D0
+    ecap 0002[100] = VC 1 max VC1
+    ecap 0005[180] = Root Complex Link Declaration 1
+
+pcib3@pci0:0:28:2:	class=0x060400 card=0x201117aa chip=0x27d48086 rev=0x02 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = 'NM10/ICH7 Family PCI Express Port 3'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 1 root port max data 128(128)
+                 max read 128
+                 link x0(x1) speed 0.0(2.5) ASPM disabled(L0s/L1)
+                 slot 4 power limit 65 mW HotPlug(empty) surprise
+    cap 05[80] = MSI supports 1 message enabled with 1 message
+    cap 0d[90] = PCI Bridge card=0x201117aa
+    cap 01[a0] = powerspec 2  supports D0 D3  current D0
+    ecap 0002[100] = VC 1 max VC1
+    ecap 0005[180] = Root Complex Link Declaration 1
+
+pcib4@pci0:0:28:3:	class=0x060400 card=0x201117aa chip=0x27d68086 rev=0x02 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = 'NM10/ICH7 Family PCI Express Port 4'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 1 root port max data 128(128)
+                 max read 128
+                 link x0(x1) speed 0.0(2.5) ASPM disabled(L0s/L1)
+                 slot 5 power limit 65 mW HotPlug(empty) surprise
+    cap 05[80] = MSI supports 1 message enabled with 1 message
+    cap 0d[90] = PCI Bridge card=0x201117aa
+    cap 01[a0] = powerspec 2  supports D0 D3  current D0
+    ecap 0002[100] = VC 1 max VC1
+    ecap 0005[180] = Root Complex Link Declaration 1
+
+uhci0@pci0:0:29:0:	class=0x0c0300 card=0x200a17aa chip=0x27c88086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'NM10/ICH7 Family USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0x1820, size 32, enabled
+
+uhci1@pci0:0:29:1:	class=0x0c0300 card=0x200a17aa chip=0x27c98086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'NM10/ICH7 Family USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0x1840, size 32, enabled
+
+uhci2@pci0:0:29:2:	class=0x0c0300 card=0x200a17aa chip=0x27ca8086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'NM10/ICH7 Family USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0x1860, size 32, enabled
+
+uhci3@pci0:0:29:3:	class=0x0c0300 card=0x200a17aa chip=0x27cb8086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'NM10/ICH7 Family USB UHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0x1880, size 32, enabled
+
+ehci0@pci0:0:29:7:	class=0x0c0320 card=0x200b17aa chip=0x27cc8086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'NM10/ICH7 Family USB2 EHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xee444000, size 1024, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 0a[58] = EHCI Debug Port at offset 0xa0 in map 0x14
+
+pcib5@pci0:0:30:0:	class=0x060401 card=0x201317aa chip=0x24488086 rev=0xe2 hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = '82801 Mobile PCI Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[50] = PCI Bridge card=0x201317aa
+
+isab0@pci0:0:31:0:	class=0x060100 card=0x200917aa chip=0x27b98086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801GBM (ICH7-M) LPC Interface Bridge'
+    class      = bridge
+    subclass   = PCI-ISA
+    cap 09[e0] = vendor (length 12) Intel cap 1 version 0
+		 features: Quick Resume, SATA RAID-5, Mobile, 6 PCI-e x1 slots, SATA RAID-0/1/10
+
+atapci0@pci0:0:31:2:	class=0x010180 card=0x200e17aa chip=0x27c48086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = '82801GBM/GHM (ICH7-M Family) SATA Controller [IDE mode]'
+    class      = mass storage
+    subclass   = ATA
+    bar   [20] = type I/O Port, range 32, base 0x18b0, size 16, enabled
+    cap 01[70] = powerspec 2  supports D0 D3  current D0
+
+none0@pci0:0:31:3:	class=0x0c0500 card=0x200f17aa chip=0x27da8086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'NM10/ICH7 Family SMBus Controller'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [20] = type I/O Port, range 32, base 0x18e0, size 32, enabled
+
+bge0@pci0:2:0:0:	class=0x020000 card=0x208117aa chip=0x167d14e4 rev=0x21 hdr=0x00
+    vendor     = 'Broadcom Inc. and subsidiaries'
+    device     = 'NetXtreme BCM5751M Gigabit Ethernet PCI Express'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 64, base 0xee000000, size 65536, enabled
+    cap 01[48] = powerspec 2  supports D0 D3  current D0
+    cap 03[50] = VPD
+    cap 05[58] = MSI supports 8 messages, 64 bit enabled with 1 message
+    cap 10[d0] = PCI-Express 1 endpoint max data 128(128)
+                 max read 4096
+                 link x1(x1) speed 2.5(2.5) ASPM L1(L0s/L1)
+    ecap 0001[100] = AER 1 0 fatal 1 non-fatal 0 corrected
+    ecap 0002[13c] = VC 1 max VC0
+    ecap 0003[160] = Serial 1 0016d3fffe2e78bf
+    ecap 0004[16c] = Power Budgeting 1
+
+ath0@pci0:3:0:0:	class=0x020000 card=0x058a1014 chip=0x1014168c rev=0x01 hdr=0x00
+    vendor     = 'Qualcomm Atheros'
+    device     = 'AR5212 802.11abg NIC'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 64, base 0xedf00000, size 65536, enabled
+    cap 01[40] = powerspec 2  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message 
+    cap 10[60] = PCI-Express 1 legacy endpoint max data 128(128) RO
+                 max read 512
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    cap 11[90] = MSI-X supports 1 message
+                 Table in map 0x10[0x0], PBA in map 0x10[0x0]
+    ecap 0001[100] = AER 1 0 fatal 1 non-fatal 0 corrected
+    ecap 0002[140] = VC 1 max VC0
+
+cbb0@pci0:21:0:0:	class=0x060700 card=0x201217aa chip=0xac56104c rev=0x00 hdr=0x02
+    vendor     = 'Texas Instruments'
+    device     = 'PCI1510 PC card Cardbus Controller'
+    class      = bridge
+    subclass   = PCI-CardBus
+    bar   [10] = type Memory, range 32, base 0xe4300000, size 4096, enabled
+    cap 01[a0] = powerspec 2  supports D0 D1 D2 D3  current D0

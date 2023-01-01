@@ -1,0 +1,230 @@
+hostb0@pci0:0:0:0:	class=0x060000 rev=0x14 hdr=0x00 vendor=0x1022 device=0x7454 subvendor=0x1022 subdevice=0x7454
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'AMD-8151 System Controller'
+    class      = bridge
+    subclass   = HOST-PCI
+    bar   [10] = type Prefetchable Memory, range 32, base 0xf0000000, size 134217728, enabled
+    cap 02[a0] = AGP 4x 2x 1x SBA disabled
+    cap 08[c0] = HT slave
+
+pcib1@pci0:0:1:0:	class=0x060400 rev=0x14 hdr=0x01 vendor=0x1022 device=0x7455 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'AMD-8151 AGP Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+
+pcib2@pci0:0:6:0:	class=0x060400 rev=0x07 hdr=0x01 vendor=0x1022 device=0x7460 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'AMD-8111 PCI'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 08[c0] = HT slave
+    cap 08[f0] = HT interrupt
+
+isab0@pci0:0:7:0:	class=0x060100 rev=0x05 hdr=0x00 vendor=0x1022 device=0x7468 subvendor=0x1022 subdevice=0x7468
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'AMD-8111 LPC'
+    class      = bridge
+    subclass   = PCI-ISA
+
+atapci1@pci0:0:7:1:	class=0x01018a rev=0x03 hdr=0x00 vendor=0x1022 device=0x7469 subvendor=0x1022 subdevice=0x7469
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'AMD-8111 IDE'
+    class      = mass storage
+    subclass   = ATA
+    bar   [20] = type I/O Port, range 32, base 0xffa0, size 16, enabled
+
+none0@pci0:0:7:2:	class=0x0c0500 rev=0x02 hdr=0x00 vendor=0x1022 device=0x746a subvendor=0x1022 subdevice=0x746a
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'AMD-8111 SMBus 2.0'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [10] = type I/O Port, range 32, base 0xc400, size 32, enabled
+
+none1@pci0:0:7:3:	class=0x068000 rev=0x05 hdr=0x00 vendor=0x1022 device=0x746b subvendor=0x1022 subdevice=0x746b
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'AMD-8111 ACPI'
+    class      = bridge
+
+pcm0@pci0:0:7:5:	class=0x040100 rev=0x03 hdr=0x00 vendor=0x1022 device=0x746d subvendor=0x10f1 subdevice=0x746d
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'AMD-8111 AC97 Audio'
+    class      = multimedia
+    subclass   = audio
+    bar   [10] = type I/O Port, range 32, base 0xc800, size 256, enabled
+    bar   [14] = type I/O Port, range 32, base 0xcc00, size 64, enabled
+
+hostb1@pci0:0:24:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1100 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] HyperTransport Technology Configuration'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 08[80] = HT host
+    cap 08[a0] = HT host
+    cap 08[c0] = HT host
+
+hostb2@pci0:0:24:1:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1101 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] Address Map'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb3@pci0:0:24:2:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1102 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] DRAM Controller'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb4@pci0:0:24:3:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1103 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] Miscellaneous Control'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb5@pci0:0:25:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1100 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] HyperTransport Technology Configuration'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 08[80] = HT host
+    cap 08[a0] = HT host
+    cap 08[c0] = HT host
+
+hostb6@pci0:0:25:1:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1101 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] Address Map'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb7@pci0:0:25:2:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1102 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] DRAM Controller'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb8@pci0:0:25:3:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1103 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] Miscellaneous Control'
+    class      = bridge
+    subclass   = HOST-PCI
+
+vgapci0@pci0:2:0:0:	class=0x030000 rev=0x00 hdr=0x00 vendor=0x1002 device=0x5159 subvendor=0x174b subdevice=0x0280
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'RV100 [Radeon 7000 / Radeon VE]'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Prefetchable Memory, range 32, base 0xe0000000, size 134217728, enabled
+    bar   [14] = type I/O Port, range 32, base 0xb800, size 256, enabled
+    bar   [18] = type Memory, range 32, base 0xff5f0000, size 65536, enabled
+    cap 02[58] = AGP 4x 2x 1x SBA disabled
+    cap 01[50] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+ohci0@pci0:1:0:0:	class=0x0c0310 rev=0x0b hdr=0x00 vendor=0x1022 device=0x7464 subvendor=0x1022 subdevice=0x7464
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'AMD-8111 USB OHCI'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xff4fb000, size 4096, enabled
+
+ohci1@pci0:1:0:1:	class=0x0c0310 rev=0x0b hdr=0x00 vendor=0x1022 device=0x7464 subvendor=0x1022 subdevice=0x7464
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'AMD-8111 USB OHCI'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xff4fc000, size 4096, enabled
+
+em0@pci0:1:3:0:	class=0x020000 rev=0x00 hdr=0x00 vendor=0x8086 device=0x1076 subvendor=0x8086 subdevice=0x1076
+    vendor     = 'Intel Corporation'
+    device     = '82541GI Gigabit Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xff3a0000, size 131072, enabled
+    bar   [14] = type Memory, range 32, base 0xff380000, size 131072, enabled
+    bar   [18] = type I/O Port, range 32, base 0x8c00, size 64, enabled
+    cap 01[dc] = powerspec 2  supports D0 D3  current D0
+    cap 07[e4] = PCI-X supports 2048 burst read, 1 split transaction
+
+re0@pci0:1:4:0:	class=0x020000 rev=0x10 hdr=0x00 vendor=0x10ec device=0x8169 subvendor=0x10ec subdevice=0x8169
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    device     = 'RTL8169 PCI Gigabit Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0x7400, size 256, enabled
+    bar   [14] = type Memory, range 32, base 0xff4fdc00, size 256, enabled
+
+atapci0@pci0:1:5:0:	class=0x018000 rev=0x02 hdr=0x00 vendor=0x1095 device=0x3114 subvendor=0x1095 subdevice=0x3114
+    vendor     = 'Silicon Image, Inc.'
+    device     = 'SiI 3114 [SATALink/SATARaid] Serial ATA Controller'
+    class      = mass storage
+    bar   [10] = type I/O Port, range 32, base 0xac00, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0xa800, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0xa400, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0xa000, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0x9c00, size 16, enabled
+    bar   [24] = type Memory, range 32, base 0xff4ffc00, size 1024, enabled
+    cap 01[60] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+re1@pci0:1:6:0:	class=0x020000 rev=0x10 hdr=0x00 vendor=0x10ec device=0x8169 subvendor=0x10ec subdevice=0x8169
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    device     = 'RTL8169 PCI Gigabit Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0x7800, size 256, enabled
+    bar   [14] = type Memory, range 32, base 0xff4fe000, size 256, enabled
+
+re2@pci0:1:7:0:	class=0x020000 rev=0x10 hdr=0x00 vendor=0x10ec device=0x8169 subvendor=0x10ec subdevice=0x8169
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    device     = 'RTL8169 PCI Gigabit Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0x8000, size 256, enabled
+    bar   [14] = type Memory, range 32, base 0xff4fe400, size 256, enabled
+
+re3@pci0:1:8:0:	class=0x020000 rev=0x10 hdr=0x00 vendor=0x10ec device=0x8169 subvendor=0x10ec subdevice=0x8169
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    device     = 'RTL8169 PCI Gigabit Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0x8400, size 256, enabled
+    bar   [14] = type Memory, range 32, base 0xff4fe800, size 256, enabled
+
+re4@pci0:1:9:0:	class=0x020000 rev=0x10 hdr=0x00 vendor=0x10ec device=0x8169 subvendor=0x10ec subdevice=0x8169
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    device     = 'RTL8169 PCI Gigabit Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0x8800, size 256, enabled
+    bar   [14] = type Memory, range 32, base 0xff4fec00, size 256, enabled
+
+none2@pci0:1:10:0:	class=0x0c0010 rev=0x80 hdr=0x00 vendor=0x1106 device=0x3044 subvendor=0x10f1 subdevice=0x3044
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VT6306/7/8 [Fire II(M)] IEEE 1394 OHCI Controller'
+    class      = serial bus
+    subclass   = FireWire
+    bar   [10] = type Memory, range 32, base 0xff4ff000, size 2048, enabled
+    bar   [14] = type I/O Port, range 32, base 0x9000, size 128, enabled
+    cap 01[50] = powerspec 2  supports D0 D2 D3  current D0
+
+uhci0@pci0:1:11:0:	class=0x0c0300 rev=0x61 hdr=0x00 vendor=0x1106 device=0x3038 subvendor=0x1106 subdevice=0x3038
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VT82xx/62xx/VX700/8x0/900 UHCI USB 1.1 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0x9400, size 32, enabled
+    cap 01[80] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+uhci1@pci0:1:11:1:	class=0x0c0300 rev=0x61 hdr=0x00 vendor=0x1106 device=0x3038 subvendor=0x1106 subdevice=0x3038
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VT82xx/62xx/VX700/8x0/900 UHCI USB 1.1 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0x9800, size 32, enabled
+    cap 01[80] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+ehci0@pci0:1:11:2:	class=0x0c0320 rev=0x63 hdr=0x00 vendor=0x1106 device=0x3104 subvendor=0x1106 subdevice=0x3104
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'USB 2.0 EHCI-Compliant Host-Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xff4ff800, size 256, enabled
+    cap 01[80] = powerspec 2  supports D0 D1 D2 D3  current D0

@@ -1,0 +1,309 @@
+hostb0@pci0:0:0:0:	class=0x060000 rev=0xa2 hdr=0x00 vendor=0x10de device=0x07c2 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP73 Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+none0@pci0:0:0:1:	class=0x050000 rev=0xa2 hdr=0x00 vendor=0x10de device=0x07cb subvendor=0x0000 subdevice=0x0000
+    vendor     = 'NVIDIA Corporation'
+    device     = 'nForce 610i/630i memory controller'
+    class      = memory
+    subclass   = RAM
+
+none1@pci0:0:1:0:	class=0x050000 rev=0xa1 hdr=0x00 vendor=0x10de device=0x07cd subvendor=0x0000 subdevice=0x0000
+    vendor     = 'NVIDIA Corporation'
+    device     = 'nForce 610i/630i memory controller'
+    class      = memory
+    subclass   = RAM
+
+none2@pci0:0:1:1:	class=0x050000 rev=0xa1 hdr=0x00 vendor=0x10de device=0x07ce subvendor=0x0000 subdevice=0x0000
+    vendor     = 'NVIDIA Corporation'
+    device     = 'nForce 610i/630i memory controller'
+    class      = memory
+    subclass   = RAM
+
+none3@pci0:0:1:2:	class=0x050000 rev=0xa1 hdr=0x00 vendor=0x10de device=0x07cf subvendor=0x0000 subdevice=0x0000
+    vendor     = 'NVIDIA Corporation'
+    device     = 'nForce 610i/630i memory controller'
+    class      = memory
+    subclass   = RAM
+
+none4@pci0:0:1:3:	class=0x050000 rev=0xa1 hdr=0x00 vendor=0x10de device=0x07d0 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'NVIDIA Corporation'
+    device     = 'nForce 610i/630i memory controller'
+    class      = memory
+    subclass   = RAM
+
+none5@pci0:0:1:4:	class=0x050000 rev=0xa1 hdr=0x00 vendor=0x10de device=0x07d1 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'NVIDIA Corporation'
+    device     = 'nForce 610i/630i memory controller'
+    class      = memory
+    subclass   = RAM
+
+none6@pci0:0:1:5:	class=0x050000 rev=0xa1 hdr=0x00 vendor=0x10de device=0x07d2 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'NVIDIA Corporation'
+    device     = 'nForce 610i/630i memory controller'
+    class      = memory
+    subclass   = RAM
+
+none7@pci0:0:1:6:	class=0x050000 rev=0xa1 hdr=0x00 vendor=0x10de device=0x07d3 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'NVIDIA Corporation'
+    device     = 'nForce 610i/630i memory controller'
+    class      = memory
+    subclass   = RAM
+
+none8@pci0:0:2:0:	class=0x050000 rev=0xa1 hdr=0x00 vendor=0x10de device=0x07d6 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'NVIDIA Corporation'
+    device     = 'nForce 610i/630i memory controller'
+    class      = memory
+    subclass   = RAM
+
+isab0@pci0:0:3:0:	class=0x060100 rev=0xa2 hdr=0x00 vendor=0x10de device=0x07d7 subvendor=0x1631 subdevice=0xe203
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP73 LPC Bridge'
+    class      = bridge
+    subclass   = PCI-ISA
+
+none9@pci0:0:3:1:	class=0x0c0500 rev=0xa1 hdr=0x00 vendor=0x10de device=0x07d8 subvendor=0x1631 subdevice=0xe203
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP73 SMBus'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [10] = type I/O Port, range 32, base 0xff00, size 64, enabled
+    bar   [20] = type I/O Port, range 32, base 0x1c00, size 64, enabled
+    bar   [24] = type I/O Port, range 32, base 0x1c80, size 64, enabled
+    cap 01[44] = powerspec 2  supports D0 D3  current D0
+
+none10@pci0:0:3:2:	class=0x050000 rev=0xa1 hdr=0x00 vendor=0x10de device=0x07d9 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP73 Memory Controller'
+    class      = memory
+    subclass   = RAM
+
+none11@pci0:0:3:4:	class=0x050000 rev=0xa1 hdr=0x00 vendor=0x10de device=0x07c8 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP73 Memory Controller'
+    class      = memory
+    subclass   = RAM
+
+ohci0@pci0:0:4:0:	class=0x0c0310 rev=0xa1 hdr=0x00 vendor=0x10de device=0x07fe subvendor=0x1631 subdevice=0xe203
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP73 OHCI USB 1.1 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xeffff000, size 4096, enabled
+    cap 01[44] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+ehci0@pci0:0:4:1:	class=0x0c0320 rev=0xa1 hdr=0x00 vendor=0x10de device=0x056a subvendor=0x1631 subdevice=0xe203
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP73 [nForce 630i] USB 2.0 Controller (EHCI)'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xefffe000, size 256, enabled
+    cap 0a[44] = EHCI Debug Port at offset 0x98 in map 0x14
+    cap 01[80] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+atapci0@pci0:0:8:0:	class=0x01018a rev=0xa1 hdr=0x00 vendor=0x10de device=0x056c subvendor=0x1631 subdevice=0xe203
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP73 IDE Controller'
+    class      = mass storage
+    subclass   = ATA
+    bar   [20] = type I/O Port, range 32, base 0xfc00, size 16, enabled
+    cap 01[44] = powerspec 2  supports D0 D3  current D0
+
+hdac0@pci0:0:9:0:	class=0x040300 rev=0xa1 hdr=0x00 vendor=0x10de device=0x07fc subvendor=0x1631 subdevice=0xe203
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP73 High Definition Audio'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 32, base 0xefff4000, size 16384, enabled
+    cap 01[44] = powerspec 2  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks enabled with 1 message
+
+pcib1@pci0:0:10:0:	class=0x060401 rev=0xa1 hdr=0x01 vendor=0x10de device=0x056d subvendor=0x10de subdevice=0xcb73
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP73 PCI Express bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[b8] = PCI Bridge subvendor=0x10de subdevice=0xcb73
+
+pcib2@pci0:0:11:0:	class=0x060400 rev=0xa1 hdr=0x01 vendor=0x10de device=0x056e subvendor=0x10de subdevice=0x0000
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP73 PCI Express bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge subvendor=0x10de subdevice=0x0000
+    cap 01[48] = powerspec 2  supports D0 D3  current D0
+    cap 05[50] = MSI supports 2 messages, 64 bit 
+    cap 10[80] = PCI-Express 1 root port max data 256(256) RO NS
+                 max read 512
+                 link x4(x16) speed 2.5(2.5) ASPM disabled(L0s/L1)
+                 slot 1 power limit 75000 mW
+    ecap 0002[100] = VC 1 max VC0
+
+pcib6@pci0:0:12:0:	class=0x060400 rev=0xa1 hdr=0x01 vendor=0x10de device=0x056f subvendor=0x10de subdevice=0x0000
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP73 PCI Express bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge subvendor=0x10de subdevice=0x0000
+    cap 01[48] = powerspec 2  supports D0 D3  current D0
+    cap 05[50] = MSI supports 2 messages, 64 bit 
+    cap 10[80] = PCI-Express 1 root port max data 256(256) RO NS
+                 max read 512
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+                 slot 2 power limit 10000 mW
+    ecap 0002[100] = VC 1 max VC0
+
+pcib7@pci0:0:13:0:	class=0x060400 rev=0xa1 hdr=0x01 vendor=0x10de device=0x056f subvendor=0x10de subdevice=0x0000
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP73 PCI Express bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge subvendor=0x10de subdevice=0x0000
+    cap 01[48] = powerspec 2  supports D0 D3  current D0
+    cap 05[50] = MSI supports 2 messages, 64 bit 
+    cap 10[80] = PCI-Express 1 root port max data 256(256) RO NS
+                 max read 512
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+                 slot 3 power limit 10000 mW
+    ecap 0002[100] = VC 1 max VC0
+
+ahci0@pci0:0:14:0:	class=0x010601 rev=0xa2 hdr=0x00 vendor=0x10de device=0x0584 subvendor=0x1631 subdevice=0xe203
+    vendor     = 'NVIDIA Corporation'
+    class      = mass storage
+    subclass   = SATA
+    bar   [10] = type I/O Port, range 32, base 0x9f0, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0xbf0, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0x970, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0xb70, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0xf700, size 16, enabled
+    bar   [24] = type Memory, range 32, base 0xefff8000, size 8192, enabled
+    cap 01[44] = powerspec 2  supports D0 D3  current D0
+    cap 12[8c] = SATA Index-Data Pair
+    cap 05[b0] = MSI supports 8 messages, 64 bit enabled with 8 messages
+
+nfe0@pci0:0:15:0:	class=0x020000 rev=0xa2 hdr=0x00 vendor=0x10de device=0x07dc subvendor=0x1631 subdevice=0xe203
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP73 Ethernet'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xefffd000, size 4096, enabled
+    bar   [14] = type I/O Port, range 32, base 0xf600, size 8, enabled
+    bar   [18] = type Memory, range 32, base 0xefffc000, size 256, enabled
+    bar   [1c] = type Memory, range 32, base 0xefffb000, size 16, enabled
+    cap 01[44] = powerspec 2  supports D0 D1 D2 D3  current D0
+    cap 05[50] = MSI supports 8 messages, 64 bit, vector masks enabled with 8 messages
+
+vgapci0@pci0:0:16:0:	class=0x030000 rev=0xa2 hdr=0x00 vendor=0x10de device=0x07e2 subvendor=0x1631 subdevice=0xe203
+    vendor     = 'NVIDIA Corporation'
+    device     = 'C73 [GeForce 7050 / nForce 630i]'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 32, base 0xed000000, size 16777216, enabled
+    bar   [14] = type Prefetchable Memory, range 64, base 0xd0000000, size 268435456, enabled
+    bar   [1c] = type Memory, range 64, base 0xee000000, size 16777216, enabled
+    cap 01[48] = powerspec 2  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit 
+
+pcib3@pci0:2:0:0:	class=0x060400 rev=0x0e hdr=0x01 vendor=0x111d device=0x8018 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Microsemi / PMC / IDT'
+    device     = 'PES12N3A 12-lane 3-Port PCI Express Switch'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 1 upstream port max data 256(2048)
+                 max read 128
+                 link x4(x4) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    cap 01[c0] = powerspec 3  supports D0 D3  current D0
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0002[200] = VC 1 max VC0
+
+pcib4@pci0:3:2:0:	class=0x060400 rev=0x0e hdr=0x01 vendor=0x111d device=0x8018 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Microsemi / PMC / IDT'
+    device     = 'PES12N3A 12-lane 3-Port PCI Express Switch'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 1 downstream port max data 256(2048)
+                 max read 128
+                 link x4(x4) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    cap 01[c0] = powerspec 3  supports D0 D3  current D0
+    cap 05[d0] = MSI supports 1 message, 64 bit 
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0002[200] = VC 1 max VC0
+
+pcib5@pci0:3:4:0:	class=0x060400 rev=0x0e hdr=0x01 vendor=0x111d device=0x8018 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Microsemi / PMC / IDT'
+    device     = 'PES12N3A 12-lane 3-Port PCI Express Switch'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 1 downstream port max data 256(2048)
+                 max read 128
+                 link x4(x4) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    cap 01[c0] = powerspec 3  supports D0 D3  current D0
+    cap 05[d0] = MSI supports 1 message, 64 bit 
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0002[200] = VC 1 max VC0
+
+em0@pci0:4:0:0:	class=0x020000 rev=0x06 hdr=0x00 vendor=0x8086 device=0x10bc subvendor=0x103c subdevice=0x704b
+    vendor     = 'Intel Corporation'
+    device     = '82571EB/82571GB Gigabit Ethernet Controller (Copper)'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xef9e0000, size 131072, enabled
+    bar   [14] = type Memory, range 32, base 0xef900000, size 524288, enabled
+    bar   [18] = type I/O Port, range 32, base 0xbf00, size 32, enabled
+    cap 01[c8] = powerspec 2  supports D0 D3  current D0
+    cap 05[d0] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 10[e0] = PCI-Express 1 endpoint max data 256(256) RO NS
+                 max read 512
+                 link x4(x4) speed 2.5(2.5) ASPM disabled(L0s)
+    ecap 0001[100] = AER 1 0 fatal 1 non-fatal 0 corrected
+    ecap 0003[140] = Serial 1 002655ffffd17ebc
+
+em1@pci0:4:0:1:	class=0x020000 rev=0x06 hdr=0x00 vendor=0x8086 device=0x10bc subvendor=0x103c subdevice=0x704b
+    vendor     = 'Intel Corporation'
+    device     = '82571EB/82571GB Gigabit Ethernet Controller (Copper)'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xef9c0000, size 131072, enabled
+    bar   [14] = type Memory, range 32, base 0xef880000, size 524288, enabled
+    bar   [18] = type I/O Port, range 32, base 0xbe00, size 32, enabled
+    cap 01[c8] = powerspec 2  supports D0 D3  current D0
+    cap 05[d0] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 10[e0] = PCI-Express 1 endpoint max data 256(256) RO NS
+                 max read 512
+                 link x4(x4) speed 2.5(2.5) ASPM disabled(L0s)
+    ecap 0001[100] = AER 1 0 fatal 1 non-fatal 0 corrected
+    ecap 0003[140] = Serial 1 002655ffffd17ebc
+
+em2@pci0:5:0:0:	class=0x020000 rev=0x06 hdr=0x00 vendor=0x8086 device=0x10bc subvendor=0x103c subdevice=0x704b
+    vendor     = 'Intel Corporation'
+    device     = '82571EB/82571GB Gigabit Ethernet Controller (Copper)'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xef7e0000, size 131072, enabled
+    bar   [14] = type Memory, range 32, base 0xef700000, size 524288, enabled
+    bar   [18] = type I/O Port, range 32, base 0xaf00, size 32, enabled
+    cap 01[c8] = powerspec 2  supports D0 D3  current D0
+    cap 05[d0] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 10[e0] = PCI-Express 1 endpoint max data 256(256) RO NS
+                 max read 512
+                 link x4(x4) speed 2.5(2.5) ASPM disabled(L0s)
+    ecap 0001[100] = AER 1 0 fatal 1 non-fatal 0 corrected
+    ecap 0003[140] = Serial 1 002655ffffd17ebe
+
+em3@pci0:5:0:1:	class=0x020000 rev=0x06 hdr=0x00 vendor=0x8086 device=0x10bc subvendor=0x103c subdevice=0x704b
+    vendor     = 'Intel Corporation'
+    device     = '82571EB/82571GB Gigabit Ethernet Controller (Copper)'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xef7c0000, size 131072, enabled
+    bar   [14] = type Memory, range 32, base 0xef680000, size 524288, enabled
+    bar   [18] = type I/O Port, range 32, base 0xae00, size 32, enabled
+    cap 01[c8] = powerspec 2  supports D0 D3  current D0
+    cap 05[d0] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 10[e0] = PCI-Express 1 endpoint max data 256(256) RO NS
+                 max read 512
+                 link x4(x4) speed 2.5(2.5) ASPM disabled(L0s)
+    ecap 0001[100] = AER 1 0 fatal 1 non-fatal 0 corrected
+    ecap 0003[140] = Serial 1 002655ffffd17ebe

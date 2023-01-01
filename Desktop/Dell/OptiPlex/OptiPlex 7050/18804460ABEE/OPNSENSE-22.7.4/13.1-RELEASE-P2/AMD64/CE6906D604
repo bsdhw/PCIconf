@@ -1,0 +1,307 @@
+hostb0@pci0:0:0:0:	class=0x060000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x591f subvendor=0x1028 subdevice=0x07a1
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E3-1200 v6/7th Gen Core Processor Host Bridge/DRAM Registers'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 09[e0] = vendor (length 16) Intel cap 0 version 1
+
+vgapci0@pci0:0:2:0:	class=0x030000 rev=0x04 hdr=0x00 vendor=0x8086 device=0x5912 subvendor=0x1028 subdevice=0x07a1
+    vendor     = 'Intel Corporation'
+    device     = 'HD Graphics 630'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 64, base 0xee000000, size 16777216, enabled
+    bar   [18] = type Prefetchable Memory, range 64, base 0xd0000000, size 268435456, enabled
+    bar   [20] = type I/O Port, range 32, base 0xf000, size 64, enabled
+    cap 09[40] = vendor (length 12) Intel cap 0 version 1
+    cap 10[70] = PCI-Express 2 root endpoint max data 128(128) FLR
+                 max read 128
+    cap 05[ac] = MSI supports 1 message 
+    cap 01[d0] = powerspec 2  supports D0 D3  current D0
+    ecap 001b[100] = Process Address Space ID 1
+    ecap 000f[200] = ATS 1
+    ecap 0013[300] = Page Page Request 1
+
+xhci0@pci0:0:20:0:	class=0x0c0330 rev=0x00 hdr=0x00 vendor=0x8086 device=0xa2af subvendor=0x1028 subdevice=0x07a1
+    vendor     = 'Intel Corporation'
+    device     = '200 Series/Z370 Chipset Family USB 3.0 xHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 64, base 0xef330000, size 65536, enabled
+    cap 01[70] = powerspec 2  supports D0 D3  current D0
+    cap 05[80] = MSI supports 8 messages, 64 bit enabled with 1 message
+
+none0@pci0:0:20:2:	class=0x118000 rev=0x00 hdr=0x00 vendor=0x8086 device=0xa2b1 subvendor=0x1028 subdevice=0x07a1
+    vendor     = 'Intel Corporation'
+    device     = '200 Series PCH Thermal Subsystem'
+    class      = dasp
+    bar   [10] = type Memory, range 64, base 0xef34f000, size 4096, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 05[80] = MSI supports 1 message 
+
+none1@pci0:0:21:0:	class=0x118000 rev=0x00 hdr=0x00 vendor=0x8086 device=0xa2e0 subvendor=0x1028 subdevice=0x07a1
+    vendor     = 'Intel Corporation'
+    device     = '200 Series PCH Serial IO I2C Controller'
+    class      = dasp
+    bar   [10] = type Memory, range 64, base 0xef34e000, size 4096, enabled
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 09[90] = vendor (length 20) Intel cap 15 version 0
+
+none2@pci0:0:22:0:	class=0x078000 rev=0x00 hdr=0x00 vendor=0x8086 device=0xa2ba subvendor=0x1028 subdevice=0x07a1
+    vendor     = 'Intel Corporation'
+    device     = '200 Series PCH CSME HECI'
+    class      = simple comms
+    bar   [10] = type Memory, range 64, base 0xef34d000, size 4096, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 05[8c] = MSI supports 1 message, 64 bit 
+
+ahci0@pci0:0:23:0:	class=0x010601 rev=0x00 hdr=0x00 vendor=0x8086 device=0xa282 subvendor=0x1028 subdevice=0x07a1
+    vendor     = 'Intel Corporation'
+    device     = '200 Series PCH SATA controller [AHCI mode]'
+    class      = mass storage
+    subclass   = SATA
+    bar   [10] = type Memory, range 32, base 0xef348000, size 8192, enabled
+    bar   [14] = type Memory, range 32, base 0xef34c000, size 256, enabled
+    bar   [18] = type I/O Port, range 32, base 0xf090, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0xf080, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0xf060, size 32, enabled
+    bar   [24] = type Memory, range 32, base 0xef34b000, size 2048, enabled
+    cap 05[80] = MSI supports 1 message enabled with 1 message
+    cap 01[70] = powerspec 3  supports D0 D3  current D0
+    cap 12[a8] = SATA Index-Data Pair
+
+pcib1@pci0:0:29:0:	class=0x060400 rev=0xf0 hdr=0x01 vendor=0x8086 device=0xa298 subvendor=0x1028 subdevice=0x07a1
+    vendor     = 'Intel Corporation'
+    device     = '200 Series PCH PCI Express Root Port'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 256(256) ARI disabled
+                 max read 128
+                 link x4(x4) speed 8.0(8.0)
+                 slot 1 power limit 250 mW
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge subvendor=0x1028 subdevice=0x07a1
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000d[140] = ACS 1
+    ecap 0019[220] = PCIe Sec 1 lane errors 0
+
+isab0@pci0:0:31:0:	class=0x060100 rev=0x00 hdr=0x00 vendor=0x8086 device=0xa2c6 subvendor=0x1028 subdevice=0x07a1
+    vendor     = 'Intel Corporation'
+    device     = '200 Series PCH LPC Controller (Q270)'
+    class      = bridge
+    subclass   = PCI-ISA
+
+none3@pci0:0:31:2:	class=0x058000 rev=0x00 hdr=0x00 vendor=0x8086 device=0xa2a1 subvendor=0x1028 subdevice=0x07a1
+    vendor     = 'Intel Corporation'
+    device     = '200 Series/Z370 Chipset Family Power Management Controller'
+    class      = memory
+    bar   [10] = type Memory, range 32, base 0xef344000, size 16384, enabled
+
+hdac0@pci0:0:31:3:	class=0x040300 rev=0x00 hdr=0x00 vendor=0x8086 device=0xa2f0 subvendor=0x1028 subdevice=0x07a1
+    vendor     = 'Intel Corporation'
+    device     = '200 Series PCH HD Audio'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 64, base 0xef340000, size 16384, enabled
+    bar   [20] = type Memory, range 64, base 0xef320000, size 65536, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 05[60] = MSI supports 1 message, 64 bit enabled with 1 message
+
+ichsmb0@pci0:0:31:4:	class=0x0c0500 rev=0x00 hdr=0x00 vendor=0x8086 device=0xa2a3 subvendor=0x1028 subdevice=0x07a1
+    vendor     = 'Intel Corporation'
+    device     = '200 Series/Z370 Chipset Family SMBus Controller'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [10] = type Memory, range 64, base 0xef34a000, size 256, enabled
+    bar   [20] = type I/O Port, range 32, base 0xf040, size 32, enabled
+
+em0@pci0:0:31:6:	class=0x020000 rev=0x00 hdr=0x00 vendor=0x8086 device=0x15e3 subvendor=0x1028 subdevice=0x07a1
+    vendor     = 'Intel Corporation'
+    device     = 'Ethernet Connection (5) I219-LM'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xef300000, size 131072, enabled
+    cap 01[c8] = powerspec 3  supports D0 D3  current D0
+    cap 05[d0] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 13[e0] = PCI Advanced Features: FLR TP
+
+pcib2@pci0:1:0:0:	class=0x060400 rev=0xca hdr=0x01 vendor=0x10b5 device=0x8724 subvendor=0x10b5 subdevice=0x8724
+    vendor     = 'PLX Technology, Inc.'
+    device     = 'PEX 8724 24-Lane, 6-Port PCI Express Gen 3 (8 GT/s) Switch, 19 x 19mm FCBGA'
+    class      = bridge
+    subclass   = PCI-PCI
+    bar   [10] = type Memory, range 32, base 0xef200000, size 262144, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[48] = MSI supports 8 messages, 64 bit, vector masks 
+    cap 10[68] = PCI-Express 2 upstream port max data 256(2048) RO NS
+                 max read 128
+                 link x4(x8) speed 8.0(8.0) ASPM disabled(L1)
+    cap 0d[a4] = PCI Bridge subvendor=0x10b5 subdevice=0x8724
+    ecap 0003[100] = Serial 1 ca870010b5df0e00
+    ecap 0001[fb4] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0004[138] = Power Budgeting 1
+    ecap 0019[10c] = PCIe Sec 1 lane errors 0
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0012[e00] = Multicast 1
+    ecap 0018[b00] = LTR 1
+    ecap 000b[b70] = Vendor [1] ID 0001 Rev 0 Length 16
+
+pcib3@pci0:2:1:0:	class=0x060400 rev=0xca hdr=0x01 vendor=0x10b5 device=0x8724 subvendor=0x10b5 subdevice=0x8724
+    vendor     = 'PLX Technology, Inc.'
+    device     = 'PEX 8724 24-Lane, 6-Port PCI Express Gen 3 (8 GT/s) Switch, 19 x 19mm FCBGA'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[48] = MSI supports 8 messages, 64 bit, vector masks 
+    cap 10[68] = PCI-Express 2 downstream port max data 256(2048) RO NS ARI enabled
+                 max read 128
+                 link x8(x8) speed 5.0(8.0) ASPM disabled(L1)
+                 slot 1 power limit 25000 mW HotPlug(present) Attn Button PC(off) MRL(open)
+    cap 0d[a4] = PCI Bridge subvendor=0x10b5 subdevice=0x8724
+    ecap 0003[100] = Serial 1 ca870010b5df0e00
+    ecap 0001[fb4] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0004[138] = Power Budgeting 1
+    ecap 0019[10c] = PCIe Sec 1 lane errors 0
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0012[e00] = Multicast 1
+    ecap 000d[f24] = ACS 1
+    ecap 000b[b70] = Vendor [1] ID 0001 Rev 0 Length 16
+
+pcib4@pci0:2:8:0:	class=0x060400 rev=0xca hdr=0x01 vendor=0x10b5 device=0x8724 subvendor=0x10b5 subdevice=0x8724
+    vendor     = 'PLX Technology, Inc.'
+    device     = 'PEX 8724 24-Lane, 6-Port PCI Express Gen 3 (8 GT/s) Switch, 19 x 19mm FCBGA'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[48] = MSI supports 8 messages, 64 bit, vector masks 
+    cap 10[68] = PCI-Express 2 downstream port max data 256(2048) RO NS ARI disabled
+                 max read 128
+                 link x0(x8) speed 0.0(8.0) ASPM disabled(L1)
+                 slot 8 power limit 25000 mW
+    cap 0d[a4] = PCI Bridge subvendor=0x10b5 subdevice=0x8724
+    ecap 0003[100] = Serial 1 ca870010b5df0e00
+    ecap 0001[fb4] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0004[138] = Power Budgeting 1
+    ecap 0019[10c] = PCIe Sec 1 lane errors 0
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0012[e00] = Multicast 1
+    ecap 000d[f24] = ACS 1
+    ecap 000b[b70] = Vendor [1] ID 0001 Rev 0 Length 16
+
+pcib5@pci0:2:9:0:	class=0x060400 rev=0xca hdr=0x01 vendor=0x10b5 device=0x8724 subvendor=0x10b5 subdevice=0x8724
+    vendor     = 'PLX Technology, Inc.'
+    device     = 'PEX 8724 24-Lane, 6-Port PCI Express Gen 3 (8 GT/s) Switch, 19 x 19mm FCBGA'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[48] = MSI supports 8 messages, 64 bit, vector masks 
+    cap 10[68] = PCI-Express 2 downstream port max data 256(2048) RO NS ARI enabled
+                 max read 128
+                 link x8(x8) speed 5.0(8.0) ASPM disabled(L1)
+                 slot 9 power limit 25000 mW HotPlug(present) Attn Button PC(off) MRL(open)
+    cap 0d[a4] = PCI Bridge subvendor=0x10b5 subdevice=0x8724
+    ecap 0003[100] = Serial 1 ca870010b5df0e00
+    ecap 0001[fb4] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0004[138] = Power Budgeting 1
+    ecap 0019[10c] = PCIe Sec 1 lane errors 0
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0012[e00] = Multicast 1
+    ecap 000d[f24] = ACS 1
+    ecap 000b[b70] = Vendor [1] ID 0001 Rev 0 Length 16
+
+ix0@pci0:3:0:0:	class=0x020000 rev=0x01 hdr=0x00 vendor=0x8086 device=0x10fb subvendor=0x8086 subdevice=0x000c
+    vendor     = 'Intel Corporation'
+    device     = '82599ES 10-Gigabit SFI/SFP+ Network Connection'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 64, base 0xef120000, size 131072, enabled
+    bar   [20] = type Memory, range 64, base 0xef144000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 11[70] = MSI-X supports 64 messages, enabled
+                 Table in map 0x20[0x0], PBA in map 0x20[0x2000]
+    cap 10[a0] = PCI-Express 2 endpoint max data 256(512) FLR RO NS
+                 max read 512
+                 link x8(x8) speed 5.0(5.0) ASPM disabled(L0s)
+    cap 03[e0] = VPD
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 000000ffff000000
+    ecap 000e[150] = ARI 1
+    ecap 0010[160] = SR-IOV 1 IOV disabled, Memory Space disabled, ARI disabled
+                     0 VFs configured out of 64 supported
+                     First VF RID Offset 0x0180, VF RID Stride 0x0002
+                     VF Device ID 0x10ed
+                     Page Sizes: 4096 (enabled), 8192, 65536, 262144, 1048576, 4194304
+
+ix1@pci0:3:0:1:	class=0x020000 rev=0x01 hdr=0x00 vendor=0x8086 device=0x10fb subvendor=0x8086 subdevice=0x000c
+    vendor     = 'Intel Corporation'
+    device     = '82599ES 10-Gigabit SFI/SFP+ Network Connection'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 64, base 0xef100000, size 131072, enabled
+    bar   [20] = type Memory, range 64, base 0xef140000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 11[70] = MSI-X supports 64 messages, enabled
+                 Table in map 0x20[0x0], PBA in map 0x20[0x2000]
+    cap 10[a0] = PCI-Express 2 endpoint max data 256(512) FLR RO NS
+                 max read 512
+                 link x8(x8) speed 5.0(5.0) ASPM disabled(L0s)
+    cap 03[e0] = VPD
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 000000ffff000000
+    ecap 000e[150] = ARI 1
+    ecap 0010[160] = SR-IOV 1 IOV disabled, Memory Space disabled, ARI disabled
+                     0 VFs configured out of 64 supported
+                     First VF RID Offset 0x0180, VF RID Stride 0x0002
+                     VF Device ID 0x10ed
+                     Page Sizes: 4096 (enabled), 8192, 65536, 262144, 1048576, 4194304
+
+ix2@pci0:5:0:0:	class=0x020000 rev=0x01 hdr=0x00 vendor=0x8086 device=0x10fb subvendor=0x8086 subdevice=0x000c
+    vendor     = 'Intel Corporation'
+    device     = '82599ES 10-Gigabit SFI/SFP+ Network Connection'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 64, base 0xef020000, size 131072, enabled
+    bar   [20] = type Memory, range 64, base 0xef044000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 11[70] = MSI-X supports 64 messages, enabled
+                 Table in map 0x20[0x0], PBA in map 0x20[0x2000]
+    cap 10[a0] = PCI-Express 2 endpoint max data 256(512) FLR RO NS
+                 max read 512
+                 link x8(x8) speed 5.0(5.0) ASPM disabled(L0s)
+    cap 03[e0] = VPD
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 000000ffff000000
+    ecap 000e[150] = ARI 1
+    ecap 0010[160] = SR-IOV 1 IOV disabled, Memory Space disabled, ARI disabled
+                     0 VFs configured out of 64 supported
+                     First VF RID Offset 0x0180, VF RID Stride 0x0002
+                     VF Device ID 0x10ed
+                     Page Sizes: 4096 (enabled), 8192, 65536, 262144, 1048576, 4194304
+
+ix3@pci0:5:0:1:	class=0x020000 rev=0x01 hdr=0x00 vendor=0x8086 device=0x10fb subvendor=0x8086 subdevice=0x000c
+    vendor     = 'Intel Corporation'
+    device     = '82599ES 10-Gigabit SFI/SFP+ Network Connection'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 64, base 0xef000000, size 131072, enabled
+    bar   [20] = type Memory, range 64, base 0xef040000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 11[70] = MSI-X supports 64 messages, enabled
+                 Table in map 0x20[0x0], PBA in map 0x20[0x2000]
+    cap 10[a0] = PCI-Express 2 endpoint max data 256(512) FLR RO NS
+                 max read 512
+                 link x8(x8) speed 5.0(5.0) ASPM disabled(L0s)
+    cap 03[e0] = VPD
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 000000ffff000000
+    ecap 000e[150] = ARI 1
+    ecap 0010[160] = SR-IOV 1 IOV disabled, Memory Space disabled, ARI disabled
+                     0 VFs configured out of 64 supported
+                     First VF RID Offset 0x0180, VF RID Stride 0x0002
+                     VF Device ID 0x10ed
+                     Page Sizes: 4096 (enabled), 8192, 65536, 262144, 1048576, 4194304

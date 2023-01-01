@@ -1,0 +1,181 @@
+hostb0@pci0:0:0:0:	class=0x060000 rev=0x09 hdr=0x00 vendor=0x8086 device=0x0104 subvendor=0x8086 subdevice=0x0104
+    vendor     = 'Intel Corporation'
+    device     = '2nd Generation Core Processor Family DRAM Controller'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 09[e0] = vendor (length 12) Intel cap 0 version 1
+
+pcib1@pci0:0:1:0:	class=0x060400 rev=0x09 hdr=0x01 vendor=0x8086 device=0x0101 subvendor=0x8086 subdevice=0x0101
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[88] = PCI Bridge subvendor=0x8086 subdevice=0x0101
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 05[90] = MSI supports 1 message 
+    cap 10[a0] = PCI-Express 2 root port max data 128(128)
+                 max read 128
+                 link x0(x8) speed 0.0(5.0) ASPM disabled(L0s/L1)
+                 slot 0 power limit 0 mW
+    ecap 0002[100] = VC 1 max VC0
+    ecap 0005[140] = Root Complex Link Declaration 1
+
+pcib2@pci0:0:1:1:	class=0x060400 rev=0x09 hdr=0x01 vendor=0x8086 device=0x0105 subvendor=0x8086 subdevice=0x0105
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[88] = PCI Bridge subvendor=0x8086 subdevice=0x0105
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 05[90] = MSI supports 1 message 
+    cap 10[a0] = PCI-Express 2 root port max data 128(128)
+                 max read 128
+                 link x4(x8) speed 5.0(5.0) ASPM disabled(L0s/L1)
+                 slot 0 power limit 0 mW
+    ecap 0002[100] = VC 1 max VC0
+    ecap 0005[140] = Root Complex Link Declaration 1
+
+ehci0@pci0:0:29:0:	class=0x0c0320 rev=0x08 hdr=0x00 vendor=0x8086 device=0x2334 subvendor=0x8086 subdevice=0x2334
+    vendor     = 'Intel Corporation'
+    device     = 'DH89xxCC USB2 Enhanced Host Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfe705000, size 1024, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 0a[58] = EHCI Debug Port at offset 0xa0 in map 0x14
+    cap 13[98] = PCI Advanced Features: FLR TP
+
+isab0@pci0:0:31:0:	class=0x060100 rev=0x08 hdr=0x00 vendor=0x8086 device=0x2310 subvendor=0x8086 subdevice=0x2310
+    vendor     = 'Intel Corporation'
+    device     = 'DH89xxCC LPC Controller'
+    class      = bridge
+    subclass   = PCI-ISA
+    cap 09[e0] = vendor (length 16) Intel cap 1 version 1
+
+ahci0@pci0:0:31:2:	class=0x010601 rev=0x08 hdr=0x00 vendor=0x8086 device=0x2323 subvendor=0x8086 subdevice=0x2321
+    vendor     = 'Intel Corporation'
+    device     = 'DH89xxCC 4 Port SATA AHCI Controller'
+    class      = mass storage
+    subclass   = SATA
+    bar   [10] = type I/O Port, range 32, base 0xf070, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0xf060, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0xf050, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0xf040, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0xf020, size 32, enabled
+    bar   [24] = type Memory, range 32, base 0xfe704000, size 2048, enabled
+    cap 05[80] = MSI supports 1 message enabled with 1 message
+    cap 01[70] = powerspec 3  supports D0 D3  current D0
+    cap 12[a8] = SATA Index-Data Pair
+    cap 13[b0] = PCI Advanced Features: FLR TP
+
+ichsmb0@pci0:0:31:3:	class=0x0c0500 rev=0x08 hdr=0x00 vendor=0x8086 device=0x2330 subvendor=0x8086 subdevice=0x2330
+    vendor     = 'Intel Corporation'
+    device     = 'DH89xxCC SMBus Controller'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [10] = type Memory, range 64, base 0xfe703000, size 256, enabled
+    bar   [20] = type I/O Port, range 32, base 0xf000, size 32, enabled
+
+none0@pci0:0:31:7:	class=0x088000 rev=0x08 hdr=0x00 vendor=0x8086 device=0x2360 subvendor=0x2000 subdevice=0x2814
+    vendor     = 'Intel Corporation'
+    device     = 'DH89xxCC Watchdog Timer'
+    class      = base peripheral
+    bar   [10] = type Memory, range 32, base 0xfe702000, size 2048, enabled
+    bar   [14] = type Memory, range 32, base 0xfe701000, size 128, enabled
+    bar   [18] = type Memory, range 32, base 0xfe700000, size 1024, enabled
+    cap 11[80] = MSI-X supports 80 messages
+                 Table in map 0x10[0x0], PBA in map 0x14[0x0]
+
+none1@pci0:2:0:0:	class=0x0b4000 rev=0x21 hdr=0x00 vendor=0x8086 device=0x0434 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'DH89XXCC Series QAT'
+    class      = processor
+    bar   [10] = type Prefetchable Memory, range 64, base 0xfef00000, size 524288, enabled
+    bar   [18] = type Memory, range 64, base 0xfe680000, size 131072, enabled
+    bar   [20] = type Memory, range 64, base 0xfe6b0000, size 16384, enabled
+    cap 05[b0] = MSI supports 1 message, 64 bit, vector masks 
+    cap 11[60] = MSI-X supports 17 messages
+                 Table in map 0x18[0x1b000], PBA in map 0x18[0x1b800]
+    cap 01[6c] = powerspec 3  supports D0 D3  current D0
+    cap 10[74] = PCI-Express 2 endpoint max data 128(256) FLR NS
+                 max read 512
+                 link x4(x4) speed 5.0(5.0) ASPM disabled(L0s)
+    ecap 0001[100] = AER 1 0 fatal 1 non-fatal 0 corrected
+    ecap 000e[138] = ARI 1
+    ecap 0010[140] = SR-IOV 1 IOV disabled, Memory Space disabled, ARI disabled
+                     0 VFs configured out of 16 supported
+                     First VF RID Offset 0x0008, VF RID Stride 0x0001
+                     VF Device ID 0x0442
+                     Page Sizes: 4096 (enabled), 8192, 65536, 262144, 1048576, 4194304
+
+igb0@pci0:2:0:1:	class=0x020000 rev=0x21 hdr=0x00 vendor=0x8086 device=0x0438 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'DH8900CC Series Gigabit Network Connection'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xfe660000, size 131072, enabled
+    bar   [18] = type I/O Port, range 32, base 0xe180, size 128, enabled
+    bar   [1c] = type Memory, range 32, base 0xfe6ac000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 11[70] = MSI-X supports 10 messages, enabled
+                 Table in map 0x1c[0x0], PBA in map 0x1c[0x2000]
+    cap 10[a0] = PCI-Express 2 endpoint max data 128(256) FLR NS
+                 max read 512
+                 link x4(x4) speed 5.0(5.0) ASPM disabled(L0s)
+    ecap 0001[100] = AER 1 0 fatal 1 non-fatal 0 corrected
+    ecap 000e[138] = ARI 1
+
+igb1@pci0:2:0:2:	class=0x020000 rev=0x21 hdr=0x00 vendor=0x8086 device=0x0438 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'DH8900CC Series Gigabit Network Connection'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xfe640000, size 131072, enabled
+    bar   [18] = type I/O Port, range 32, base 0xe100, size 128, enabled
+    bar   [1c] = type Memory, range 32, base 0xfe6a8000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 11[70] = MSI-X supports 10 messages, enabled
+                 Table in map 0x1c[0x0], PBA in map 0x1c[0x2000]
+    cap 10[a0] = PCI-Express 2 endpoint max data 128(256) FLR NS
+                 max read 512
+                 link x4(x4) speed 5.0(5.0) ASPM disabled(L0s)
+    ecap 0001[100] = AER 1 0 fatal 1 non-fatal 0 corrected
+    ecap 000e[138] = ARI 1
+
+igb2@pci0:2:0:3:	class=0x020000 rev=0x21 hdr=0x00 vendor=0x8086 device=0x0438 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'DH8900CC Series Gigabit Network Connection'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xfe620000, size 131072, enabled
+    bar   [18] = type I/O Port, range 32, base 0xe080, size 128, enabled
+    bar   [1c] = type Memory, range 32, base 0xfe6a4000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 11[70] = MSI-X supports 10 messages, enabled
+                 Table in map 0x1c[0x0], PBA in map 0x1c[0x2000]
+    cap 10[a0] = PCI-Express 2 endpoint max data 128(256) FLR NS
+                 max read 512
+                 link x4(x4) speed 5.0(5.0) ASPM disabled(L0s)
+    ecap 0001[100] = AER 1 0 fatal 1 non-fatal 0 corrected
+    ecap 000e[138] = ARI 1
+
+igb3@pci0:2:0:4:	class=0x020000 rev=0x21 hdr=0x00 vendor=0x8086 device=0x0438 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'DH8900CC Series Gigabit Network Connection'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xfe600000, size 131072, enabled
+    bar   [18] = type I/O Port, range 32, base 0xe000, size 128, enabled
+    bar   [1c] = type Memory, range 32, base 0xfe6a0000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 11[70] = MSI-X supports 10 messages, enabled
+                 Table in map 0x1c[0x0], PBA in map 0x1c[0x2000]
+    cap 10[a0] = PCI-Express 2 endpoint max data 128(256) FLR NS
+                 max read 512
+                 link x4(x4) speed 5.0(5.0) ASPM disabled(L0s)
+    ecap 0001[100] = AER 1 0 fatal 1 non-fatal 0 corrected
+    ecap 000e[138] = ARI 1

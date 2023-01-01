@@ -1,0 +1,175 @@
+hostb0@pci0:0:0:0:	class=0x060000 rev=0x09 hdr=0x00 vendor=0x8086 device=0x1604 subvendor=0x17aa subdevice=0x2226
+    vendor     = 'Intel Corporation'
+    device     = 'Broadwell-U Host Bridge -OPI'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 09[e0] = vendor (length 12) Intel cap 0 version 1
+
+vgapci0@pci0:0:2:0:	class=0x030000 rev=0x09 hdr=0x00 vendor=0x8086 device=0x1616 subvendor=0x17aa subdevice=0x2226
+    vendor     = 'Intel Corporation'
+    device     = 'HD Graphics 5500'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 64, base 0xf0000000, size 16777216, enabled
+    bar   [18] = type Prefetchable Memory, range 64, base 0xe0000000, size 268435456, enabled
+    bar   [20] = type I/O Port, range 32, base 0x3000, size 64, enabled
+    cap 05[90] = MSI supports 1 message enabled with 1 message
+    cap 01[d0] = powerspec 2  supports D0 D3  current D0
+    cap 13[a4] = PCI Advanced Features: FLR TP
+
+hdac0@pci0:0:3:0:	class=0x040300 rev=0x09 hdr=0x00 vendor=0x8086 device=0x160c subvendor=0x17aa subdevice=0x2226
+    vendor     = 'Intel Corporation'
+    device     = 'Broadwell-U Audio Controller'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 64, base 0xf1230000, size 16384, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 05[60] = MSI supports 1 message enabled with 1 message
+    cap 10[70] = PCI-Express 1 root endpoint max data 128(128) FLR NS
+                 max read 128
+
+xhci0@pci0:0:20:0:	class=0x0c0330 rev=0x03 hdr=0x00 vendor=0x8086 device=0x9cb1 subvendor=0x17aa subdevice=0x2226
+    vendor     = 'Intel Corporation'
+    device     = 'Wildcat Point-LP USB xHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 64, base 0xf1220000, size 65536, enabled
+    cap 01[70] = powerspec 2  supports D0 D3  current D0
+    cap 05[80] = MSI supports 8 messages, 64 bit enabled with 1 message
+
+none0@pci0:0:22:0:	class=0x078000 rev=0x03 hdr=0x00 vendor=0x8086 device=0x9cba subvendor=0x17aa subdevice=0x2226
+    vendor     = 'Intel Corporation'
+    device     = 'Wildcat Point-LP MEI Controller'
+    class      = simple comms
+    bar   [10] = type Memory, range 64, base 0xf1239000, size 32, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 05[8c] = MSI supports 1 message, 64 bit 
+
+em0@pci0:0:25:0:	class=0x020000 rev=0x03 hdr=0x00 vendor=0x8086 device=0x15a2 subvendor=0x17aa subdevice=0x2226
+    vendor     = 'Intel Corporation'
+    device     = 'Ethernet Connection (3) I218-LM'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xf1200000, size 131072, enabled
+    bar   [14] = type Memory, range 32, base 0xf123e000, size 4096, enabled
+    bar   [18] = type I/O Port, range 32, base 0x3080, size 32, enabled
+    cap 01[c8] = powerspec 2  supports D0 D3  current D0
+    cap 05[d0] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 13[e0] = PCI Advanced Features: FLR TP
+
+hdac1@pci0:0:27:0:	class=0x040300 rev=0x03 hdr=0x00 vendor=0x8086 device=0x9ca0 subvendor=0x17aa subdevice=0x2226
+    vendor     = 'Intel Corporation'
+    device     = 'Wildcat Point-LP High Definition Audio Controller'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 64, base 0xf1234000, size 16384, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 05[60] = MSI supports 1 message, 64 bit enabled with 1 message
+
+pcib1@pci0:0:28:0:	class=0x060400 rev=0xe3 hdr=0x01 vendor=0x8086 device=0x9c9a subvendor=0x17aa subdevice=0x2226
+    vendor     = 'Intel Corporation'
+    device     = 'Wildcat Point-LP PCI Express Root Port'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128)
+                 max read 128
+                 link x1(x1) speed 2.5(5.0) ASPM L0s/L1(L0s/L1)
+                 slot 5 power limit 100 mW
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge subvendor=0x17aa subdevice=0x2226
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+    ecap 0000[100] = unknown 0
+    ecap 001e[200] = L1 PM Substates 1
+
+pcib2@pci0:0:28:1:	class=0x060400 rev=0xe3 hdr=0x01 vendor=0x8086 device=0x9c94 subvendor=0x17aa subdevice=0x2226
+    vendor     = 'Intel Corporation'
+    device     = 'Wildcat Point-LP PCI Express Root Port'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128)
+                 max read 128
+                 link x1(x1) speed 2.5(5.0) ASPM L1(L0s/L1)
+                 slot 2 power limit 100 mW
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge subvendor=0x17aa subdevice=0x2226
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+    ecap 0000[100] = unknown 0
+    ecap 001e[200] = L1 PM Substates 1
+
+ehci0@pci0:0:29:0:	class=0x0c0320 rev=0x03 hdr=0x00 vendor=0x8086 device=0x9ca6 subvendor=0x17aa subdevice=0x2226
+    vendor     = 'Intel Corporation'
+    device     = 'Wildcat Point-LP USB EHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xf123d000, size 1024, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 0a[58] = EHCI Debug Port at offset 0xa0 in map 0x14
+    cap 13[98] = PCI Advanced Features: FLR TP
+
+isab0@pci0:0:31:0:	class=0x060100 rev=0x03 hdr=0x00 vendor=0x8086 device=0x9cc3 subvendor=0x17aa subdevice=0x2226
+    vendor     = 'Intel Corporation'
+    device     = 'Wildcat Point-LP LPC Controller'
+    class      = bridge
+    subclass   = PCI-ISA
+    cap 09[e0] = vendor (length 12) Intel cap 1 version 0
+		 features: AMT, 4 PCI-e x1 slots
+
+ahci0@pci0:0:31:2:	class=0x010601 rev=0x03 hdr=0x00 vendor=0x8086 device=0x9c83 subvendor=0x17aa subdevice=0x2226
+    vendor     = 'Intel Corporation'
+    device     = 'Wildcat Point-LP SATA Controller [AHCI Mode]'
+    class      = mass storage
+    subclass   = SATA
+    bar   [10] = type I/O Port, range 32, base 0x30a8, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0x30b4, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0x30a0, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0x30b0, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0x3060, size 32, enabled
+    bar   [24] = type Memory, range 32, base 0xf123c000, size 2048, enabled
+    cap 05[80] = MSI supports 1 message enabled with 1 message
+    cap 01[70] = powerspec 3  supports D0 D3  current D0
+    cap 12[a8] = SATA Index-Data Pair
+
+ichsmb0@pci0:0:31:3:	class=0x0c0500 rev=0x03 hdr=0x00 vendor=0x8086 device=0x9ca2 subvendor=0x17aa subdevice=0x2226
+    vendor     = 'Intel Corporation'
+    device     = 'Wildcat Point-LP SMBus Controller'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [10] = type Memory, range 64, base 0xf1238000, size 256, enabled
+    bar   [20] = type I/O Port, range 32, base 0xefa0, size 32, enabled
+
+pchtherm0@pci0:0:31:6:	class=0x118000 rev=0x03 hdr=0x00 vendor=0x8086 device=0x9ca4 subvendor=0x17aa subdevice=0x2226
+    vendor     = 'Intel Corporation'
+    device     = 'Wildcat Point-LP Thermal Management Controller'
+    class      = dasp
+    bar   [10] = type Memory, range 64, base 0xf123b000, size 4096, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 05[80] = MSI supports 1 message 
+
+rtsx0@pci0:2:0:0:	class=0xff0000 rev=0x01 hdr=0x00 vendor=0x10ec device=0x5227 subvendor=0x17aa subdevice=0x2226
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    device     = 'RTS5227 PCI Express Card Reader'
+    bar   [10] = type Memory, range 32, base 0xf1100000, size 4096, enabled
+    cap 01[40] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 10[70] = PCI-Express 2 endpoint max data 128(128) RO
+                 max read 512
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1) ClockPM enabled
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 00000001004ce000
+    ecap 0018[150] = LTR 1
+    ecap 001e[158] = L1 PM Substates 1
+
+iwm0@pci0:3:0:0:	class=0x028000 rev=0x59 hdr=0x00 vendor=0x8086 device=0x095a subvendor=0x8086 subdevice=0x5010
+    vendor     = 'Intel Corporation'
+    device     = 'Wireless 7265'
+    class      = network
+    bar   [10] = type Memory, range 64, base 0xf1000000, size 8192, enabled
+    cap 01[c8] = powerspec 3  supports D0 D3  current D0
+    cap 05[d0] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 10[40] = PCI-Express 2 endpoint max data 128(128) FLR RO NS
+                 max read 128
+                 link x1(x1) speed 2.5(2.5) ASPM L1(L1) ClockPM enabled
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 00e18cffffcd933f
+    ecap 0018[14c] = LTR 1
+    ecap 001e[154] = L1 PM Substates 1

@@ -1,0 +1,3191 @@
+none0@pci0:0:0:0:	class=0x088000 card=0x00008086 chip=0x09a28086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none1@pci0:0:0:1:	class=0x088000 card=0x00008086 chip=0x09a48086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none2@pci0:0:0:2:	class=0x088000 card=0x00008086 chip=0x09a38086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+hostb0@pci0:0:0:4:	class=0x060000 card=0x00008086 chip=0x09988086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(256)
+
+none3@pci0:0:1:0:	class=0x088000 card=0x00008086 chip=0x0b008086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    bar   [10] = type Memory, range 64, base 0xc0000150000, size 16384, enabled
+    cap 10[40] = PCI-Express 2 root endpoint max data 512(512) FLR
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 11[ac] = MSI-X supports 1 message
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x3000]
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 0018[1d0] = LTR 1
+
+none4@pci0:0:1:1:	class=0x088000 card=0x00008086 chip=0x0b008086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    bar   [10] = type Memory, range 64, base 0xc000014c000, size 16384, enabled
+    cap 10[40] = PCI-Express 2 root endpoint max data 512(512) FLR
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 11[ac] = MSI-X supports 1 message
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x3000]
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 0018[1d0] = LTR 1
+
+none5@pci0:0:1:2:	class=0x088000 card=0x00008086 chip=0x0b008086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    bar   [10] = type Memory, range 64, base 0xc0000148000, size 16384, enabled
+    cap 10[40] = PCI-Express 2 root endpoint max data 512(512) FLR
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 11[ac] = MSI-X supports 1 message
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x3000]
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 0018[1d0] = LTR 1
+
+none6@pci0:0:1:3:	class=0x088000 card=0x00008086 chip=0x0b008086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    bar   [10] = type Memory, range 64, base 0xc0000144000, size 16384, enabled
+    cap 10[40] = PCI-Express 2 root endpoint max data 512(512) FLR
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 11[ac] = MSI-X supports 1 message
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x3000]
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 0018[1d0] = LTR 1
+
+none7@pci0:0:1:4:	class=0x088000 card=0x00008086 chip=0x0b008086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    bar   [10] = type Memory, range 64, base 0xc0000140000, size 16384, enabled
+    cap 10[40] = PCI-Express 2 root endpoint max data 512(512) FLR
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 11[ac] = MSI-X supports 1 message
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x3000]
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 0018[1d0] = LTR 1
+
+none8@pci0:0:1:5:	class=0x088000 card=0x00008086 chip=0x0b008086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    bar   [10] = type Memory, range 64, base 0xc000013c000, size 16384, enabled
+    cap 10[40] = PCI-Express 2 root endpoint max data 512(512) FLR
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 11[ac] = MSI-X supports 1 message
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x3000]
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 0018[1d0] = LTR 1
+
+none9@pci0:0:1:6:	class=0x088000 card=0x00008086 chip=0x0b008086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    bar   [10] = type Memory, range 64, base 0xc0000138000, size 16384, enabled
+    cap 10[40] = PCI-Express 2 root endpoint max data 512(512) FLR
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 11[ac] = MSI-X supports 1 message
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x3000]
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 0018[1d0] = LTR 1
+
+none10@pci0:0:1:7:	class=0x088000 card=0x00008086 chip=0x0b008086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    bar   [10] = type Memory, range 64, base 0xc0000134000, size 16384, enabled
+    cap 10[40] = PCI-Express 2 root endpoint max data 512(512) FLR
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 11[ac] = MSI-X supports 1 message
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x3000]
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 0018[1d0] = LTR 1
+
+none11@pci0:0:2:0:	class=0x088000 card=0x00008086 chip=0x09a68086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    bar   [10] = type Memory, range 32, base 0x91c88000, size 8192, enabled
+
+none12@pci0:0:2:1:	class=0x088000 card=0x00008086 chip=0x09a78086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    bar   [10] = type Memory, range 32, base 0x91c00000, size 524288, enabled
+    bar   [14] = type Memory, range 32, base 0x91b80000, size 524288, enabled
+
+none13@pci0:0:2:4:	class=0x130000 card=0x00000000 chip=0x34568086 rev=0x01 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = non-essential instrumentation
+    bar   [10] = type Memory, range 64, base 0xc0000000000, size 1048576, enabled
+    bar   [18] = type Memory, range 64, base 0xc0000130000, size 16384, enabled
+    bar   [20] = type Memory, range 64, base 0xc0000100000, size 131072, enabled
+    cap 00[40] = unknown
+
+none14@pci0:0:17:0:	class=0xff0000 card=0x19b610cf chip=0xa1ec8086 rev=0x0a hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'C620 Series Chipset Family MROM 0'
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+
+none15@pci0:0:17:1:	class=0xff0000 card=0x19b610cf chip=0xa1ed8086 rev=0x0a hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'C620 Series Chipset Family MROM 1'
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+
+ahci0@pci0:0:17:5:	class=0x010400 card=0x19b610cf chip=0x28278086 rev=0x0a hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'C610/X99 series chipset sSATA Controller [RAID mode]'
+    class      = mass storage
+    subclass   = RAID
+    bar   [10] = type Memory, range 32, base 0x91c86000, size 8192, enabled
+    bar   [14] = type Memory, range 32, base 0x91c8e000, size 256, enabled
+    bar   [18] = type I/O Port, range 32, base 0xe40, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0xe48, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0xe60, size 32, enabled
+    bar   [24] = type Memory, range 32, base 0x91a80000, size 524288, enabled
+    cap 05[80] = MSI supports 1 message enabled with 1 message
+    cap 01[70] = powerspec 3  supports D0 D3  current D0
+    cap 12[a8] = SATA Index-Data Pair
+
+xhci0@pci0:0:20:0:	class=0x0c0330 card=0x19b610cf chip=0xa1af8086 rev=0x0a hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'C620 Series Chipset Family USB 3.0 xHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 64, base 0xc0000120000, size 65536, enabled
+    cap 01[70] = powerspec 2  supports D0 D3  current D0
+    cap 05[80] = MSI supports 8 messages, 64 bit enabled with 1 message
+
+none16@pci0:0:20:2:	class=0x118000 card=0x19b610cf chip=0xa1b18086 rev=0x0a hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'C620 Series Chipset Family Thermal Subsystem'
+    class      = dasp
+    bar   [10] = type Memory, range 64, base 0xc0000155000, size 4096, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 05[80] = MSI supports 1 message 
+
+none17@pci0:0:22:0:	class=0x078000 card=0x19b610cf chip=0xa1ba8086 rev=0x0a hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'C620 Series Chipset Family MEI Controller'
+    class      = simple comms
+    bar   [10] = type Memory, range 64, base 0x91c8d000, size 4096, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 05[8c] = MSI supports 1 message, 64 bit 
+
+none18@pci0:0:22:1:	class=0x078000 card=0x19b610cf chip=0xa1bb8086 rev=0x0a hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'C620 Series Chipset Family MEI Controller'
+    class      = simple comms
+    bar   [10] = type Memory, range 64, base 0x91c8c000, size 4096, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 05[8c] = MSI supports 1 message, 64 bit 
+
+none19@pci0:0:22:4:	class=0x078000 card=0x19b610cf chip=0xa1be8086 rev=0x0a hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'C620 Series Chipset Family MEI Controller'
+    class      = simple comms
+    bar   [10] = type Memory, range 64, base 0x91c8b000, size 4096, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 05[8c] = MSI supports 1 message, 64 bit 
+
+ahci1@pci0:0:23:0:	class=0x010400 card=0x19b610cf chip=0x28268086 rev=0x0a hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'C600/X79 series chipset SATA RAID Controller'
+    class      = mass storage
+    subclass   = RAID
+    bar   [10] = type Memory, range 32, base 0x91c84000, size 8192, enabled
+    bar   [14] = type Memory, range 32, base 0x91c8a000, size 256, enabled
+    bar   [18] = type I/O Port, range 32, base 0xe00, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0xe08, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0xe20, size 32, enabled
+    bar   [24] = type Memory, range 32, base 0x91a00000, size 524288, enabled
+    cap 05[80] = MSI supports 1 message enabled with 1 message
+    cap 01[70] = powerspec 3  supports D0 D3  current D0
+    cap 12[a8] = SATA Index-Data Pair
+
+pcib1@pci0:0:28:0:	class=0x060400 card=0x19b610cf chip=0xa1938086 rev=0xfa hdr=0x01
+    vendor     = 'Intel Corporation'
+    device     = 'C620 Series Chipset Family PCI Express Root Port'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 256(256) ARI disabled
+                 link x1(x1) speed 5.0(8.0)
+                 slot 0 power limit 100 mW
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge card=0x19b610cf
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000d[140] = ACS 1
+    ecap 0019[220] = PCIe Sec 1 lane errors 0
+
+isab0@pci0:0:31:0:	class=0x060100 card=0x19b610cf chip=0xa1cb8086 rev=0x0a hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = bridge
+    subclass   = PCI-ISA
+
+none20@pci0:0:31:2:	class=0x058000 card=0x19b610cf chip=0xa1a18086 rev=0x0a hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'C620 Series Chipset Family Power Management Controller'
+    class      = memory
+    bar   [10] = type Memory, range 32, base 0x91c80000, size 16384, enabled
+
+none21@pci0:0:31:4:	class=0x0c0500 card=0x19b610cf chip=0xa1a38086 rev=0x0a hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'C620 Series Chipset Family SMBus'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [10] = type Memory, range 64, base 0xc0000154000, size 256, enabled
+    bar   [20] = type I/O Port, range 32, base 0x780, size 32, enabled
+
+none22@pci0:0:31:5:	class=0x0c8000 card=0x19b610cf chip=0xa1a48086 rev=0x0a hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'C620 Series Chipset Family SPI Controller'
+    class      = serial bus
+    bar   [10] = type Memory, range 32, base 0xfe010000, size 4096, enabled
+
+pcib2@pci0:1:0:0:	class=0x060400 card=0x00000000 chip=0x012019a2 rev=0x00 hdr=0x01
+    vendor     = 'Emulex Corporation'
+    device     = 'x1 PCIe Gen2 Bridge[Pilot4]'
+    class      = bridge
+    subclass   = PCI-PCI
+    bar   [10] = type Memory, range 64, base 0x91900000, size 4096, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit 
+    cap 10[60] = PCI-Express 2 PCI bridge max data 256(256) RO
+                 link x1(x1) speed 5.0(5.0) ASPM disabled(L0s/L1)
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0003[150] = Serial 1 0000000000000000
+
+vgapci0@pci0:2:0:0:	class=0x030000 card=0x12291734 chip=0x0522102b rev=0x42 hdr=0x00
+    vendor     = 'Matrox Electronics Systems Ltd.'
+    device     = 'MGA G200e [Pilot] ServerEngines (SEP1)'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 32, base 0x90000000, size 16777216, enabled
+    bar   [14] = type Memory, range 32, base 0x91830000, size 16384, enabled
+    bar   [18] = type Memory, range 32, base 0x91000000, size 8388608, enabled
+    cap 01[dc] = powerspec 2  supports D0 D3  current D0
+    cap 05[54] = MSI supports 1 message 
+
+none23@pci0:2:1:0:	class=0x0b4000 card=0x12561734 chip=0x12281734 rev=0x00 hdr=0x00
+    vendor     = 'Fujitsu Technology Solutions'
+    class      = processor
+    bar   [10] = type Memory, range 32, base 0x91800000, size 131072, enabled
+    bar   [14] = type Memory, range 32, base 0x91820000, size 65536, enabled
+
+none24@pci0:10:0:0:	class=0x088000 card=0x00008086 chip=0x09a28086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none25@pci0:10:0:1:	class=0x088000 card=0x00008086 chip=0x09a48086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none26@pci0:10:0:2:	class=0x088000 card=0x00008086 chip=0x09a38086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+hostb1@pci0:10:0:4:	class=0x060000 card=0x00008086 chip=0x09988086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(256)
+
+pcib4@pci0:10:2:0:	class=0x060400 card=0x00008086 chip=0x347a8086 rev=0x04 hdr=0x01
+    vendor     = 'Intel Corporation'
+    class      = bridge
+    subclass   = PCI-PCI
+    bar   [10] = type Memory, range 64, base 0xc4000100000, size 131072, enabled
+    cap 10[40] = PCI-Express 2 root port max data 512(512) ARI enabled
+                 link x4(x16) speed 5.0(16.0)
+                 slot 0 power limit 75000 mW
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 0d[88] = PCI Bridge card=0x00008086
+    cap 05[90] = MSI supports 1 message 
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000d[148] = ACS 1
+    ecap 000b[180] = Vendor 1 ID 3
+    ecap 001d[190] = unknown 1
+    ecap 0019[200] = PCIe Sec 1 lane errors 0
+    ecap 0025[400] = unknown 1
+    ecap 0026[410] = unknown 1
+    ecap 0027[450] = unknown 1
+
+igb0@pci0:11:0:0:	class=0x020000 card=0x00a38086 chip=0x15218086 rev=0x01 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'I350 Gigabit Network Connection'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0x98300000, size 1048576, enabled
+    bar   [18] = type I/O Port, range 32, base 0x2060, size 32, enabled
+    bar   [1c] = type Memory, range 32, base 0x9860c000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 11[70] = MSI-X supports 10 messages, enabled
+                 Table in map 0x1c[0x0], PBA in map 0x1c[0x2000]
+    cap 10[a0] = PCI-Express 2 endpoint max data 512(512) FLR RO NS
+                 link x4(x4) speed 5.0(5.0) ASPM disabled(L0s/L1)
+    ecap 0001[100] = AER 2 0 fatal 1 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 6805caffffcfd41e
+    ecap 000e[150] = ARI 1
+    ecap 0010[160] = SR-IOV 1 IOV disabled, Memory Space disabled, ARI enabled
+                     0 VFs configured out of 8 supported
+                     First VF RID Offset 0x0080, VF RID Stride 0x0004
+                     VF Device ID 0x1520
+                     Page Sizes: 4096 (enabled), 8192, 65536, 262144, 1048576, 4194304
+    ecap 0017[1a0] = TPH Requester 1
+    ecap 0018[1c0] = LTR 1
+    ecap 000d[1d0] = ACS 1
+
+igb1@pci0:11:0:1:	class=0x020000 card=0x00a38086 chip=0x15218086 rev=0x01 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'I350 Gigabit Network Connection'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0x98200000, size 1048576, enabled
+    bar   [18] = type I/O Port, range 32, base 0x2040, size 32, enabled
+    bar   [1c] = type Memory, range 32, base 0x98608000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 11[70] = MSI-X supports 10 messages, enabled
+                 Table in map 0x1c[0x0], PBA in map 0x1c[0x2000]
+    cap 10[a0] = PCI-Express 2 endpoint max data 512(512) FLR RO NS
+                 link x4(x4) speed 5.0(5.0) ASPM disabled(L0s/L1)
+    ecap 0001[100] = AER 2 0 fatal 1 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 6805caffffcfd41e
+    ecap 000e[150] = ARI 1
+    ecap 0010[160] = SR-IOV 1 IOV disabled, Memory Space disabled, ARI disabled
+                     0 VFs configured out of 8 supported
+                     First VF RID Offset 0x0080, VF RID Stride 0x0004
+                     VF Device ID 0x1520
+                     Page Sizes: 4096 (enabled), 8192, 65536, 262144, 1048576, 4194304
+    ecap 0017[1a0] = TPH Requester 1
+    ecap 000d[1d0] = ACS 1
+
+igb2@pci0:11:0:2:	class=0x020000 card=0x00a38086 chip=0x15218086 rev=0x01 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'I350 Gigabit Network Connection'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0x98100000, size 1048576, enabled
+    bar   [18] = type I/O Port, range 32, base 0x2020, size 32, enabled
+    bar   [1c] = type Memory, range 32, base 0x98604000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 11[70] = MSI-X supports 10 messages, enabled
+                 Table in map 0x1c[0x0], PBA in map 0x1c[0x2000]
+    cap 10[a0] = PCI-Express 2 endpoint max data 512(512) FLR RO NS
+                 link x4(x4) speed 5.0(5.0) ASPM disabled(L0s/L1)
+    ecap 0001[100] = AER 2 0 fatal 1 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 6805caffffcfd41e
+    ecap 000e[150] = ARI 1
+    ecap 0010[160] = SR-IOV 1 IOV disabled, Memory Space disabled, ARI disabled
+                     0 VFs configured out of 8 supported
+                     First VF RID Offset 0x0080, VF RID Stride 0x0004
+                     VF Device ID 0x1520
+                     Page Sizes: 4096 (enabled), 8192, 65536, 262144, 1048576, 4194304
+    ecap 0017[1a0] = TPH Requester 1
+    ecap 000d[1d0] = ACS 1
+
+igb3@pci0:11:0:3:	class=0x020000 card=0x00a38086 chip=0x15218086 rev=0x01 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'I350 Gigabit Network Connection'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0x98000000, size 1048576, enabled
+    bar   [18] = type I/O Port, range 32, base 0x2000, size 32, enabled
+    bar   [1c] = type Memory, range 32, base 0x98600000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 11[70] = MSI-X supports 10 messages, enabled
+                 Table in map 0x1c[0x0], PBA in map 0x1c[0x2000]
+    cap 10[a0] = PCI-Express 2 endpoint max data 512(512) FLR RO NS
+                 link x4(x4) speed 5.0(5.0) ASPM disabled(L0s/L1)
+    ecap 0001[100] = AER 2 0 fatal 1 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 6805caffffcfd41e
+    ecap 000e[150] = ARI 1
+    ecap 0010[160] = SR-IOV 1 IOV disabled, Memory Space disabled, ARI disabled
+                     0 VFs configured out of 8 supported
+                     First VF RID Offset 0x0080, VF RID Stride 0x0004
+                     VF Device ID 0x1520
+                     Page Sizes: 4096 (enabled), 8192, 65536, 262144, 1048576, 4194304
+    ecap 0017[1a0] = TPH Requester 1
+    ecap 000d[1d0] = ACS 1
+
+none27@pci0:30:0:0:	class=0x088000 card=0x00008086 chip=0x09a28086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none28@pci0:30:0:1:	class=0x088000 card=0x00008086 chip=0x09a48086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none29@pci0:30:0:2:	class=0x088000 card=0x00008086 chip=0x09a38086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+hostb2@pci0:30:0:4:	class=0x060000 card=0x00008086 chip=0x09988086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(256)
+
+pcib6@pci0:30:2:0:	class=0x060400 card=0x00008086 chip=0x347a8086 rev=0x04 hdr=0x01
+    vendor     = 'Intel Corporation'
+    class      = bridge
+    subclass   = PCI-PCI
+    bar   [10] = type Memory, range 64, base 0xc8000400000, size 131072, enabled
+    cap 10[40] = PCI-Express 2 root port max data 512(512) ARI enabled
+                 link x8(x16) speed 16.0(16.0)
+                 slot 2 power limit 75000 mW
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 0d[88] = PCI Bridge card=0x00008086
+    cap 05[90] = MSI supports 1 message 
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000d[148] = ACS 1
+    ecap 000b[180] = Vendor 1 ID 3
+    ecap 001d[190] = unknown 1
+    ecap 0019[200] = PCIe Sec 1 lane errors 0
+    ecap 0025[400] = unknown 1
+    ecap 0026[410] = unknown 1
+    ecap 0027[450] = unknown 1
+
+none30@pci0:31:0:0:	class=0x0c0400 card=0xf40210df chip=0xf40010df rev=0x10 hdr=0x00
+    vendor     = 'Emulex Corporation'
+    device     = 'LPe36000 Fibre Channel Host Adapter [Prism]'
+    class      = serial bus
+    subclass   = Fibre Channel
+    bar   [10] = type Prefetchable Memory, range 64, base 0xc8000328000, size 32768, enabled
+    bar   [18] = type Prefetchable Memory, range 64, base 0xc8000320000, size 32768, enabled
+    bar   [20] = type Prefetchable Memory, range 64, base 0xc8000318000, size 32768, enabled
+    cap 09[54] = vendor (length 8)
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[60] = MSI supports 32 messages, 64 bit, vector masks 
+    cap 11[78] = MSI-X supports 512 messages
+                 Table in map 0x10[0x4000], PBA in map 0x10[0x3000]
+    cap 09[84] = vendor (length 12)
+    cap 10[94] = PCI-Express 2 endpoint max data 512(512) FLR RO NS
+                 link x8(x8) speed 16.0(16.0)
+    cap 03[f8] = VPD
+    ecap 0001[100] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0004[12c] = Power Budgeting 1
+    ecap 0010[13c] = SR-IOV 1 IOV disabled, Memory Space disabled, ARI enabled
+                     0 VFs configured out of 16 supported
+                     First VF RID Offset 0x0002, VF RID Stride 0x0001
+                     VF Device ID 0xf400
+                     Page Sizes: 4096 (enabled), 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304
+    ecap 000e[1d0] = ARI 1
+    ecap 000b[1e8] = Vendor 1 ID 50449
+    ecap 0017[200] = TPH Requester 1
+    ecap 0019[20c] = PCIe Sec 1 lane errors 0
+    ecap 0026[238] = unknown 1
+    ecap 0027[278] = unknown 1
+    ecap 0025[2c0] = unknown 1
+
+none31@pci0:31:0:1:	class=0x0c0400 card=0xf40210df chip=0xf40010df rev=0x10 hdr=0x00
+    vendor     = 'Emulex Corporation'
+    device     = 'LPe36000 Fibre Channel Host Adapter [Prism]'
+    class      = serial bus
+    subclass   = Fibre Channel
+    bar   [10] = type Prefetchable Memory, range 64, base 0xc8000190000, size 32768, enabled
+    bar   [18] = type Prefetchable Memory, range 64, base 0xc8000188000, size 32768, enabled
+    bar   [20] = type Prefetchable Memory, range 64, base 0xc8000180000, size 32768, enabled
+    cap 09[54] = vendor (length 8)
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[60] = MSI supports 32 messages, 64 bit, vector masks 
+    cap 11[78] = MSI-X supports 512 messages
+                 Table in map 0x10[0x4000], PBA in map 0x10[0x3000]
+    cap 10[94] = PCI-Express 2 endpoint max data 512(512) FLR RO NS
+                 link x8(x8) speed 16.0(16.0)
+    cap 03[f8] = VPD
+    ecap 0001[100] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0004[12c] = Power Budgeting 1
+    ecap 0010[13c] = SR-IOV 1 IOV disabled, Memory Space disabled, ARI disabled
+                     0 VFs configured out of 16 supported
+                     First VF RID Offset 0x0011, VF RID Stride 0x0001
+                     VF Device ID 0xf400
+                     Page Sizes: 4096 (enabled), 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304
+    ecap 000e[1d0] = ARI 1
+    ecap 0017[200] = TPH Requester 1
+    ecap 0025[2c0] = unknown 1
+
+none32@pci0:65:0:0:	class=0x088000 card=0x00008086 chip=0x09a28086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none33@pci0:65:0:1:	class=0x088000 card=0x00008086 chip=0x09a48086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none34@pci0:65:0:2:	class=0x088000 card=0x00008086 chip=0x09a38086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+hostb3@pci0:65:0:4:	class=0x060000 card=0x00008086 chip=0x09988086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(256)
+
+pcib8@pci0:65:2:0:	class=0x060400 card=0x00008086 chip=0x347a8086 rev=0x04 hdr=0x01
+    vendor     = 'Intel Corporation'
+    class      = bridge
+    subclass   = PCI-PCI
+    bar   [10] = type Memory, range 64, base 0xcc002b00000, size 131072, enabled
+    cap 10[40] = PCI-Express 2 root port max data 512(512) ARI enabled
+                 link x8(x16) speed 8.0(16.0)
+                 slot 1 power limit 75000 mW
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 0d[88] = PCI Bridge card=0x00008086
+    cap 05[90] = MSI supports 1 message 
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000d[148] = ACS 1
+    ecap 000b[180] = Vendor 1 ID 3
+    ecap 001d[190] = unknown 1
+    ecap 0019[200] = PCIe Sec 1 lane errors 0
+    ecap 0025[400] = unknown 1
+    ecap 0026[410] = unknown 1
+    ecap 0027[450] = unknown 1
+
+ixl0@pci0:66:0:0:	class=0x020000 card=0x00048086 chip=0x15ff8086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Ethernet Controller X710 for 10GBASE-T'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Prefetchable Memory, range 64, base 0xcc001000000, size 16777216, enabled
+    bar   [1c] = type Prefetchable Memory, range 64, base 0xcc002808000, size 32768, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 11[70] = MSI-X supports 129 messages, enabled
+                 Table in map 0x1c[0x0], PBA in map 0x1c[0x1000]
+    cap 10[a0] = PCI-Express 2 endpoint max data 512(2048) FLR RO
+                 link x8(x8) speed 8.0(8.0) ASPM disabled(L1)
+    cap 03[e0] = VPD
+    ecap 0001[100] = AER 2 0 fatal 1 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 d034dfffffca0568
+    ecap 000e[150] = ARI 1
+    ecap 0010[160] = SR-IOV 1 IOV disabled, Memory Space disabled, ARI enabled
+                     0 VFs configured out of 64 supported
+                     First VF RID Offset 0x0010, VF RID Stride 0x0001
+                     VF Device ID 0x154c
+                     Page Sizes: 4096 (enabled), 8192, 65536, 262144, 1048576, 4194304
+    ecap 0017[1a0] = TPH Requester 1
+    ecap 000d[1b0] = ACS 1
+    ecap 0019[1d0] = PCIe Sec 1 lane errors 0
+
+ixl1@pci0:66:0:1:	class=0x020000 card=0x00008086 chip=0x15ff8086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Ethernet Controller X710 for 10GBASE-T'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Prefetchable Memory, range 64, base 0xcc000000000, size 16777216, enabled
+    bar   [1c] = type Prefetchable Memory, range 64, base 0xcc002800000, size 32768, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 11[70] = MSI-X supports 129 messages, enabled
+                 Table in map 0x1c[0x0], PBA in map 0x1c[0x1000]
+    cap 10[a0] = PCI-Express 2 endpoint max data 512(2048) FLR RO
+                 link x8(x8) speed 8.0(8.0) ASPM disabled(L1)
+    cap 03[e0] = VPD
+    ecap 0001[100] = AER 2 0 fatal 1 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 d034dfffffca0568
+    ecap 000e[150] = ARI 1
+    ecap 0010[160] = SR-IOV 1 IOV disabled, Memory Space disabled, ARI disabled
+                     0 VFs configured out of 64 supported
+                     First VF RID Offset 0x004f, VF RID Stride 0x0001
+                     VF Device ID 0x154c
+                     Page Sizes: 4096 (enabled), 8192, 65536, 262144, 1048576, 4194304
+    ecap 0017[1a0] = TPH Requester 1
+    ecap 000d[1b0] = ACS 1
+
+none35@pci0:82:0:0:	class=0x088000 card=0x00008086 chip=0x09a28086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none36@pci0:82:0:1:	class=0x088000 card=0x00008086 chip=0x09a48086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none37@pci0:82:0:2:	class=0x088000 card=0x00008086 chip=0x09a38086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+hostb4@pci0:82:0:4:	class=0x060000 card=0x00008086 chip=0x09988086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(256)
+
+pcib10@pci0:82:2:0:	class=0x060400 card=0x00008086 chip=0x347a8086 rev=0x04 hdr=0x01
+    vendor     = 'Intel Corporation'
+    class      = bridge
+    subclass   = PCI-PCI
+    bar   [10] = type Memory, range 64, base 0xd0001800000, size 131072, enabled
+    cap 10[40] = PCI-Express 2 root port max data 128(512) ARI disabled
+                 link x16(x16) speed 16.0(16.0)
+                 slot 0 power limit 75000 mW
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 0d[88] = PCI Bridge card=0x00008086
+    cap 05[90] = MSI supports 1 message 
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000d[148] = ACS 1
+    ecap 000b[180] = Vendor 1 ID 3
+    ecap 001d[190] = unknown 1
+    ecap 0019[200] = PCIe Sec 1 lane errors 0
+    ecap 0025[400] = unknown 1
+    ecap 0026[410] = unknown 1
+    ecap 0027[450] = unknown 1
+
+pcib11@pci0:83:0:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    bar   [10] = type Memory, range 32, base 0xb8000000, size 16777216, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[48] = MSI supports 8 messages, 64 bit, vector masks 
+    cap 10[68] = PCI-Express 2 upstream port max data 128(2048) RO NS
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0004[138] = Power Budgeting 1
+    ecap 0019[db4] = PCIe Sec 1 lane errors 0
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0025[af4] = unknown 1
+    ecap 0026[d00] = unknown 1
+    ecap 0027[d40] = unknown 1
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 0018[b00] = LTR 1
+
+pcib12@pci0:84:0:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 10[68] = PCI-Express 2 downstream port max data 128(2048) RO NS
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0002[148] = VC 1 max VC0
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 000d[f24] = ACS 1
+
+pcib18@pci0:84:4:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 10[68] = PCI-Express 2 downstream port max data 128(2048) RO NS
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0002[148] = VC 1 max VC0
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 000d[f24] = ACS 1
+
+pcib24@pci0:84:8:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 10[68] = PCI-Express 2 downstream port max data 128(2048) RO NS
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0002[148] = VC 1 max VC0
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 000d[f24] = ACS 1
+
+pcib30@pci0:84:12:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 10[68] = PCI-Express 2 downstream port max data 128(2048) RO NS
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0002[148] = VC 1 max VC0
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 000d[f24] = ACS 1
+
+pcib34@pci0:84:28:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[48] = MSI supports 8 messages, 64 bit, vector masks 
+    cap 10[68] = PCI-Express 2 downstream port max data 128(2048) RO NS
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0002[148] = VC 1 max VC0
+    ecap 000b[b70] = Vendor 1 ID 1
+
+pcib13@pci0:85:0:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 10[68] = PCI-Express 2 upstream port max data 128(2048) RO NS
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0002[148] = VC 1 max VC0
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 0018[b00] = LTR 1
+
+pcib14@pci0:86:0:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[48] = MSI supports 8 messages, 64 bit, vector masks enabled with 1 message
+    cap 10[68] = PCI-Express 2 downstream port max data 128(2048) RO NS ARI disabled
+                 link x0(x4) speed 0.0(16.0) ASPM disabled(L0s/L1)
+                 slot 35 power limit 25000 mW HotPlug(empty) Attn Button PC(off) MRL(open)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0004[138] = Power Budgeting 1
+    ecap 0019[db4] = PCIe Sec 1 lane errors 0
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0025[af4] = unknown 1
+    ecap 0026[d00] = unknown 1
+    ecap 0027[d40] = unknown 1
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 000d[f24] = ACS 1
+    ecap 001d[b60] = unknown 1
+
+pcib15@pci0:86:4:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[48] = MSI supports 8 messages, 64 bit, vector masks enabled with 1 message
+    cap 10[68] = PCI-Express 2 downstream port max data 128(2048) RO NS ARI disabled
+                 link x0(x4) speed 0.0(16.0) ASPM disabled(L0s/L1)
+                 slot 34 power limit 25000 mW HotPlug(empty) Attn Button PC(off) MRL(open)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0004[138] = Power Budgeting 1
+    ecap 0019[db4] = PCIe Sec 1 lane errors 0
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0025[af4] = unknown 1
+    ecap 0026[d00] = unknown 1
+    ecap 0027[d40] = unknown 1
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 000d[f24] = ACS 1
+    ecap 001d[b60] = unknown 1
+
+pcib16@pci0:86:8:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[48] = MSI supports 8 messages, 64 bit, vector masks enabled with 1 message
+    cap 10[68] = PCI-Express 2 downstream port max data 128(2048) RO NS ARI disabled
+                 link x0(x4) speed 0.0(16.0) ASPM disabled(L0s/L1)
+                 slot 33 power limit 25000 mW HotPlug(empty) Attn Button PC(off) MRL(open)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0004[138] = Power Budgeting 1
+    ecap 0019[db4] = PCIe Sec 1 lane errors 0
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0025[af4] = unknown 1
+    ecap 0026[d00] = unknown 1
+    ecap 0027[d40] = unknown 1
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 000d[f24] = ACS 1
+    ecap 001d[b60] = unknown 1
+
+pcib17@pci0:86:12:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[48] = MSI supports 8 messages, 64 bit, vector masks 
+    cap 10[68] = PCI-Express 2 downstream port max data 128(2048) RO NS ARI enabled
+                 link x4(x4) speed 16.0(16.0) ASPM disabled(L0s/L1)
+                 slot 32 power limit 25000 mW HotPlug(present) Attn Button PC(off) MRL(open)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0004[138] = Power Budgeting 1
+    ecap 0019[db4] = PCIe Sec 1 lane errors 0
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0025[af4] = unknown 1
+    ecap 0026[d00] = unknown 1
+    ecap 0027[d40] = unknown 1
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 000d[f24] = ACS 1
+    ecap 001d[b60] = unknown 1
+
+nvme0@pci0:90:0:0:	class=0x010802 card=0x00011e0f chip=0x00071e0f rev=0x01 hdr=0x00
+    class      = mass storage
+    subclass   = NVM
+    bar   [10] = type Memory, range 64, base 0xba010000, size 32768, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 10[70] = PCI-Express 2 endpoint max data 128(512) FLR RO NS
+                 link x4(x4) speed 16.0(16.0)
+    cap 11[b0] = MSI-X supports 129 messages, enabled
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x4000]
+    cap 03[d0] = VPD
+    ecap 0001[100] = AER 2 0 fatal 1 non-fatal 1 corrected
+    ecap 0003[148] = Serial 1 0058a105e28ee38c
+    ecap 000e[158] = ARI 1
+    ecap 0019[168] = PCIe Sec 1 lane errors 0
+    ecap 0026[188] = unknown 1
+    ecap 0027[1b0] = unknown 1
+
+pcib19@pci0:91:0:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 10[68] = PCI-Express 2 upstream port max data 128(2048) RO NS
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0002[148] = VC 1 max VC0
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 0018[b00] = LTR 1
+
+pcib20@pci0:92:16:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[48] = MSI supports 8 messages, 64 bit, vector masks enabled with 1 message
+    cap 10[68] = PCI-Express 2 downstream port max data 128(2048) RO NS ARI disabled
+                 link x0(x4) speed 0.0(16.0) ASPM disabled(L0s/L1)
+                 slot 36 power limit 25000 mW HotPlug(empty) Attn Button PC(off) MRL(open)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0004[138] = Power Budgeting 1
+    ecap 0019[db4] = PCIe Sec 1 lane errors 0
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0025[af4] = unknown 1
+    ecap 0026[d00] = unknown 1
+    ecap 0027[d40] = unknown 1
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 000d[f24] = ACS 1
+    ecap 001d[b60] = unknown 1
+
+pcib21@pci0:92:20:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[48] = MSI supports 8 messages, 64 bit, vector masks enabled with 1 message
+    cap 10[68] = PCI-Express 2 downstream port max data 128(2048) RO NS ARI disabled
+                 link x0(x4) speed 0.0(16.0) ASPM disabled(L0s/L1)
+                 slot 37 power limit 25000 mW HotPlug(empty) Attn Button PC(off) MRL(open)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0004[138] = Power Budgeting 1
+    ecap 0019[db4] = PCIe Sec 1 lane errors 0
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0025[af4] = unknown 1
+    ecap 0026[d00] = unknown 1
+    ecap 0027[d40] = unknown 1
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 000d[f24] = ACS 1
+    ecap 001d[b60] = unknown 1
+
+pcib22@pci0:92:24:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[48] = MSI supports 8 messages, 64 bit, vector masks enabled with 1 message
+    cap 10[68] = PCI-Express 2 downstream port max data 128(2048) RO NS ARI disabled
+                 link x0(x4) speed 0.0(16.0) ASPM disabled(L0s/L1)
+                 slot 38 power limit 25000 mW HotPlug(empty) Attn Button PC(off) MRL(open)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0004[138] = Power Budgeting 1
+    ecap 0019[db4] = PCIe Sec 1 lane errors 0
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0025[af4] = unknown 1
+    ecap 0026[d00] = unknown 1
+    ecap 0027[d40] = unknown 1
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 000d[f24] = ACS 1
+    ecap 001d[b60] = unknown 1
+
+pcib23@pci0:92:28:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[48] = MSI supports 8 messages, 64 bit, vector masks enabled with 1 message
+    cap 10[68] = PCI-Express 2 downstream port max data 128(2048) RO NS ARI disabled
+                 link x0(x4) speed 0.0(16.0) ASPM disabled(L0s/L1)
+                 slot 39 power limit 25000 mW HotPlug(empty) Attn Button PC(off) MRL(open)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0004[138] = Power Budgeting 1
+    ecap 0019[db4] = PCIe Sec 1 lane errors 0
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0025[af4] = unknown 1
+    ecap 0026[d00] = unknown 1
+    ecap 0027[d40] = unknown 1
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 000d[f24] = ACS 1
+    ecap 001d[b60] = unknown 1
+
+pcib25@pci0:97:0:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 10[68] = PCI-Express 2 upstream port max data 128(2048) RO NS
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0002[148] = VC 1 max VC0
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 0018[b00] = LTR 1
+
+pcib26@pci0:98:0:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[48] = MSI supports 8 messages, 64 bit, vector masks enabled with 1 message
+    cap 10[68] = PCI-Express 2 downstream port max data 128(2048) RO NS ARI disabled
+                 link x0(x4) speed 0.0(16.0) ASPM disabled(L0s/L1)
+                 slot 44 power limit 25000 mW HotPlug(empty) Attn Button PC(off) MRL(open)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0004[138] = Power Budgeting 1
+    ecap 0019[db4] = PCIe Sec 1 lane errors 0
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0025[af4] = unknown 1
+    ecap 0026[d00] = unknown 1
+    ecap 0027[d40] = unknown 1
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 000d[f24] = ACS 1
+    ecap 001d[b60] = unknown 1
+
+pcib27@pci0:98:4:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[48] = MSI supports 8 messages, 64 bit, vector masks enabled with 1 message
+    cap 10[68] = PCI-Express 2 downstream port max data 128(2048) RO NS ARI disabled
+                 link x0(x4) speed 0.0(16.0) ASPM disabled(L0s/L1)
+                 slot 45 power limit 25000 mW HotPlug(empty) Attn Button PC(off) MRL(open)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0004[138] = Power Budgeting 1
+    ecap 0019[db4] = PCIe Sec 1 lane errors 0
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0025[af4] = unknown 1
+    ecap 0026[d00] = unknown 1
+    ecap 0027[d40] = unknown 1
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 000d[f24] = ACS 1
+    ecap 001d[b60] = unknown 1
+
+pcib28@pci0:98:8:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[48] = MSI supports 8 messages, 64 bit, vector masks enabled with 1 message
+    cap 10[68] = PCI-Express 2 downstream port max data 128(2048) RO NS ARI disabled
+                 link x0(x4) speed 0.0(16.0) ASPM disabled(L0s/L1)
+                 slot 46 power limit 25000 mW HotPlug(empty) Attn Button PC(off) MRL(open)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0004[138] = Power Budgeting 1
+    ecap 0019[db4] = PCIe Sec 1 lane errors 0
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0025[af4] = unknown 1
+    ecap 0026[d00] = unknown 1
+    ecap 0027[d40] = unknown 1
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 000d[f24] = ACS 1
+    ecap 001d[b60] = unknown 1
+
+pcib29@pci0:98:12:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[48] = MSI supports 8 messages, 64 bit, vector masks enabled with 1 message
+    cap 10[68] = PCI-Express 2 downstream port max data 128(2048) RO NS ARI disabled
+                 link x0(x4) speed 0.0(16.0) ASPM disabled(L0s/L1)
+                 slot 47 power limit 25000 mW HotPlug(empty) Attn Button PC(off) MRL(open)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0004[138] = Power Budgeting 1
+    ecap 0019[db4] = PCIe Sec 1 lane errors 0
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0025[af4] = unknown 1
+    ecap 0026[d00] = unknown 1
+    ecap 0027[d40] = unknown 1
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 000d[f24] = ACS 1
+    ecap 001d[b60] = unknown 1
+
+pcib31@pci0:103:0:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 10[68] = PCI-Express 2 upstream port max data 128(2048) RO NS
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0002[148] = VC 1 max VC0
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 0018[b00] = LTR 1
+
+pcib32@pci0:104:20:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[48] = MSI supports 8 messages, 64 bit, vector masks 
+    cap 10[68] = PCI-Express 2 downstream port max data 128(256) RO NS ARI disabled
+                 link x0(x1) speed 0.0(16.0) ASPM disabled(L0s/L1)
+                 slot 116 power limit 25000 mW
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0004[138] = Power Budgeting 1
+    ecap 0019[db4] = PCIe Sec 1 lane errors 0
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0025[af4] = unknown 1
+    ecap 0026[d00] = unknown 1
+    ecap 0027[d40] = unknown 1
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 000d[f24] = ACS 1
+    ecap 001d[b60] = unknown 1
+
+pcib33@pci0:104:21:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[48] = MSI supports 8 messages, 64 bit, vector masks 
+    cap 10[68] = PCI-Express 2 downstream port max data 128(256) RO NS ARI disabled
+                 link x0(x1) speed 0.0(16.0) ASPM disabled(L0s/L1)
+                 slot 117 power limit 25000 mW
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0004[138] = Power Budgeting 1
+    ecap 0019[db4] = PCIe Sec 1 lane errors 0
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0025[af4] = unknown 1
+    ecap 0026[d00] = unknown 1
+    ecap 0027[d40] = unknown 1
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 000d[f24] = ACS 1
+    ecap 001d[b60] = unknown 1
+
+none38@pci0:107:0:0:	class=0x018000 card=0x00b21000 chip=0xc0101000 rev=0xb0 hdr=0x00
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = mass storage
+    bar   [10] = type Memory, range 32, base 0xba800000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 11[a4] = MSI-X supports 1 message
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x3000]
+    cap 05[48] = MSI supports 1 message, 64 bit, vector masks 
+    cap 10[68] = PCI-Express 2 endpoint max data 128(1024) FLR RO NS
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 000b[b70] = Vendor 1 ID 1
+
+none39@pci0:126:0:0:	class=0x088000 card=0x00008086 chip=0x34508086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none40@pci0:126:0:1:	class=0x088000 card=0x00008086 chip=0x34518086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none41@pci0:126:0:2:	class=0x088000 card=0x00008086 chip=0x34528086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+hostb5@pci0:126:0:3:	class=0x060000 card=0x00008086 chip=0x09988086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(256)
+
+none42@pci0:126:0:5:	class=0x088000 card=0x00008086 chip=0x34558086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none43@pci0:126:2:0:	class=0x088000 card=0x00008086 chip=0x34408086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none44@pci0:126:2:1:	class=0x088000 card=0x00008086 chip=0x34418086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none45@pci0:126:2:2:	class=0x088000 card=0x00008086 chip=0x34428086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none46@pci0:126:3:0:	class=0x088000 card=0x00008086 chip=0x34408086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none47@pci0:126:3:1:	class=0x088000 card=0x00008086 chip=0x34418086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none48@pci0:126:3:2:	class=0x088000 card=0x00008086 chip=0x34428086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none49@pci0:126:4:0:	class=0x088000 card=0x00008086 chip=0x34408086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none50@pci0:126:4:1:	class=0x088000 card=0x00008086 chip=0x34418086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none51@pci0:126:4:2:	class=0x088000 card=0x00008086 chip=0x34428086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none52@pci0:126:4:3:	class=0x088000 card=0x00008086 chip=0x34438086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none53@pci0:126:5:0:	class=0x088000 card=0x00008086 chip=0x34458086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none54@pci0:126:5:1:	class=0x088000 card=0x00008086 chip=0x34468086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none55@pci0:126:5:2:	class=0x088000 card=0x00008086 chip=0x34478086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none56@pci0:126:6:0:	class=0x088000 card=0x00008086 chip=0x34458086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none57@pci0:126:6:1:	class=0x088000 card=0x00008086 chip=0x34468086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none58@pci0:126:6:2:	class=0x088000 card=0x00008086 chip=0x34478086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none59@pci0:126:7:0:	class=0x088000 card=0x00008086 chip=0x34458086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none60@pci0:126:7:1:	class=0x088000 card=0x00008086 chip=0x34468086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none61@pci0:126:7:2:	class=0x088000 card=0x00008086 chip=0x34478086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none62@pci0:126:11:0:	class=0x088000 card=0x00008086 chip=0x34488086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+
+none63@pci0:126:11:1:	class=0x088000 card=0x00008086 chip=0x34488086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+
+none64@pci0:126:11:2:	class=0x088000 card=0x00008086 chip=0x344b8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+
+none65@pci0:126:12:0:	class=0x110100 card=0x00008086 chip=0x344a8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = dasp
+    subclass   = performance counters
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none66@pci0:126:13:0:	class=0x110100 card=0x00008086 chip=0x344a8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = dasp
+    subclass   = performance counters
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none67@pci0:126:14:0:	class=0x110100 card=0x00008086 chip=0x344a8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = dasp
+    subclass   = performance counters
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none68@pci0:126:15:0:	class=0x110100 card=0x00008086 chip=0x344a8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = dasp
+    subclass   = performance counters
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none69@pci0:126:26:0:	class=0x110100 card=0x00008086 chip=0x28808086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = dasp
+    subclass   = performance counters
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none70@pci0:126:27:0:	class=0x110100 card=0x00008086 chip=0x28808086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = dasp
+    subclass   = performance counters
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none71@pci0:126:28:0:	class=0x110100 card=0x00008086 chip=0x28808086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = dasp
+    subclass   = performance counters
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none72@pci0:126:29:0:	class=0x110100 card=0x00008086 chip=0x28808086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = dasp
+    subclass   = performance counters
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none73@pci0:127:0:0:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none74@pci0:127:0:1:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none75@pci0:127:0:2:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none76@pci0:127:0:3:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none77@pci0:127:0:4:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none78@pci0:127:0:5:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none79@pci0:127:0:6:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none80@pci0:127:0:7:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none81@pci0:127:1:0:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none82@pci0:127:1:1:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none83@pci0:127:1:2:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none84@pci0:127:1:3:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none85@pci0:127:1:4:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none86@pci0:127:1:5:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none87@pci0:127:1:6:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none88@pci0:127:1:7:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none89@pci0:127:2:0:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none90@pci0:127:2:1:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none91@pci0:127:2:2:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none92@pci0:127:2:3:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none93@pci0:127:2:4:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none94@pci0:127:2:5:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none95@pci0:127:2:6:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none96@pci0:127:2:7:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none97@pci0:127:3:0:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none98@pci0:127:3:1:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none99@pci0:127:3:2:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none100@pci0:127:3:3:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none101@pci0:127:3:4:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none102@pci0:127:3:5:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none103@pci0:127:3:6:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none104@pci0:127:3:7:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none105@pci0:127:4:0:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none106@pci0:127:4:1:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none107@pci0:127:4:2:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none108@pci0:127:4:3:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none109@pci0:127:4:4:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none110@pci0:127:4:5:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none111@pci0:127:4:6:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none112@pci0:127:4:7:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none113@pci0:127:10:0:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none114@pci0:127:10:1:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none115@pci0:127:10:2:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none116@pci0:127:10:3:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none117@pci0:127:10:4:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none118@pci0:127:10:5:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none119@pci0:127:10:6:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none120@pci0:127:10:7:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none121@pci0:127:11:0:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none122@pci0:127:11:1:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none123@pci0:127:11:2:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none124@pci0:127:11:3:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none125@pci0:127:11:4:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none126@pci0:127:11:5:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none127@pci0:127:11:6:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none128@pci0:127:11:7:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none129@pci0:127:12:0:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none130@pci0:127:12:1:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none131@pci0:127:12:2:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none132@pci0:127:12:3:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none133@pci0:127:12:4:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none134@pci0:127:12:5:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none135@pci0:127:12:6:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none136@pci0:127:12:7:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none137@pci0:127:13:0:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none138@pci0:127:13:1:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none139@pci0:127:13:2:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none140@pci0:127:13:3:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none141@pci0:127:13:4:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none142@pci0:127:13:5:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none143@pci0:127:13:6:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none144@pci0:127:13:7:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none145@pci0:127:14:0:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none146@pci0:127:14:1:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none147@pci0:127:14:2:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none148@pci0:127:14:3:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none149@pci0:127:14:4:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none150@pci0:127:14:5:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none151@pci0:127:14:6:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none152@pci0:127:14:7:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none153@pci0:127:29:0:	class=0x088000 card=0x00008086 chip=0x344f8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none154@pci0:127:29:1:	class=0x088000 card=0x00008086 chip=0x34578086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none155@pci0:127:30:0:	class=0x088000 card=0x00008086 chip=0x34588086 rev=0x06 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+
+none156@pci0:127:30:1:	class=0x088000 card=0x00008086 chip=0x34598086 rev=0x06 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+
+none157@pci0:127:30:2:	class=0x088000 card=0x00008086 chip=0x345a8086 rev=0x06 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+
+none158@pci0:127:30:3:	class=0x088000 card=0x00008086 chip=0x345b8086 rev=0x06 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+
+none159@pci0:127:30:4:	class=0x088000 card=0x00008086 chip=0x345c8086 rev=0x06 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+
+none160@pci0:127:30:5:	class=0x088000 card=0x00008086 chip=0x345d8086 rev=0x06 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+
+none161@pci0:127:30:6:	class=0x088000 card=0x00008086 chip=0x345e8086 rev=0x06 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+
+none162@pci0:127:30:7:	class=0x088000 card=0x00008086 chip=0x345f8086 rev=0x06 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+
+none163@pci0:128:0:0:	class=0x088000 card=0x00008086 chip=0x09a28086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none164@pci0:128:0:1:	class=0x088000 card=0x00008086 chip=0x09a48086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none165@pci0:128:0:2:	class=0x088000 card=0x00008086 chip=0x09a38086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+hostb6@pci0:128:0:4:	class=0x060000 card=0x00008086 chip=0x09988086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(256)
+
+none166@pci0:128:1:0:	class=0x088000 card=0x00008086 chip=0x0b008086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    bar   [10] = type Memory, range 64, base 0xd4000140000, size 16384, enabled
+    cap 10[40] = PCI-Express 2 root endpoint max data 512(512) FLR
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 11[ac] = MSI-X supports 1 message
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x3000]
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 0018[1d0] = LTR 1
+
+none167@pci0:128:1:1:	class=0x088000 card=0x00008086 chip=0x0b008086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    bar   [10] = type Memory, range 64, base 0xd400013c000, size 16384, enabled
+    cap 10[40] = PCI-Express 2 root endpoint max data 512(512) FLR
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 11[ac] = MSI-X supports 1 message
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x3000]
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 0018[1d0] = LTR 1
+
+none168@pci0:128:1:2:	class=0x088000 card=0x00008086 chip=0x0b008086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    bar   [10] = type Memory, range 64, base 0xd4000138000, size 16384, enabled
+    cap 10[40] = PCI-Express 2 root endpoint max data 512(512) FLR
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 11[ac] = MSI-X supports 1 message
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x3000]
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 0018[1d0] = LTR 1
+
+none169@pci0:128:1:3:	class=0x088000 card=0x00008086 chip=0x0b008086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    bar   [10] = type Memory, range 64, base 0xd4000134000, size 16384, enabled
+    cap 10[40] = PCI-Express 2 root endpoint max data 512(512) FLR
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 11[ac] = MSI-X supports 1 message
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x3000]
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 0018[1d0] = LTR 1
+
+none170@pci0:128:1:4:	class=0x088000 card=0x00008086 chip=0x0b008086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    bar   [10] = type Memory, range 64, base 0xd4000130000, size 16384, enabled
+    cap 10[40] = PCI-Express 2 root endpoint max data 512(512) FLR
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 11[ac] = MSI-X supports 1 message
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x3000]
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 0018[1d0] = LTR 1
+
+none171@pci0:128:1:5:	class=0x088000 card=0x00008086 chip=0x0b008086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    bar   [10] = type Memory, range 64, base 0xd400012c000, size 16384, enabled
+    cap 10[40] = PCI-Express 2 root endpoint max data 512(512) FLR
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 11[ac] = MSI-X supports 1 message
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x3000]
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 0018[1d0] = LTR 1
+
+none172@pci0:128:1:6:	class=0x088000 card=0x00008086 chip=0x0b008086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    bar   [10] = type Memory, range 64, base 0xd4000128000, size 16384, enabled
+    cap 10[40] = PCI-Express 2 root endpoint max data 512(512) FLR
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 11[ac] = MSI-X supports 1 message
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x3000]
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 0018[1d0] = LTR 1
+
+none173@pci0:128:1:7:	class=0x088000 card=0x00008086 chip=0x0b008086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    bar   [10] = type Memory, range 64, base 0xd4000124000, size 16384, enabled
+    cap 10[40] = PCI-Express 2 root endpoint max data 512(512) FLR
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 11[ac] = MSI-X supports 1 message
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x3000]
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 0018[1d0] = LTR 1
+
+none174@pci0:128:2:0:	class=0x088000 card=0x00008086 chip=0x09a68086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    bar   [10] = type Memory, range 32, base 0xc4180000, size 8192, enabled
+
+none175@pci0:128:2:1:	class=0x088000 card=0x00008086 chip=0x09a78086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    bar   [10] = type Memory, range 32, base 0xc4100000, size 524288, enabled
+    bar   [14] = type Memory, range 32, base 0xc4080000, size 524288, enabled
+
+none176@pci0:128:2:4:	class=0x130000 card=0x00000000 chip=0x34568086 rev=0x01 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = non-essential instrumentation
+    bar   [10] = type Memory, range 64, base 0xd4000000000, size 1048576, enabled
+    bar   [18] = type Memory, range 64, base 0xd4000120000, size 16384, enabled
+    bar   [20] = type Memory, range 64, base 0xd4000100000, size 131072, enabled
+    cap 00[40] = unknown
+
+none177@pci0:138:0:0:	class=0x088000 card=0x00008086 chip=0x09a28086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none178@pci0:138:0:1:	class=0x088000 card=0x00008086 chip=0x09a48086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none179@pci0:138:0:2:	class=0x088000 card=0x00008086 chip=0x09a38086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+hostb7@pci0:138:0:4:	class=0x060000 card=0x00008086 chip=0x09988086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(256)
+
+none180@pci0:173:0:0:	class=0x088000 card=0x00008086 chip=0x09a28086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none181@pci0:173:0:1:	class=0x088000 card=0x00008086 chip=0x09a48086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none182@pci0:173:0:2:	class=0x088000 card=0x00008086 chip=0x09a38086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+hostb8@pci0:173:0:4:	class=0x060000 card=0x00008086 chip=0x09988086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(256)
+
+pcib40@pci0:173:2:0:	class=0x060400 card=0x00008086 chip=0x347a8086 rev=0x04 hdr=0x01
+    vendor     = 'Intel Corporation'
+    class      = bridge
+    subclass   = PCI-PCI
+    bar   [10] = type Memory, range 64, base 0xdc002100000, size 131072, enabled
+    cap 10[40] = PCI-Express 2 root port max data 512(512) ARI enabled
+                 link x8(x16) speed 8.0(16.0)
+                 slot 7 power limit 75000 mW
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 0d[88] = PCI Bridge card=0x00008086
+    cap 05[90] = MSI supports 1 message 
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000d[148] = ACS 1
+    ecap 000b[180] = Vendor 1 ID 3
+    ecap 001d[190] = unknown 1
+    ecap 0019[200] = PCIe Sec 1 lane errors 0
+    ecap 0025[400] = unknown 1
+    ecap 0026[410] = unknown 1
+    ecap 0027[450] = unknown 1
+
+ixl2@pci0:174:0:0:	class=0x020000 card=0x00068086 chip=0x15728086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Ethernet Controller X710 for 10GbE SFP+'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Prefetchable Memory, range 64, base 0xdc001000000, size 16777216, enabled
+    bar   [1c] = type Prefetchable Memory, range 64, base 0xdc002008000, size 32768, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 11[70] = MSI-X supports 129 messages, enabled
+                 Table in map 0x1c[0x0], PBA in map 0x1c[0x1000]
+    cap 10[a0] = PCI-Express 2 endpoint max data 512(2048) FLR RO
+                 link x8(x8) speed 8.0(8.0) ASPM disabled(L1)
+    cap 03[e0] = VPD
+    ecap 0001[100] = AER 2 0 fatal 1 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 a04d5affff1ef2f8
+    ecap 000e[150] = ARI 1
+    ecap 0017[1a0] = TPH Requester 1
+    ecap 000d[1b0] = ACS 1
+    ecap 0019[1d0] = PCIe Sec 1 lane errors 0
+
+ixl3@pci0:174:0:1:	class=0x020000 card=0x00008086 chip=0x15728086 rev=0x02 hdr=0x00
+    vendor     = 'Intel Corporation'
+    device     = 'Ethernet Controller X710 for 10GbE SFP+'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Prefetchable Memory, range 64, base 0xdc000000000, size 16777216, enabled
+    bar   [1c] = type Prefetchable Memory, range 64, base 0xdc002000000, size 32768, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 11[70] = MSI-X supports 129 messages, enabled
+                 Table in map 0x1c[0x0], PBA in map 0x1c[0x1000]
+    cap 10[a0] = PCI-Express 2 endpoint max data 512(2048) FLR RO
+                 link x8(x8) speed 8.0(8.0) ASPM disabled(L1)
+    cap 03[e0] = VPD
+    ecap 0001[100] = AER 2 0 fatal 1 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 a04d5affff1ef2f8
+    ecap 000e[150] = ARI 1
+    ecap 0017[1a0] = TPH Requester 1
+    ecap 000d[1b0] = ACS 1
+
+none183@pci0:193:0:0:	class=0x088000 card=0x00008086 chip=0x09a28086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none184@pci0:193:0:1:	class=0x088000 card=0x00008086 chip=0x09a48086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none185@pci0:193:0:2:	class=0x088000 card=0x00008086 chip=0x09a38086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+hostb9@pci0:193:0:4:	class=0x060000 card=0x00008086 chip=0x09988086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(256)
+
+none186@pci0:210:0:0:	class=0x088000 card=0x00008086 chip=0x09a28086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none187@pci0:210:0:1:	class=0x088000 card=0x00008086 chip=0x09a48086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none188@pci0:210:0:2:	class=0x088000 card=0x00008086 chip=0x09a38086 rev=0x04 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+hostb10@pci0:210:0:4:	class=0x060000 card=0x00008086 chip=0x09988086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(256)
+
+pcib43@pci0:210:2:0:	class=0x060400 card=0x00008086 chip=0x347a8086 rev=0x04 hdr=0x01
+    vendor     = 'Intel Corporation'
+    class      = bridge
+    subclass   = PCI-PCI
+    bar   [10] = type Memory, range 64, base 0xe4001800000, size 131072, enabled
+    cap 10[40] = PCI-Express 2 root port max data 128(512) ARI disabled
+                 link x16(x16) speed 16.0(16.0)
+                 slot 0 power limit 75000 mW
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 0d[88] = PCI Bridge card=0x00008086
+    cap 05[90] = MSI supports 1 message 
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000d[148] = ACS 1
+    ecap 000b[180] = Vendor 1 ID 3
+    ecap 001d[190] = unknown 1
+    ecap 0019[200] = PCIe Sec 1 lane errors 0
+    ecap 0025[400] = unknown 1
+    ecap 0026[410] = unknown 1
+    ecap 0027[450] = unknown 1
+
+pcib44@pci0:211:0:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    bar   [10] = type Memory, range 32, base 0xf0000000, size 16777216, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[48] = MSI supports 8 messages, 64 bit, vector masks 
+    cap 10[68] = PCI-Express 2 upstream port max data 128(2048) RO NS
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0004[138] = Power Budgeting 1
+    ecap 0019[db4] = PCIe Sec 1 lane errors 0
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0025[af4] = unknown 1
+    ecap 0026[d00] = unknown 1
+    ecap 0027[d40] = unknown 1
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 0018[b00] = LTR 1
+
+pcib45@pci0:212:0:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 10[68] = PCI-Express 2 downstream port max data 128(2048) RO NS
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0002[148] = VC 1 max VC0
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 000d[f24] = ACS 1
+
+pcib51@pci0:212:4:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 10[68] = PCI-Express 2 downstream port max data 128(2048) RO NS
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0002[148] = VC 1 max VC0
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 000d[f24] = ACS 1
+
+pcib57@pci0:212:8:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 10[68] = PCI-Express 2 downstream port max data 128(2048) RO NS
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0002[148] = VC 1 max VC0
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 000d[f24] = ACS 1
+
+pcib63@pci0:212:12:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 10[68] = PCI-Express 2 downstream port max data 128(2048) RO NS
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0002[148] = VC 1 max VC0
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 000d[f24] = ACS 1
+
+pcib67@pci0:212:28:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[48] = MSI supports 8 messages, 64 bit, vector masks 
+    cap 10[68] = PCI-Express 2 downstream port max data 128(2048) RO NS
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0002[148] = VC 1 max VC0
+    ecap 000b[b70] = Vendor 1 ID 1
+
+pcib46@pci0:213:0:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 10[68] = PCI-Express 2 upstream port max data 128(2048) RO NS
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0002[148] = VC 1 max VC0
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 0018[b00] = LTR 1
+
+pcib47@pci0:214:0:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[48] = MSI supports 8 messages, 64 bit, vector masks enabled with 1 message
+    cap 10[68] = PCI-Express 2 downstream port max data 128(2048) RO NS ARI disabled
+                 link x0(x4) speed 0.0(16.0) ASPM disabled(L0s/L1)
+                 slot 51 power limit 25000 mW HotPlug(empty) Attn Button PC(off) MRL(open)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0004[138] = Power Budgeting 1
+    ecap 0019[db4] = PCIe Sec 1 lane errors 0
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0025[af4] = unknown 1
+    ecap 0026[d00] = unknown 1
+    ecap 0027[d40] = unknown 1
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 000d[f24] = ACS 1
+    ecap 001d[b60] = unknown 1
+
+pcib48@pci0:214:4:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[48] = MSI supports 8 messages, 64 bit, vector masks enabled with 1 message
+    cap 10[68] = PCI-Express 2 downstream port max data 128(2048) RO NS ARI disabled
+                 link x0(x4) speed 0.0(16.0) ASPM disabled(L0s/L1)
+                 slot 50 power limit 25000 mW HotPlug(empty) Attn Button PC(off) MRL(open)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0004[138] = Power Budgeting 1
+    ecap 0019[db4] = PCIe Sec 1 lane errors 0
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0025[af4] = unknown 1
+    ecap 0026[d00] = unknown 1
+    ecap 0027[d40] = unknown 1
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 000d[f24] = ACS 1
+    ecap 001d[b60] = unknown 1
+
+pcib49@pci0:214:8:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[48] = MSI supports 8 messages, 64 bit, vector masks enabled with 1 message
+    cap 10[68] = PCI-Express 2 downstream port max data 128(2048) RO NS ARI disabled
+                 link x0(x4) speed 0.0(16.0) ASPM disabled(L0s/L1)
+                 slot 49 power limit 25000 mW HotPlug(empty) Attn Button PC(off) MRL(open)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0004[138] = Power Budgeting 1
+    ecap 0019[db4] = PCIe Sec 1 lane errors 0
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0025[af4] = unknown 1
+    ecap 0026[d00] = unknown 1
+    ecap 0027[d40] = unknown 1
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 000d[f24] = ACS 1
+    ecap 001d[b60] = unknown 1
+
+pcib50@pci0:214:12:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[48] = MSI supports 8 messages, 64 bit, vector masks enabled with 1 message
+    cap 10[68] = PCI-Express 2 downstream port max data 128(2048) RO NS ARI disabled
+                 link x0(x4) speed 0.0(16.0) ASPM disabled(L0s/L1)
+                 slot 48 power limit 25000 mW HotPlug(empty) Attn Button PC(off) MRL(open)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0004[138] = Power Budgeting 1
+    ecap 0019[db4] = PCIe Sec 1 lane errors 0
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0025[af4] = unknown 1
+    ecap 0026[d00] = unknown 1
+    ecap 0027[d40] = unknown 1
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 000d[f24] = ACS 1
+    ecap 001d[b60] = unknown 1
+
+pcib52@pci0:219:0:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 10[68] = PCI-Express 2 upstream port max data 128(2048) RO NS
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0002[148] = VC 1 max VC0
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 0018[b00] = LTR 1
+
+pcib53@pci0:220:16:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[48] = MSI supports 8 messages, 64 bit, vector masks enabled with 1 message
+    cap 10[68] = PCI-Express 2 downstream port max data 128(2048) RO NS ARI disabled
+                 link x0(x4) speed 0.0(16.0) ASPM disabled(L0s/L1)
+                 slot 52 power limit 25000 mW HotPlug(empty) Attn Button PC(off) MRL(open)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0004[138] = Power Budgeting 1
+    ecap 0019[db4] = PCIe Sec 1 lane errors 0
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0025[af4] = unknown 1
+    ecap 0026[d00] = unknown 1
+    ecap 0027[d40] = unknown 1
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 000d[f24] = ACS 1
+    ecap 001d[b60] = unknown 1
+
+pcib54@pci0:220:20:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[48] = MSI supports 8 messages, 64 bit, vector masks enabled with 1 message
+    cap 10[68] = PCI-Express 2 downstream port max data 128(2048) RO NS ARI disabled
+                 link x0(x4) speed 0.0(16.0) ASPM disabled(L0s/L1)
+                 slot 53 power limit 25000 mW HotPlug(empty) Attn Button PC(off) MRL(open)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0004[138] = Power Budgeting 1
+    ecap 0019[db4] = PCIe Sec 1 lane errors 0
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0025[af4] = unknown 1
+    ecap 0026[d00] = unknown 1
+    ecap 0027[d40] = unknown 1
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 000d[f24] = ACS 1
+    ecap 001d[b60] = unknown 1
+
+pcib55@pci0:220:24:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[48] = MSI supports 8 messages, 64 bit, vector masks enabled with 1 message
+    cap 10[68] = PCI-Express 2 downstream port max data 128(2048) RO NS ARI disabled
+                 link x0(x4) speed 0.0(16.0) ASPM disabled(L0s/L1)
+                 slot 54 power limit 25000 mW HotPlug(empty) Attn Button PC(off) MRL(open)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0004[138] = Power Budgeting 1
+    ecap 0019[db4] = PCIe Sec 1 lane errors 0
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0025[af4] = unknown 1
+    ecap 0026[d00] = unknown 1
+    ecap 0027[d40] = unknown 1
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 000d[f24] = ACS 1
+    ecap 001d[b60] = unknown 1
+
+pcib56@pci0:220:28:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[48] = MSI supports 8 messages, 64 bit, vector masks enabled with 1 message
+    cap 10[68] = PCI-Express 2 downstream port max data 128(2048) RO NS ARI disabled
+                 link x0(x4) speed 0.0(16.0) ASPM disabled(L0s/L1)
+                 slot 55 power limit 25000 mW HotPlug(empty) Attn Button PC(off) MRL(open)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0004[138] = Power Budgeting 1
+    ecap 0019[db4] = PCIe Sec 1 lane errors 0
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0025[af4] = unknown 1
+    ecap 0026[d00] = unknown 1
+    ecap 0027[d40] = unknown 1
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 000d[f24] = ACS 1
+    ecap 001d[b60] = unknown 1
+
+pcib58@pci0:225:0:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 10[68] = PCI-Express 2 upstream port max data 128(2048) RO NS
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0002[148] = VC 1 max VC0
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 0018[b00] = LTR 1
+
+pcib59@pci0:226:0:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[48] = MSI supports 8 messages, 64 bit, vector masks enabled with 1 message
+    cap 10[68] = PCI-Express 2 downstream port max data 128(2048) RO NS ARI disabled
+                 link x0(x4) speed 0.0(16.0) ASPM disabled(L0s/L1)
+                 slot 56 power limit 25000 mW HotPlug(empty) Attn Button PC(off) MRL(open)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0004[138] = Power Budgeting 1
+    ecap 0019[db4] = PCIe Sec 1 lane errors 0
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0025[af4] = unknown 1
+    ecap 0026[d00] = unknown 1
+    ecap 0027[d40] = unknown 1
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 000d[f24] = ACS 1
+    ecap 001d[b60] = unknown 1
+
+pcib60@pci0:226:4:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[48] = MSI supports 8 messages, 64 bit, vector masks enabled with 1 message
+    cap 10[68] = PCI-Express 2 downstream port max data 128(2048) RO NS ARI disabled
+                 link x0(x4) speed 0.0(16.0) ASPM disabled(L0s/L1)
+                 slot 57 power limit 25000 mW HotPlug(empty) Attn Button PC(off) MRL(open)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0004[138] = Power Budgeting 1
+    ecap 0019[db4] = PCIe Sec 1 lane errors 0
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0025[af4] = unknown 1
+    ecap 0026[d00] = unknown 1
+    ecap 0027[d40] = unknown 1
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 000d[f24] = ACS 1
+    ecap 001d[b60] = unknown 1
+
+pcib61@pci0:226:8:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[48] = MSI supports 8 messages, 64 bit, vector masks enabled with 1 message
+    cap 10[68] = PCI-Express 2 downstream port max data 128(2048) RO NS ARI disabled
+                 link x0(x4) speed 0.0(16.0) ASPM disabled(L0s/L1)
+                 slot 58 power limit 25000 mW HotPlug(empty) Attn Button PC(off) MRL(open)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0004[138] = Power Budgeting 1
+    ecap 0019[db4] = PCIe Sec 1 lane errors 0
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0025[af4] = unknown 1
+    ecap 0026[d00] = unknown 1
+    ecap 0027[d40] = unknown 1
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 000d[f24] = ACS 1
+    ecap 001d[b60] = unknown 1
+
+pcib62@pci0:226:12:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[48] = MSI supports 8 messages, 64 bit, vector masks enabled with 1 message
+    cap 10[68] = PCI-Express 2 downstream port max data 128(2048) RO NS ARI disabled
+                 link x0(x4) speed 0.0(16.0) ASPM disabled(L0s/L1)
+                 slot 59 power limit 25000 mW HotPlug(empty) Attn Button PC(off) MRL(open)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0004[138] = Power Budgeting 1
+    ecap 0019[db4] = PCIe Sec 1 lane errors 0
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0025[af4] = unknown 1
+    ecap 0026[d00] = unknown 1
+    ecap 0027[d40] = unknown 1
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 000d[f24] = ACS 1
+    ecap 001d[b60] = unknown 1
+
+pcib64@pci0:231:0:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 10[68] = PCI-Express 2 upstream port max data 128(2048) RO NS
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0002[148] = VC 1 max VC0
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 0018[b00] = LTR 1
+
+pcib65@pci0:232:20:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[48] = MSI supports 8 messages, 64 bit, vector masks 
+    cap 10[68] = PCI-Express 2 downstream port max data 128(256) RO NS ARI disabled
+                 link x0(x1) speed 0.0(16.0) ASPM disabled(L0s/L1)
+                 slot 116 power limit 25000 mW
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0004[138] = Power Budgeting 1
+    ecap 0019[db4] = PCIe Sec 1 lane errors 0
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0025[af4] = unknown 1
+    ecap 0026[d00] = unknown 1
+    ecap 0027[d40] = unknown 1
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 000d[f24] = ACS 1
+    ecap 001d[b60] = unknown 1
+
+pcib66@pci0:232:21:0:	class=0x060400 card=0xa0641000 chip=0xc0101000 rev=0xb0 hdr=0x01
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[48] = MSI supports 8 messages, 64 bit, vector masks 
+    cap 10[68] = PCI-Express 2 downstream port max data 128(256) RO NS ARI disabled
+                 link x0(x1) speed 0.0(16.0) ASPM disabled(L0s/L1)
+                 slot 117 power limit 25000 mW
+    cap 0d[a4] = PCI Bridge card=0xa0641000
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0004[138] = Power Budgeting 1
+    ecap 0019[db4] = PCIe Sec 1 lane errors 0
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0025[af4] = unknown 1
+    ecap 0026[d00] = unknown 1
+    ecap 0027[d40] = unknown 1
+    ecap 000b[b70] = Vendor 1 ID 1
+    ecap 0012[e00] = Multicast 1
+    ecap 000d[f24] = ACS 1
+    ecap 001d[b60] = unknown 1
+
+none189@pci0:235:0:0:	class=0x018000 card=0x00b21000 chip=0xc0101000 rev=0xb0 hdr=0x00
+    vendor     = 'LSI Logic / Symbios Logic'
+    class      = mass storage
+    bar   [10] = type Memory, range 32, base 0xf2800000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 11[a4] = MSI-X supports 1 message
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x3000]
+    cap 05[48] = MSI supports 1 message, 64 bit, vector masks 
+    cap 10[68] = PCI-Express 2 endpoint max data 128(1024) FLR RO NS
+                 link x16(x16) speed 16.0(16.0) ASPM disabled(L0s/L1)
+    ecap 0003[100] = Serial 1 00805e1055415350
+    ecap 0001[fb4] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 000b[b70] = Vendor 1 ID 1
+
+none190@pci0:254:0:0:	class=0x088000 card=0x00008086 chip=0x34508086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none191@pci0:254:0:1:	class=0x088000 card=0x00008086 chip=0x34518086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none192@pci0:254:0:2:	class=0x088000 card=0x00008086 chip=0x34528086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+hostb11@pci0:254:0:3:	class=0x060000 card=0x00008086 chip=0x09988086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(256)
+
+none193@pci0:254:0:5:	class=0x088000 card=0x00008086 chip=0x34558086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none194@pci0:254:2:0:	class=0x088000 card=0x00008086 chip=0x34408086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none195@pci0:254:2:1:	class=0x088000 card=0x00008086 chip=0x34418086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none196@pci0:254:2:2:	class=0x088000 card=0x00008086 chip=0x34428086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none197@pci0:254:3:0:	class=0x088000 card=0x00008086 chip=0x34408086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none198@pci0:254:3:1:	class=0x088000 card=0x00008086 chip=0x34418086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none199@pci0:254:3:2:	class=0x088000 card=0x00008086 chip=0x34428086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none200@pci0:254:4:0:	class=0x088000 card=0x00008086 chip=0x34408086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none201@pci0:254:4:1:	class=0x088000 card=0x00008086 chip=0x34418086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none202@pci0:254:4:2:	class=0x088000 card=0x00008086 chip=0x34428086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none203@pci0:254:4:3:	class=0x088000 card=0x00008086 chip=0x34438086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none204@pci0:254:5:0:	class=0x088000 card=0x00008086 chip=0x34458086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none205@pci0:254:5:1:	class=0x088000 card=0x00008086 chip=0x34468086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none206@pci0:254:5:2:	class=0x088000 card=0x00008086 chip=0x34478086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none207@pci0:254:6:0:	class=0x088000 card=0x00008086 chip=0x34458086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none208@pci0:254:6:1:	class=0x088000 card=0x00008086 chip=0x34468086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none209@pci0:254:6:2:	class=0x088000 card=0x00008086 chip=0x34478086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none210@pci0:254:7:0:	class=0x088000 card=0x00008086 chip=0x34458086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none211@pci0:254:7:1:	class=0x088000 card=0x00008086 chip=0x34468086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none212@pci0:254:7:2:	class=0x088000 card=0x00008086 chip=0x34478086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none213@pci0:254:11:0:	class=0x088000 card=0x00008086 chip=0x34488086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+
+none214@pci0:254:11:1:	class=0x088000 card=0x00008086 chip=0x34488086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+
+none215@pci0:254:11:2:	class=0x088000 card=0x00008086 chip=0x344b8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+
+none216@pci0:254:12:0:	class=0x110100 card=0x00008086 chip=0x344a8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = dasp
+    subclass   = performance counters
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none217@pci0:254:13:0:	class=0x110100 card=0x00008086 chip=0x344a8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = dasp
+    subclass   = performance counters
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none218@pci0:254:14:0:	class=0x110100 card=0x00008086 chip=0x344a8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = dasp
+    subclass   = performance counters
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none219@pci0:254:15:0:	class=0x110100 card=0x00008086 chip=0x344a8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = dasp
+    subclass   = performance counters
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none220@pci0:254:26:0:	class=0x110100 card=0x00008086 chip=0x28808086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = dasp
+    subclass   = performance counters
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none221@pci0:254:27:0:	class=0x110100 card=0x00008086 chip=0x28808086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = dasp
+    subclass   = performance counters
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none222@pci0:254:28:0:	class=0x110100 card=0x00008086 chip=0x28808086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = dasp
+    subclass   = performance counters
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none223@pci0:254:29:0:	class=0x110100 card=0x00008086 chip=0x28808086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = dasp
+    subclass   = performance counters
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none224@pci0:255:0:0:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none225@pci0:255:0:1:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none226@pci0:255:0:2:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none227@pci0:255:0:3:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none228@pci0:255:0:4:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none229@pci0:255:0:5:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none230@pci0:255:0:6:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none231@pci0:255:0:7:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none232@pci0:255:1:0:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none233@pci0:255:1:1:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none234@pci0:255:1:2:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none235@pci0:255:1:3:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none236@pci0:255:1:4:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none237@pci0:255:1:5:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none238@pci0:255:1:6:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none239@pci0:255:1:7:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none240@pci0:255:2:0:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none241@pci0:255:2:1:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none242@pci0:255:2:2:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none243@pci0:255:2:3:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none244@pci0:255:2:4:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none245@pci0:255:2:5:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none246@pci0:255:2:6:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none247@pci0:255:2:7:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none248@pci0:255:3:0:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none249@pci0:255:3:1:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none250@pci0:255:3:2:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none251@pci0:255:3:3:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none252@pci0:255:3:4:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none253@pci0:255:3:5:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none254@pci0:255:3:6:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none255@pci0:255:3:7:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none256@pci0:255:4:0:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none257@pci0:255:4:1:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none258@pci0:255:4:2:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none259@pci0:255:4:3:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none260@pci0:255:4:4:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none261@pci0:255:4:5:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none262@pci0:255:4:6:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none263@pci0:255:4:7:	class=0x088000 card=0x00008086 chip=0x344c8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none264@pci0:255:10:0:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none265@pci0:255:10:1:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none266@pci0:255:10:2:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none267@pci0:255:10:3:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none268@pci0:255:10:4:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none269@pci0:255:10:5:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none270@pci0:255:10:6:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none271@pci0:255:10:7:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none272@pci0:255:11:0:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none273@pci0:255:11:1:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none274@pci0:255:11:2:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none275@pci0:255:11:3:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none276@pci0:255:11:4:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none277@pci0:255:11:5:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none278@pci0:255:11:6:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none279@pci0:255:11:7:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none280@pci0:255:12:0:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none281@pci0:255:12:1:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none282@pci0:255:12:2:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none283@pci0:255:12:3:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none284@pci0:255:12:4:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none285@pci0:255:12:5:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none286@pci0:255:12:6:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none287@pci0:255:12:7:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none288@pci0:255:13:0:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none289@pci0:255:13:1:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none290@pci0:255:13:2:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none291@pci0:255:13:3:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none292@pci0:255:13:4:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none293@pci0:255:13:5:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none294@pci0:255:13:6:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none295@pci0:255:13:7:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none296@pci0:255:14:0:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none297@pci0:255:14:1:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none298@pci0:255:14:2:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none299@pci0:255:14:3:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none300@pci0:255:14:4:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none301@pci0:255:14:5:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none302@pci0:255:14:6:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none303@pci0:255:14:7:	class=0x088000 card=0x00008086 chip=0x344d8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none304@pci0:255:29:0:	class=0x088000 card=0x00008086 chip=0x344f8086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none305@pci0:255:29:1:	class=0x088000 card=0x00008086 chip=0x34578086 rev=0x00 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+
+none306@pci0:255:30:0:	class=0x088000 card=0x00008086 chip=0x34588086 rev=0x06 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+
+none307@pci0:255:30:1:	class=0x088000 card=0x00008086 chip=0x34598086 rev=0x06 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+
+none308@pci0:255:30:2:	class=0x088000 card=0x00008086 chip=0x345a8086 rev=0x06 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+
+none309@pci0:255:30:3:	class=0x088000 card=0x00008086 chip=0x345b8086 rev=0x06 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+
+none310@pci0:255:30:4:	class=0x088000 card=0x00008086 chip=0x345c8086 rev=0x06 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+
+none311@pci0:255:30:5:	class=0x088000 card=0x00008086 chip=0x345d8086 rev=0x06 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+
+none312@pci0:255:30:6:	class=0x088000 card=0x00008086 chip=0x345e8086 rev=0x06 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral
+
+none313@pci0:255:30:7:	class=0x088000 card=0x00008086 chip=0x345f8086 rev=0x06 hdr=0x00
+    vendor     = 'Intel Corporation'
+    class      = base peripheral

@@ -1,0 +1,147 @@
+none0@pci0:0:0:0:	class=0x050000 rev=0xa1 hdr=0x00 vendor=0x10de device=0x03e2 subvendor=0x1458 subdevice=0x5001
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP61 Host Bridge'
+    class      = memory
+    subclass   = RAM
+    cap 08[44] = HT slave
+    cap 08[dc] = HT MSI address window enabled at 0xfee00000
+
+isab0@pci0:0:1:0:	class=0x060100 rev=0xa2 hdr=0x00 vendor=0x10de device=0x03e1 subvendor=0x1458 subdevice=0x0c11
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP61 LPC Bridge'
+    class      = bridge
+    subclass   = PCI-ISA
+
+none1@pci0:0:1:1:	class=0x0c0500 rev=0xa2 hdr=0x00 vendor=0x10de device=0x03eb subvendor=0x1458 subdevice=0x0c11
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP61 SMBus'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [10] = type I/O Port, range 32, base 0xfc00, size 64, enabled
+    bar   [20] = type I/O Port, range 32, base 0x1c00, size 64, enabled
+    bar   [24] = type I/O Port, range 32, base 0x1c40, size 64, enabled
+    cap 01[44] = powerspec 2  supports D0 D3  current D0
+
+none2@pci0:0:1:2:	class=0x050000 rev=0xa2 hdr=0x00 vendor=0x10de device=0x03f5 subvendor=0x1458 subdevice=0x0c11
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP61 Memory Controller'
+    class      = memory
+    subclass   = RAM
+
+ohci0@pci0:0:2:0:	class=0x0c0310 rev=0xa3 hdr=0x00 vendor=0x10de device=0x03f1 subvendor=0x1458 subdevice=0x5004
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP61 USB 1.1 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfe02f000, size 4096, enabled
+    cap 01[44] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+ehci0@pci0:0:2:1:	class=0x0c0320 rev=0xa3 hdr=0x00 vendor=0x10de device=0x03f2 subvendor=0x1458 subdevice=0x5004
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP61 USB 2.0 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfe02e000, size 256, enabled
+    cap 0a[44] = EHCI Debug Port at offset 0x98 in map 0x14
+    cap 01[80] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+pcib1@pci0:0:4:0:	class=0x060401 rev=0xa1 hdr=0x01 vendor=0x10de device=0x03f3 subvendor=0x1458 subdevice=0x026f
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP61 PCI bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[b8] = PCI Bridge subvendor=0x1458 subdevice=0x026f
+    cap 08[8c] = HT MSI address window disabled at 0xfee00000
+
+hdac0@pci0:0:5:0:	class=0x040300 rev=0xa2 hdr=0x00 vendor=0x10de device=0x03f0 subvendor=0x1458 subdevice=0xa002
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP61 High Definition Audio'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 32, base 0xfe024000, size 16384, enabled
+    cap 01[44] = powerspec 2  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 08[6c] = HT MSI fixed address window disabled at 0xfee00000
+
+nfe0@pci0:0:7:0:	class=0x068000 rev=0xa2 hdr=0x00 vendor=0x10de device=0x03ef subvendor=0x1458 subdevice=0xe000
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP61 Ethernet'
+    class      = bridge
+    bar   [10] = type Memory, range 32, base 0xfe02d000, size 4096, enabled
+    bar   [14] = type I/O Port, range 32, base 0xf000, size 8, enabled
+    cap 01[44] = powerspec 2  supports D0 D1 D2 D3  current D0
+    cap 05[50] = MSI supports 8 messages, 64 bit, vector masks 
+    cap 08[6c] = HT MSI fixed address window disabled at 0xfee00000
+
+atapci0@pci0:0:8:0:	class=0x010185 rev=0xa2 hdr=0x00 vendor=0x10de device=0x03f6 subvendor=0x1458 subdevice=0xb002
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP61 SATA Controller'
+    class      = mass storage
+    subclass   = ATA
+    bar   [10] = type I/O Port, range 32, base 0x9f0, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0xbf0, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0x970, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0xb70, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0xdc00, size 16, enabled
+    bar   [24] = type Memory, range 32, base 0xfe02c000, size 4096, enabled
+    cap 01[44] = powerspec 2  supports D0 D3  current D0
+    cap 05[b0] = MSI supports 4 messages, 64 bit 
+    cap 08[cc] = HT MSI fixed address window disabled at 0xfee00000
+
+atapci1@pci0:0:8:1:	class=0x010185 rev=0xa2 hdr=0x00 vendor=0x10de device=0x03f6 subvendor=0x1458 subdevice=0xb002
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP61 SATA Controller'
+    class      = mass storage
+    subclass   = ATA
+    bar   [10] = type I/O Port, range 32, base 0x9e0, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0xbe0, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0x960, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0xb60, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0xc800, size 16, enabled
+    bar   [24] = type Memory, range 32, base 0xfe02b000, size 4096, enabled
+    cap 01[44] = powerspec 2  supports D0 D3  current D0
+    cap 05[b0] = MSI supports 4 messages, 64 bit 
+    cap 08[cc] = HT MSI fixed address window disabled at 0xfee00000
+
+vgapci0@pci0:0:13:0:	class=0x030000 rev=0xa2 hdr=0x00 vendor=0x10de device=0x03d6 subvendor=0x1458 subdevice=0xd000
+    vendor     = 'NVIDIA Corporation'
+    device     = 'C61 [GeForce 7025 / nForce 630a]'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 32, base 0xfb000000, size 16777216, enabled
+    bar   [14] = type Prefetchable Memory, range 64, base 0xd0000000, size 268435456, enabled
+    bar   [1c] = type Memory, range 64, base 0xfc000000, size 16777216, enabled
+    cap 01[48] = powerspec 2  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit 
+
+hostb0@pci0:0:24:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1200 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Family 10h Processor HyperTransport Configuration'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 08[80] = HT host
+
+hostb1@pci0:0:24:1:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1201 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Family 10h Processor Address Map'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb2@pci0:0:24:2:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1202 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Family 10h Processor DRAM Controller'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb3@pci0:0:24:3:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1203 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Family 10h Processor Miscellaneous Control'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 0f[f0] = unknown
+
+hostb4@pci0:0:24:4:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1204 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Family 10h Processor Link Control'
+    class      = bridge
+    subclass   = HOST-PCI

@@ -1,0 +1,174 @@
+hostb0@pci0:0:0:0:	class=0x060000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x191f subvendor=0x103c subdevice=0x8299
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor Host Bridge/DRAM Registers'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 09[e0] = vendor (length 16) Intel cap 0 version 1
+
+pcib1@pci0:0:1:0:	class=0x060400 rev=0x07 hdr=0x01 vendor=0x8086 device=0x1901 subvendor=0x103c subdevice=0x8299
+    vendor     = 'Intel Corporation'
+    device     = '6th-10th Gen Core Processor PCIe Controller (x16)'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[88] = PCI Bridge subvendor=0x103c subdevice=0x8299
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 05[90] = MSI supports 1 message 
+    cap 10[a0] = PCI-Express 2 root port max data 256(256)
+                 max read 128
+                 link x8(x16) speed 5.0(8.0) ASPM L1(L0s/L1)
+                 slot 1 power limit 75000 mW
+    ecap 0002[100] = VC 1 max VC0
+    ecap 0005[140] = Root Complex Link Declaration 1
+    ecap 0019[d94] = PCIe Sec 1 lane errors 0
+
+vgapci0@pci0:0:2:0:	class=0x030000 rev=0x06 hdr=0x00 vendor=0x8086 device=0x1912 subvendor=0x103c subdevice=0x8299
+    vendor     = 'Intel Corporation'
+    device     = 'HD Graphics 530'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 64, base 0x1ff0000000, size 16777216, enabled
+    bar   [18] = type Prefetchable Memory, range 64, base 0x1fe0000000, size 268435456, enabled
+    bar   [20] = type I/O Port, range 32, base 0x3000, size 64, enabled
+    cap 09[40] = vendor (length 12) Intel cap 0 version 1
+    cap 10[70] = PCI-Express 2 root endpoint max data 128(128) FLR
+                 max read 128
+    cap 05[ac] = MSI supports 1 message 
+    cap 01[d0] = powerspec 2  supports D0 D3  current D0
+    ecap 001b[100] = Process Address Space ID 1
+    ecap 000f[200] = ATS 1
+    ecap 0013[300] = Page Page Request 1
+
+xhci0@pci0:0:20:0:	class=0x0c0330 rev=0x00 hdr=0x00 vendor=0x8086 device=0xa2af subvendor=0x103c subdevice=0x8299
+    vendor     = 'Intel Corporation'
+    device     = '200 Series/Z370 Chipset Family USB 3.0 xHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 64, base 0xcef20000, size 65536, enabled
+    cap 01[70] = powerspec 2  supports D0 D3  current D0
+    cap 05[80] = MSI supports 8 messages, 64 bit enabled with 1 message
+
+none0@pci0:0:20:2:	class=0x118000 rev=0x00 hdr=0x00 vendor=0x8086 device=0xa2b1 subvendor=0x103c subdevice=0x8299
+    vendor     = 'Intel Corporation'
+    device     = '200 Series PCH Thermal Subsystem'
+    class      = dasp
+    bar   [10] = type Memory, range 64, base 0x1ff1016000, size 4096, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 05[80] = MSI supports 1 message 
+
+none1@pci0:0:22:0:	class=0x078000 rev=0x00 hdr=0x00 vendor=0x8086 device=0xa2ba subvendor=0x103c subdevice=0x8299
+    vendor     = 'Intel Corporation'
+    device     = '200 Series PCH CSME HECI'
+    class      = simple comms
+    bar   [10] = type Memory, range 64, base 0x1ff1015000, size 4096, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 05[8c] = MSI supports 1 message, 64 bit 
+
+none2@pci0:0:22:3:	class=0x070002 rev=0x00 hdr=0x00 vendor=0x8086 device=0xa2bd subvendor=0x103c subdevice=0x8299
+    vendor     = 'Intel Corporation'
+    class      = simple comms
+    subclass   = UART
+    bar   [10] = type I/O Port, range 32, base 0x3088, size 8, enabled
+    bar   [14] = type Memory, range 32, base 0xcef38000, size 4096, enabled
+    cap 05[40] = MSI supports 1 message, 64 bit 
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+
+ahci0@pci0:0:23:0:	class=0x010601 rev=0x00 hdr=0x00 vendor=0x8086 device=0xa282 subvendor=0x103c subdevice=0x8299
+    vendor     = 'Intel Corporation'
+    device     = '200 Series PCH SATA controller [AHCI mode]'
+    class      = mass storage
+    subclass   = SATA
+    bar   [10] = type Memory, range 32, base 0xcef34000, size 8192, enabled
+    bar   [14] = type Memory, range 32, base 0xcef37000, size 256, enabled
+    bar   [18] = type I/O Port, range 32, base 0x3080, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0x3090, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0x3060, size 32, enabled
+    bar   [24] = type Memory, range 32, base 0xcef36000, size 2048, enabled
+    cap 05[80] = MSI supports 1 message enabled with 1 message
+    cap 01[70] = powerspec 3  supports D0 D3  current D0
+    cap 12[a8] = SATA Index-Data Pair
+
+isab0@pci0:0:31:0:	class=0x060100 rev=0x00 hdr=0x00 vendor=0x8086 device=0xa2c6 subvendor=0x103c subdevice=0x8299
+    vendor     = 'Intel Corporation'
+    device     = '200 Series PCH LPC Controller (Q270)'
+    class      = bridge
+    subclass   = PCI-ISA
+
+none3@pci0:0:31:2:	class=0x058000 rev=0x00 hdr=0x00 vendor=0x8086 device=0xa2a1 subvendor=0x103c subdevice=0x8299
+    vendor     = 'Intel Corporation'
+    device     = '200 Series/Z370 Chipset Family Power Management Controller'
+    class      = memory
+    bar   [10] = type Memory, range 32, base 0xcef30000, size 16384, enabled
+
+hdac0@pci0:0:31:3:	class=0x040300 rev=0x00 hdr=0x00 vendor=0x8086 device=0xa2f0 subvendor=0x103c subdevice=0x8299
+    vendor     = 'Intel Corporation'
+    device     = '200 Series PCH HD Audio'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 64, base 0x1ff1010000, size 16384, enabled
+    bar   [20] = type Memory, range 64, base 0x1ff1000000, size 65536, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 05[60] = MSI supports 1 message, 64 bit enabled with 1 message
+
+ichsmb0@pci0:0:31:4:	class=0x0c0500 rev=0x00 hdr=0x00 vendor=0x8086 device=0xa2a3 subvendor=0x103c subdevice=0x8299
+    vendor     = 'Intel Corporation'
+    device     = '200 Series/Z370 Chipset Family SMBus Controller'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [10] = type Memory, range 64, base 0x1ff1014000, size 256, enabled
+    bar   [20] = type I/O Port, range 32, base 0xefa0, size 32, enabled
+
+em0@pci0:0:31:6:	class=0x020000 rev=0x00 hdr=0x00 vendor=0x8086 device=0x15e3 subvendor=0x103c subdevice=0x8298
+    vendor     = 'Intel Corporation'
+    device     = 'Ethernet Connection (5) I219-LM'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xcef00000, size 131072, enabled
+    cap 01[c8] = powerspec 3  supports D0 D3  current D0
+    cap 05[d0] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 13[e0] = PCI Advanced Features: FLR TP
+
+ix0@pci0:1:0:0:	class=0x020000 rev=0x01 hdr=0x00 vendor=0x8086 device=0x1528 subvendor=0x1dcf subdevice=0x031b
+    vendor     = 'Intel Corporation'
+    device     = 'Ethernet Controller 10-Gigabit X540-AT2'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Prefetchable Memory, range 64, base 0xcec00000, size 2097152, enabled
+    bar   [20] = type Prefetchable Memory, range 64, base 0xcee04000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 11[70] = MSI-X supports 64 messages, enabled
+                 Table in map 0x20[0x0], PBA in map 0x20[0x2000]
+    cap 10[a0] = PCI-Express 2 endpoint max data 256(512) FLR RO NS
+                 max read 512
+                 link x8(x8) speed 5.0(5.0) ASPM L1(L0s/L1)
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 000e[150] = ARI 1
+    ecap 0010[160] = SR-IOV 1 IOV disabled, Memory Space disabled, ARI disabled
+                     0 VFs configured out of 64 supported
+                     First VF RID Offset 0x0180, VF RID Stride 0x0002
+                     VF Device ID 0x1515
+                     Page Sizes: 4096 (enabled), 8192, 65536, 262144, 1048576, 4194304
+    ecap 000d[1d0] = ACS 1
+
+ix1@pci0:1:0:1:	class=0x020000 rev=0x01 hdr=0x00 vendor=0x8086 device=0x1528 subvendor=0x1dcf subdevice=0x031b
+    vendor     = 'Intel Corporation'
+    device     = 'Ethernet Controller 10-Gigabit X540-AT2'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Prefetchable Memory, range 64, base 0xcea00000, size 2097152, enabled
+    bar   [20] = type Prefetchable Memory, range 64, base 0xcee00000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 11[70] = MSI-X supports 64 messages, enabled
+                 Table in map 0x20[0x0], PBA in map 0x20[0x2000]
+    cap 10[a0] = PCI-Express 2 endpoint max data 256(512) FLR RO NS
+                 max read 512
+                 link x8(x8) speed 5.0(5.0) ASPM L1(L0s/L1)
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 000e[150] = ARI 1
+    ecap 0010[160] = SR-IOV 1 IOV disabled, Memory Space disabled, ARI disabled
+                     0 VFs configured out of 64 supported
+                     First VF RID Offset 0x0180, VF RID Stride 0x0002
+                     VF Device ID 0x1515
+                     Page Sizes: 4096 (enabled), 8192, 65536, 262144, 1048576, 4194304
+    ecap 000d[1d0] = ACS 1

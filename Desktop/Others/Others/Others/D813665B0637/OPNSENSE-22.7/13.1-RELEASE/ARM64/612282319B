@@ -1,0 +1,28 @@
+none0@pci0:1:0:0:	class=0x020000 rev=0x05 hdr=0x00 vendor=0x10ec device=0x8125 subvendor=0x10ec subdevice=0x8125
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    device     = 'RTL8125 2.5GbE Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0, size 256, enabled
+    bar   [18] = type Memory, range 64, base 0, size 65536, enabled
+    bar   [20] = type Memory, range 64, base 0, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 10[70] = PCI-Express 2 endpoint MSI 1 max data 128(256) RO
+                 max read 512
+                 link x1(x1) speed 5.0(5.0) ASPM disabled(L0s/L1) ClockPM disabled
+    cap 11[b0] = MSI-X supports 32 messages
+                 Table in map 0x20[0x0], PBA in map 0x20[0x800]
+    cap 03[d0] = VPD
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 0002[148] = VC 1 max VC0
+    ecap 0003[168] = Serial 1 0000000000000000
+    ecap 0017[178] = TPH Requester 1
+    ecap 0018[204] = LTR 1
+    ecap 001e[20c] = L1 PM Substates 1
+    ecap 000b[21c] = Vendor [1] ID 0002 Rev 4 Length 256
+
+none1@pci0:1:31:0:	class=0x000000 rev=0x00 hdr=0x00 vendor=0x0000 device=0x0000 subvendor=0xddb0 subdevice=0x9c93
+    class      = old
+    subclass   = non-VGA display device
+    bar   [10] = type Memory, range 32, base 0, size 64, disabled

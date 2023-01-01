@@ -1,0 +1,191 @@
+hostb0@pci0:0:0:0:	class=0x060000 rev=0x18 hdr=0x00 vendor=0x8086 device=0x0040 subvendor=0x8086 subdevice=0x0040
+    vendor     = 'Intel Corporation'
+    device     = 'Core Processor DRAM Controller'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 09[e0] = vendor (length 12) Intel cap 0 version 1
+
+vgapci0@pci0:0:2:0:	class=0x030000 rev=0x18 hdr=0x00 vendor=0x8086 device=0x0042 subvendor=0x8086 subdevice=0x0042
+    vendor     = 'Intel Corporation'
+    device     = 'Core Processor Integrated Graphics Controller'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 64, base 0xfbc00000, size 4194304, enabled
+    bar   [18] = type Prefetchable Memory, range 64, base 0xd0000000, size 268435456, enabled
+    bar   [20] = type I/O Port, range 32, base 0xdc00, size 8, enabled
+    cap 05[90] = MSI supports 1 message enabled with 1 message
+    cap 01[d0] = powerspec 2  supports D0 D3  current D0
+    cap 13[a4] = PCI Advanced Features: FLR TP
+
+uhci0@pci0:0:26:0:	class=0x0c0300 rev=0x06 hdr=0x00 vendor=0x8086 device=0x3b3b subvendor=0x8086 subdevice=0x3b3b
+    vendor     = 'Intel Corporation'
+    device     = '5 Series/3400 Series Chipset USB Universal Host Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xd880, size 32, enabled
+    cap 13[50] = PCI Advanced Features: FLR TP
+
+uhci1@pci0:0:26:1:	class=0x0c0300 rev=0x06 hdr=0x00 vendor=0x8086 device=0x3b3e subvendor=0x8086 subdevice=0x3b3e
+    vendor     = 'Intel Corporation'
+    device     = '5 Series/3400 Series Chipset USB Universal Host Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xd800, size 32, enabled
+    cap 13[50] = PCI Advanced Features: FLR TP
+
+uhci2@pci0:0:26:2:	class=0x0c0300 rev=0x06 hdr=0x00 vendor=0x8086 device=0x3b3f subvendor=0x8086 subdevice=0x3b3f
+    vendor     = 'Intel Corporation'
+    device     = '5 Series/3400 Series Chipset USB Universal Host Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xd480, size 32, enabled
+    cap 13[50] = PCI Advanced Features: FLR TP
+
+ehci0@pci0:0:26:7:	class=0x0c0320 rev=0x06 hdr=0x00 vendor=0x8086 device=0x3b3c subvendor=0x8086 subdevice=0x3b3c
+    vendor     = 'Intel Corporation'
+    device     = '5 Series/3400 Series Chipset USB2 Enhanced Host Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfbbfa000, size 1024, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 0a[58] = EHCI Debug Port at offset 0xa0 in map 0x14
+    cap 13[98] = PCI Advanced Features: FLR TP
+
+hdac0@pci0:0:27:0:	class=0x040300 rev=0x06 hdr=0x00 vendor=0x8086 device=0x3b56 subvendor=0x8086 subdevice=0x3b56
+    vendor     = 'Intel Corporation'
+    device     = '5 Series/3400 Series Chipset High Definition Audio'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 64, base 0xfbbf4000, size 16384, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 05[60] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 10[70] = PCI-Express 1 root endpoint max data 128(128) FLR NS
+                 max read 128
+    ecap 0002[100] = VC 1 max VC1
+    ecap 0005[130] = Root Complex Link Declaration 1
+
+pcib1@pci0:0:28:0:	class=0x060400 rev=0x06 hdr=0x01 vendor=0x8086 device=0x3b42 subvendor=0x8086 subdevice=0x3b42
+    vendor     = 'Intel Corporation'
+    device     = '5 Series/3400 Series Chipset PCI Express Root Port 1'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128)
+                 max read 128
+                 link x0(x1) speed 0.0(2.5) ASPM disabled(L0s/L1)
+                 slot 128 power limit 25000 mW HotPlug(empty) surprise
+    cap 05[80] = MSI supports 1 message enabled with 1 message
+    cap 0d[90] = PCI Bridge subvendor=0x8086 subdevice=0x3b42
+    cap 01[a0] = powerspec 2  supports D0 D3  current D0
+
+pcib2@pci0:0:28:5:	class=0x060400 rev=0x06 hdr=0x01 vendor=0x8086 device=0x3b4c subvendor=0x8086 subdevice=0x3b4c
+    vendor     = 'Intel Corporation'
+    device     = '5 Series/3400 Series Chipset PCI Express Root Port 6'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128)
+                 max read 128
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+                 slot 133 power limit 10000 mW HotPlug(present) surprise
+    cap 05[80] = MSI supports 1 message enabled with 1 message
+    cap 0d[90] = PCI Bridge subvendor=0x8086 subdevice=0x3b4c
+    cap 01[a0] = powerspec 2  supports D0 D3  current D0
+
+uhci3@pci0:0:29:0:	class=0x0c0300 rev=0x06 hdr=0x00 vendor=0x8086 device=0x3b36 subvendor=0x8086 subdevice=0x3b36
+    vendor     = 'Intel Corporation'
+    device     = '5 Series/3400 Series Chipset USB Universal Host Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xd400, size 32, enabled
+    cap 13[50] = PCI Advanced Features: FLR TP
+
+uhci4@pci0:0:29:1:	class=0x0c0300 rev=0x06 hdr=0x00 vendor=0x8086 device=0x3b37 subvendor=0x8086 subdevice=0x3b37
+    vendor     = 'Intel Corporation'
+    device     = '5 Series/3400 Series Chipset USB Universal Host Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xd080, size 32, enabled
+    cap 13[50] = PCI Advanced Features: FLR TP
+
+uhci5@pci0:0:29:2:	class=0x0c0300 rev=0x06 hdr=0x00 vendor=0x8086 device=0x3b38 subvendor=0x8086 subdevice=0x3b38
+    vendor     = 'Intel Corporation'
+    device     = '5 Series/3400 Series Chipset USB Universal Host Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xd000, size 32, enabled
+    cap 13[50] = PCI Advanced Features: FLR TP
+
+uhci6@pci0:0:29:3:	class=0x0c0300 rev=0x06 hdr=0x00 vendor=0x8086 device=0x3b39 subvendor=0x8086 subdevice=0x3b39
+    vendor     = 'Intel Corporation'
+    device     = '5 Series/3400 Series Chipset USB Universal Host Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [20] = type I/O Port, range 32, base 0xcc00, size 32, enabled
+    cap 13[50] = PCI Advanced Features: FLR TP
+
+ehci1@pci0:0:29:7:	class=0x0c0320 rev=0x06 hdr=0x00 vendor=0x8086 device=0x3b34 subvendor=0x8086 subdevice=0x3b34
+    vendor     = 'Intel Corporation'
+    device     = '5 Series/3400 Series Chipset USB2 Enhanced Host Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfbbf8000, size 1024, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 0a[58] = EHCI Debug Port at offset 0xa0 in map 0x14
+    cap 13[98] = PCI Advanced Features: FLR TP
+
+pcib3@pci0:0:30:0:	class=0x060401 rev=0xa6 hdr=0x01 vendor=0x8086 device=0x2448 subvendor=0x8086 subdevice=0x2448
+    vendor     = 'Intel Corporation'
+    device     = '82801 Mobile PCI Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[50] = PCI Bridge subvendor=0x8086 subdevice=0x2448
+
+isab0@pci0:0:31:0:	class=0x060100 rev=0x06 hdr=0x00 vendor=0x8086 device=0x3b09 subvendor=0x8086 subdevice=0x3b09
+    vendor     = 'Intel Corporation'
+    device     = 'HM55 Chipset LPC Interface Controller'
+    class      = bridge
+    subclass   = PCI-ISA
+    cap 09[e0] = vendor (length 16) Intel cap 1 version 1
+
+ahci0@pci0:0:31:2:	class=0x010601 rev=0x06 hdr=0x00 vendor=0x8086 device=0x3b29 subvendor=0x8086 subdevice=0x3b29
+    vendor     = 'Intel Corporation'
+    device     = '5 Series/3400 Series Chipset 4 port SATA AHCI Controller'
+    class      = mass storage
+    subclass   = SATA
+    bar   [10] = type I/O Port, range 32, base 0xc880, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0xc800, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0xc480, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0xc400, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0xc080, size 32, enabled
+    bar   [24] = type Memory, range 32, base 0xfbbf2000, size 2048, enabled
+    cap 05[80] = MSI supports 1 message enabled with 1 message
+    cap 01[70] = powerspec 3  supports D0 D3  current D0
+    cap 12[a8] = SATA Index-Data Pair
+    cap 13[b0] = PCI Advanced Features: FLR TP
+
+ichsmb0@pci0:0:31:3:	class=0x0c0500 rev=0x06 hdr=0x00 vendor=0x8086 device=0x3b30 subvendor=0x8086 subdevice=0x3b30
+    vendor     = 'Intel Corporation'
+    device     = '5 Series/3400 Series Chipset SMBus Controller'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [10] = type Memory, range 64, base 0xfbbf0000, size 256, enabled
+    bar   [20] = type I/O Port, range 32, base 0x400, size 32, enabled
+
+re0@pci0:2:0:0:	class=0x020000 rev=0x05 hdr=0x00 vendor=0x10ec device=0x8136 subvendor=0x10ec subdevice=0x0123
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    device     = 'RTL810xE PCI Express Fast Ethernet controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0xe800, size 256, enabled
+    bar   [18] = type Prefetchable Memory, range 64, base 0xfafff000, size 4096, enabled
+    bar   [20] = type Prefetchable Memory, range 64, base 0xfaff8000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit 
+    cap 10[70] = PCI-Express 2 endpoint MSI 1 max data 128(128) RO
+                 max read 512
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1) ClockPM disabled
+    cap 11[b0] = MSI-X supports 4 messages, enabled
+                 Table in map 0x20[0x0], PBA in map 0x20[0x800]
+    cap 03[d0] = VPD
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 2 corrected
+    ecap 0002[140] = VC 1 max VC0
+    ecap 0003[160] = Serial 1 22000000684ce000

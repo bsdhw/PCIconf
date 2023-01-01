@@ -1,0 +1,224 @@
+none0@pci0:0:0:0:	class=0x050000 card=0x73691462 chip=0x044410de rev=0xa3 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP65 Memory Controller'
+    class      = memory
+    subclass   = RAM
+    cap 08[44] = HT slave
+    cap 08[dc] = HT MSI address window enabled at 0xfee00000
+
+isab0@pci0:0:1:0:	class=0x060100 card=0x73691462 chip=0x044110de rev=0xa3 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP65 LPC Bridge'
+    class      = bridge
+    subclass   = PCI-ISA
+    bar   [10] = type I/O Port, range 32, base 0x2f00, size 256, enabled
+
+none1@pci0:0:1:1:	class=0x0c0500 card=0x73691462 chip=0x044610de rev=0xa1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP65 SMBus'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [10] = type I/O Port, range 32, base 0x2900, size 64, enabled
+    bar   [20] = type I/O Port, range 32, base 0x2d00, size 64, enabled
+    bar   [24] = type I/O Port, range 32, base 0x2e00, size 64, enabled
+    cap 01[44] = powerspec 2  supports D0 D3  current D0
+
+none2@pci0:0:1:2:	class=0x050000 card=0x73691462 chip=0x044510de rev=0xa1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP65 Memory Controller'
+    class      = memory
+    subclass   = RAM
+
+ohci0@pci0:0:2:0:	class=0x0c0310 card=0x73691462 chip=0x045410de rev=0xa3 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP65 USB 1.1 OHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfceff000, size 4096, enabled
+    cap 01[44] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+ehci0@pci0:0:2:1:	class=0x0c0320 card=0x73691462 chip=0x045510de rev=0xa3 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP65 USB 2.0 EHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfcefec00, size 256, enabled
+    cap 0a[44] = EHCI Debug Port at offset 0x98 in map 0x14
+    cap 01[80] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+hdac0@pci0:0:7:0:	class=0x040300 card=0x10ec0888 chip=0x044a10de rev=0xa1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP65 High Definition Audio'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 32, base 0xfcef8000, size 16384, enabled
+    cap 01[44] = powerspec 2  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks enabled with 1 message
+    cap 08[6c] = HT MSI fixed address window enabled at 0xfee00000
+
+pcib1@pci0:0:8:0:	class=0x060401 card=0x73691462 chip=0x044910de rev=0xa1 hdr=0x01
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP65 PCI bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[b8] = PCI Bridge card=0x73691462
+    cap 08[8c] = HT MSI address window disabled at 0xfee00000
+
+atapci0@pci0:0:9:0:	class=0x01018a card=0x73691462 chip=0x044810de rev=0xa1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP65 IDE'
+    class      = mass storage
+    subclass   = ATA
+    bar   [20] = type I/O Port, range 32, base 0xffa0, size 16, enabled
+    cap 01[44] = powerspec 2  supports D0 D3  current D0
+
+ahci0@pci0:0:10:0:	class=0x010185 card=0x73691462 chip=0x045d10de rev=0xa3 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP65 SATA Controller'
+    class      = mass storage
+    subclass   = ATA
+    bar   [10] = type I/O Port, range 32, base 0xf80, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0xf00, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0xe80, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0xe00, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0xb800, size 16, enabled
+    bar   [24] = type Memory, range 32, base 0xfcefc000, size 8192, enabled
+    cap 01[44] = powerspec 2  supports D0 D3  current D0
+    cap 05[b0] = MSI supports 8 messages, 64 bit enabled with 8 messages
+    cap 08[cc] = HT MSI fixed address window enabled at 0xfee00000
+
+pcib2@pci0:0:11:0:	class=0x060400 card=0x000010de chip=0x045b10de rev=0xa1 hdr=0x01
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP65 PCI Express bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge card=0x000010de
+    cap 01[48] = powerspec 2  supports D0 D3  current D0
+    cap 05[50] = MSI supports 2 messages, 64 bit 
+    cap 08[60] = HT MSI address window disabled at 0xfee00000
+    cap 10[80] = PCI-Express 1 root port max data 128(256) RO NS
+                 max read 512
+                 link x2(x2) speed 2.5(2.5) ASPM disabled(L0s/L1)
+                 slot 0 power limit 0 mW
+    ecap 0002[100] = VC 1 max VC0
+
+pcib3@pci0:0:12:0:	class=0x060400 card=0x000010de chip=0x045a10de rev=0xa1 hdr=0x01
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP65 PCI Express bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge card=0x000010de
+    cap 01[48] = powerspec 2  supports D0 D3  current D0
+    cap 05[50] = MSI supports 2 messages, 64 bit 
+    cap 08[60] = HT MSI address window enabled at 0xfee00000
+    cap 10[80] = PCI-Express 1 root port max data 128(256) RO NS
+                 max read 512
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+                 slot 0 power limit 0 mW
+    ecap 0002[100] = VC 1 max VC0
+
+pcib4@pci0:0:13:0:	class=0x060400 card=0x000010de chip=0x045810de rev=0xa1 hdr=0x01
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP65 PCI Express bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge card=0x000010de
+    cap 01[48] = powerspec 2  supports D0 D3  current D0
+    cap 05[50] = MSI supports 2 messages, 64 bit 
+    cap 08[60] = HT MSI address window disabled at 0xfee00000
+    cap 10[80] = PCI-Express 1 root port max data 128(256) RO NS
+                 max read 512
+                 link x16(x16) speed 2.5(2.5) ASPM disabled(L0s/L1)
+                 slot 0 power limit 0 mW
+    ecap 0002[100] = VC 1 max VC0
+
+pcib5@pci0:0:14:0:	class=0x060400 card=0x000010de chip=0x045910de rev=0xa1 hdr=0x01
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP65 PCI Express bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge card=0x000010de
+    cap 01[48] = powerspec 2  supports D0 D3  current D0
+    cap 05[50] = MSI supports 2 messages, 64 bit 
+    cap 08[60] = HT MSI address window disabled at 0xfee00000
+    cap 10[80] = PCI-Express 1 root port max data 128(256) RO NS
+                 max read 512
+                 link x8(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+                 slot 0 power limit 0 mW
+    ecap 0002[100] = VC 1 max VC0
+
+hostb0@pci0:0:24:0:	class=0x060000 card=0x00000000 chip=0x11001022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] HyperTransport Technology Configuration'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 08[80] = HT host
+
+hostb1@pci0:0:24:1:	class=0x060000 card=0x00000000 chip=0x11011022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] Address Map'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb2@pci0:0:24:2:	class=0x060000 card=0x00000000 chip=0x11021022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] DRAM Controller'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb3@pci0:0:24:3:	class=0x060000 card=0x00000000 chip=0x11031022 rev=0x00 hdr=0x00
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'K8 [Athlon64/Opteron] Miscellaneous Control'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 0f[f0] = unknown
+
+re0@pci0:3:0:0:	class=0x020000 card=0x369c1462 chip=0x816810ec rev=0x01 hdr=0x00
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    device     = 'RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0xd800, size 256, enabled
+    bar   [18] = type Memory, range 64, base 0xfcfff000, size 4096, enabled
+    cap 01[40] = powerspec 2  supports D0 D1 D2 D3  current D0
+    cap 03[48] = VPD
+    cap 05[50] = MSI supports 2 messages, 64 bit enabled with 1 message
+    cap 10[60] = PCI-Express 1 endpoint max data 128(1024) RO NS
+                 max read 4096
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s)
+    cap 09[84] = vendor (length 76)
+    ecap 0001[100] = AER 1 0 fatal 1 non-fatal 1 corrected
+    ecap 0002[12c] = VC 1 max VC0
+    ecap 0003[148] = Serial 1 1d00000010ec8168
+    ecap 0004[154] = Power Budgeting 1
+
+vgapci0@pci0:4:0:0:	class=0x030000 card=0x20721462 chip=0x0ca310de rev=0xa2 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'GT215 [GeForce GT 240]'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 32, base 0xfd000000, size 16777216, enabled
+    bar   [14] = type Prefetchable Memory, range 64, base 0xd0000000, size 268435456, enabled
+    bar   [1c] = type Prefetchable Memory, range 64, base 0xce000000, size 33554432, enabled
+    bar   [24] = type I/O Port, range 32, base 0xec00, size 128, enabled
+    cap 01[60] = powerspec 3  supports D0 D3  current D0
+    cap 05[68] = MSI supports 1 message, 64 bit 
+    cap 10[78] = PCI-Express 2 endpoint max data 128(128) RO NS
+                 max read 512
+                 link x16(x16) speed 2.5(2.5) ASPM disabled(L0s/L1) ClockPM disabled
+    cap 09[b4] = vendor (length 20)
+    ecap 0002[100] = VC 1 max VC0
+    ecap 0004[128] = Power Budgeting 1
+    ecap 000b[600] = Vendor 1 ID 1
+
+hdac1@pci0:4:0:1:	class=0x040300 card=0x20721462 chip=0x0be410de rev=0xa1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'High Definition Audio Controller'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 32, base 0xfeb7c000, size 16384, enabled
+    cap 01[60] = powerspec 3  supports D0 D3  current D0
+    cap 05[68] = MSI supports 1 message, 64 bit 
+    cap 10[78] = PCI-Express 2 endpoint max data 128(128) RO NS
+                 max read 512
+                 link x16(x16) speed 2.5(2.5) ASPM L0s/L1(L0s/L1) ClockPM disabled

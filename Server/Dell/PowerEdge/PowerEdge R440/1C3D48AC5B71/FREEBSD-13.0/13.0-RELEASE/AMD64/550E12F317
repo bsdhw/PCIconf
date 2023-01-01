@@ -1,0 +1,1454 @@
+hostb0@pci0:0:0:0:	class=0x060000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2020 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E DMI3 Registers'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 10[90] = PCI-Express 2 root port max data 128(256)
+                 max read 128
+                 link x0(x4) speed 0.0(8.0)
+    cap 01[e0] = powerspec 3  supports D0 D3  current D0
+    ecap 000b[100] = Vendor [1] ID 0002 Rev 0 Length 12
+    ecap 000b[144] = Vendor [1] ID 0004 Rev 1 Length 60
+    ecap 000b[1d0] = Vendor [1] ID 0003 Rev 1 Length 10
+    ecap 0019[250] = PCIe Sec 1 lane errors 0xf
+    ecap 000b[280] = Vendor [1] ID 0005 Rev 3 Length 24
+    ecap 000b[300] = Vendor [1] ID 0008 Rev 0 Length 56
+
+none0@pci0:0:5:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2024 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E MM/Vt-d Configuration Registers'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+
+none1@pci0:0:5:2:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2025 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E RAS'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+
+ioapic0@pci0:0:5:4:	class=0x080020 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2026 subvendor=0x8086 subdevice=0x2026
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E IOAPIC'
+    class      = base peripheral
+    subclass   = interrupt controller
+    bar   [10] = type Memory, range 32, base 0x93020000, size 4096, enabled
+    cap 10[44] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+    cap 01[e0] = powerspec 3  supports D0 D3  current D0
+
+none2@pci0:0:8:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2014 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E Ubox Registers'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+
+none3@pci0:0:8:1:	class=0x110100 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2015 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E Ubox Registers'
+    class      = dasp
+    subclass   = performance counters
+
+none4@pci0:0:8:2:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2016 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E Ubox Registers'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+
+none5@pci0:0:17:0:	class=0xff0000 rev=0x09 hdr=0x00 vendor=0x8086 device=0xa1ec subvendor=0x1028 subdevice=0x07c9
+    vendor     = 'Intel Corporation'
+    device     = 'C620 Series Chipset Family MROM 0'
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+
+ahci0@pci0:0:17:5:	class=0x010601 rev=0x09 hdr=0x00 vendor=0x8086 device=0xa1d2 subvendor=0x1028 subdevice=0x07c9
+    vendor     = 'Intel Corporation'
+    device     = 'C620 Series Chipset Family SSATA Controller [AHCI mode]'
+    class      = mass storage
+    subclass   = SATA
+    bar   [10] = type Memory, range 32, base 0x93016000, size 8192, enabled
+    bar   [14] = type Memory, range 32, base 0x9301f000, size 256, enabled
+    bar   [18] = type I/O Port, range 32, base 0x2068, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0x2074, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0x2040, size 32, enabled
+    bar   [24] = type Memory, range 32, base 0x92f80000, size 524288, enabled
+    cap 05[80] = MSI supports 1 message enabled with 1 message
+    cap 01[70] = powerspec 3  supports D0 D3  current D0
+    cap 12[a8] = SATA Index-Data Pair
+
+xhci0@pci0:0:20:0:	class=0x0c0330 rev=0x09 hdr=0x00 vendor=0x8086 device=0xa1af subvendor=0x1028 subdevice=0x07c9
+    vendor     = 'Intel Corporation'
+    device     = 'C620 Series Chipset Family USB 3.0 xHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 64, base 0x93000000, size 65536, enabled
+    cap 01[70] = powerspec 2  supports D0 D3  current D0
+    cap 05[80] = MSI supports 8 messages, 64 bit enabled with 1 message
+
+none6@pci0:0:20:2:	class=0x118000 rev=0x09 hdr=0x00 vendor=0x8086 device=0xa1b1 subvendor=0x1028 subdevice=0x07c9
+    vendor     = 'Intel Corporation'
+    device     = 'C620 Series Chipset Family Thermal Subsystem'
+    class      = dasp
+    bar   [10] = type Memory, range 64, base 0x9301c000, size 4096, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 05[80] = MSI supports 1 message 
+
+none7@pci0:0:22:0:	class=0x078000 rev=0x09 hdr=0x00 vendor=0x8086 device=0xa1ba subvendor=0x1028 subdevice=0x07c9
+    vendor     = 'Intel Corporation'
+    device     = 'C620 Series Chipset Family MEI Controller'
+    class      = simple comms
+    bar   [10] = type Memory, range 64, base 0x9301b000, size 4096, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 05[8c] = MSI supports 1 message, 64 bit 
+
+none8@pci0:0:22:1:	class=0x078000 rev=0x09 hdr=0x00 vendor=0x8086 device=0xa1bb subvendor=0x1028 subdevice=0x07c9
+    vendor     = 'Intel Corporation'
+    device     = 'C620 Series Chipset Family MEI Controller'
+    class      = simple comms
+    bar   [10] = type Memory, range 64, base 0x9301a000, size 4096, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 05[8c] = MSI supports 1 message, 64 bit 
+
+none9@pci0:0:22:4:	class=0x078000 rev=0x09 hdr=0x00 vendor=0x8086 device=0xa1be subvendor=0x1028 subdevice=0x07c9
+    vendor     = 'Intel Corporation'
+    device     = 'C620 Series Chipset Family MEI Controller'
+    class      = simple comms
+    bar   [10] = type Memory, range 64, base 0x93019000, size 4096, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 05[8c] = MSI supports 1 message, 64 bit 
+
+ahci1@pci0:0:23:0:	class=0x010601 rev=0x09 hdr=0x00 vendor=0x8086 device=0xa182 subvendor=0x1028 subdevice=0x07c9
+    vendor     = 'Intel Corporation'
+    device     = 'C620 Series Chipset Family SATA Controller [AHCI mode]'
+    class      = mass storage
+    subclass   = SATA
+    bar   [10] = type Memory, range 32, base 0x93014000, size 8192, enabled
+    bar   [14] = type Memory, range 32, base 0x9301e000, size 256, enabled
+    bar   [18] = type I/O Port, range 32, base 0x2060, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0x2070, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0x2020, size 32, enabled
+    bar   [24] = type Memory, range 32, base 0x92f00000, size 524288, enabled
+    cap 05[80] = MSI supports 1 message enabled with 1 message
+    cap 01[70] = powerspec 3  supports D0 D3  current D0
+    cap 12[a8] = SATA Index-Data Pair
+
+pcib1@pci0:0:28:0:	class=0x060400 rev=0xf9 hdr=0x01 vendor=0x8086 device=0xa190 subvendor=0x1028 subdevice=0x07c9
+    vendor     = 'Intel Corporation'
+    device     = 'C620 Series Chipset Family PCI Express Root Port'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(256) ARI disabled
+                 max read 128
+                 link x0(x4) speed 0.0(8.0) ASPM disabled(L0s/L1)
+                 slot 0 power limit 0 mW HotPlug(empty) surprise
+    cap 05[80] = MSI supports 1 message enabled with 1 message
+    cap 0d[90] = PCI Bridge subvendor=0x1028 subdevice=0x07c9
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+
+pcib2@pci0:0:28:4:	class=0x060400 rev=0xf9 hdr=0x01 vendor=0x8086 device=0xa194 subvendor=0x1028 subdevice=0x07c9
+    vendor     = 'Intel Corporation'
+    device     = 'C620 Series Chipset Family PCI Express Root Port'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128) ARI disabled
+                 max read 128
+                 link x1(x1) speed 5.0(5.0) ASPM disabled(L1)
+                 slot 0 power limit 100 mW
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge subvendor=0x1028 subdevice=0x07c9
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000d[140] = ACS 1
+
+pcib4@pci0:0:28:5:	class=0x060400 rev=0xf9 hdr=0x01 vendor=0x8086 device=0xa195 subvendor=0x1028 subdevice=0x07c9
+    vendor     = 'Intel Corporation'
+    device     = 'C620 Series Chipset Family PCI Express Root Port'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128) ARI disabled
+                 max read 128
+                 link x1(x1) speed 5.0(8.0) ASPM disabled(L1)
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge subvendor=0x1028 subdevice=0x07c9
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000d[140] = ACS 1
+    ecap 0019[220] = PCIe Sec 1 lane errors 0
+
+isab0@pci0:0:31:0:	class=0x060100 rev=0x09 hdr=0x00 vendor=0x8086 device=0xa1c1 subvendor=0x1028 subdevice=0x07c9
+    vendor     = 'Intel Corporation'
+    device     = 'C621 Series Chipset LPC/eSPI Controller'
+    class      = bridge
+    subclass   = PCI-ISA
+
+none10@pci0:0:31:2:	class=0x058000 rev=0x09 hdr=0x00 vendor=0x8086 device=0xa1a1 subvendor=0x1028 subdevice=0x07c9
+    vendor     = 'Intel Corporation'
+    device     = 'C620 Series Chipset Family Power Management Controller'
+    class      = memory
+    bar   [10] = type Memory, range 32, base 0x93010000, size 16384, enabled
+
+ichsmb0@pci0:0:31:4:	class=0x0c0500 rev=0x09 hdr=0x00 vendor=0x8086 device=0xa1a3 subvendor=0x1028 subdevice=0x07c9
+    vendor     = 'Intel Corporation'
+    device     = 'C620 Series Chipset Family SMBus'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [10] = type Memory, range 64, base 0x93018000, size 256, enabled
+    bar   [20] = type I/O Port, range 32, base 0x2000, size 32, enabled
+
+none11@pci0:0:31:5:	class=0x0c8000 rev=0x09 hdr=0x00 vendor=0x8086 device=0xa1a4 subvendor=0x1028 subdevice=0x07c9
+    vendor     = 'Intel Corporation'
+    device     = 'C620 Series Chipset Family SPI Controller'
+    class      = serial bus
+    bar   [10] = type Memory, range 32, base 0xfe010000, size 4096, enabled
+
+pcib3@pci0:2:0:0:	class=0x060400 rev=0x02 hdr=0x01 vendor=0x1556 device=0xbe00 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'PLDA'
+    device     = 'PCI Express Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 05[50] = MSI supports 1 message, 64 bit 
+    cap 01[78] = powerspec 3  supports D0 D3  current D0
+    cap 10[80] = PCI-Express 2 PCI bridge max data 128(128) RO NS
+                 max read 512
+                 link x1(x1) speed 5.0(5.0) ASPM disabled(L0s/L1) ClockPM disabled
+    ecap 0002[100] = VC 1 max VC0
+    ecap 0001[800] = AER 1 0 fatal 0 non-fatal 1 corrected
+
+vgapci0@pci0:3:0:0:	class=0x030000 rev=0x04 hdr=0x00 vendor=0x102b device=0x0536 subvendor=0x1028 subdevice=0x07c9
+    vendor     = 'Matrox Electronics Systems Ltd.'
+    device     = 'Integrated Matrox G200eW3 Graphics Controller'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Prefetchable Memory, range 32, base 0x91000000, size 16777216, enabled
+    bar   [14] = type Memory, range 32, base 0x92808000, size 16384, enabled
+    bar   [18] = type Memory, range 32, base 0x92000000, size 8388608, enabled
+    cap 01[dc] = powerspec 3  supports D0 D3  current D0
+
+bge0@pci0:4:0:0:	class=0x020000 rev=0x00 hdr=0x00 vendor=0x14e4 device=0x165f subvendor=0x1028 subdevice=0x001f
+    vendor     = 'Broadcom Inc. and subsidiaries'
+    device     = 'NetXtreme BCM5720 2-port Gigabit Ethernet PCIe'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Prefetchable Memory, range 64, base 0x92e30000, size 65536, enabled
+    bar   [18] = type Prefetchable Memory, range 64, base 0x92e40000, size 65536, enabled
+    bar   [20] = type Prefetchable Memory, range 64, base 0x92e50000, size 65536, enabled
+    cap 01[48] = powerspec 3  supports D0 D3  current D0
+    cap 03[50] = VPD
+    cap 05[58] = MSI supports 8 messages, 64 bit enabled with 1 message
+    cap 11[a0] = MSI-X supports 17 messages
+                 Table in map 0x20[0x0], PBA in map 0x20[0x1000]
+    cap 10[ac] = PCI-Express 2 endpoint max data 128(256) FLR
+                 max read 2048
+                 link x1(x2) speed 5.0(5.0) ClockPM enabled
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0003[13c] = Serial 1 0000f4ee0824b28a
+    ecap 0004[150] = Power Budgeting 1
+    ecap 0002[160] = VC 1 max VC0
+
+bge1@pci0:4:0:1:	class=0x020000 rev=0x00 hdr=0x00 vendor=0x14e4 device=0x165f subvendor=0x1028 subdevice=0x001f
+    vendor     = 'Broadcom Inc. and subsidiaries'
+    device     = 'NetXtreme BCM5720 2-port Gigabit Ethernet PCIe'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Prefetchable Memory, range 64, base 0x92e00000, size 65536, enabled
+    bar   [18] = type Prefetchable Memory, range 64, base 0x92e10000, size 65536, enabled
+    bar   [20] = type Prefetchable Memory, range 64, base 0x92e20000, size 65536, enabled
+    cap 01[48] = powerspec 3  supports D0 D3  current D0
+    cap 03[50] = VPD
+    cap 05[58] = MSI supports 8 messages, 64 bit enabled with 1 message
+    cap 11[a0] = MSI-X supports 17 messages
+                 Table in map 0x20[0x0], PBA in map 0x20[0x1000]
+    cap 10[ac] = PCI-Express 2 endpoint max data 128(256) FLR
+                 max read 2048
+                 link x1(x2) speed 5.0(5.0) ClockPM enabled
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0003[13c] = Serial 1 0000f4ee0824b28b
+    ecap 0004[150] = Power Budgeting 1
+    ecap 0002[160] = VC 1 max VC0
+
+pcib6@pci0:23:2:0:	class=0x060400 rev=0x07 hdr=0x01 vendor=0x8086 device=0x2032 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E PCI Express Root Port C'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge subvendor=0x8086 subdevice=0x0000
+    cap 05[60] = MSI supports 2 messages, vector masks 
+    cap 10[90] = PCI-Express 2 root port max data 256(256) ARI enabled
+                 max read 128
+                 link x8(x8) speed 8.0(8.0) ASPM disabled(L1)
+                 slot 0 power limit 25000 mW
+    cap 01[e0] = powerspec 3  supports D0 D3  current D0
+    ecap 000b[100] = Vendor [1] ID 0002 Rev 0 Length 12
+    ecap 000d[110] = ACS 1
+    ecap 0001[148] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000b[1d0] = Vendor [1] ID 0003 Rev 1 Length 10
+    ecap 0019[250] = PCIe Sec 1 lane errors 0
+    ecap 000b[280] = Vendor [1] ID 0005 Rev 3 Length 24
+    ecap 000b[300] = Vendor [1] ID 0008 Rev 0 Length 56
+
+none12@pci0:23:5:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2034 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E VT-d'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+
+none13@pci0:23:5:2:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2035 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E RAS Configuration Registers'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+
+ioapic1@pci0:23:5:4:	class=0x080020 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2036 subvendor=0x8086 subdevice=0x2036
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E IOxAPIC Configuration Registers'
+    class      = base peripheral
+    subclass   = interrupt controller
+    bar   [10] = type Memory, range 32, base 0x9db00000, size 4096, enabled
+    cap 10[44] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+    cap 01[e0] = powerspec 3  supports D0 D3  current D0
+
+none14@pci0:23:8:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x208d subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none15@pci0:23:8:1:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x208d subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none16@pci0:23:8:2:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x208d subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none17@pci0:23:8:3:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x208d subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none18@pci0:23:8:4:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x208d subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none19@pci0:23:8:5:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x208d subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none20@pci0:23:8:6:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x208d subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none21@pci0:23:8:7:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x208d subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none22@pci0:23:9:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x208d subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none23@pci0:23:9:1:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x208d subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none24@pci0:23:14:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x208e subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none25@pci0:23:14:1:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x208e subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none26@pci0:23:14:2:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x208e subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none27@pci0:23:14:3:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x208e subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none28@pci0:23:14:4:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x208e subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none29@pci0:23:14:5:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x208e subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none30@pci0:23:14:6:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x208e subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none31@pci0:23:14:7:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x208e subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none32@pci0:23:15:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x208e subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none33@pci0:23:15:1:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x208e subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none34@pci0:23:29:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2054 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none35@pci0:23:29:1:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2055 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none36@pci0:23:29:2:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2056 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none37@pci0:23:29:3:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2057 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none38@pci0:23:30:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2080 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E PCU Registers'
+    class      = base peripheral
+
+none39@pci0:23:30:1:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2081 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E PCU Registers'
+    class      = base peripheral
+
+none40@pci0:23:30:2:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2082 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E PCU Registers'
+    class      = base peripheral
+
+none41@pci0:23:30:3:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2083 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E PCU Registers'
+    class      = base peripheral
+
+none42@pci0:23:30:4:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2084 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E PCU Registers'
+    class      = base peripheral
+
+none43@pci0:23:30:5:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2085 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E PCU Registers'
+    class      = base peripheral
+
+none44@pci0:23:30:6:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2086 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E PCU Registers'
+    class      = base peripheral
+
+mrsas0@pci0:24:0:0:	class=0x010400 rev=0x00 hdr=0x00 vendor=0x1000 device=0x10e6 subvendor=0x1028 subdevice=0x2177
+    vendor     = 'Broadcom / LSI'
+    device     = 'MegaRAID 12GSAS/PCIe Secure SAS38xx'
+    class      = mass storage
+    subclass   = RAID
+    bar   [10] = type Prefetchable Memory, range 64, base 0x9d800000, size 1048576, enabled
+    bar   [18] = type Prefetchable Memory, range 64, base 0x9d900000, size 1048576, enabled
+    bar   [20] = type Memory, range 32, base 0x9da00000, size 1048576, enabled
+    bar   [24] = type I/O Port, range 32, base 0x4000, size 256, enabled
+    cap 01[40] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 10[70] = PCI-Express 2 endpoint max data 256(1024) FLR RO NS
+                 max read 512
+                 link x8(x8) speed 8.0(16.0) ASPM disabled(L0s/L1)
+    cap 11[b0] = MSI-X supports 128 messages, enabled
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x3000]
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 0004[148] = Power Budgeting 1
+    ecap 000e[158] = ARI 1
+    ecap 0019[168] = PCIe Sec 1 lane errors 0
+    ecap 0026[188] = Physical Layer 16.0 GT/s 1
+    ecap 0027[1b0] = Lane Margining at Receiver 1
+    ecap 000b[248] = Vendor [1] ID 0002 Rev 4 Length 256
+    ecap 000b[348] = Vendor [1] ID 0001 Rev 1 Length 56
+    ecap 0025[380] = Data Link Feature 1
+
+pcib8@pci0:58:0:0:	class=0x060400 rev=0x07 hdr=0x01 vendor=0x8086 device=0x2030 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E PCI Express Root Port A'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge subvendor=0x8086 subdevice=0x0000
+    cap 05[60] = MSI supports 2 messages, vector masks 
+    cap 10[90] = PCI-Express 2 root port max data 256(256) ARI disabled
+                 max read 128
+                 link x2(x16) speed 5.0(8.0) ASPM disabled(L1)
+                 slot 2 power limit 75000 mW
+    cap 01[e0] = powerspec 3  supports D0 D3  current D0
+    ecap 000b[100] = Vendor [1] ID 0002 Rev 0 Length 12
+    ecap 000d[110] = ACS 1
+    ecap 0001[148] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000b[1d0] = Vendor [1] ID 0003 Rev 1 Length 10
+    ecap 0019[250] = PCIe Sec 1 lane errors 0
+    ecap 000b[280] = Vendor [1] ID 0005 Rev 3 Length 24
+    ecap 000b[300] = Vendor [1] ID 0008 Rev 0 Length 56
+
+none45@pci0:58:5:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2034 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E VT-d'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+
+none46@pci0:58:5:2:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2035 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E RAS Configuration Registers'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+
+ioapic2@pci0:58:5:4:	class=0x080020 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2036 subvendor=0x8086 subdevice=0x2036
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E IOxAPIC Configuration Registers'
+    class      = base peripheral
+    subclass   = interrupt controller
+    bar   [10] = type Memory, range 32, base 0xab100000, size 4096, enabled
+    cap 10[44] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+    cap 01[e0] = powerspec 3  supports D0 D3  current D0
+
+none47@pci0:58:8:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2066 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E Integrated Memory Controller'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none48@pci0:58:9:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2066 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E Integrated Memory Controller'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none49@pci0:58:10:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2040 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E Integrated Memory Controller'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none50@pci0:58:10:1:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2041 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E Integrated Memory Controller'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none51@pci0:58:10:2:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2042 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E Integrated Memory Controller'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none52@pci0:58:10:3:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2043 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E Integrated Memory Controller'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none53@pci0:58:10:4:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2044 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E Integrated Memory Controller'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none54@pci0:58:10:5:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2045 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E LM Channel 1'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none55@pci0:58:10:6:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2046 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E LMS Channel 1'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none56@pci0:58:10:7:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2047 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E LMDP Channel 1'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none57@pci0:58:11:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2048 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E DECS Channel 2'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none58@pci0:58:11:1:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2049 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E LM Channel 2'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none59@pci0:58:11:2:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x204a subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E LMS Channel 2'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none60@pci0:58:11:3:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x204b subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E LMDP Channel 2'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none61@pci0:58:12:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2040 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E Integrated Memory Controller'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none62@pci0:58:12:1:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2041 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E Integrated Memory Controller'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none63@pci0:58:12:2:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2042 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E Integrated Memory Controller'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none64@pci0:58:12:3:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2043 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E Integrated Memory Controller'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none65@pci0:58:12:4:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2044 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E Integrated Memory Controller'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none66@pci0:58:12:5:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2045 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E LM Channel 1'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none67@pci0:58:12:6:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2046 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E LMS Channel 1'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none68@pci0:58:12:7:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2047 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E LMDP Channel 1'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none69@pci0:58:13:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2048 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E DECS Channel 2'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none70@pci0:58:13:1:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2049 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E LM Channel 2'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none71@pci0:58:13:2:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x204a subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E LMS Channel 2'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none72@pci0:58:13:3:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x204b subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E LMDP Channel 2'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+ahci2@pci0:59:0:0:	class=0x010601 rev=0x11 hdr=0x00 vendor=0x1b4b device=0x9230 subvendor=0x1028 subdevice=0x1fe2
+    vendor     = 'Marvell Technology Group Ltd.'
+    device     = '88SE9230 PCIe SATA 6Gb/s Controller'
+    class      = mass storage
+    subclass   = SATA
+    bar   [10] = type I/O Port, range 32, base 0x6028, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0x6034, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0x6020, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0x6030, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0x6000, size 32, enabled
+    bar   [24] = type Memory, range 32, base 0xab000000, size 2048, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message enabled with 1 message
+    cap 10[70] = PCI-Express 2 legacy endpoint max data 256(512) RO
+                 max read 512
+                 link x2(x2) speed 5.0(5.0) ASPM disabled(L0s/L1)
+    cap 12[e0] = SATA Index-Data Pair
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+
+pcib10@pci0:93:0:0:	class=0x060400 rev=0x07 hdr=0x01 vendor=0x8086 device=0x2030 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E PCI Express Root Port A'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge subvendor=0x8086 subdevice=0x0000
+    cap 05[60] = MSI supports 2 messages, vector masks 
+    cap 10[90] = PCI-Express 2 root port max data 256(256) ARI enabled
+                 max read 128
+                 link x8(x8) speed 8.0(8.0) ASPM disabled(L1)
+                 slot 1 power limit 25000 mW
+    cap 01[e0] = powerspec 3  supports D0 D3  current D0
+    ecap 000b[100] = Vendor [1] ID 0002 Rev 0 Length 12
+    ecap 000d[110] = ACS 1
+    ecap 0001[148] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000b[1d0] = Vendor [1] ID 0003 Rev 1 Length 10
+    ecap 0019[250] = PCIe Sec 1 lane errors 0
+    ecap 000b[280] = Vendor [1] ID 0005 Rev 3 Length 24
+    ecap 000b[300] = Vendor [1] ID 0008 Rev 0 Length 56
+
+none73@pci0:93:5:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2034 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E VT-d'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+
+none74@pci0:93:5:2:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2035 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E RAS Configuration Registers'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+
+ioapic3@pci0:93:5:4:	class=0x080020 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2036 subvendor=0x8086 subdevice=0x2036
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E IOxAPIC Configuration Registers'
+    class      = base peripheral
+    subclass   = interrupt controller
+    bar   [10] = type Memory, range 32, base 0xb8b00000, size 4096, enabled
+    cap 10[44] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+    cap 01[e0] = powerspec 3  supports D0 D3  current D0
+
+none75@pci0:93:14:0:	class=0x110100 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2058 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E KTI 0'
+    class      = dasp
+    subclass   = performance counters
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+
+none76@pci0:93:14:1:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2059 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E UPI Registers'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+    ecap 000b[100] = Vendor [0] ID 0001 Rev 0 Length 240
+
+none77@pci0:93:15:0:	class=0x110100 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2058 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E KTI 0'
+    class      = dasp
+    subclass   = performance counters
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+
+none78@pci0:93:15:1:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2059 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E UPI Registers'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+    ecap 000b[100] = Vendor [0] ID 0001 Rev 0 Length 240
+
+none79@pci0:93:18:0:	class=0x110100 rev=0x07 hdr=0x00 vendor=0x8086 device=0x204c subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E M3KTI Registers'
+    class      = dasp
+    subclass   = performance counters
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+
+none80@pci0:93:18:1:	class=0x110100 rev=0x07 hdr=0x00 vendor=0x8086 device=0x204d subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E M3KTI Registers'
+    class      = dasp
+    subclass   = performance counters
+
+none81@pci0:93:18:2:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x204e subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E M3KTI Registers'
+    class      = base peripheral
+
+none82@pci0:93:21:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2018 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E M2PCI Registers'
+    class      = base peripheral
+
+none83@pci0:93:21:1:	class=0x110100 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2088 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E DDRIO Registers'
+    class      = dasp
+    subclass   = performance counters
+
+none84@pci0:93:22:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2018 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E M2PCI Registers'
+    class      = base peripheral
+
+none85@pci0:93:22:1:	class=0x110100 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2088 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E DDRIO Registers'
+    class      = dasp
+    subclass   = performance counters
+
+none86@pci0:93:22:4:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2018 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E M2PCI Registers'
+    class      = base peripheral
+
+none87@pci0:93:22:5:	class=0x110100 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2088 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E DDRIO Registers'
+    class      = dasp
+    subclass   = performance counters
+
+none88@pci0:94:0:0:	class=0x020000 rev=0x01 hdr=0x00 vendor=0x14e4 device=0x16d8 subvendor=0x1028 subdevice=0x1fea
+    vendor     = 'Broadcom Inc. and subsidiaries'
+    device     = 'BCM57416 NetXtreme-E Dual-Media 10G RDMA Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Prefetchable Memory, range 64, base 0xb8a10000, size 65536, enabled
+    bar   [18] = type Prefetchable Memory, range 64, base 0xb8900000, size 1048576, enabled
+    bar   [20] = type Prefetchable Memory, range 64, base 0xb8a22000, size 8192, enabled
+    cap 01[48] = powerspec 3  supports D0 D3  current D0
+    cap 03[50] = VPD
+    cap 05[58] = MSI supports 8 messages, 64 bit 
+    cap 11[a0] = MSI-X supports 74 messages
+                 Table in map 0x20[0x0], PBA in map 0x20[0x4a0]
+    cap 10[ac] = PCI-Express 2 endpoint max data 256(512) FLR RO NS
+                 max read 512
+                 link x8(x8) speed 8.0(8.0) ClockPM disabled
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0003[13c] = Serial 1 f4ee08fffe25fabd
+    ecap 0004[150] = Power Budgeting 1
+    ecap 0002[160] = VC 1 max VC0
+    ecap 000b[180] = Vendor [1] ID 0000 Rev 0 Length 32
+    ecap 0018[1b0] = LTR 1
+    ecap 000e[1b8] = ARI 1
+    ecap 0017[230] = TPH Requester 1
+    ecap 0019[300] = PCIe Sec 1 lane errors 0
+    ecap 001f[200] = Precision Time Measurement 1
+
+none89@pci0:94:0:1:	class=0x020000 rev=0x01 hdr=0x00 vendor=0x14e4 device=0x16d8 subvendor=0x1028 subdevice=0x1fea
+    vendor     = 'Broadcom Inc. and subsidiaries'
+    device     = 'BCM57416 NetXtreme-E Dual-Media 10G RDMA Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Prefetchable Memory, range 64, base 0xb8a00000, size 65536, enabled
+    bar   [18] = type Prefetchable Memory, range 64, base 0xb8800000, size 1048576, enabled
+    bar   [20] = type Prefetchable Memory, range 64, base 0xb8a20000, size 8192, enabled
+    cap 01[48] = powerspec 3  supports D0 D3  current D0
+    cap 03[50] = VPD
+    cap 05[58] = MSI supports 8 messages, 64 bit 
+    cap 11[a0] = MSI-X supports 74 messages
+                 Table in map 0x20[0x0], PBA in map 0x20[0x4a0]
+    cap 10[ac] = PCI-Express 2 endpoint max data 256(512) FLR RO NS
+                 max read 512
+                 link x8(x8) speed 8.0(8.0) ClockPM disabled
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0003[13c] = Serial 1 f4ee08fffe25fabd
+    ecap 0004[150] = Power Budgeting 1
+    ecap 000b[180] = Vendor [1] ID 0000 Rev 0 Length 32
+    ecap 000e[1b8] = ARI 1
+    ecap 0017[230] = TPH Requester 1
+
+none90@pci0:128:5:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2024 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E MM/Vt-d Configuration Registers'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+
+none91@pci0:128:5:2:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2025 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E RAS'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+
+ioapic4@pci0:128:5:4:	class=0x080020 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2026 subvendor=0x8086 subdevice=0x2026
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E IOAPIC'
+    class      = base peripheral
+    subclass   = interrupt controller
+    bar   [10] = type Memory, range 32, base 0xc6000000, size 4096, enabled
+    cap 10[44] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+    cap 01[e0] = powerspec 3  supports D0 D3  current D0
+
+none92@pci0:128:8:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2014 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E Ubox Registers'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+
+none93@pci0:128:8:1:	class=0x110100 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2015 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E Ubox Registers'
+    class      = dasp
+    subclass   = performance counters
+
+none94@pci0:128:8:2:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2016 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E Ubox Registers'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+
+none95@pci0:133:5:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2034 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E VT-d'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+
+none96@pci0:133:5:2:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2035 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E RAS Configuration Registers'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+
+ioapic5@pci0:133:5:4:	class=0x080020 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2036 subvendor=0x8086 subdevice=0x2036
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E IOxAPIC Configuration Registers'
+    class      = base peripheral
+    subclass   = interrupt controller
+    bar   [10] = type Memory, range 32, base 0xd3800000, size 4096, enabled
+    cap 10[44] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+    cap 01[e0] = powerspec 3  supports D0 D3  current D0
+
+none97@pci0:133:8:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x208d subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none98@pci0:133:8:1:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x208d subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none99@pci0:133:8:2:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x208d subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none100@pci0:133:8:3:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x208d subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none101@pci0:133:8:4:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x208d subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none102@pci0:133:8:5:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x208d subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none103@pci0:133:8:6:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x208d subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none104@pci0:133:8:7:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x208d subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none105@pci0:133:9:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x208d subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none106@pci0:133:9:1:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x208d subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none107@pci0:133:14:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x208e subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none108@pci0:133:14:1:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x208e subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none109@pci0:133:14:2:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x208e subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none110@pci0:133:14:3:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x208e subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none111@pci0:133:14:4:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x208e subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none112@pci0:133:14:5:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x208e subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none113@pci0:133:14:6:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x208e subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none114@pci0:133:14:7:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x208e subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none115@pci0:133:15:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x208e subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none116@pci0:133:15:1:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x208e subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none117@pci0:133:29:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2054 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none118@pci0:133:29:1:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2055 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none119@pci0:133:29:2:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2056 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none120@pci0:133:29:3:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2057 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E CHA Registers'
+    class      = base peripheral
+
+none121@pci0:133:30:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2080 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E PCU Registers'
+    class      = base peripheral
+
+none122@pci0:133:30:1:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2081 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E PCU Registers'
+    class      = base peripheral
+
+none123@pci0:133:30:2:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2082 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E PCU Registers'
+    class      = base peripheral
+
+none124@pci0:133:30:3:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2083 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E PCU Registers'
+    class      = base peripheral
+
+none125@pci0:133:30:4:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2084 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E PCU Registers'
+    class      = base peripheral
+
+none126@pci0:133:30:5:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2085 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E PCU Registers'
+    class      = base peripheral
+
+none127@pci0:133:30:6:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2086 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E PCU Registers'
+    class      = base peripheral
+
+none128@pci0:174:5:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2034 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E VT-d'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+
+none129@pci0:174:5:2:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2035 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E RAS Configuration Registers'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+
+ioapic6@pci0:174:5:4:	class=0x080020 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2036 subvendor=0x8086 subdevice=0x2036
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E IOxAPIC Configuration Registers'
+    class      = base peripheral
+    subclass   = interrupt controller
+    bar   [10] = type Memory, range 32, base 0xe1000000, size 4096, enabled
+    cap 10[44] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+    cap 01[e0] = powerspec 3  supports D0 D3  current D0
+
+none130@pci0:174:8:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2066 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E Integrated Memory Controller'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none131@pci0:174:9:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2066 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E Integrated Memory Controller'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none132@pci0:174:10:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2040 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E Integrated Memory Controller'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none133@pci0:174:10:1:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2041 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E Integrated Memory Controller'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none134@pci0:174:10:2:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2042 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E Integrated Memory Controller'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none135@pci0:174:10:3:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2043 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E Integrated Memory Controller'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none136@pci0:174:10:4:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2044 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E Integrated Memory Controller'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none137@pci0:174:10:5:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2045 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E LM Channel 1'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none138@pci0:174:10:6:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2046 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E LMS Channel 1'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none139@pci0:174:10:7:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2047 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E LMDP Channel 1'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none140@pci0:174:11:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2048 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E DECS Channel 2'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none141@pci0:174:11:1:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2049 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E LM Channel 2'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none142@pci0:174:11:2:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x204a subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E LMS Channel 2'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none143@pci0:174:11:3:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x204b subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E LMDP Channel 2'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none144@pci0:174:12:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2040 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E Integrated Memory Controller'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none145@pci0:174:12:1:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2041 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E Integrated Memory Controller'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none146@pci0:174:12:2:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2042 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E Integrated Memory Controller'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none147@pci0:174:12:3:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2043 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E Integrated Memory Controller'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none148@pci0:174:12:4:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2044 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E Integrated Memory Controller'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none149@pci0:174:12:5:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2045 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E LM Channel 1'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none150@pci0:174:12:6:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2046 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E LMS Channel 1'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none151@pci0:174:12:7:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2047 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E LMDP Channel 1'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none152@pci0:174:13:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2048 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E DECS Channel 2'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none153@pci0:174:13:1:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2049 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E LM Channel 2'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none154@pci0:174:13:2:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x204a subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E LMS Channel 2'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none155@pci0:174:13:3:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x204b subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E LMDP Channel 2'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none156@pci0:215:5:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2034 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E VT-d'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+
+none157@pci0:215:5:2:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2035 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E RAS Configuration Registers'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+
+ioapic7@pci0:215:5:4:	class=0x080020 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2036 subvendor=0x8086 subdevice=0x2036
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E IOxAPIC Configuration Registers'
+    class      = base peripheral
+    subclass   = interrupt controller
+    bar   [10] = type Memory, range 32, base 0xee800000, size 4096, enabled
+    cap 10[44] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+    cap 01[e0] = powerspec 3  supports D0 D3  current D0
+
+none158@pci0:215:14:0:	class=0x110100 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2058 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E KTI 0'
+    class      = dasp
+    subclass   = performance counters
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+
+none159@pci0:215:14:1:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2059 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E UPI Registers'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+    ecap 000b[100] = Vendor [0] ID 0001 Rev 0 Length 240
+
+none160@pci0:215:15:0:	class=0x110100 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2058 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E KTI 0'
+    class      = dasp
+    subclass   = performance counters
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+
+none161@pci0:215:15:1:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2059 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E UPI Registers'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+    ecap 000b[100] = Vendor [0] ID 0001 Rev 0 Length 240
+
+none162@pci0:215:18:0:	class=0x110100 rev=0x07 hdr=0x00 vendor=0x8086 device=0x204c subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E M3KTI Registers'
+    class      = dasp
+    subclass   = performance counters
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+
+none163@pci0:215:18:1:	class=0x110100 rev=0x07 hdr=0x00 vendor=0x8086 device=0x204d subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E M3KTI Registers'
+    class      = dasp
+    subclass   = performance counters
+
+none164@pci0:215:18:2:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x204e subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E M3KTI Registers'
+    class      = base peripheral
+
+none165@pci0:215:21:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2018 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E M2PCI Registers'
+    class      = base peripheral
+
+none166@pci0:215:21:1:	class=0x110100 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2088 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E DDRIO Registers'
+    class      = dasp
+    subclass   = performance counters
+
+none167@pci0:215:22:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2018 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E M2PCI Registers'
+    class      = base peripheral
+
+none168@pci0:215:22:1:	class=0x110100 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2088 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E DDRIO Registers'
+    class      = dasp
+    subclass   = performance counters
+
+none169@pci0:215:22:4:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2018 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E M2PCI Registers'
+    class      = base peripheral
+
+none170@pci0:215:22:5:	class=0x110100 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2088 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Sky Lake-E DDRIO Registers'
+    class      = dasp
+    subclass   = performance counters

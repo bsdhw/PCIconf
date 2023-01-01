@@ -1,0 +1,156 @@
+hostb0@pci0:0:0:0:	class=0x060000 rev=0x06 hdr=0x00 vendor=0x8086 device=0x0c08 subvendor=0x15d9 subdevice=0x0801
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E3-1200 v3 Processor DRAM Controller'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 09[e0] = vendor (length 12) Intel cap 0 version 1
+
+xhci0@pci0:0:20:0:	class=0x0c0330 rev=0x05 hdr=0x00 vendor=0x8086 device=0x8c31 subvendor=0x15d9 subdevice=0x0801
+    vendor     = 'Intel Corporation'
+    device     = '8 Series/C220 Series Chipset Family USB xHCI'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 64, base 0xf7220000, size 65536, enabled
+    cap 01[70] = powerspec 2  supports D0 D3  current D0
+    cap 05[80] = MSI supports 8 messages, 64 bit enabled with 1 message
+
+em0@pci0:0:25:0:	class=0x020000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x153a subvendor=0x15d9 subdevice=0x153a
+    vendor     = 'Intel Corporation'
+    device     = 'Ethernet Connection I217-LM'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xf7200000, size 131072, enabled
+    bar   [14] = type Memory, range 32, base 0xf7235000, size 4096, enabled
+    bar   [18] = type I/O Port, range 32, base 0xf020, size 32, enabled
+    cap 01[c8] = powerspec 2  supports D0 D3  current D0
+    cap 05[d0] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 13[e0] = PCI Advanced Features: FLR TP
+
+ehci0@pci0:0:26:0:	class=0x0c0320 rev=0x05 hdr=0x00 vendor=0x8086 device=0x8c2d subvendor=0x15d9 subdevice=0x0801
+    vendor     = 'Intel Corporation'
+    device     = '8 Series/C220 Series Chipset Family USB EHCI'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xf7234000, size 1024, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 0a[58] = EHCI Debug Port at offset 0xa0 in map 0x14
+    cap 13[98] = PCI Advanced Features: FLR TP
+
+pcib1@pci0:0:28:0:	class=0x060400 rev=0xd5 hdr=0x01 vendor=0x8086 device=0x8c10 subvendor=0x15d9 subdevice=0x0801
+    vendor     = 'Intel Corporation'
+    device     = '8 Series/C220 Series Chipset Family PCI Express Root Port'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128)
+                 max read 128
+                 link x1(x1) speed 2.5(5.0) ASPM disabled(L0s/L1)
+                 slot 0 power limit 100 mW
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge subvendor=0x15d9 subdevice=0x0801
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+
+pcib3@pci0:0:28:1:	class=0x060400 rev=0xd5 hdr=0x01 vendor=0x8086 device=0x8c12 subvendor=0x15d9 subdevice=0x0801
+    vendor     = 'Intel Corporation'
+    device     = '8 Series/C220 Series Chipset Family PCI Express Root Port'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128)
+                 max read 128
+                 link x1(x1) speed 2.5(5.0) ASPM L1(L0s/L1)
+                 slot 1 power limit 100 mW
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge subvendor=0x15d9 subdevice=0x0801
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+
+ehci1@pci0:0:29:0:	class=0x0c0320 rev=0x05 hdr=0x00 vendor=0x8086 device=0x8c26 subvendor=0x15d9 subdevice=0x0801
+    vendor     = 'Intel Corporation'
+    device     = '8 Series/C220 Series Chipset Family USB EHCI'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xf7233000, size 1024, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 0a[58] = EHCI Debug Port at offset 0xa0 in map 0x14
+    cap 13[98] = PCI Advanced Features: FLR TP
+
+isab0@pci0:0:31:0:	class=0x060100 rev=0x05 hdr=0x00 vendor=0x8086 device=0x8c52 subvendor=0x15d9 subdevice=0x0801
+    vendor     = 'Intel Corporation'
+    device     = 'C222 Series Chipset Family Server Essential SKU LPC Controller'
+    class      = bridge
+    subclass   = PCI-ISA
+    cap 09[e0] = vendor (length 12) Intel cap 1 version 0
+		 features: AMT, 4 PCI-e x1 slots
+
+ahci0@pci0:0:31:2:	class=0x010601 rev=0x05 hdr=0x00 vendor=0x8086 device=0x8c02 subvendor=0x15d9 subdevice=0x0801
+    vendor     = 'Intel Corporation'
+    device     = '8 Series/C220 Series Chipset Family 6-port SATA Controller 1 [AHCI mode]'
+    class      = mass storage
+    subclass   = SATA
+    bar   [10] = type I/O Port, range 32, base 0xf070, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0xf060, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0xf050, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0xf040, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0xf000, size 32, enabled
+    bar   [24] = type Memory, range 32, base 0xf7232000, size 2048, enabled
+    cap 05[80] = MSI supports 1 message enabled with 1 message
+    cap 01[70] = powerspec 3  supports D0 D3  current D0
+    cap 12[a8] = SATA Index-Data Pair
+
+ichsmb0@pci0:0:31:3:	class=0x0c0500 rev=0x05 hdr=0x00 vendor=0x8086 device=0x8c22 subvendor=0x15d9 subdevice=0x0801
+    vendor     = 'Intel Corporation'
+    device     = '8 Series/C220 Series Chipset Family SMBus Controller'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [10] = type Memory, range 64, base 0xf7231000, size 256, enabled
+    bar   [20] = type I/O Port, range 32, base 0x580, size 32, enabled
+
+pchtherm0@pci0:0:31:6:	class=0x118000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x8c24 subvendor=0x15d9 subdevice=0x0801
+    vendor     = 'Intel Corporation'
+    device     = '8 Series Chipset Family Thermal Management Controller'
+    class      = dasp
+    bar   [10] = type Memory, range 64, base 0xf7230000, size 4096, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 05[80] = MSI supports 1 message 
+
+pcib2@pci0:1:0:0:	class=0x060400 rev=0x03 hdr=0x01 vendor=0x1a03 device=0x1150 subvendor=0x15d9 subdevice=0x0801
+    vendor     = 'ASPEED Technology, Inc.'
+    device     = 'AST1150 PCI-to-PCI Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 05[50] = MSI supports 1 message, 64 bit 
+    cap 01[78] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 10[80] = PCI-Express 1 PCI bridge max data 128(128) NS
+                 max read 512
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    cap 0d[a4] = PCI Bridge subvendor=0x15d9 subdevice=0x0801
+    ecap 0002[100] = VC 1 max VC0
+    ecap 0001[800] = AER 1 0 fatal 0 non-fatal 1 corrected
+
+vgapci0@pci0:2:0:0:	class=0x030000 rev=0x30 hdr=0x00 vendor=0x1a03 device=0x2000 subvendor=0x15d9 subdevice=0x0801
+    vendor     = 'ASPEED Technology, Inc.'
+    device     = 'ASPEED Graphics Family'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 32, base 0xf6000000, size 16777216, enabled
+    bar   [14] = type Memory, range 32, base 0xf7000000, size 131072, enabled
+    bar   [18] = type I/O Port, range 32, base 0xe000, size 128, enabled
+    cap 01[40] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 05[50] = MSI supports 4 messages, 64 bit 
+
+igb0@pci0:3:0:0:	class=0x020000 rev=0x03 hdr=0x00 vendor=0x8086 device=0x1533 subvendor=0x15d9 subdevice=0x1533
+    vendor     = 'Intel Corporation'
+    device     = 'I210 Gigabit Network Connection'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xf7100000, size 524288, enabled
+    bar   [18] = type I/O Port, range 32, base 0xd000, size 32, enabled
+    bar   [1c] = type Memory, range 32, base 0xf7180000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 11[70] = MSI-X supports 5 messages, enabled
+                 Table in map 0x1c[0x0], PBA in map 0x1c[0x2000]
+    cap 10[a0] = PCI-Express 2 endpoint max data 128(512) FLR NS
+                 max read 512
+                 link x1(x1) speed 2.5(2.5) ASPM L1(L0s/L1)
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 0cc47affff012a02
+    ecap 0017[1a0] = TPH Requester 1

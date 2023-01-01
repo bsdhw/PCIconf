@@ -1,0 +1,191 @@
+hostb0@pci0:0:0:0:	class=0x060000 rev=0x09 hdr=0x00 vendor=0x8086 device=0x0108 subvendor=0x1028 subdevice=0x04dd
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E3-1200 Processor Family DRAM Controller'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 09[e0] = vendor (length 12) Intel cap 0 version 1
+
+pcib1@pci0:0:1:0:	class=0x060400 rev=0x09 hdr=0x01 vendor=0x8086 device=0x0101 subvendor=0x1028 subdevice=0x04dd
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[88] = PCI Bridge subvendor=0x1028 subdevice=0x04dd
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 05[90] = MSI supports 1 message 
+    cap 10[a0] = PCI-Express 2 root port max data 128(128)
+                 max read 128
+                 link x8(x16) speed 5.0(5.0) ASPM disabled(L0s/L1)
+                 slot 1 power limit 75000 mW
+    ecap 0002[100] = VC 1 max VC0
+    ecap 0005[140] = Root Complex Link Declaration 1
+
+ehci0@pci0:0:26:0:	class=0x0c0320 rev=0x04 hdr=0x00 vendor=0x8086 device=0x1c2d subvendor=0x1028 subdevice=0x04dd
+    vendor     = 'Intel Corporation'
+    device     = '6 Series/C200 Series Chipset Family USB Enhanced Host Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xc7906000, size 1024, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 0a[58] = EHCI Debug Port at offset 0xa0 in map 0x14
+    cap 13[98] = PCI Advanced Features: FLR TP
+
+pcib2@pci0:0:28:0:	class=0x060400 rev=0xb4 hdr=0x01 vendor=0x8086 device=0x1c10 subvendor=0x1028 subdevice=0x04dd
+    vendor     = 'Intel Corporation'
+    device     = '6 Series/C200 Series Chipset Family PCI Express Root Port 1'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128)
+                 max read 128
+                 link x4(x4) speed 2.5(5.0) ASPM disabled(L0s/L1)
+                 slot 0 power limit 250 mW
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge subvendor=0x1028 subdevice=0x04dd
+    cap 01[a0] = powerspec 2  supports D0 D3  current D0
+
+ehci1@pci0:0:29:0:	class=0x0c0320 rev=0x04 hdr=0x00 vendor=0x8086 device=0x1c26 subvendor=0x1028 subdevice=0x04dd
+    vendor     = 'Intel Corporation'
+    device     = '6 Series/C200 Series Chipset Family USB Enhanced Host Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xc7905000, size 1024, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 0a[58] = EHCI Debug Port at offset 0xa0 in map 0x14
+    cap 13[98] = PCI Advanced Features: FLR TP
+
+pcib3@pci0:0:30:0:	class=0x060401 rev=0xa4 hdr=0x01 vendor=0x8086 device=0x244e subvendor=0x1028 subdevice=0x04dd
+    vendor     = 'Intel Corporation'
+    device     = '82801 PCI Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[50] = PCI Bridge subvendor=0x1028 subdevice=0x04dd
+
+isab0@pci0:0:31:0:	class=0x060100 rev=0x04 hdr=0x00 vendor=0x8086 device=0x1c52 subvendor=0x1028 subdevice=0x04dd
+    vendor     = 'Intel Corporation'
+    device     = 'C202 Chipset LPC Controller'
+    class      = bridge
+    subclass   = PCI-ISA
+    cap 09[e0] = vendor (length 12) Intel cap 1 version 0
+		 features: AMT, 4 PCI-e x1 slots
+
+ahci0@pci0:0:31:2:	class=0x010601 rev=0x04 hdr=0x00 vendor=0x8086 device=0x1c02 subvendor=0x1028 subdevice=0x04dd
+    vendor     = 'Intel Corporation'
+    device     = '6 Series/C200 Series Chipset Family 6 port Desktop SATA AHCI Controller'
+    class      = mass storage
+    subclass   = SATA
+    bar   [10] = type I/O Port, range 32, base 0x3048, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0x3054, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0x3040, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0x3050, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0x3020, size 32, enabled
+    bar   [24] = type Memory, range 32, base 0xc7904000, size 2048, enabled
+    cap 05[80] = MSI supports 1 message enabled with 1 message
+    cap 01[70] = powerspec 3  supports D0 D3  current D0
+    cap 12[a8] = SATA Index-Data Pair
+    cap 13[b0] = PCI Advanced Features: FLR TP
+
+ichsmb0@pci0:0:31:3:	class=0x0c0500 rev=0x04 hdr=0x00 vendor=0x8086 device=0x1c22 subvendor=0x1028 subdevice=0x04dd
+    vendor     = 'Intel Corporation'
+    device     = '6 Series/C200 Series Chipset Family SMBus Controller'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [10] = type Memory, range 64, base 0xc7902000, size 256, enabled
+    bar   [20] = type I/O Port, range 32, base 0x3000, size 32, enabled
+
+sfxge0@pci0:1:0:0:	class=0x020000 rev=0x00 hdr=0x00 vendor=0x1924 device=0x0803 subvendor=0x1924 subdevice=0x6207
+    vendor     = 'Solarflare Communications'
+    device     = 'SFC9020 10G Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0x2100, size 256, enabled
+    bar   [18] = type Memory, range 64, base 0xc5000000, size 16777216, enabled
+    bar   [20] = type Memory, range 64, base 0xc6010000, size 65536, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 10[70] = PCI-Express 2 endpoint max data 128(256) FLR RO
+                 max read 512
+                 link x8(x8) speed 5.0(5.0) ASPM disabled(L0s/L1)
+    cap 11[b0] = MSI-X supports 32 messages, enabled
+                 Table in map 0x20[0x0], PBA in map 0x20[0x8000]
+    cap 03[d0] = VPD
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 000f53ffff206018
+    ecap 000e[150] = ARI 1
+    ecap 0010[160] = SR-IOV 1 IOV disabled, Memory Space disabled, ARI disabled
+                     0 VFs configured out of 0 supported
+                     First VF RID Offset 0x0002, VF RID Stride 0x0002
+                     VF Device ID 0x1803
+                     Page Sizes: 4096 (enabled), 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 16777216, 33554432, 67108864, 134217728
+
+sfxge1@pci0:1:0:1:	class=0x020000 rev=0x00 hdr=0x00 vendor=0x1924 device=0x0803 subvendor=0x1924 subdevice=0x6207
+    vendor     = 'Solarflare Communications'
+    device     = 'SFC9020 10G Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0x2000, size 256, enabled
+    bar   [18] = type Memory, range 64, base 0xc4000000, size 16777216, enabled
+    bar   [20] = type Memory, range 64, base 0xc6000000, size 65536, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 10[70] = PCI-Express 2 endpoint max data 128(256) FLR RO
+                 max read 512
+                 link x8(x8) speed 5.0(5.0) ASPM disabled(L0s/L1)
+    cap 11[b0] = MSI-X supports 32 messages, enabled
+                 Table in map 0x20[0x0], PBA in map 0x20[0x8000]
+    cap 03[d0] = VPD
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 000f53ffff206018
+    ecap 000e[150] = ARI 1
+    ecap 0010[160] = SR-IOV 1 IOV disabled, Memory Space disabled, ARI disabled
+                     0 VFs configured out of 0 supported
+                     First VF RID Offset 0x0002, VF RID Stride 0x0002
+                     VF Device ID 0x1803
+                     Page Sizes: 4096 (enabled), 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 16777216, 33554432, 67108864, 134217728
+
+bce0@pci0:2:0:0:	class=0x020000 rev=0x20 hdr=0x00 vendor=0x14e4 device=0x163b subvendor=0x1028 subdevice=0x04dd
+    vendor     = 'Broadcom Inc. and subsidiaries'
+    device     = 'NetXtreme II BCM5716 Gigabit Ethernet'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 64, base 0xc0000000, size 33554432, enabled
+    cap 01[48] = powerspec 3  supports D0 D3  current D0
+    cap 03[50] = VPD
+    cap 05[58] = MSI supports 16 messages, 64 bit enabled with 1 message
+    cap 11[a0] = MSI-X supports 9 messages
+                 Table in map 0x10[0xc000], PBA in map 0x10[0xe000]
+    cap 10[ac] = PCI-Express 2 endpoint max data 128(512) RO NS
+                 max read 512
+                 link x4(x4) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    ecap 0003[100] = Serial 1 d4ae52fffec763af
+    ecap 0001[110] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0004[150] = Power Budgeting 1
+    ecap 0002[160] = VC 1 max VC0
+
+bce1@pci0:2:0:1:	class=0x020000 rev=0x20 hdr=0x00 vendor=0x14e4 device=0x163b subvendor=0x1028 subdevice=0x04dd
+    vendor     = 'Broadcom Inc. and subsidiaries'
+    device     = 'NetXtreme II BCM5716 Gigabit Ethernet'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 64, base 0xc2000000, size 33554432, enabled
+    cap 01[48] = powerspec 3  supports D0 D3  current D0
+    cap 03[50] = VPD
+    cap 05[58] = MSI supports 16 messages, 64 bit enabled with 1 message
+    cap 11[a0] = MSI-X supports 9 messages
+                 Table in map 0x10[0xc000], PBA in map 0x10[0xe000]
+    cap 10[ac] = PCI-Express 2 endpoint max data 128(512) RO NS
+                 max read 512
+                 link x4(x4) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    ecap 0003[100] = Serial 1 d4ae52fffec763b0
+    ecap 0001[110] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0004[150] = Power Budgeting 1
+    ecap 0002[160] = VC 1 max VC0
+
+vgapci0@pci0:3:3:0:	class=0x030000 rev=0x0a hdr=0x00 vendor=0x102b device=0x0532 subvendor=0x1028 subdevice=0x04dd
+    vendor     = 'Matrox Electronics Systems Ltd.'
+    device     = 'MGA G200eW WPCM450'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Prefetchable Memory, range 32, base 0xc6800000, size 8388608, enabled
+    bar   [14] = type Memory, range 32, base 0xc7800000, size 16384, enabled
+    bar   [18] = type Memory, range 32, base 0xc7000000, size 8388608, enabled
+    cap 01[dc] = powerspec 1  supports D0 D3  current D0

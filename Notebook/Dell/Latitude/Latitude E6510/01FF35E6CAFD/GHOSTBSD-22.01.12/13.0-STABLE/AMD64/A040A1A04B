@@ -1,0 +1,297 @@
+hostb0@pci0:0:0:0:	class=0x060000 rev=0x02 hdr=0x00 vendor=0x8086 device=0x0044 subvendor=0x1028 subdevice=0x040b
+    vendor     = 'Intel Corporation'
+    device     = 'Core Processor DRAM Controller'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 09[e0] = vendor (length 12) Intel cap 0 version 1
+
+pcib1@pci0:0:1:0:	class=0x060400 rev=0x02 hdr=0x01 vendor=0x8086 device=0x0045 subvendor=0x1028 subdevice=0x040b
+    vendor     = 'Intel Corporation'
+    device     = 'Core Processor PCI Express x16 Root Port'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[88] = PCI Bridge subvendor=0x1028 subdevice=0x040b
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 05[90] = MSI supports 1 message 
+    cap 10[a0] = PCI-Express 2 root port max data 128(128)
+                 max read 128
+                 link x16(x16) speed 2.5(2.5) ASPM L1(L0s/L1)
+                 slot 17 power limit 75000 mW
+    ecap 0002[100] = VC 1 max VC0
+
+none0@pci0:0:22:0:	class=0x078000 rev=0x06 hdr=0x00 vendor=0x8086 device=0x3b64 subvendor=0x1028 subdevice=0x040b
+    vendor     = 'Intel Corporation'
+    device     = '5 Series/3400 Series Chipset HECI Controller'
+    class      = simple comms
+    bar   [10] = type Memory, range 64, base 0xe96b0000, size 16, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 05[8c] = MSI supports 1 message, 64 bit 
+
+uart2@pci0:0:22:3:	class=0x070002 rev=0x06 hdr=0x00 vendor=0x8086 device=0x3b67 subvendor=0x1028 subdevice=0x040b
+    vendor     = 'Intel Corporation'
+    device     = '5 Series/3400 Series Chipset KT Controller'
+    class      = simple comms
+    subclass   = UART
+    bar   [10] = type I/O Port, range 32, base 0x80a0, size 8, enabled
+    bar   [14] = type Memory, range 32, base 0xe9690000, size 4096, enabled
+    cap 01[c8] = powerspec 3  supports D0 D3  current D0
+    cap 05[d0] = MSI supports 1 message, 64 bit enabled with 1 message
+
+em0@pci0:0:25:0:	class=0x020000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x10ea subvendor=0x1028 subdevice=0x040b
+    vendor     = 'Intel Corporation'
+    device     = '82577LM Gigabit Network Connection'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xe9600000, size 131072, enabled
+    bar   [14] = type Memory, range 32, base 0xe9680000, size 4096, enabled
+    bar   [18] = type I/O Port, range 32, base 0x8040, size 32, enabled
+    cap 01[c8] = powerspec 2  supports D0 D3  current D0
+    cap 05[d0] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 13[e0] = PCI Advanced Features: FLR TP
+
+ehci0@pci0:0:26:0:	class=0x0c0320 rev=0x05 hdr=0x00 vendor=0x8086 device=0x3b3c subvendor=0x1028 subdevice=0x040b
+    vendor     = 'Intel Corporation'
+    device     = '5 Series/3400 Series Chipset USB2 Enhanced Host Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xe9670000, size 1024, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 0a[58] = EHCI Debug Port at offset 0xa0 in map 0x14
+    cap 13[98] = PCI Advanced Features: FLR TP
+
+hdac1@pci0:0:27:0:	class=0x040300 rev=0x05 hdr=0x00 vendor=0x8086 device=0x3b56 subvendor=0x1028 subdevice=0x040b
+    vendor     = 'Intel Corporation'
+    device     = '5 Series/3400 Series Chipset High Definition Audio'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 64, base 0xe9660000, size 16384, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 05[60] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 10[70] = PCI-Express 1 root endpoint max data 128(128) FLR NS
+                 max read 128
+    ecap 0002[100] = VC 1 max VC1
+    ecap 0005[130] = Root Complex Link Declaration 1
+
+pcib2@pci0:0:28:0:	class=0x060400 rev=0x05 hdr=0x01 vendor=0x8086 device=0x3b42 subvendor=0x1028 subdevice=0x040b
+    vendor     = 'Intel Corporation'
+    device     = '5 Series/3400 Series Chipset PCI Express Root Port 1'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128)
+                 max read 128
+                 link x0(x1) speed 0.0(2.5) ASPM disabled(L0s/L1)
+                 slot 0 power limit 100 mW HotPlug(empty) surprise
+    cap 05[80] = MSI supports 1 message enabled with 1 message
+    cap 0d[90] = PCI Bridge subvendor=0x1028 subdevice=0x040b
+    cap 01[a0] = powerspec 2  supports D0 D3  current D0
+
+pcib3@pci0:0:28:1:	class=0x060400 rev=0x05 hdr=0x01 vendor=0x8086 device=0x3b44 subvendor=0x1028 subdevice=0x040b
+    vendor     = 'Intel Corporation'
+    device     = '5 Series/3400 Series Chipset PCI Express Root Port 2'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128)
+                 max read 128
+                 link x1(x1) speed 2.5(2.5) ASPM L1(L0s/L1)
+                 slot 1 power limit 100 mW HotPlug(present) surprise
+    cap 05[80] = MSI supports 1 message enabled with 1 message
+    cap 0d[90] = PCI Bridge subvendor=0x1028 subdevice=0x040b
+    cap 01[a0] = powerspec 2  supports D0 D3  current D0
+
+pcib4@pci0:0:28:2:	class=0x060400 rev=0x05 hdr=0x01 vendor=0x8086 device=0x3b46 subvendor=0x1028 subdevice=0x040b
+    vendor     = 'Intel Corporation'
+    device     = '5 Series/3400 Series Chipset PCI Express Root Port 3'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128)
+                 max read 128
+                 link x1(x1) speed 2.5(2.5) ASPM L1(L0s/L1)
+                 slot 2 power limit 100 mW HotPlug(present) surprise
+    cap 05[80] = MSI supports 1 message enabled with 1 message
+    cap 0d[90] = PCI Bridge subvendor=0x1028 subdevice=0x040b
+    cap 01[a0] = powerspec 2  supports D0 D3  current D0
+
+pcib5@pci0:0:28:3:	class=0x060400 rev=0x05 hdr=0x01 vendor=0x8086 device=0x3b48 subvendor=0x1028 subdevice=0x040b
+    vendor     = 'Intel Corporation'
+    device     = '5 Series/3400 Series Chipset PCI Express Root Port 4'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128)
+                 max read 128
+                 link x0(x1) speed 0.0(2.5) ASPM disabled(L0s/L1)
+                 slot 3 power limit 100 mW HotPlug(empty) surprise
+    cap 05[80] = MSI supports 1 message enabled with 1 message
+    cap 0d[90] = PCI Bridge subvendor=0x1028 subdevice=0x040b
+    cap 01[a0] = powerspec 2  supports D0 D3  current D0
+
+ehci1@pci0:0:29:0:	class=0x0c0320 rev=0x05 hdr=0x00 vendor=0x8086 device=0x3b34 subvendor=0x1028 subdevice=0x040b
+    vendor     = 'Intel Corporation'
+    device     = '5 Series/3400 Series Chipset USB2 Enhanced Host Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xe9650000, size 1024, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 0a[58] = EHCI Debug Port at offset 0xa0 in map 0x14
+    cap 13[98] = PCI Advanced Features: FLR TP
+
+pcib6@pci0:0:30:0:	class=0x060401 rev=0xa5 hdr=0x01 vendor=0x8086 device=0x2448 subvendor=0x1028 subdevice=0x040b
+    vendor     = 'Intel Corporation'
+    device     = '82801 Mobile PCI Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[50] = PCI Bridge subvendor=0x1028 subdevice=0x040b
+
+isab0@pci0:0:31:0:	class=0x060100 rev=0x05 hdr=0x00 vendor=0x8086 device=0x3b07 subvendor=0x1028 subdevice=0x040b
+    vendor     = 'Intel Corporation'
+    device     = 'QM57 Chipset LPC Interface Controller'
+    class      = bridge
+    subclass   = PCI-ISA
+    cap 09[e0] = vendor (length 16) Intel cap 1 version 1
+
+ahci0@pci0:0:31:2:	class=0x010400 rev=0x05 hdr=0x00 vendor=0x8086 device=0x282a subvendor=0x1028 subdevice=0x040b
+    vendor     = 'Intel Corporation'
+    device     = '82801 Mobile SATA Controller [RAID mode]'
+    class      = mass storage
+    subclass   = RAID
+    bar   [10] = type I/O Port, range 32, base 0x8090, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0x8080, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0x8070, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0x8060, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0x8020, size 32, enabled
+    bar   [24] = type Memory, range 32, base 0xe9640000, size 2048, enabled
+    cap 05[80] = MSI supports 1 message enabled with 1 message
+    cap 01[70] = powerspec 3  supports D0 D3  current D0
+    cap 12[a8] = SATA Index-Data Pair
+    cap 13[b0] = PCI Advanced Features: FLR TP
+
+ichsmb0@pci0:0:31:3:	class=0x0c0500 rev=0x05 hdr=0x00 vendor=0x8086 device=0x3b30 subvendor=0x1028 subdevice=0x040b
+    vendor     = 'Intel Corporation'
+    device     = '5 Series/3400 Series Chipset SMBus Controller'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [10] = type Memory, range 64, base 0xe9630000, size 256, enabled
+    bar   [20] = type I/O Port, range 32, base 0x8000, size 32, enabled
+
+none1@pci0:0:31:6:	class=0x118000 rev=0x05 hdr=0x00 vendor=0x8086 device=0x3b32 subvendor=0x1028 subdevice=0x040b
+    vendor     = 'Intel Corporation'
+    device     = '5 Series/3400 Series Chipset Thermal Subsystem'
+    class      = dasp
+    bar   [10] = type Memory, range 64, base 0xe9620000, size 4096, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 05[80] = MSI supports 1 message 
+
+vgapci0@pci0:1:0:0:	class=0x030000 rev=0xa2 hdr=0x00 vendor=0x10de device=0x0a6c subvendor=0x1028 subdevice=0x040b
+    vendor     = 'NVIDIA Corporation'
+    device     = 'GT218M [NVS 3100M]'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 32, base 0xe2000000, size 16777216, enabled
+    bar   [14] = type Prefetchable Memory, range 64, base 0xd0000000, size 268435456, enabled
+    bar   [1c] = type Prefetchable Memory, range 64, base 0xe0000000, size 33554432, enabled
+    bar   [24] = type I/O Port, range 32, base 0x7000, size 128, enabled
+    cap 01[60] = powerspec 3  supports D0 D3  current D0
+    cap 05[68] = MSI supports 1 message, 64 bit 
+    cap 10[78] = PCI-Express 2 endpoint max data 128(128) RO NS
+                 max read 512
+                 link x16(x16) speed 2.5(5.0) ASPM L1(L0s/L1) ClockPM disabled
+    cap 09[b4] = vendor (length 20)
+    ecap 0002[100] = VC 1 max VC0
+    ecap 0004[128] = Power Budgeting 1
+    ecap 000b[600] = Vendor [1] ID 0001 Rev 1 Length 36
+
+hdac0@pci0:1:0:1:	class=0x040300 rev=0xa1 hdr=0x00 vendor=0x10de device=0x0be3 subvendor=0x1028 subdevice=0x040b
+    vendor     = 'NVIDIA Corporation'
+    device     = 'High Definition Audio Controller'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 32, base 0xe3080000, size 16384, enabled
+    cap 01[60] = powerspec 3  supports D0 D3  current D0
+    cap 05[68] = MSI supports 1 message, 64 bit 
+    cap 10[78] = PCI-Express 2 endpoint max data 128(128) RO NS
+                 max read 512
+                 link x16(x16) speed 2.5(5.0) ASPM L0s/L1(L0s/L1) ClockPM disabled
+
+iwn0@pci0:3:0:0:	class=0x028000 rev=0x35 hdr=0x00 vendor=0x8086 device=0x422c subvendor=0x8086 subdevice=0x1321
+    vendor     = 'Intel Corporation'
+    device     = 'Centrino Advanced-N 6200'
+    class      = network
+    bar   [10] = type Memory, range 64, base 0xe6e00000, size 8192, enabled
+    cap 01[c8] = powerspec 3  supports D0 D3  current D0
+    cap 05[d0] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 10[e0] = PCI-Express 1 endpoint max data 128(128) FLR RO NS
+                 max read 128
+                 link x1(x1) speed 2.5(2.5) ASPM L1(L0s/L1) ClockPM enabled
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 002710ffff1022f8
+
+cbb0@pci0:4:0:0:	class=0x060700 rev=0x02 hdr=0x02 vendor=0x1180 device=0xe476 subvendor=0x1028 subdevice=0x040b
+    vendor     = 'Ricoh Co Ltd'
+    device     = 'CardBus bridge'
+    class      = bridge
+    subclass   = PCI-CardBus
+    bar   [10] = type Memory, range 32, base 0xe5940000, size 4096, enabled
+    cap 05[a0] = MSI supports 1 message, 64 bit 
+    cap 01[98] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 10[80] = PCI-Express 1 PCI bridge max data 128(128) RO NS
+                 max read 512
+                 link x1(x1) speed 2.5(2.5) ASPM L1(L0s/L1) ClockPM enabled
+
+sdhci_pci0@pci0:4:0:1:	class=0x080501 rev=0x03 hdr=0x00 vendor=0x1180 device=0xe822 subvendor=0x1028 subdevice=0x040b
+    vendor     = 'Ricoh Co Ltd'
+    device     = 'MMC/SD Host Controller'
+    class      = base peripheral
+    subclass   = SD host controller
+    bar   [10] = type Memory, range 32, base 0xe5930000, size 256, enabled
+    cap 05[50] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 01[78] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 10[80] = PCI-Express 1 endpoint max data 128(128) RO NS
+                 max read 512
+                 link x1(x1) speed 2.5(2.5) ASPM L1(L0s/L1) ClockPM enabled
+
+none2@pci0:4:0:4:	class=0x0c0010 rev=0x03 hdr=0x00 vendor=0x1180 device=0xe832 subvendor=0x1028 subdevice=0x040b
+    vendor     = 'Ricoh Co Ltd'
+    device     = 'R5C832 PCIe IEEE 1394 Controller'
+    class      = serial bus
+    subclass   = FireWire
+    bar   [10] = type Memory, range 32, base 0xe5900000, size 2048, enabled
+    cap 05[50] = MSI supports 1 message, 64 bit 
+    cap 01[78] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 10[80] = PCI-Express 1 endpoint max data 128(128) RO NS
+                 max read 512
+                 link x1(x1) speed 2.5(2.5) ASPM L1(L0s/L1) ClockPM enabled
+
+hostb1@pci0:63:0:0:	class=0x060000 rev=0x02 hdr=0x00 vendor=0x8086 device=0x2c62 subvendor=0x8086 subdevice=0x8086
+    vendor     = 'Intel Corporation'
+    device     = 'Core Processor QuickPath Architecture Generic Non-core Registers'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb2@pci0:63:0:1:	class=0x060000 rev=0x02 hdr=0x00 vendor=0x8086 device=0x2d01 subvendor=0x8086 subdevice=0x8086
+    vendor     = 'Intel Corporation'
+    device     = 'Core Processor QuickPath Architecture System Address Decoder'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb3@pci0:63:2:0:	class=0x060000 rev=0x02 hdr=0x00 vendor=0x8086 device=0x2d10 subvendor=0x8086 subdevice=0x8086
+    vendor     = 'Intel Corporation'
+    device     = 'Core Processor QPI Link 0'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb4@pci0:63:2:1:	class=0x060000 rev=0x02 hdr=0x00 vendor=0x8086 device=0x2d11 subvendor=0x8086 subdevice=0x8086
+    vendor     = 'Intel Corporation'
+    device     = '1st Generation Core i3/5/7 Processor QPI Physical 0'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb5@pci0:63:2:2:	class=0x060000 rev=0x02 hdr=0x00 vendor=0x8086 device=0x2d12 subvendor=0x8086 subdevice=0x8086
+    vendor     = 'Intel Corporation'
+    device     = '1st Generation Core i3/5/7 Processor Reserved'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb6@pci0:63:2:3:	class=0x060000 rev=0x02 hdr=0x00 vendor=0x8086 device=0x2d13 subvendor=0x8086 subdevice=0x8086
+    vendor     = 'Intel Corporation'
+    device     = '1st Generation Core i3/5/7 Processor Reserved'
+    class      = bridge
+    subclass   = HOST-PCI

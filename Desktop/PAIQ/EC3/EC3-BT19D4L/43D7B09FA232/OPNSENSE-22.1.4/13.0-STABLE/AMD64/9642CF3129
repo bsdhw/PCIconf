@@ -1,0 +1,205 @@
+hostb0@pci0:0:0:0:	class=0x060000 rev=0x11 hdr=0x00 vendor=0x8086 device=0x0f00 subvendor=0x8086 subdevice=0x0f31
+    vendor     = 'Intel Corporation'
+    device     = 'Atom Processor Z36xxx/Z37xxx Series SoC Transaction Register'
+    class      = bridge
+    subclass   = HOST-PCI
+
+vgapci0@pci0:0:2:0:	class=0x030000 rev=0x11 hdr=0x00 vendor=0x8086 device=0x0f31 subvendor=0x8086 subdevice=0x0f31
+    vendor     = 'Intel Corporation'
+    device     = 'Atom Processor Z36xxx/Z37xxx Series Graphics & Display'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 32, base 0xd0000000, size 4194304, enabled
+    bar   [18] = type Prefetchable Memory, range 32, base 0xc0000000, size 268435456, enabled
+    bar   [20] = type I/O Port, range 32, base 0xf080, size 8, enabled
+    cap 01[d0] = powerspec 2  supports D0 D3  current D0
+    cap 05[90] = MSI supports 1 message 
+    cap 09[b0] = vendor (length 7) Intel cap 0 version 1
+
+ahci0@pci0:0:19:0:	class=0x010601 rev=0x11 hdr=0x00 vendor=0x8086 device=0x0f23 subvendor=0x8086 subdevice=0x0f23
+    vendor     = 'Intel Corporation'
+    device     = 'Atom Processor E3800 Series SATA AHCI Controller'
+    class      = mass storage
+    subclass   = SATA
+    bar   [10] = type I/O Port, range 32, base 0xf070, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0xf060, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0xf050, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0xf040, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0xf020, size 32, enabled
+    bar   [24] = type Memory, range 32, base 0xd0a08000, size 2048, enabled
+    cap 05[80] = MSI supports 1 message enabled with 1 message
+    cap 01[70] = powerspec 3  supports D0 D3  current D0
+    cap 12[a8] = SATA Index-Data Pair
+
+none0@pci0:0:26:0:	class=0x108000 rev=0x11 hdr=0x00 vendor=0x8086 device=0x0f18 subvendor=0x8086 subdevice=0x0f18
+    vendor     = 'Intel Corporation'
+    device     = 'Atom Processor Z36xxx/Z37xxx Series Trusted Execution Engine'
+    class      = encrypt/decrypt
+    bar   [10] = type Memory, range 32, base 0xd0500000, size 1048576, enabled
+    bar   [14] = type Memory, range 32, base 0xd0400000, size 1048576, enabled
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 05[a0] = MSI supports 1 message 
+
+hdac0@pci0:0:27:0:	class=0x040300 rev=0x11 hdr=0x00 vendor=0x8086 device=0x0f04 subvendor=0x8086 subdevice=0x0f04
+    vendor     = 'Intel Corporation'
+    device     = 'Atom Processor Z36xxx/Z37xxx Series High Definition Audio Controller'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 64, base 0xd0a00000, size 16384, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 05[60] = MSI supports 1 message, 64 bit enabled with 1 message
+
+pcib1@pci0:0:28:0:	class=0x060400 rev=0x11 hdr=0x01 vendor=0x8086 device=0x0f48 subvendor=0x8086 subdevice=0x0f48
+    vendor     = 'Intel Corporation'
+    device     = 'Atom Processor E3800 Series PCI Express Root Port 1'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128)
+                 max read 128
+                 link x1(x1) speed 2.5(5.0) ASPM disabled(L0s/L1)
+                 slot 0 power limit 100 mW HotPlug(present) surprise
+    cap 05[80] = MSI supports 1 message enabled with 1 message
+    cap 0d[90] = PCI Bridge subvendor=0x8086 subdevice=0x0f48
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+
+pcib2@pci0:0:28:1:	class=0x060400 rev=0x11 hdr=0x01 vendor=0x8086 device=0x0f4a subvendor=0x8086 subdevice=0x0f4a
+    vendor     = 'Intel Corporation'
+    device     = 'Atom Processor E3800 Series PCI Express Root Port 2'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128)
+                 max read 128
+                 link x1(x1) speed 2.5(5.0) ASPM L1(L0s/L1)
+                 slot 1 power limit 100 mW HotPlug(present) surprise
+    cap 05[80] = MSI supports 1 message enabled with 1 message
+    cap 0d[90] = PCI Bridge subvendor=0x8086 subdevice=0x0f4a
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+
+pcib3@pci0:0:28:2:	class=0x060400 rev=0x11 hdr=0x01 vendor=0x8086 device=0x0f4c subvendor=0x8086 subdevice=0x0f4c
+    vendor     = 'Intel Corporation'
+    device     = 'Atom Processor E3800 Series PCI Express Root Port 3'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128)
+                 max read 128
+                 link x1(x1) speed 2.5(5.0) ASPM L1(L0s/L1)
+                 slot 2 power limit 100 mW HotPlug(present) surprise
+    cap 05[80] = MSI supports 1 message enabled with 1 message
+    cap 0d[90] = PCI Bridge subvendor=0x8086 subdevice=0x0f4c
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+
+pcib4@pci0:0:28:3:	class=0x060400 rev=0x11 hdr=0x01 vendor=0x8086 device=0x0f4e subvendor=0x8086 subdevice=0x0f4e
+    vendor     = 'Intel Corporation'
+    device     = 'Atom Processor E3800 Series PCI Express Root Port 4'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128)
+                 max read 128
+                 link x1(x1) speed 2.5(5.0) ASPM L1(L0s/L1)
+                 slot 3 power limit 100 mW HotPlug(present) surprise
+    cap 05[80] = MSI supports 1 message enabled with 1 message
+    cap 0d[90] = PCI Bridge subvendor=0x8086 subdevice=0x0f4e
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+
+ehci0@pci0:0:29:0:	class=0x0c0320 rev=0x11 hdr=0x00 vendor=0x8086 device=0x0f34 subvendor=0x8086 subdevice=0x0f34
+    vendor     = 'Intel Corporation'
+    device     = 'Atom Processor Z36xxx/Z37xxx Series USB EHCI'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xd0a05000, size 1024, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 0a[58] = EHCI Debug Port at offset 0xa0 in map 0x14
+    cap 13[98] = PCI Advanced Features: FLR TP
+
+isab0@pci0:0:31:0:	class=0x060100 rev=0x11 hdr=0x00 vendor=0x8086 device=0x0f1c subvendor=0x8086 subdevice=0x0f1c
+    vendor     = 'Intel Corporation'
+    device     = 'Atom Processor Z36xxx/Z37xxx Series Power Control Unit'
+    class      = bridge
+    subclass   = PCI-ISA
+    cap 09[e0] = vendor (length 12) Intel cap 1 version 0
+		 features: 4 PCI-e x1 slots
+
+ichsmb0@pci0:0:31:3:	class=0x0c0500 rev=0x11 hdr=0x00 vendor=0x8086 device=0x0f12 subvendor=0x8086 subdevice=0x0f12
+    vendor     = 'Intel Corporation'
+    device     = 'Atom Processor E3800/CE2700 Series SMBus Controller'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [10] = type Memory, range 32, base 0xd0a04000, size 32, enabled
+    bar   [20] = type I/O Port, range 32, base 0xf000, size 32, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+
+igb0@pci0:1:0:0:	class=0x020000 rev=0x03 hdr=0x00 vendor=0x8086 device=0x1539 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'I211 Gigabit Network Connection'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xd0900000, size 131072, enabled
+    bar   [18] = type I/O Port, range 32, base 0xe000, size 32, enabled
+    bar   [1c] = type Memory, range 32, base 0xd0920000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 11[70] = MSI-X supports 5 messages, enabled
+                 Table in map 0x1c[0x0], PBA in map 0x1c[0x2000]
+    cap 10[a0] = PCI-Express 2 endpoint max data 128(512) FLR NS
+                 max read 512
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 2 corrected
+    ecap 0003[140] = Serial 1 009027ffffe31780
+    ecap 0017[1a0] = TPH Requester 1
+
+igb1@pci0:2:0:0:	class=0x020000 rev=0x03 hdr=0x00 vendor=0x8086 device=0x1539 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'I211 Gigabit Network Connection'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xd0800000, size 131072, enabled
+    bar   [18] = type I/O Port, range 32, base 0xd000, size 32, enabled
+    bar   [1c] = type Memory, range 32, base 0xd0820000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 11[70] = MSI-X supports 5 messages, enabled
+                 Table in map 0x1c[0x0], PBA in map 0x1c[0x2000]
+    cap 10[a0] = PCI-Express 2 endpoint max data 128(512) FLR NS
+                 max read 512
+                 link x1(x1) speed 2.5(2.5) ASPM L1(L0s/L1)
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 2 corrected
+    ecap 0003[140] = Serial 1 009027ffffe31781
+    ecap 0017[1a0] = TPH Requester 1
+
+igb2@pci0:3:0:0:	class=0x020000 rev=0x03 hdr=0x00 vendor=0x8086 device=0x1539 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'I211 Gigabit Network Connection'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xd0700000, size 131072, enabled
+    bar   [18] = type I/O Port, range 32, base 0xc000, size 32, enabled
+    bar   [1c] = type Memory, range 32, base 0xd0720000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 11[70] = MSI-X supports 5 messages, enabled
+                 Table in map 0x1c[0x0], PBA in map 0x1c[0x2000]
+    cap 10[a0] = PCI-Express 2 endpoint max data 128(512) FLR NS
+                 max read 512
+                 link x1(x1) speed 2.5(2.5) ASPM L1(L0s/L1)
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 2 corrected
+    ecap 0003[140] = Serial 1 009027ffffe31782
+    ecap 0017[1a0] = TPH Requester 1
+
+igb3@pci0:4:0:0:	class=0x020000 rev=0x03 hdr=0x00 vendor=0x8086 device=0x1539 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'I211 Gigabit Network Connection'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xd0600000, size 131072, enabled
+    bar   [18] = type I/O Port, range 32, base 0xb000, size 32, enabled
+    bar   [1c] = type Memory, range 32, base 0xd0620000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 11[70] = MSI-X supports 5 messages, enabled
+                 Table in map 0x1c[0x0], PBA in map 0x1c[0x2000]
+    cap 10[a0] = PCI-Express 2 endpoint max data 128(512) FLR NS
+                 max read 512
+                 link x1(x1) speed 2.5(2.5) ASPM L1(L0s/L1)
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 2 corrected
+    ecap 0003[140] = Serial 1 009027ffffe31783
+    ecap 0017[1a0] = TPH Requester 1

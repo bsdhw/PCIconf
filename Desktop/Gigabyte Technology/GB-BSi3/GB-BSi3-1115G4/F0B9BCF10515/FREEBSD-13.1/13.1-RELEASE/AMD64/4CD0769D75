@@ -1,0 +1,357 @@
+hostb0@pci0:0:0:0:	class=0x060000 rev=0x01 hdr=0x00 vendor=0x8086 device=0x9a04 subvendor=0x1458 subdevice=0x1000
+    vendor     = 'Intel Corporation'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 09[e0] = vendor (length 20) Intel cap 0 version 1
+
+vgapci0@pci0:0:2:0:	class=0x030000 rev=0x01 hdr=0x00 vendor=0x8086 device=0x9a78 subvendor=0x1458 subdevice=0x1000
+    vendor     = 'Intel Corporation'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 64, base 0x607e000000, size 16777216, enabled
+    bar   [18] = type Prefetchable Memory, range 64, base 0x4000000000, size 268435456, enabled
+    bar   [20] = type I/O Port, range 32, base 0x3000, size 64, enabled
+    cap 09[40] = vendor (length 12) Intel cap 0 version 1
+    cap 10[70] = PCI-Express 2 root endpoint max data 128(128) FLR
+                 max read 128
+    cap 05[ac] = MSI supports 1 message, vector masks 
+    cap 01[d0] = powerspec 2  supports D0 D3  current D0
+    ecap 001b[100] = Process Address Space ID 1
+    ecap 000f[200] = ATS 1
+    ecap 0013[300] = Page Page Request 1
+    ecap 0010[320] = SR-IOV 1 IOV disabled, Memory Space disabled, ARI disabled
+                     0 VFs configured out of 7 supported
+                     First VF RID Offset 0x0001, VF RID Stride 0x0001
+                     VF Device ID 0x9a78
+                     Page Sizes: 4096 (enabled), 8192, 65536, 262144, 1048576, 4194304
+
+none0@pci0:0:4:0:	class=0x118000 rev=0x01 hdr=0x00 vendor=0x8086 device=0x9a03 subvendor=0x1458 subdevice=0x1000
+    vendor     = 'Intel Corporation'
+    device     = 'TigerLake-LP Dynamic Tuning Processor Participant'
+    class      = dasp
+    bar   [10] = type Memory, range 64, base 0x607f280000, size 131072, enabled
+    cap 05[90] = MSI supports 1 message 
+    cap 01[d0] = powerspec 3  supports D0 D3  current D3
+    cap 09[e0] = vendor (length 12) Intel cap 0 version 1
+
+pcib1@pci0:0:6:0:	class=0x060400 rev=0x01 hdr=0x01 vendor=0x8086 device=0x9a09 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = '11th Gen Core Processor PCIe Controller'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 256(256) ARI disabled
+                 max read 128
+                 link x4(x4) speed 8.0(16.0)
+                 slot 0 power limit 75000 mW
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge subvendor=0x0000 subdevice=0x0000
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000d[220] = ACS 1
+    ecap 001f[150] = Precision Time Measurement 1
+    ecap 0002[280] = VC 1 max VC0
+    ecap 001d[a00] = Downstream Port Containment 1
+    ecap 0019[a30] = PCIe Sec 1 lane errors 0
+    ecap 0025[a90] = Data Link Feature 1
+    ecap 0026[a9c] = Physical Layer 16.0 GT/s 1
+    ecap 0027[edc] = Lane Margining at Receiver 1
+
+pcib2@pci0:0:7:0:	class=0x060400 rev=0x01 hdr=0x01 vendor=0x8086 device=0x9a23 subvendor=0x1000 subdevice=0x1000
+    vendor     = 'Intel Corporation'
+    device     = 'Tiger Lake-LP Thunderbolt 4 PCI Express Root Port'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128) ARI disabled
+                 max read 128
+                 link x0(x4) speed 0.0(2.5) ASPM L1(L1)
+                 slot 0 power limit 0 mW HotPlug(empty) surprise
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge subvendor=0x1000 subdevice=0x1000
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+    ecap 0000[100] = unknown 0
+    ecap 000d[220] = ACS 1
+    ecap 001d[a00] = Downstream Port Containment 1
+
+pcib3@pci0:0:7:1:	class=0x060400 rev=0x01 hdr=0x01 vendor=0x8086 device=0x9a25 subvendor=0x1000 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Tiger Lake-LP Thunderbolt 4 PCI Express Root Port'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128) ARI disabled
+                 max read 128
+                 link x0(x4) speed 0.0(2.5) ASPM L1(L1)
+                 slot 0 power limit 0 mW HotPlug(empty) surprise
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge subvendor=0x1000 subdevice=0x0000
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+    ecap 0000[100] = unknown 0
+    ecap 000d[220] = ACS 1
+    ecap 001d[a00] = Downstream Port Containment 1
+
+pcib4@pci0:0:7:2:	class=0x060400 rev=0x01 hdr=0x01 vendor=0x8086 device=0x9a27 subvendor=0x1000 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Tiger Lake-LP Thunderbolt 4 PCI Express Root Port'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128) ARI disabled
+                 max read 128
+                 link x0(x4) speed 0.0(2.5) ASPM L1(L1)
+                 slot 0 power limit 0 mW HotPlug(empty) surprise
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge subvendor=0x1000 subdevice=0x0000
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+    ecap 0000[100] = unknown 0
+    ecap 000d[220] = ACS 1
+    ecap 001d[a00] = Downstream Port Containment 1
+
+pcib5@pci0:0:7:3:	class=0x060400 rev=0x01 hdr=0x01 vendor=0x8086 device=0x9a29 subvendor=0x1000 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Tiger Lake-LP Thunderbolt 4 PCI Express Root Port'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128) ARI disabled
+                 max read 128
+                 link x0(x4) speed 0.0(2.5) ASPM L1(L1)
+                 slot 0 power limit 0 mW HotPlug(empty) surprise
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge subvendor=0x1000 subdevice=0x0000
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+    ecap 0000[100] = unknown 0
+    ecap 000d[220] = ACS 1
+    ecap 001d[a00] = Downstream Port Containment 1
+
+none1@pci0:0:10:0:	class=0x118000 rev=0x01 hdr=0x00 vendor=0x8086 device=0x9a0d subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Tigerlake Telemetry Aggregator Driver'
+    class      = dasp
+    bar   [10] = type Memory, range 64, base 0x607f2c0000, size 32768, enabled
+    cap 10[70] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+    cap 01[d0] = powerspec 3  supports D0 D3  current D3
+    ecap 0023[100] = Designated Vendor-Specific 1
+    ecap 0023[110] = Designated Vendor-Specific 1
+    ecap 0023[120] = Designated Vendor-Specific 1
+
+xhci0@pci0:0:13:0:	class=0x0c0330 rev=0x01 hdr=0x00 vendor=0x8086 device=0x9a13 subvendor=0x1458 subdevice=0x1000
+    vendor     = 'Intel Corporation'
+    device     = 'Tiger Lake-LP Thunderbolt 4 USB Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 64, base 0x607f2b0000, size 65536, enabled
+    cap 01[70] = powerspec 2  supports D0 D3  current D0
+    cap 05[80] = MSI supports 8 messages, 64 bit enabled with 1 message
+    cap 09[90] = vendor (length 20) Intel cap 15 version 0
+    cap 09[b0] = vendor (length 0) Intel cap 0 version 1
+
+none2@pci0:0:13:2:	class=0x0c0340 rev=0x01 hdr=0x00 vendor=0x8086 device=0x9a1b subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Tiger Lake-LP Thunderbolt 4 NHI'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 64, base 0x607f240000, size 262144, enabled
+    bar   [18] = type Memory, range 64, base 0x607f2d8000, size 4096, enabled
+    cap 01[80] = powerspec 3  supports D0 D1 D2 D3  current D3
+    cap 05[88] = MSI supports 1 message, 64 bit 
+    cap 11[a0] = MSI-X supports 16 messages
+                 Table in map 0x18[0x0], PBA in map 0x18[0xfa0]
+
+none3@pci0:0:13:3:	class=0x0c0340 rev=0x01 hdr=0x00 vendor=0x8086 device=0x9a1d subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Tiger Lake-LP Thunderbolt 4 NHI'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 64, base 0x607f200000, size 262144, enabled
+    bar   [18] = type Memory, range 64, base 0x607f2d7000, size 4096, enabled
+    cap 01[80] = powerspec 3  supports D0 D1 D2 D3  current D3
+    cap 05[88] = MSI supports 1 message, 64 bit 
+    cap 11[a0] = MSI-X supports 16 messages
+                 Table in map 0x18[0x0], PBA in map 0x18[0xfa0]
+
+pcib6@pci0:0:14:0:	class=0x010400 rev=0x00 hdr=0x00 vendor=0x8086 device=0x9a0b subvendor=0x1458 subdevice=0x1000
+    vendor     = 'Intel Corporation'
+    device     = 'Volume Management Device NVMe RAID Controller'
+    class      = mass storage
+    subclass   = RAID
+    bar   [10] = type Memory, range 64, base 0x607c000000, size 33554432, enabled
+    bar   [18] = type Memory, range 32, base 0x50000000, size 33554432, enabled
+    bar   [20] = type Memory, range 64, base 0x607f100000, size 1048576, enabled
+    cap 11[80] = MSI-X supports 19 messages, enabled
+                 Table in map 0x20[0x0], PBA in map 0x20[0x1000]
+    cap 10[90] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+    cap 01[e0] = powerspec 3  supports D0 D3  current D0
+
+xhci1@pci0:0:20:0:	class=0x0c0330 rev=0x20 hdr=0x00 vendor=0x8086 device=0xa0ed subvendor=0x1458 subdevice=0x1000
+    vendor     = 'Intel Corporation'
+    device     = 'Tiger Lake-LP USB 3.2 Gen 2x1 xHCI Host Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 64, base 0x607f2a0000, size 65536, enabled
+    cap 01[70] = powerspec 2  supports D0 D3  current D0
+    cap 05[80] = MSI supports 8 messages, 64 bit enabled with 1 message
+    cap 09[90] = vendor (length 20) Intel cap 15 version 0
+    cap 09[b0] = vendor (length 0) Intel cap 0 version 1
+
+none4@pci0:0:20:2:	class=0x050000 rev=0x20 hdr=0x00 vendor=0x8086 device=0xa0ef subvendor=0x1458 subdevice=0x1000
+    vendor     = 'Intel Corporation'
+    device     = 'Tiger Lake-LP Shared SRAM'
+    class      = memory
+    subclass   = RAM
+    bar   [10] = type Memory, range 64, base 0x607f2d0000, size 16384, enabled
+    bar   [18] = type Memory, range 64, base 0x607f2d6000, size 4096, enabled
+    cap 01[80] = powerspec 3  supports D0 D3  current D3
+
+iwlwifi0@pci0:0:20:3:	class=0x028000 rev=0x20 hdr=0x00 vendor=0x8086 device=0xa0f0 subvendor=0x8086 subdevice=0x0074
+    vendor     = 'Intel Corporation'
+    device     = 'Wi-Fi 6 AX201'
+    class      = network
+    bar   [10] = type Memory, range 64, base 0x607f2cc000, size 16384, enabled
+    cap 01[c8] = powerspec 3  supports D0 D3  current D0
+    cap 05[d0] = MSI supports 1 message, 64 bit 
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128) FLR RO NS
+                 max read 128
+    cap 11[80] = MSI-X supports 16 messages, enabled
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x3000]
+    ecap 0018[100] = LTR 1
+    ecap 000b[164] = Vendor [1] ID 0010 Rev 0 Length 20
+
+none5@pci0:0:22:0:	class=0x078000 rev=0x20 hdr=0x00 vendor=0x8086 device=0xa0e0 subvendor=0x1458 subdevice=0x1000
+    vendor     = 'Intel Corporation'
+    device     = 'Tiger Lake-LP Management Engine Interface'
+    class      = simple comms
+    bar   [10] = type Memory, range 64, base 0x607f2d5000, size 4096, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D3
+    cap 05[8c] = MSI supports 1 message, 64 bit 
+    cap 09[a4] = vendor (length 20) Intel cap 15 version 0
+
+pcib7@pci0:0:28:0:	class=0x060400 rev=0x20 hdr=0x01 vendor=0x8086 device=0xa0bf subvendor=0x1458 subdevice=0x1000
+    vendor     = 'Intel Corporation'
+    device     = 'Tiger Lake-LP PCI Express Root Port'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 256(256) ARI disabled
+                 max read 128
+                 link x1(x1) speed 5.0(8.0)
+                 slot 11 power limit 100 mW
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge subvendor=0x1458 subdevice=0x1000
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000d[220] = ACS 1
+    ecap 001f[150] = Precision Time Measurement 1
+    ecap 0019[a30] = PCIe Sec 1 lane errors 0
+    ecap 001d[a00] = Downstream Port Containment 1
+
+pcib8@pci0:0:29:0:	class=0x060400 rev=0x20 hdr=0x01 vendor=0x8086 device=0xa0b0 subvendor=0x1458 subdevice=0x1000
+    vendor     = 'Intel Corporation'
+    device     = 'Tiger Lake-LP PCI Express Root Port'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 256(256) ARI disabled
+                 max read 128
+                 link x4(x4) speed 8.0(8.0)
+                 slot 12 power limit 250 mW
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge subvendor=0x1458 subdevice=0x1000
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000d[220] = ACS 1
+    ecap 001f[150] = Precision Time Measurement 1
+    ecap 0019[a30] = PCIe Sec 1 lane errors 0
+    ecap 001d[a00] = Downstream Port Containment 1
+
+isab0@pci0:0:31:0:	class=0x060100 rev=0x20 hdr=0x00 vendor=0x8086 device=0xa082 subvendor=0x1458 subdevice=0x1000
+    vendor     = 'Intel Corporation'
+    device     = 'Tiger Lake-LP LPC Controller'
+    class      = bridge
+    subclass   = PCI-ISA
+
+hdac0@pci0:0:31:3:	class=0x040300 rev=0x20 hdr=0x00 vendor=0x8086 device=0xa0c8 subvendor=0x1458 subdevice=0xfad9
+    vendor     = 'Intel Corporation'
+    device     = 'Tiger Lake-LP Smart Sound Technology Audio Controller'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 64, base 0x607f2c8000, size 16384, enabled
+    bar   [20] = type Memory, range 64, base 0x607f000000, size 1048576, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 09[80] = vendor (length 20) Intel cap 15 version 0
+    cap 05[60] = MSI supports 1 message, 64 bit enabled with 1 message
+
+ichsmb0@pci0:0:31:4:	class=0x0c0500 rev=0x20 hdr=0x00 vendor=0x8086 device=0xa0a3 subvendor=0x1458 subdevice=0x1000
+    vendor     = 'Intel Corporation'
+    device     = 'Tiger Lake-LP SMBus Controller'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [10] = type Memory, range 64, base 0x607f2d4000, size 256, enabled
+    bar   [20] = type I/O Port, range 32, base 0xefa0, size 32, enabled
+
+none6@pci0:0:31:5:	class=0x0c8000 rev=0x20 hdr=0x00 vendor=0x8086 device=0xa0a4 subvendor=0x1458 subdevice=0x1000
+    vendor     = 'Intel Corporation'
+    device     = 'Tiger Lake-LP SPI Controller'
+    class      = serial bus
+    bar   [10] = type Memory, range 32, base 0xfe010000, size 4096, enabled
+
+em0@pci0:0:31:6:	class=0x020000 rev=0x20 hdr=0x00 vendor=0x8086 device=0x15fc subvendor=0x1458 subdevice=0x1000
+    vendor     = 'Intel Corporation'
+    device     = 'Ethernet Connection (13) I219-V'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0x88700000, size 131072, enabled
+    cap 01[c8] = powerspec 3  supports D0 D3  current D0
+    cap 05[d0] = MSI supports 1 message, 64 bit enabled with 1 message
+
+nvme0@pci0:1:0:0:	class=0x010802 rev=0x01 hdr=0x00 vendor=0xc0a9 device=0x540a subvendor=0xc0a9 subdevice=0x540a
+    vendor     = 'Micron/Crucial Technology'
+    device     = 'P2 NVMe PCIe SSD'
+    class      = mass storage
+    subclass   = NVM
+    bar   [10] = type Memory, range 64, base 0x88600000, size 16384, enabled
+    cap 10[80] = PCI-Express 2 endpoint max data 256(256) FLR RO NS
+                 max read 512
+                 link x4(x4) speed 8.0(8.0) ASPM disabled(L1)
+    cap 11[d0] = MSI-X supports 9 messages, enabled
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x3000]
+    cap 05[e0] = MSI supports 8 messages, 64 bit, vector masks 
+    cap 01[f8] = powerspec 3  supports D0 D3  current D0
+    ecap 0018[100] = LTR 1
+    ecap 001e[110] = L1 PM Substates 1
+    ecap 0001[200] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[300] = PCIe Sec 1 lane errors 0
+
+igc0@pci0:174:0:0:	class=0x020000 rev=0x01 hdr=0x00 vendor=0x8086 device=0x15f3 subvendor=0x1458 subdevice=0x1000
+    vendor     = 'Intel Corporation'
+    device     = 'Ethernet Controller I225-V'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0x88300000, size 1048576, enabled
+    bar   [1c] = type Memory, range 32, base 0x88400000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 11[70] = MSI-X supports 5 messages, enabled
+                 Table in map 0x1c[0x0], PBA in map 0x1c[0x2000]
+    cap 10[a0] = PCI-Express 2 endpoint max data 256(512) FLR RO NS
+                 max read 512
+                 link x1(x1) speed 5.0(5.0) ASPM disabled(L1)
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0003[140] = Serial 1 d85ed3ffff064cb6
+    ecap 0018[1c0] = LTR 1
+    ecap 001f[1f0] = Precision Time Measurement 1
+    ecap 001e[1e0] = L1 PM Substates 1
+
+nvme1@pci0:175:0:0:	class=0x010802 rev=0x01 hdr=0x00 vendor=0xc0a9 device=0x540a subvendor=0xc0a9 subdevice=0x540a
+    vendor     = 'Micron/Crucial Technology'
+    device     = 'P2 NVMe PCIe SSD'
+    class      = mass storage
+    subclass   = NVM
+    bar   [10] = type Memory, range 64, base 0x88500000, size 16384, enabled
+    cap 10[80] = PCI-Express 2 endpoint max data 256(256) FLR RO NS
+                 max read 512
+                 link x4(x4) speed 8.0(8.0) ASPM disabled(L1)
+    cap 11[d0] = MSI-X supports 9 messages, enabled
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x3000]
+    cap 05[e0] = MSI supports 8 messages, 64 bit, vector masks 
+    cap 01[f8] = powerspec 3  supports D0 D3  current D0
+    ecap 0018[100] = LTR 1
+    ecap 001e[110] = L1 PM Substates 1
+    ecap 0001[200] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0019[300] = PCIe Sec 1 lane errors 0

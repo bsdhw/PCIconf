@@ -1,0 +1,808 @@
+hostb0@pci0:0:0:0:	class=0x060000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3c00 subvendor=0x8086 subdevice=0x3c00
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 DMI2'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 10[90] = PCI-Express 2 root port max data 128(128)
+                 max read 128
+                 link x0(x4) speed 0.0(2.5) ASPM disabled(L0s/L1)
+    cap 01[e0] = powerspec 3  supports D0 D3  current D0
+    ecap 000b[100] = Vendor [1] ID 0002 Rev 0 Length 12
+    ecap 000b[144] = Vendor [1] ID 0004 Rev 1 Length 60
+    ecap 000b[1d0] = Vendor [1] ID 0003 Rev 1 Length 10
+    ecap 000b[280] = Vendor [1] ID 0004 Rev 2 Length 24
+
+pcib1@pci0:0:1:0:	class=0x060400 rev=0x07 hdr=0x01 vendor=0x8086 device=0x3c02 subvendor=0x8086 subdevice=0x3c02
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 IIO PCI Express Root Port 1a'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge subvendor=0x8086 subdevice=0x3c02
+    cap 05[60] = MSI supports 2 messages, vector masks 
+    cap 10[90] = PCI-Express 2 root port max data 256(256) ARI disabled
+                 max read 128
+                 link x4(x4) speed 8.0(8.0) ASPM disabled(L1)
+                 slot 255 power limit 25000 mW
+    cap 01[e0] = powerspec 3  supports D0 D3  current D0
+    ecap 000b[100] = Vendor [1] ID 0002 Rev 0 Length 12
+    ecap 000d[110] = ACS 1
+    ecap 0001[148] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000b[1d0] = Vendor [1] ID 0003 Rev 1 Length 10
+    ecap 0019[250] = PCIe Sec 1 lane errors 0
+    ecap 000b[280] = Vendor [1] ID 0004 Rev 2 Length 24
+
+pcib2@pci0:0:1:1:	class=0x060400 rev=0x07 hdr=0x01 vendor=0x8086 device=0x3c03 subvendor=0x8086 subdevice=0x3c03
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 IIO PCI Express Root Port 1b'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge subvendor=0x8086 subdevice=0x3c03
+    cap 05[60] = MSI supports 2 messages, vector masks 
+    cap 10[90] = PCI-Express 2 root port max data 256(256) ARI enabled
+                 max read 128
+                 link x4(x4) speed 8.0(8.0) ASPM disabled(L1)
+                 slot 1 power limit 25000 mW
+    cap 01[e0] = powerspec 3  supports D0 D3  current D0
+    ecap 000b[100] = Vendor [1] ID 0002 Rev 0 Length 12
+    ecap 000d[110] = ACS 1
+    ecap 0001[148] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000b[1d0] = Vendor [1] ID 0003 Rev 1 Length 10
+    ecap 0019[250] = PCIe Sec 1 lane errors 0
+    ecap 000b[280] = Vendor [1] ID 0004 Rev 2 Length 24
+
+pcib3@pci0:0:2:0:	class=0x060400 rev=0x07 hdr=0x01 vendor=0x8086 device=0x3c04 subvendor=0x8086 subdevice=0x3c04
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 IIO PCI Express Root Port 2a'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge subvendor=0x8086 subdevice=0x3c04
+    cap 05[60] = MSI supports 2 messages, vector masks 
+    cap 10[90] = PCI-Express 2 root port max data 256(256) ARI disabled
+                 max read 128
+                 link x16(x16) speed 2.5(8.0) ASPM disabled(L1)
+                 slot 1 power limit 75000 mW
+    cap 01[e0] = powerspec 3  supports D0 D3  current D0
+    ecap 000b[100] = Vendor [1] ID 0002 Rev 0 Length 12
+    ecap 000d[110] = ACS 1
+    ecap 0001[148] = AER 1 0 fatal 0 non-fatal 2 corrected
+    ecap 000b[1d0] = Vendor [1] ID 0003 Rev 1 Length 10
+    ecap 0019[250] = PCIe Sec 1 lane errors 0
+    ecap 000b[280] = Vendor [1] ID 0004 Rev 2 Length 24
+
+pcib4@pci0:0:3:0:	class=0x060400 rev=0x07 hdr=0x01 vendor=0x8086 device=0x3c08 subvendor=0x8086 subdevice=0x3c08
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 IIO PCI Express Root Port 3a in PCI Express Mode'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge subvendor=0x8086 subdevice=0x3c08
+    cap 05[60] = MSI supports 2 messages, vector masks 
+    cap 10[90] = PCI-Express 2 root port max data 256(256) ARI enabled
+                 max read 128
+                 link x8(x16) speed 5.0(8.0) ASPM disabled(L1)
+                 slot 0 power limit 75000 mW
+    cap 01[e0] = powerspec 3  supports D0 D3  current D0
+    ecap 000b[100] = Vendor [1] ID 0002 Rev 0 Length 12
+    ecap 000d[110] = ACS 1
+    ecap 0001[148] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000b[1d0] = Vendor [1] ID 0003 Rev 1 Length 10
+    ecap 0019[250] = PCIe Sec 1 lane errors 0
+    ecap 000b[280] = Vendor [1] ID 0004 Rev 2 Length 24
+
+ioat0@pci0:0:4:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3c20 subvendor=0x8086 subdevice=0x3c20
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 DMA Channel 0'
+    class      = base peripheral
+    bar   [10] = type Memory, range 64, base 0xfba20000, size 16384, enabled
+    cap 11[80] = MSI-X supports 1 message, enabled
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x3000]
+    cap 10[90] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+    cap 01[e0] = powerspec 3  supports D0 D3  current D0
+
+ioat1@pci0:0:4:1:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3c21 subvendor=0x8086 subdevice=0x3c21
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 DMA Channel 1'
+    class      = base peripheral
+    bar   [10] = type Memory, range 64, base 0xfba1c000, size 16384, enabled
+    cap 11[80] = MSI-X supports 1 message, enabled
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x3000]
+    cap 10[90] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+    cap 01[e0] = powerspec 3  supports D0 D3  current D0
+
+ioat2@pci0:0:4:2:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3c22 subvendor=0x8086 subdevice=0x3c22
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 DMA Channel 2'
+    class      = base peripheral
+    bar   [10] = type Memory, range 64, base 0xfba18000, size 16384, enabled
+    cap 11[80] = MSI-X supports 1 message, enabled
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x3000]
+    cap 10[90] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+    cap 01[e0] = powerspec 3  supports D0 D3  current D0
+
+ioat3@pci0:0:4:3:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3c23 subvendor=0x8086 subdevice=0x3c23
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 DMA Channel 3'
+    class      = base peripheral
+    bar   [10] = type Memory, range 64, base 0xfba14000, size 16384, enabled
+    cap 11[80] = MSI-X supports 1 message, enabled
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x3000]
+    cap 10[90] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+    cap 01[e0] = powerspec 3  supports D0 D3  current D0
+
+ioat4@pci0:0:4:4:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3c24 subvendor=0x8086 subdevice=0x3c24
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 DMA Channel 4'
+    class      = base peripheral
+    bar   [10] = type Memory, range 64, base 0xfba10000, size 16384, enabled
+    cap 11[80] = MSI-X supports 1 message, enabled
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x3000]
+    cap 10[90] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+    cap 01[e0] = powerspec 3  supports D0 D3  current D0
+
+ioat5@pci0:0:4:5:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3c25 subvendor=0x8086 subdevice=0x3c25
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 DMA Channel 5'
+    class      = base peripheral
+    bar   [10] = type Memory, range 64, base 0xfba0c000, size 16384, enabled
+    cap 11[80] = MSI-X supports 1 message, enabled
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x3000]
+    cap 10[90] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+    cap 01[e0] = powerspec 3  supports D0 D3  current D0
+
+ioat6@pci0:0:4:6:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3c26 subvendor=0x8086 subdevice=0x3c26
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 DMA Channel 6'
+    class      = base peripheral
+    bar   [10] = type Memory, range 64, base 0xfba08000, size 16384, enabled
+    cap 11[80] = MSI-X supports 1 message, enabled
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x3000]
+    cap 10[90] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+    cap 01[e0] = powerspec 3  supports D0 D3  current D0
+
+ioat7@pci0:0:4:7:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3c27 subvendor=0x8086 subdevice=0x3c27
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 DMA Channel 7'
+    class      = base peripheral
+    bar   [10] = type Memory, range 64, base 0xfba04000, size 16384, enabled
+    cap 11[80] = MSI-X supports 1 message, enabled
+                 Table in map 0x10[0x2000], PBA in map 0x10[0x3000]
+    cap 10[90] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+    cap 01[e0] = powerspec 3  supports D0 D3  current D0
+
+none0@pci0:0:5:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3c28 subvendor=0x8086 subdevice=0x3c28
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 Address Map, VTd_Misc, System Management'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128)
+                 max read 128
+
+none1@pci0:0:5:2:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3c2a subvendor=0x8086 subdevice=0x3c2a
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 Control Status and Global Errors'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 2 root endpoint max data 128(128) RO NS
+                 max read 128
+
+ioapic0@pci0:0:5:4:	class=0x080020 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3c2c subvendor=0x8086 subdevice=0x3c2c
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 I/O APIC'
+    class      = base peripheral
+    subclass   = interrupt controller
+    bar   [10] = type Memory, range 32, base 0xfba28000, size 4096, enabled
+    cap 01[6c] = powerspec 3  supports D0 D3  current D0
+
+pcib5@pci0:0:17:0:	class=0x060400 rev=0x06 hdr=0x01 vendor=0x8086 device=0x1d3e subvendor=0x8086 subdevice=0x1d3e
+    vendor     = 'Intel Corporation'
+    device     = 'C600/X79 series chipset PCI Express Virtual Root Port'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128) ARI disabled
+                 max read 128
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 0d[88] = PCI Bridge subvendor=0x8086 subdevice=0x1d3e
+    cap 05[90] = MSI supports 1 message 
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 000d[138] = ACS 1
+
+ehci0@pci0:0:26:0:	class=0x0c0320 rev=0x06 hdr=0x00 vendor=0x8086 device=0x1d2d subvendor=0x8086 subdevice=0x1d2d
+    vendor     = 'Intel Corporation'
+    device     = 'C600/X79 series chipset USB2 Enhanced Host Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfba27000, size 1024, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 0a[58] = EHCI Debug Port at offset 0xa0 in map 0x14
+    cap 13[98] = PCI Advanced Features: FLR TP
+
+hdac1@pci0:0:27:0:	class=0x040300 rev=0x06 hdr=0x00 vendor=0x8086 device=0x1d20 subvendor=0x8086 subdevice=0x1d20
+    vendor     = 'Intel Corporation'
+    device     = 'C600/X79 series chipset High Definition Audio Controller'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 64, base 0xfba00000, size 16384, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 05[60] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 10[70] = PCI-Express 1 root endpoint max data 128(128) FLR
+                 max read 128
+    ecap 0002[100] = VC 1 max VC1
+    ecap 0005[130] = Root Complex Link Declaration 1
+
+pcib6@pci0:0:28:0:	class=0x060400 rev=0xb6 hdr=0x01 vendor=0x8086 device=0x1d10 subvendor=0x8086 subdevice=0x1d10
+    vendor     = 'Intel Corporation'
+    device     = 'C600/X79 series chipset PCI Express Root Port 1'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128)
+                 max read 128
+                 link x0(x1) speed 0.0(5.0) ASPM disabled(L1)
+                 slot 0 power limit 100 mW
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge subvendor=0x8086 subdevice=0x1d10
+    cap 01[a0] = powerspec 2  supports D0 D3  current D0
+
+pcib7@pci0:0:28:4:	class=0x060400 rev=0xb6 hdr=0x01 vendor=0x8086 device=0x1d18 subvendor=0x8086 subdevice=0x1d18
+    vendor     = 'Intel Corporation'
+    device     = 'C600/X79 series chipset PCI Express Root Port 5'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128)
+                 max read 128
+                 link x1(x1) speed 2.5(5.0) ASPM disabled(L1)
+                 slot 0 power limit 100 mW
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge subvendor=0x8086 subdevice=0x1d18
+    cap 01[a0] = powerspec 2  supports D0 D3  current D0
+
+pcib8@pci0:0:28:5:	class=0x060400 rev=0xb6 hdr=0x01 vendor=0x8086 device=0x1d1a subvendor=0x8086 subdevice=0x1d1a
+    vendor     = 'Intel Corporation'
+    device     = 'C600/X79 series chipset PCI Express Root Port 6'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128)
+                 max read 128
+                 link x1(x1) speed 5.0(5.0) ASPM disabled(L1)
+                 slot 0 power limit 100 mW
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge subvendor=0x8086 subdevice=0x1d1a
+    cap 01[a0] = powerspec 2  supports D0 D3  current D0
+
+pcib9@pci0:0:28:7:	class=0x060400 rev=0xb6 hdr=0x01 vendor=0x8086 device=0x1d1e subvendor=0x8086 subdevice=0x1d1e
+    vendor     = 'Intel Corporation'
+    device     = 'C600/X79 series chipset PCI Express Root Port 8'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(128)
+                 max read 128
+                 link x1(x1) speed 5.0(5.0) ASPM disabled(L1)
+                 slot 0 power limit 100 mW
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge subvendor=0x8086 subdevice=0x1d1e
+    cap 01[a0] = powerspec 2  supports D0 D3  current D0
+
+ehci1@pci0:0:29:0:	class=0x0c0320 rev=0x06 hdr=0x00 vendor=0x8086 device=0x1d26 subvendor=0x8086 subdevice=0x1d26
+    vendor     = 'Intel Corporation'
+    device     = 'C600/X79 series chipset USB2 Enhanced Host Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfba26000, size 1024, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 0a[58] = EHCI Debug Port at offset 0xa0 in map 0x14
+    cap 13[98] = PCI Advanced Features: FLR TP
+
+pcib10@pci0:0:30:0:	class=0x060401 rev=0xa6 hdr=0x01 vendor=0x8086 device=0x244e subvendor=0x8086 subdevice=0x244e
+    vendor     = 'Intel Corporation'
+    device     = '82801 PCI Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[50] = PCI Bridge subvendor=0x8086 subdevice=0x244e
+
+isab0@pci0:0:31:0:	class=0x060100 rev=0x06 hdr=0x00 vendor=0x8086 device=0x1d41 subvendor=0x8086 subdevice=0x1d41
+    vendor     = 'Intel Corporation'
+    device     = 'C600/X79 series chipset LPC Controller'
+    class      = bridge
+    subclass   = PCI-ISA
+    cap 09[e0] = vendor (length 12) Intel cap 1 version 0
+		 features: AMT, 4 PCI-e x1 slots
+
+ahci0@pci0:0:31:2:	class=0x010601 rev=0x06 hdr=0x00 vendor=0x8086 device=0x1d02 subvendor=0x8086 subdevice=0x1d02
+    vendor     = 'Intel Corporation'
+    device     = 'C600/X79 series chipset 6-Port SATA AHCI Controller'
+    class      = mass storage
+    subclass   = SATA
+    bar   [10] = type I/O Port, range 32, base 0xf070, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0xf060, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0xf050, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0xf040, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0xf020, size 32, enabled
+    bar   [24] = type Memory, range 32, base 0xfba25000, size 2048, enabled
+    cap 05[80] = MSI supports 1 message enabled with 1 message
+    cap 01[70] = powerspec 3  supports D0 D3  current D0
+    cap 12[a8] = SATA Index-Data Pair
+    cap 13[b0] = PCI Advanced Features: FLR TP
+
+ichsmb0@pci0:0:31:3:	class=0x0c0500 rev=0x06 hdr=0x00 vendor=0x8086 device=0x1d22 subvendor=0x8086 subdevice=0x1d22
+    vendor     = 'Intel Corporation'
+    device     = 'C600/X79 series chipset SMBus Host Controller'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [10] = type Memory, range 64, base 0xfba24000, size 256, enabled
+    bar   [20] = type I/O Port, range 32, base 0xf000, size 32, enabled
+
+nvme0@pci0:1:0:0:	class=0x010802 rev=0x00 hdr=0x00 vendor=0x15b7 device=0x501a subvendor=0x15b7 subdevice=0x501a
+    vendor     = 'Sandisk Corp'
+    class      = mass storage
+    subclass   = NVM
+    bar   [10] = type Memory, range 64, base 0xfb900000, size 16384, enabled
+    bar   [20] = type Memory, range 64, base 0xfb904000, size 256, enabled
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 05[90] = MSI supports 32 messages, 64 bit 
+    cap 11[b0] = MSI-X supports 17 messages, enabled
+                 Table in map 0x10[0x2000], PBA in map 0x20[0x0]
+    cap 10[c0] = PCI-Express 2 endpoint max data 256(512) FLR NS
+                 max read 512
+                 link x4(x4) speed 8.0(8.0) ASPM disabled(L1) ClockPM disabled
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0003[150] = Serial 1 0000000000000000
+    ecap 0018[1b8] = LTR 1
+    ecap 0019[300] = PCIe Sec 1 lane errors 0
+    ecap 001e[900] = L1 PM Substates 1
+
+ix0@pci0:2:0:0:	class=0x020000 rev=0x01 hdr=0x00 vendor=0x8086 device=0x1563 subvendor=0x8086 subdevice=0x0001
+    vendor     = 'Intel Corporation'
+    device     = 'Ethernet Controller 10G X550T'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Prefetchable Memory, range 64, base 0xf2400000, size 2097152, enabled
+    bar   [20] = type Prefetchable Memory, range 64, base 0xf2604000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 11[70] = MSI-X supports 64 messages, enabled
+                 Table in map 0x20[0x0], PBA in map 0x20[0x2000]
+    cap 10[a0] = PCI-Express 2 endpoint max data 256(512) FLR
+                 max read 512
+                 link x4(x4) speed 8.0(8.0) ASPM disabled(L1)
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 9fc3b5ffff980000
+    ecap 000e[150] = ARI 1
+    ecap 0010[160] = SR-IOV 1 IOV disabled, Memory Space disabled, ARI disabled
+                     0 VFs configured out of 64 supported
+                     First VF RID Offset 0x0180, VF RID Stride 0x0002
+                     VF Device ID 0x1565
+                     Page Sizes: 4096 (enabled), 8192, 65536, 262144, 1048576, 4194304
+    ecap 0017[1a0] = TPH Requester 1
+    ecap 000d[1b0] = ACS 1
+    ecap 0018[1c0] = LTR 1
+    ecap 0019[1d0] = PCIe Sec 1 lane errors 0
+
+ix1@pci0:2:0:1:	class=0x020000 rev=0x01 hdr=0x00 vendor=0x8086 device=0x1563 subvendor=0x8086 subdevice=0x0001
+    vendor     = 'Intel Corporation'
+    device     = 'Ethernet Controller 10G X550T'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Prefetchable Memory, range 64, base 0xf2200000, size 2097152, enabled
+    bar   [20] = type Prefetchable Memory, range 64, base 0xf2600000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 11[70] = MSI-X supports 64 messages, enabled
+                 Table in map 0x20[0x0], PBA in map 0x20[0x2000]
+    cap 10[a0] = PCI-Express 2 endpoint max data 256(512) FLR
+                 max read 512
+                 link x4(x4) speed 8.0(8.0) ASPM disabled(L1)
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 9fc3b5ffff980000
+    ecap 000e[150] = ARI 1
+    ecap 0010[160] = SR-IOV 1 IOV disabled, Memory Space disabled, ARI disabled
+                     0 VFs configured out of 64 supported
+                     First VF RID Offset 0x0180, VF RID Stride 0x0002
+                     VF Device ID 0x1565
+                     Page Sizes: 4096 (enabled), 8192, 65536, 262144, 1048576, 4194304
+    ecap 0017[1a0] = TPH Requester 1
+    ecap 000d[1b0] = ACS 1
+
+vgapci0@pci0:3:0:0:	class=0x030000 rev=0xa1 hdr=0x00 vendor=0x10de device=0x1180 subvendor=0x3842 subdevice=0x3687
+    vendor     = 'NVIDIA Corporation'
+    device     = 'GK104 [GeForce GTX 680]'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 32, base 0xfa000000, size 16777216, enabled
+    bar   [14] = type Prefetchable Memory, range 64, base 0xe8000000, size 134217728, enabled
+    bar   [1c] = type Prefetchable Memory, range 64, base 0xf0000000, size 33554432, enabled
+    bar   [24] = type I/O Port, range 32, base 0xe000, size 128, enabled
+    cap 01[60] = powerspec 3  supports D0 D3  current D0
+    cap 05[68] = MSI supports 1 message, 64 bit 
+    cap 10[78] = PCI-Express 2 endpoint max data 256(256) NS
+                 max read 512
+                 link x16(x16) speed 2.5(8.0) ASPM disabled(L0s/L1) ClockPM disabled
+    cap 09[b4] = vendor (length 20)
+    ecap 0002[100] = VC 1 max VC0
+    ecap 0004[128] = Power Budgeting 1
+    ecap 000b[600] = Vendor [1] ID 0001 Rev 1 Length 36
+    ecap 0019[900] = PCIe Sec 1 lane errors 0
+
+hdac0@pci0:3:0:1:	class=0x040300 rev=0xa1 hdr=0x00 vendor=0x10de device=0x0e0a subvendor=0x3842 subdevice=0x3687
+    vendor     = 'NVIDIA Corporation'
+    device     = 'GK104 HDMI Audio Controller'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 32, base 0xfb080000, size 16384, enabled
+    cap 01[60] = powerspec 3  supports D0 D3  current D0
+    cap 05[68] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 10[78] = PCI-Express 2 endpoint max data 256(256) NS
+                 max read 512
+                 link x16(x16) speed 2.5(8.0) ASPM L0s/L1(L0s/L1) ClockPM disabled
+
+ix2@pci0:4:0:0:	class=0x020000 rev=0x01 hdr=0x00 vendor=0x8086 device=0x154d subvendor=0x8086 subdevice=0x7b11
+    vendor     = 'Intel Corporation'
+    device     = 'Ethernet 10G 2P X520 Adapter'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 64, base 0xfb200000, size 1048576, enabled
+    bar   [18] = type I/O Port, range 32, base 0xd020, size 32, enabled
+    bar   [20] = type Memory, range 64, base 0xfb404000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 11[70] = MSI-X supports 64 messages, enabled
+                 Table in map 0x20[0x0], PBA in map 0x20[0x2000]
+    cap 10[a0] = PCI-Express 2 endpoint max data 256(512) FLR NS
+                 max read 512
+                 link x8(x8) speed 5.0(5.0) ASPM disabled(L0s)
+    cap 03[e0] = VPD
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 000000ffff000000
+    ecap 000e[150] = ARI 1
+    ecap 0010[160] = SR-IOV 1 IOV disabled, Memory Space disabled, ARI disabled
+                     0 VFs configured out of 64 supported
+                     First VF RID Offset 0x0180, VF RID Stride 0x0002
+                     VF Device ID 0x10ed
+                     Page Sizes: 4096 (enabled), 8192, 65536, 262144, 1048576, 4194304
+
+ix3@pci0:4:0:1:	class=0x020000 rev=0x01 hdr=0x00 vendor=0x8086 device=0x154d subvendor=0x8086 subdevice=0x7b11
+    vendor     = 'Intel Corporation'
+    device     = 'Ethernet 10G 2P X520 Adapter'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 64, base 0xfb100000, size 1048576, enabled
+    bar   [18] = type I/O Port, range 32, base 0xd000, size 32, enabled
+    bar   [20] = type Memory, range 64, base 0xfb400000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 11[70] = MSI-X supports 64 messages, enabled
+                 Table in map 0x20[0x0], PBA in map 0x20[0x2000]
+    cap 10[a0] = PCI-Express 2 endpoint max data 256(512) FLR NS
+                 max read 512
+                 link x8(x8) speed 5.0(5.0) ASPM disabled(L0s)
+    cap 03[e0] = VPD
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 000000ffff000000
+    ecap 000e[150] = ARI 1
+    ecap 0010[160] = SR-IOV 1 IOV disabled, Memory Space disabled, ARI disabled
+                     0 VFs configured out of 64 supported
+                     First VF RID Offset 0x0180, VF RID Stride 0x0002
+                     VF Device ID 0x10ed
+                     Page Sizes: 4096 (enabled), 8192, 65536, 262144, 1048576, 4194304
+
+re0@pci0:7:0:0:	class=0x020000 rev=0x06 hdr=0x00 vendor=0x10ec device=0x8168 subvendor=0x10ec subdevice=0x0123
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    device     = 'RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0xc000, size 256, enabled
+    bar   [18] = type Memory, range 64, base 0xfb700000, size 4096, enabled
+    bar   [20] = type Prefetchable Memory, range 64, base 0xf2800000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit 
+    cap 10[70] = PCI-Express 2 endpoint MSI 1 max data 128(128)
+                 max read 512
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1) ClockPM disabled
+    cap 11[b0] = MSI-X supports 4 messages, enabled
+                 Table in map 0x20[0x0], PBA in map 0x20[0x800]
+    cap 03[d0] = VPD
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0002[140] = VC 1 max VC0
+    ecap 0003[160] = Serial 1 01000000684ce000
+
+xhci0@pci0:8:0:0:	class=0x0c0330 rev=0x01 hdr=0x00 vendor=0x1106 device=0x3483 subvendor=0x1106 subdevice=0x3483
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VL805/806 xHCI USB 3.0 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 64, base 0xfb600000, size 4096, enabled
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 05[90] = MSI supports 4 messages, 64 bit enabled with 1 message
+    cap 10[c4] = PCI-Express 2 endpoint max data 128(256) NS
+                 max read 512
+                 link x1(x1) speed 5.0(5.0) ClockPM disabled
+    ecap 0001[100] = AER 1 0 fatal 1 non-fatal 1 corrected
+
+xhci1@pci0:9:0:0:	class=0x0c0330 rev=0x01 hdr=0x00 vendor=0x1106 device=0x3483 subvendor=0x1106 subdevice=0x3483
+    vendor     = 'VIA Technologies, Inc.'
+    device     = 'VL805/806 xHCI USB 3.0 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 64, base 0xfb500000, size 4096, enabled
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 05[90] = MSI supports 4 messages, 64 bit enabled with 1 message
+    cap 10[c4] = PCI-Express 2 endpoint max data 128(256) NS
+                 max read 512
+                 link x1(x1) speed 5.0(5.0) ClockPM disabled
+    ecap 0001[100] = AER 1 0 fatal 1 non-fatal 1 corrected
+
+none2@pci0:255:8:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3c80 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 QPI Link 0'
+    class      = base peripheral
+
+none3@pci0:255:8:3:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3c83 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 QPI Link Reut 0'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+    ecap 000b[100] = Vendor [0] ID 0001 Rev 0 Length 240
+
+none4@pci0:255:8:4:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3c84 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 QPI Link Reut 0'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none5@pci0:255:9:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3c90 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 QPI Link 1'
+    class      = base peripheral
+
+none6@pci0:255:9:3:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3c93 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 QPI Link Reut 1'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+    ecap 000b[100] = Vendor [0] ID 0001 Rev 0 Length 240
+
+none7@pci0:255:9:4:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3c94 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 QPI Link Reut 1'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none8@pci0:255:10:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3cc0 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 Power Control Unit 0'
+    class      = base peripheral
+
+none9@pci0:255:10:1:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3cc1 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 Power Control Unit 1'
+    class      = base peripheral
+
+none10@pci0:255:10:2:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3cc2 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 Power Control Unit 2'
+    class      = base peripheral
+
+none11@pci0:255:10:3:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3cd0 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 Power Control Unit 3'
+    class      = base peripheral
+
+none12@pci0:255:11:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3ce0 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 Interrupt Control Registers'
+    class      = base peripheral
+
+none13@pci0:255:11:3:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3ce3 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 Semaphore and Scratchpad Configuration Registers'
+    class      = base peripheral
+
+none14@pci0:255:12:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3ce8 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 Unicast Register 0'
+    class      = base peripheral
+
+none15@pci0:255:12:1:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3ce8 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 Unicast Register 0'
+    class      = base peripheral
+
+none16@pci0:255:12:2:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3ce8 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 Unicast Register 0'
+    class      = base peripheral
+
+none17@pci0:255:12:3:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3ce8 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 Unicast Register 0'
+    class      = base peripheral
+
+none18@pci0:255:12:6:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3cf4 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 Integrated Memory Controller System Address Decoder 0'
+    class      = base peripheral
+
+none19@pci0:255:12:7:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3cf6 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 System Address Decoder'
+    class      = base peripheral
+
+none20@pci0:255:13:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3ce8 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 Unicast Register 0'
+    class      = base peripheral
+
+none21@pci0:255:13:1:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3ce8 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 Unicast Register 0'
+    class      = base peripheral
+
+none22@pci0:255:13:2:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3ce8 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 Unicast Register 0'
+    class      = base peripheral
+
+none23@pci0:255:13:3:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3ce8 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 Unicast Register 0'
+    class      = base peripheral
+
+none24@pci0:255:13:6:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3cf5 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 Integrated Memory Controller System Address Decoder 1'
+    class      = base peripheral
+
+none25@pci0:255:14:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3ca0 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 Processor Home Agent'
+    class      = base peripheral
+
+none26@pci0:255:14:1:	class=0x110100 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3c46 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 Processor Home Agent Performance Monitoring'
+    class      = dasp
+    subclass   = performance counters
+
+none27@pci0:255:15:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3ca8 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 Integrated Memory Controller Registers'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none28@pci0:255:15:1:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3c71 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 Integrated Memory Controller RAS Registers'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none29@pci0:255:15:2:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3caa subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 Integrated Memory Controller Target Address Decoder 0'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none30@pci0:255:15:3:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3cab subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 Integrated Memory Controller Target Address Decoder 1'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none31@pci0:255:15:4:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3cac subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 Integrated Memory Controller Target Address Decoder 2'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none32@pci0:255:15:5:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3cad subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 Integrated Memory Controller Target Address Decoder 3'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none33@pci0:255:15:6:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3cae subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 Integrated Memory Controller Target Address Decoder 4'
+    class      = base peripheral
+
+none34@pci0:255:16:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3cb0 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 Integrated Memory Controller Channel 0-3 Thermal Control 0'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none35@pci0:255:16:1:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3cb1 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 Integrated Memory Controller Channel 0-3 Thermal Control 1'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none36@pci0:255:16:2:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3cb2 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 Integrated Memory Controller ERROR Registers 0'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none37@pci0:255:16:3:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3cb3 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 Integrated Memory Controller ERROR Registers 1'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none38@pci0:255:16:4:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3cb4 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 Integrated Memory Controller Channel 0-3 Thermal Control 2'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none39@pci0:255:16:5:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3cb5 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 Integrated Memory Controller Channel 0-3 Thermal Control 3'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none40@pci0:255:16:6:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3cb6 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 Integrated Memory Controller ERROR Registers 2'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none41@pci0:255:16:7:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3cb7 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 Integrated Memory Controller ERROR Registers 3'
+    class      = base peripheral
+    cap 10[40] = PCI-Express 1 root endpoint max data 128(128)
+                 max read 128
+
+none42@pci0:255:17:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3cb8 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 DDRIO'
+    class      = base peripheral
+
+none43@pci0:255:19:0:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3ce4 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 R2PCIe'
+    class      = base peripheral
+
+none44@pci0:255:19:1:	class=0x110100 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3c43 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 Ring to PCI Express Performance Monitor'
+    class      = dasp
+    subclass   = performance counters
+
+none45@pci0:255:19:4:	class=0x110100 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3ce6 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 QuickPath Interconnect Agent Ring Registers'
+    class      = dasp
+    subclass   = performance counters
+
+none46@pci0:255:19:5:	class=0x110100 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3c44 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 Ring to QuickPath Interconnect Link 0 Performance Monitor'
+    class      = dasp
+    subclass   = performance counters
+
+none47@pci0:255:19:6:	class=0x088000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x3c45 subvendor=0x8086 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Xeon E5/Core i7 Ring to QuickPath Interconnect Link 1 Performance Monitor'
+    class      = base peripheral
