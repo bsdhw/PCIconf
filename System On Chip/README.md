@@ -26,7 +26,7 @@ Probe  - latest probe ID of this device.
 
 | ID        | Subsystem | MFG              | Name                                 | Count | Driver     | Probe |
 |-----------|-----------|------------------|--------------------------------------|-------|------------|-------|
-| 14e4:2711 |           | Broadcom         | BCM2711 PCIe Bridge                  | 21    | pcib       | [070CCC68F8](<System On Chip/Raspberry Pi Foundation/Raspberry/Raspberry Pi/42A3D19C0B45/FREEBSD-13.0/13.0-RELEASE/ARM64/070CCC68F8>) |
+| 14e4:2711 |           | Broadcom         | BCM2711 PCIe Bridge                  | 24    | pcib       | [62C09245A4](<System On Chip/Raspberry Pi Foundation/Raspberry/Raspberry Pi/69707B2A7C78/FREEBSD-13.1-P7/13.1-RELEASE-P6/ARM64/62C09245A4>) |
 | 1d87:0100 |           | Fuzhou Rockch... | RK3399 PCI Express Root Port         | 2     | pcib       | [D96ADE87E5](<System On Chip/Others/Others/Others/6D58F26372BC/FREEBSD-14.0-CURRENT/14.0-CURRENT/ARM64/D96ADE87E5>) |
 | 1022:1a00 | 1022:1a00 | AMD              |                                      | 1     | hostb      | [608812BDE1](<System On Chip/Raspberry Pi Foundation/Raspberry/Raspberry Pi/95B932C60F7C/HARDENEDBSD-14.0-CURRENT-HBSD/14.0-CURRENT-HBSD/ARM64/608812BDE1>) |
 | 1022:1a01 |           | AMD              |                                      | 1     | hostb      | [608812BDE1](<System On Chip/Raspberry Pi Foundation/Raspberry/Raspberry Pi/95B932C60F7C/HARDENEDBSD-14.0-CURRENT-HBSD/14.0-CURRENT-HBSD/ARM64/608812BDE1>) |
@@ -86,6 +86,6 @@ Probe  - latest probe ID of this device.
 
 | ID        | Subsystem | MFG              | Name                                 | Count | Driver     | Probe |
 |-----------|-----------|------------------|--------------------------------------|-------|------------|-------|
-| 1106:3483 | 1106:3483 | VIA Technologies | VL805/806 xHCI USB 3.0 Controller    | 21    | bcm_xhci   | [070CCC68F8](<System On Chip/Raspberry Pi Foundation/Raspberry/Raspberry Pi/42A3D19C0B45/FREEBSD-13.0/13.0-RELEASE/ARM64/070CCC68F8>) |
+| 1106:3483 | 1106:3483 | VIA Technologies | VL805/806 xHCI USB 3.0 Controller    | 24    | bcm_xhci   | [62C09245A4](<System On Chip/Raspberry Pi Foundation/Raspberry/Raspberry Pi/69707B2A7C78/FREEBSD-13.1-P7/13.1-RELEASE-P6/ARM64/62C09245A4>) |
 | 1b73:1009 |           | Fresco Logic     | FL1009 USB 3.0 Host Controller       | 1     | xhci       | [608812BDE1](<System On Chip/Raspberry Pi Foundation/Raspberry/Raspberry Pi/95B932C60F7C/HARDENEDBSD-14.0-CURRENT-HBSD/14.0-CURRENT-HBSD/ARM64/608812BDE1>) |
 
