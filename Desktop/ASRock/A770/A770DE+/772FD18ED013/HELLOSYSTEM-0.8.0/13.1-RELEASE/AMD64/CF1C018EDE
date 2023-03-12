@@ -1,0 +1,241 @@
+hostb0@pci0:0:0:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1002 device=0x5957 subvendor=0x1849 subdevice=0x5957
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'RX780/RX790 Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+    bar   [1c] = type Memory, range 64, base 0xe0000000, size 536870912, enabled
+    cap 08[c4] = HT slave
+    cap 08[40] = HT retry mode
+    cap 08[54] = HT unit ID clumping
+    cap 08[9c] = HT Gen3
+
+pcib1@pci0:0:2:0:	class=0x060400 rev=0x00 hdr=0x01 vendor=0x1002 device=0x5978 subvendor=0x1849 subdevice=0x5957
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'RX780/RD790 PCI to PCI bridge (external gfx0 port A)'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[58] = PCI-Express 2 root port max data 128(128) RO NS
+                 max read 128
+                 link x16(x16) speed 2.5(5.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 1 message 
+    cap 0d[b0] = PCI Bridge subvendor=0x1849 subdevice=0x5957
+    cap 08[b8] = HT MSI fixed address window enabled at 0xfee00000
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0002[110] = VC 1 max VC0
+
+pcib2@pci0:0:10:0:	class=0x060400 rev=0x00 hdr=0x01 vendor=0x1002 device=0x597f subvendor=0x1849 subdevice=0x5957
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'RD790 PCI to PCI bridge (PCI express gpp port F)'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 10[58] = PCI-Express 2 root port max data 128(128) RO NS
+                 max read 128
+                 link x1(x2) speed 2.5(5.0) ASPM disabled(L0s/L1)
+    cap 05[a0] = MSI supports 1 message 
+    cap 0d[b0] = PCI Bridge subvendor=0x1849 subdevice=0x5957
+    cap 08[b8] = HT MSI fixed address window enabled at 0xfee00000
+    ecap 000b[100] = Vendor [1] ID 0001 Rev 1 Length 16
+    ecap 0002[110] = VC 1 max VC0
+
+ahci0@pci0:0:17:0:	class=0x01018f rev=0x00 hdr=0x00 vendor=0x1002 device=0x4390 subvendor=0x1849 subdevice=0x4390
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'SB7x0/SB8x0/SB9x0 SATA Controller [IDE mode]'
+    class      = mass storage
+    subclass   = ATA
+    bar   [10] = type I/O Port, range 32, base 0xb000, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0xa000, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0x9000, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0x8000, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0x7000, size 16, enabled
+    bar   [24] = type Memory, range 32, base 0xfbeff800, size 1024, enabled
+    cap 01[60] = powerspec 2  supports D0 D3  current D0
+    cap 05[50] = MSI supports 4 messages, 64 bit enabled with 1 message
+    cap 12[70] = SATA Index-Data Pair
+
+ohci0@pci0:0:18:0:	class=0x0c0310 rev=0x00 hdr=0x00 vendor=0x1002 device=0x4397 subvendor=0x1849 subdevice=0x4397
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'SB7x0/SB8x0/SB9x0 USB OHCI0 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfbefe000, size 4096, enabled
+
+ohci1@pci0:0:18:1:	class=0x0c0310 rev=0x00 hdr=0x00 vendor=0x1002 device=0x4398 subvendor=0x1849 subdevice=0x4398
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'SB7x0 USB OHCI1 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfbefd000, size 4096, enabled
+
+ehci0@pci0:0:18:2:	class=0x0c0320 rev=0x00 hdr=0x00 vendor=0x1002 device=0x4396 subvendor=0x1849 subdevice=0x4396
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'SB7x0/SB8x0/SB9x0 USB EHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfbeff000, size 256, enabled
+    cap 01[c0] = powerspec 2  supports D0 D1 D2 D3  current D0
+    cap 0a[e4] = EHCI Debug Port at offset 0xe0 in map 0x14
+
+ohci2@pci0:0:19:0:	class=0x0c0310 rev=0x00 hdr=0x00 vendor=0x1002 device=0x4397 subvendor=0x1849 subdevice=0x4397
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'SB7x0/SB8x0/SB9x0 USB OHCI0 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfbefc000, size 4096, enabled
+
+ohci3@pci0:0:19:1:	class=0x0c0310 rev=0x00 hdr=0x00 vendor=0x1002 device=0x4398 subvendor=0x1849 subdevice=0x4398
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'SB7x0 USB OHCI1 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfbefb000, size 4096, enabled
+
+ehci1@pci0:0:19:2:	class=0x0c0320 rev=0x00 hdr=0x00 vendor=0x1002 device=0x4396 subvendor=0x1849 subdevice=0x4396
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'SB7x0/SB8x0/SB9x0 USB EHCI Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfbefa800, size 256, enabled
+    cap 01[c0] = powerspec 2  supports D0 D1 D2 D3  current D0
+    cap 0a[e4] = EHCI Debug Port at offset 0xe0 in map 0x14
+
+intsmb0@pci0:0:20:0:	class=0x0c0500 rev=0x3c hdr=0x00 vendor=0x1002 device=0x4385 subvendor=0x1849 subdevice=0x4385
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'SBx00 SMBus Controller'
+    class      = serial bus
+    subclass   = SMBus
+    cap 08[b0] = HT MSI fixed address window disabled at 0xfee00000
+
+atapci0@pci0:0:20:1:	class=0x01018a rev=0x00 hdr=0x00 vendor=0x1002 device=0x439c subvendor=0x1849 subdevice=0x439c
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'SB7x0/SB8x0/SB9x0 IDE Controller'
+    class      = mass storage
+    subclass   = ATA
+    bar   [20] = type I/O Port, range 32, base 0xff00, size 16, enabled
+    cap 05[70] = MSI supports 2 messages 
+
+isab0@pci0:0:20:3:	class=0x060100 rev=0x00 hdr=0x00 vendor=0x1002 device=0x439d subvendor=0x1849 subdevice=0x439d
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'SB7x0/SB8x0/SB9x0 LPC host controller'
+    class      = bridge
+    subclass   = PCI-ISA
+
+pcib3@pci0:0:20:4:	class=0x060401 rev=0x00 hdr=0x01 vendor=0x1002 device=0x4384 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'SBx00 PCI to PCI Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+
+ohci4@pci0:0:20:5:	class=0x0c0310 rev=0x00 hdr=0x00 vendor=0x1002 device=0x4399 subvendor=0x1849 subdevice=0x4399
+    vendor     = 'Advanced Micro Devices, Inc. [AMD/ATI]'
+    device     = 'SB7x0/SB8x0/SB9x0 USB OHCI2 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfbef9000, size 4096, enabled
+
+hostb1@pci0:0:24:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1200 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Family 10h Processor HyperTransport Configuration'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 08[80] = HT host
+
+hostb2@pci0:0:24:1:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1201 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Family 10h Processor Address Map'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb3@pci0:0:24:2:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1202 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Family 10h Processor DRAM Controller'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb4@pci0:0:24:3:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1203 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Family 10h Processor Miscellaneous Control'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 0f[f0] = unknown
+
+hostb5@pci0:0:24:4:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1204 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Family 10h Processor Link Control'
+    class      = bridge
+    subclass   = HOST-PCI
+
+vgapci0@pci0:2:0:0:	class=0x030000 rev=0xa1 hdr=0x00 vendor=0x10de device=0x0dd8 subvendor=0x10de subdevice=0x0914
+    vendor     = 'NVIDIA Corporation'
+    device     = 'GF106GL [Quadro 2000]'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 32, base 0xfc000000, size 33554432, enabled
+    bar   [14] = type Prefetchable Memory, range 64, base 0xd8000000, size 134217728, enabled
+    bar   [1c] = type Prefetchable Memory, range 64, base 0xd4000000, size 67108864, enabled
+    bar   [24] = type I/O Port, range 32, base 0xd800, size 128, enabled
+    cap 01[60] = powerspec 3  supports D0 D3  current D0
+    cap 05[68] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 10[78] = PCI-Express 2 endpoint max data 128(128) NS
+                 max read 512
+                 link x16(x16) speed 2.5(2.5) ASPM disabled(L0s/L1) ClockPM enabled
+    cap 09[b4] = vendor (length 20)
+    ecap 0002[100] = VC 1 max VC0
+    ecap 0004[128] = Power Budgeting 1
+    ecap 000b[600] = Vendor [1] ID 0001 Rev 1 Length 36
+
+hdac0@pci0:2:0:1:	class=0x040300 rev=0xa1 hdr=0x00 vendor=0x10de device=0x0be9 subvendor=0x10de subdevice=0x0914
+    vendor     = 'NVIDIA Corporation'
+    device     = 'GF106 High Definition Audio Controller'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 32, base 0xfea7c000, size 16384, enabled
+    cap 01[60] = powerspec 3  supports D0 D3  current D0
+    cap 05[68] = MSI supports 1 message, 64 bit 
+    cap 10[78] = PCI-Express 2 endpoint max data 128(128) NS
+                 max read 512
+                 link x16(x16) speed 2.5(2.5) ASPM L0s/L1(L0s/L1) ClockPM enabled
+
+re0@pci0:1:0:0:	class=0x020000 rev=0x03 hdr=0x00 vendor=0x10ec device=0x8168 subvendor=0x1849 subdevice=0x8168
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    device     = 'RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0xc800, size 256, enabled
+    bar   [18] = type Prefetchable Memory, range 64, base 0xd3fff000, size 4096, enabled
+    bar   [20] = type Prefetchable Memory, range 64, base 0xd3ff8000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit 
+    cap 10[70] = PCI-Express 2 endpoint MSI 1 max data 128(256)
+                 max read 4096
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1) ClockPM disabled
+    cap 11[ac] = MSI-X supports 4 messages, enabled
+                 Table in map 0x20[0x0], PBA in map 0x20[0x800]
+    cap 03[cc] = VPD
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 2 corrected
+    ecap 0002[140] = VC 1 max VC0
+    ecap 0003[160] = Serial 1 03000000684ce000
+
+pcm4@pci0:3:5:0:	class=0x040100 rev=0x01 hdr=0x00 vendor=0x1412 device=0x1724 subvendor=0x153b subdevice=0x1145
+    vendor     = 'VIA Technologies Inc.'
+    device     = 'VT1720/24 [Envy24PT/HT] PCI Multi-Channel Audio Controller'
+    class      = multimedia
+    subclass   = audio
+    bar   [10] = type I/O Port, range 32, base 0xe800, size 32, enabled
+    bar   [14] = type I/O Port, range 32, base 0xe400, size 128, enabled
+    cap 01[80] = powerspec 1  supports D0 D2 D3  current D0
+
+none0@pci0:3:6:0:	class=0x048000 rev=0x00 hdr=0x00 vendor=0x11bd device=0xbede subvendor=0x11bd subdevice=0x0023
+    vendor     = 'Pinnacle Systems Inc.'
+    device     = 'AV/DV Studio Capture Card'
+    class      = multimedia
+    bar   [10] = type Memory, range 32, base 0xfebff000, size 4096, enabled
+    cap 01[40] = powerspec 2  supports D0 D3  current D0
+
+fwohci0@pci0:3:6:1:	class=0x0c0010 rev=0x00 hdr=0x00 vendor=0x11bd device=0x0015 subvendor=0x11bd subdevice=0x0023
+    vendor     = 'Pinnacle Systems Inc.'
+    class      = serial bus
+    subclass   = FireWire
+    bar   [10] = type Memory, range 32, base 0xfebfe800, size 2048, enabled
+    cap 01[44] = powerspec 2  supports D0 D1 D2 D3  current D0

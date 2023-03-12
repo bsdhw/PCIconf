@@ -1,0 +1,142 @@
+hostb0@pci0:0:0:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1039 device=0x0671 subvendor=0x1734 subdevice=0x1110
+    vendor     = 'Silicon Integrated Systems [SiS]'
+    device     = '671MX'
+    class      = bridge
+    subclass   = HOST-PCI
+    bar   [10] = type Memory, range 32, base 0xd0000000, size 67108864, enabled
+    cap 02[c0] = AGP v3 8x 4x SBA disabled
+
+pcib1@pci0:0:1:0:	class=0x060400 rev=0x00 hdr=0x01 vendor=0x1039 device=0x0003 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Silicon Integrated Systems [SiS]'
+    device     = 'AGP Port (virtual PCI-to-PCI bridge)'
+    class      = bridge
+    subclass   = PCI-PCI
+
+isab0@pci0:0:2:0:	class=0x060100 rev=0x01 hdr=0x00 vendor=0x1039 device=0x0968 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Silicon Integrated Systems [SiS]'
+    device     = 'SiS968 [MuTIOL Media IO]'
+    class      = bridge
+    subclass   = PCI-ISA
+
+atapci0@pci0:0:2:5:	class=0x01018a rev=0x01 hdr=0x00 vendor=0x1039 device=0x5513 subvendor=0x1039 subdevice=0x5513
+    vendor     = 'Silicon Integrated Systems [SiS]'
+    device     = '5513 IDE Controller'
+    class      = mass storage
+    subclass   = ATA
+    bar   [20] = type I/O Port, range 32, base 0x1000, size 16, enabled
+    cap 01[58] = powerspec 2  supports D0 D3  current D0
+
+ohci0@pci0:0:3:0:	class=0x0c0310 rev=0x0f hdr=0x00 vendor=0x1039 device=0x7001 subvendor=0x1039 subdevice=0x7001
+    vendor     = 'Silicon Integrated Systems [SiS]'
+    device     = 'USB 1.1 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xd4204000, size 4096, enabled
+
+ohci1@pci0:0:3:1:	class=0x0c0310 rev=0x0f hdr=0x00 vendor=0x1039 device=0x7001 subvendor=0x1039 subdevice=0x7001
+    vendor     = 'Silicon Integrated Systems [SiS]'
+    device     = 'USB 1.1 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xd4205000, size 4096, enabled
+
+ehci0@pci0:0:3:3:	class=0x0c0320 rev=0x00 hdr=0x00 vendor=0x1039 device=0x7002 subvendor=0x1734 subdevice=0x1110
+    vendor     = 'Silicon Integrated Systems [SiS]'
+    device     = 'USB 2.0 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xd4206000, size 4096, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+    cap 0a[58] = EHCI Debug Port at offset 0x100 in map 0x14
+
+sge0@pci0:0:4:0:	class=0x020000 rev=0x02 hdr=0x00 vendor=0x1039 device=0x0191 subvendor=0x1734 subdevice=0x1125
+    vendor     = 'Silicon Integrated Systems [SiS]'
+    device     = '191 Gigabit Ethernet Adapter'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xd4407000, size 128, enabled
+    bar   [14] = type I/O Port, range 32, base 0x1080, size 128, enabled
+    cap 01[40] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+atapci1@pci0:0:5:0:	class=0x01018f rev=0x03 hdr=0x00 vendor=0x1039 device=0x1183 subvendor=0x1039 subdevice=0x1183
+    vendor     = 'Silicon Integrated Systems [SiS]'
+    device     = 'SATA Controller / IDE mode'
+    class      = mass storage
+    subclass   = ATA
+    bar   [10] = type I/O Port, range 32, base 0x1058, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0x104c, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0x1050, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0x1048, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0x1020, size 16, enabled
+    cap 01[58] = powerspec 2  supports D0 D3  current D0
+
+pcib2@pci0:0:6:0:	class=0x060400 rev=0x00 hdr=0x01 vendor=0x1039 device=0x000a subvendor=0x1039 subdevice=0x0004
+    vendor     = 'Silicon Integrated Systems [SiS]'
+    device     = 'PCI-to-PCI bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[b0] = PCI Bridge subvendor=0x1039 subdevice=0x0004
+    cap 05[c0] = MSI supports 1 message, 64 bit 
+    cap 10[d0] = PCI-Express 1 root port max data 128(128) RO NS
+                 max read 128
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+                 slot 0 power limit 0 mW
+    cap 01[f4] = powerspec 2  supports D0 D3  current D0
+
+pcib3@pci0:0:7:0:	class=0x060400 rev=0x00 hdr=0x01 vendor=0x1039 device=0x000a subvendor=0x1039 subdevice=0x0004
+    vendor     = 'Silicon Integrated Systems [SiS]'
+    device     = 'PCI-to-PCI bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[b0] = PCI Bridge subvendor=0x1039 subdevice=0x0004
+    cap 05[c0] = MSI supports 1 message, 64 bit 
+    cap 10[d0] = PCI-Express 1 root port max data 128(128) RO NS
+                 max read 128
+                 link x0(x1) speed 0.0(2.5) ASPM disabled(L0s/L1)
+                 slot 0 power limit 0 mW HotPlug(empty) surprise
+    cap 01[f4] = powerspec 2  supports D0 D3  current D0
+
+hdac0@pci0:0:15:0:	class=0x040300 rev=0x00 hdr=0x00 vendor=0x1039 device=0x7502 subvendor=0x1734 subdevice=0x1125
+    vendor     = 'Silicon Integrated Systems [SiS]'
+    device     = 'Azalia Audio Controller'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 32, base 0xd4200000, size 16384, enabled
+    cap 01[50] = powerspec 2  supports D0 D3  current D0
+
+pcib4@pci0:0:31:0:	class=0x060400 rev=0x00 hdr=0x01 vendor=0x1039 device=0x0004 subvendor=0x1039 subdevice=0x0004
+    vendor     = 'Silicon Integrated Systems [SiS]'
+    device     = 'PCI-to-PCI bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[d0] = PCI-Express 1 root port max data 128(128) RO NS
+                 max read 128
+                 link x0(x16) speed 0.0(2.5) ASPM disabled(L0s/L1)
+                 slot 0 power limit 75000 mW
+    cap 05[a0] = MSI supports 1 message 
+    cap 01[f4] = powerspec 2  supports D0 D3  current D0
+    cap 0d[70] = PCI Bridge subvendor=0x1039 subdevice=0x0004
+
+vgapci0@pci0:1:0:0:	class=0x030000 rev=0x10 hdr=0x00 vendor=0x1039 device=0x6351 subvendor=0x1734 subdevice=0x1125
+    vendor     = 'Silicon Integrated Systems [SiS]'
+    device     = '771/671 PCIE VGA Display Adapter'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Prefetchable Memory, range 32, base 0xc0000000, size 268435456, enabled
+    bar   [14] = type Memory, range 32, base 0xd4000000, size 131072, enabled
+    bar   [18] = type I/O Port, range 32, base 0x9000, size 128, enabled
+    cap 01[40] = powerspec 2  supports D0 D1 D2 D3  current D0
+    cap 02[50] = AGP v3 8x 4x SBA disabled
+
+iwn0@pci0:2:0:0:	class=0x028000 rev=0x00 hdr=0x00 vendor=0x8086 device=0x4237 subvendor=0x8086 subdevice=0x1211
+    vendor     = 'Intel Corporation'
+    device     = 'PRO/Wireless 5100 AGN [Shiloh] Network Connection'
+    class      = network
+    bar   [10] = type Memory, range 64, base 0xd4100000, size 8192, enabled
+    cap 01[c8] = powerspec 3  supports D0 D3  current D0
+    cap 05[d0] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 10[e0] = PCI-Express 1 endpoint max data 128(128) FLR RO NS
+                 max read 128
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1) ClockPM disabled
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 0026c6ffff490fee

@@ -1,0 +1,246 @@
+hostb0@pci0:0:0:0:	class=0x060000 rev=0x0b hdr=0x00 vendor=0x8086 device=0x5af0 subvendor=0x8086 subdevice=0x7270
+    vendor     = 'Intel Corporation'
+    device     = 'Celeron N3350/Pentium N4200/Atom E3900 Series Host Bridge'
+    class      = bridge
+    subclass   = HOST-PCI
+
+none0@pci0:0:0:1:	class=0x118000 rev=0x0b hdr=0x00 vendor=0x8086 device=0x5a8c subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    class      = dasp
+    bar   [10] = type Memory, range 64, base 0x91410000, size 32768, enabled
+    cap 01[d0] = powerspec 3  supports D0 D3  current D0
+    cap 09[e0] = vendor (length 12) Intel cap 0 version 1
+
+vgapci0@pci0:0:2:0:	class=0x030000 rev=0x0b hdr=0x00 vendor=0x8086 device=0x5a85 subvendor=0x8086 subdevice=0x2212
+    vendor     = 'Intel Corporation'
+    device     = 'HD Graphics 500'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 64, base 0x90000000, size 16777216, enabled
+    bar   [18] = type Prefetchable Memory, range 64, base 0x80000000, size 268435456, enabled
+    bar   [20] = type I/O Port, range 32, base 0xf000, size 64, enabled
+    cap 09[40] = vendor (length 12) Intel cap 0 version 1
+    cap 10[70] = PCI-Express 2 root endpoint max data 128(128) FLR
+                 max read 128
+    cap 05[ac] = MSI supports 1 message 
+    cap 01[d0] = powerspec 2  supports D0 D3  current D0
+    ecap 001b[100] = Process Address Space ID 1
+    ecap 000f[200] = ATS 1
+    ecap 0013[300] = Page Page Request 1
+
+hdac0@pci0:0:14:0:	class=0x040100 rev=0x0b hdr=0x00 vendor=0x8086 device=0x5a98 subvendor=0x10ec subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Celeron N3350/Pentium N4200/Atom E3900 Series Audio Cluster'
+    class      = multimedia
+    subclass   = audio
+    bar   [10] = type Memory, range 64, base 0x91418000, size 16384, enabled
+    bar   [20] = type Memory, range 64, base 0x91000000, size 1048576, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 09[80] = vendor (length 20) Intel cap 15 version 0
+    cap 05[60] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 10[70] = PCI-Express 1 root endpoint max data 128(128) FLR NS
+                 max read 512
+                 link x1(x0)
+
+none1@pci0:0:15:0:	class=0x078000 rev=0x0b hdr=0x00 vendor=0x8086 device=0x5a9a subvendor=0x8086 subdevice=0x7270
+    vendor     = 'Intel Corporation'
+    device     = 'Celeron N3350/Pentium N4200/Atom E3900 Series Trusted Execution Engine'
+    class      = simple comms
+    bar   [10] = type Memory, range 64, base 0x91429000, size 4096, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 05[8c] = MSI supports 1 message, 64 bit 
+    cap 09[a4] = vendor (length 20) Intel cap 15 version 0
+
+none2@pci0:0:15:1:	class=0x078000 rev=0x0b hdr=0x00 vendor=0x8086 device=0x5a9c subvendor=0x8086 subdevice=0x7270
+    vendor     = 'Intel Corporation'
+    class      = simple comms
+    bar   [10] = type Memory, range 64, base 0x91428000, size 4096, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 05[8c] = MSI supports 1 message, 64 bit 
+    cap 09[a4] = vendor (length 20) Intel cap 15 version 0
+
+none3@pci0:0:15:2:	class=0x078000 rev=0x0b hdr=0x00 vendor=0x8086 device=0x5a9e subvendor=0x8086 subdevice=0x7270
+    vendor     = 'Intel Corporation'
+    class      = simple comms
+    bar   [10] = type Memory, range 64, base 0x91427000, size 4096, enabled
+    cap 01[50] = powerspec 3  supports D0 D3  current D0
+    cap 05[8c] = MSI supports 1 message, 64 bit 
+    cap 09[a4] = vendor (length 20) Intel cap 15 version 0
+
+ahci0@pci0:0:18:0:	class=0x010601 rev=0x0b hdr=0x00 vendor=0x8086 device=0x5ae3 subvendor=0x8086 subdevice=0x7270
+    vendor     = 'Intel Corporation'
+    device     = 'Celeron N3350/Pentium N4200/Atom E3900 Series SATA AHCI Controller'
+    class      = mass storage
+    subclass   = SATA
+    bar   [10] = type Memory, range 32, base 0x9141c000, size 8192, enabled
+    bar   [14] = type Memory, range 32, base 0x91426000, size 256, enabled
+    bar   [18] = type I/O Port, range 32, base 0xf090, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0xf080, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0xf060, size 32, enabled
+    bar   [24] = type Memory, range 32, base 0x91425000, size 2048, enabled
+    cap 05[80] = MSI supports 1 message enabled with 1 message
+    cap 01[70] = powerspec 3  supports D0 D3  current D0
+    cap 12[a8] = SATA Index-Data Pair
+
+pcib1@pci0:0:19:0:	class=0x060400 rev=0xfb hdr=0x01 vendor=0x8086 device=0x5ad8 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Celeron N3350/Pentium N4200/Atom E3900 Series PCI Express Port A'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(256) ARI disabled
+                 max read 128
+                 link x1(x1) speed 2.5(5.0) ASPM L1(L0s/L1)
+                 slot 2 power limit 100 mW
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge subvendor=0x0000 subdevice=0x0000
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+    ecap 0000[100] = unknown 0
+    ecap 000d[140] = ACS 1
+    ecap 0000[150] = unknown 0
+    ecap 001e[200] = L1 PM Substates 1
+    ecap 0000[220] = unknown 0
+
+pcib2@pci0:0:19:1:	class=0x060400 rev=0xfb hdr=0x01 vendor=0x8086 device=0x5ad9 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Celeron N3350/Pentium N4200/Atom E3900 Series PCI Express Port A'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(256) ARI disabled
+                 max read 128
+                 link x1(x1) speed 2.5(5.0) ASPM L1(L0s/L1)
+                 slot 3 power limit 100 mW
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge subvendor=0x0000 subdevice=0x0000
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+    ecap 0000[100] = unknown 0
+    ecap 000d[140] = ACS 1
+    ecap 0000[150] = unknown 0
+    ecap 001e[200] = L1 PM Substates 1
+    ecap 0000[220] = unknown 0
+
+pcib3@pci0:0:19:2:	class=0x060400 rev=0xfb hdr=0x01 vendor=0x8086 device=0x5ada subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Intel Corporation'
+    device     = 'Celeron N3350/Pentium N4200/Atom E3900 Series PCI Express Port A'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 10[40] = PCI-Express 2 root port max data 128(256) ARI disabled
+                 max read 128
+                 link x1(x1) speed 2.5(5.0)
+                 slot 4 power limit 100 mW
+    cap 05[80] = MSI supports 1 message 
+    cap 0d[90] = PCI Bridge subvendor=0x0000 subdevice=0x0000
+    cap 01[a0] = powerspec 3  supports D0 D3  current D0
+    ecap 0000[100] = unknown 0
+    ecap 000d[140] = ACS 1
+    ecap 0000[150] = unknown 0
+    ecap 0000[200] = unknown 0
+    ecap 0000[220] = unknown 0
+
+xhci0@pci0:0:21:0:	class=0x0c0330 rev=0x0b hdr=0x00 vendor=0x8086 device=0x5aa8 subvendor=0x8086 subdevice=0x7270
+    vendor     = 'Intel Corporation'
+    device     = 'Celeron N3350/Pentium N4200/Atom E3900 Series USB xHCI'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 64, base 0x91400000, size 65536, enabled
+    cap 01[70] = powerspec 2  supports D0 D3  current D0
+    cap 05[80] = MSI supports 8 messages, 64 bit enabled with 1 message
+    cap 09[90] = vendor (length 20) Intel cap 15 version 0
+
+ig4iic0@pci0:0:22:0:	class=0x118000 rev=0x0b hdr=0x00 vendor=0x8086 device=0x5aac subvendor=0x8086 subdevice=0x7270
+    vendor     = 'Intel Corporation'
+    device     = 'Celeron N3350/Pentium N4200/Atom E3900 Series I2C Controller'
+    class      = dasp
+    bar   [10] = type Memory, range 64, base 0x91424000, size 4096, enabled
+    bar   [18] = type Memory, range 64, base 0x91423000, size 4096, enabled
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 09[90] = vendor (length 20) Intel cap 15 version 0
+
+ig4iic1@pci0:0:22:2:	class=0x118000 rev=0x0b hdr=0x00 vendor=0x8086 device=0x5ab0 subvendor=0x8086 subdevice=0x7270
+    vendor     = 'Intel Corporation'
+    device     = 'Celeron N3350/Pentium N4200/Atom E3900 Series I2C Controller'
+    class      = dasp
+    bar   [10] = type Memory, range 64, base 0x91422000, size 4096, enabled
+    bar   [18] = type Memory, range 64, base 0x91421000, size 4096, enabled
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 09[90] = vendor (length 20) Intel cap 15 version 0
+
+sdhci_pci0@pci0:0:28:0:	class=0x080501 rev=0x0b hdr=0x00 vendor=0x8086 device=0x5acc subvendor=0x8086 subdevice=0x7270
+    vendor     = 'Intel Corporation'
+    device     = 'Celeron N3350/Pentium N4200/Atom E3900 Series eMMC Controller'
+    class      = base peripheral
+    subclass   = SD host controller
+    bar   [10] = type Memory, range 64, base 0x91420000, size 4096, enabled
+    bar   [18] = type Memory, range 64, base 0x9141f000, size 4096, enabled
+    cap 01[80] = powerspec 3  supports D0 D3  current D0
+    cap 09[90] = vendor (length 20) Intel cap 15 version 0
+
+isab0@pci0:0:31:0:	class=0x060100 rev=0x0b hdr=0x00 vendor=0x8086 device=0x5ae8 subvendor=0x8086 subdevice=0x7270
+    vendor     = 'Intel Corporation'
+    device     = 'Celeron N3350/Pentium N4200/Atom E3900 Series Low Pin Count Interface'
+    class      = bridge
+    subclass   = PCI-ISA
+
+ichsmb0@pci0:0:31:1:	class=0x0c0500 rev=0x0b hdr=0x00 vendor=0x8086 device=0x5ad4 subvendor=0x8086 subdevice=0x7270
+    vendor     = 'Intel Corporation'
+    device     = 'Celeron N3350/Pentium N4200/Atom E3900 Series SMBus Controller'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [10] = type Memory, range 64, base 0x9141e000, size 256, enabled
+    bar   [20] = type I/O Port, range 32, base 0xf040, size 32, enabled
+
+re0@pci0:1:0:0:	class=0x020000 rev=0x15 hdr=0x00 vendor=0x10ec device=0x8168 subvendor=0x10ec subdevice=0x0123
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    device     = 'RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0xe000, size 256, enabled
+    bar   [18] = type Memory, range 64, base 0x91304000, size 4096, enabled
+    bar   [20] = type Memory, range 64, base 0x91300000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit 
+    cap 10[70] = PCI-Express 2 endpoint MSI 1 max data 128(128) RO
+                 max read 4096
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1) ClockPM disabled
+    cap 11[b0] = MSI-X supports 4 messages, enabled
+                 Table in map 0x20[0x0], PBA in map 0x20[0x800]
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0002[140] = VC 1 max VC0
+    ecap 0003[160] = Serial 1 01000000684ce000
+    ecap 0018[170] = LTR 1
+    ecap 001e[178] = L1 PM Substates 1
+
+re1@pci0:2:0:0:	class=0x020000 rev=0x15 hdr=0x00 vendor=0x10ec device=0x8168 subvendor=0x10ec subdevice=0x0123
+    vendor     = 'Realtek Semiconductor Co., Ltd.'
+    device     = 'RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0xd000, size 256, enabled
+    bar   [18] = type Memory, range 64, base 0x91204000, size 4096, enabled
+    bar   [20] = type Memory, range 64, base 0x91200000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D1 D2 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit 
+    cap 10[70] = PCI-Express 2 endpoint MSI 1 max data 128(128) RO
+                 max read 4096
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1) ClockPM disabled
+    cap 11[b0] = MSI-X supports 4 messages, enabled
+                 Table in map 0x20[0x0], PBA in map 0x20[0x800]
+    ecap 0001[100] = AER 2 0 fatal 0 non-fatal 0 corrected
+    ecap 0002[140] = VC 1 max VC0
+    ecap 0003[160] = Serial 1 01000000684ce000
+    ecap 0018[170] = LTR 1
+    ecap 001e[178] = L1 PM Substates 1
+
+iwm0@pci0:3:0:0:	class=0x028000 rev=0x59 hdr=0x00 vendor=0x8086 device=0x095a subvendor=0x8086 subdevice=0x5010
+    vendor     = 'Intel Corporation'
+    device     = 'Wireless 7265'
+    class      = network
+    bar   [10] = type Memory, range 64, base 0x91100000, size 8192, enabled
+    cap 01[c8] = powerspec 3  supports D0 D3  current D0
+    cap 05[d0] = MSI supports 1 message, 64 bit enabled with 1 message
+    cap 10[40] = PCI-Express 2 endpoint max data 128(128) FLR RO NS
+                 max read 128
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L1) ClockPM enabled
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 0 corrected
+    ecap 0003[140] = Serial 1 8045ddffff2950ea
+    ecap 0018[14c] = LTR 1
+    ecap 001e[154] = L1 PM Substates 1

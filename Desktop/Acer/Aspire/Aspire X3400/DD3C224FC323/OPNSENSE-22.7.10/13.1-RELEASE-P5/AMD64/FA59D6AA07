@@ -1,0 +1,303 @@
+none0@pci0:0:0:0:	class=0x050000 rev=0xa2 hdr=0x00 vendor=0x10de device=0x0754 subvendor=0x1025 subdevice=0x0228
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP78S [GeForce 8200] Memory Controller'
+    class      = memory
+    subclass   = RAM
+    cap 08[94] = HT Gen3
+    cap 08[60] = HT retry mode
+    cap 08[44] = HT slave
+    cap 08[d0] = HT power management
+
+isab0@pci0:0:1:0:	class=0x060100 rev=0xa2 hdr=0x00 vendor=0x10de device=0x075c subvendor=0x1025 subdevice=0x0228
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP78S [GeForce 8200] LPC Bridge'
+    class      = bridge
+    subclass   = PCI-ISA
+    bar   [10] = type I/O Port, range 32, base 0x4f00, size 256, enabled
+
+none1@pci0:0:1:1:	class=0x0c0500 rev=0xa1 hdr=0x00 vendor=0x10de device=0x0752 subvendor=0x1025 subdevice=0x0228
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP78S [GeForce 8200] SMBus'
+    class      = serial bus
+    subclass   = SMBus
+    bar   [10] = type I/O Port, range 32, base 0x4900, size 64, enabled
+    bar   [20] = type I/O Port, range 32, base 0x4d00, size 64, enabled
+    bar   [24] = type I/O Port, range 32, base 0x4e00, size 64, enabled
+    cap 01[44] = powerspec 2  supports D0 D3  current D0
+
+none2@pci0:0:1:2:	class=0x050000 rev=0xa1 hdr=0x00 vendor=0x10de device=0x0751 subvendor=0x1025 subdevice=0x0228
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP78S [GeForce 8200] Memory Controller'
+    class      = memory
+    subclass   = RAM
+
+none3@pci0:0:1:3:	class=0x0b4000 rev=0xa2 hdr=0x00 vendor=0x10de device=0x0753 subvendor=0x1025 subdevice=0x0228
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP78S [GeForce 8200] Co-Processor'
+    class      = processor
+    bar   [10] = type Memory, range 32, base 0xfbf80000, size 524288, enabled
+
+none4@pci0:0:1:4:	class=0x050000 rev=0xa1 hdr=0x00 vendor=0x10de device=0x0568 subvendor=0x1025 subdevice=0x0228
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP78S [GeForce 8200] Memory Controller'
+    class      = memory
+    subclass   = RAM
+
+ohci0@pci0:0:2:0:	class=0x0c0310 rev=0xa1 hdr=0x00 vendor=0x10de device=0x077b subvendor=0x1025 subdevice=0x0228
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP78S [GeForce 8200] OHCI USB 1.1 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfbf7f000, size 4096, enabled
+    cap 01[44] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+ehci0@pci0:0:2:1:	class=0x0c0320 rev=0xa1 hdr=0x00 vendor=0x10de device=0x077c subvendor=0x1025 subdevice=0x0228
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP78S [GeForce 8200] EHCI USB 2.0 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfbf7ec00, size 256, enabled
+    cap 0a[44] = EHCI Debug Port at offset 0xa0 in map 0x14
+    cap 01[80] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+ohci1@pci0:0:4:0:	class=0x0c0310 rev=0xa1 hdr=0x00 vendor=0x10de device=0x077d subvendor=0x1025 subdevice=0x0228
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP78S [GeForce 8200] OHCI USB 1.1 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfbf7d000, size 4096, enabled
+    cap 01[44] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+ehci1@pci0:0:4:1:	class=0x0c0320 rev=0xa1 hdr=0x00 vendor=0x10de device=0x077e subvendor=0x1025 subdevice=0x0228
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP78S [GeForce 8200] EHCI USB 2.0 Controller'
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xfbf7e800, size 256, enabled
+    cap 0a[44] = EHCI Debug Port at offset 0xa0 in map 0x14
+    cap 01[80] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+atapci0@pci0:0:6:0:	class=0x01018a rev=0xa1 hdr=0x00 vendor=0x10de device=0x0759 subvendor=0x1025 subdevice=0x0228
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP78S [GeForce 8200] IDE'
+    class      = mass storage
+    subclass   = ATA
+    bar   [20] = type I/O Port, range 32, base 0xffa0, size 16, enabled
+    cap 01[44] = powerspec 2  supports D0 D3  current D0
+
+hdac0@pci0:0:7:0:	class=0x040300 rev=0xa1 hdr=0x00 vendor=0x10de device=0x0774 subvendor=0x1025 subdevice=0x0228
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP72XE/MCP72P/MCP78U/MCP78S High Definition Audio'
+    class      = multimedia
+    subclass   = HDA
+    bar   [10] = type Memory, range 32, base 0xfbf78000, size 16384, enabled
+    cap 01[44] = powerspec 2  supports D0 D3  current D0
+
+pcib1@pci0:0:8:0:	class=0x060401 rev=0xa1 hdr=0x01 vendor=0x10de device=0x075a subvendor=0x1025 subdevice=0x0228
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP78S [GeForce 8200] PCI Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[b8] = PCI Bridge subvendor=0x1025 subdevice=0x0228
+    cap 08[8c] = HT MSI address window disabled at 0xfee00000
+
+ahci0@pci0:0:9:0:	class=0x010601 rev=0xa2 hdr=0x00 vendor=0x10de device=0x0ad4 subvendor=0x1025 subdevice=0x0228
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP78S [GeForce 8200] AHCI Controller'
+    class      = mass storage
+    subclass   = SATA
+    bar   [10] = type I/O Port, range 32, base 0xc480, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0xc400, size 4, enabled
+    bar   [18] = type I/O Port, range 32, base 0xc080, size 8, enabled
+    bar   [1c] = type I/O Port, range 32, base 0xc000, size 4, enabled
+    bar   [20] = type I/O Port, range 32, base 0xbc00, size 16, enabled
+    bar   [24] = type Memory, range 32, base 0xfbf76000, size 8192, enabled
+    cap 01[44] = powerspec 2  supports D0 D3  current D0
+    cap 12[8c] = SATA Index-Data Pair
+    cap 05[b0] = MSI supports 8 messages, 64 bit enabled with 8 messages
+    cap 08[ec] = HT MSI fixed address window enabled at 0xfee00000
+
+nfe0@pci0:0:10:0:	class=0x020000 rev=0xa2 hdr=0x00 vendor=0x10de device=0x0760 subvendor=0x1025 subdevice=0x8000
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP77 Ethernet'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xfbf7c000, size 4096, enabled
+    bar   [14] = type I/O Port, range 32, base 0xb880, size 8, enabled
+    bar   [18] = type Memory, range 32, base 0xfbf7e400, size 256, enabled
+    bar   [1c] = type Memory, range 32, base 0xfbf7e000, size 16, enabled
+    cap 01[44] = powerspec 2  supports D0 D1 D2 D3  current D0
+    cap 05[50] = MSI supports 16 messages, 64 bit, vector masks 
+    cap 08[6c] = HT MSI fixed address window disabled at 0xfee00000
+
+pcib2@pci0:0:11:0:	class=0x060400 rev=0xa1 hdr=0x01 vendor=0x10de device=0x0569 subvendor=0x1025 subdevice=0x0228
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP78S [GeForce 8200] PCI Express Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge subvendor=0x1025 subdevice=0x0228
+    cap 01[48] = powerspec 2  supports D0 D3  current D0
+    cap 08[60] = HT MSI address window disabled at 0xfee00000
+
+pcib3@pci0:0:16:0:	class=0x060400 rev=0xa1 hdr=0x01 vendor=0x10de device=0x0778 subvendor=0x1025 subdevice=0x0228
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP78S [GeForce 8200] PCI Express Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge subvendor=0x1025 subdevice=0x0228
+    cap 01[48] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 2 messages, 64 bit 
+    cap 08[60] = HT MSI address window enabled at 0xfee00000
+    cap 10[80] = PCI-Express 2 root port max data 128(256) RO NS
+                 max read 512
+                 link x4(x16) speed 5.0(5.0) ASPM disabled(L0s/L1)
+                 slot 1 power limit 75000 mW
+
+pcib4@pci0:0:18:0:	class=0x060400 rev=0xa1 hdr=0x01 vendor=0x10de device=0x075b subvendor=0x1025 subdevice=0x0228
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP78S [GeForce 8200] PCI Express Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge subvendor=0x1025 subdevice=0x0228
+    cap 01[48] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 2 messages, 64 bit 
+    cap 08[60] = HT MSI address window enabled at 0xfee00000
+    cap 10[80] = PCI-Express 1 root port max data 128(256) RO NS
+                 max read 512
+                 link x4(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+                 slot 3 power limit 10000 mW
+
+pcib5@pci0:0:19:0:	class=0x060400 rev=0xa1 hdr=0x01 vendor=0x10de device=0x077a subvendor=0x1025 subdevice=0x0228
+    vendor     = 'NVIDIA Corporation'
+    device     = 'MCP78S [GeForce 8200] PCI Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+    cap 0d[40] = PCI Bridge subvendor=0x1025 subdevice=0x0228
+    cap 01[48] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 2 messages, 64 bit 
+    cap 08[60] = HT MSI address window enabled at 0xfee00000
+    cap 10[80] = PCI-Express 1 root port max data 128(256) RO NS
+                 max read 512
+                 link x1(x1) speed 2.5(2.5) ASPM disabled(L0s/L1)
+                 slot 4 power limit 10000 mW
+
+hostb0@pci0:0:24:0:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1200 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Family 10h Processor HyperTransport Configuration'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 08[80] = HT host
+
+hostb1@pci0:0:24:1:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1201 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Family 10h Processor Address Map'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb2@pci0:0:24:2:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1202 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Family 10h Processor DRAM Controller'
+    class      = bridge
+    subclass   = HOST-PCI
+
+hostb3@pci0:0:24:3:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1203 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Family 10h Processor Miscellaneous Control'
+    class      = bridge
+    subclass   = HOST-PCI
+    cap 0f[f0] = unknown
+
+hostb4@pci0:0:24:4:	class=0x060000 rev=0x00 hdr=0x00 vendor=0x1022 device=0x1204 subvendor=0x0000 subdevice=0x0000
+    vendor     = 'Advanced Micro Devices, Inc. [AMD]'
+    device     = 'Family 10h Processor Link Control'
+    class      = bridge
+    subclass   = HOST-PCI
+
+vgapci0@pci0:2:0:0:	class=0x030000 rev=0xa2 hdr=0x00 vendor=0x10de device=0x084b subvendor=0x1025 subdevice=0x0228
+    vendor     = 'NVIDIA Corporation'
+    device     = 'C77 [GeForce 8200]'
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 32, base 0xfc000000, size 16777216, enabled
+    bar   [14] = type Prefetchable Memory, range 64, base 0xf0000000, size 134217728, enabled
+    bar   [1c] = type Prefetchable Memory, range 64, base 0xf8000000, size 33554432, enabled
+    bar   [24] = type I/O Port, range 32, base 0xdc00, size 128, enabled
+    cap 01[60] = powerspec 2  supports D0 D3  current D0
+    cap 05[68] = MSI supports 1 message, 64 bit 
+
+igb0@pci0:3:0:0:	class=0x020000 rev=0x01 hdr=0x00 vendor=0x8086 device=0x150e subvendor=0x1734 subdevice=0x11a8
+    vendor     = 'Intel Corporation'
+    device     = '82580 Gigabit Network Connection'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xfdf80000, size 524288, enabled
+    bar   [18] = type I/O Port, range 32, base 0xec00, size 32, enabled
+    bar   [1c] = type Memory, range 32, base 0xfdf7c000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 11[70] = MSI-X supports 10 messages, enabled
+                 Table in map 0x1c[0x0], PBA in map 0x1c[0x2000]
+    cap 10[a0] = PCI-Express 2 endpoint max data 128(512) FLR RO NS
+                 max read 512
+                 link x4(x4) speed 5.0(5.0) ASPM disabled(L0s/L1)
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 001999ffffc9aac0
+    ecap 0017[1a0] = TPH Requester 1
+    ecap 0018[1c0] = LTR 1
+
+igb1@pci0:3:0:1:	class=0x020000 rev=0x01 hdr=0x00 vendor=0x8086 device=0x150e subvendor=0x1734 subdevice=0x11a8
+    vendor     = 'Intel Corporation'
+    device     = '82580 Gigabit Network Connection'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xfde80000, size 524288, enabled
+    bar   [18] = type I/O Port, range 32, base 0xe880, size 32, enabled
+    bar   [1c] = type Memory, range 32, base 0xfdf78000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 11[70] = MSI-X supports 10 messages, enabled
+                 Table in map 0x1c[0x0], PBA in map 0x1c[0x2000]
+    cap 10[a0] = PCI-Express 2 endpoint max data 128(512) FLR RO NS
+                 max read 512
+                 link x4(x4) speed 5.0(5.0) ASPM disabled(L0s/L1)
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 001999ffffc9aac0
+    ecap 0017[1a0] = TPH Requester 1
+
+igb2@pci0:3:0:2:	class=0x020000 rev=0x01 hdr=0x00 vendor=0x8086 device=0x150e subvendor=0x1734 subdevice=0x11a8
+    vendor     = 'Intel Corporation'
+    device     = '82580 Gigabit Network Connection'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xfde00000, size 524288, enabled
+    bar   [18] = type I/O Port, range 32, base 0xe800, size 32, enabled
+    bar   [1c] = type Memory, range 32, base 0xfdf74000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 11[70] = MSI-X supports 10 messages, enabled
+                 Table in map 0x1c[0x0], PBA in map 0x1c[0x2000]
+    cap 10[a0] = PCI-Express 2 endpoint max data 128(512) FLR RO NS
+                 max read 512
+                 link x4(x4) speed 5.0(5.0) ASPM disabled(L0s/L1)
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 001999ffffc9aac0
+    ecap 0017[1a0] = TPH Requester 1
+
+igb3@pci0:3:0:3:	class=0x020000 rev=0x01 hdr=0x00 vendor=0x8086 device=0x150e subvendor=0x1734 subdevice=0x11a8
+    vendor     = 'Intel Corporation'
+    device     = '82580 Gigabit Network Connection'
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xfdd80000, size 524288, enabled
+    bar   [18] = type I/O Port, range 32, base 0xe480, size 32, enabled
+    bar   [1c] = type Memory, range 32, base 0xfdf70000, size 16384, enabled
+    cap 01[40] = powerspec 3  supports D0 D3  current D0
+    cap 05[50] = MSI supports 1 message, 64 bit, vector masks 
+    cap 11[70] = MSI-X supports 10 messages, enabled
+                 Table in map 0x1c[0x0], PBA in map 0x1c[0x2000]
+    cap 10[a0] = PCI-Express 2 endpoint max data 128(512) FLR RO NS
+                 max read 512
+                 link x4(x4) speed 5.0(5.0) ASPM disabled(L0s/L1)
+    ecap 0001[100] = AER 1 0 fatal 0 non-fatal 1 corrected
+    ecap 0003[140] = Serial 1 001999ffffc9aac0
+    ecap 0017[1a0] = TPH Requester 1

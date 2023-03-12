@@ -1,0 +1,71 @@
+hostb0@pci0:0:1:0:	class=0x060000 card=0x20801022 chip=0x20801022 rev=0x31 hdr=0x00
+    class      = bridge
+    subclass   = HOST-PCI
+    bar   [10] = type I/O Port, range 32, base 0xac1c, size 4, enabled
+
+vgapci0@pci0:0:1:1:	class=0x030000 card=0x20811022 chip=0x20811022 rev=0x00 hdr=0x00
+    class      = display
+    subclass   = VGA
+    bar   [10] = type Memory, range 32, base 0xee000000, size 16777216, enabled
+    bar   [14] = type Memory, range 32, base 0xef020000, size 16384, enabled
+    bar   [18] = type Memory, range 32, base 0xef010000, size 16384, enabled
+    bar   [1c] = type Memory, range 32, base 0xef014000, size 16384, enabled
+    bar   [20] = type Memory, range 32, base 0xef018000, size 16384, enabled
+
+glxsb0@pci0:0:1:2:	class=0x101000 card=0x20821022 chip=0x20821022 rev=0x00 hdr=0x00
+    class      = encrypt/decrypt
+    bar   [10] = type Memory, range 32, base 0xef01c000, size 16384, enabled
+
+none0@pci0:0:11:0:	class=0x0c0010 card=0x304402f3 chip=0x30441106 rev=0x80 hdr=0x00
+    class      = serial bus
+    subclass   = FireWire
+    bar   [10] = type Memory, range 32, base 0xef026000, size 2048, enabled
+    bar   [14] = type I/O Port, range 32, base 0xe800, size 128, enabled
+    cap 01[50] = powerspec 2  supports D0 D2 D3  current D3
+
+vr0@pci0:0:12:0:	class=0x020000 card=0x01051106 chip=0x31061106 rev=0x86 hdr=0x00
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0xe000, size 256, enabled
+    bar   [14] = type Memory, range 32, base 0xef024000, size 256, enabled
+    cap 01[40] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+vr1@pci0:0:13:0:	class=0x020000 card=0x01051106 chip=0x31061106 rev=0x86 hdr=0x00
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type I/O Port, range 32, base 0xe400, size 256, enabled
+    bar   [14] = type Memory, range 32, base 0xef025000, size 256, enabled
+    cap 01[40] = powerspec 2  supports D0 D1 D2 D3  current D0
+
+ath0@pci0:0:14:0:	class=0x020000 card=0x833117ab chip=0x1014168c rev=0x01 hdr=0x00
+    class      = network
+    subclass   = ethernet
+    bar   [10] = type Memory, range 32, base 0xef000000, size 65536, enabled
+    cap 01[44] = powerspec 2  supports D0 D3  current D0
+
+isab0@pci0:0:15:0:	class=0x060100 card=0x20901022 chip=0x20901022 rev=0x03 hdr=0x00
+    class      = bridge
+    subclass   = PCI-ISA
+    bar   [10] = type I/O Port, range 32, base 0x6000, size 8, enabled
+    bar   [14] = type I/O Port, range 32, base 0x6100, size 256, enabled
+    bar   [18] = type I/O Port, range 32, base 0x6200, size 64, enabled
+    bar   [1c] = type I/O Port, range 32, base 0, size 32, enabled
+    bar   [20] = type I/O Port, range 32, base 0x9d00, size 128, enabled
+    bar   [24] = type I/O Port, range 32, base 0x9c00, size 64, enabled
+
+atapci0@pci0:0:15:2:	class=0x010180 card=0x209a1022 chip=0x209a1022 rev=0x01 hdr=0x00
+    class      = mass storage
+    subclass   = ATA
+    bar   [20] = type I/O Port, range 32, base 0xf000, size 16, enabled
+
+ohci0@pci0:0:15:4:	class=0x0c0310 card=0x20941022 chip=0x20941022 rev=0x02 hdr=0x00
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xef027000, size 4096, enabled
+    cap 01[40] = powerspec 2  supports D0 D3  current D0
+
+ehci0@pci0:0:15:5:	class=0x0c0320 card=0x20951022 chip=0x20951022 rev=0x02 hdr=0x00
+    class      = serial bus
+    subclass   = USB
+    bar   [10] = type Memory, range 32, base 0xef028000, size 4096, enabled
+    cap 01[40] = powerspec 2  supports D0 D3  current D0
